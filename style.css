@@ -50,3 +50,8 @@
 .names {
   display: flex;
 }
+
+#formMain {
+    display: flex;
+    flex-direction: column;
+}
