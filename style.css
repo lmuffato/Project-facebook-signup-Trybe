@@ -24,13 +24,17 @@ body {
 
 .facebook-login {
     display: flex;
+    align-items: center;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
+    padding: 5px;
+    color: white;
 }
 
 .form-control {
     align-self: flex-end;
+    padding: 7px 5px;
 }
