@@ -1,0 +1,15 @@
+.main-content {
+  display: flex;
+  justify-content: center9;
+}
+
+.left-content {
+  display: flex;
+  width: 800px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
