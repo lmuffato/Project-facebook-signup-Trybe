@@ -7,14 +7,16 @@ const buttonCustomGender = document.querySelector('#custom');
 
 function validateRegister() {
     submitCount = 0;
-
     validateFirstName();
     validateLastName();
     validatePhoneEmail();
     validatePassword();
     validateBirthDate();
     validateGender();
-    console.log("Meu nome é Entei e está tudo bem agora");
+
+    if (submitCount === 6) {
+        alert("Meu nome é Entei e está tudo bem agora");
+    }
 }
 
 // Funções de Validação //
@@ -35,6 +37,14 @@ function validateLastName() {
     }
 }
 
+function validatePassword() {
+    if (document.forms.registrationForm.password.value === '') {
+        document.querySelector('#invalid').innerText = 'Campos inválidos'
+    } else {
+        submitCount += 1;
+    }
+}
+
 function validatePhoneEmail() {
     if (document.forms.registrationForm.phone_email.value === '') {
         document.querySelector('#invalid').innerText = 'Campos inválidos'
@@ -43,13 +53,14 @@ function validatePhoneEmail() {
     }
 }
 
-function validateBirthdate() {
+function validateBirthDate() {
     if (document.forms.registrationForm.birthdate.value === '') {
         document.querySelector('#invalid').innerText = 'Campos inválidos'
     } else {
         submitCount += 1;
     }
 }
+
 function validateGender() {
     if (document.forms.registrationForm.gender.value === '') {
         document.querySelector('#invalid').innerText = 'Campos inválidos'
@@ -58,13 +69,15 @@ function validateGender() {
     }
 }
 
-
 //REQUISITO 19
 
 function createCustomGender() {
     const custom = document.querySelector('#hidden-input');
     custom.innerHTML = '<input name="gender-custom" placeholder="Gênero (opcional)" type="text">';
 }
+
+//REQUISITO 20
+
 
 
 //Eventos //
