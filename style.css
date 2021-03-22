@@ -35,3 +35,7 @@
 .form-control {
   align-self: flex-end;
 }
+
+.left-content {
+  max-width: 800px;
+}
