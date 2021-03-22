@@ -139,7 +139,7 @@ input {
   flex-direction: column;
 }
 
-#label-birthdate , #label-gender{
+#label-birthdate , #label-gender {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   color: rgb(144, 148, 156);
@@ -152,7 +152,6 @@ input {
   width: 100px;
   margin-bottom: 10px;
 }
-
 
 #gender-content {
   display: flex;
