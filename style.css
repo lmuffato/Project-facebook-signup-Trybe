@@ -19,7 +19,7 @@
 .facebook-login {
   display: flex;
   justify-content: flex-end;
-  flex-direction: row;
+  align-items: flex-end;
 }
 
 .main-content {
