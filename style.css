@@ -2,7 +2,7 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .facebook-logo {
@@ -12,11 +12,11 @@
 
 .facebook-login {
   display: flex;
-  align-items:flex-end;
+  align-items: flex-end;
 }
 
-.label-header {
+.form-group{
   display: flex;
   flex-direction: column;
-  color:aliceblue;
+  color: aliceblue;
 }
