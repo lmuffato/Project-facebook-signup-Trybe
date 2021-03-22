@@ -10,6 +10,8 @@
   display: flex;
   background-color: rgb(66, 103, 178);
   justify-content: space-around;
+  padding: 10px;
+
 }
 
 .image-container {
@@ -19,8 +21,6 @@
 
 .facebook-login {
   display: flex;
-
-  /* margin-right: 20px; */
 }
 
 .form-container {
@@ -32,6 +32,13 @@
   display: flex;
   flex-direction: column;
   color: white;
+}
+
+.form-group input {
+  margin-right: 20px;
+  border-radius: 2px;
+  border: none;
+  margin-top: 10px;
 }
 
 .form-control {
@@ -57,10 +64,22 @@
 .left-container {
   display: flex;
   justify-content: left;
+  width: 200px;
+  margin-top: 20px;
 }
 
 .right-container {
   display: flex;
   flex-direction: column;
   justify-content: right;
+  margin-top: 20px;
+}
+
+.names {
+  display: flex;
+  margin-top: 20px;
+}
+
+.names input {
+  margin-right: 20px;
 }
