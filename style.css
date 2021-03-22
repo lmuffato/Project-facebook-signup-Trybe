@@ -24,9 +24,17 @@
 .main-content {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .left-content {
-    display: flex;
-    flex-basis: 800px;
+  display: flex;
+  flex-basis: 800px;
+  justify-content: flex-start;
+}
+
+.right-content {
+  display: flex;
+  flex-basis: 300px;
+  justify-content: flex-end;
 }
