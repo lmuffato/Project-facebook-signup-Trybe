@@ -1,0 +1,11 @@
+.barra-superior {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  width: 100%;
+  height: 82px; 
+}
+
+.conteiner-header {
+  display: flex;
+  height: 20px;
+}
