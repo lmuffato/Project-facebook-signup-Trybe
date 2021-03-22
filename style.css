@@ -8,12 +8,14 @@
   display: flex;
   height: 300px;
   justify-content: space-around;
-  
 }
+
 .logo-container {
   border: 1px solid red;
 }
-.form-contanter {
-  height: 300px;
+
+.facebook-login {
   border: 1px solid purple;
-}
+  display: flex;
+  height: 200px;
+} 
