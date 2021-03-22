@@ -31,6 +31,18 @@ body {
   align-self: flex-end;
 }
 
+.form-group label {
+  color: white;
+  font-size: 0.75em;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 150px;
+  height: 20px;
+  border: 1px solid rgb(24, 42, 91);
+}
+
 .main-content {
   display: flex;
 }
