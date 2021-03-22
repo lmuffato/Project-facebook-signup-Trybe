@@ -1,7 +1,7 @@
 const email = document.querySelector('#user-email-phone');
 const form = document.querySelector('.facebook-login');
 
-function showEmail(Event) {
+function showEmail() {
   alert(email.value);
 }
 
