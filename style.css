@@ -22,6 +22,7 @@ body {
   width: 170px;
 }
 
+header
 .login-container {
   padding-left: 70%;
 }
@@ -118,4 +119,26 @@ a {
   line-height: 20px;
   font-weight: 400;
   text-align: left;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstname-lastname {
+  width: 2px;
 }
