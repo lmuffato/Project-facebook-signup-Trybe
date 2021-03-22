@@ -12,3 +12,8 @@
 .facebook-logo {
   justify-self: left;
 }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
