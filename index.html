@@ -11,8 +11,8 @@
 <body>
   <!-- <div id="body-content"> -->
     <header class="top-bar">
-      <img src="imgs/facebook-logo.png" alt="Facebook logo">
-      <section class="facebook-login">
+      <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Facebook logo">
+      <form class="facebook-login">
         <div class="form-group">
           <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
           <input id="user-email-phone" type="text">
@@ -24,7 +24,7 @@
         <div class="form-control">
           <button id="button-login">Entrar</button>
         </div>
-      </section>
+      </form>
     </header>
     <main class="main-content">
       <div class="left-content">
@@ -44,13 +44,25 @@
           <div>
             <label for="phone_email" hidden>Celular ou email</label>
             <input type="text" name="phone_email" placeholder="Celular ou email">
+
             <input id="password" type="password" name="password" placeholder="Nova senha">
-            <input type="text" id="label-birthdate" name="birthdate" placeholder="dd/mm/aaaa">
+
+            <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+            <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa">
+            
             <label id="label-gender">Gênero</label>
-            <input id="man" type="radio" name="gender" ><label for="man">Masculino</label>
-            <input id="woman" type="radio" name="gender" ><label for="woman">Feminino</label>
-            <input id="custom" type="radio" name="gender" ><label for="custom">Personalizado</label>
+
+            <input id="woman" type="radio" name="gender" >
+            <label for="woman">Feminino</label>
+
+            <input id="man" type="radio" name="gender" >
+            <label for="man">Masculino</label>
+
+            <input id="custom" type="radio" name="gender" >
+            <label for="custom">Personalizado</label>
+
             <input type="text" name="gender-custom" placeholder="Gênero (opcional)">
+            <span id="form-invalid">Campos inválidos</span>
             <button id="facebook-register" type="submit">Cadastre-se</button>
           </div>
         </form>

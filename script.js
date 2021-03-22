@@ -7,5 +7,7 @@ const myAddEventListener = (elementNode, event, fn) => {
   node.addEventListener(event, fn);
 };
 
-myAddEventListener('#button-login', 'click',
-  () => { alert('Email ou telefone'); });
+window.onload = () => {
+  myAddEventListener('#button-login', 'click',
+    () => { alert('Email ou telefone'); });
+};
