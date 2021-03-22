@@ -20,9 +20,10 @@
 
 .form-group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .facebook-login {
   display: flex;
 }
+
