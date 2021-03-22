@@ -8,32 +8,34 @@
     <title>Project Facebook</title>
 </head>
 <body>
-<header class='top-bar'>
-  <img src="imgs/facebook-logo.png" alt="Logo Facebook" class="facebook-logo">
-
-  <div>
-    <form action="" method="GET" class="facebook-login">
-      <div class="form-group">
-        <p>Email ou Telefone</p>
-      </div>
-    </form>
-  </div>
-</header>
-<section class="main-content">
-  <div class="left-content">
-      <p>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-      <img id="facebook-slogan" src="imgs/networking.png" alt="Facebook Networking">
-  </div>
-  <div class="right-content">
-      <h1>Abra uma conta</h1>
-      <p class="quick-easy">É rápido e fácil.</p>
-      <form method="GET" class="new-account">
-          <div class="getName">
-              <input  type = " text " name = " firstname " id = " firstname " class = " obrigatório " placeholder = " Nome ">
-              <input  type = " text " name = " lastname " id = " lastname " class = " obrigatório " placeholder = " Sobrenome ">
-          </div>
+  <header class='top-bar'>
+    <img src="imgs/facebook-logo.png" alt="Logo Facebook" class="facebook-logo">
+    <div>
+      <form action="" method="GET" class="facebook-login">
+        <div class="form-group">
+          <label for="" id="user-email-phone-label">Email ou telefone</label>
+          <input type="text" id="user-email-phone">
+        </div>
       </form>
-  </div>
-</section>
+    </div>
+  </header>
+
+  <section class="main-content">
+    <div class="left-content">
+        <p>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+        <img id="facebook-slogan" src="imgs/networking.png" alt="Facebook Networking">
+    </div>
+    <div class="right-content">
+        <h1>Abra uma conta</h1>
+        <p class="quick-easy">É rápido e fácil.</p>
+        <form method="GET" class="new-account">
+            <div class="getName">
+                <input  type = " text " name = " firstname " id = " firstname " class = " obrigatório " placeholder = " Nome ">
+                <input  type = " text " name = " lastname " id = " lastname " class = " obrigatório " placeholder = " Sobrenome ">
+            </div>
+        </form>
+    </div>
+  </section>
+
 </body>
 </html>
