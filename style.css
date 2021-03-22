@@ -52,8 +52,11 @@
   margin-top: 20px;
 }
 
-input {
+.form-group input {
   margin-top: 20px;
+}
+
+input {
   height: 25px;
   border-radius: 5px;
   background: whitesmoke;
