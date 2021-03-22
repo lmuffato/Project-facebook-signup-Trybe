@@ -1,6 +1,6 @@
 const btnLogin = document.getElementById('button-login');
-const emailPhoneValue = document.getElementById('user-email-phone').value;
+const emailPhone = document.getElementById('user-email-phone');
 
 btnLogin.addEventListener('click', () => {
-  alert(emailPhoneValue);
+  alert(emailPhone.value);
 });
