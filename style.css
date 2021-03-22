@@ -20,7 +20,7 @@
 }
 
 #facebook-networking {
-  width: 300px; /* pode ser alterado, o tamanho ainda não eh requisito */
+  width: 300px; 
 }
 
 .facebook-login {
@@ -36,5 +36,5 @@
 
 .right-content {
   width: 300px;
-  justify-content: space-around; /*ainda nao sei se eh o certo*/ 
+  justify-content: space-around;
 }
