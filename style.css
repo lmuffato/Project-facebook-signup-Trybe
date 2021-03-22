@@ -11,27 +11,20 @@
   height: 80px;
 }
 
-.img-container {
-  width: 500px;
+.header-container {
+  width: 80%;
   display: flex;
-  justify-content: flex-start;
-}
-
-.form-container {
-  display: flex;
-  width: 1100px;
-  justify-content: flex-end;
+  margin: auto;
+  justify-content: space-between;
 }
 
 .facebook-logo {
   width: 200px;
-  margin-left: 140px;
 }
 
 .facebook-login {
   display: flex;
   height: 80px;
-  justify-content: flex-end;
   align-self: center;
 }
 
