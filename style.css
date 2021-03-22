@@ -31,3 +31,7 @@
   flex-direction: column;
   color: white;
 }
+
+.form-control {
+  align-self: flex-end;
+}
