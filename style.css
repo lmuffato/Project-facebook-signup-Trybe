@@ -1,0 +1,9 @@
+form {
+  display: flex;
+  align-content: flex-end;
+  border: 1px solid black;
+}
+
+.form-control {
+  align-self: flex-end;
+}
