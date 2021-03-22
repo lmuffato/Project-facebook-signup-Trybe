@@ -1,7 +1,9 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  margin: -10px;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
   height: 85px;
   justify-content: space-between;
   align-items: center;
@@ -54,15 +56,25 @@
   flex-wrap: wrap;
 }
 
-#first-name, #last-name {
+#first-name , #last-name {
   width: 46%;
 }
 
-#phone-email, #password {
+#phone-email , #password {
   width: 100%;
-  margin-top: 8px;;
+  margin-top: 8px;
 }
 
 #facebook-slogan {
   font-size: 25px;
+}
+
+#label-birthdate {
+  width: 100%;
+  background-color: red;
+  margin-top: 20px;
+}
+
+#date {
+  width: 40%;
 }
