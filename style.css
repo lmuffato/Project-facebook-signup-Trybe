@@ -1,7 +1,15 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .top-bar {
   display: flex;
   justify-content: space-between;
   background-color: rgb(66, 103, 178);
+  height: 60px;
 }
 
 .facebook-login {
@@ -27,15 +35,20 @@
   background-color: rgb(66, 103, 178);
   border-radius: 5px;
   color: white;
+  margin-bottom: 8px;
+  padding: 1px 4px;
 }
 
 .main-content {
   display: flex;
   justify-content: space-around;
+  background-image: linear-gradient(white, #dfe3ee);
+  height: 600px;
 }
 
 .left-content {
-  width: 800px;
+  width: 750px;
+  padding-top: 20px;
   font-weight: 700;
   color: rgb(35, 74, 153);
 }
@@ -43,9 +56,37 @@
 .right-content {
   width: 300px;
   align-content: flex-end;
-  margin-right: 350px;
+  margin-right: 280px;
+  padding-top: 20px;
 }
 
 #facebook-slogan {
   width: 750px;
+}
+
+#label-birthdate {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 10px 0;
+}
+
+#birthdate {
+  margin-bottom: 10px;
+}
+
+#facebook-register {
+  color: white;
+  background-color: rgb(9, 150, 9);
+  border-radius: 5px;
+  padding: 5px 8px;
+  height: 35px;
+  margin: 20px 20px 20px 0;
+  width: 70%;
+  font-size: 15px;
+}
+
+.signup {
+  width: 230px;
+  line-height: 1.8;
+  margin-top: 20px;
 }
