@@ -21,3 +21,8 @@
   align-items: flex-start;
   justify-content: center;
 }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
