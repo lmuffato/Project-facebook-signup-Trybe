@@ -23,3 +23,11 @@
 .form-control {
   align-self: flex-end;
 }
+
+.main-content {
+  display: flex;
+  background-color: blueviolet;
+  border: 1px solid black;
+  height: 500px;
+  width: 350px;
+}
