@@ -21,6 +21,7 @@ form .facebook-login {
   flex-direction: column;
 }
 
+/* requisitos 9 em diante: */
 .main-content {
   display: flex;
   flex-direction: row;
