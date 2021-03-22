@@ -15,5 +15,10 @@
 
 .facebook-login {
   display: flex;
-  justify-self: end;
+  justify-self: flex-end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
