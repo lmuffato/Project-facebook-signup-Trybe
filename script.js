@@ -20,13 +20,13 @@ function submitedForm() {
   const gender = document.querySelector('#gender');
   const inputs = document.querySelectorAll('.text-class');
   const genderValue = genderCheck();
-  const submitedFormElement = document.querySelector('.submited-form');
+  const submitForm = document.querySelector('.submited-form');
 
   name.innerText = `Olá ${inputs[0].value} ${inputs[1].value}`;
   tel.innerText = `Telefone: ${inputs[2].value}`;
   birthdate.innerText = `Data de Nascimento: ${inputs[3].value}`;
   gender.innerText = `Genero: ${genderValue}`;
-  submitedFormElement.style.display = 'block';
+  submitForm.style.display = 'block';
 }
 
 function inputValidate(e) {
