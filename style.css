@@ -12,7 +12,7 @@
 
 }
 
-.form-group{
+.form-group {
   display: flex;
   flex-direction: column;
   color: rgb(255, 255, 255);
@@ -35,4 +35,17 @@
 
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+#form-criacao {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-name {
+  display: flex;
 }
