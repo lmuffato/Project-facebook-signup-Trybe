@@ -7,4 +7,15 @@
 .top-bar {
 	background-color: rgb(66, 103, 178);
 	display: flex;
+	justify-content: space-between;
+	border: 2px solid black;
+}
+
+.facebook-login {
+	display: flex;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
 }
