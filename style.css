@@ -29,3 +29,8 @@
   width: 300px;
   justify-content: space-between;
 }
+
+.form-login {
+  display: flex;
+  justify-content: space-around;
+}
