@@ -8,6 +8,8 @@ const myAddEventListener = (elementNode, event, fn) => {
 };
 
 window.onload = () => {
-  myAddEventListener('#button-login', 'click',
-    () => { alert('Email ou telefone'); });
+  myAddEventListener('#button-login', 'click', (e) => {
+    e.preventDefault();
+    alert('Email ou telefone');
+  });
 };
