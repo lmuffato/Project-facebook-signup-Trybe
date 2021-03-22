@@ -33,3 +33,8 @@
   color: white;
   background-color: rgb(24, 119, 242);
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+}
