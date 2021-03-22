@@ -32,3 +32,18 @@ function alertLogin() {
 }
 
 btn.addEventListener('click', alertLogin);
+
+// Criar campo personalizado
+const genderForm = document.querySelector('#gender-form');
+
+function genderCustom(event) {
+  const createInput = document.createElement('input');
+  createInput.setAttribute('name', 'gender-custom');
+  createInput.setAttribute('placeholder', 'Gênero (opcional)');
+
+  genderForm.appendChild(createInput);
+}
+
+const btnCustom = document.querySelector('#custom');
+
+btnCustom.addEventListener('change', genderCustom);
