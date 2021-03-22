@@ -21,11 +21,40 @@
 /* facebook login container */
 .facebook-login {
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 15px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  margin: 0 10px;
+  font-weight: 800;
+}
+
+.form-group input {
+  margin-top: 5px;
+  width: 150px;
+  height: 30px;
+}
+
+.form-control {
+  display: flex;
+  align-self: flex-end;
+}
+
+#button-login {
+  background-color: rgb(69, 110, 194);
+  border: solid 1px rgb(28, 62, 136);
+  font-size: 1em;
+  font-weight: 800;
+  margin: 0 5px;
+  padding: 5px;
+}
+
+.text-white {
+  color: white;
 }
 
 /* -------------- main ------------ */
