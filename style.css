@@ -38,3 +38,6 @@
   width: 300px;
 }
 
+.names {
+  display: flex;
+}
