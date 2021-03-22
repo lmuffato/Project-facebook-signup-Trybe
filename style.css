@@ -12,6 +12,11 @@
 .facebook-login {
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
+}
+
+#facebook-networking {
+  width: 100%;
 }
 
 .form-group {
@@ -31,4 +36,10 @@
 
 .right-content {
   width: 300px;
+  display: flex;
+  flex-wrap: Wrap;
+}
+
+.all-roll {
+  flex-basis: 100%;
 }
