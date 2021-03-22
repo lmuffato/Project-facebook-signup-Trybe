@@ -22,3 +22,12 @@
 .form-group label {
   color: white;
 }
+
+.form-control {
+  align-self: flex-end;
+}
+
+#button-login {
+  background-color: rgb(66, 103, 178);
+  color: white;
+}
