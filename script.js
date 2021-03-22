@@ -1,6 +1,9 @@
 // Consts //
 const buttonFacebookRegister = document.querySelector('#facebook-register');
 let submitCount = 0;
+const buttonCustomGender = document.querySelector('#custom');
+
+// REQUISITO 18
 
 function validateRegister() {
     submitCount = 0;
@@ -11,7 +14,7 @@ function validateRegister() {
     validatePassword();
     validateBirthDate();
     validateGender();
-    console.log(submitCount)
+    console.log("Meu nome é Entei e está tudo bem agora");
 }
 
 // Funções de Validação //
@@ -55,5 +58,15 @@ function validateGender() {
     }
 }
 
+
+//REQUISITO 19
+
+function createCustomGender() {
+    const custom = document.querySelector('#hidden-input');
+    custom.innerHTML = '<input name="gender-custom" placeholder="Gênero (opcional)" type="text">';
+}
+
+
 //Eventos //
 buttonFacebookRegister.addEventListener('click', validateRegister); // Requisito 18, puxa validateRegister e essa puxa as outras validações //
+buttonCustomGender.addEventListener('click', createCustomGender);
