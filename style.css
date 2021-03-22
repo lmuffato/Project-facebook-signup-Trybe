@@ -52,3 +52,20 @@
 .main-content {
   display: flex;
 }
+<<<<<<< HEAD
+=======
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+  justify-content: space-between;
+}
+
+.form-login {
+  display: flex;
+  justify-content: space-around;
+}
+>>>>>>> adbc04a53d5d31b982d647a54857a2e208ffc396
