@@ -9,9 +9,23 @@
   background-color: rgb(66, 103, 178);
   width: 100%;
   height: 80px;
-  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .facebook-logo {
   width: 15%;
+  margin-left: 140px;
+  align-self: flex-end;
+}
+
+.facebook-login {
+  display: flex;
+  height: 21px;
+  align-self: center;
+  margin-right: 200px;
+}
+
+.facebook-login input {
+  margin-right: 15px;
+  border: 1px solid black;
 }
