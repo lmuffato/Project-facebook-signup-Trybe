@@ -8,11 +8,12 @@
   display: flex;
   background-color: rgb(66, 103, 178);
   height: 80px;
+  justify-content: flex-start;
 }
 
 .main-content {
   display: flex;
-  justify-content:center;
+  justify-content: center;
 }
 
 .left-content {
