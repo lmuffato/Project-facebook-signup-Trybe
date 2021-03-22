@@ -10,9 +10,14 @@
   background-color: rgb(66, 103, 178);
 }
 
-header .facebook-login {
+.facebook-logo {
+  justify-self: left;
+}
+
+.facebook-login {
   display: flex;
 }
+
 
 .form-group {
   display: flex;
