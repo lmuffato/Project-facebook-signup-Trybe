@@ -12,16 +12,24 @@
   justify-content: space-between;
 }
 
+/* <logo-container> */
 #logo-container {
   height: 100%;
   padding: 5px;
-  align-self: center;
 }
 
 .facebook-logo {
   height: 100%;
   width: cover;
 }
+/* </logo-container> */
+
+/* <login-container> */
+.facebook-login {
+    display: flex;
+}
+
+/* </login-container> */
 
 /* -------------- main ------------ */
 
