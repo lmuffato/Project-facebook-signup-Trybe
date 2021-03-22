@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Lado direito</title>
 </head>
 <body>
     <section class = 'main-content'>
@@ -29,7 +29,7 @@
             <input type = 'password' name = 'password' placeholder = 'Nova senha' required>
 
             <div>
-                <label id = 'label-birthdate' for = 'date'> Data de Nascimento </label>
+                <label id = 'label-birthdate' for = 'date'> Data de Nascimento </label> <br>
                 <input type = 'text' id = 'date' name = 'birthdate' placeholder = 'dd/mm/aaaa'>
             </div>
 
@@ -45,7 +45,12 @@
                 <input type="radio" id = 'custom' name = 'gender'> 
                 <label for = 'custom'>Personalizado</label>
             </div>
-        
+
+            <div>
+                <p id = 'term'>Ao clicar em Cadastra-se, você concorda com nossos <span class = 'blue'>Termos, Política de Dados</span> e <span class = 'blue'>Política de Cookies</span>. Você pode receber notificação por SMS e pode cancelar isso quando quiser.</p>
+            </div>
+            
+            <button type = 'submit' id = 'facebook-register'>Cadastre-se</button>
         </form>
     </section>
 </body>
