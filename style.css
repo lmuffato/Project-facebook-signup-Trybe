@@ -17,6 +17,7 @@
 
 .top-bar img {
   margin: 17px;
+  align-self: flex-start;
 }
 
 .facebook-login {
