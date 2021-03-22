@@ -60,10 +60,10 @@
   flex-direction: column;
 }
 
-.genders {
+#label-gender {
   display: flex;
 }
 
-.genders label {
+#label-gender label {
   padding: 0 5px;
 }
