@@ -14,9 +14,12 @@ body {
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  justify-content: space-between;
+  justify-content: space-evenly;
   color: white;
-  height: 75px;
+  height: 90px;
+  border: 1px solid rgb(21, 44, 92);
+  align-items: center;
+  font-family: Ubuntu, sans-serif;
 }
 
 .facebook-logo {
@@ -27,15 +30,46 @@ body {
 
 .facebook-login {
   display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  height: 100%;
+  margin-top: 25px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  align-self: flex-start;
+}
+
+.form-group input {
+  height: 1.6rem;
+  border-radius: 0;
+  border: 1px solid black;
+  width: 175px;
+  padding: 2px 5px;
+}
+
+.form-group label {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .form-control {
-  align-self: flex-end;
+  align-self: inherit;
+  margin-top: 21px;
+}
+
+.form-control button {
+  border: none;
+  padding: 0px 5px;
+  background: rgb(55, 89, 158);
+  color: white;
+  font-weight: 700;
+  height: 1.55rem;
+  border: 1px solid rgb(21, 44, 92);
+  width: 55px;
 }
 
 .main-content {
