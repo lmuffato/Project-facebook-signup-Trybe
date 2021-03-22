@@ -20,7 +20,7 @@
   color: aliceblue;
 }
 
-.main-content{
+.main-content {
   display: flex;
 }
 
@@ -29,6 +29,6 @@
   width: 800px;
 }
 
-.right-content{
+.right-content {
   width: 300px;
 }
