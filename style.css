@@ -8,8 +8,14 @@
   display: flex;
   background-color: rgb(66 103 178);
   padding: 20px;
+  align-items:center;
+  justify-content:space-evenly;
 }
 
 .facebook-logo {
-  align-self: baseline;
+  
+}
+
+.facebook-login {
+  
 }
