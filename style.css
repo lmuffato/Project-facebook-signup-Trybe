@@ -145,3 +145,8 @@ a {
 .firstname-lastname {
   width: 2px;
 }
+
+.facebook-login {
+  display: flex;
+  align-items: flex-end;
+}
