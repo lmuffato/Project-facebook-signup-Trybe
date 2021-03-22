@@ -1,11 +1,8 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  justify-content: space-between;
-}
-
-.facebook-logo {
-  
+  justify-content: space-around;
+  align-items: center;
 }
 
 .facebook-login {
@@ -15,6 +12,41 @@
 .form-group {
   display: flex;
   flex-direction: column;
+  color: white;
+  font-weight: 600;
+}
+
+.form-group + .form-group {
+  margin-left: 20px;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  padding: 4px 10px;
+}
+
+.form-control {
+  align-self: flex-end;
+  margin-left: 20px;
+}
+
+.form-control button {
+  background-color: rgb(24, 119, 242);
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 2px;
+  text-align: center;
+  box-shadow: 2px 2px 4px 0.1px rgb(53, 99, 191), 2px 2px 4px 0.1px rgb(62, 97, 165) ;
+}
+
+.form-fields {
+  list-style: none;
+  display: flex;
 }
 
 .main-content {
