@@ -31,3 +31,15 @@
   flex-direction: column;
   color: white;
 }
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  flex-direction: row;
+}
+
+.left-content {
+  width: 800px;
+}
