@@ -23,8 +23,15 @@
 
 #input-name {
   width: 110px;
+  margin-left: 3px;
 }
 
 #input-lastname {
   width: 110px;
+}
+
+#phone_email {
+  margin-top: 3px;
+  margin-left: 3px;
+  width: 224px;
 }
