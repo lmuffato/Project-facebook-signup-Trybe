@@ -12,7 +12,7 @@
 }
 
 .complete-name {
-  display: inline-block;
+  display: flex;
 }
 
 .top-bar {
