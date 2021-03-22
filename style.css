@@ -4,7 +4,7 @@ body {
 }
 
 * {
-  padding: 0; 
+  padding: 0;
   margin: 0;
 }
 
@@ -30,7 +30,7 @@ body {
   float: right;
   display: flex;
   align-items: flex-end;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 
 .form-group {
@@ -41,7 +41,7 @@ body {
 .main-content {
   display: flex;
   justify-content: flex-start;
-  background: linear-gradient(white, #D3D8E8);
+  background: linear-gradient(white, rgb(211, 216, 232));
 }
 
 .left-content {
@@ -65,7 +65,7 @@ body {
   color: rgb(14, 56, 95);
   width: 450px;
   margin-top: 40px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 29px;
   word-spacing: -1px;
 }
@@ -88,18 +88,10 @@ body {
   margin-bottom: 10px;
 }
 
-.user-name input {
-  width: 172px;
-}
-
-.user-name input:nth-child(1) {
-  margin-right: 11px;
-}
-
 .right-content h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 36px;
-  color: rgb(51, 51, 51);
+  color: rgb( 51, 51, 51 );
   margin-top: 23px;
   margin-bottom: 8px;
 }
@@ -120,6 +112,14 @@ input {
   padding: 8px 10px;
   font-size: 18px;
   width: 377px;
+}
+
+.user-name input {
+  width: 172px;
+}
+
+.user-name input:nth-child(1) {
+  margin-right: 11px;
 }
 
 #new-password {
