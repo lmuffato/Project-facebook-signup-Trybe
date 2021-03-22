@@ -1,31 +1,23 @@
 * {
   margin: 0;
   padding: 0;
+  margin-bottom: 10px;
+}
+
+header {
+  justify-content: space-between;
 }
 
 .top-bar {
   display: flex;
-  background-color: rgb(66, 103, 178);
-  padding: 20px;
-  justify-content: space-between;
+  background-color: rgb(66, 103, 178)
 }
 
 .facebook-logo {
-  align-items: initial;
+  display: flex;
 }
 
 .facebook-login {
   display: flex;
-  margin-right: 140px;
-  color: white;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 12px;
-  flex-wrap: wrap;
-  align-self: flex-end;
-  justify-content: end;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
+  flex-direction: unset;
 }
