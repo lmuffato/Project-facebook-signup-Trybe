@@ -1,6 +1,7 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between
 }
@@ -28,6 +29,7 @@
 .main-content {
   display: flex;
   justify-content: space-around;
+  background-color: ghostwhite;
 }
 
 .left-content {
@@ -38,14 +40,24 @@
 .right-content {
   width: 300px;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
 }
 
 .all-roll {
-  flex-basis: 100%;
+  width: 100%;
+  align-self: stretch;
 }
 
 .mid-roll {
-  flex-basis: 50%;
-  width: 50%;
+  width: 40%;
+}
+
+.form-new {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.full-name {
+  display: flex;
+  flex-flow: row nowrap;
 }
