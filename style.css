@@ -25,3 +25,8 @@
   display: flex;
   flex-direction: row;
 }
+
+.left-content {
+    display: flex;
+    flex-basis: 800px;
+}
