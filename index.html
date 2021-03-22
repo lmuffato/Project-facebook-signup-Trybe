@@ -9,10 +9,21 @@
   </head>
   <body>
     <header class="top-bar">
-        <img class="facebook-logo" src="./imgs/facebook-logo.png" alt="logo" />
-        <form class="facebook-login" action="">
-						<p>afadf</p>
-				</form>
-			</header>
+      <img class="facebook-logo" src="./imgs/facebook-logo.png" alt="logo" />
+      <form class="facebook-login" action="">
+        <div class="form-group">
+          <label for="" id="user-email-phone-label">Email ou telefone</label>
+          <input type="text" id="user-email-phone" />
+        </div>
+        <div class="form-group">
+          <label id="user-password-label" for="">Senha</label>
+          <input type="password" id="user-password" />
+        </div>
+        <div class="form-control">
+          <button id="button-login">Entrar</button>
+        </div>
+      </form>
+    </header>
+    <script src="./script.js"></script>
   </body>
 </html>
