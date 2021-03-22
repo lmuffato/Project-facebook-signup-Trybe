@@ -1,8 +1,32 @@
-// Validar formulário
-
+const rightContent = document.querySelector('.right-content');
+const nameInput = document.querySelector('#name');
+const lastName = document.querySelector('#lastname');
+const emailInput = document.querySelector('#email');
+const birthDate = document.querySelector('#birthdate');
+const radios = document.querySelectorAll('.radio');
+const genderRadio = document.querySelector('#custom');
+const customGender = document.querySelector('#custom-gender');
 const formValidate = document.querySelectorAll('.form-validate');
 const accForm = document.querySelector('#form-create-account');
 const createParagraph = document.createElement('p');
+
+function rightContentForm() {
+  let genderInput = '';
+  for (let i = 0; i < radios.length; i += 1) {
+    if (radios[i].classList.contains('selected')) {
+      genderInput = radios[i].value;
+    }
+
+    rightContent.innerText = `Olá, ${nameInput.value} ${lastName.value}
+  
+  ${emailInput.value}
+
+  ${birthDate.value}
+
+  ${genderInput}
+  `;
+  }
+}
 
 function validateForm(event) {
   let testIfTrue = 0;
@@ -36,53 +60,6 @@ function alertLogin() {
 
 btn.addEventListener('click', alertLogin);
 
-// Criar campo personalizado
-const genderForm = document.querySelector('#gender-form');
-
-// function genderCustom(event) {
-//   const createInput = document.createElement('input');
-//   createInput.setAttribute('name', 'gender-custom');
-//   createInput.setAttribute('placeholder', 'Gênero (opcional)');
-
-//   genderForm.appendChild(createInput);
-// }
-
-// const btnCustom = document.querySelector('#custom');
-
-// btnCustom.addEventListener('change', genderCustom);
-
-// Substituir conteúdo do right-content
-const rightContent = document.querySelector('.right-content');
-const nameInput = document.querySelector('#name');
-const lastName = document.querySelector('#lastname');
-const emailInput = document.querySelector('#email');
-const birthDate = document.querySelector('#birthdate');
-const radios = document.querySelectorAll('.radio');
-const genderRadio = document.querySelector('#custom');
-
-function rightContentForm() {
-  let genderInput = '';
-  for (let i = 0; i < radios.length; i += 1) {
-    if (radios[i].classList.contains('selected')) {
-      genderInput = radios[i].value;
-    }
-
-    rightContent.innerText = `Olá, ${nameInput.value} ${lastName.value}
-  
-  ${emailInput.value}
-
-  ${birthDate.value}
-
-  ${genderInput}
-  `;
-  }
-}
-const customGender = document.querySelector('#custom-gender');
-
-for (let i = 0; i < radios.length; i += 1) {
-  radios[i].addEventListener('change', customGenderForm);
-}
-
 function customGenderForm(event) {
   for (let radiosIndex = 0; radiosIndex < radios.length; radiosIndex += 1) {
     radios[radiosIndex].classList.remove('selected');
@@ -94,4 +71,8 @@ function customGenderForm(event) {
   } else {
     customGender.style.display = 'none';
   }
+}
+
+for (let i = 0; i < radios.length; i += 1) {
+  radios[i].addEventListener('change', customGenderForm);
 }
