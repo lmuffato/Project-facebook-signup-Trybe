@@ -18,18 +18,13 @@
 .facebook-login {
   display: flex;
   justify-content: flex-end;
+  right: 150px;
 }
 
 .main-content {
   display: flex;
   background-color: aquamarine;
   justify-content: space-around;
-}
-
-.facebook-login {
-  display: flex;
-  position: absolute;
-  right: 150px;
 }
 
 .left-content {
