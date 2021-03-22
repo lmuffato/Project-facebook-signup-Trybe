@@ -6,13 +6,8 @@
 .top-bar {
   display: flex;
   justify-content: space-around;
+  min-height: 42px;
   background-color: rgb(66, 103, 178);
-}
-
-.main-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: first baseline;
 }
 
 header .facebook-login {
@@ -23,6 +18,17 @@ header .facebook-login {
   display: flex;
   flex-direction: column;
 }
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: first baseline;
+}
+
 
 .left-content {
   width: 800px;
