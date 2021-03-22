@@ -1,10 +1,13 @@
 * {
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 .top-bar {
   background-color: rgb(66, 103, 178);
+
+  /*   background-image: linear-gradient(rgb(78, 105, 162), rgb(59, 89, 152) 50%); */
   height: 80px;
   display: flex;
   justify-content: space-evenly;
@@ -18,9 +21,6 @@
 .form {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
-  padding: 4px;
-  font-size: 12px;
 }
 
 .submit-container {
@@ -30,11 +30,19 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  margin: 6px;
+  flex: 1 1 0;
+  padding: 6px;
+  font-size: 12px;
+
+}
+
+.form-group * {
+  padding-bottom: 4px;
 }
 
 .form-group a {
   color: rgb(156, 180, 216);
+  padding-bottom: 0;
 }
 
 .form-group a:link {
