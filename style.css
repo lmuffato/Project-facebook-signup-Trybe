@@ -15,8 +15,7 @@
 .facebook-logo {
   height: 100%;
   width: cover;
-  align-self: left;
-  padding: 5px;
+  left: 0;
 }
 
 /* facebook login container */
