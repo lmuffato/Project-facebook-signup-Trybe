@@ -8,5 +8,15 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: flex-start;
+  width: 100%;
+}
+
+.facebook-logo {
+  justify-self: flex-start;
+}
+
+.facebook-login {
+  justify-self: flex-end;
+  border: solid 1px black;
+  width: 30%;
 }
