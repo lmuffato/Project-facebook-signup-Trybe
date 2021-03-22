@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +8,26 @@
     <title>Facebook Sign-Up</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="top-bar">
-      <div class="div-logo">
-        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo do Facebook">
-      </div>
+        <div class="div-logo">
+            <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo do Facebook">
+        </div>
 
-      <div class="div-form">
-          <form class="facebook-login">
-              <label>Email ou telefone
-                  <input type="text" id="nome">
-              </label>
-              <label>Senha
-                  <input type="text" id="senha">
-              </label>
-          </form>
-      </div>
-      <!-- . 3 Adicione um formulário de autenticação no canto direito da barra superior
-Pontos importantes:
-
-O formulário deve estar alinhado a direita dentro da barra azul
-Existe formulário com uma classe chamada facebook-login
-O formulário deve ser um flex container -->
+        <div class="div-form">
+            <form class="facebook-login">
+                <div id="form-group">
+                    <label for="nome">Email ou telefone</label>
+                        <input type="text" id="nome">                    
+                </div>
+                <div id="form-group">
+                    <label for="senha">Senha</label>
+                        <input type="text" id="senha">
+                </div>
+            </form>
+        </div>
     </header>
 </body>
+
 </html>
