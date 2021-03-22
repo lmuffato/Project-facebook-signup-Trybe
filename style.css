@@ -18,7 +18,6 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
-  margin: 0 10px;
 }
 
 .facebook-login {
