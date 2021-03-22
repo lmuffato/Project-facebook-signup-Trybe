@@ -3,6 +3,13 @@ const buttonFacebookRegister = document.querySelector('#facebook-register');
 let submitCount = 0;
 const buttonCustomGender = document.querySelector('#custom');
 
+// REQUISITO 5
+
+function login() {
+    const userEmailPhone = document.getElementById('user-email-phone');
+    alert(userEmailPhone.value);
+  }
+
 // REQUISITO 18
 
 function validateRegister() {
@@ -69,17 +76,22 @@ function validateGender() {
     }
 }
 
-//REQUISITO 19
+// REQUISITO 19
 
 function createCustomGender() {
     const custom = document.querySelector('#hidden-input');
     custom.innerHTML = '<input name="gender-custom" placeholder="Gênero (opcional)" type="text">';
 }
 
-//REQUISITO 20
+// REQUISITO 20
 
 
 
-//Eventos //
+// Eventos //
 buttonFacebookRegister.addEventListener('click', validateRegister); // Requisito 18, puxa validateRegister e essa puxa as outras validações //
 buttonCustomGender.addEventListener('click', createCustomGender);
+document.getElementById('button-login').addEventListener('click', login);
+
+
+
+

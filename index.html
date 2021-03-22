@@ -9,27 +9,22 @@
 </head>
 <body>
 <header class="top-bar">
-    <div class="container">
-        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo do Facebook">
-    </div>
+    <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo do Facebook">
     <form action="" method="get" class="facebook-login">
         <!-- REQUISITO 5 -->
         <div class="form-group">
-            <div id="user-email-phone-label">
-                <label for="email ou telefone">Email ou telefone</label>
-                <input type="text" name="name" id="user-email-phone">
-            </div>
+            <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+            <input type="text" name="name" id="user-email-phone" class="input">
         </div>
         <!-- REQUISITO 6 -->
         <div class="form-group">
-            <div id="user-password-label">
-                <label for="senha">Senha</label>
-                <input type="text" name="senha" id="user-password">
-            </div>
+            <label id="user-password-label" for="user-password">Senha</label>
+            <input type="text" name="senha" id="user-password" class="input">
+            <a class="input-description" href="#">Esqueceu a conta?</a>
         </div>
         <!-- REQUISITO 7 -->
         <div class="form-control">
-            <button type="submit" id="button-login">Entrar</button>
+            <button type="submit" id="button-login" class="btn btn-primary">Entrar</button>
         </div>
     </form>
 </header>    
@@ -61,8 +56,7 @@
             <div id="hidden-input"></div>
             <button type="submit" id="facebook-register">Cadastre-se</button>
             <p id="invalid"> </p>
-       
-        </form>
+         </form>
     </div>
 </div>
 
