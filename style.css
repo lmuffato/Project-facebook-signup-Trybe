@@ -16,6 +16,11 @@
   align-items: center;
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-content {
   display: flex;
   justify-content: center;
