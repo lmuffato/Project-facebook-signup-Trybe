@@ -27,6 +27,7 @@
 .main-content {
   display: flex;
   justify-content: space-around;
+  background-color: blanchedalmond;
 }
 
 .left-content {
@@ -35,4 +36,40 @@
 
 .right-content {
   width: 300px;
+  border: 2px solid black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.data-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#first-name, #last-name {
+  width: 46%;
+}
+
+#phone-email, #password {
+  width: 100%;
+  margin-top: 8px;;
+}
+
