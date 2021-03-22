@@ -4,8 +4,21 @@ function buttonAlert() {
   alert(emailInputElement.value);
 }
 
-window.onload = () => {
-  const buttonElement = document.getElementById('button-login');
+function inputValidate() {
+  const inputs = document.querySelectorAll('.main-content input');
 
-  buttonElement.onclick = buttonAlert;
+  for(let index = 0; index < inputs.length; index += 1) {
+    if(inputs[index].value === '') {
+      alert('Campos inválidos');
+      return;
+    }
+  }
+}
+
+window.onload = () => {
+  const buttonLoginElement = document.getElementById('button-login');
+  const buttonSubmitElement = document.getElementById('facebook-register');
+
+  buttonLoginElement.onclick = buttonAlert;
+  buttonSubmitElement.onclick = inputValidate;
 };
