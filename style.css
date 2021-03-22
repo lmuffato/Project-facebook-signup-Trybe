@@ -1,0 +1,17 @@
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(66, 103, 178);
+  height: 82px;
+  width: 100vw;
+  align-items: baseline;
+}
+
+.top-bar img {
+  margin: 17px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
