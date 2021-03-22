@@ -4,15 +4,44 @@ function buttonAlert() {
   alert(emailInputElement.value);
 }
 
-function inputValidate() {
-  const inputs = document.querySelectorAll('.main-content input');
+function genderCheck() {
+  const genderVerify = document.getElementsByName('gender');
 
+  for (let index = 0; index < genderVerify.length; index += 1) {
+    if (genderVerify[index].checked) {
+      return genderVerify[index].value;
+    }
+  }
+}
+
+function submitedForm() {
+  const name = document.querySelector('#name');
+  const tel = document.querySelector('#tel');
+  const birthdate = document.querySelector('#birthdate');
+  const gender = document.querySelector('#gender');
+  const inputs = document.querySelectorAll('.text-class');
+  const genderValue = genderCheck();
+
+  name.innerText = `Olá ${inputs[0].value} ${inputs[1].value}`;
+  tel.innerText = `Telefone: ${inputs[2].value}`;
+  birthdate.innerText = `Data de Nascimento: ${inputs[3].value}`;
+  gender.innerText = `Genero: ${genderValue}`;
+}
+
+function inputValidate() {
+  event.preventDefault();
+  const inputs = document.querySelectorAll('.text-class');
+  const rightContent = document.querySelector('.right-content');
+  
   for (let index = 0; index < inputs.length; index += 1) {
     if (inputs[index].value === '') {
       alert('Campos inválidos');
       return;
     }
   }
+  rightContent.style.display = 'none';
+  submitedForm();
+
 }
 
 function showCustomGenderOptions(input) {
