@@ -1,5 +1,12 @@
-function myFormProcessing(event) {
+function submitForms(event) {
+  event.preventDefault();
   const userEmailBox = document.getElementById('user-email-phone');
   alert(userEmailBox.value);
-  event.preventDefault(); 
+
 }
+
+window.onload = function init() {
+  document
+    .getElementById('button-login')
+    .addEventListener('click', submitForms, false);
+};
