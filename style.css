@@ -19,10 +19,6 @@
   width: 800px;
 }
 
-#facebook-networking {
-  width: 300px; 
-}
-
 .facebook-login {
   display: flex;
   justify-content: center;
