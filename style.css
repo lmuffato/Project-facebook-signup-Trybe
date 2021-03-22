@@ -50,3 +50,7 @@ label {
   flex-direction: row;
   border: solid 1px black;
 }
+
+.left-content {
+  width: 800px;
+}
