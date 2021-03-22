@@ -9,7 +9,7 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 2%;
 }
 
@@ -32,9 +32,7 @@
 
 .form-control {
   display: flex;
-  flex-direction: column;
   align-self: flex-end;
-  font-size: 12px;
 }
 
 #button-login {
