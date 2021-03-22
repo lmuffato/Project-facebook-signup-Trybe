@@ -9,19 +9,20 @@
   background-color: rgb(66, 103, 178);
   justify-content: space-between;
   top: 30px;
-
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  color: rgb(255, 255, 255);
+  color: white;
   padding-left: 10px;
   padding-right: 10px;
+  align-self: flex-end;
 }
 
-.form-group{
-  align-self: flex-end;
+.form-control {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .facebook-login {
