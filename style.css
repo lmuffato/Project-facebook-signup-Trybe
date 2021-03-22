@@ -6,14 +6,25 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  height: 85px;
+  height: 75px;
   justify-content: space-between;
   align-items: center;
+}
+
+header img {
+  margin-left: 150px;
+  width: 180px;
 }
 
 .facebook-login {
   display: flex;
   flex-basis: 50px;
+  margin-right: 90px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: white;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .form-group {
@@ -24,8 +35,19 @@
 }
 
 .form-control {
-  justify-content: center;
   align-self: flex-end;
+}
+
+.form-control button {
+  color: white;
+  background-color: #4267b2;
+  border: 1px solid #29487d;
+  border-radius: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 7px;
+  padding: 2px 6px;
 }
 
 .main-content {
