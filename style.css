@@ -10,6 +10,7 @@ body {
   height: 83px;
   background-color: rgb(66, 103, 178);
   justify-content: space-between;
+  align-items: center;
 }
 
 .facebook-login {
@@ -19,4 +20,13 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  display: flex;
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
 }
