@@ -39,3 +39,8 @@
   width: 300px;
   background-color: thistle;
 }
+
+#name-content {
+  display: flex;
+  /* dar margem */
+}
