@@ -21,13 +21,15 @@
                     <table>
 
                         <tr>
-                            <td><label for="loginUser" class='loginUser'>Email ou telefone</label></td>
-                            <td><label for="loginUser" class='loginUser'>Email ou telefone</label></td>
+                            <div class='form-group'>
+                            <td><label for="loginUser" class='loginUser'  id='user-email-phone-label'>Email ou telefone</label></td>
+                            <td><label for="loginUser" class='loginUser' class='form-group'>Email ou telefone</label></td>
+                            </div>
                         </tr>
 
                         <tr>
                             <td><input type='text' name='loginUser' placeholder="login" id='loginUser'
-                                    class='loginForm'></td>
+                                    class='loginForm' id='user-email-phone-label'></td>
                             <td><input type='password' name='loginPassword' placeholder="senha" id='loginPassword'
                                     class='loginForm'></td>
                             <td><button class='loginUser'>Entrar</button></td>

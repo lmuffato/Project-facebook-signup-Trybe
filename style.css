@@ -30,7 +30,7 @@ header {
   color: white;
 }
 
-input.loginForm {
+.loginForm input {
   border: 1px solid #1d2a5b;
   width: 150px;
   height: 20px;
@@ -43,7 +43,7 @@ input.loginForm {
   height: 100%;
 }
 
-button.loginUser {
+.loginUser button {
   color: white;
   padding: 4px;
   background-color: #4267b2;
@@ -51,6 +51,6 @@ button.loginUser {
 }
 
 .form-group {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
