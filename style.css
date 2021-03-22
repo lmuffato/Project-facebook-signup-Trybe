@@ -20,13 +20,10 @@
 
 .facebook-login {
   display: flex;
-  right: 150px;
-  margin-right: 200px;
 }
 
 .facebook-logo {
   width: 150px;
-  margin-left: 200px;
 }
 
 .main-content {
