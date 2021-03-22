@@ -16,13 +16,17 @@
 }
 
 .facebook-login {
-    display:flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 40%;
 }
 
 .form-group {
-    display:flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-
-
+.form-control {
+  align-self: flex-end;
+}
