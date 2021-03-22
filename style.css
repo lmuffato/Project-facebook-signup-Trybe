@@ -96,3 +96,7 @@ input {
   color: rgb(1, 1, 92);
   text-shadow: 0 0 1px black;
 }
+
+.right-content input {
+  width: 100px;
+}
