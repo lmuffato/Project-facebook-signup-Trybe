@@ -45,4 +45,13 @@
 .form-place {
   display: flex;
   flex-wrap: wrap;
+
+}
+
+#phone_email {
+  width: 80%;
+}
+
+#password {
+  width: 80%;
 }
