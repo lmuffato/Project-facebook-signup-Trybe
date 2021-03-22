@@ -18,6 +18,7 @@
 .main-content {
   display: flex;
   justify-content: space-around;
+  background-color: blanchedalmond;
 }
 
 .left-content {
@@ -26,6 +27,7 @@
 
 .right-content {
   width: 300px;
+  border: 2px solid black;
 }
 
 
@@ -210,8 +212,13 @@
 
 
 
+.data-content {
+  display: flex;
+  justify-content: space-between;
+}
 
-
-
+#first-name, #last-name {
+  width: 46%;
+}
 
 
