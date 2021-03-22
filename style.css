@@ -13,5 +13,9 @@
 }
 
 .facebook-logo {
-  margin-left: 100px;
+  align-self: flex-start;
+  width: 190px;
+  margin-top: 15px;
+  margin-left: 150px;
+
 }
