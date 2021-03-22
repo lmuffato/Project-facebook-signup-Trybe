@@ -22,11 +22,12 @@
   height: 100%;
   width: cover;
 }
+
 /* </logo-container> */
 
 /* <login-container> */
 .facebook-login {
-    display: flex;
+  display: flex;
 }
 
 /* </login-container> */
