@@ -4,3 +4,8 @@
   height: 100px;
   width: 100%;
 }
+
+.facebook-logo {
+  justify-items: center;
+  align-items: center;
+}
