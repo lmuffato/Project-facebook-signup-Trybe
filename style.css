@@ -34,7 +34,11 @@
   background-color: rgb(24, 119, 242);
 }
 
-main {
+.main-content {
   display: flex;
   flex-direction: column;
+}
+
+.left-content {
+  width: 800px;
 }
