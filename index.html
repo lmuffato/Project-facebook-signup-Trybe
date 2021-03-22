@@ -31,23 +31,31 @@
     </div>
 
   </header>
-
   <section class="main-content">
-    <div class="left-content">
-        <p>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-        <img id="facebook-slogan" src="imgs/networking.png" alt="Facebook Networking">
-    </div>
-    <div class="right-content">
-        <h1>Abra uma conta</h1>
-        <p class="quick-easy">É rápido e fácil.</p>
-        <form method="GET" class="new-account">
-            <div class="getName">
-                <input  type = " text " name = " firstname " id = " firstname " class = " obrigatório " placeholder = " Nome ">
-                <input  type = " text " name = " lastname " id = " lastname " class = " obrigatório " placeholder = " Sobrenome ">
+  <div class="left-content">
+      <p>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <img id="facebook-slogan" src="imgs/networking.png" alt="Facebook Networking">
+  </div>
+  <div class="right-content">
+      <h1>Abra uma conta</h1>
+      <p class="quick-easy">É rápido e fácil.</p>
+      <form method="GET" class="new-account">
+        <div class="getName">
+            <input type = "text" name = "firstname" id = "firstname" class = "required" placeholder = "Nome">
+            <input type = "text" name = "lastname" id = "lastname" class = "required" placeholder = "Sobrenome">
             </div>
-        </form>
-    </div>
-  </section>
-
+        <div class = "create-phoneEmail">
+            <input type="text" name="phone_email" id="phone_email" class="required" placeholder="Celular ou E-mail">
+        </div>
+        <div class="create-password">
+            <input id="create-password" type="password" name="password" class="required" placeholder="Nova senha">   
+        </div>
+        <div class="insert-birthdate">
+            <label id="label-birthdate" for="insertDate">Data de nascimento</label>
+            <input id="insertDate" type="text" name="birthdate" class="required" placeholder="dd/mm/aaaa">   
+        </div>  
+      </form>
+  </div>
+</section>
 </body>
 </html>
