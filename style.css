@@ -6,7 +6,7 @@
 
 .top-bar {
   display: flex;
-  background-color: rgb(66, 103, 178);
+  background-color: rgb(66 , 103 , 178);
   justify-content: space-between;
   top: 30px;
 
@@ -15,7 +15,7 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  color: rgb(255, 255, 255);
+  color: rgb(255 , 255 , 255);
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -31,6 +31,9 @@
 
 .main-content {
   display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
 }
 
 .left-content {
@@ -39,13 +42,17 @@
 
 .right-content {
   width: 300px;
+  background-color: saddlebrown;
 }
 
 #form-criacao {
   display: flex;
   flex-direction: column;
+  width: 300px;
+  font-size: 14px;
 }
 
 #form-name {
   display: flex;
+  width: 300px;
 }
