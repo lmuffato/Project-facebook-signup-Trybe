@@ -1,9 +1,3 @@
-function alert(number) {
-  if (number !== 5) {
-    document.querySelector('.alert').style.display = 'block';
-  }
-}
-
 function loginAlert() {
   const btnLogin = document.getElementById('button-login');
   let inputText = '';
@@ -59,10 +53,16 @@ function check() {
   return sum;
 }
 
+function alertText(number) {
+  if (number !== 5) {
+    document.querySelector('.alert').style.display = 'block';
+  }
+}
+
 function validate() {
   const btn = document.getElementById('facebook-register');
   btn.addEventListener('click', () => {
-    alert(check());
+    alertText(check());
   });
 }
 
