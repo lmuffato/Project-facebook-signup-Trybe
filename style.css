@@ -15,8 +15,9 @@
   align-items: flex-end;
 }
 
-.form-group{
+.form-group {
   display: flex;
   flex-direction: column;
   color: aliceblue;
 }
+
