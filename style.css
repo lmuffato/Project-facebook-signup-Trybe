@@ -1,10 +1,29 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-.top-bar{
+.top-bar {
   display: flex;
-  background-color: rgb(66, 103, 178)
-  
+  background-color: rgb(66, 103, 178);
+  padding: 20px;
+  justify-content:space-between;
+}
+
+.facebook-logo {
+  align-items: initial;
+}
+
+.facebook-login {
+  display: flex;
+  margin-right: 140px;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
 }
