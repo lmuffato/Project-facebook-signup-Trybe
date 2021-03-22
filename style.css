@@ -36,6 +36,12 @@
 }
 
 .right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 300px;
-  justify-content: space-around;
+}
+
+.form-place {
+  display: flex;
 }
