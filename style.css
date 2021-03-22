@@ -11,3 +11,11 @@ body {
   padding: 30px 100px;
   background-color: rgb(66, 103, 178);
 }
+
+.main-content {
+  display: flex;
+}
+
+.left-content {
+  width: 800px;
+}
