@@ -29,4 +29,24 @@ body {
 
 .main-content {
   display: flex;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+
+}
+
+.create-acount {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+.firstname , .lastname {
+  width: 150px;
 }
