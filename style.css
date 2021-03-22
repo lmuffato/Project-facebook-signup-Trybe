@@ -9,11 +9,6 @@
   background-color: rgb(66, 103, 178);
 }
 
-label {
-  display: flex;
-  flex-direction: column;
-}
-
 .facebook-login {
   display: flex;
 }
@@ -28,6 +23,10 @@ label {
 }
 
 .main-content {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-content {
+  width: 800px;
 }
