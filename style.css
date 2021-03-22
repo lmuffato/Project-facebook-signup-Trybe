@@ -44,15 +44,16 @@
 }
 
 .all-roll {
-  flex-basis: 100%;
+  width: 100%;
+  align-self: stretch;
 }
 
 .mid-roll {
-  flex-basis: 50%;
-  width: 50%;
+  width: 40%;
 }
 
 .form-new {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
