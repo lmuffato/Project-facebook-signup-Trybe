@@ -1,3 +1,27 @@
+:root {
+
+  --color-blue: rgb(66, 103, 178);
+
+}
+
+body {
+  margin: 0;
+}
+
+.top-bar {
+  width: 100%;
+  background-color: var(--color-blue);
+  display: flex;
+}
+
+.top-bar .container {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
 .facebook-login {
     display: flex;
 }
