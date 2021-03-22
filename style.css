@@ -24,6 +24,7 @@
   justify-content: flex-end;
   align-items: flex-end;
   margin: 15px;
+  right: 0;
 }
 
 .form-group {
