@@ -13,4 +13,9 @@
 
 #form-login {
   display: flex;
+  flex-direction: column;
+}
+
+#form-name {
+  display: flex;
 }
