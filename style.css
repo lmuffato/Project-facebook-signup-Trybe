@@ -28,6 +28,7 @@
 .main-content {
   display: flex;
   justify-content: space-around;
+  background-color: ghostwhite;
 }
 
 .left-content {
