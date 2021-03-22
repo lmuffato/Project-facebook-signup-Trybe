@@ -7,6 +7,7 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   height: 80px;
+  justify-content: space-between;
 }
 
 .facebook-logo {
@@ -15,10 +16,13 @@
 
 .facebook-login {
   display: flex;
-  justify-self: flex-end;
 }
 
 .form-group {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
+}
+
+#user-email-phone {
+  height: 15px;
 }
