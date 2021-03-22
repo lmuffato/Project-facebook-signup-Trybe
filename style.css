@@ -19,10 +19,6 @@
   width: 800px;
 }
 
-#facebook-networking {
-  width: 300px; /* pode ser alterado, o tamanho ainda não eh requisito */
-}
-
 .facebook-login {
   display: flex;
   justify-content: center;
@@ -37,4 +33,9 @@
 
 .form-control {
   align-self: flex-end;
+}
+
+.right-content {
+  width: 300px;
+  justify-content: space-around;
 }

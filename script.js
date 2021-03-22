@@ -1,7 +1,8 @@
 const emailLoginBtn = document.getElementById('button-login');
 
 function emailAlert() {
-  return alert(document.getElementById('user-email-phone').value);
+  const emailLoginValue = document.getElementById('user-email-phone').value;
+  alert(emailLoginValue);
 }
 
-emailLoginBtn.addEventListener('click', emailAlert());
+emailLoginBtn.addEventListener('click', emailAlert);
