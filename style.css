@@ -6,5 +6,39 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  height: 60px;
+  height: 100px;
+  justify-content: space-between;
+}
+
+.facebook-login {
+  display: flex;
+  color: white;
+  border: 1px solid black;
+  width: 300px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.header-username {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.header-username-item {
+  border: 2px solid yellow;
+  width: 140px;
+  height: 20px;
+}
+
+.header-password {
+  display: flex;
+  border: 1px solid white;
+  flex-direction: column;
+}
+
+.header-password-item {
+  border: 2px solid green;
+  width: 140px;
+  height: 20px;
 }
