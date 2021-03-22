@@ -8,34 +8,40 @@ body {
   margin: 0;
 }
 
-#top {
+.top-bar {
   display: flex;
-  flex-direction: row;
-  width: 1366px;
-  height: 60px;
-  background-color: rgb(66, 103, 178);
-}
-
-#barra-top {
+  height: auto;
+  align-content: space-between;
   width: 100%;
-  height: 100%;
+  background-color: rgb(66, 103, 178);
 }
 
 .facebook-logo {
   padding: 5px;
   margin-left: 20px;
+  display: flex;
+  justify-content: left;
 }
 
 .facebook-login {
-  float: right;
   display: flex;
+  justify-content: right;
+  margin-left: 10px;
   align-items: flex-end;
   color: white;
 }
 
 .form-group {
   display: flex;
-  flex-direction: row;
+  justify-content: right;
+}
+
+.form-group label {
+  padding: 3px;
+}
+
+.form-control {
+  display: flex;
 }
 
 .main-content {
@@ -166,5 +172,3 @@ input {
   margin-right: 15px;
   margin-top: 11px;
 }
-
-
