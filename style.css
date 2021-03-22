@@ -2,29 +2,80 @@
 
   --color-blue: rgb(66, 103, 178);
 
+  --color-blue-light: rgb(140, 166, 206);
+
+}
+
+@font-face {
+  font-family: Segoe;
+  src: url('fonts/segoe-ui-4/Segoe UI.ttf');
 }
 
 body {
   margin: 0;
+  font-family: Segoe, sans-serif;
+}
+
+label {
+  font-weight: 600;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 70%;
+}
+
+.input {
+  padding: 6px 8px;
+  border: 1px solid black;
+}
+
+.input-description {
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--color-blue-light);
+}
+
+.btn {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 8px;
+  margin-top: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary {
+  background-color: var(--color-blue);
+  color: white;
 }
 
 .top-bar {
   width: 100%;
+  margin: 0 auto;
+  padding: 8px 64px;
+  box-sizing: border-box;
   background-color: var(--color-blue);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.top-bar .container {
-  width: 100%;
-  max-width: 920px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+.top-bar label {
+  padding-bottom: 4px;
 }
 
 .facebook-login {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.facebook-login a {
+  font-size: 12px;
 }
 
 .form-group {
@@ -35,7 +86,7 @@ body {
 }
 
 .form-control {
-  align-self: flex-end;
+  align-self: center;
   padding: 7px 5px;
 }
 
