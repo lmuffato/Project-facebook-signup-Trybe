@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+}
+
+.facebook-logo {
+  display: flex;
+  width: 220px;
+  height: 90px;
+}
+
+.facebook-login {
+  color: white;
+  padding: 13px 0px 0px;
+  display: flex;
+  justify-content: end;
+}
+
+.form-element {
+  margin: 10px;
+  margin: 7px;
+}
