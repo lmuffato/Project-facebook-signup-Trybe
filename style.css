@@ -29,6 +29,7 @@
 .form-control {
   align-self: flex-end;
 }
+
 #button-login {
   color: white;
   background-color: rgb(24, 119, 242);
@@ -36,9 +37,12 @@
 
 .main-content {
   display: flex;
-  flex-direction: column;
 }
 
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }
