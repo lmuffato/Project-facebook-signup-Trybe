@@ -5,13 +5,13 @@ function alertLogin() {
 const loginBtn = document.querySelector('#button-login');
 loginBtn.addEventListener('click', alertLogin);
 
-const gender = document.querySelector('#other');
+// const gender = document.querySelector('#other');
 
-function otherGender() {
-  const otherGenderInput = document.querySelector('.input-gender-hidden');
-  if (gender.checked) {
-    otherGenderInput.style.display = 'unset';
-  }
-}
+// function otherGender() {
+//   const otherGenderInput = document.querySelector('.input-gender-hidden');
+//   if (gender.checked) {
+//     otherGenderInput.style.display = 'unset';
+//   }
+// }
 
-gender.addEventListener('click', otherGender);
+// gender.addEventListener('click', otherGender);
