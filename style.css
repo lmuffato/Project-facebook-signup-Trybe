@@ -20,3 +20,8 @@
   border: solid 1px black;
   width: 30%;
 }
+
+.form-group {
+  display: flex;
+  flex-wrap: column;
+}
