@@ -13,16 +13,29 @@ body {
   flex-direction: row;
   width: 1366px;
   height: 60px;
+  background-color: rgb(66, 103, 178);
 }
 
 #barra-top {
-  background-color: rgb(66, 103, 178);
   width: 100%;
   height: 100%;
 }
 
-.img-logo {
+.facebook-logo {
   padding: 5px;
+  margin-left: 20px;
+}
+
+.facebook-login {
+  float: right;
+  display: flex;
+  align-items: flex-end;
+  color: rgb(255, 255, 255);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
 }
 
 .main-content {
