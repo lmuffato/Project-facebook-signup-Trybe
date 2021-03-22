@@ -42,7 +42,6 @@ body {
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
-  font-weight: bold;
 }
 
 .right-content {
@@ -78,7 +77,7 @@ body {
 
 .new-account {
   display: flex;
-  flex-flow: column nowrap;/*não permite quebra de linha*/
+  flex-flow: column nowrap; /* não permite quebra de linha */
 }
 
 .new-account input {
@@ -101,10 +100,10 @@ body {
   width: 70%;
 }
 
-/*REQUISITO 19 - USAR DEPOIS
-.genderCustom #botton-custom { 
-  width: 90%;
-}*/
+/* REQUISITO 19 - USAR DEPOIS
+.genderCustom #botton-custom {
+width: 90%;
+} */
 
 .create-phoneEmail {
   width: 90%;
@@ -119,7 +118,6 @@ body {
   display: flex;
   flex-flow: column nowrap;
   color: rgb(133, 137, 145);
-  font-weight: bold;
   font-size: 1.08em;
 }
 
@@ -132,8 +130,6 @@ body {
   flex-flow: column nowrap;
   margin: 10px 8px 8px;
   color: rgb(133, 137, 145);
-  font-weight: bold;
-  font-size: 1.08em;
 }
 
 .type-gender {
@@ -159,12 +155,10 @@ body {
   width: 200px;
   border-radius: 5px;
   color: white;
-  cursor: pointer;  
-  background: linear-gradient(#67ae55, #578843);
-  border: 1px solid #2b7d07;
+  cursor: pointer;
   font-size: 19px;
   font-weight: 600;
-  height: 40px; 
+  height: 40px;
 }
 
 .button-submit:hover {
