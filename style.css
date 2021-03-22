@@ -6,19 +6,12 @@
   justify-content: space-evenly;
 }
 
-.div-form {
-  align-self: flex-end;
-}
-
 .facebook-login {
   display: flex;
   flex-wrap: wrap;
 }
 
-.div-logo {
-  align-self: center;
-}
-
-.div-form {
-  align-self: center;
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
