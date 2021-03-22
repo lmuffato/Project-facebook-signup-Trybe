@@ -11,9 +11,14 @@ body {
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
+  justify-content: space-between;
 }
 
 .facebook-logo {
   display: flex;
   justify-content: left;
+}
+
+.facebook-login {
+    display: flex;
 }
