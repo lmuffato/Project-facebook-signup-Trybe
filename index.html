@@ -10,23 +10,20 @@
 
 <body>
     <header class="top-bar flexConteiner">
-        <img class="facebook-logo" src="./imgs/facebook-logo.png" alt="facebook-logo">
+        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="facebook-logo">
         <form class="facebook-login flexConteiner">
-            <div>
-                <div class="input flexConteiner form-group">
-                    <label for="email">Email ou telefone</label>
-                    <input type="text" name="email" id="email">
-                </div>
+            <div class="input flexConteiner form-group">
+                <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+                <input type="text" name="user-email-phone" id="user-email-phone">
             </div>
             <div class="input flexConteiner form-group">
-                <label for="password">Senha</label>
-                <input type="password" name="password" id="password">
+                <label id="user-password-label" for="user-password">Senha</label>
+                <input type="password" name="user-password" id="user-password">
             </div>
-            <div>
-
+            <div class="form-control flexConteiner">
+                <button id="button-login">Entrar</button>
             </div>
         </form>
-
     </header>
     <script src="script.js"></script>
 </body>
