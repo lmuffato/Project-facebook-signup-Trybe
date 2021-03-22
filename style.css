@@ -30,8 +30,35 @@
 .main-content {
   display: flex;
   flex-direction: row;
+  justify-content: center ;
 }
 
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.right-content h1 {
+  font-size: 36px;
+  color: #333;
+  font-weight: 600;
+}
+
+#facebook-slogan {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
+}
+
+#faceboook-networking {
+  width: 537px;
+  aspect-ratio: auto 537 / 195;
+  height: 195px;
 }
