@@ -18,14 +18,12 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
-  flex-basis: ;
+  margin: 0 10px;
 }
-
 
 .facebook-login {
   display: flex;
 }
-
 
 /* csss main */
 .main-content {
