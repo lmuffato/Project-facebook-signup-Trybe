@@ -5,9 +5,10 @@
 
 .top-bar {
   display: flex;
+  flex-direction: row;
   background-color: rgb(66, 103, 178);
   justify-content: space-between;
-  align-items: center;
+  align-items:flex-end;
   padding: 1%;
 }
 
@@ -18,8 +19,7 @@
 
 .facebook-login {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  flex-direction: row;
 }
 
 .main-content {
