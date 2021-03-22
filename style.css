@@ -10,8 +10,20 @@ body {
 
 .top-bar {
   display: flex;
+  padding: 30px;
   background-color: rgb(66, 103, 178);
-  padding: 50px;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: ;
+}
+
+
+.facebook-login {
+  display: flex;
 }
 
 
