@@ -20,12 +20,13 @@
 
 .facebook-login {
   display: flex;
-  position: absolute;
   right: 150px;
+  margin-right: 200px;
 }
 
 .facebook-logo {
   width: 150px;
+  margin-left: 200px;
 }
 
 .main-content {
@@ -90,4 +91,11 @@ input {
   border: 0.5px solid rgb(1, 1, 105);
   border-radius: 2px;
   color: white;
+}
+
+#facebook-slogan {
+  margin-top: 20px;
+  font-size: 20px;
+  color: rgb(1, 1, 92);
+  text-shadow: 0 0 1px black;
 }
