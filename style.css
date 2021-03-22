@@ -50,10 +50,6 @@ header {
   justify-content: center;
 }
 
-.form-group:first-child {
-  margin-bottom: 14px;
-}
-
 .form-group input {
   margin: 5px 0;
 }
@@ -67,6 +63,11 @@ header {
   padding: 2px;
   background-color: #4267b2;
   border: 1px solid #29487d;
+}
+
+.form-control {
+  height: 54%;
+  align-self: flex-end;
 }
 
 main {
