@@ -59,9 +59,29 @@
 .right-content h1 {
   color: #333;
   font-size: 36px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .quick-easy {
   color: #1d2129;
   font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.register input {
+  font-size: 18px;
+  padding: 8px 10px;
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
+}
+
+.name input {
+  width: 200px;
+  margin-right: 12px;
+}
+
+.name {
+  display: flex;
+  flex-flow: row nowrap;
 }
