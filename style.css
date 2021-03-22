@@ -24,38 +24,34 @@
 }
 
 .email {
-  display: flex;
-  flex-direction: column;
   margin-right: 10px;
   margin-bottom: 22px;
 }
 
 .pass {
-  display: flex;
-  flex-direction: column;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
-.bt {
-  background-color: blue;
+button {
   border: solid 1px black;
-  display: inline-block;
   font-size: 12px;
   font-weight: 900;
   line-height: 18px;
   margin: 10px;
   padding: 0;
-  white-space: nowrap;
-  align-items: flex-start;
-  text-align: center;
-  appearance: auto;
-  box-sizing: border-box;
   width: 45px;
   height: 22px;
+  background-color: rgb(166, 149, 240);
+  color: white;
 }
 
 a {
   color: rgb(166, 149, 240);
   text-decoration: none;
   margin-top: 4px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
