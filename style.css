@@ -1,0 +1,17 @@
+.left-content {
+    width: 800px;
+    background-color: red;
+}
+
+.right-content {
+    width: 300px;
+};
+
+
+.formName {
+    display: inline-block;
+}
+
+.phone_email { 
+    width: 100%;
+}
