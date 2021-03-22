@@ -3,16 +3,25 @@
   background-color: rgb(66, 103, 178);
   margin: -10px;
   height: 85px;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .facebook-login {
   display: flex;
+  flex-basis: 50px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  margin: 8px;
+}
+
+.form-control {
+  justify-content: center;
+  align-self: flex-end;
 }
 
 .main-content {
@@ -49,169 +58,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .data-content {
   display: flex;
   justify-content: space-between;
@@ -222,7 +68,7 @@
   width: 46%;
 }
 
-#phone-email {
+#phone-email, #password {
   width: 100%;
   margin-top: 8px;;
 }
