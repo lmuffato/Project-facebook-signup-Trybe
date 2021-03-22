@@ -44,9 +44,15 @@ body {
 .create-acount {
   display: flex;
   flex-wrap: wrap;
-  width: 300px;
+  width: 250px;
 }
 
-.firstname , .lastname {
-  width: 150px;
+.user-name {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.full-name {
+  width: 45%;
 }
