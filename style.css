@@ -57,3 +57,7 @@
 .full-name {
   display: flex;
 }
+
+#label-birthdate {
+  display: block;
+}
