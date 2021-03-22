@@ -15,6 +15,13 @@
   display: flex;
 }
 
+.left-content {
+  width: 800px; 
+}
+
+#facebook-networking {
+  width: 300px; /*pode ser alterado, o tamanho ainda não eh requisito*/
+}
 .facebook-login {
   display: flex;
   justify-content: center;
