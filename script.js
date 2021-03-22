@@ -34,9 +34,12 @@ function inputValidate(e) {
   e.preventDefault();
   const inputs = document.querySelectorAll('.text-class');
   const rightContent = document.querySelector('.right-content');
+  const registerForm = document.querySelector('#register-form');
   for (let index = 0; index < inputs.length; index += 1) {
     if (inputs[index].value === '') {
-      alert('Campos inválidos');
+      const invalidField = document.createElement('span');
+      invalidField.innerText = 'Campos inválidos';
+      registerForm.appendChild(invalidField);
       return;
     }
   }
