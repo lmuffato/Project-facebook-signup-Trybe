@@ -14,3 +14,7 @@
 .main-content {
   display: flex;
 }
+
+.facebook-login {
+  display: flex;
+}
