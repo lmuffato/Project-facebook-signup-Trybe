@@ -26,3 +26,7 @@
 #user-email-phone , #user-password {
   height: 20px;
 }
+
+.form-control {
+  align-self: flex-end;
+}
