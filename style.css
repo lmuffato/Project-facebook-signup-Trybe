@@ -9,5 +9,8 @@
 
 .facebook-logo {
   display: flex;
-  justify-content: start;
+}
+
+.facebook-login {
+  display: flex;
 }
