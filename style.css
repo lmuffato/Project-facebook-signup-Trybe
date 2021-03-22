@@ -17,7 +17,7 @@
 
 .facebook-login {
   display: flex;
- flex-flow: row nowrap;
+  flex-flow: row nowrap;
 }
 
 .form-group {
@@ -49,4 +49,4 @@
 
 .names {
   display: flex;
-};
+}
