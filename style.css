@@ -1,3 +1,15 @@
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  height: 100px;
+}
+
+.facebook-logo {
+  display: flex;
+  align-items: flex-start;
+  margin-left: 100px;
+}
+
 .main-content {
   display: flex;
   justify-content: center;
@@ -14,15 +26,3 @@
 .complete-name {
   display: flex;
 }
-.top-bar{
-background-color: rgb(66, 103, 178);
-display: flex;
-height: 100px;
-}
-
-.facebook-logo {
-  display: flex;
-  align-items: flex-start;
-  margin-left: 100px;
-}
-
