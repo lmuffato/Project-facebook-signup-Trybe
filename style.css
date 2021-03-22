@@ -28,8 +28,14 @@
   display: flex;
   background-color: whitesmoke;
   border: 1px solid black;
+  justify-content: space-between;
 }
 
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
+  background-color: thistle;
 }
