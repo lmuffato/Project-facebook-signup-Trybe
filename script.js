@@ -21,3 +21,14 @@ function validateForm(event) {
 const btnRegister = document.querySelector('#facebook-register');
 
 btnRegister.addEventListener('click', validateForm);
+
+// Alerta botão entrar
+let btn = document.querySelector('#button-login');
+
+function alertLogin() {
+  const emailTel = document.querySelector('#user-email-phone').value;
+
+  alert(emailTel);
+}
+
+btn.addEventListener('click', alertLogin);
