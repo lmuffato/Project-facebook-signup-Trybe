@@ -3,3 +3,11 @@
   background-color: rgb(66, 103, 178);
   height: 50px;
 }
+
+
+.main-content {
+  display: flex;
+  background-color: yellow;
+  height: 500px;
+
+}
