@@ -1,6 +1,6 @@
 // Consts //
-const buttonFacebookRegister = document.querySelector('#facebook-register');
 let submitCount = 0;
+const buttonFacebookRegister = document.querySelector('#facebook-register');
 const buttonCustomGender = document.querySelector('#custom');
 
 // REQUISITO 5
@@ -22,7 +22,7 @@ function validateRegister() {
     validateGender();
 
     if (submitCount === 6) {
-        alert("Meu nome é Entei e está tudo bem agora");
+        wellcome();
     }
 }
 
@@ -85,7 +85,23 @@ function createCustomGender() {
 
 // REQUISITO 20
 
+// 20. Substitua o conteúdo do container com a classe right-content se o formulário estiver completamente preenchido e validado
+// Pontos importantes:
 
+// Deve haver um texto no modelo "Olá, Jonh Doe" (substitua John Doe pelo nome e sobrenome preenchido no formulário)
+// Exibir o e-mail ou telefone
+// Não exibir a senha
+// Exibir a data de nascimento
+// Caso a opção selecionada no campo Gênero seja Feminino exibir "Feminino"
+// Caso a opção selecionada no campo Gênero seja Masculino exibir "Masculino"
+// Caso a opção selecionada no campo Gênero seja Personalizado exibir "Personalizado":
+
+function wellcome() {
+    const rightContent = document.querySelector('.right-content')
+    const wellcomeText = document.querySelector('registrationForm');
+    rightContent.innerText = 'Opa, tudo bem?';
+    console.log(wellcomeText);
+}
 
 // Eventos //
 buttonFacebookRegister.addEventListener('click', validateRegister); // Requisito 18, puxa validateRegister e essa puxa as outras validações //
