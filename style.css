@@ -3,4 +3,10 @@
   background-color: rgb(66, 103, 178);
   width: 100%;
   height: 100px;
+  justify-content: space-around;
+}
+
+.facebook-login {
+  display: flex;
+  flex-wrap: wrap;
 }
