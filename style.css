@@ -38,6 +38,7 @@
 
 #signup-form {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .inputs {
