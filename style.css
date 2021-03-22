@@ -8,7 +8,12 @@
   display: flex;
   background-color: rgb(66, 103, 178);
   height: 80px;
-  justify-content: flex-start;
+  justify-content: space-around;
+}
+
+.facebook-login {
+  display: flex;
+  align-items: center;
 }
 
 .main-content {
