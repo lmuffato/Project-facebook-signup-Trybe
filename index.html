@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
+
 <body>
-  
+  <div class="top-bar">
+    <div class="image-container">
+      <img height="70" class="facebook-logo" src="imgs/facebook-logo.png" alt="logo do facebook">
+    </div>
+    <div class="forms-container">
+      <form class="form" action="https://dummy.url" method="post">
+        <div class="form-group">
+          <label for="email">Email ou telefone</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div class="form-group">
+          <label for="pass">Senha</label>
+          <input type="password" name="password" id="pass">
+          <a href="http://dummy.url" target="_blank" rel="noopener noreferrer">Esqueceu a conta?</a>
+        </div>
+        <div class="form-group submit-container">
+          <label for="submit"></label>
+          <input class="enter-btn" type="submit" value="Entrar" id="submit">
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
+
 </html>
