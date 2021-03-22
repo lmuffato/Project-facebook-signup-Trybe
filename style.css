@@ -38,3 +38,7 @@
 .nome {
   display: flex;
 }
+
+#label-gender {
+  display: block;
+}
