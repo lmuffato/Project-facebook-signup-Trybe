@@ -27,7 +27,7 @@
             <button type="submit" id="button-login" class="btn btn-primary">Entrar</button>
         </div>
     </form>
-</header>    
+</header>
 <div class="main-content">
     <div class="left-content">
         <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
@@ -36,7 +36,7 @@
     <div class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
-        <form id="registrationForm" action="#">
+        <form id="registrationForm" name="registration" action="#">
             <div class="input-container">
                 <input type="text" name="firstname" id="firstname" placeholder="Nome" aria-label="nome">
                 <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" aria-label="sobrenome">
@@ -49,9 +49,9 @@
             </div>
             <div class="radio-group">
                 <p>Gênero</p>
-                <input type="radio" name="gender" id="female" aria-label="feminino">Feminino
-                <input type="radio" name="gender" id="male" aria-label="masculino">Masculino
-                <input type="radio" name="gender" id="custom" aria-label="custom">Personalizado
+                <input type="radio" name="gender" id="female" aria-label="feminino" value="Feminino">Feminino
+                <input type="radio" name="gender" id="male" aria-label="masculino" value="Masculino">Masculino
+                <input type="radio" name="gender" id="custom" aria-label="custom" value="Personalizado">Personalizado
             </div>
             <div id="hidden-input"></div>
             <button type="submit" id="facebook-register">Cadastre-se</button>
