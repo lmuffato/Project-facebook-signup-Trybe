@@ -21,7 +21,17 @@ header {
   display: flex;
 }
 
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
 .form-control {
   display: flex;
   align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
 }
