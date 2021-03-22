@@ -46,10 +46,10 @@
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="">
-        <fieldset class="nome">
+        <div class="nome">
           <input type="text" name="firstname" placeholder="Nome" class="first-last-name">
           <input type="text" name="lastname" placeholder="Sobrenome" class="first-last-name">
-        </fieldset>
+        </div>
         <input type="text" name="phone_email" placeholder="Celular ou email" id="phone_email" class="data">
         <input type="password" name="password" placeholder="Nova senha" id="password" class="data">
         <fieldset>
@@ -59,15 +59,17 @@
         <fieldset>
           <label for="" id="label-gender">Gênero</label>
           <label for="female">
-            <input type="radio" name="gender" id="female">Feminino
+            <input type="radio" name="gender" id="female" value="Feminino">Feminino
           </label>
           <label for="male">
-            <input type="radio" name="gender" id="male">Masculino
+            <input type="radio" name="gender" id="male" value="Masculino">Masculino
           </label>
           <label for="personal">
-            <input type="radio" name="gender" id="personal">Personalizado
+            <input type="radio" name="gender" id="personal" value="Personalizado">Personalizado
           </label>
         </fieldset>
+
+        <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
     </section>
   </main>
