@@ -8,31 +8,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="top-bar">
-        <div class="container">
-            <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo do Facebook">
+<header class="top-bar">
+    <div class="container">
+        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo do Facebook">
+    </div>
+</header>
+<form action="" method="get" class="facebook-login">
+    <!-- REQUISITO 5 -->
+    <div class="form-group">
+        <div id="user-email-phone-label">
+            <label for="email ou telefone">Email ou telefone</label>
+            <input type="text" name="name" id="user-email-phone">
         </div>
-    </header>
-    <form action="" method="get" class="facebook-login">
-        <!-- REQUISITO 5 -->
-        <div class="form-group">
-            <div id="user-email-phone-label">
-              <label for="email ou telefone">Email ou telefone</label>
-              <input type="text" name="name" id="user-email-phone">
-            </div>
+    </div>
+    <!-- REQUISITO 6 -->
+    <div class="form-group">
+        <div id="user-password-label">
+            <label for="senha">Senha</label>
+            <input type="text" name="senha" id="user-password">
         </div>
-        <!-- REQUISITO 6 -->
-        <div class="form-group">
-            <div id="user-password-label">
-              <label for="senha">Senha</label>
-              <input type="text" name="senha" id="user-password">
-            </div>
-        </div>
-        <!-- REQUISITO 7 -->
-        <div class="form-control">
-          <button type="submit" id="button-login">Entrar</button>
-        </div>
-    </form>
+    </div>
+    <!-- REQUISITO 7 -->
+    <div class="form-control">
+        <button type="submit" id="button-login">Entrar</button>
+    </div>
+</form>
+<div class="main-content">
+
+</div>
 <script src="script.js"></script>
 </body>
 </html>

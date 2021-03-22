@@ -23,14 +23,19 @@ body {
 }
 
 .facebook-login {
-    display: flex;
+  display: flex;
 }
 
 .form-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-control {
-    align-self: flex-end;
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
 }
