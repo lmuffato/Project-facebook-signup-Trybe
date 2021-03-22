@@ -18,6 +18,7 @@
 .form-group {
   display: flex;
   align-items: center;
+}
 
 .facebook-login {
   right: 0;
