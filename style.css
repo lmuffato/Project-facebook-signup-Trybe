@@ -25,9 +25,13 @@
 
 .main-content {
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
 }
 
 .left-content {
   width: 800px;
+}
+
+.rigth-content {
+  width: 300px;
 }
