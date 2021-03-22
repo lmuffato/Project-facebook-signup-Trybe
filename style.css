@@ -37,3 +37,8 @@ header .facebook-login {
 .right-content {
   width: 300px;
 }
+
+.flex-start {
+  display: flex;
+  place-self: flex-start;
+}
