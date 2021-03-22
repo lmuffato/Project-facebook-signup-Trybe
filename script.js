@@ -2,8 +2,7 @@ function submitForms(event) {
   event.preventDefault();
   const userEmailBox = document.getElementById('user-email-phone');
   alert(userEmailBox.value);
-
-}
+};
 
 window.onload = function init() {
   document
