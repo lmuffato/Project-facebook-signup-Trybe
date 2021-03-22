@@ -20,3 +20,8 @@ header {
 .facebook-login {
   display: flex;
 }
+
+.form-control {
+  display: flex;
+  align-self: flex-end;
+}
