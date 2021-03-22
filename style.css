@@ -71,12 +71,18 @@
   font-size: 25px;
 }
 
-#label-birthdate {
+#label-birthdate , #label-gender {
   width: 100%;
-  background-color: red;
   margin-top: 20px;
 }
 
 #date {
   width: 40%;
+}
+
+.radio-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
 }
