@@ -2,14 +2,16 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
+  width: auto;
+  height: 50px;
 }
 
 .facebook-logo {
-  padding: 5px;
+  padding: 3px;
 }
 
 .facebook-login {
-  padding: 13px;
+  padding: 12px;
 }
 
 .form-group {
