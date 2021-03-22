@@ -23,23 +23,25 @@
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <p id="quick-easy">É rápido e fácil</p>
-        <form action="">
+        <form id="form-create-account">
           <div class="complete-name">
-            <input type="text" name="firstname" placeholder="Nome">
-            <input type="text" name="lastname" placeholder="Sobrenome">
+            <input class="form-validate" type="text" name="firstname" placeholder="Nome">
+            <input class="form-validate" type="text" name="lastname" placeholder="Sobrenome">
           </div>
-          <input type="text" name="phone_email" placeholder="Celular ou email">
-          <input type="password" name="password" placeholder="Nova senha">
+          <input class="form-validate" type="text" name="phone_email" placeholder="Celular ou email">
+          <input class="form-validate" type="password" name="password" placeholder="Nova senha">
           <div>
             <label id="label-birthdate">Data de nascimento</label>
-            <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+            <input class="form-validate" type="text" name="birthdate" placeholder="dd/mm/aaaa">
           </div>
           <div>
             <label id="label-gender">Gênero</label>
             <div>
-              <input type="radio" name="gender" id="feminine"><label for="feminine">Feminino</label>
-              <input type="radio" name="gender" id="male"><label for="male">Masculino</label>
-              <input type="radio" name="gender" id="custom"><label for="custom">Personalizado</label>
+              <input class="form-validate" type="radio" name="gender" id="feminine"><label
+                for="feminine">Feminino</label>
+              <input class="form-validate" type="radio" name="gender" id="male"><label for="male">Masculino</label>
+              <input class="form-validate" type="radio" name="gender" id="custom"><label
+                for="custom">Personalizado</label>
             </div>
           </div>
           <button id="facebook-register" type="submit">Cadastre-se</button>
@@ -47,6 +49,8 @@
       </div>
     </div>
   </main>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
