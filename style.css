@@ -65,10 +65,6 @@ a:hover {
   align-items: center;
 }
 
-.top-bar label {
-  padding-bottom: 4px;
-}
-
 .facebook-login {
   display: flex;
   align-items: flex-start;
@@ -83,6 +79,15 @@ a:hover {
   flex-direction: column;
   padding: 5px;
   color: white;
+}
+
+.form-group label {
+  padding-bottom: 4px;
+}
+
+.form-group .input {
+  max-width: 150px;
+  margin-right: 8px;
 }
 
 .form-control {
