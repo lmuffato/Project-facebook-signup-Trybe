@@ -43,6 +43,10 @@ form {
   flex-wrap: wrap;
 }
 
+.names-container {
+  display: flex;
+}
+
 #customGender {
   display: none;
 }
