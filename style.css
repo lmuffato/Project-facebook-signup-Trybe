@@ -23,11 +23,17 @@ img {
   border: 1px solid purple;
   display: flex;
   height: 200px;
+  width: 500px;
+  margin-right: 50px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end
 }
 
 .left-content {
