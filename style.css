@@ -53,3 +53,9 @@
   background-color: rgb(66, 103, 178);
   color: white;
 }
+
+.alert {
+  display: none;
+  color: red;
+  font-size: 30px;
+}
