@@ -1,6 +1,6 @@
 function buttonAlert(e) {
   e.preventDefault();
-  const emailInputElement = document.getElementById('user-email-phone-label');
+  const emailInputElement = document.getElementById('user-email-phone');
   alert(emailInputElement.value);
 }
 
@@ -13,33 +13,45 @@ function genderCheck() {
   }
 }
 
-function submitedForm() {
-  const name = document.querySelector('#name');
-  const tel = document.querySelector('#tel');
-  const birthdate = document.querySelector('#birthdate');
-  const gender = document.querySelector('#gender');
-  const inputs = document.querySelectorAll('.text-class');
-  const genderValue = genderCheck();
-  const submitForm = document.querySelector('.submited-form');
+function clearRightContent(nameElement, emailElement,
+  birthdateElement, genderElement) {
+  const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = '';
+  rightContent.appendChild(nameElement);
+  rightContent.appendChild(emailElement);
+  rightContent.appendChild(birthdateElement);
+  rightContent.appendChild(genderElement);
+}
 
-  name.innerText = `Olá ${inputs[0].value} ${inputs[1].value}`;
-  tel.innerText = `Telefone: ${inputs[2].value}`;
-  birthdate.innerText = `Data de Nascimento: ${inputs[3].value}`;
-  gender.innerText = `Genero: ${genderValue}`;
-  submitForm.style.display = 'block';
+function submitedForm() {
+  const nameValue = document.getElementById('firstname').value;
+  const lastnameValue = document.getElementById('lastname').value;
+  const email = document.getElementById('email').value;
+  const birthdate = document.getElementById('birthdate').value;
+  const gender = genderCheck();
+  const nameElement = document.createElement('p');
+  nameElement.innerHTML = `"Olá, ${nameValue} ${lastnameValue}`;
+  const emailElement = document.createElement('p');
+  emailElement.innerHTML = email;
+  const birthdateElement = document.createElement('p');
+  birthdateElement.innerHTML = birthdate;
+  const genderElement = document.createElement('p');
+  genderElement.innerHTML = gender;
+  clearRightContent(nameElement, emailElement, birthdateElement, genderElement);
 }
 
 function inputValidate(e) {
   e.preventDefault();
   const inputs = document.querySelectorAll('.text-class');
-  const rightContent = document.querySelector('.right-content');
+  const registerForm = document.querySelector('#register-form');
   for (let index = 0; index < inputs.length; index += 1) {
     if (inputs[index].value === '') {
-      alert('Campos inválidos');
+      const invalidField = document.createElement('span');
+      invalidField.innerText = 'Campos inválidos';
+      registerForm.appendChild(invalidField);
       return;
     }
   }
-  rightContent.style.display = 'none';
   submitedForm();
 }
 

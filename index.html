@@ -16,17 +16,17 @@
       />
       <form action="" class="facebook-login">
         <div class="form-group">
-          <label for="user-email-phone-label">Email ou telefone</label>
+          <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
           <input
-            id="user-email-phone-label"
-            name="user-email-phone-label"
+            id="user-email-phone"
+            name="user-email-phone"
             type="text"
           />
         </div>
         <div class="form-group">
-          <label for="user-password-label">Senha</label>
+          <label id="user-password-label" for="user-password-label">Senha</label>
           <input
-            id="user-password-label"
+            id="user-password"
             name="user-password-label"
             type="text"
           />
@@ -47,21 +47,22 @@
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <span class="quick-easy">É rápido e fácil.</span>
-        <form action="">
+        <form id="register-form" action="">
           <div class="form-line">
-            <input type="text" class='text-class' name="firstname" placeholder="Nome" />
-            <input type="text" class='text-class' name="lastname" placeholder="Sobrenome" />
+            <input type="text" id="firstname" name="firstname" placeholder="Nome" />
+            <input type="text" class='text-class' id="lastname" name="lastname" placeholder="Sobrenome" />
           </div>
           <input
             type="text"
             class='text-class'
             name="phone_email"
+            id="email"
             placeholder="Celular ou email"
           />
           <input type="password" class='text-class' name="password" placeholder="Nova senha" />
           <div>
-            <label for="label-birthdate">Data de nascimento</label>
-            <input type="text" class='text-class' name="birthdate" placeholder="dd/mm/aaaa" />
+            <label id="label-birthdate" for="birthdate">Data de nascimento</label>
+            <input type="text" class='text-class' id="birthdate" name="birthdate" placeholder="dd/mm/aaaa" />
           </div>
           <div>
             <label for="gender" id="label-gender">Gênero</label>
@@ -77,12 +78,7 @@
           <button id="facebook-register" type="submit">Cadastre-se</button>
         </form>
       </div>
-      <div class="submited-form">
-        <p id="name"></p>
-        <p id="tel"></p>
-        <p id="birthdate"></p>
-        <p id="gender"></p>
-      </div>
+
     </main>
     <script src="script.js"></script>
   </body>
