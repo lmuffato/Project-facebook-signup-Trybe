@@ -8,6 +8,7 @@
   background-color: rgb(66, 103, 178);
   justify-content: space-between;
   align-items: center;
+  padding: 1%;
 }
 
 .form-group {
@@ -17,9 +18,8 @@
 
 .facebook-login {
   display: flex;
-  position: absolute;
   justify-content: flex-end;
-  right: 150px;
+  flex-direction: row;
 }
 
 .main-content {
