@@ -1,0 +1,86 @@
+body {
+  background: #fff;
+  color: #1c1e21;
+  direction: ltr;
+  line-height: 1.34;
+  margin: 0;
+  padding: 0;
+  unicode-bidi: embed;
+}
+
+.fb-logo {
+  align-items: flex-start;
+  width: 170px;
+  margin-top: 17px;
+  /* height: 74px; */
+}
+
+.top-bar {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  width: 100%;
+  height: 78px;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+#facebook-slogan {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #0E385F;
+  text-align: justify;
+  font-weight: bold;
+  margin: 40px, 0px, 0px;
+}
+
+h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.quick-easy {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 19px;
+}
+
+.p-terms {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 11px;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.register-form input{
+  margin: 5px;
+  display: block;
+}
+
+.first-last-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-last-name > input:nth-child(1) {
+  width: 50%;
+}
+
+.first-last-name > input:nth-child(2) {
+  width: 50%;
+}
+
+.div-gender {
+  display: flex;
+  justify-content: space-between;
+}
