@@ -5,11 +5,37 @@
 }
 
 body {
-  background-color:  rgb(241, 239, 247);
+  background-color: rgb(241, 239, 247);
 }
 
 .top-bar {
   display: flex;
+  padding: 30px;
   background-color: rgb(66, 103, 178);
-  padding: 50px;
+  justify-content: space-between;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: ;
+}
+
+
+.facebook-login {
+  display: flex;
+}
+
+
+/* csss main */
+.main-content {
+  display: flex;
+  flex-direction: row;
+  background-color: azure;
+  width: 100%;
+  height: 800px;
+}
+
+.left-content {
+  width: 800px;
 }

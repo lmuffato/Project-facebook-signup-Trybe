@@ -8,19 +8,33 @@
   </head>
   <body>
     <header class="top-bar">
-      <div>
-        <img src="imgs.facebook-logo.png" class="facebook-logo" alt="logo do facebook">
+      <div class="align-header">
+        <div id="imgHeader">
+          <img src="imgs/facebook-logo.png" class="facebook-logo" alt="logo do facebook">
+        </div>
 
-        <form action="" method="get">
-          <label for="">
-            <input type="button" value="" id="">
-            
-          </label>
+        <form action="" method="get" class="facebook-login">
+          <div class="form-group">
+            <label id="user-email-phone-label">Email ou Telefone</label>
+            <input type="text" id="user-email-phone">
+          </div>
 
-        </form>
+          <div class="form-group">
+            <label id="user-password-label">Senha</label>
+            <input type="password" name="user-password-label" id="user-password-label">
+          </form>
+      </div>
       </div>
     </header>
 
-    <script src="nome.js"></script>
+
+    <main class="main-content">
+        <div class="left-content">
+            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            <img scr="imgs/networking.png" alt="imagem networking">
+        </div>
+    </main>
+
+    <script src="script.js"></script>
   <body>
 </html> 
