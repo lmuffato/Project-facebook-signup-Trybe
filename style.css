@@ -20,3 +20,11 @@
   color: aliceblue;
 }
 
+.main-content{
+  display: flex;
+}
+
+.left-content {
+  flex-basis: 800px;
+  width: 800px;
+}
