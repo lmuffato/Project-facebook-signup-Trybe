@@ -1,3 +1,6 @@
+//Função click exibe alerta com valor do campo
+
 function testFunction() {
-  alert("Teste");
-}
+    let text = document.getElementById('user-email-phone').value;
+    alert(text);
+  }

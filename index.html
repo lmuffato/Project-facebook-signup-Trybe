@@ -8,40 +8,62 @@
   <link rel="stylesheet" href="style.css">
   <title>Facebook - entre ou cadastre-se</title>
 </head>
-<body>
-  <header class="top-bar">
-    <img class="fb-logo" src="imgs/facebook-logo.png" alt="facebook-logo">
-  </header>
-  <div class="main-content">
-    <div class="left-content">
-      <p id="facebook-slogan">O Facebook ajuda você a se conectar e</br> compartilhar com as pessoas que fazem parte</br> da sua vida.</p>
-      <img src="imgs/networking.png" id="facebook-networking" alt="facebook-networking">
+  <body>
+    <header class="top-bar">
+      <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Facebook-Logo">
+      <div>
+          <form action="" class="facebook-login">
+              <div class="form-group">
+                  <div id="user-email-phone-label">
+                      Email ou telefone
+                  </div>
+                  <label for="user-email-phone">
+                      <input type="text" name="email-telefone" id="user-email-phone">
+                  </label>
+              </div>
+              <div class="form-group">
+                  <div id="user-password-label">
+                      Senha
+                  </div>
+                  <label for="user-password">
+                      <input type="password" name="password" id="user-password">
+                  </label>
+              </div>
+              <div class="form-control">
+                <button id="button-login" class="btn btn-info" onclick="testFunction()">Entrar</button>
+              </div> 
+          </form>
+      </div>
+    </header>
+    <div class="main-content">
+      <div class="left-content">
+        <p id="facebook-slogan">O Facebook ajuda você a se conectar e</br> compartilhar com as pessoas que fazem parte</br> da sua vida.</p>
+        <img src="imgs/networking.png" id="facebook-networking" alt="facebook-networking">
+      </div>
+      <div class="right-content">
+        <h1>Abra uma conta</h1>
+        <p class="quick-easy">É rápido e fácil.</p>
+        <form action="" class="register-form">
+          <div class="first-last-name">
+            <input type="text" name="firstname" placeholder="Nome">
+            <input type="text" name="lastname" placeholder="Sobrenome">
+          </div>
+          <input type="text" name="phone_email" placeholder="Celular ou email">
+          <input type="password" name="password" placeholder="Nova senha">
+          <label for="label-birthdate">Data de Nascimento</label>
+          <input type="text" name="birthdate" id="label-birthdate" placeholder="dd/mm/aaaa">
+          <label for="label-gender">Gênero</label>
+          <div class="div-gender">  
+            <input type="radio" name="gender" id="label-gender">Feminino
+            <input type="radio" name="gender" id="label-gender">Masculino
+            <input type="radio" name="gender" id="label-gender">Personalizado
+          </div>
+          <br>
+          <p class="p-terms">Ao clicar em Cadastre-se, você concorda com nossos Termos, Política de Dados e Política de Cookies. Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
+          <button class="submit-button btn btn-success" id="facebook-register" type="submit">Cadastre-se</button>
+        </form>
+      </div>
     </div>
-    <div class="right-content">
-      <h1>Abra uma conta</h1>
-      <p class="quick-easy">É rápido e fácil.</p>
-      <form action="" class="register-form">
-        <div class="first-last-name">
-          <input type="text" name="firstname" placeholder="Nome">
-          <input type="text" name="lastname" placeholder="Sobrenome">
-        </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha">
-        <label for="label-birthdate">Data de Nascimento</label>
-        <input type="text" name="birthdate" id="label-birthdate" placeholder="dd/mm/aaaa">
-        <label for="label-gender">Gênero</label>
-        <div class="div-gender">  
-          <input type="radio" name="gender" id="label-gender">Feminino
-          <input type="radio" name="gender" id="label-gender">Masculino
-          <input type="radio" name="gender" id="label-gender">Personalizado
-        </div>
-        <br>
-        <p class="p-terms">Ao clicar em Cadastre-se, você concorda com nossos Termos, Política de Dados e Política de Cookies. Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
-        <button class="submit-button btn btn-success" id="facebook-register" type="submit">Cadastre-se</button>
-        <button onclick="testFunction()">Botão Teste</button>
-      </form>
-    </div>
-  </div>
-</body>
-<script src="script.js"></script>t
+    <script src="script.js"></script>
+  </body>
 </html>
