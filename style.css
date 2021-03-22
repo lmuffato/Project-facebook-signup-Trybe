@@ -25,6 +25,11 @@ label {
   color: rgb(255, 255, 255);
 }
 
-.login, .password {
+.login, .password, .btn {
   margin-right: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
