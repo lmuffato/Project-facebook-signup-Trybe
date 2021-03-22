@@ -46,3 +46,7 @@ body {
   width: 300px;
   justify-content: center;
 }
+
+.name-lastname {
+  display: flex;
+}
