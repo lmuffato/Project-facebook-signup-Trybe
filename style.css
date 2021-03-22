@@ -11,6 +11,11 @@
   background-color: rgb(66, 103, 178);
 }
 
+form .facebook-login {
+  display: flex;
+  color: white;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
