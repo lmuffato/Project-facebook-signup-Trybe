@@ -6,6 +6,16 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  justify-content: center;
-  /* height: 200px; */
+  justify-content: space-between;
 }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.facebook-login{
+  display: flex;
+  justify-content: flex-end;
+}
+
