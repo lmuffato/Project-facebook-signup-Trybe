@@ -1,5 +1,7 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
+  width: auto;
+  height: 50px;
 }
 
 .facebook-logo {
