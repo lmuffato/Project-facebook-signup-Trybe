@@ -32,3 +32,8 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+
+.full-name {
+  display: flex;
+  flex-direction: row;
+}
