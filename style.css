@@ -11,3 +11,12 @@
   height: 82px;
   align-items: center;
 }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.facebook-login {
+  display: flex;
+}
