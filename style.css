@@ -12,22 +12,21 @@
   justify-content: space-between;
 }
 
-/* <logo-container> */
-#logo-container {
-  height: 100%;
-  padding: 5px;
-}
-
 .facebook-logo {
   height: 100%;
   width: cover;
+  align-self: left;
+  padding: 5px;
 }
-
-/* </logo-container> */
 
 /* <login-container> */
 .facebook-login {
   display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
 
 /* </login-container> */
