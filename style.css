@@ -39,3 +39,7 @@ body {
   display: flex;
   flex-direction: row;
 }
+
+.main-content .left-content {
+  width: 800px;
+}
