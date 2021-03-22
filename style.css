@@ -2,14 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
-.top-bar {
-  background-color: rgb(66, 103, 178);
-  height: 82px;
+.main-content {
   display: flex;
+  flex-direction: row;
 }
 
-#photo-1 {
-  margin-top: 25px;
+.left-content {
+  width: 800px;
 }
