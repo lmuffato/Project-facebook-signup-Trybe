@@ -42,7 +42,7 @@
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
-
+        <div id="mensagem"></div>
         <form action="" id="form-signup">
           <div id="signup-form">
             <input type="text" name="firstname" placeholder="Nome" class="inputs">
@@ -54,13 +54,13 @@
             <input type="password" name="password" placeholder="Nova senha" class="inputs2">
 
             <label for="" id="label-gender">Gênero</label>
-            
-              <input type="radio" name="gender" id="fem"><label for="fem">Feminino</label>
-              <input type="radio" name="gender" id="masc"><label for="masc">Masculino</label>
-              <input type="radio" name="gender" id="pers"> <label for="pers">Personalizado</label>
-            
 
-            <label for="birth" id="label-birthdate" class="inputs2">Data de nascimento</label>
+            <input type="radio" name="gender" id="fem" class="inputRadio"><label for="fem">Feminino</label>
+            <input type="radio" name="gender" id="masc" class="inputRadio"><label for="masc">Masculino</label>
+            <input type="radio" name="gender" id="pers" class="inputRadio"> <label for="pers">Personalizado</label>
+
+
+            <label for="birth" id="label-birthdate">Data de nascimento</label>
             <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="inputs" id="birth">
 
           </div>
