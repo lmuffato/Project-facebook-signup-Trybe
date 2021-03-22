@@ -43,6 +43,16 @@
 
 .nome {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.first-last-name {
+  width: 140px;
+}
+
+.data {
+  width: 100%;
 }
 
 #label-gender {
