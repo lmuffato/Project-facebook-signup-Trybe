@@ -78,3 +78,12 @@
 #lastname {
   width: 50%;
 }
+
+.genderSelection {
+  display: flex;
+  flex-direction: column;
+}
+
+.genderBtns {
+  display: flex;
+}
