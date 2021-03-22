@@ -27,6 +27,7 @@
 
 .main-content {
   display: flex;
+  justify-content: space-around;
 }
 
 .left-content {
@@ -42,4 +43,9 @@
 
 .all-roll {
   flex-basis: 100%;
+}
+
+.mid-roll {
+  flex-basis: 50%;
+  width: 50%;  
 }
