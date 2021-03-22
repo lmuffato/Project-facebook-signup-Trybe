@@ -25,11 +25,6 @@
   margin-right: 200px;
 }
 
-.facebook-login input {
-  margin-right: 15px;
-  border: 1px solid black;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;
