@@ -34,3 +34,7 @@
 .right-content {
   width: 300px;
 }
+
+.nome {
+  display: flex;
+}
