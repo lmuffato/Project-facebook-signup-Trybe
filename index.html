@@ -27,7 +27,7 @@
             <h1 class="all-roll">Abra uma conta</h1>
             <p class="quick-easy all-roll">É rápido e fácil.</p>
             <form class="form-new all-roll" action="" method="get">
-                <div class="full-name">
+                <div class="side-by">
                     <label class="mid-roll" for="name"><input  type="text" id="name" name="firstname" placeholder="Nome"></label>
                     <label class="mid-roll" for="last-name"><input  type="text" id="last-name" name="lastname" placeholder="Sobrenome"></label> 
                 </div>
@@ -35,6 +35,12 @@
                 <label class="all-roll" for="newpassword"><input  type="password" id="newpassword" name="password" placeholder="Nova senha"></label>
                 <label class="all-roll" id="label-birthdate" for="birthdate">Data de nascimento</label>
                 <input class="all-roll"  type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa">
+                <label class="" id="label-gender" for="">Gênero</label>
+                <div class="side-by">
+                    <label for="male"><input type="radio" name="gender" id="male" value="male"> Masculino</label>
+                    <label for="female"><input type="radio" name="gender" id="female" value="female"> feminino</label>
+                    <label for="other"><input type="radio" name="gender" id="other" value="other"> Personalizado</label>
+                </div>      
             </form>
         </div>
     </main>
