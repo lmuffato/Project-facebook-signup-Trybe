@@ -1,6 +1,7 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  flex-flow: row nowrap;
   align-items: center;
   justify-content: space-around;
 }
@@ -54,4 +55,9 @@
 .form-new {
   display: flex;
   flex-flow: column wrap;
+}
+
+.full-name {
+  display: flex;
+  flex-flow: row nowrap;
 }
