@@ -12,6 +12,25 @@ body {
   background-color: rgb(66, 103, 178);
 }
 
+.facebook-logo {
+  align-self: center;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  margin: 0 10px;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
 .main-content {
   display: flex;
 }
