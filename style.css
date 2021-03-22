@@ -13,11 +13,16 @@
 .facebook-login {
   display: flex;
   color: white;
-  align-items: center;
   justify-content: space-evenly;
+  border: 1px solid white;
 }
 
 .form-group {
+  border: 1px solid green;
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
 }
