@@ -1,10 +1,30 @@
 * {
   margin: 0;
+  padding: 0;
 }
 
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  justify-content: space-around;
-  align-content: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  align-items: center;
+}
+
+.facebook-login input{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+label {
+  color: rgb(255, 255, 255);
+}
+
+.login, .password {
+  margin-right: 15px;
 }
