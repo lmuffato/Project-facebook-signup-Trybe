@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-content{
+  display: flex;
+  flex-direction: row;
+  background-color: azure;
+  width: 100%;
+}
+
+.left-content{
+  width: 800px;
+}
