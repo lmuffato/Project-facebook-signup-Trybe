@@ -8,20 +8,45 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
+  width: 100%;
   justify-content: space-evenly;
+  padding: 2%;
 }
 
 .facebook-login {
   display: flex;
+  flex-basis: 50%;
+}
+
+#facebook-logo {
+  flex-basis: 50%;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   color: white;
+  font-size: 12px;
+  padding-right: 1%;
 }
 
 .form-control {
+  display: flex;
+  flex-direction: column;
   align-self: flex-end;
   font-size: 12px;
+}
+
+#button-login {
+  opacity: 0.9;
+  color: white;
+  border: 0;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 18px;
+  margin: 0;
+  padding: 2px 6px;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: #3578e5;
 }
