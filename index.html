@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Facebook</title>
   <link rel="stylesheet" href="style.css">
-  
+
 </head>
 
 <body>
@@ -27,12 +27,13 @@
       </div>
     </form>
 
-    
+
 
   </header>
   <section class="main-content">
     <div class="left-content">
-      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
+        vida.</p>
       <img id="facebook-networking" width="300px" alt="facebook networking" src="imgs/networking.png">
     </div>
     <div class="right-content">
@@ -42,14 +43,18 @@
         <input type="text" name="firstname" id="firstname" placeholder="Nome" required>
         <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" required>
       </form>
-    </div>  
+      <label for="gender" id="label-gender">Gênero</label>
+      <div class="radio-btns">
+        <input type="radio" name="gender" value="fem" class="gender" required>Feminino
+        <input type="radio" name="gender" value="masc" class="gender" required>Masculino
+        <input type="radio" name="gender" value="pers" class="gender" required>Personalizado
+      </div>
+      <button type="submit" id="facebook-register">Cadastre-se</button>
+    </div>
 
-
-
-
-    <label for="">Gênero</label>
   </section>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

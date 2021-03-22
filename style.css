@@ -42,6 +42,24 @@
   width: 300px;
 }
 
+.radio-btns {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#label-gender {
+  text-align: center;
+}
+
 .form-place {
   display: flex;
+}
+
+#firstname {
+  width: 50%;
+}
+
+#lastname {
+  width: 50%;
 }
