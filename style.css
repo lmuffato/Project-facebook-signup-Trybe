@@ -9,23 +9,27 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   width: 100%;
+  justify-content: space-between;
 }
 
-.facebook-logo {
+/* .facebook-logo {
   justify-self: flex-start;
-}
+} */
 
 .facebook-login {
-  justify-self: flex-end;
-  border: solid 1px black;
-  width: 30%;
+  display: flex;
 }
 
 .form-group {
+  color: white;
   display: flex;
-  flex-wrap: column;
+  flex-direction: column;
 }
 
 .form-control {
   align-self: flex-end;
+}
+#button-login {
+  color: white;
+  background-color: rgb(24, 119, 242);
 }
