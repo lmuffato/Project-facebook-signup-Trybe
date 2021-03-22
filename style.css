@@ -80,11 +80,9 @@ body {
 }
 
 /* main-content */
-
 .main-content input {
   padding: 10px;
   width: 100%;
-  /* height: 30px; */
 }
 
 .main-content input::placeholder {
@@ -96,23 +94,22 @@ body {
   display: flex;
 }
 
-.nome input + input{
-  margin-left: 10px;
+.email input {
+  margin-bottom: 10px;
 }
 
+.nome input + input {
+  margin-left: 10px;
+}
 
 .email {
   display: flex;
   flex-direction: column;
 }
 
-.email input {
-  margin-bottom: 10px;
-}
-
 #facebook-slogan {
   color: rgb(25, 65, 101);
-  font-weight: bold;
+  font-weight: 600;
   font-size: 2em;
   max-width: 637px;
 }
