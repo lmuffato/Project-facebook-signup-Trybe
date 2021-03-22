@@ -17,17 +17,20 @@
 
 .facebook-login {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: 40%;
+  padding-bottom: 2%;
+  width: 35%;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
+  padding-left: 2%;
+  color: white;
 }
 
 .form-control {
+  margin-left: 2%;
   align-self: flex-end;
 }
 
