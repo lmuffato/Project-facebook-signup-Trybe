@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
   <header class="top-bar">
     <img src="imgs/facebook-logo.png" class="facebook-logo">
   </header>
+  <section class="main-content">
+    <div class="left-content">
+        <h3 id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</h3>
+        <img src="imgs/networking.png" alt="networking facebook" id="facebook-networking">
+    </div>
+    <div class="right-content">
+        <h1>Abra uma conta</h1>
+        <p class="quick-easy">É rápido e fácil.</p>
+        <form method="GET">
+          <input type="text" value="firstname" placeholder="Nome">
+          <input type="text" value="lastname" placeholder="Sobrenome">
+          <input type="text" value="phone_email" placeholder="Celular ou email">
+          <input type="text" type="password" placeholder="Nova senha">
+          <h3 id="label-birthdate">Data de nascimento</h3>
+          <input type="text" value="birthdate" placeholder="dd/mm/aaaa">
+          <h3 id="label-gender">Gênero</h3>
+          <input type="radio" name="gender"> Feminino
+          <input type="radio" name="gender"> Masculino
+          <input type="radio" name="gender"> Personalizado
+          <button id="facebook-register" type="submit">Cadastre-se</button>
+        </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
