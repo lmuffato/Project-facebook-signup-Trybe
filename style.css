@@ -19,6 +19,7 @@
 
 .facebook-login {
   display: flex;
+
   /* margin-right: 20px; */
 }
 
@@ -40,6 +41,26 @@
 
 .main-content {
   display: flex;
-  background-color: #F2F3F8;
+  background-color: #f2f3f8;
   height: 400px;
+  justify-content: space-around;  
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.left-container {
+  display: flex;
+  justify-content: left;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
 }
