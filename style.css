@@ -14,12 +14,16 @@
   flex-direction: column;
 }
 
+.facebook-login {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .main-content {
   display: flex;
   background-color: aquamarine;
 }
 
-.facebook-login {
-  display: flex;
-  justify-content: flex-end;
+.left-content {
+  width: 800px;
 }
