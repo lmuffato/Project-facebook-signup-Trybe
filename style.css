@@ -15,6 +15,12 @@
   justify-self: left;
 }
 
+<<<<<<< HEAD
 .facebook-login {
   display: flex;
+=======
+.form-group {
+  display: flex;
+  flex-direction: column;
+>>>>>>> bd336b069013d88694c39f867985a7f42d3fc023
 }
