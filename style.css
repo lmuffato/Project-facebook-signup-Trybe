@@ -23,6 +23,6 @@
   flex-flow: column;
 }
 
-#user-email-phone {
-  height: 15px;
+#user-email-phone , #user-password {
+  height: 20px;
 }
