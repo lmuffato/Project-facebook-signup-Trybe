@@ -22,3 +22,7 @@ header .facebook-login {
   display: flex;
   flex-direction: column;
 }
+
+.left-content {
+  width: 800px;
+}
