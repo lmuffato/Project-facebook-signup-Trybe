@@ -10,22 +10,26 @@
   justify-content: space-between;
 }
 
-#fb-logo {
+.facebook-logo {
   width: 18%;
-  margin-left: 3%;
 }
 
 .facebook-login {
   display: flex;
-  flex-flow: row nowrap;
+  padding-bottom: 2%;
+  width: 35%;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
+  padding-left: 2%;
+  color: white;
 }
 
 .form-control {
+  margin-left: 2%;
   align-self: flex-end;
 }
 
