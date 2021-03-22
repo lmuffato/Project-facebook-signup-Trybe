@@ -1,9 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  margin-bottom: 30px;
 }
 
 .facebook-login {
@@ -54,15 +65,53 @@
   width: 800px;
 }
 
+/* right-content */
 .right-content {
   width: 300px;
+}
+
+.right-content h1 {
+  margin-bottom: 10px;
+}
+
+.right-content h3 {
+  margin-bottom: 10px;
+}
+
+/* main-content */
+
+.main-content input {
+  padding: 10px;
+  width: 100%;
+  /* height: 30px; */
+}
+
+.main-content input::placeholder {
+  font-size: 1.5em;
+  color: rgb(153, 153, 153);
 }
 
 .nome {
   display: flex;
 }
 
+.nome input + input{
+  margin-left: 10px;
+}
+
+
 .email {
   display: flex;
   flex-direction: column;
+}
+
+.email input {
+  margin-bottom: 10px;
+}
+
+#facebook-slogan {
+  color: rgb(25, 65, 101);
+  font-weight: bold;
+  font-size: 2em;
+  max-width: 637px;
 }
