@@ -5,6 +5,27 @@
   height: 50px;
 }
 
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.name-container {
+  display: flex;
+}
+
+#genders {
+  display: flex;
+}
+
 .facebook-logo {
   align-self: flex-start;
 }
