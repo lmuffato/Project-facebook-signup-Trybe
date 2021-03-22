@@ -45,27 +45,21 @@ header {
 
 .form-group {
   display: flex;
-  align-content: flex-start;
-  flex-flow: row wrap;
+  flex-direction: column;
   margin-right: 15px;
+  justify-content: center;
 }
 
-.form-group-button {
-  display: flex;
-  align-items: center;
+.form-group:first-child {
+  margin-bottom: 14px;
+}
+
+.form-group input {
+  margin: 5px 0;
 }
 
 #user-email-phone-label {
-  margin-top: 12px;
   width: 100%;
-}
-
-#loginPassword {
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  align-items: center;
-  margin: 5px 0;
 }
 
 .loginUser-button {
@@ -73,10 +67,6 @@ header {
   padding: 2px;
   background-color: #4267b2;
   border: 1px solid #29487d;
-}
-
-#loginUser {
-  margin: 5px 0;
 }
 
 main {
