@@ -1,26 +1,25 @@
 * {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
 .top-bar {
-	background-color: rgb(66, 103, 178);
-	display: flex;
-	justify-content: space-between;
-	border: 2px solid black;
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
 }
 
 .facebook-login {
-	display: flex;
+  display: flex;
 }
 
 .form-group {
-	display: flex;
-	flex-direction: column;
-	border: 2px solid red;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-control {
-	align-self: flex-end;
+  align-self: flex-end;
 }
