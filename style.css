@@ -30,3 +30,8 @@
   display: flex;
   flex-direction: column;
 }
+
+.right-content {
+  width: 300px;
+  justify-content: space-around; /*ainda nao sei se eh o certo*/
+}
