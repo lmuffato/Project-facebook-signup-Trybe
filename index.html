@@ -12,7 +12,19 @@
   <header class="top-bar">
     <img src="imgs/facebook-logo.png" alt="logotipo facebook" class="facebook-logo">
     <form action="" class="facebook-login">
-      
+      <ul class="form-fields">
+        <li class="form-group">
+          <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
+          <input type="text" id="user-email-phone">
+        </li>
+        <li class="form-group">
+          <label for="user-password" id="user-password-label">Senha</label>
+          <input type="text" id="user-password">
+        </li>
+        <li class="form-control">
+          <button id="button-login" type="button">Entrar</button>
+        </li>
+      </ul>
     </form>
   </header>
 
@@ -24,15 +36,15 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <h3 class="quick-easy">É rápido e fácil</h3>
-      <form action="" method="get" class="form-login">
-        <div>
-          <input type="text" placeholder="Nome" name="firstname">
-        </div>
-        <div>
-          <input type="text" placeholder="Sobrenome" name="lastname">
-        </div>
-        <div>
-          <input type="text" placeholder="Celular ou email" name="phone_email">
+      <form action="" method="get">
+        <div class="email">
+          <div class="nome">
+            <input type="text" placeholder="Nome" name="firstname">
+            <input type="text" placeholder="Sobrenome" name="lastname">
+          </div>
+          <div>
+            <input type="text" placeholder="Celular ou email" name="phone_email">
+          </div>
         </div>
       </form>
     </div>
