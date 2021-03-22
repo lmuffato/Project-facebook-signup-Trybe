@@ -8,17 +8,24 @@
   </head>
   <body>
     <section id="top">
+       <div class="top-bar"> 
         <div id="facebook-logo">
             <a href="index.html>"><img src="imgs/facebook-logo.png" class="img-logo"></a>
         </div>
         <form class="facebook-login">
             <div class="form-group">
-                <label for="form-group">Email ou telefone<br>
-                <input type="text" name="name">
+                <label for="user-email-phone-label">Email ou telefone<br>
+                <input id="user-email-phone-label" type="text" name="name">
+                </label>
+                <label for="user-password-label">Senha<br>
+                <input type="text" id="user-password-label" name="senha">
                 </label>
             </div>
         </form>
-        
+        <div class="form-control">
+            <button id="button-login">Entrar</button>
+        </div>
+        </div>
     </section>
     <main class="main-content">
       <section class="left-content">
@@ -33,5 +40,6 @@
         </form>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
