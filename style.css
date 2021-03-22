@@ -74,11 +74,10 @@ body {
 .name {
   display: flex;
   justify-content: space-between;
-  margin: 3px;
 }
 
 .name input {
-  width: 140px;
+  width: 143px;
   margin: 3px;
 }
 

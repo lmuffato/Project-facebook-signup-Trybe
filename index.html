@@ -45,9 +45,12 @@
         <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
         <label for="gender" id="label-gender">Gênero</label>
         <div class="radio-genders">
-          <input type="radio" name="gender">Feminino
-          <input type="radio" name="gender">Masculino
-          <input type="radio" name="gender">Personalizado
+          <label for="feminino"></label>
+          <input type="radio" id="feminino" value="feminino" name="gender">Feminino
+          <label for="masculino"></label>
+          <input type="radio" id="masculino" value="masculino" name="gender">Masculino
+          <label for="personalizado"></label>
+          <input type="radio" id="personalizado" value="personalizado" name="gender">Personalizado
         </div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
