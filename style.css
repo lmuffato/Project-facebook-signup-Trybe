@@ -1,17 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, 'sans-serif';
+}
+
 .top-bar {
   display: flex;
   flex-direction: row;
   background-color: rgb(66, 103, 178);
   height: 82px;
   width: 100vw;
-  align-items: baseline;
+  justify-content: space-around;
 }
 
 .top-bar img {
   margin: 17px;
 }
 
+.facebook-login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 14px;
 }
