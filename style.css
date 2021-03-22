@@ -19,6 +19,7 @@ body {
 
 .facebook-login {
   display: flex;
+  padding: 20px;
 }
 
 .form-group {
@@ -54,6 +55,11 @@ body {
   border-radius: 2px;
   text-align: center;
   box-shadow: 2px 2px 4px 0.1px rgb(53, 99, 191), 2px 2px 4px 0.1px rgb(62, 97, 165);
+}
+
+ul {
+  list-style: none;
+  display: flex;
 }
 
 .main-content {
