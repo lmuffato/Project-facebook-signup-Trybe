@@ -17,8 +17,7 @@
                 <input type="text" name="name">
                 </label>
             </div>
-        </form>
-        
+        </form>       
     </section>
     <main class="main-content">
       <section class="left-content">
@@ -37,6 +36,16 @@
           </div>
           <input type="text" name="phone_email" placeholder="Celular ou email">
           <input type="password" name="password" placeholder="Nova senha" id="new-password">
+          <div class="birthdate-content">
+            <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+            <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+          </div>
+          <label for="gender-content" id="label-gender">Gênero</label>
+          <div id="gender-content">
+            <input type="radio" name="gender"><span class="gend">Feminino</span>
+            <input type="radio" name="gender"><span class="gend">Masculino</span>
+            <input type="radio" name="gender"><span class="gend">Personalizado</span>
+          </div>
         </form>
       </section>
     </main>
