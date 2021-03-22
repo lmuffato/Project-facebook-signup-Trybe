@@ -15,9 +15,13 @@
   flex-direction: column;
 }
 
+.main-content {
+  display: flex;
+  background-color: aquamarine;
+}
+
 .facebook-login {
   display: flex;
   position: absolute;
   right: 150px;
 }
-
