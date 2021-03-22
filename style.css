@@ -39,25 +39,6 @@
   border: 2px solid black;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .data-content {
   display: flex;
   justify-content: space-between;
@@ -72,4 +53,3 @@
   width: 100%;
   margin-top: 8px;;
 }
-
