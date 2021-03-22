@@ -35,3 +35,13 @@
 .right-content {
   width: 300px;
 }
+
+.nameLastname {
+  display: flex;
+  flex-direction: row;
+}
+
+.createAccount {
+  display: flex;
+  flex-direction: column;
+}
