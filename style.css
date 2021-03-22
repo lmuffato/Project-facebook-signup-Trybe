@@ -39,7 +39,7 @@
 .right-content {
   width: 300px;
   display: flex;
-  flex-flow:column wrap;
+  flex-flow: column wrap;
 }
 
 .all-roll {
