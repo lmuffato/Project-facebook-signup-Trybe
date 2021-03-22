@@ -48,10 +48,13 @@ body {
 }
 
 .name-lastname {
-  display: flex;
   flex-wrap: wrap;
 }
 
 .boxsize {
   width: 114px;
+}
+
+.boxsize_2 {
+  padding-right: 55px;
 }
