@@ -1,11 +1,22 @@
-.barra-superior {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
   width: 100%;
-  height: 82px; 
+  height: 82px;
+}
+
+.logo-conteiner {
+  display: flex;
+  justify-content: flex-start;
+  flex-basis: 400px;
 }
 
 form-group {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
