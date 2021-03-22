@@ -49,4 +49,9 @@ body {
 
 .name-lastname {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.boxsize {
+    width: 114px;
 }
