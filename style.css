@@ -5,6 +5,7 @@
 
 .right-content {
     width: 300px;
+    padding: 8px
 };
 
 
@@ -14,4 +15,9 @@
 
 .phone_email { 
     width: 100%;
+}
+
+input {
+    padding: 8px;
+    margin: 4px;
 }

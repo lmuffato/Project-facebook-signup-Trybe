@@ -10,7 +10,7 @@
 <body>
     <section class = 'main-content'>
         <div class = 'left-content'>
-            <p>left</p> 
+            
         </div>
         <form class = 'right-content'>
         
@@ -18,16 +18,33 @@
             <p class = 'quick-easy'>É rápido e fácil</p>
             
             <div class = 'formName'>
-                <input type = 'text' value = 'firstname' name = 'firstname' placeholder = 'Nome' required>
-                <input type = 'text' value = 'lastname' name = 'lastname' placeholder = 'Sobrenome' required>
+                <input type = 'text' name = 'firstname' placeholder = 'Nome' required>
+                <input type = 'text' name = 'lastname' placeholder = 'Sobrenome' required>
             </div>
 
             <div class = 'phone_email'>
-                <input type = 'text' value = 'phone_email' name = 'phone_email' placeholder = 'Celular ou email' required>
+                <input type = 'text' name = 'phone_email' placeholder = 'Celular ou email' required>
             </div>
 
-            <input type = 'password' value = 'password'  name = 'password' placeholder = 'Nova senha' required>
+            <input type = 'password' name = 'password' placeholder = 'Nova senha' required>
 
+            <div>
+                <label id = 'label-birthdate' for = 'date'> Data de Nascimento </label>
+                <input type = 'text' id = 'date' name = 'birthdate' placeholder = 'dd/mm/aaaa'>
+            </div>
+
+            <div>
+                <label id = 'label-gender'> Gênero</label><br>
+
+                <input type="radio" id = 'female' name = 'gender'> 
+                <label for = 'female'>Feminino</label>
+
+                <input type="radio" id = 'male' name = 'gender'> 
+                <label for = 'male'>Masculino</label>    
+
+                <input type="radio" id = 'custom' name = 'gender'> 
+                <label for = 'custom'>Personalizado</label>
+            </div>
         
         </form>
     </section>
