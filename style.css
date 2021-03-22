@@ -20,5 +20,10 @@ body {
 }
 
 .facebook-login {
-    display: flex;
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-flow: column;
 }
