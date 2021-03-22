@@ -1,82 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Facebook - entre ou cadastre-se</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-  <body>
+<body>
+
     <header>
-      <div class="top-bar">
-        <img src="imgs\facebook-logo.png" class="facebook-logo" />
-        <div class="facebook-login">
-          <form action="" method="GET" class="facebook-login">
-            <table>
-              <tr>
-                <div class="form-group">
-                  <td>
-                    <label
-                      for="loginUser"
-                      class="loginUser"
-                      id="user-email-phone-label"
-                      >Email ou telefone</label
-                    >
-                  </td>
-                  <td>
-                    <label for="loginUser" class="loginUser" class="form-group"
-                      >Email ou telefone</label
-                    >
-                  </td>
-                </div>
-              </tr>
+        <div class=top-bar>
+            <img class='facebook-logo' src='imgs\facebook-logo.png'>
+            
+            <div class='facebook-login'>
 
-              <tr>
-                <td>
-                  <input
-                    type="text"
-                    name="loginUser"
-                    placeholder="login"
-                    id="loginUser"
-                    class="loginForm"
-                    id="user-email-phone-label"
-                  />
-                </td>
-                <td>
-                  <input
-                    type="password"
-                    name="loginPassword"
-                    placeholder="senha"
-                    id="loginPassword"
-                    class="loginForm"
-                  />
-                </td>
-                <td><button class="loginUser">Entrar</button></td>
-              </tr>
+                <form action='' method='GET' class='facebook-login'>
 
-              <tr>
-                <td></td>
-                <td><a>Esqueceu a conta?</a></td>
-              </tr>
-            </table>
-          </form>
+                    <div class='form-group'>
+                        <label id='user-email-phone-label' for="loginUser" class='loginUser' >Email ou telefone</label>
+                        <input type='text' name='loginUser' placeholder="login" id='loginUser' class='loginForm' id='user-email-phone-label'>
+                    </div>
+
+                    <div class='form-group'>     
+                        <label for="loginUser" id='user-email-phone-label'>Senha</label>
+                        <input type='password' name='loginPassword' placeholder="senha" id='loginPassword' class='loginForm'>
+                        <a>Esqueceu a conta?</a>
+                    </div>  
+                    
+                    <div class='form-group-button'>
+                        <button class='loginUser-button'>Entrar</button></td>
+                    </div>
+
+                </form>
+           
+            </div>
         </div>
-      </div>
     </header>
 
     <main>
-      <section id="esquerda"></section>
 
-      <section id="direita"></section>
+        <section id='esquerda'>
+        </section>
+
+        <section id='direita'>
+        </section>
+
     </main>
 
-    <footer></footer>
+    <footer>
+
+
+    </footer>
 
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>
