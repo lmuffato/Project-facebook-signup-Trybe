@@ -35,8 +35,13 @@ header {
 .main-content {
   display: flex;
 }
+
 .left-content {
   width: 800px;
+}
+
+.right-content {
+  width: 300px;
 }
 
 #facebook-slogan {
@@ -47,4 +52,9 @@ header {
   margin-top: 40px;
   width: 450px;
   word-spacing: -1px;
+}
+
+.main-content {
+  display: flex;
+  justify-content:space-evenly;
 }
