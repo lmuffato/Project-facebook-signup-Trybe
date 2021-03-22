@@ -3,14 +3,12 @@
 }
 
 .top-bar {
-  display: flex;
   background-color: rgb(66, 103, 178);
-  justify-content: space-around;
 }
 
 .facebook-login {
   display: flex;
-  flex-flow: row;
+  justify-content: flex-end;
   font-family: Helvetica, sans-serif;
   font-size: 15px;
   margin-top: 7px;
@@ -18,6 +16,8 @@
 }
 
 .facebook-logo {
+  display: flex;
+  justify-items: flex-start;
   flex-basis: 200px;
 }
 
