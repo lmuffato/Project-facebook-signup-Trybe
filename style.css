@@ -48,3 +48,8 @@
   cursor: pointer;
   background-color: #3578e5;
 }
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
