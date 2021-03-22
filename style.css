@@ -5,8 +5,13 @@
 
 .top-bar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: rgb(66, 103, 178);
+}
+
+label {
+  display: flex;
+  flex-direction: column;
 }
 
 .facebook-login {
@@ -16,4 +21,8 @@
 .form-group {
   display: flex;
   flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
 }
