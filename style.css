@@ -38,3 +38,21 @@ body {
     align-self: flex-end;
     padding: 7px 5px;
 }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-content .left-content {
+  width: 800px;
+}

@@ -8,32 +8,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="top-bar">
-        <div class="container">
-            <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo do Facebook">
+<header class="top-bar">
+    <div class="container">
+        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo do Facebook">
+    </div>
+    <form action="" method="get" class="facebook-login">
+        <!-- REQUISITO 5 -->
+        <div class="form-group">
+            <div id="user-email-phone-label">
+                <label for="email ou telefone">Email ou telefone</label>
+                <input type="text" name="name" id="user-email-phone">
+            </div>
         </div>
-        <form action="" method="get" class="facebook-login">
-            <!-- REQUISITO 5 -->
-            <div class="form-group">
-                <div id="user-email-phone-label">
-                  <label for="email ou telefone">Email ou telefone</label>
-                  <input type="text" name="name" id="user-email-phone">
-                </div>
+        <!-- REQUISITO 6 -->
+        <div class="form-group">
+            <div id="user-password-label">
+                <label for="senha">Senha</label>
+                <input type="text" name="senha" id="user-password">
             </div>
-            <!-- REQUISITO 6 -->
-            <div class="form-group">
-                <div id="user-password-label">
-                  <label for="senha">Senha</label>
-                  <input type="text" name="senha" id="user-password">
-                </div>
-            </div>
-            <!-- REQUISITO 7 -->
-            <div class="form-control">
-              <button type="submit" id="button-login">Entrar</button>
-            </div>
-        </form>
-    </header>
-    
+        </div>
+        <!-- REQUISITO 7 -->
+        <div class="form-control">
+            <button type="submit" id="button-login">Entrar</button>
+        </div>
+    </form>
+</header>    
+<div class="main-content">
+    <div class="left-content">
+        <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+        <img src="imgs/networking.png" alt="Rede de pessoas conectadas">
+    </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
