@@ -43,6 +43,16 @@ body {
   border: 1px solid rgb(24, 42, 91);
 }
 
+.form-control button {
+  background-color: rgb(66, 103, 178);
+  color: white;
+  font-weight: 700;
+  border-radius: 2px;
+  border: 1px solid rgb(41, 72, 125);
+  padding: 4px 5px;
+  cursor: pointer;
+}
+
 .main-content {
   display: flex;
 }
