@@ -90,6 +90,10 @@ body {
   color: rgb(153, 153, 153);
 }
 
+.genero {
+  display: flex;
+}
+
 .nome {
   display: flex;
 }
