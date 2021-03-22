@@ -51,8 +51,13 @@ body {
 .main-content {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .main-content .left-content {
   width: 800px;
+}
+
+.main-content .right-content {
+  width: 300px;
 }
