@@ -3,28 +3,26 @@
 }
 
 .top-bar {
+  display: flex;
+  align-items: center;
   background-color: rgb(66, 103, 178);
 }
 
 .facebook-login {
   display: flex;
-  justify-content: flex-end;
-  font-family: Helvetica, sans-serif;
-  font-size: 15px;
-  margin-top: 7px;
   color: white;
 }
 
 .facebook-logo {
   display: flex;
   justify-items: flex-start;
-  flex-basis: 200px;
 }
 
-p {
-  margin-bottom: 5px;
+.form-group {
+  display: flex;
+  flex-flow: column;
 }
 
-label {
-  margin-right: 20px;
+.form-control {
+  align-self: flex-end;
 }
