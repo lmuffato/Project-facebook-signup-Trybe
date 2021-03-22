@@ -6,7 +6,7 @@
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: center
+  justify-content: center;
 }
 
 .left-content {
@@ -21,8 +21,6 @@
   display: flex;
 }
 
-.inputNames input:nth-child(2) {
+.inputNames input:nth-child( 2 ) {
   margin-left: 20px;
 }
-
-
