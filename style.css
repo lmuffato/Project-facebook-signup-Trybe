@@ -9,3 +9,7 @@
   background-color: rgb(66, 103, 178);
   height: 80px;
 }
+
+.main-content {
+  display: flex;
+}
