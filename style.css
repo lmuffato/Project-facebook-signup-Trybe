@@ -50,3 +50,8 @@
   flex-basis: 50%;
   width: 50%;
 }
+
+.form-new {
+  display: flex;
+  flex-wrap: wrap;
+}
