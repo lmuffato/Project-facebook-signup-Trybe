@@ -11,11 +11,12 @@
   <header class="top-bar">
     <img src="imgs/facebook-logo.png" class="facebook-logo">
     <div class="login-container">
-      <table cellspacing="0" role="presentation">
+      <form method="GET" class="form-group">
+      <table cellspacing="0" role="presentation" class="form-group">
         <tbody>
           <tr>
             <td class="html7magic">
-              <label for="email">Email ou telefone</label>
+              <label for="email" id="user-email-phone-label">Email ou telefone</label>
             </td>
             <td class="html7magic">
               <label for="pass">Senha</label>
@@ -23,7 +24,7 @@
           </tr>
           <tr>
             <td>
-              <input type="email" class="inputtext login_form input_box" name="email" id="email">
+              <input type="email" class="inputtext login_form input_box" name="email" id="user-email-phone">
             </td>
             <td>
               <input type="password" class="inputtext login_form input_box" name="pass" id="pass">
@@ -41,6 +42,7 @@
           </tr>
         </tbody>
       </table>
+    </form>
     </div>
   </header>
   <section class="main-content">
@@ -51,7 +53,7 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form method="GET" id="form" class="form-group">
+      <form method="GET" id="form" >
         <input type="text" name="firstname" placeholder="Nome">
         <input type="text" name="lastname" placeholder="Sobrenome">
         <input type="text" name="phone_email" placeholder="Celular ou email">
