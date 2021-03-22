@@ -3,11 +3,11 @@
   background-color: rgb(66, 103, 178);
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
 }
 
 .facebook-login {
   display: flex;
+  padding: 20px;
 }
 
 .form-group {
@@ -45,6 +45,11 @@
   box-shadow: 2px 2px 4px 0.1px rgb(53, 99, 191), 2px 2px 4px 0.1px rgb(62, 97, 165);
 }
 
+ul {
+  list-style: none;
+  display: flex;
+}
+
 .main-content {
   display: flex;
   justify-content: space-between;
@@ -67,6 +72,3 @@
   flex-direction: column;
 }
 
-.genero {
-  margin: 20px, 350px;
-}
