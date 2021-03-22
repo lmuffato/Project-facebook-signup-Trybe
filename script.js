@@ -29,7 +29,7 @@ function check() {
   return sum;
 }
 
-function alert(number) {
+function alertForm(number) {
   if (number !== 5) {
     document.querySelector('.alert').style.display = 'block';
   }
@@ -38,7 +38,7 @@ function alert(number) {
 function validate() {
   const btn = document.getElementById('facebook-register');
   btn.addEventListener('click', () => {
-    alert(check());
+    alertForm(check());
   });
 }
 
