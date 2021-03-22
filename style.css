@@ -7,7 +7,7 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-around;
-  padding-bottom: 0; 
+  padding-bottom: 0;
   align-items: center;
   border-bottom: 1px solid rgb(44, 44, 44);
 }
