@@ -1,37 +1,65 @@
 <!doctype html>
 <html lang="br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Facebook - entre ou cadastre-se</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
-    <div class=top-bar>
-        <img src='imgs\facebook-logo.png' class='facebook-logo'>
-        <div class='facebook-login'></div>
-    </div>
+        <div class=top-bar>
+            <img src='imgs\facebook-logo.png' class='facebook-logo'>
+            <div class='facebook-login'>
+
+                <form action='' method='GET' class='facebook-login'>
+                    <table>
+
+                        <tr>
+                            <td><label for="loginUser" class='loginUser'>Email ou telefone</label></td>
+                            <td><label for="loginUser" class='loginUser'>Email ou telefone</label></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type='text' name='loginUser' placeholder="login" id='loginUser'
+                                    class='loginForm'></td>
+                            <td><input type='password' name='loginPassword' placeholder="senha" id='loginPassword'
+                                    class='loginForm'></td>
+                            <td><button class='loginUser'>Entrar</button></td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td><a>Esqueceu a conta?</a></td>
+                        </tr>
+
+                    </table>
+                </form>
+            </div>
+        </div>
     </header>
 
-<main>
+    <main>
 
-    <section id='esquerda'>
-    </section>
+        <section id='esquerda'>
+        </section>
 
-    <section id='direita'>
-    </section>
+        <section id='direita'>
+        </section>
 
-</main>
+    </main>
 
-<footer>
+    <footer>
 
-    
-</footer>
 
-<script src="script.js"></script>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
