@@ -215,10 +215,14 @@
 .data-content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #first-name, #last-name {
   width: 46%;
 }
 
-
+#phone-email {
+  width: 100%;
+  margin-top: 8px;;
+}
