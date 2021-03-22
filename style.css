@@ -8,13 +8,6 @@ body {
   margin: 0;
 }
 
-#top {
-  display: flex;
-  width: 1366px;
-  height: 60px;
-  background-color: rgb(66, 103, 178);
-}
-
 .top-bar {
   display: flex;
   height: auto;
