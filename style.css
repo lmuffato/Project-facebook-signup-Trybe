@@ -11,7 +11,7 @@
   background-color: rgb(66, 103, 178);
 }
 
-form .facebook-login {
+.facebook-login {
   display: flex;
   color: white;
 }
@@ -21,6 +21,7 @@ form .facebook-login {
   flex-direction: column;
 }
 
+/* requisitos 9 em diante: */
 .main-content {
   display: flex;
   flex-direction: row;
