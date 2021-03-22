@@ -3,9 +3,16 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
 }
+
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
+  justify-content: space-around;
+}
+
+.facebook-login {
+  display: flex;
+  margin-right: 20px;
 }
