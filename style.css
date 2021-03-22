@@ -31,3 +31,12 @@
   justify-content: flex-start;
   padding: 0 14px;
 }
+
+.main-content {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.left-content {
+ width: 800px;
+}
