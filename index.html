@@ -32,6 +32,27 @@
       </p>
       <img src="./imgs/networking.png" alt="Illustration of people connected to each other around the world" id="facebook-networking">
     </section>
+    <section class="right-content">
+      <h1>Abra uma conta</h1>
+      <p class="quick-easy">É rápido e fácil.</p>
+      <!-- Exibir uma mensagem "Campos inválidos" dentro do formulário caso pelo menos um campo não esteja preenchido -->
+      <form>
+        <input type="text" name="firstname" placeholder="Nome">
+        <input type="text" name="lastname" placeholder="Sobrenome">
+        <input type="text" name="phone_email" placeholder="Celular ou email">
+        <input type="password" name="password" placeholder="Nova senha">
+        <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+        <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+        <label for="" id="label-gender">Gênero</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female" id="label-gender">Feminino</label>
+        <input type="radio" name="gender" id="male">
+        <label for="male" id="label-gender">Masculino</label>
+        <input type="radio" name="gender" id="other">
+        <label for="other" id="label-gender">Personalizado</label>
+        <button type="submit" id="facebook-register">Cadastre-se</button>
+      </form>
+    </section>
   </main>
 </body>
 </html>
