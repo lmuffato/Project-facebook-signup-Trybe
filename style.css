@@ -18,6 +18,11 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
+}
+
+.form-control {
+  align-self: flex-end;
 }
 
 .facebook-login {
