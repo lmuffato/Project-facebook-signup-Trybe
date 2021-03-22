@@ -18,7 +18,6 @@ body {
 
 .facebook-logo {
   padding: 5px;
-<<<<<<< HEAD
   margin-left: 20px;
 }
 
@@ -32,7 +31,6 @@ body {
 .form-group {
   display: flex;
   flex-direction: row;
-=======
 }
 
 .main-content {
@@ -46,5 +44,4 @@ body {
 
 .right-content{
   width: 300px;
->>>>>>> bd1fe3d2c7a2529aef3b8684f4e8ef4c9f7f598e
 }
