@@ -11,3 +11,15 @@
 .facebook-logo {
   margin-left: 0;
 }
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+}
+
+.form-control {
+  align-self: flex-end;
+}
