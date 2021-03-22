@@ -20,7 +20,6 @@
 
 .facebook-logo {
   display: flex;
-  align-items: center;
 }
 
 .facebook-login {
@@ -29,4 +28,6 @@
 
 .form-group {
   display: flex;
+  flex-direction: column;
+  color: white;
 }
