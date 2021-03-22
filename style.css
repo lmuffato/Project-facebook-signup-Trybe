@@ -7,14 +7,45 @@
 .facebook-login {
   display: flex;
   align-items: center;
+  margin-left: 10px;
+  margin-right: 150px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   margin-right: 10px;
+  color: white;
 }
 
 .form-control {
   align-self: flex-end;
+  padding-bottom: 2px;
+}
+
+#button-login {
+  background-color: rgb(66, 103, 178);
+  border-radius: 5px;
+  color: white;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+  font-weight: 700;
+  color: rgb(35, 74, 153);
+}
+
+.right-content {
+  width: 300px;
+  align-content: flex-end;
+  margin-right: 350px;
+}
+
+#facebook-slogan {
+  width: 750px;
 }
