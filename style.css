@@ -4,15 +4,25 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+  background: rgb(235, 235, 235);
+}
+
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
   justify-content: space-between;
   color: white;
+  height: 75px;
 }
 
 .facebook-logo {
   justify-self: left;
+  width: 175px;
+  object-fit: contain;
 }
 
 .facebook-login {
