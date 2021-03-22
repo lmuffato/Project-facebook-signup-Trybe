@@ -6,14 +6,11 @@
 
 .facebook-login {
   display: flex;
+  align-self: flex-end;
 }
 
 .facebook-log {
   align-self: flex-start;
-}
-
-.facebook-login {
-  align-self: flex-end;
 }
 
 .form-group {
