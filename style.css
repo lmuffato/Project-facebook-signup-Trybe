@@ -9,3 +9,7 @@
   justify-items: center;
   align-items: center;
 }
+
+.facebook-login {
+  display: flex;
+}
