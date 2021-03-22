@@ -52,3 +52,8 @@ body {
 .main-content .right-content {
   width: 300px;
 }
+
+.main-content .right-content .input-container {
+  display: flex;
+  flex-direction: row;
+}
