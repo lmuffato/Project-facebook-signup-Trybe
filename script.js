@@ -14,6 +14,16 @@ function genderCheck() {
   }
 }
 
+function clearRightContent(nameElement, emailElement,
+  birthdateElement, genderElement) {
+  const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = '';
+  rightContent.appendChild(nameElement);
+  rightContent.appendChild(emailElement);
+  rightContent.appendChild(birthdateElement);
+  rightContent.appendChild(genderElement);
+}
+
 function submitedForm() {
   const nameValue = document.getElementById('firstname').value;
   const lastnameValue = document.getElementById('lastname').value;
@@ -28,12 +38,7 @@ function submitedForm() {
   birthdateElement.innerHTML = birthdate;
   const genderElement = document.createElement('p');
   genderElement.innerHTML = gender;
-  const rightContent = document.querySelector('.right-content');
-  rightContent.innerHTML = '';
-  rightContent.appendChild(nameElement);
-  rightContent.appendChild(emailElement);
-  rightContent.appendChild(birthdateElement);
-  rightContent.appendChild(genderElement);
+  clearRightContent(nameElement, emailElement, birthdateElement, genderElement);
 }
 
 function inputValidate(e) {
