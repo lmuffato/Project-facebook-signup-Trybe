@@ -22,7 +22,6 @@ body {
   width: 170px;
 }
 
-header
 .login-container {
   padding-left: 70%;
 }
@@ -59,7 +58,7 @@ tr {
   height: 21px;
 }
 
-td td.label {
+td, td.label {
   text-align: left;
 }
 
@@ -83,7 +82,7 @@ input {
 }
 
 .html7magic {
-  padding-bottom:4px;
+  padding-bottom: 4px;
 }
 
 #loginbutton {
