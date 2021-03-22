@@ -10,7 +10,7 @@
   /*   background-image: linear-gradient(rgb(78, 105, 162), rgb(59, 89, 152) 50%); */
   height: 80px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-end;
 }
 
@@ -18,12 +18,12 @@
   color: white;
 }
 
-.form {
+.facebook-login {
   display: flex;
   flex-direction: row;
 }
 
-.submit-container {
+.form-control {
   align-self: center;
 }
 

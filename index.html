@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/imgs/facebook-icon.png">
   <title>Facebook - entre ou cadastre-se</title>
 </head>
 
@@ -15,18 +16,18 @@
       <img height="70" class="facebook-logo" src="imgs/facebook-logo.png" alt="logo do facebook">
     </div>
     <div class="forms-container">
-      <form class="form" action="https://dummy.url" method="post">
+      <form class="facebook-login" action="https://dummy.url" method="post">
         <div class="form-group">
-          <div> <label for="email">Email ou telefone</label></div>
-          <div> <input type="email" name="email" id="email"></div>
+          <div> <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label> </div>
+          <div> <input type="email" name="email" id="user-email-phone"> </div>
         </div>
         <div class="form-group">
-          <div> <label for="pass">Senha</label></div>
-          <div> <input type="password" name="password" id="pass"></div>
-          <div> <a href="http://dummy.url" target="_blank" rel="noopener noreferrer">Esqueceu a conta?</a></div>
+          <div> <label for="user-password" id="user-password-label">Senha</label> </div>
+          <div> <input type="password" name="password" id="user-password"> </div>
+          <div> <a href="http://dummy.url" target="_blank" rel="noopener noreferrer">Esqueceu a conta?</a> </div>
         </div>
-        <div class="form-group submit-container">
-          <div> <input class="enter-btn" type="submit" value="Entrar" id="submit"></div>
+        <div class="form-group form-control">
+          <div> <button type="submit" class="enter-btn" id="button-login">Entrar</button> </div>
         </div>
       </form>
     </div>
