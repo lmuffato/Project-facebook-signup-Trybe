@@ -38,14 +38,137 @@ img {
 
 .left-content {
   width: 800px;
+  color: rgb(14, 56, 95);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: bold;
 }
 
 .right-content {
   width: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right-content h1 {
+  color: rgb(51, 51, 51);
+  font-size: 36px;
+  align-self: flex-start;
 }
 
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
+  background-color: linear-gradient(white, rgb(211, 216, 232));
+  margin-top: 40px;
+  width: 100%;
+  height: 700px;
+}
+
+.quick-easy {
+  color: rgb(29, 33, 41);
+  font-size: 19px;
+  align-self: flex-start;
+  margin: 10px 10px 10px 0;
+}
+
+.new-account {
+  display: flex;
+  flex-flow: column nowrap;/*não permite quebra de linha*/
+}
+
+.new-account input {
+  border: 1px solid rgb(191, 200, 215);
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 8px 10px;
+  margin: 5px;
+}
+
+.getName {
+  display: flex;
+}
+
+.getName #firstname {
+  width: 30%;
+}
+
+.getName #lastname {
+  width: 70%;
+}
+
+/*REQUISITO 19 - USAR DEPOIS
+.genderCustom #botton-custom { 
+  width: 90%;
+}*/
+
+.create-phoneEmail {
+  width: 90%;
+}
+
+.create-password {
+  width: 90%;
+}
+
+.insert-birthdate {
+  width: 90%;
+  display: flex;
+  flex-flow: column nowrap;
+  color: rgb(133, 137, 145);
+  font-weight: bold;
+  font-size: 1.08em;
+}
+
+.insert-birthdate label {
+  margin: 10px 8px 0;
+}
+
+.get-gender {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 10px 8px 8px;
+  color: rgb(133, 137, 145);
+  font-weight: bold;
+  font-size: 1.08em;
+}
+
+.type-gender {
+  margin-left: 2px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.type-gender label {
+  font-size: 1.04em;
+  color: rgb(27, 30, 36);
+}
+
+.button-submit {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.button-submit button {
+  margin-top: 1em;
+  text-shadow: 0.7px 0.7px black;
+  width: 200px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;  
+  background: linear-gradient(#67ae55, #578843);
+  border: 1px solid #2b7d07;
+  font-size: 19px;
+  font-weight: 600;
+  height: 40px; 
+}
+
+.button-submit:hover {
+  background: linear-gradient(#67ae55e0, #578843);
+  border: 1px solid #2b7d07;
 }
