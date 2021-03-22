@@ -13,3 +13,7 @@
   flex-direction: column;
   width: 300px;
 }
+
+.form-full-name {
+  display: flex;
+}
