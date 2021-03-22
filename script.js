@@ -4,4 +4,4 @@ function buttonAlert() {
   const camp = document.getElementById('user-email-phone').value;
   alert(camp);
 }
-loginButton.addEventListener('click',buttonAlert);
+loginButton.addEventListener('click', buttonAlert);
