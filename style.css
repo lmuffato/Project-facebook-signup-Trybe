@@ -36,8 +36,32 @@
 .main-content {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
 }
 
 .left-content {
- width: 800px;
+  width: 800px;
+}
+
+.left-content p {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 29px;
+  margin-top: 40px;
+  word-spacing: -1px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.right-content h1 {
+  color: #333;
+  font-size: 36px;
+}
+
+.quick-easy {
+  color: #1d2129;
+  font-size: 19px;
 }
