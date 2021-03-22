@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
@@ -5,7 +10,7 @@
   height: 82px;
   color: white;
   font-size: 0.9em;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 
 .facebook-login {
@@ -16,12 +21,35 @@
 
 .form-group {
   align-content: flex-end;
-  display: grid;
+  display: flex;
   padding: 10px;
+  flex-direction: column;
 }
 
 .form-control {
   align-self: flex-end;
   padding: 15px;
   padding-right: 80px;
+}
+
+.logo-conteiner {
+  display: flex;
+  justify-content: flex-start;
+  flex-basis: 400px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+} 
+
+.left-content {
+  display: flex;
+  flex-basis: 800px;
+}
+
+.right-content {
+  display: flex;
+  flex-basis: 300px;
+  justify-content: flex-end;
 }
