@@ -1,3 +1,7 @@
-    .main-content {
-        flex-direction: row;
-    }
+.main-content {
+  flex-direction: row;
+}
+
+.left-content {
+    width: 800px;
+}
