@@ -50,7 +50,7 @@
   display: flex;
   background-color: #f2f3f8;
   height: 400px;
-  justify-content: space-around;  
+  justify-content: space-around;
 }
 
 .left-content {
@@ -75,11 +75,39 @@
   margin-top: 20px;
 }
 
+.right-container input {
+  margin: 5px 0;
+  height: 35px;
+  border-radius: 5px;
+  border: 0.8px solid #90949c;
+  padding-left: 6px;
+  width: 130px;
+}
+
 .names {
   display: flex;
   margin-top: 20px;
 }
 
 .names input {
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+.names input:last-child {
+  margin-right: 0;
+}
+
+#phoneNEmail, #password {
+  width: 270px;
+}
+
+#label-birthdate {
+  color: #90949c;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.date-container {
+  display: flex;
+  flex-direction: column;
 }
