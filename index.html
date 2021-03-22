@@ -44,15 +44,25 @@
                     <input class="boxsize" type="text" name="lastname" placeholder="Sobrenome">
                 </label>
                 <label for="phone_email">
-                    <input class="boxsize_2" type="text" name="phone_email" placeholder="Celular ou email">
+                    <input class="boxsize-2" type="text" name="phone_email" placeholder="Celular ou email">
                 </label>
                 <label for="password">
-                    <input class="boxsize_2" type="password" name="password" placeholder="Nova senha">
+                    <input class="boxsize-2" type="password" name="password" placeholder="Nova senha">
                 </label>
                 <div>
-                    <label id="label-birthdate" for="birthdate">Data de Nascimento</label>
+                    <label id="label-birthdate" for="birthdate">Data de nascimento</label>
                     <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
                 </div>
+                <label id="label-gender" for="gender">Gênero</label>
+                <label for="female">
+                    <input type="radio" name="gender" id="female">Feminino
+                </label>
+                <label for="male">
+                    <input type="radio" name="gender" id="male">Masculino
+                </label>
+                <label for="custom-gender">
+                    <input type="radio" name="gender" id="custom-gender">Personalizado
+                </label>
             </form>
         </section>
     </main>
