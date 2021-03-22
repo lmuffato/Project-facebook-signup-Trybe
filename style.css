@@ -17,7 +17,8 @@
 
 .facebook-login {
   display: flex;
-  justify-content: flex-end;
+  position: absolute;
+  right: 150px;
 }
 
 .main-content {
@@ -25,13 +26,10 @@
   background-color: aquamarine;
 }
 
-<<<<<<< HEAD
-.facebook-login {
-  display: flex;
-  position: absolute;
-  right: 150px;
-=======
 .left-content {
   width: 800px;
->>>>>>> e3f135d9b93e408808afa2803ef8db0213f46f2d
+}
+
+.form-control {
+  align-self: flex-end;
 }
