@@ -1,7 +1,18 @@
 .main-content {
+    display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
 }
 
 .left-content {
+    display: flex;
     width: 800px;
+    flex-direction: column;
+}
+
+.right-content {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
 }
