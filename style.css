@@ -46,7 +46,7 @@
   flex-direction: column;
 }
 
-.radio-gender {
+#radio-gender {
   display: flex;
   flex-direction: row;
 }
