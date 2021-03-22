@@ -2,61 +2,54 @@
 <html lang="br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Facebook - entre ou cadastre-se</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Facebook - entre ou cadastre-se</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+	<header>
+		<div class=top-bar>
+			<img class='facebook-logo' src='./imgs/facebook-logo.png'>
+			<div class='facebook-login'>
+				<form action='' method='GET' class='facebook-login'>
+					<div class='form-group'>
+						<label id='user-email-phone-label' for="loginUser" class='loginUser' >Email ou telefone</label>
+						<input type='text' name='loginUser' placeholder="login" id='loginUser' class='loginForm' id='user-email-phone-label'>
+					</div>
 
-    <header>
-        <div class=top-bar>
-            <img class='facebook-logo' src='imgs\facebook-logo.png'>
-            
-            <div class='facebook-login'>
+					<div class='form-group'>
+						<label for="loginUser" id='user-email-phone-label'>Senha</label>
+						<input type='password' name='loginPassword' placeholder="senha" id='loginPassword' class='loginForm'>
+						<a>Esqueceu a conta?</a>
+					</div>
 
-                <form action='' method='GET' class='facebook-login'>
+					<div class='form-group-button'>
+						<button class='loginUser-button'>Entrar</button></td>
+					</div>
+				</form>
+			</div>
+		</div>
+	</header>
 
-                    <div class='form-group'>
-                        <label id='user-email-phone-label' for="loginUser" class='loginUser' >Email ou telefone</label>
-                        <input type='text' name='loginUser' placeholder="login" id='loginUser' class='loginForm' id='user-email-phone-label'>
-                    </div>
+	<main>
+		<section id='esquerda'>
+		</section>
 
-                    <div class='form-group'>     
-                        <label for="loginUser" id='user-email-phone-label'>Senha</label>
-                        <input type='password' name='loginPassword' placeholder="senha" id='loginPassword' class='loginForm'>
-                        <a>Esqueceu a conta?</a>
-                    </div>  
-                    
-                    <div class='form-group-button'>
-                        <button class='loginUser-button'>Entrar</button></td>
-                    </div>
+		<section id='direita'>
+		</section>
 
-                </form>
-           
-            </div>
-        </div>
-    </header>
+	</main>
 
-    <main>
-
-        <section id='esquerda'>
-        </section>
-
-        <section id='direita'>
-        </section>
-
-    </main>
-
-    <footer>
+	<footer>
 
 
-    </footer>
+	</footer>
 
-    <script src="script.js"></script>
+	<script src="script.js"></script>
 </body>
 
 </html>
