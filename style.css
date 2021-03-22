@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 .main-content {
   display: flex;
   justify-content: center;
@@ -32,4 +36,8 @@
 
 .form-control {
   align-self: flex-end;
+}
+
+#custom-gender {
+  display: none;
 }
