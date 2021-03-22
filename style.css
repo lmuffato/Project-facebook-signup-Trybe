@@ -44,4 +44,5 @@
 
 .form-place {
   display: flex;
+  flex-wrap: wrap;
 }
