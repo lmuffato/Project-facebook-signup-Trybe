@@ -41,6 +41,12 @@ form .facebook-login {
   font-weight: 600;
 }
 
+.right-content form input {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
 #facebook-slogan {
   color: #0e385f;
   font-size: 20px;
@@ -56,4 +62,3 @@ form .facebook-login {
   aspect-ratio: auto 537 / 195;
   height: 195px;
 }
-
