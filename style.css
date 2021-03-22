@@ -17,3 +17,17 @@
   flex-direction: column;
   margin: 0 10px;
 }
+
+.form-control {
+  align-self: flex-end;
+  margin: 0 5px 5px 0;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-content {
+   width: 800px;
+}
