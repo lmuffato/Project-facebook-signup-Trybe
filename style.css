@@ -6,14 +6,13 @@
   display: flex;
   flex-flow: row wrap;
   background-color: #3B5998;
-  justify-content: center;
   justify-content: space-around;
 }
 
 .facebook-login {
   display: flex;
   flex-flow: row;
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   font-size: 15px;
   margin-top: 7px;
   color: white;
