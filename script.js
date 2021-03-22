@@ -6,7 +6,6 @@ function buttonAlert(e) {
 
 function genderCheck() {
   const genderVerify = document.getElementsByName('gender');
-
   for (let index = 0; index < genderVerify.length; index += 1) {
     if (genderVerify[index].checked) {
       return genderVerify[index].value;
@@ -28,14 +27,12 @@ function submitedForm() {
   birthdate.innerText = `Data de Nascimento: ${inputs[3].value}`;
   gender.innerText = `Genero: ${genderValue}`;
   submitedForm.style.display = 'block';
-
 }
 
 function inputValidate(e) {
   e.preventDefault();
   const inputs = document.querySelectorAll('.text-class');
   const rightContent = document.querySelector('.right-content');
-  
   for (let index = 0; index < inputs.length; index += 1) {
     if (inputs[index].value === '') {
       alert('Campos inválidos');
@@ -44,12 +41,10 @@ function inputValidate(e) {
   }
   rightContent.style.display = 'none';
   submitedForm();
-
 }
 
 function showCustomGenderOptions(input) {
   const containerElement = document.getElementById('custom-gender-container');
-
   if (input.id === 'custom-gender' && input.checked) {
     containerElement.style.display = 'flex';
   } else {
@@ -61,10 +56,8 @@ window.onload = () => {
   const buttonLoginElement = document.getElementById('button-login');
   const buttonSubmitElement = document.getElementById('facebook-register');
   const inputs = document.querySelectorAll('#inputs-container input');
-
   buttonLoginElement.onclick = buttonAlert;
   buttonSubmitElement.onclick = inputValidate;
-
   for (let index = 0; index < inputs.length; index += 1) {
     inputs[index].onclick = () => showCustomGenderOptions(inputs[index]);
   }
