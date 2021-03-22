@@ -22,9 +22,10 @@
   font-size: 12px;
   flex-wrap: wrap;
   align-self: flex-end;
+  justify-content: end;
 }
 
-.formulario {
+.form-group {
   display: flex;
   flex-direction: column;
 }
