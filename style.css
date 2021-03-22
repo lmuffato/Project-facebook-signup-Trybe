@@ -14,3 +14,8 @@
 .facebook-logo {
   left: 0;
 }
+
+.facebook-login {
+  right: 0;
+  display: flex;
+}
