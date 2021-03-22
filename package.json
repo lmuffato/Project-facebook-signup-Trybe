@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "cypress": "^6.8.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-plugin-editorconfig": "^2.1.3",
