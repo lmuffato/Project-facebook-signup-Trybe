@@ -34,3 +34,16 @@
   background-color: rgb(69, 113, 201);
   color: white;
 }
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
