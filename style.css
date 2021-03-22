@@ -5,14 +5,9 @@
 
 .top-bar {
   background-color: rgb(66, 103, 178);
-  display: flex-container;
-  height: 80px;
-}
-
-.top-div {
   display: flex;
-  justify-content: flex-start;
   height: 80px;
+  justify-content: flex-start;
 }
 
 .facebook-logo {
