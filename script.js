@@ -4,7 +4,6 @@ function alertPasswordEvent() {
   alert(inputLogin.value);
 }
 function alertPassword() {
-  buttonLogin.addEventListener('click', alertPasswordEvent)
+  buttonLogin.addEventListener('click', alertPasswordEvent);
 }
 alertPassword();
-
