@@ -61,3 +61,7 @@
 #label-birthdate {
   display: block;
 }
+
+#label-gender {
+  display: flex;
+}
