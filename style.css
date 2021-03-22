@@ -14,3 +14,8 @@
 .facebook-logo {
   left: 0;
 }
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
