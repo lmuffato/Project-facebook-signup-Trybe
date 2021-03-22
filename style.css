@@ -1,7 +1,27 @@
+body{
+  font-family: Helvetica, Arial, sans-serif;
+
+}
+
 form {
   display: flex;
-  align-content: flex-end;
   border: 1px solid black;
+}
+
+div {
+  border: 1px solid black;
+}
+
+label {
+  display: flex;
+  font-size: 12px;
+  align-items:center;
+  border: 1px solid black;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
 }
 
 .form-control {
