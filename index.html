@@ -42,13 +42,17 @@
     <div class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
-        <form action="#">
+        <form id="registration-form" action="#">
             <div class="input-container">
                 <input type="text" name="firstname" id="firstname" placeholder="Nome" aria-label="nome">
                 <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" aria-label="sobrenome">
             </div>
             <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" aria-label="Celular ou Email">
             <input type="password" name="password" id="password" placeholder="Nova senha" aria-label="Senha">
+            <div class="form-group">
+                <label id="label-birthdate" for="birthdate">Data de nascimento</label>
+                <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+            </div>
         </form>
     </div>
 </div>

@@ -39,6 +39,11 @@ body {
   padding: 7px 5px;
 }
 
+#registration-form .form-group {
+  color: black;
+  padding: 0;
+}
+
 .main-content {
   display: flex;
   flex-direction: row;
