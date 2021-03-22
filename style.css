@@ -65,3 +65,24 @@ body {
 .right-content {
   width: 300px;
 }
+
+.right-content input {
+  width: 100%;
+  margin: 3px;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px;
+}
+
+.name input {
+  width: 140px;
+  margin: 3px;
+}
+
+.radio-genders {
+  display: flex;
+  margin: 3px;
+}
