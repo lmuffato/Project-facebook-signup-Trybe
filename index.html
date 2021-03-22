@@ -12,13 +12,13 @@
     <img src="imgs/facebook-logo.png" alt="logo facebook" class="facebook-logo">
 
    <form action="get" class="facebook-login"></form>
-      <label for="userName"><b>Usuário</b></label>
-      <input type="text" placeholder="Digite seu nome" name="uname" required>
 
-      <label for="psw"><b>Senha</b></label>
-      <input type="password" placeholder="Digite sua senha" name="psw" required>
+     <section class="form-group">
+      <label id="user-email-phone-label" for="userName"><b>Email ou telefone</b></label>
+      <input id="user-email-phone" type="text" placeholder="Digite seu email ou telefone" name="uname" required>
+     </section>
 
-      <button type="submit">Login</button>
+      <button type="submit">Entrar</button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Lembrar
       </label>
