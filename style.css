@@ -71,3 +71,7 @@ ul {
   display: flex;
   flex-direction: column;
 }
+
+.genero {
+  margin: 20px, 350px;
+}
