@@ -55,3 +55,8 @@
 #password {
   width: 80%;
 }
+
+#birth-id {
+  display: flex;
+  flex-direction: column;
+}
