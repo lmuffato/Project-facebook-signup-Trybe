@@ -45,3 +45,15 @@
   display: flex;
   flex-direction: column;
 }
+
+input {
+  width: 100%;
+}
+
+.input-block {
+  display: flex;
+}
+
+.input-block input {
+  flex-basis: 50%;
+}
