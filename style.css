@@ -17,6 +17,7 @@
 
 .facebook-login {
   display: flex;
+  position: absolute;
   justify-content: flex-end;
   right: 150px;
 }
@@ -29,6 +30,10 @@
 
 .left-content {
   width: 800px;
+}
+
+.form-control {
+  align-self: flex-end;
 }
 
 .right-content {
