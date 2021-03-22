@@ -26,37 +26,27 @@
 
 .main-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   background-color: blanchedalmond;
 }
 
 .left-content {
   width: 800px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-items {
+  width: 460px;
+  border: 2px solid black;
 }
 
 .right-content {
   width: 300px;
   border: 2px solid black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .data-content {
   display: flex;
@@ -73,3 +63,6 @@
   margin-top: 8px;;
 }
 
+#facebook-slogan {
+  font-size: 25px;
+}
