@@ -9,7 +9,7 @@
   background-color: rgb(66 103 178);
   padding: 20px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .facebook-login {
