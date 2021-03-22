@@ -31,11 +31,25 @@ body {
 .main-content {
   display: flex;
   flex-direction: row;
-  background-color: azure;
+  justify-content: center;
   width: 100%;
   height: 800px;
+  background-color: azure;
 }
 
 .left-content {
   width: 800px;
+  height: 300px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.flex-row {
+  display: flex;
+}
+
+#label-birthdate , #label-gender {
+  display: block;
 }
