@@ -54,3 +54,16 @@
 .names {
   display: flex;
 }
+
+#formMain {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-gender {
+  display: flex;
+}
+
+#label-gender label {
+  padding: 0 5px;
+}

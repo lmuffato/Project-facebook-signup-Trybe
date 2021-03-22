@@ -36,20 +36,33 @@
         </div>
         <div class="right-content">
             <h1>Abra uma conta</h1>
-            <div class="quick-easy">
-                <p>É rápido e fácil.</p>
+            <div >
+                <p class="quick-easy">É rápido e fácil.</p>
+                <form id="formMain" action="" method="post">
+                    <div class="names">
+                        <input type="text" name="firstname" placeholder="Nome">
+                        <input type="text" name="lastname" placeholder="Sobrenome">
+                    </div>
+                    <input type="text" name="phone_email" placeholder="Celular ou email">
+                    <input type="password" name="password" placeholder="Nova senha">
+                    <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+                    <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+                    <label for="gender" id="label-gender">Gênero</label>
+                    <div class="genders">
+                        <label for="female"> Feminino
+                            <input type="radio" name="gender" id="female">
+                        </label>
+                        <label for="male"> Masculino
+                            <input type="radio" name="gender" id="male">
+                        </label>
+                        <label for="personalized"> Personalizado
+                            <input type="radio" name="gender" id="personalized">
+                        </label>
+                    </div>
+                    <button type="submit" id="facebook-register">Cadastre-se</button>
+                </form>
             </div>
-            <form>
-                <div class="names">
-                    <input type="text" name="firstname" placeholder="Nome">
-                    <input type="text" name="lastname" placeholder="Sobrenome">
-                </div>
-                <input type="text" name="phone_email" placeholder="Celular ou email">
-                <input type="password" name="password" placeholder="Nova senha">
-            </form>
-
-        </div>
-    </div>
+         </div>
     <script src="script.js"></script>
 </body>
 
