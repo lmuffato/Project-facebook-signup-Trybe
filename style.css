@@ -24,6 +24,7 @@
 
 #genders {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .facebook-logo {
