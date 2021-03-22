@@ -5,10 +5,16 @@
 }
 
 .top-bar {
-    display: flex;
-    background-color: rgb(66, 103, 178);
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  justify-content: space-between;
+  color: white;
 }
 
 .facebook-logo {
   justify-self: left;
+}
+
+.facebook-login {
+  display: flex;
 }
