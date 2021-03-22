@@ -26,15 +26,14 @@
   justify-content: space-around;
 }
 
-<<<<<<< HEAD
 .facebook-login {
   display: flex;
   position: absolute;
   right: 150px;
-=======
+}
+
 .left-content {
   width: 800px;
->>>>>>> e3f135d9b93e408808afa2803ef8db0213f46f2d
 }
 
 .right-content {
