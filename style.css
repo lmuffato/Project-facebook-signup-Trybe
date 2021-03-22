@@ -26,3 +26,12 @@
 .right-content {
   width: 300px;
 }
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstname-lastname {
+  width: 2px;
+}
