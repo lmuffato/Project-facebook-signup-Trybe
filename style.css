@@ -52,15 +52,15 @@
   margin-top: 20px;
 }
 
-.form-group input {
-  margin-top: 20px;
-}
-
 input {
   height: 25px;
   border-radius: 5px;
   background: whitesmoke;
   border: 0.2px solid rgba(63, 63, 63, 0.384);
+}
+
+.form-group input {
+  margin-top: 20px;
 }
 
 .right-content h1 {
@@ -98,4 +98,8 @@ input {
   font-size: 20px;
   color: rgb(1, 1, 92);
   text-shadow: 0 0 1px black;
+}
+
+.fullname input {
+  width: 148px;
 }
