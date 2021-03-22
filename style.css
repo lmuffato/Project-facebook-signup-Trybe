@@ -5,8 +5,8 @@
 
 .top-bar {
   background-color: rgb(66, 103, 178);
+  border: 1px solid black;
   display: flex;
-  height: 300px;
   justify-content: space-between;
 }
 
@@ -22,7 +22,6 @@ img {
 .facebook-login {
   border: 1px solid purple;
   display: flex;
-  height: 200px;
   width: 500px;
   margin-right: 50px;
 }
