@@ -20,6 +20,5 @@
 
 .facebook-login {
   display: flex;
-  position: absolute;
-  right: 0;
+  justify-content: flex-end;
 }
