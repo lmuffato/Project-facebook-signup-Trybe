@@ -1,0 +1,22 @@
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.facebook-logo {
+
+  flex-basis: 300px;
+}
+
+.facebook-login {
+  display: flex;
+  align-items:flex-end;
+}
+
+.label-header {
+  display: flex;
+  flex-direction: column;
+  color:aliceblue;
+}
