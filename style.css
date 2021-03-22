@@ -13,6 +13,11 @@
 
 .facebook-login {
   display: flex;
+  align-self: flex-end;
+}
+
+.facebook-logo {
+  align-self: flex-start;
 }
 
 .form-group {
