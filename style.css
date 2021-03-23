@@ -12,23 +12,34 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: rgb(66, 103, 178);
+  height: 80px;
+  padding-left: 200px;
+  padding-right: 150px;
 }
 
-.facebook-logo {
-  display: flex;
-  align-self: flex-start;
+.top-bar a {
+  align-self: center;
 }
 
 .facebook-login {
   display: flex;
   align-self: flex-end;
   color: white;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   margin: 4px;
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  height: 21px;
+  width: 150px;
+  border: solid 1px black;
 }
 
 .form-control {
@@ -40,6 +51,7 @@ body {
   padding: 3px;
   color: white;
   margin: 4px;
+  margin-bottom: 20px;
 }
 
 .control {
@@ -120,6 +132,7 @@ body {
   margin: 0;
   padding: 8px 10px;
   font-size: 18px;
+  width: 377px;
 }
 
 .user-name input {
@@ -150,7 +163,7 @@ body {
 
 #birthdate {
   margin-top: 5px;
-  width: 100px;
+  width: 160px;
   margin-bottom: 10px;
 }
 
@@ -197,9 +210,4 @@ body {
 
 #facebook-register:hover {
   background: linear-gradient(#67ae55, #6ea15a);
-}
-
-.gende {
-  width: 50px;
-  display: inline-block;
 }

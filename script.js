@@ -4,11 +4,6 @@ window.onload = function startin() {
     const inputName = document.getElementById('user-email-phone').value;
     alert(inputName);
   });
-  const btnRegister = document.getElementById('facebook-register');
-  btnRegister.addEventListener('click', () => {
-    const formValues = document.querySelectorAll('.right-content input').value;
-    console.log(formValues);
-  });
 };
 
 // const fields = document.querySelectorAll('[required]');
