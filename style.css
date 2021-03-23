@@ -53,3 +53,7 @@
 #label-gender {
   width: 100%;
 }
+
+#customGender {
+  display: none;
+}
