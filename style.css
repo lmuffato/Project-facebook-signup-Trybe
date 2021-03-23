@@ -68,6 +68,10 @@ body {
   margin-bottom: 10px;
 }
 
+.main-content input {
+  font-size: 1em;
+}
+
 .nome input + input {
   margin-left: 10px;
 }
@@ -75,10 +79,6 @@ body {
 .main-content input:is( [ type = 'text' ] ,[ type = 'password' ] ) {
   padding: 10px;
   width: 100%;
-}
-
-.main-content input {
-  font-size: 1em;
 }
 
 .main-content input::placeholder {
@@ -125,7 +125,7 @@ body {
 }
 
 .genero label {
-  color: 	rgb(48,48,48);
+  color: rgb(48, 48, 48);
   padding-top: 10px;
   padding-bottom: 10px;
   cursor: pointer;
