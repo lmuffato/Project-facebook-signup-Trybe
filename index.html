@@ -52,20 +52,18 @@
             <input type="text" name="phone_email" placeholder="Celular ou email" class="inputs2">
 
             <input type="password" name="password" placeholder="Nova senha" class="inputs2">
-
-            <label for="birth" id="label-birthdate">Data de nascimento</label>
-            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="inputs" id="birth">
-
-            <label id="label-gender">Gênero</label>
-
-            <input type="radio" name="gender" id="Feminino" class="inputRadio" checked>
-            <label for="Feminino">Feminino</label>
-
-            <input type="radio" name="gender" id="Masculino" class="inputRadio">
-            <label for="Masculino">Masculino</label>
-
-            <input type="radio" name="gender" id="Personalizado" class="inputRadio">
-            <label for="Personalizado">Personalizado</label>
+            <div>
+              <label for="label-birthdate">Data de nascimento</label>
+              <input type="text" name="birthdate" placeholder="dd/mm/aaaa" />
+            </div>
+            <div>
+              <label for="gender" id="label-gender">Gênero</label>
+              <div>
+                <input type="radio" name="gender" id="">Feminino</input>
+                <input type="radio" name="gender" id="">Masculino</input>
+                <input type="radio" name="gender" id="">Personalizado</input>
+              </div>
+            </div>
 
           </div>
           <button type="submit" id="facebook-register">Cadastre-se</button>
