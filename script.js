@@ -2,8 +2,8 @@ const buttonEnter = document.querySelector('#button-login');
 const getLastElement = document.getElementById('term');
 
 function verifyBlankFields() {
-  const getInput = document.querySelectorAll('input');
-
+  const getInput = document.querySelectorAll('#form-right-content input');
+  // Apliquei essa lógica para impedir a possibilidade de aparecer várias vezes a mensagem "Campos inválidos!"
   if (getLastElement.children.lenght !== 3) {
     getLastElement.lastElementChild.remove();
   }
@@ -13,13 +13,50 @@ function verifyBlankFields() {
   }
 }
 
+function getInputsValue(div, inputs, checked) {
+  // Juntei os valores dos inputs nome e sobrenome; Coloquei-os em um parágrafo com a mensagem "Olá, ...."; Coloquei esse parágrafo na div;
+  const hello = `Olá, ${inputs[0].value} ${inputs[1].value}`;
+  const helloParagraph = document.createElement('p');
+  helloParagraph.innerText = hello;
+  div.appendChild(helloParagraph);
+
+  // Selecionei os inputs de email e data; Coloquei cada um em um parágrafo; Coloquei cada parágrafo dentro da div
+  for (let index = 2; index < inputs.length; index += 1) {
+    const paragraph = document.createElement('p');
+    paragraph.innerText = inputs[index].value;
+    div.appendChild(paragraph);
+  }
+
+  // Coloquei o valor do checkbox selecionado. Como a lógica é diferente dos input, tive que colocar de forma separada
+  div.appendChild(checked);
+  return div;
+}
+
+function changeRightSide() {
+  // Uma amontoado de constantes para realizar o exercício. Qualquer hora a gente tenta refatorar hehehe
+  const rightContent = document.getElementsByClassName('right-content')[0];
+  const divValues = document.createElement('div');
+  const inputs = document.getElementsByClassName('input-get');
+  const checked = document.querySelectorAll('input[name="gender"]:checked')[0];
+  const checkedValue = checked.value;
+  const checkedParagraph = document.createElement('p');
+  checkedParagraph.innerText = checkedValue;
+  const sectionValues = getInputsValue(divValues, inputs, checkedParagraph);
+
+  // Limpo o conteúdo do form que está no right-content para colocar o novo valor com os textos da informação do usuário;
+  rightContent.innerHTML = '';
+  rightContent.appendChild(sectionValues);
+}
+
 function submit() {
   const getBtn = document.getElementById('facebook-register');
-  getBtn.addEventListener('click', () => {
+  getBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    // Apliquei essa lógica para impedir a possibilidade de aparecer várias vezes a mensagem "Campos inválidos!"
     if (verifyBlankFields()) {
       const createMsg = document.createElement('h3');
       getLastElement.appendChild(createMsg).innerText = 'Campos inválidos!';
-    }
+    } else changeRightSide();
   });
 }
 
