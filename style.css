@@ -90,6 +90,8 @@ body {
   border: 1px solid black;
   display: flex;
   flex-flow: column nowrap; /* não permite quebra de linha */
+  justify-content: center;
+  align-items: stretch;
 }
 
 .new-account input {
@@ -139,11 +141,11 @@ width: 90%;
 
 .get-gender {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  /* flex-flow: column nowrap; */
-  /* margin: 10px 8px 8px; */
+  flex-flow: column nowrap;
+  margin: 10px 8px 8px;
   color: rgb(133, 137, 145);
+  width: 100%;
+  font-size: 10px;
 }
 
 .type-gender {
