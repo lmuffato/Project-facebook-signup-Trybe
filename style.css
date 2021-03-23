@@ -55,3 +55,12 @@ body {
 .full-name {
   width: 45%;
 }
+
+#label-gender {
+  display: flex;
+}
+
+.nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
