@@ -51,8 +51,8 @@ body {
   display: flex;
   flex-direction: row;
   height: 700px;
-  justify-content: flex-start;
-  margin-top: 40px;
+  justify-content: space-between;
+  padding-top: 40px;
   width: 100%;
 }
 
@@ -87,6 +87,7 @@ body {
 }
 
 .new-account {
+  
   display: flex;
   flex-flow: column nowrap; /* não permite quebra de linha */
   justify-content: center;
