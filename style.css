@@ -5,12 +5,32 @@
 }
 
 body {
-  background-color: #e1e4ef;
+  background: linear-gradient(180deg, #fefefe 0%, #d3d8e8 100%);
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .main-content {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  height: 600px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #333;
+  line-height: 48px;
+  margin-top: 25px;
+  padding-left: 5px;
+}
+
+p {
+  font-size: 19px;
+  font-weight: 400;
+  color: #1d2129;
+  line-height: 25px;
+  margin: 10px 0;
+  padding-left: 5px;
 }
 
 .left-content {
@@ -26,6 +46,18 @@ body {
 
 .form-full-name {
   display: flex;
+  justify-content: space-between;
+}
+
+.form-full-name input {
+  width: 195px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #bcd7d8;
+  margin: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 10px;
 }
 
 .form-date {
@@ -33,10 +65,54 @@ body {
   flex-direction: column;
 }
 
+.input-item , #hidden-input {
+  width: 400px;
+  height: 35px;
+  border-radius: 5px;
+  border: 1px solid #bcd7d8;
+  margin: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
 .button-facebook-register {
   display: flex;
+  padding-left: 5px;
+  margin-top: 20px;
+}
+
+#facebook-register {
+  font-family: Freight Sans Bold, Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  color: white;
+  background-color: #68a354;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border-color: #68a354;
+  box-shadow: none;
+}
+
+.form-radio {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  padding-left: 5px;
+  margin: 10px 0;
 }
 
 #hidden-input {
   display: none;
+}
+
+#label-birthdate , #label-gender {
+  font-size: 16px;
+  color: #90949c;
+  font-weight: 700;
+  line-height: 21px;
+  padding-left: 5px;
+  margin-top: 10px;
 }
