@@ -1,5 +1,5 @@
 const getButton = document.getElementById('button-login');
-const radioOptions = document.getElementsByName('gender')[2];
+const selectBinary = document.getElementsByName('gender');
 const binaryContainer = document.querySelector('.binary');
 
 function alertLogin() {
@@ -32,7 +32,9 @@ function invalidFields(event) {
 }
 
 function removeBinary() {
-  binaryContainer.removeChild(binaryContainer.childNodes[0]);
+  if (document.getElementsByName('gender-custom')[0]) {
+    binaryContainer.removeChild(binaryContainer.childNodes[0]);
+  }
 }
 
 function binary() {
@@ -44,6 +46,7 @@ function binary() {
   binaryInput.placeholder = 'Gênero (opcional)';
   binaryContainer.appendChild(binaryInput);
 }
-
-radioOptions.addEventListener('change', binary);
+selectBinary[0].addEventListener('change', removeBinary);
+selectBinary[1].addEventListener('change', removeBinary);
+selectBinary[2].addEventListener('change', binary);
 btnSubmit.addEventListener('click', invalidFields);
