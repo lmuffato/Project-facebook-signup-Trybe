@@ -17,8 +17,8 @@ function genderCustom() {
   let getCustomGender = document.getElementById('custom')
   getCustomGender.addEventListener('click', () => {
       let createArea = document.createElement('input');
-      createArea.setAttribute('type', 'textarea');
-      getCustomGender.appendChild(createArea)
+      createArea.setAttribute('type', 'text');
+      getCustomGender.appendChild(createArea);
   })
 }
 
@@ -26,3 +26,12 @@ window.onload = () => {
   submit();
   genderCustom();
 };
+
+
+const buttonEnter = document.querySelector('#button-login');
+
+buttonEnter.addEventListener('click', (e) => {
+  e.preventDefault();
+  const email = document.querySelector('#user-email-phone');
+  window.alert(email.value);
+});
