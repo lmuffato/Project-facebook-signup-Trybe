@@ -93,7 +93,7 @@ input {
   flex-direction: column;
 }
 
-.right-content form input, .right-content form label {
+.right-content form input , .right-content form label {
   margin: 5px 0;
 }
 
