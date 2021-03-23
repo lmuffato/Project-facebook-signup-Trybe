@@ -16,13 +16,15 @@ alertLogin();
 // REQUISITO 19 //
 // criando input gênero personalizado //
 function openCustom() {
+  // const genderCustom = document.querySelector('.gender-custom');
+  // const genderPersnalize = document.querySelector('#genderP');
   genderPersonalize.addEventListener('click', () => {
     if (!document.querySelector('#inputP')) {
       const createInput = document.createElement('input');
       createInput.placeholder = 'Gênero (opcional)';
-      createInput.tipo = 'texto';
+      createInput.type = 'text';
       createInput.id = 'inputP';
-      createInput.nome = 'gênero personalizado';
+      createInput.name = 'gênero personalizado';
       genderCustom.appendChild(createInput);
     }
   });
@@ -40,6 +42,7 @@ function removeInput() {
 }
 
 window.onload = () => {
+  alertLogin();
   openCustom();
   removeInput();
 };
