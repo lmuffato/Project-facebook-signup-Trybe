@@ -137,7 +137,8 @@ h1 {
 #field-gender {
   display: flex;
   border: none;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 }
 
 #facebook-register {
@@ -159,4 +160,3 @@ h1 {
 #gender-custom {
   display: none;
 }
-
