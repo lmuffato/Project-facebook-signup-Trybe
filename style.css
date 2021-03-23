@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
-  color:#333;
+  color: #333;
 }
 
 input {
@@ -76,7 +76,7 @@ input {
 }
 
 .left-content p {
-  color:rgb(41, 72, 125);
+  color: rgb(41, 72, 125);
   font-weight: 800;
   font-size: 30px;
   margin-bottom: 30px;
@@ -93,7 +93,7 @@ input {
   flex-direction: column;
 }
 
-.right-content form * {
+.right-content form input, .right-content form label {
   margin: 5px 0;
 }
 
@@ -103,7 +103,7 @@ input {
 
 .right-content p {
   font-size: 15px;
-  margin: 5px 0 10px 0;
+  margin: 5px 0 10px;
 }
 
 .nome {
