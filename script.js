@@ -21,6 +21,15 @@ function validatingForm(event) {
 const btnSubmit = document.getElementById('facebook-register');
 btnSubmit.addEventListener('click', validatingForm);
 
+<<<<<<< HEAD
 /* Substitua o conteúdo do container com a classe right-content se o formulário
 estiver completamente preenchido e validado */
 // Faltam os requisitos 19 e 20.
+=======
+function createField() {
+  const genderField = document.getElementById('gender-custom');
+  genderField.style.display = 'flex';
+}
+
+document.addEventListener('click', createField);
+>>>>>>> 833af0c6f31d2a4f8884661a6c6a0ccef109c6fb
