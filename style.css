@@ -85,8 +85,14 @@
 
 .signup {
   width: 350px;
+  display: flex;
+  flex-direction: column;
   line-height: 1.5;
   margin-top: 20px;
+}
+
+.signup .name {
+  display: flex;
 }
 
 #user-email-phone {
@@ -99,7 +105,7 @@
   width: 150px;
 }
 
-#alinhar-radios {
+#radios-gender {
   display: flex;
   margin-right: 200px;
 }
