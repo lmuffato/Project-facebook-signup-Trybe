@@ -2,7 +2,9 @@ function verifyBlankFields() {
   const getInput = document.querySelectorAll('input');
   for (let index = 0; index < getInput.length; index += 1) {
     if (getInput[index].value === '') {
-      alert('Campos inválidos!');
+      let getLastElement = document.getElementById('term')
+      let createMsg = document.createElement('h3')
+      getLastElement.appendChild(createMsg).innerText = 'Campos inválidos!';
       break;
     }
   }
