@@ -1,20 +1,23 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-between;
   width: auto;
   height: 50px;
+  justify-content: space-between;
 }
 
 .facebook-logo {
+  display: flex;
   padding: 3px;
+  justify-content: flex-start;
 }
 
 .facebook-login {
-  padding: 12px;
+  display: flex;
+  padding: 15px;
+  justify-content: flex-end;
 }
 
 .form-group {
   display: flex;
-  flex-direction: column;
 }
