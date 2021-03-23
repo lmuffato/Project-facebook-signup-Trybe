@@ -26,8 +26,6 @@
 
 .main-content {
   display: flex;
-  flex-direction: row;
-  justify-content: first baseline;
 }
 
 .left-content {
@@ -40,5 +38,4 @@
 
 .flex-start {
   display: flex;
-  place-self: flex-start;
 }
