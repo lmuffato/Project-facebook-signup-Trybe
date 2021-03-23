@@ -12,7 +12,7 @@ function check(evt) {
   for (let index = 0; index <= inputs.length; index += 1) {
     if (inputs[index].value === '') {
       const invalidInput = document.createElement('span');
-      invalidInput.innerText = 'Campos Inválidos';
+      invalidInput.innerText = 'Campos inválidos';
       signupForm.appendChild(invalidInput);
       return;
     }
