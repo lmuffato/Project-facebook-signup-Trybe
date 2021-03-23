@@ -17,7 +17,7 @@ body {
 .top-bar { /* header */
   display: flex;
   background-color: rgb(66, 103, 178);
-  height: 76px;
+  height: 10%;
   width: 100%;
   padding: 0 10%;
   justify-content: space-between;
