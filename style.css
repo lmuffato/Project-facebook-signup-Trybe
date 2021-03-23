@@ -7,8 +7,7 @@
   display: flex;
   background-color: rgb(66, 103, 178);
   justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px 20px 10px 20px;
   align-items: center;
 }
 
@@ -19,17 +18,31 @@
 
 .facebook-login {
   display: flex;
+  font-family:sans-serif;
 }
 
 label {
   color: rgb(255, 255, 255);
 }
 
-.login, .password, .btn {
-  margin-right: 15px;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;
+  font-size: small;
+  margin-right: 15px;
+}
+
+.form-control {
+  display: flex;
+  align-content: center;
+  margin-top: 17px;
+  height: 20px;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  font-size: smaller;
+  margin: 3px;
+  text-decoration: none;
+  opacity: 60%;
 }
