@@ -6,7 +6,7 @@ function activeAlert() {
   });
 }
 
-/* const fields = document.querySelectorAll('[required]');
+ /* const fields = document.querySelectorAll('[required]');
 
 console.log(fields);
 
@@ -39,8 +39,8 @@ function validateInputs() {
 function checkTextInputs() {
   const inputList = document.querySelectorAll('.input-text');
   let emptyField = false;
-  for (let input in inputList) {
-    if (input.value === '') {
+  for (let index = 0; index < inputList.length; index += 1) {
+    if (inputList[index].value === '') {
       emptyField = true;
     }
   }
@@ -50,8 +50,8 @@ function checkTextInputs() {
 function checkRadioInputs() {
   const inputsRadio = document.getElementsByName('gender');
   let count = 0;
-  for (let input in inputsRadio) {
-    if (input.checked) {
+  for (let index = 0; index < inputsRadio.length; index += 1) {
+    if (inputsRadio[index].checked) {
       count += 1;
     }
   }
@@ -72,7 +72,7 @@ function checkInputs() {
 }
 
 const submitButton = document.querySelector('#facebook-register');
-submitButton.addEventListener('click', checkInputs); 
+submitButton.addEventListener('click', checkInputs);
 
 window.onload = function startSession() {
   activeAlert();
