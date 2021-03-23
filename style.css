@@ -24,7 +24,6 @@ body {
 .facebook-login {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
 }
 
 .facebook-login input {
