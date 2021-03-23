@@ -7,3 +7,29 @@ function emitAlert(e) {
 }
 
 loginBtn.addEventListener('click', emitAlert);
+
+const otherInput = document.querySelector('#other');
+const maleInput = document.querySelector('#male');
+const femaleInput = document.querySelector('#female');
+const customInput = document.querySelector('#customGender');
+
+let inputOpen = false;
+
+otherInput.addEventListener('click', ShowInput);
+maleInput.addEventListener('click', HideInput);
+femaleInput.addEventListener('click', HideInput);
+
+function ShowInput () {
+  customInput.style.display = 'block';
+  inputOpen = true;
+}
+
+function HideInput () {
+  if (inputOpen === true){
+    customInput.style.display = 'none';
+    inputOpen = false;
+  }
+}
+
+ShowInput();
+HideInput();
