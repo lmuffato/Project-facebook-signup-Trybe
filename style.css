@@ -33,3 +33,10 @@ body {
   flex-direction: column;
 }
 
+.button-facebook-register {
+  display: flex;
+}
+
+#hidden-input {
+  display: none;
+}
