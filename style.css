@@ -141,6 +141,7 @@ h1 {
 #field-gender {
   display: flex;
   border: none;
+  justify-content: space-between;
 }
 
 #label-gender {
