@@ -16,96 +16,70 @@
 
       <form action="get" class="facebook-login">
 
-        <!-- Jogar a label e o input dentro da mesma linha da tabel e mudar a direção para columm e deixar somente o do botão em linha -->
-        <table>
-          <tr class="form-group">
-            <td>
-              <label id="user-email-phone-label" for="user-email-phone" class="entry-form">Email ou telefone</label>
-            </td>
-            <td>
-              <input id="user-email-phone" type="text" placeholder="Digite seu email ou telefone" name="uname" class="entry-form-inputs">
-            </td>
-            <td id="empty"></td>
-          </tr>
-          <tr class="form-group">
-            <td class="entry-form-inputs-container">
-              <label id="user-password-label" for="user-password" class="entry-form second-td">Senha</label>
-            </td>
-            <td class="entry-form-inputs-container">
-              <input id="user-password" type="text" placeholder="Digite aqui sua senha" name="uname" class="entry-form-inputs second-td">
-            </td>
-            <td>
-              <a name="remember-password" id="remember-password" class="second-td">Esqueceu sua conta?</a>
-            </td>
-          </tr>
-          <tr class="form-group">
-            <td>
-              <button id="button-login" type="submit">Entrar</button>
-              
-            </td>
-          </tr>
-        </table>
-
-        <!-- <section class="form-group">
-          <label id="user-email-phone-label" for="user-email-phone" class="entry-form"><b>Email ou telefone</b></label>
-          <input id="user-email-phone" type="text" placeholder="Digite seu email ou telefone" name="uname">
+        <section class="form-group">
+          <label id="user-email-phone-label" for="user-email-phone" class="entry-form">Email ou telefone</label>
+          <input id="user-email-phone" type="text" placeholder="Digite seu email ou telefone" name="uname"
+            class="entry-form-inputs">
         </section>
 
         <section class="form-group">
-          <label id="user-password-label" for="user-password" class="entry-form"><b>Senha</b></label>
-          <input id="user-password" type="text" placeholder="Digite aqui sua senha" name="uname">
+          <label id="user-password-label" for="user-password" class="entry-form second-td">Senha</label>
+          <input id="user-password" type="password" placeholder="Digite aqui sua senha" name="uname"
+            class="entry-form-inputs second-td">
+          <a name="remember-password" id="remember-password" class="second-td">Esqueceu sua conta?</a>
         </section>
 
         <section class="form-control">
           <button id="button-login" type="submit">Entrar</button>
-        </section> -->
+        </section>
       </form>
-      <!-- <h3 name="remember-password" id="remember-password">Esqueceu sua conta?</h3> -->
     </div>
   </header>
 
-  <main class="main-content">
-    <section class="left-content">
-      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
-        vida.</p>
-      <img src="imgs/networking.png" alt="networking do facebook" id="facebook-networking">
-    </section>
+  <main>
+    <div class="main-content">
+      <section class="left-content">
+        <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
+          vida.</p>
+        <img src="imgs/networking.png" alt="networking do facebook" id="facebook-networking">
+      </section>
 
-    <section class="right-content" id="original-right-content">
-      <h1>Abra uma conta</h1>
-      <p class="quick-easy">É rápido e fácil.</p>
-      <form action="" id="main-form">
-        <div class="nome">
-          <input type="text" name="firstname" placeholder="Nome" class="first-last-name" id="name">
-          <input type="text" name="lastname" placeholder="Sobrenome" class="first-last-name" id="lastname">
-        </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email" id="phone_email" class="data">
-        <input type="password" name="password" placeholder="Nova senha" id="password" class="data">
-        <fieldset>
-          <label for="" id="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" class="data">
-        </fieldset>
-        <fieldset id="gender-field">
-          <label for="" id="label-gender">Gênero</label>
-          <label for="female">
-            <input type="radio" name="gender" id="female" value="Feminino">Feminino
-          </label>
-          <label for="male">
-            <input type="radio" name="gender" id="male" value="Masculino">Masculino
-          </label>
-          <label for="personal">
-            <input type="radio" name="gender" id="personal" value="Personalizado">Personalizado
-          </label>
-        </fieldset>
-        <div id="messages">
-          <p>Ao clicar em Cadastre-se, você concorda com nossos Termos, Política de Dados e Política de Cookies. Você
-            pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
-          <h2 id="invalid-field"></h2>
-        </div>
+      <section class="right-content" id="original-right-content">
+        <h1 id="open-a-account">Abra uma conta</h1>
+        <p class="quick-easy">É rápido e fácil.</p>
+        <form action="" id="main-form">
+          <div class="nome">
+            <input type="text" name="firstname" placeholder="Nome" class="first-last-name" id="name">
+            <input type="text" name="lastname" placeholder="Sobrenome" class="first-last-name" id="lastname">
+          </div>
+          <input type="text" name="phone_email" placeholder="Celular ou email" id="phone_email" class="data">
+          <input type="password" name="password" placeholder="Nova senha" id="password" class="data">
+          <fieldset>
+            <label for="" id="label-birthdate">Data de nascimento</label>
+            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" class="data">
+          </fieldset>
+          <fieldset id="gender-field">
+            <label for="" id="label-gender">Gênero</label>
+            <label for="female">
+              <input type="radio" name="gender" id="female" value="Feminino">Feminino
+            </label>
+            <label for="male">
+              <input type="radio" name="gender" id="male" value="Masculino">Masculino
+            </label>
+            <label for="personal">
+              <input type="radio" name="gender" id="personal" value="Personalizado">Personalizado
+            </label>
+          </fieldset>
+          <div id="messages">
+            <p>Ao clicar em Cadastre-se, você concorda com nossos Termos, Política de Dados e Política de Cookies. Você
+              pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
+            <h2 id="invalid-field"></h2>
+          </div>
 
-        <button type="submit" id="facebook-register">Cadastre-se</button>
-      </form>
-    </section>
+          <button type="submit" id="facebook-register">Cadastre-se</button>
+        </form>
+      </section>
+    </div>
   </main>
 
   <script src="script.js"></script>

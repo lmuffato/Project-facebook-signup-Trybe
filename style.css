@@ -37,6 +37,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  /* width: 500px; */
+  align-content: center;
 }
 
 tbody {
@@ -68,6 +70,11 @@ tbody {
   margin-left: 14px;
 }
 
+.form-control {
+  align-self: flex-end;
+  margin: auto 0;
+}
+
 #button-login {
   background-color: #4267b2;
   border: 1px solid #29487d;
@@ -88,22 +95,50 @@ a:hover {
   text-decoration: underline;
 }
 
+main {
+  background: linear-gradient(white, #d3d8e8);
+  display: flex;
+  justify-content: center;
+}
+
 .main-content {
   display: flex;
-  background: linear-gradient(white, #d3d8e8);
   justify-content: space-around;
+  padding: 1% 0;
+  width: 900px;
 }
 
 .left-content {
   width: 800px;
 }
 
-.form-control {
-  align-self: flex-end;
+#facebook-slogan {
+  color: #0e385f;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+    margin-top: 40px;
+    width: 450px;
+    word-spacing: -1px;
+}
+
+#facebook-networking {
+  width: 537px;
+  aspect-ratio: auto 537 / 195;
+  height: 195px;
 }
 
 .right-content {
   width: 300px;
+}
+
+#open-a-account {
+  font-size: 32px;
+}
+
+.quick-easy {
+  color: #1d2129;
+  font-size: 19px;
 }
 
 .nome {
