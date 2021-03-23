@@ -5,6 +5,7 @@
 .main-content {
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .left-content {
@@ -40,10 +41,4 @@
 
 #custom-gender {
   display: none;
-}
-
-/* Estilização */
-
-.main-content {
-  margin-top: 2rem;
 }
