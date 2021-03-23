@@ -10,9 +10,7 @@ body {
 
 .top-bar {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
   height: 60px;
   width: 100%;
   background-color: rgb(66, 103, 178);
@@ -21,9 +19,8 @@ body {
 .facebook-logo {
   padding: 5px;
   margin-left: 20px;
-  display: flex;
-  align-self: flex-end;
-  order: 0;
+  display: block;
+  float: left;
 }
 
 .facebook-login {
@@ -31,10 +28,12 @@ body {
   order: 1;
   align-self: flex-end;
   color: white;
+  flex-grow: 4;
 }
 
 .form-group {
   display: flex;
+  align-self: flex-end;
 }
 
 .form-group label {
@@ -44,7 +43,7 @@ body {
 .form-control {
   display: flex;
   order: 1;
-  align-self: flex-end;
+  align-self: center;
 }
 
 .main-content {
