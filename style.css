@@ -69,5 +69,10 @@
 }
 
 .genders {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender-container {
     display: flex;
 }
