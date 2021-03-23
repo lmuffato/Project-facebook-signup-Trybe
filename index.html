@@ -47,12 +47,11 @@
         <label for="" id="label-birthdate">Data de nascimento</label>
         <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
         <label id="label-gender">Gênero</label>
-        <input type="radio" name="gender" id="female" value="female">
-        <label for="female">Feminino</label>
-        <input type="radio" name="gender" id="male" value="male">
-        <label for="male">Masculino</label>
-        <input type="radio" name="gender" id="custom" value="custom">
-        <label for="custom">Personalizado</label>
+        <div id="inputs-container">
+          <input type="radio" name="gender" value="female" checked>Feminino</input>
+          <input type="radio" name="gender" value="male">Masculino</input>
+          <input type="radio" name="gender" value="custom">Personalizado</input>
+        </div>
       </form>
     </div>
   </div>
