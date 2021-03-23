@@ -38,7 +38,9 @@ body {
   margin-top: 5px;
 }
 
-.form-group { Unexpected missing end-of-source newline (no-missing-end-of-source-newline)lumn;
+.form-group { 
+  display: flex;
+  flex-direction: column;
 }
 
 .form-control {
