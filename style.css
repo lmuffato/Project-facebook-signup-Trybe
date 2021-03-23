@@ -5,19 +5,14 @@
 
 .top-bar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   min-height: 42px;
   background-color: rgb(66, 103, 178);
-}
-
-.facebook-logo {
-  justify-self: left;
 }
 
 .facebook-login {
   display: flex;
 }
-
 
 .form-group {
   display: flex;
