@@ -8,18 +8,16 @@
   background-color: rgb(66, 103, 178);
   display: flex;
   justify-content: space-between;
-  padding-bottom: 0;
+  padding: 5px;
   border-bottom: 1px solid rgb(44, 44, 44);
 }
 
 .facebook-logo {
-  margin-left: 20px;
   align-self: flex-start;
 }
 
 .facebook-login {
   display: flex;
-  margin-right: 20px;
   align-self: flex-end;
 }
 
@@ -30,7 +28,7 @@
 }
 
 .form-control {
-  align-self: flex-end;
+  align-self: center;
 }
 
 #button-login {
@@ -41,6 +39,7 @@
 .main-content {
   display: flex;
   justify-content: center;
+  padding-top: 15px;
 }
 
 .full-name {
@@ -52,6 +51,7 @@
   margin-left: 3%;
   border: 1px solid black;
   height: 300px;
+  color: rgb(69, 113, 201);
 }
 
 .right-content {
@@ -59,6 +59,10 @@
   margin-right: 10%;
   border: 1px solid black;
   height: 300px;
+}
+
+#gender-custom {
+  display: none;
 }
 
 #mensage-invalid {
