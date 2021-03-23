@@ -38,21 +38,21 @@
         <p class="quick-easy">É rápido e fácil.</p>
         <form id="registrationForm" name="registration" action="#">
             <div class="input-container">
-                <input type="text" name="firstname" id="firstname" placeholder="Nome" aria-label="nome">
-                <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" aria-label="sobrenome">
+                <input type="text" name="firstname" id="firstname" placeholder="Nome" aria-label="nome" required>
+                <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" aria-label="sobrenome" required>
             </div>
-            <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" aria-label="Celular ou Email">
-            <input type="password" name="password" id="password" placeholder="Nova senha" aria-label="Senha">
+            <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" aria-label="Celular ou Email" required>
+            <input type="password" name="password" id="password" placeholder="Nova senha" aria-label="Senha" required>
             <div class="form-group">
                 <label id="label-birthdate" for="birthdate">Data de nascimento</label>
-                <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+                <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" required>
             </div>
             <div class="radio-group">
                 <label id="label-gender" for="label-gender">Gênero</label>
                 <div>
-                    <input type="radio" name="gender" id="female" aria-label="feminino" value="Feminino">Feminino
-                    <input type="radio" name="gender" id="male" aria-label="masculino" value="Masculino">Masculino
-                    <input type="radio" name="gender" id="custom" aria-label="custom" value="Personalizado">Personalizado
+                    <input type="radio" name="gender" id="female" aria-label="feminino" value="Feminino" required>Feminino
+                    <input type="radio" name="gender" id="male" aria-label="masculino" value="Masculino" required>Masculino
+                    <input type="radio" name="gender" id="custom" aria-label="custom" value="Personalizado" required>Personalizado
                 </div>
             </div>
             <p id="hidden-input"></p>
