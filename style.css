@@ -20,6 +20,5 @@
 
 .main-content {
   display: flex;
-  flex-direction: row;
   background-color: black;
 }
