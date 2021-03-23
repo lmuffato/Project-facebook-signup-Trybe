@@ -37,4 +37,19 @@ body {
 
 #collectName {
   display: flex;
+  flex-flow: row wrap;
+  background-color: blue;
+  width: 370px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.fill {
+ flex-grow: 1;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
 }
