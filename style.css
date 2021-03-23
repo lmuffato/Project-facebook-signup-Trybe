@@ -79,12 +79,11 @@ span label {
 
 .right-content form input {
   display: flex;
-
   border: 1px solid #ccd0d5;
   border-color: #bdc7d8;
   border-radius: 5px;
   font-size: 1em;
-  padding: 0.5em 0.5em;
+  padding: 0.5em;
   margin-bottom: 0.8em;
 }
 
