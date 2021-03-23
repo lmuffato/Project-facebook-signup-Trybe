@@ -14,7 +14,10 @@ const inputForm = document.querySelectorAll('.input-form');
 function validateInputs() {
   for (let index = 0; index < inputForm.length; index += 1) {
     if (inputForm[index].value === '') {
-      alert('Campos inválidos');
+      const message = document.createElement('span');
+      message.innerText = 'Campos inválidos';
+      const form = document.querySelector('#form-main');
+      form.appendChild(message);
     }
   }
 }
