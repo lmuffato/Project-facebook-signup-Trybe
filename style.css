@@ -33,13 +33,7 @@
   justify-content: right;
 }
 
-.box {
-  display:flex;
-  flex-flow: row wrap;
-}
-
-.ada {
-  display: block;
-  width: 250px;
-  padding-right: 85px;
+.form {
+  display: flex;
+  flex-flow: now wrap;
 }
