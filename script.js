@@ -32,36 +32,3 @@ function validacao() {
   });
 }
 validacao();
-
-function addInput() {
-  const takeInputRadio = document.getElementById('gender-options');
-  const createInput = document.createElement('input');
-  createInput.id = 'input-gender';
-  createInput.setAttribute('name', 'gender-custom');
-  createInput.setAttribute('placeholder', 'Gênero (opcional)');
-  takeInputRadio.appendChild(createInput);
-}
-
-function removeInput() {
-  const takeIdGender = document.getElementById('input-gender');
-  takeIdGender.remove();
-}
-
-function checkRadioOption() {
-  const takeDivGender = document.getElementById('gender-options');
-  takeDivGender.addEventListener('click', () => {
-    const takeInputOther = document.getElementById('personalizado');
-    const takeInput = document.querySelectorAll('input');
-    for (let i = 0; i < takeInput.length; i += 1) {
-      console.log(takeInput[i].value);
-      if (takeInputOther.checked !== true) {
-        removeInput();
-        break;
-      } else {
-        addInput();
-        break;
-      }
-    }
-  });
-}
-checkRadioOption();
