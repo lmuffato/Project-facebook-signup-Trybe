@@ -10,40 +10,33 @@ body {
 
 .top-bar {
   display: flex;
-  align-items: flex-start;
-  height: 60px;
-  width: 100%;
+  justify-content: space-between;
   background-color: rgb(66, 103, 178);
 }
 
-.facebook-logo {
-  padding: 5px;
-  margin-left: 20px;
-  display: block;
-  float: left;
+.facebook-logo  {
+  display: flex;
+  align-self: flex-start;
 }
 
 .facebook-login {
   display: flex;
-  order: 1;
   align-self: flex-end;
   color: white;
-  flex-grow: 4;
 }
 
 .form-group {
   display: flex;
-  align-self: flex-end;
+  flex-direction: column;
 }
 
-.form-group label {
+.form-group input {
   padding: 1px;
+  align-self: baseline;
 }
 
 .form-control {
-  display: flex;
-  order: 1;
-  align-self: center;
+  align-self: flex-end;
 }
 
 .main-content {
