@@ -34,28 +34,26 @@
       <img src="imgs/networking.png" alt="Illustration of people connected to each other around the world" id="facebook-networking">
     </section>
     <section class="right-content">
-      <div id="ifNotRegistered">
-        <h1>Abra uma conta</h1>
-        <p class="quick-easy">É rápido e fácil.</p>
-        <!-- Exibir uma mensagem "Campos inválidos" dentro do formulário caso pelo menos um campo não esteja preenchido -->
-        <form class="signup" novalidate>
-          <input type="text" name="firstname" placeholder="Nome" required>
-          <input type="text" name="lastname" placeholder="Sobrenome" required>
-          <input type="text" name="phone_email" placeholder="Celular ou email" required>
-          <input type="password" name="password" placeholder="Nova senha" required>
-          <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" required>
-          <label for="gender" id="label-gender">Gênero</label>
-          <input type="radio" name="gender" id="female" value="Feminino">
-          <label for="female" id="label-gender">Feminino</label>
-          <input type="radio" name="gender" id="male" value="Masculino">
-          <label for="male" id="label-gender">Masculino</label>
-          <input type="radio" name="gender" id="other" value="Personalizado">
-          <label for="other" id="label-gender">Personalizado</label>
-          <input type="text" name="gender-custom" class="hidden" placeholder="Gênero (opcional)">
-          <button type="submit" id="facebook-register">Cadastre-se</button>
-        </form>
-      </div>
+      <h1>Abra uma conta</h1>
+      <p class="quick-easy">É rápido e fácil.</p>
+      <!-- Exibir uma mensagem "Campos inválidos" dentro do formulário caso pelo menos um campo não esteja preenchido -->
+      <form class="signup" novalidate>
+        <input type="text" name="firstname" placeholder="Nome" required>
+        <input type="text" name="lastname" placeholder="Sobrenome" required>
+        <input type="text" name="phone_email" placeholder="Celular ou email" required>
+        <input type="password" name="password" placeholder="Nova senha" required>
+        <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+        <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" required>
+        <label for="gender" id="label-gender">Gênero</label>
+        <input type="radio" name="gender" id="female" value="Feminino">
+        <label for="female" id="label-gender">Feminino</label>
+        <input type="radio" name="gender" id="male" value="Masculino">
+        <label for="male" id="label-gender">Masculino</label>
+        <input type="radio" name="gender" id="other" value="Personalizado">
+        <label for="other" id="label-gender">Personalizado</label>
+        <input type="text" name="gender-custom" class="hidden" placeholder="Gênero (opcional)">
+        <button type="submit" id="facebook-register">Cadastre-se</button>
+      </form>
       <div id="ifRegistered" class="hidden">
         <h1 id="greetings">Olá, John Doe</h1>
         <p class="email_phone">john@doe.com / (00) 00000-0000</p>
