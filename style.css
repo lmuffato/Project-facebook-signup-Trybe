@@ -99,7 +99,7 @@ body {
   justify-content: flex-start;
 }
 
-#cadastro {
+#fullname {
   display: flex;
   justify-content: space-between;
   background-color: darkblue;
