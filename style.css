@@ -47,7 +47,7 @@
   width: 300px;
 }
 
-.fullName {
+.fullname {
   display: flex;
   flex-flow: row nowrap;
   flex-basis: 55%;
