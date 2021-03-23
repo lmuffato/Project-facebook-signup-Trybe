@@ -39,20 +39,29 @@ header {
   justify-content: flex-end;
 }
 
+tbody {
+  display: flex;
+  align-items: center;
+}
+
 .entry-form {
   color: whitesmoke;
   font-size: 12px;
 }
 
-.entry-form-inputs-container {
+/* .entry-form-inputs-container {
   width: 150px;
   height: 25px;
-}
+} */
 
 .entry-form-inputs {
   width: 142px;
   padding: 3px 3px 4px;
   border: 1px solid black;
+}
+
+#empty {
+  height: 14px;
 }
 
 .second-td {

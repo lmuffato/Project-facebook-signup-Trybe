@@ -15,33 +15,35 @@
       <img src="imgs/facebook-logo.png" alt="logo facebook" class="facebook-logo">
 
       <form action="get" class="facebook-login">
-        <table class="form-group">
-          <tr>
+
+        <!-- Jogar a label e o input dentro da mesma linha da tabel e mudar a direção para columm e deixar somente o do botão em linha -->
+        <table>
+          <tr class="form-group">
             <td>
               <label id="user-email-phone-label" for="user-email-phone" class="entry-form">Email ou telefone</label>
             </td>
             <td>
-              <label id="user-password-label" for="user-password" class="entry-form second-td">Senha</label>
-            </td>
-          </tr>
-          <tr>
-            <td class="entry-form-inputs-container">
               <input id="user-email-phone" type="text" placeholder="Digite seu email ou telefone" name="uname" class="entry-form-inputs">
+            </td>
+            <td id="empty"></td>
+          </tr>
+          <tr class="form-group">
+            <td class="entry-form-inputs-container">
+              <label id="user-password-label" for="user-password" class="entry-form second-td">Senha</label>
             </td>
             <td class="entry-form-inputs-container">
               <input id="user-password" type="text" placeholder="Digite aqui sua senha" name="uname" class="entry-form-inputs second-td">
             </td>
             <td>
-              <button id="button-login" type="submit">Entrar</button>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
               <a name="remember-password" id="remember-password" class="second-td">Esqueceu sua conta?</a>
             </td>
           </tr>
-
+          <tr class="form-group">
+            <td>
+              <button id="button-login" type="submit">Entrar</button>
+              
+            </td>
+          </tr>
         </table>
 
         <!-- <section class="form-group">
