@@ -73,6 +73,8 @@ getGender.addEventListener('click', (e) => {
   if (e.target === getCustomGender) {
     const createCustomField = document.createElement('input');
     createCustomField.setAttribute('type', 'text');
+    createCustomField.setAttribute('name', 'gender-custom');
+    createCustomField.setAttribute('placeholder', 'Gênero (opcional)');
     getGender.appendChild(createCustomField);
   }
   if (getGender.children.length > 9) {
