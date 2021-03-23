@@ -67,12 +67,11 @@ input {
 .main-content {
   display: flex;
   justify-content: space-between;
-  margin: 50px 150px;
+  margin: 50px 80px;
 }
 
 .left-content {
   width: 800px;
-  margin-right: 100px;
 }
 
 .left-content p {
