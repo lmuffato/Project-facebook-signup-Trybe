@@ -7,12 +7,15 @@ window.onload = () => {
 function genderCustom() {
   if (document.querySelector('#customGender').checked === true) {
     const parentEle = document.querySelector('#personalizedGender');
-    const elem = document.createElement('input');
-    parentEle.appendChild(elem);
-    elem.id = 'gender-custom';
-    elem.setAttribute('name', 'gender-custom');
-    elem.setAttribute('type', 'text');
-    elem.setAttribute('placeholder', 'Gênero (opcional)');
+    const e = document.createElement('input');
+    c = e;
+    b = c;
+    a = b;
+    parentEle.appendChild(e);
+    e.id = 'gender-custom';
+    c.setAttribute('name', 'gender-custom');
+    b.setAttribute('type', 'text');
+    a.setAttribute('placeholder', 'Gênero (opcional)');
   }
 }
 
