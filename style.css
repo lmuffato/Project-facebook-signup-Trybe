@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .top-bar {
@@ -13,11 +14,13 @@
 
 .facebook-logo {
   margin-left: 20px;
+  align-self: flex-start;
 }
 
 .facebook-login {
   display: flex;
   margin-right: 20px;
+  align-self: flex-end;
 }
 
 .form-group {
@@ -37,15 +40,25 @@
 
 .main-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.full-name {
+  display: flex;
 }
 
 .left-content {
   width: 800px;
+  margin-left: 3%;
+  border: 1px solid black;
+  height: 300px;
 }
 
 .right-content {
   width: 300px;
+  margin-right: 10%;
+  border: 1px solid black;
+  height: 300px;
 }
 
 #mensage-invalid {
