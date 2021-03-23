@@ -15,8 +15,9 @@
 
 .facebook-login {
   display: flex;
-  height: 25px;
-  align-self: center;
+  flex-basis: 900px;
+  align-content: stretch;
+  justify-content: flex-end;
 }
 
 .form-group {
