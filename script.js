@@ -4,7 +4,6 @@ const sendForm = document.querySelector('#facebook-register');
 const slctInput = document.querySelectorAll('.main-content input');
 const selectForm = document.querySelector('#form-signup');
 const createSpan = document.createElement('span');
-const selectCustom = document.querySelector('#pers');
 const selectDivCustom = document.querySelector('#customGender');
 const selectRadios = document.getElementsByName('gender');
 
