@@ -163,7 +163,7 @@ footer {
   width: 100px;
   margin-bottom: 10px;
   color: rgb(189, 199, 216);
-  font: 400 18px;
+  font: 18px;
   font-family: Arial, Helvetica, sans-serif;
   height: 30px;
   border: 1px solid rgb(189, 199, 216);
@@ -173,7 +173,7 @@ footer {
 #phone_email , #password {
   margin-bottom: 10px;
   color: rgb(189, 199, 216);
-  font: 400 18px;
+  font: 18px;
   font-family: Arial, Helvetica, sans-serif;
   height: 30px;
   width: 100%;
@@ -185,7 +185,7 @@ footer {
   width: 100%;
   margin-bottom: 10px;
   color: rgb(189, 199, 216);
-  font: 400 18px;
+  font: 18px;
   font-family: Arial, Helvetica, sans-serif;
   height: 30px;
   border: 1px solid rgb(189, 199, 216);
@@ -195,15 +195,9 @@ footer {
 #label-birthdate , #label-gender {
   font-weight: bold;
   color: rgb(189, 199, 216);
-  font: 400 18px;
+  font: 18px;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 10px;
-}
-
-#facebook-register {
-  align-self: center;
-  height: 20px;
-  width: 30px;
 }
 
 #openNewAcount {
@@ -242,6 +236,9 @@ footer {
 }
 
 #facebook-register {
+  align-self: center;
+  height: 20px;
+  width: 30px;
   margin: auto;
   width: fit-content;
   height: fit-content;
