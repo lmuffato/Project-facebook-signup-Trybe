@@ -5,35 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
     <header class="top-bar">
-        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Facebook logo">
-        <form class="facebook-login" action="">
-            <div class="form-group">
-                <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
-                <input id="user-email-phone" name="user-name" type="text">
-            </div>
-            <div class="form-group">
-                <label for="user-password" id="user-password-label">Senha</label>
-                <input type="password" name="user-password" id="user-password">
-            </div>
-            <div class="form-control">
-                <button id="button-login" type="submit">Entrar</button>
-            </div>
+        <div class="top-bar-container">
+            <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Facebook logo">
+            <form class="facebook-login" action="">
+                <div class="form-group">
+                    <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+                    <input id="user-email-phone" class="input-login" name="user-name" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="user-password" id="user-password-label">Senha</label>
+                    <input id="user-password" class="input-login" type="password" name="user-password">
+                    <a href=""><p class="forgot">Esqueceu a conta?</p></a>
+                </div>
+                <div class="form-control">
+                    <button id="button-login" type="submit">Entrar</button>
+                </div>
+        </div>
         </form>
     </header>
 
     <section class="main-content">
         <div class="main-content left-content">
-            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da
+                sua vida.</p>
             <img id="facebook-networking" src="imgs/networking.png" alt="">
         </div>
     </section>
-<script src="script.js"></script>
+
+    <footer class="footer-content">
+        <section class="footer-list">
+            <ul>
+                <li class="underline-li"><a href="">Português (Brasil)</a></li>
+                <li class="underline-li"><a href="">English (US)</a></li>
+                <li class="underline-li"><a href="">Español</a></li>
+                <li class="underline-li"><a href="">Français (France)</a></li>
+                <li class="underline-li"><a href="">Italiano</a></li>
+                <li class="underline-li"><a href="">العربية</a></li>
+                <li class="underline-li"><a href="">Deutsch</a></li>
+                <li class="underline-li"><a href="">हिन्दी</a></li>
+                <li class="underline-li"><a href="">中文(简体)</a></li>
+                <li class="underline-li"><a href="">日本語</a></li>
+                <li class="underline-li"><a href="">+</a></li>
+            </ul>
+        </section>
+        <hr>
+        <section class="footer-list">
+            <ul>
+                <li class="underline-li"><a href="">Cadastre-se</a></li>
+                <li class="underline-li"><a href="">Entrar</a></li>
+                <li class="underline-li"><a href="">Messenger</a></li>
+                <li class="underline-li"><a href="">Facebook Lite</a></li>
+                <li class="underline-li"><a href="">Watch</a></li>
+                <li class="underline-li"><a href="">Pessoas</a></li>
+                <li class="underline-li"><a href="">Páginas</a></li>
+                <li class="underline-li"><a href="">Caterogias de Páginas</a></li>
+                <li class="underline-li"><a href="">Locais</a></li>
+                <li class="underline-li"><a href="">Jogos</a></li>
+                <li class="underline-li"><a href="">Locais</a></li>
+                <li class="underline-li"><a href="">Marktplace</a></li>
+                <li class="underline-li"><a href="">Facebook Pay</a></li>
+                <li class="underline-li"><a href="">Vagas de emprego</a></li>
+                <li class="underline-li"><a href="">Oculus</a></li>
+                <li class="underline-li"><a href="">Portal</a></li>
+                <li class="underline-li"><a href="">Instagram</a></li>
+                <li class="underline-li"><a href="">Local</a></li>
+                <li class="underline-li"><a href="">Campanhas de arrecadação de fundos</a></li>
+                <li class="underline-li"><a href="">Serviços</a></li>
+                <li class="underline-li"><a href="">Central de Informações de Votação</a></li>
+                <li class="underline-li"><a href="">Sobre</a></li>
+                <li class="underline-li"><a href="">Criar anúncio</a></li>
+                <li class="underline-li"><a href="">Criar Página</a></li>
+                <li class="underline-li"><a href="">Desenvolvedores</a></li>
+                <li class="underline-li"><a href="">Carreiras</a></li>
+                <li class="underline-li"><a href="">Privacidade</a></li>
+                <li class="underline-li"><a href="">Cookies</a></li>
+                <li class="underline-li"><a href="">Escolhas para anúncios</a></li>
+                <li class="underline-li"><a href="">Termos</a></li>
+                <li class="underline-li"><a href="">Ajuda</a></li>
+            </ul>
+        </section>
+        <p>Facebook &copy; 2020</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

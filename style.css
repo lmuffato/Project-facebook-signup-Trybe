@@ -1,12 +1,39 @@
+/* Configurações globais */
 * {
   margin: 0;
   padding: 0;
+  font-family: Roboto, sans-serif;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+}
+
+label {
+  color: white;
+  font-size: 0.76rem;
+}
+
+/* Header */
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
+  justify-content: center;
+  border-bottom: 1px solid rgb(19, 55, 131);
+}
+
+.top-bar-container {
+  display: flex;
   justify-content: space-between;
+  padding: 0.9rem 0 0.3rem 0;
+  flex-basis: 60%;
 }
 
 .facebook-login {
@@ -18,16 +45,67 @@
   flex-direction: column;
 }
 
-.form-control {
-  align-self: flex-end;
+.form-group:nth-child(1) {
+  margin-right: 0.9rem;
 }
 
+.input-login {
+  padding: 0.18rem;
+  width: 9rem;
+  margin-top: 0.3rem;
+  border: solid 1px rgb(49, 49, 49);
+  outline: inherit;
+}
+
+#button-login {
+  padding: 0.18rem 0.3rem;
+  background-color: rgb(70, 112, 196);
+  border: none;
+  border: 1px solid rgb(41, 72, 125);
+  border-radius: 0.125rem;
+  color: white;
+  outline: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#button-login:hover {
+  background-color: rgb(66, 103, 178);
+}
+
+.forgot {
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+  color: #9cb4d8;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+.form-control {
+  align-self: center;
+  margin-top: 0.1rem;
+  margin-left: 0.9rem;
+}
+
+/* Main */
 .main-content {
   display: flex;
+  background: linear-gradient(white, #D3D8E8);
 }
 
 .left-content {
   width: 800px;
   display: flex;
   flex-direction: column;
+}
+
+/* Footer */
+.underline-li {
+  color: rgb(56, 88, 152);
+}
+
+.underline-li:hover {
+  text-decoration: underline;
 }
