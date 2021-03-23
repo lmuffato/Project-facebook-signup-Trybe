@@ -6,13 +6,9 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 10px 20px;
   align-items: center;
-}
-
-.facebook-logo {
-  width: 150px;
 }
 
 .facebook-login input {
@@ -55,12 +51,6 @@ a {
 
 #button-login {
   margin-bottom: 17px;
-  width: 55px;
-  background-color: blue;
-  color: white;
-  border: darkblue solid 1px;
-  border-radius: 3px;
-  padding: 3px;
 }
 
 .main-content {
