@@ -30,9 +30,10 @@ body {
 /* facebook login container */
 .facebook-login {
   display: flex;
+  align-self: flex-end;
   justify-content: flex-end;
   align-items: flex-end;
-  margin: 15px;
+  margin: 13px;
   right: 0;
 }
 
