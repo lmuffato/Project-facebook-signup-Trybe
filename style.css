@@ -6,7 +6,7 @@
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   font-family: inherit;
 }
@@ -45,7 +45,9 @@ a {
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
+  margin-bottom: 20px;
+
 }
 
 .form-group {
