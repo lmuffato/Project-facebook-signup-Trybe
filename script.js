@@ -2,7 +2,7 @@ const buttonSubmit = document.getElementById('button-login');
 const buttonRegister = document.getElementById('facebook-register');
 const radiosButtons = document.getElementsByName('gender');
 const registerInputs = document.querySelectorAll('.register');
-// const generoOpcional = document.querySelector('#genero-opcional');
+const mensageInvalid = document.getElementById('check-register');
 
 function submit() {
   alert(document.getElementById('user-email-phone').value);
@@ -32,7 +32,11 @@ function checkRadios() {
 
 function checkData() {
   if (checkRegister() === false || checkRadios() === false) {
-    alert('Campos Inválidos');
+    const invalid = document.createElement('label');
+    invalid.innerText = 'Campos inválidos';
+
+    mensageInvalid.appendChild(invalid);
+    // alert('Campos inválidos');
   }
 }
 

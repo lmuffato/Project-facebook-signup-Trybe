@@ -8,7 +8,6 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 0;
-  align-items: center;
   border-bottom: 1px solid rgb(44, 44, 44);
 }
 
@@ -38,7 +37,7 @@
 
 .main-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .left-content {
