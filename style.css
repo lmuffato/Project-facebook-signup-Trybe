@@ -113,7 +113,7 @@ h1 {
   font-size: 35px;
 }
 
-#label-birthdate, #label-gender {
+#label-birthdate , #label-gender {
   color: rgb(121, 122, 124);
   font-weight: 900;
 }
