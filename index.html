@@ -22,7 +22,6 @@
           <button id="button-login" type="reset">Entrar</button>
         </div>
       </form>
-      <script src="script.js"></script>
   </header>
   <main class="main-content">
     <div class="left-content">
@@ -51,7 +50,7 @@
           <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
         </div>
         <label id="label-gender"><strong>Gênero</strong></label>
-        <div>
+        <div class="gender-select">
           <input type="radio" name="gender" id="male" required>
           <label for="male">Masculino</label>
           <input type="radio" name="gender" id="female" required>
@@ -59,9 +58,11 @@
           <input type="radio" name="gender" id="to-be" required>
           <label for="to-be">Personalizado</label>
         </div>
+        <div id="gender-input-if-true"></div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
     </div>
   </main>
+  <script src="script.js"></script>
   </body>
 </html>
