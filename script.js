@@ -4,13 +4,13 @@ window.onload = () => {
   });
 };
 
-//CRIAR CAMPO PARA GENERO PERSONALIZADO
-document.getElementById('customGender').addEventListener('click', Clicou1);
-  function Clicou1 (evento) {
+function Clicou1 (evento) {
   console.log('mouse clicou no botão 1');
   console.log(evento.target);
-  genderCustom ()
+  genderCustom ();
 }
+
+document.getElementById('customGender').addEventListener('click', Clicou1);
 
 function genderCustom () {
   if (document.querySelector('#customGender').checked === true) {
@@ -24,7 +24,6 @@ function genderCustom () {
   }
 }
 
-//REMOVENDO O GENERO PERSONALIZADO
 document.querySelectorAll('.genderRadio1').forEach(elementoSelecionado => {
     elementoSelecionado.addEventListener('click', clickParaSelecionar);
     function clickParaSelecionar(){
