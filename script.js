@@ -4,11 +4,13 @@ function verifyBlankFields() {
   const getInput = document.querySelectorAll('input');
   for (let index = 0; index < getInput.length; index += 1) {
     if (getInput[index].value === '') {
-      alert('Campos inválidos!');
+      const getLastElement = document.getElementById('term');
+      const createMsg = document.createElement('h3');
+      getLastElement.appendChild(createMsg).innerText = 'Campos inválidos!';
       break;
     }
   }
-} // Usar ideia do Iago - append h3
+}
 
 function submit() {
   const getBtn = document.getElementById('facebook-register');
