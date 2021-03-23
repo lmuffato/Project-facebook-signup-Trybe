@@ -1,3 +1,4 @@
+/* function button login */
 const buttonLoggin = document.querySelector('#button-login');
 
 function alertaT() {

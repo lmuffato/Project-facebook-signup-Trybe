@@ -4,21 +4,34 @@
   padding: 0;
 }
 
+body {
+  width: 100%;
+  height: 100%;
+}
+
 /* -------------- header ------------ */
-.top-bar {
+.top-bar { /* header */
   display: flex;
   background-color: rgb(66, 103, 178);
   height: 10vh;
   justify-content: space-between;
 }
 
+#logo-container {
+  width: auto;
+  height: auto;
+}
+
 .facebook-logo {
   height: 100%;
-  width: cover;
-  left: 0;
 }
 
 /* facebook login container */
+#login-container {
+  width: auto;
+  height: auto;
+}
+
 .facebook-login {
   display: flex;
   justify-content: flex-end;
