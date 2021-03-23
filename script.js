@@ -58,8 +58,8 @@ function renderRightContent() {
     }
   }
   rightContent.innerHTML = '';
-  rightContent.innerHTML = `<br>Olá <strong>${firstName} ${lastName},
-  </strong>o email ou telefone cadastrado é: ${email} 
+  rightContent.innerHTML = `<br>Olá, ${firstName} ${lastName},
+  o email ou telefone cadastrado é: ${email} 
   e a data de nascimento é ${birthDate} 
   e o seu gênero é ${selectedRadio}.`;
 }
