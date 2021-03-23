@@ -11,8 +11,8 @@ function requiredCamp(e) {
   const inputs = document.querySelectorAll('.right-content input');
   for (let index = 0; index < inputs.length; index += 1) {
     if (inputs[index].value === '') {
-      const msg = 'Campos inválidos';
-      inputs[index].value = msg;
+      const errorInfo = document.querySelector('#invalidFields');
+      errorInfo.style.display = 'block';
     }
   }
   e.preventDefault();
@@ -31,6 +31,7 @@ function addNewGender() {
     add.placeholder = 'Gênero (opcional)';
     add.name = 'gender-custom';
     add.id = customGenderId;
+    add.type = 'text';
     newUser.appendChild(add);
   }
 }
