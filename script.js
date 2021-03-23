@@ -1,3 +1,11 @@
+const getButton = document.getElementById('button-login');
+
+function alertLogin() {
+  const textLogin = document.getElementById('user-email-phone');
+  alert(textLogin.value);
+}
+
+getButton.addEventListener('click', alertLogin);
 const btnSubmit = document.getElementById('facebook-register');
 const registerForm = document.getElementById('register-form');
 
