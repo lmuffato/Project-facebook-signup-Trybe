@@ -1,6 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #E1E4EF;
+}
+
 .main-content {
   display: flex;
-  justify-content: center9;
+  justify-content: center;
 }
 
 .left-content {

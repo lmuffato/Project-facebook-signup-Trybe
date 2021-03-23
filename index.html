@@ -4,7 +4,7 @@
     <meta charset='UTF-8'>
     <title>Facebook - entre ou cadastre-se</title>
     <link rel='stylesheet' href='style.css' type='text/css'>     
-</head>
+</head> 
 <body>
   <div class="main-content">
     <div class="left-content">
@@ -13,13 +13,16 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form>
+      <form action="get">
         <div class="form-full-name">
           <input type="text" name="firstname" placeholder="Nome">
           <input type="text" name="lastname" placeholder="Sobrenome">
         </div>
         <input type="text" name="phone_email" placeholder="Celular ou email">
         <input type="password" name="password" placeholder="Nova senha">
+        <br>
+        <label for="label-birthdate">Data de nascimento</label>
+        <input type="text" name="birthdate" placeholder="dd/mm/yyyy">
       </form>
     </div>
   </div>
