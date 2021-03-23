@@ -30,3 +30,7 @@ function validation(event) {
 for (let index = 0; index < fields.length; index += 1) {
   fields[index].addEventListener('invalid', validation);
 }
+
+for (let index = 0; index < fields.length; index += 1) {
+  fields[index].addEventListener('keydown', validation);
+}
