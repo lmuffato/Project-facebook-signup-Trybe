@@ -30,9 +30,8 @@ span {
 span label {
   color: #1d2129;
   font-size: 18px;
-  font-weight: normal;
   line-height: 18px;
-  padding: 0 10px 0 3px;;
+  padding: 0 10px 0 3px;
 }
 
 .main-content {
@@ -104,5 +103,4 @@ span label {
 #label-gender {
   color: #90949c;
   font-size: 16px;
-  font-weight: bold;
 }
