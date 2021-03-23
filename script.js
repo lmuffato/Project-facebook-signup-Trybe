@@ -1,8 +1,8 @@
 const buttonLogin = document.querySelector('#button-login');
-const genderCustom = document.getElementById('genderP');
-const genderPesonalize = document.getElementById('gender-custom');
-const maleButton = document.getElementById('genderM');
-const feminButton = document.getElementById('genderF');
+const genderCustom = document.querySelector('.gender-custom');
+const maleButton = document.querySelector('#genderM');
+const feminButton = document.querySelector('#genderF');
+const genderPersonalize = document.querySelector('#genderP');
 
 // REQUISITO 7//
 
@@ -14,20 +14,32 @@ function alertLogin() {
 alertLogin();
 
 // REQUISITO 19 //
-
+// criando input gênero personalizado //
 function openCustom() {
-  genderPesonalize.removeAttribute('class');
+  genderPersonalize.addEventListener('click', () => {
+    if (!document.querySelector('#inputP')) {
+      const createInput = document.createElement('input');
+      createInput.placeholder = 'Gênero (opcional)';
+      createInput.tipo = 'texto';
+      createInput.id = 'inputP';
+      createInput.nome = 'gênero personalizado';
+      genderCustom.appendChild(createInput);
+    }
+  });
 }
-genderCustom.addEventListener('click', openCustom);
+// removendo input personalizado //
+function removeInput() {
+  maleButton.addEventListener('click', () => {
+    const inputPCreated = document.querySelector('#inputP');
+    if (inputPCreated) { inputPCreated.remove(); }
+  });
+  feminButton.addEventListener('click', () => {
+    const inputPCreated = document.querySelector('#inputP');
+    if (inputPCreated) { inputPCreated.remove(); }
+  });
+}
 
-function closeCustom() {
-  genderPesonalize.className = 'gender-personalize';
-}
-maleButton.addEventListener('click', closeCustom);
-feminButton.addEventListener('click', closeCustom);
-
-function emailAlert() {
-  const emailLoginValue = document.getElementById('user-email-phone').value;
-  alert(emailLoginValue);
-}
-buttonLogin.addEventListener('click', emailAlert);
+window.onload = () => {
+  openCustom();
+  removeInput();
+};
