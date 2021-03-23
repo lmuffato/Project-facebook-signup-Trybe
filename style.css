@@ -54,24 +54,20 @@ label {
 }
 
 .main-content {
-  padding: 100px;
+  padding: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  background: linear-gradient(white, #D3D8E8);
+  background: linear-gradient(white, #d3d8e8);
 }
-
 
 .left-content {
   display: flex;
   flex-direction: column;
-  align-content: space-around;
   padding: 50px;
   width: 800px;
 }
 
 .right-content {
-  justify-content:center;
   width: 300px;
 }
 
@@ -82,4 +78,22 @@ label {
   border-radius: 5px;
   width: 377px;
   border-color: 2px solid black;
+}
+
+#name {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+#facebook-register {
+  min-width: 194px;
+  padding: 7px 20px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(#67ae55, #578843);
+  background-color: #69a74e;
+  box-shadow: inset 0 1px 1px #a4e388;
+  border-color: #3b6e22 #3b6e22 #2c5115;
 }
