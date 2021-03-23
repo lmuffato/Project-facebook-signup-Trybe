@@ -101,10 +101,33 @@ main {
 
 .right-content {
   width: 300px;
+  margin-top: 20px;
+}
+
+.right-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: rgb(51, 51, 51);
+}
+
+.quick-easy {
+  font-size: 19px;
+  color: rgb(29, 33, 41);
+  margin-bottom: 15px;
 }
 
 #name-content {
   display: flex;
+}
+
+#name-content input {
+  border: 1px solid rgb(189, 199, 216);
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 190px;
+  font-size: 18px;
+  color: rgb(153, 153, 153);
 }
 
 /* Footer */
