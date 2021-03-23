@@ -21,7 +21,7 @@ function ShowInput() {
 }
 
 function HideInput() {
-  if (inputOpen === true){
+  if (inputOpen === true) {
     customInput.style.display = 'none';
     inputOpen = false;
   }
