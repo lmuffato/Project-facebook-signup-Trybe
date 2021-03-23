@@ -55,7 +55,7 @@ span label {
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   background: linear-gradient(white, #d3d8e8);
 }
 
