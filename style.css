@@ -16,7 +16,6 @@
 .form-group {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
 }
 
 .form-control {
