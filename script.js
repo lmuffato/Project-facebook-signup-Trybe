@@ -70,12 +70,13 @@ const getGender = document.getElementById('genderButtons');
 const getCustomGender = document.getElementById('custom');
 getGender.addEventListener('click', (e) => {
   // Apliquei a mesma lógica usada no requisito para impedir a possibilidade de aparecer vários campos vázios se o usuário clicar mais de uma vez no 'Personalizado'
-  if (getGender.children.length === 8) {
-    if (e.target === getCustomGender) {
-      const createCustomField = document.createElement('input');
-      createCustomField.setAttribute('type', 'text');
-      getGender.appendChild(createCustomField);
-    }
+  if (e.target === getCustomGender) {
+    const createCustomField = document.createElement('input');
+    createCustomField.setAttribute('type', 'text');
+    getGender.appendChild(createCustomField);
+  }
+  if (getGender.children.length > 9) {
+    getGender.lastChild.remove();
   }
 });
 
