@@ -13,15 +13,15 @@ body {
 
 .top-bar {
   display: flex;
-  flex-direction: row;
   background-color: rgb(66, 103, 178);
   background-image: linear-gradient(#4e69a2, #3b5998 50%);
   color: white;
   height: 90px;
-  border-bottom: 1px solid rgb(21, 44, 92);
+  border: 1px solid rgb(21, 44, 92);
   align-items: center;
   justify-content: space-between;
   font-family: Ubuntu, sans-serif;
+  width: 100vw;
   padding: 20px;
 }
 
@@ -32,6 +32,7 @@ body {
 
 .facebook-login {
   display: flex;
+  align-content: flex-end;
   gap: 20px;
 }
 
