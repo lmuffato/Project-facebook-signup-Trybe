@@ -13,6 +13,7 @@ body {
 
 .top-bar {
   display: flex;
+  background-color: rgb(66, 103, 178);
   background-image: linear-gradient(#4e69a2, #3b5998 50%);
   justify-content: space-evenly;
   color: white;
@@ -20,10 +21,11 @@ body {
   border: 1px solid rgb(21, 44, 92);
   align-items: center;
   font-family: Ubuntu, sans-serif;
+  width: 100vw;
 }
 
 .facebook-logo {
-  float: left;
+  justify-self: left;
   width: 175px;
   object-fit: contain;
 }
