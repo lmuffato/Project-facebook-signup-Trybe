@@ -78,6 +78,12 @@ label {
   font-weight: 600;
 }
 
+.quick-easy {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 6px;
+}
+
 .form-inputs {
   font-size: 18px;
   padding: 8px 10px;
@@ -114,22 +120,24 @@ label {
   color: rgb(131, 124, 124);
   font-size: 14px;
   font-weight: 600;
+  margin-left: 5px;
 }
 
 #label-gender {
   color: rgb(131, 124, 124);
   font-size: 14px;
   font-weight: 600;
+  margin-left: 5px;
 }
 
 #gender1 {
-  margin: 8px;
+  margin: 4px 8px 8px 8px;
 }
 
 #gender2 {
-  margin: 8px;
+  margin: 4px 8px 8px 8px;
 }
 
 #gender3 {
-  margin: 8px;
+  margin: 4px 8px 8px 8px;
 }
