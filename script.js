@@ -1,9 +1,11 @@
+const buttonEnter = document.querySelector('#button-login');
+
 function verifyBlankFields() {
   const getInput = document.querySelectorAll('input');
   for (let index = 0; index < getInput.length; index += 1) {
     if (getInput[index].value === '') {
-      let getLastElement = document.getElementById('term')
-      let createMsg = document.createElement('h3')
+      const getLastElement = document.getElementById('term');
+      const createMsg = document.createElement('h3');
       getLastElement.appendChild(createMsg).innerText = 'Campos inválidos!';
       break;
     }
@@ -15,25 +17,12 @@ function submit() {
   getBtn.addEventListener('click', verifyBlankFields);
 }
 
-function genderCustom() {
-  let getCustomGender = document.getElementById('custom')
-  getCustomGender.addEventListener('click', () => {
-      let createArea = document.createElement('input');
-      createArea.setAttribute('type', 'text');
-      getCustomGender.appendChild(createArea);
-  })
-}
-
-window.onload = () => {
-  submit();
-  genderCustom();
-};
-
-
-const buttonEnter = document.querySelector('#button-login');
-
 buttonEnter.addEventListener('click', (e) => {
   e.preventDefault();
   const email = document.querySelector('#user-email-phone');
   window.alert(email.value);
 });
+
+window.onload = () => {
+  submit();
+};

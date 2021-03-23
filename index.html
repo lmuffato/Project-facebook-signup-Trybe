@@ -14,133 +14,120 @@
 </head>
 
 <body>
-  <header class="top-bar-container">
-    <div class="top-bar">
-        <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Facebook logo">
-        <form class="facebook-login" action="">
-            <div class="form-group">
-                <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
-                <input id="user-email-phone" class="input-login" name="user-name" type="text">
-            </div>
-            <div class="form-group">
-                <label for="user-password" id="user-password-label">Senha</label>
-                <input id="user-password" class="input-login" type="password" name="user-password">
-                <a href=""><p class="forgot">Esqueceu a conta?</p></a>
-            </div>
-            <div class="form-control">
-                <button id="button-login" type="submit">Entrar</button>
-            </div>
-    </div>
-    </form>
-</header>
-
-<section class="main-content">
-    <div class="main-content left-content">
-        <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da
-            sua vida.</p>
-        <img id="facebook-networking" src="imgs/networking.png" alt="">
-    </div>
-</section>
-    <section class = 'main-content'>
-        <div class = 'left-content'>
-            
+    <header class="top-bar-container">
+        <div class="top-bar">
+            <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Facebook logo">
+            <form class="facebook-login" action="">
+                <div class="form-group">
+                    <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+                    <input id="user-email-phone" class="input-login" name="user-name" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="user-password" id="user-password-label">Senha</label>
+                    <input id="user-password" class="input-login" type="password" name="user-password">
+                    <a href="">
+                        <p class="forgot">Esqueceu a conta?</p>
+                    </a>
+                </div>
+                <div class="form-control">
+                    <button id="button-login" type="submit">Entrar</button>
+                </div>
         </div>
-        <form class = 'right-content'>
-        
-            <h1>Abra uma conta</h1>
-            <p class = 'quick-easy'>É rápido e fácil</p>
-            
-            <div class = 'formName'>
-                <input type = 'text' name = 'firstname' placeholder = 'Nome' required>
-                <input type = 'text' name = 'lastname' placeholder = 'Sobrenome' required>
-            </div>
-
-            <div class = 'phone_email'>
-                <input type = 'text' name = 'phone_email' placeholder = 'Celular ou email' required>
-            </div>
-
-            <input type = 'password' name = 'password' placeholder = 'Nova senha' required>
-
-            <div>
-                <label id = 'label-birthdate' for = 'date'> Data de Nascimento </label> <br>
-                <input type = 'text' id = 'date' name = 'birthdate' placeholder = 'dd/mm/aaaa'>
-            </div>
-
-            <div>
-                <label id = 'label-gender'> Gênero</label><br>
-
-                <input type="radio" id = 'female' name = 'gender' value = 'female' checked> 
-                <label for = 'female'>Feminino</label>
-
-                <input type="radio" id = 'male' name = 'gender' value = 'male'> 
-                <label for = 'male'>Masculino</label>    
-
-                <input type="radio" id = 'custom' name = 'gender' value = 'custom'> 
-                <label for = 'custom'>Personalizado</label>
-            </div>
-
-            <div>
-                <p id = 'term'>Ao clicar em Cadastra-se, você concorda com nossos <span class = 'blue'>Termos, Política de Dados</span> e <span class = 'blue'>Política de Cookies</span>. Você pode receber notificação por SMS e pode cancelar isso quando quiser.</p>
-            </div>
-            
-            <button type = 'submit' id = 'facebook-register'>Cadastre-se</button>
         </form>
+    </header>
+
+    <section class="main-content">
+        <div class="left-content">
+            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            <img id="facebook-networking" src="imgs/networking.png" alt="">
+        </div>
+        <div class='right-content'>
+            <h1>Abra uma conta</h1>
+            <p class='quick-easy'>É rápido e fácil.</p>
+            <form action="">
+                <div class='formName'>
+                    <input type='text' name='firstname' placeholder='Nome' required>
+                    <input type='text' name='lastname' placeholder='Sobrenome' required>
+                </div>
+                <div class='phone_email'>
+                    <input type='text' name='phone_email' placeholder='Celular ou email' required>
+                </div>
+                <input type='password' name='password' placeholder='Nova senha' required>
+                <div>
+                    <label id='label-birthdate' for='date'>Data de nascimento</label> <br>
+                    <input type='text' id='date' name='birthdate' placeholder='dd/mm/aaaa'>
+                </div>
+                <div>
+                    <label id='label-gender'>Gênero</label><br>
+                    <input type="radio" id='female' name='gender' value='Feminino' checked>
+                    <label for='female'>Feminino</label>
+                    <input type="radio" id='male' name='gender' value='Masculino'>
+                    <label for='male'>Masculino</label>
+                    <input type="radio" id='custom' name='gender' value='Personalizado'>
+                    <label for='custom'>Personalizado</label>
+                </div>
+                <div>
+                    <p id='term'>Ao clicar em Cadastra-se, você concorda com nossos <span class='blue'>Termos, Política de Dados</span> e <span class='blue'>Política de Cookies</span>. Você pode receber notificação por SMS e pode cancelar isso quando quiser.</p>
+                </div>
+                <button type='submit' id='facebook-register'>Cadastre-se</button>
+            </form>
+        </div>
     </section>
 
     <footer class="footer-content">
-      <section class="footer-list">
-          <ul>
-              <li class="underline-li"><a href="">Português (Brasil)</a></li>
-              <li class="underline-li"><a href="">English (US)</a></li>
-              <li class="underline-li"><a href="">Español</a></li>
-              <li class="underline-li"><a href="">Français (France)</a></li>
-              <li class="underline-li"><a href="">Italiano</a></li>
-              <li class="underline-li"><a href="">العربية</a></li>
-              <li class="underline-li"><a href="">Deutsch</a></li>
-              <li class="underline-li"><a href="">हिन्दी</a></li>
-              <li class="underline-li"><a href="">中文(简体)</a></li>
-              <li class="underline-li"><a href="">日本語</a></li>
-              <li class="underline-li"><a href="">+</a></li>
-          </ul>
-      </section>
-      <hr>
-      <section class="footer-list">
-          <ul>
-              <li class="underline-li"><a href="">Cadastre-se</a></li>
-              <li class="underline-li"><a href="">Entrar</a></li>
-              <li class="underline-li"><a href="">Messenger</a></li>
-              <li class="underline-li"><a href="">Facebook Lite</a></li>
-              <li class="underline-li"><a href="">Watch</a></li>
-              <li class="underline-li"><a href="">Pessoas</a></li>
-              <li class="underline-li"><a href="">Páginas</a></li>
-              <li class="underline-li"><a href="">Caterogias de Páginas</a></li>
-              <li class="underline-li"><a href="">Locais</a></li>
-              <li class="underline-li"><a href="">Jogos</a></li>
-              <li class="underline-li"><a href="">Locais</a></li>
-              <li class="underline-li"><a href="">Marktplace</a></li>
-              <li class="underline-li"><a href="">Facebook Pay</a></li>
-              <li class="underline-li"><a href="">Vagas de emprego</a></li>
-              <li class="underline-li"><a href="">Oculus</a></li>
-              <li class="underline-li"><a href="">Portal</a></li>
-              <li class="underline-li"><a href="">Instagram</a></li>
-              <li class="underline-li"><a href="">Local</a></li>
-              <li class="underline-li"><a href="">Campanhas de arrecadação de fundos</a></li>
-              <li class="underline-li"><a href="">Serviços</a></li>
-              <li class="underline-li"><a href="">Central de Informações de Votação</a></li>
-              <li class="underline-li"><a href="">Sobre</a></li>
-              <li class="underline-li"><a href="">Criar anúncio</a></li>
-              <li class="underline-li"><a href="">Criar Página</a></li>
-              <li class="underline-li"><a href="">Desenvolvedores</a></li>
-              <li class="underline-li"><a href="">Carreiras</a></li>
-              <li class="underline-li"><a href="">Privacidade</a></li>
-              <li class="underline-li"><a href="">Cookies</a></li>
-              <li class="underline-li"><a href="">Escolhas para anúncios</a></li>
-              <li class="underline-li"><a href="">Termos</a></li>
-              <li class="underline-li"><a href="">Ajuda</a></li>
-          </ul>
-      </section>
-      <p>Facebook &copy; 2020</p>
-  </footer>
+        <section class="footer-list">
+            <ul>
+                <li class="underline-li"><a href="">Português (Brasil)</a></li>
+                <li class="underline-li"><a href="">English (US)</a></li>
+                <li class="underline-li"><a href="">Español</a></li>
+                <li class="underline-li"><a href="">Français (France)</a></li>
+                <li class="underline-li"><a href="">Italiano</a></li>
+                <li class="underline-li"><a href="">العربية</a></li>
+                <li class="underline-li"><a href="">Deutsch</a></li>
+                <li class="underline-li"><a href="">हिन्दी</a></li>
+                <li class="underline-li"><a href="">中文(简体)</a></li>
+                <li class="underline-li"><a href="">日本語</a></li>
+                <li class="underline-li"><a href="">+</a></li>
+            </ul>
+        </section>
+        <hr>
+        <section class="footer-list">
+            <ul>
+                <li class="underline-li"><a href="">Cadastre-se</a></li>
+                <li class="underline-li"><a href="">Entrar</a></li>
+                <li class="underline-li"><a href="">Messenger</a></li>
+                <li class="underline-li"><a href="">Facebook Lite</a></li>
+                <li class="underline-li"><a href="">Watch</a></li>
+                <li class="underline-li"><a href="">Pessoas</a></li>
+                <li class="underline-li"><a href="">Páginas</a></li>
+                <li class="underline-li"><a href="">Caterogias de Páginas</a></li>
+                <li class="underline-li"><a href="">Locais</a></li>
+                <li class="underline-li"><a href="">Jogos</a></li>
+                <li class="underline-li"><a href="">Locais</a></li>
+                <li class="underline-li"><a href="">Marktplace</a></li>
+                <li class="underline-li"><a href="">Facebook Pay</a></li>
+                <li class="underline-li"><a href="">Vagas de emprego</a></li>
+                <li class="underline-li"><a href="">Oculus</a></li>
+                <li class="underline-li"><a href="">Portal</a></li>
+                <li class="underline-li"><a href="">Instagram</a></li>
+                <li class="underline-li"><a href="">Local</a></li>
+                <li class="underline-li"><a href="">Campanhas de arrecadação de fundos</a></li>
+                <li class="underline-li"><a href="">Serviços</a></li>
+                <li class="underline-li"><a href="">Central de Informações de Votação</a></li>
+                <li class="underline-li"><a href="">Sobre</a></li>
+                <li class="underline-li"><a href="">Criar anúncio</a></li>
+                <li class="underline-li"><a href="">Criar Página</a></li>
+                <li class="underline-li"><a href="">Desenvolvedores</a></li>
+                <li class="underline-li"><a href="">Carreiras</a></li>
+                <li class="underline-li"><a href="">Privacidade</a></li>
+                <li class="underline-li"><a href="">Cookies</a></li>
+                <li class="underline-li"><a href="">Escolhas para anúncios</a></li>
+                <li class="underline-li"><a href="">Termos</a></li>
+                <li class="underline-li"><a href="">Ajuda</a></li>
+            </ul>
+        </section>
+        <p>Facebook &copy; 2020</p>
+    </footer>
 
     <script src="script.js"></script>
 
