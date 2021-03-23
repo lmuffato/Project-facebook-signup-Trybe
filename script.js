@@ -28,7 +28,7 @@ function addNewGender() {
     const add = document.createElement('input');
     add.placeholder = 'Gênero (opcional)';
     add.name = 'gender-custom';
-    const print = newUser.appendChild(add);
+    newUser.appendChild(add);
   }
 }
 
