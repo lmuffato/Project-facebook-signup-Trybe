@@ -21,6 +21,10 @@
   flex-direction: column;
 }
 
+.form-control {
+  align-self: flex-end;
+}
+
 /* requisitos 9 em diante: */
 .main-content {
   display: flex;
