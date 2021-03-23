@@ -6,29 +6,27 @@ window.onload = function startin() {
   });
 };
 
-// const fields = document.querySelectorAll('[required]');
+const fields = document.querySelectorAll('[required]');
 
-// function verifyError(event) {
-//   const field = event.target;
-//   let foundError = false;
-//   for (const error in field.validity) {
-//     if (error !== 'customError' && field.validity[error]) {
-//       foundError = true;
-//     }
-//   }
-//   return foundError;
-// }
+function verifyError(event) {
+  const field = event.target;
+  let foundError = false;
+  if (field.validity.valueMissing === true) {
+    foundError = true;
+  }
+  return foundError;
+}
 
-// function valitation() {
-//   // const field = event.target;
-//   const error = verifyError();
-//   if (error) {
-//     field.setCustomValidity('Campos inválidos');
-//   } else {
-//     field.setCustomValidity('');
-//   }
-// }
+function validation(event) {
+  const field = event.target;
+  const error = verifyError(event);
+  if (error) {
+    field.setCustomValidity('Campos inválidos');
+  } else {
+    field.setCustomValidity('');
+  }
+}
 
-// for (const field of fields) {
-//   field.addEventListener('invalid', valitation);
-// }
+for (let index = 0; index < fields.length; index += 1) {
+  fields[index].addEventListener('invalid', validation);
+}
