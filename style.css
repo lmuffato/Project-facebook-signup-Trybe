@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
+  color:#333;
 }
 
 input {
@@ -14,7 +15,6 @@ input {
   justify-content: space-between;
   background-color: rgb(66, 103, 178);
   padding: 20px 50px;
-  color: white;
 }
 
 .facebook-logo {
@@ -31,6 +31,10 @@ input {
   display: flex;
   flex-direction: column;
   margin: 0 10px;
+}
+
+.form-group label {
+  color: white;
 }
 
 .form-group input {
@@ -62,12 +66,20 @@ input {
 
 .main-content {
   display: flex;
-  justify-content: space-around;
-  margin: 30px 0;
+  justify-content: space-between;
+  margin: 50px 150px;
 }
 
 .left-content {
   width: 800px;
+  margin-right: 100px;
+}
+
+.left-content p {
+  color:rgb(41, 72, 125);
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 
 .right-content {
@@ -81,8 +93,17 @@ input {
   flex-direction: column;
 }
 
-.right-content form input {
+.right-content form * {
   margin: 5px 0;
+}
+
+.right-content h1 {
+  font-size: 30px;
+}
+
+.right-content p {
+  font-size: 15px;
+  margin: 5px 0 10px 0;
 }
 
 .nome {
