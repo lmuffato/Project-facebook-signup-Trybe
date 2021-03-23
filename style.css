@@ -56,18 +56,23 @@ body {
   box-shadow: 2px 2px 4px 0.1px rgb(53, 99, 191), 2px 2px 4px 0.1px rgb(62, 97, 165);
 }
 
+/* main-content */
 .main-content {
   display: flex;
   justify-content: space-between;
 }
 
 .left-content {
-  width: 800px;
+  /* width: 800px; */
+  flex-basis: 800px;
+  flex-grow: 1;
 }
 
 /* right-content */
 .right-content {
-  width: 300px;
+  /* width: 300px; */
+  flex-basis: 300px;
+  flex-grow: 1;
 }
 
 .right-content h1 {
