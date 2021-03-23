@@ -5,33 +5,51 @@
   font-family: sans-serif;
 }
 
+body {
+  font-family: Helvetica, Arial, sans-feriif;
+  font-size: 12px;
+}
+
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
+  justify-content: center;
+}
+
+.header-container {
+  display: flex;
+  width: 80%;
+  padding-top: 20px;
+  flex-direction: row;
+  align-content: center;
   justify-content: space-around;
 }
 
-.facebook-logo {
-  display: flex;
-  height: 100%;
-  align-self: center;
+.facebook-logo-container {
+
 }
 
 .facebook-login {
   display: flex;
-  padding: 30px 0;
-  justify-content: flex-end;
+  align-self: flex-start;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   color: white;
+  padding: 0 10px;
 }
 
 .form-control {
   display: flex;
   align-self: flex-end;
+}
+
+#button-login {
+  color: white;
+  background-color:rgb(66, 103, 178);
+  font-weight: bold;
 }
 
 .main-content {
