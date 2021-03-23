@@ -95,11 +95,12 @@ header {
   background: linear-gradient(white, rgb(211, 216, 232));
   max-width: 1000px;
   margin: 0 auto;
+  display: flex;
   justify-content: center;
 }
 
 .left-content {
-  width: 800px;
+  width: 800px !important;
 }
 
 .right-content {
@@ -137,7 +138,7 @@ header {
 #facebook-slogan {
   color: #0e385f;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: bold;
   line-height: 29px;
   margin-top: 40px;
   width: 450px;
