@@ -45,6 +45,16 @@ body {
   align-self: flex-end;
 }
 
+.main-content {
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: row;
+  height: 700px;
+  justify-content: flex-start;
+  margin-top: 40px;
+  width: 100%;
+}
+
 .left-content {
   width: 800px;
   color: rgb(14, 56, 95);
@@ -66,16 +76,6 @@ body {
   color: rgb(51, 51, 51);
   font-size: 36px;
   align-self: flex-start;
-}
-
-.main-content {
-  background-color: #f0f2f5;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin-top: 40px;
-  width: 100%;
-  height: 700px;
 }
 
 .quick-easy {
