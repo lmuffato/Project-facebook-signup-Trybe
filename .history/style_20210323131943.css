@@ -7,7 +7,7 @@
 .top-bar {
   display: flex;
   width: 100%;
-  height: 82.5px;
+  height: 80px;
   background-color: rgb(66, 103, 178);
   align-items: center;
 }
@@ -47,9 +47,11 @@
   width: 300px;
 }
 
-.fullname {
+.fullName {
   display: flex;
-  flex-flow: row nowrap;
-  flex-basis: 50%;
+  flex-basis: 55%;
 }
 
+#lastname {
+  margin-left: 10px;
+} 
