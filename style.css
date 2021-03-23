@@ -103,9 +103,9 @@ header {
   height: auto;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 20px;
-  color: #0e385f;
+  color: rgb(14, 56, 95);
   word-spacing: -1;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .right-content {
