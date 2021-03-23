@@ -56,7 +56,7 @@ label {
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   border: solid 1px black;
 }
 
