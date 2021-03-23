@@ -156,3 +156,7 @@ a {
 .form-control {
   align-self: flex-end;
 }
+
+.right-content form label {
+  color: black;
+}
