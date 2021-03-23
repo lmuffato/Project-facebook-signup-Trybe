@@ -193,7 +193,7 @@ footer {
 }
 
 #label-birthdate , #label-gender {
-  font-weight: bold;
+  font-weight: 550;
   color: rgb(189, 199, 216);
   font: 18px;
   font-family: Arial, Helvetica, sans-serif;
@@ -220,7 +220,7 @@ footer {
 }
 
 .gender {
-  font-weight: bold;
+  font-weight: 550;
   color: rgb(12, 13, 15);
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
@@ -237,8 +237,6 @@ footer {
 
 #facebook-register {
   align-self: center;
-  height: 20px;
-  width: 30px;
   margin: auto;
   width: fit-content;
   height: fit-content;
