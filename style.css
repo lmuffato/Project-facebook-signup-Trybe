@@ -4,12 +4,13 @@
 }
 
 .right-content {
-	width: 400px;
+	width: 300px;
 	padding: 8px
 };
 
 .formName {
-	display: inline-block;
+	display: flex;
+	align-items: center;
 }
 
 .phone_email { 
@@ -33,6 +34,7 @@ input {
 .blue:hover {
 	color: blue;
 	text-decoration: underline;
+	cursor: pointer;
 }
 
 #facebook-register {
