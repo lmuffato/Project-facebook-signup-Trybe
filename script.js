@@ -74,7 +74,7 @@ function createCustomGender() {
 }
 
 function dataView(fullName, mail, dateBirth, gender) {
-  const textOla = `Olá ${fullName}`;
+  const textOla = `"Olá ${fullName}"`;
   const textMail = `E-mail: ${mail}`;
   const textDateBirth = `Data de Nascimento: ${dateBirth}`;
   const textGender = `Gênero: ${gender.value}`;
