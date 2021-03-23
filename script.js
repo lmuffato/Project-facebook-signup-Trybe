@@ -21,10 +21,9 @@ function validatingForm(event) {
 const btnSubmit = document.getElementById('facebook-register');
 btnSubmit.addEventListener('click', validatingForm);
 
-
-function createField (event) {
-  let genderField = document.getElementById('gender-custom');
-  genderField.style.display = 'flex'
+function createField() {
+  const genderField = document.getElementById('gender-custom');
+  genderField.style.display = 'flex';
 }
 
 document.addEventListener('click', createField);
