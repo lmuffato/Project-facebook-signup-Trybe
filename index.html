@@ -43,16 +43,20 @@
       <p class="quick-easy">É rápido e fácil.</p>
 
       <form class="dados-pessoais" action="">
-        <input type="text" name="firstname" placeholder="Nome" required>
-        <input type="text" name="lastname" placeholder="Sobrenome" required>
+        <div id="nome-e-sobrenome">
+          <input type="text" name="firstname" placeholder="Nome" required>
+          <input type="text" name="lastname" placeholder="Sobrenome" required>
+        </div>
         <input type="text" name="phone_email" placeholder="Celular ou email" required>
         <input type="password" name="password" placeholder="Nova senha" required>  
         <label id='label-birthdate' for="">Data de nascimento</label>       
         <input type="text" name="bithdate" placeholder="dd/mm/aaaa" required> 
-        <label id='label-gender' for="">Gênero</label>  
-        <input type="radio" name="gender" value='fem' required>Feminino
-        <input type="radio" name="gender" value='fem' required>Masculino
-        <input type="radio" name="gender" value='fem' required>Personalizado
+        <label id='label-gender' for="">Gênero</label>
+        <div id="generos">
+          <input type="radio" name="gender" value='fem' required>Feminino
+          <input type="radio" name="gender" value='fem' required>Masculino
+          <input type="radio" name="gender" value='fem' required>Personalizado
+        </div>
         <button id="facebook-register" type='submit'>Cadastre-se</button>
       </form>
 

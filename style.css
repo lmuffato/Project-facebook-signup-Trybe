@@ -50,4 +50,10 @@
 
 .dados-pessoais {
   display: flex;
+  flex-direction: column;
+}
+
+#nome-e-sobrenome {
+  display: flex;
+  flex-direction: row;
 }
