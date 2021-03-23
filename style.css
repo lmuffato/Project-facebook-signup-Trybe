@@ -13,6 +13,7 @@ body {
 
 .top-bar {
   display: flex;
+  flex-direction: row;
   background-color: rgb(66, 103, 178);
   background-image: linear-gradient(#4e69a2, #3b5998 50%);
   color: white;
