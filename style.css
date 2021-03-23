@@ -48,3 +48,41 @@ a {
 #button-login {
   margin-bottom: 17px;
 }
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+#facebook-slogan {
+  color: black;
+}
+
+h1, h3 {
+  color: black;
+}
+
+.last-first-name {
+  display: flex;
+  justify-content: space-around;
+}
+
+.first-name {
+  width: 142px;
+  margin-right: 10px;
+}
+
+.last-name {
+  width: 142px;
+}
