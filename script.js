@@ -1,2 +1,1 @@
-const botao = document.getElementById('button-login');
-botao.add
+//const botao = document.getElementById('button-login');
