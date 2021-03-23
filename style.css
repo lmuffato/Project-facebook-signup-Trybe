@@ -71,6 +71,13 @@ label {
   width: 300px;
 }
 
+#facebook-slogan {
+  color: #17315e;
+  font-size: 18px;
+  width: 400px;
+  font-weight: 600;
+}
+
 .form-inputs {
   font-size: 18px;
   padding: 8px 10px;
@@ -100,4 +107,29 @@ label {
 
 #gender {
   display: flex;
+  align-content: space-between;
+}
+
+#label-birthdate {
+  color: rgb(131, 124, 124);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#label-gender {
+  color: rgb(131, 124, 124);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#gender1 {
+  margin: 8px;
+}
+
+#gender2 {
+  margin: 8px;
+}
+
+#gender3 {
+  margin: 8px;
 }
