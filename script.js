@@ -10,10 +10,11 @@ function genderCustom() {
     const elem = document.createElement('input');
     parentEle.appendChild(elem);
     Object.assign(elem, {
-    name: 'gender-custom',
-    type: 'text',
-    placeholder: 'Gênero (opcional)',
-    id:'gender-custom'});
+      name: 'gender-custom',
+      type: 'text',
+      placeholder: 'Gênero (opcional)',
+      id: 'gender-custom'
+    });
   }
 }
 
