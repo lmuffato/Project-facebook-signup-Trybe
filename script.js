@@ -13,10 +13,10 @@ document.getElementById('customGender').addEventListener('click', Clicou1);
 }
 
 function genderCustom () {
-  if (document.querySelector('#customGender').checked == true) {
-    variavelDolugarPraOndeOElementoVai = document.querySelector('#personalizedGender');
-    elementoCriado = document.createElement('input');
-    variavelDolugarPraOndeOElementoVai.appendChild(elementoCriado);
+  if (document.querySelector('#customGender').checked === true) {
+    parentEle = document.querySelector('#personalizedGender');
+    let elementoCriado = document.createElement('input');
+    parentEle.appendChild(elementoCriado);
     elementoCriado.id = 'gender-custom';
     elementoCriado.setAttribute('name', 'gender-custom');
     elementoCriado.setAttribute('type', 'text');
@@ -26,8 +26,8 @@ function genderCustom () {
 
 //REMOVENDO O GENERO PERSONALIZADO
 document.querySelectorAll('.genderRadio1').forEach(elementoSelecionado => {
-  elementoSelecionado.addEventListener('click', clickParaSelecionar);
-  function clickParaSelecionar(eventoDeOrigem){
-  document.getElementById('gender-custom').remove()
+    elementoSelecionado.addEventListener('click', clickParaSelecionar);
+    function clickParaSelecionar(){
+    document.getElementById('gender-custom').remove()
   } 
-})
+});
