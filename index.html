@@ -15,24 +15,50 @@
       <img src="imgs/facebook-logo.png" alt="logo facebook" class="facebook-logo">
 
       <form action="get" class="facebook-login">
+        <table class="form-group">
+          <tr>
+            <td>
+              <label id="user-email-phone-label" for="user-email-phone" class="entry-form">Email ou telefone</label>
+            </td>
+            <td>
+              <label id="user-password-label" for="user-password" class="entry-form second-td">Senha</label>
+            </td>
+          </tr>
+          <tr>
+            <td class="entry-form-inputs-container">
+              <input id="user-email-phone" type="text" placeholder="Digite seu email ou telefone" name="uname" class="entry-form-inputs">
+            </td>
+            <td class="entry-form-inputs-container">
+              <input id="user-password" type="text" placeholder="Digite aqui sua senha" name="uname" class="entry-form-inputs second-td">
+            </td>
+            <td>
+              <button id="button-login" type="submit">Entrar</button>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <a name="remember-password" id="remember-password" class="second-td">Esqueceu sua conta?</a>
+            </td>
+          </tr>
 
-        <section class="form-group">
-          <label id="user-email-phone-label" for="userName"><b>Email ou telefone</b></label>
+        </table>
+
+        <!-- <section class="form-group">
+          <label id="user-email-phone-label" for="user-email-phone" class="entry-form"><b>Email ou telefone</b></label>
           <input id="user-email-phone" type="text" placeholder="Digite seu email ou telefone" name="uname">
         </section>
 
         <section class="form-group">
-          <label id="user-password-label" for="userName"><b>Senha</b></label>
+          <label id="user-password-label" for="user-password" class="entry-form"><b>Senha</b></label>
           <input id="user-password" type="text" placeholder="Digite aqui sua senha" name="uname">
         </section>
 
         <section class="form-control">
           <button id="button-login" type="submit">Entrar</button>
-          <label>
-            <input type="checkbox" checked="checked" name="remember"> Lembrar
-          </label>
-        </section>
+        </section> -->
       </form>
+      <!-- <h3 name="remember-password" id="remember-password">Esqueceu sua conta?</h3> -->
     </div>
   </header>
 
@@ -72,7 +98,7 @@
         <div id="messages">
           <p>Ao clicar em Cadastre-se, você concorda com nossos Termos, Política de Dados e Política de Cookies. Você
             pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
-          <h3 id="invalid-field"></h3>
+          <h2 id="invalid-field"></h2>
         </div>
 
         <button type="submit" id="facebook-register">Cadastre-se</button>
