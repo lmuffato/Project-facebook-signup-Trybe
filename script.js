@@ -1,5 +1,6 @@
 const buttonLogin = document.getElementById('button-login');
+const inputEmailTel = document.getElementById('user-email-phone');
 buttonLogin.addEventListener('click', (Event) => {
   Event.preventDefault();
-  alert('Email ou telefone');
+  alert(inputEmailTel.value);
 });
