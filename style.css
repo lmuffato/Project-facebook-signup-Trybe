@@ -39,6 +39,9 @@ background-color: rgb(66, 103, 178);
 color: #d3d8e8;
 }
 
+#gender-container {
+  display: none;
+}
 
 /* csss main */
 .main-content {
