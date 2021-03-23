@@ -1,7 +1,8 @@
-const buttonLogin = document.getElementById('button-login');
-
-function loginAlert() {
-  alert(document.getElementById('user-email-phone').value);
+function alertLogin() {
+  const input = document.getElementById('user-email-phone');
+  alert(input.value);
+  input.value = '';
 }
 
-buttonLogin.addEventListener('click', loginAlert);
+const buttonLogin = document.getElementById('button-login');
+buttonLogin.addEventListener('click', alertLogin);
