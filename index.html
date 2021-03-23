@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Facebook – entre ou cadastre-se</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="facebook1.ico">
 </head>
 
 <body>
@@ -41,11 +42,21 @@
         <input class="input-fullname" type="text" name="lastname" placeholder="Sobrenome">
         <input class="input-form" type="text" name="phone_email" placeholder="Celular ou email">
         <input class="input-form" type="password" name="password" placeholder="Nova senha">
+        <label for="" id="label-gender">Gênero</label>
+        <div class="input-radios">
+          <label for="input-fem">Feminino</label>
+          <input type="radio" value="Fem" name="gender" id="input-fem">
+          <label for="input-masc">Masculino</label>
+          <input type="radio" value="Masc" name="gender" id="input-masc">
+          <label for="input-pers">Personalizado</label>
+          <input type="radio" value="Pers" name="gender" id="input-pers">
+        </div>
         <div id="label-birthdate">Data de nascimento</div>
         <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
       </form>
     </section>
   </main>
+  <script src="script.js"></script>
 </body>
 
 </html>
