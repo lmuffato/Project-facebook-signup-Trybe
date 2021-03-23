@@ -44,7 +44,7 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
-  padding-left: 15px; 
+  padding-left: 15px;
   font-weight: 800;
 }
 
