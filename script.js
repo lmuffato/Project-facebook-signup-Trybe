@@ -15,21 +15,21 @@ const customInput = document.querySelector('#customGender');
 
 let inputOpen = false;
 
-otherInput.addEventListener('click', ShowInput);
-maleInput.addEventListener('click', HideInput);
-femaleInput.addEventListener('click', HideInput);
-
-function ShowInput () {
+function ShowInput() {
   customInput.style.display = 'block';
   inputOpen = true;
 }
 
-function HideInput () {
+function HideInput() {
   if (inputOpen === true){
     customInput.style.display = 'none';
     inputOpen = false;
   }
 }
+
+otherInput.addEventListener('click', ShowInput);
+maleInput.addEventListener('click', HideInput);
+femaleInput.addEventListener('click', HideInput);
 
 ShowInput();
 HideInput();
