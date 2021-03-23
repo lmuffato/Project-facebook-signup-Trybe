@@ -34,14 +34,42 @@ alertText.innerText = 'Campos inválidos';
 
 const buttonRegister = document.querySelector('#facebook-register');
 
-function validateForm(evt) {
+function validateForm() {
   const list = document.querySelectorAll('.right-content input');
   for (let index = 0; index < list.length; index += 1) {
     if (list[index].value === '') {
-      document.querySelector('#formMain').appendChild(alertText);
-      evt.preventDefault();
+      return false;
     }
   }
+  return true;
 }
 
-buttonRegister.addEventListener('click', validateForm);
+function renderRightContent() {
+  const rightContent = document.querySelector('.right-content');
+  const firstName = document.getElementById('firstname').value;
+  const lastName = document.getElementById('lastname').value;
+  const email = document.getElementById('phone_email').value;
+  const birthDate = document.getElementById('birthdate').value;
+  const radioButtons = document.querySelectorAll('.radio');
+  let selectedRadio = '';
+  for (let index = 0; index < radioButtons.length; index += 1) {
+    if (radioButtons[index].checked === true) {
+      selectedRadio = radioButtons[index].value;
+    }
+  }
+  rightContent.innerHTML = '';
+  rightContent.innerHTML = `<br>Olá <strong>${firstName} ${lastName},
+  </strong>o email ou telefone cadastrado é: ${email} 
+  e a data de nascimento é ${birthDate} 
+  e o seu gênero é ${selectedRadio}.`;
+}
+function changeRightContent(evt) {
+  if (!validateForm()) {
+    document.querySelector('#formMain').appendChild(alertText);
+  } else {
+    renderRightContent();
+  }
+  evt.preventDefault();
+}
+
+buttonRegister.addEventListener('click', changeRightContent);
