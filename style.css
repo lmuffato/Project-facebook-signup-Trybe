@@ -19,7 +19,7 @@ body {
   margin-left: 350px;
 }
 
-.facebook-login{
+.facebook-login {
   display: flex;
 }
 
@@ -35,8 +35,8 @@ body {
 }
 
 #button-login {
-background-color: rgb(66, 103, 178);
-color: #d3d8e8;
+  background-color: rgb(66, 103, 178);
+  color: #d3d8e8;
 }
 
 #gender-container {

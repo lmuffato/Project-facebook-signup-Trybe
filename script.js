@@ -1,4 +1,4 @@
-//requisito 7 
+// requisito 7
 const btn = document.querySelector('#button-login');
 const contact = document.querySelector('#user-email-phone');
 
