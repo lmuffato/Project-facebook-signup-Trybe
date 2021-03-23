@@ -52,9 +52,19 @@
 .main-content {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .left-content {
   width: 800px;
   display: flex;
+  flex-direction: column;
+}
+
+#facebook-networking {
+  width: 537px;
+}
+
+.right-content {
+  width: 300px;
 }
