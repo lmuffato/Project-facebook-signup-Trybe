@@ -46,20 +46,20 @@
         <input type="password" name="password" placeholder="Nova senha">
       </div>
       <div class="form-group-column">
-        <label for="" id="label-birthdate">Data de nascimento</label>
-        <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaa">
+        <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+        <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa">
       </div>
       <fieldset id="field-gender">
-        <div>
           <label for="field-gender" id="label-gender">Gênero</label>
-        </div>
-          <input type="radio" name="gender" id="feminine">
-          <label for="feminine">Feminino</label> 
-          <input type="radio" name="gender" id="masculine">
-          <label for="feminine">Masculino</label> 
-          <input type="radio" name="gender" id="personalized">
-          <label for="feminine">Personalizado</label> 
-      </fieldset>
+          <div class="form-group-row">
+            <input type="radio" name="gender" id="female">
+            <label for="female">Feminino</label> 
+            <input type="radio" name="gender" id="male">
+            <label for="male">Masculino</label> 
+            <input type="radio" name="gender" id="personalized">
+            <label for="personalized">Personalizado</label>
+          </div>
+        </fieldset>
       </div>
     </form>
   </div>
