@@ -71,7 +71,7 @@ body {
 /* ------------------------ main ---------------------- */
 .main-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background: red;
   height: 80vh;
   width: 100vw;
