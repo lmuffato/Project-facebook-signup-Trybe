@@ -17,7 +17,7 @@ function rightContentForm() {
       genderInput = radios[i].value;
     }
 
-    rightContent.innerText = `Olá, ${nameInput.value} ${lastName.value}
+    rightContent.innerHTML = `Olá, ${nameInput.value} ${lastName.value}
   
   ${emailInput.value}
 

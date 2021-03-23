@@ -41,3 +41,9 @@
 #custom-gender {
   display: none;
 }
+
+/* Estilização */
+
+.main-content {
+  margin-top: 2rem;
+}
