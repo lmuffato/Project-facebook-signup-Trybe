@@ -12,14 +12,9 @@
   background-color: rgb(66, 103, 178);
 }
 
-.facebook-logo {
-  margin-left: 25em;
-}
-
 .facebook-login {
   display: flex;
   color: white;
-  margin-right: 25em;
 }
 
 .form-group {
