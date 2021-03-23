@@ -149,6 +149,7 @@ a {
 
 .facebook-login {
   display: flex;
+  position:absolute;
   float: right;
 }
 
