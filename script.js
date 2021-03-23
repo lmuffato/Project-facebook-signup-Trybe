@@ -6,7 +6,7 @@ function activeAlert() {
   });
 }
 
-const fields = document.querySelectorAll('[required]');
+/* const fields = document.querySelectorAll('[required]');
 
 console.log(fields);
 
@@ -34,16 +34,13 @@ function validateInputs() {
   for (let index = 0; index < fields.length; index += 1) {
     fields[index].addEventListener('invalid', checkField);
   }
-}
+}*/
 
-const submitButton = document.querySelector('#facebook-register');
-submitButton.addEventListener('click', validateInputs);
-
-/* function checkTextInputs() {
-  const inputs = document.querySelectorAll('.main-form input');
+function checkTextInputs() {
+  const inputList = document.querySelectorAll('.input-text');
   let emptyField = false;
-  for (let index = 0; index < inputs.length - 3; index += 1) {
-    if (inputs[index].value === '') {
+  for (let input in inputList) {
+    if (input.value === '') {
       emptyField = true;
     }
   }
@@ -53,19 +50,29 @@ submitButton.addEventListener('click', validateInputs);
 function checkRadioInputs() {
   const inputsRadio = document.getElementsByName('gender');
   let count = 0;
-  for (let indexRadio = 0; indexRadio < inputsRadio.length; indexRadio += 1) {
-    if (inputsRadio[indexRadio].checked) {
+  for (let input in inputsRadio) {
+    if (input.checked) {
       count += 1;
     }
   }
   return count;
 }
 
+let messageShown = false;
+
 function checkInputs() {
   if (checkTextInputs() === true || checkRadioInputs() === 0) {
-    alert('Campos inválidos');
+    const message = document.createElement('p');
+    document.querySelector('.main-form').appendChild(message);
+    if (messageShown === false) {
+      message.innerText = 'Campos inválidos';
+      messageShown = true;
+    }
   }
-} */
+}
+
+const submitButton = document.querySelector('#facebook-register');
+submitButton.addEventListener('click', checkInputs); 
 
 window.onload = function startSession() {
   activeAlert();
