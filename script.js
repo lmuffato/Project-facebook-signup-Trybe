@@ -17,14 +17,7 @@ function rightContentForm() {
       genderInput = radios[i].value;
     }
 
-    rightContent.innerHTML = `Olá, ${nameInput.value} ${lastName.value}
-  
-  ${emailInput.value}
-
-  ${birthDate.value}
-
-  ${genderInput}
-  `;
+    rightContent.innerHTML = `<p>Olá, ${nameInput.value} ${lastName.value}</p><p>${emailInput.value}</p><p>${birthDate.value}</p><p>${genderInput}</p>`;
   }
 }
 
