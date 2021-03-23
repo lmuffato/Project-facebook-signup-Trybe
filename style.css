@@ -42,7 +42,7 @@ label {
 #button-login {
   padding: 5px;
   background-color: #1e4dac;
-  border-color: #29487d;
+  border-color: 1px solid #29487d;
   border-radius: 2px;
   color: white;
 }
@@ -54,17 +54,32 @@ label {
 }
 
 .main-content {
-  padding-top: 50px;
+  padding: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  border: solid 1px black;
+  background: linear-gradient(white, #D3D8E8);
 }
 
+
 .left-content {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  padding: 50px;
   width: 800px;
 }
 
 .right-content {
+  justify-content:center;
   width: 300px;
+}
+
+.form-inputs {
+  font-size: 18px;
+  margin: 5px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  width: 377px;
+  border-color: 2px solid black;
 }
