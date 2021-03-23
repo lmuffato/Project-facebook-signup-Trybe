@@ -31,17 +31,20 @@ body {
 }
 
 /* facebook login container */
+#login-container {
+  display: flex;
+  align-items: center;
+  height: 76px;
+}
+
 .facebook-login {
   display: flex;
-  align-self: flex-end;
-  justify-content: flex-end;
-  align-items: flex-end;
-  right: 0;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  padding-left: 15px; 
   font-weight: 800;
 }
 
@@ -54,6 +57,7 @@ body {
 .form-control {
   display: flex;
   align-self: flex-end;
+  padding: 0 15px;
 }
 
 #button-login {
