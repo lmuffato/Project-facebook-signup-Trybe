@@ -159,7 +159,7 @@ footer {
   flex-wrap: wrap;
 }
 
-#firstname, #lastname {
+#firstname , #lastname {
   width: 100px;
   margin-bottom: 10px;
   color: rgb(189, 199, 216);
@@ -170,7 +170,7 @@ footer {
   border-radius: 5px;
 }
 
-#phone_email, #password {
+#phone_email , #password {
   margin-bottom: 10px;
   color: rgb(189, 199, 216);
   font: 400 18px;
