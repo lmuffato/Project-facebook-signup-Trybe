@@ -53,3 +53,9 @@
 #lastname {
   margin-left: 10px;
 }
+
+.longerInputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
