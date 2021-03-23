@@ -15,18 +15,32 @@ body {
   justify-content: space-between;
 }
 
+.facebook-logo {
+  margin-left: 350px;
+}
+
+.facebook-login {
+  display: flex;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
   align-self: flex-end;
+  color: #d3d8e8;
 }
 
 .form-control {
   align-self: flex-end;
 }
 
-.facebook-login {
-  display: flex;
+#button-login {
+  background-color: rgb(66, 103, 178);
+  color: #d3d8e8;
+}
+
+#gender-container {
+  display: none;
 }
 
 /* csss main */
