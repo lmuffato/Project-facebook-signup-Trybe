@@ -6,6 +6,40 @@ function activeAlert() {
   });
 }
 
+const fields = document.querySelectorAll('[required]');
+
+console.log(fields);
+
+function checkField (event) {
+  const field = event.target;
+
+  function checkErrors () {
+    let errorFound = false;
+    for (let error in field.validity) {
+      //console.log('Teste:' + fields.validity[error]);
+      if (error !== 'customError' && field.validity[error]) {
+        errorFound = true;
+      }
+    }
+    return errorFound;
+  }
+
+  const result = checkErrors();
+  if (result) {
+    field.setCustomValidity('Campo inválido');
+  } else {
+    field.setCustomValidity('');
+  }
+}
+
+function validateInputs () {
+  for (let index = 0; index < fields.length; index += 1) {
+    fields[index].addEventListener('invalid', checkField);
+  }
+}
+
+document.querySelector('#facebook-register').addEventListener("click", validateInputs);
+
 /* function checkTextInputs() {
   const inputs = document.querySelectorAll('.main-form input');
   let emptyField = false;
@@ -33,9 +67,6 @@ function checkInputs() {
     alert('Campos inválidos');
   }
 } */
-
-const submitButton = document.querySelector('#facebook-register');
-submitButton.addEventListener('click', checkInputs);
 
 window.onload = function startSession() {
   activeAlert();
