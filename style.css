@@ -20,7 +20,7 @@ body {
   height: 90px;
   border-bottom: 1px solid rgb(21, 44, 92);
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   font-family: Ubuntu, sans-serif;
   padding: 20px;
 }
