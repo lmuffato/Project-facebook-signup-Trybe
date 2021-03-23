@@ -27,12 +27,6 @@ body {
 
 .form-group {
   display: flex;
-  flex-direction: column;
-}
-
-.form-group input {
-  padding: 1px;
-  align-self: baseline;
 }
 
 .form-control {
