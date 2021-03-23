@@ -33,6 +33,10 @@
   color: aliceblue;
 }
 
+.form-control {
+  align-self: flex-end;
+}
+
 .main-content {
   display: flex;
   justify-content: space-around;
