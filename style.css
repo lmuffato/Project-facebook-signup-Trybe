@@ -78,14 +78,25 @@ body {
   margin-bottom: 10px;
 }
 
+#label-birthdate {
+  color: rgb(144, 148, 156);
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+#data {
+  margin-top: 10px;
+}
+
 .genero {
   display: flex;
   margin-top: 10px;
 }
 
 #label-gender {
-  color: rgb(159, 162, 170);
+  color: rgb(144, 148, 156);
   font-weight: 600;
+  font-size: 1.2em;
 }
 
 /* main-content */
@@ -97,6 +108,7 @@ body {
   margin-left: 10px;
 }
 
+/* main-contet */
 .main-content input:is( [ type = 'text' ] ,[ type = 'password' ] ) {
   padding: 10px;
   width: 100%;
