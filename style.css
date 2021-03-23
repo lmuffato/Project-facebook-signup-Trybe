@@ -54,3 +54,17 @@
   flex-basis: 300px;
   justify-content: flex-end;
 }
+
+.name-conteiner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio-conteiner {
+  display: flex;
+}
+
+#birthdate-conteiner {
+  display: flex;
+  flex-direction: column;
+}

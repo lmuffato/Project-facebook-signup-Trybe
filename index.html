@@ -35,18 +35,35 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form action="">
-         <!-- requisito 11 -->
-         <input type="text"  name="firstname" placeholder="Nome" required>
+      <form action="" id="form-conteiner">
+         
+        <div class="name-conteiner">
+          <input type="text"  name="firstname" placeholder="Nome" required>
+          <input type="text" name="lastname" placeholder="Sobrenome">
+        </div>
          <!-- requisito 13 --> 
-             <input type="text"  name="phone_email" placeholder="Celular ou email" required>
-         <!-- requisito 15 -->
-             <label for="" id="label-birthdate">Data de nascimetno</label>
-             <input type="text"  name="birthdate" placeholder="dd/mm/aaaa" required>
-         <!-- requisito 19 -->
-             <input type="text"  name="gender-custom" placeholder="Gênero (opcional)" required>
-              <!-- requisito 17 -->
-              <button type="submit" id="facebook-register">Cadastre-se</button>
+        <input type="text"  name="phone_email" placeholder="Celular ou email" required>
+
+        <input type="password" name="password" placeholder="Nova senha">
+        
+        <div id="birthdate-conteiner">
+          <label for="" id="label-birthdate">Data de nascimetno</label>
+          <input type="text"  name="birthdate" placeholder="dd/mm/aaaa" required>
+        </div>
+
+        <div id="radio-conteiner">
+          <label for="" id="label-gender">Gênero</label>
+          <input type="radio" name="gender">Feminino
+          <input type="radio" name="gender">Masculino
+          <input type="radio" name="gender">Personalizado
+        </div>
+         
+        <!-- requisito 19 (Java Script)
+        <input type="text"  name="gender-custom" placeholder="Gênero (opcional)" required>
+         -->
+
+        <!-- requisito 17 -->
+        <button type="submit" id="facebook-register">Cadastre-se</button>
         
       </form>
     </div>    
