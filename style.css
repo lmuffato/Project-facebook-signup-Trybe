@@ -64,6 +64,7 @@ label {
   display: flex;
   flex-direction: column;
   width: 800px;
+  align-items: center;
 }
 
 .right-content {
@@ -95,4 +96,10 @@ label {
   border-color: #3b6e22 #3b6e22 #2c5115;
   border-radius: 2px;
   margin: 5px;
+}
+
+#facebook-networking {
+  width: 537px;
+  aspect-ratio: auto 537 / 195;
+  height: 195px;
 }
