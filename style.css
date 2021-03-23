@@ -69,5 +69,40 @@ body {
 }
 
 /* ------------------------ main ---------------------- */
+.main-content {
+  display: flex;
+  flex-direction: row;
+  background: red;
+  height: 80vh;
+  width: 100vw;
+  justify-content: center;
+}
 
-/* ----------------------- footer --------------------- */
+.left-content {
+  width: 800px;
+  background: cyan;
+
+}
+
+#facebook-slogan {
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  background-color: green;
+}
+
+.right-content {
+  background-color: blueviolet;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#fullname {
+  display: flex;
+  justify-content: space-between;
+  background-color: darkblue;
+}
+
+/* ------------------------ footer ---------------------- */

@@ -1,8 +1,6 @@
-/* function button login */
 const buttonLoggin = document.querySelector('#button-login');
 
-function alertaT(e) {
-  e.preventDefault();
+function alertaT() {
   const user = document.querySelector('#user-email-phone');
   alert(user.value);
 }
