@@ -1,8 +1,8 @@
 .top-bar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   background-color: rgb(66, 103, 178);
+  justify-content: space-between;
 }
 
 .facebook-login {
@@ -17,4 +17,3 @@
 .form-control {
   align-self: flex-end;
 }
-
