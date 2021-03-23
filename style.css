@@ -10,36 +10,66 @@
   visibility: hidden;
 }
 
+header {
+  background-color: rgb(66, 103, 178);
+}
+
 .top-bar {
   display: flex;
   justify-content: space-between;
-  background-color: rgb(66, 103, 178);
-  height: 60px;
+  align-items: center;
+  width: 980px;
+  height: 82px;
+  margin: 0 auto;
+  font-size: 12px;
+}
+
+.top-bar .facebook-logo {
+  width: 190px;
+  height: 34px;
+  object-fit: cover;
 }
 
 .facebook-login {
   display: flex;
-  align-items: center;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-right: 10px;
+  margin-right: 14px;
   color: white;
+}
+
+.form-group label {
+  margin-bottom: 4px;
+}
+
+.form-group input {
+  width: 142px;
+  height: 24px;
+  font-size: 12px;
+  outline: none;
+  border: 1px solid rgb(29, 42, 91);
+  padding: 3px;
 }
 
 .form-control {
   align-self: flex-end;
-  padding-bottom: 2px;
 }
 
 #button-login {
+  font-weight: 600;
   background-color: rgb(66, 103, 178);
-  border-radius: 5px;
+  border-radius: 2px;
+  border: 1px solid rgb(41, 72, 125);
   color: white;
-  margin-bottom: 8px;
-  padding: 1px 4px;
+  padding: 3px 6px;
+  cursor: pointer;
+}
+
+#button-login:hover {
+  background-color: rgb(54, 88, 153);
 }
 
 .main-content {
@@ -98,16 +128,6 @@
 
 .signup .name {
   display: flex;
-}
-
-#user-email-phone {
-  height: 25px;
-  width: 150px;
-}
-
-#user-password {
-  height: 25px;
-  width: 150px;
 }
 
 #radios-gender {
