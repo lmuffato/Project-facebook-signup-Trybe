@@ -21,11 +21,11 @@
   font-family: sans-serif;
 }
 
-label#user-email-phone-label {
+#user-email-phone-label {
   color: white;
 }
 
-label#user-password-label {
+#user-password-label {
   color: white;
 }
 
