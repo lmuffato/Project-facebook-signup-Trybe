@@ -120,7 +120,7 @@ body {
   margin: 0;
   padding: 8px 10px;
   font-size: 18px;
-  width: 377px;
+  /* width: 377px; */
 }
 
 .user-name input {
@@ -201,6 +201,6 @@ body {
 }
 
 .gende {
-  width: 50px !important;
+  width: 50px;
   display: inline-block;
 }
