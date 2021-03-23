@@ -1,3 +1,5 @@
+const genderCustomConst = 'gender-custom';
+
 window.onload = () => {
   document.querySelector('#button-login').addEventListener('click', () => {
     alert(document.querySelector('#user-email-phone').value);
@@ -10,10 +12,10 @@ function genderCustom() {
     const elem = document.createElement('input');
     parentEle.appendChild(elem);
     Object.assign(elem, {
-      name: 'gender-custom',
+      name: genderCustomConst,
       type: 'text',
       placeholder: 'Gênero (opcional)',
-      id: 'gender-custom'
+      id: genderCustomConst,
     });
   }
 }
@@ -27,7 +29,7 @@ function Clicou1(evento) {
 document.getElementById('customGender').addEventListener('click', Clicou1);
 
 function clickParaSelecionar() {
-  document.getElementById('gender-custom').remove();
+  document.getElementById(genderCustomConst).remove();
 }
 
 document.querySelectorAll('.genderRadio1').forEach((elementoSelecionado) => {

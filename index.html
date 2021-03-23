@@ -18,12 +18,12 @@
 				<form action='' method='GET' class='facebook-login'>
 					<div class='form-group'>
 						<label id='user-email-phone-label' for="loginUser">Email ou telefone</label>
-						<input type='text' name='loginUser' placeholder="login" id='user-email-phone' class='loginForm' id='user-email-phone-label'>
+						<input type='text' name='loginUser' id='user-email-phone' class='loginForm' id='user-email-phone-label'>
 					</div>
 
 					<div class='form-group'>
 						<label for="loginUser" id='user-password-label'>Senha</label>
-						<input type='password' name='loginPassword' placeholder="senha" id='user-password' class='loginForm'>
+						<input type='password' name='loginPassword' id='user-password' class='loginForm'>
 					</div>
 
 					<div class='form-control'>
@@ -44,37 +44,39 @@
 			</section>
 
 			<section class="right-content">
-                <div>
-                    <h1 id='openNewAcount'>Abra uma conta</h1>
-                    <div class='quick-easy'>É rápido e fácil.</div>
-                    <form action='' method='GET' class='createUser'>
-                        <input type='text' id='firstname' name='firstname' placeholder='Nome'>
-                        <input type='text' id='lastname' name='lastname' placeholder='Sobrenome'>
-                        <input type='text' id='phone_email' name='phone_email' placeholder='Celular ou email'>
-                        <input type='password' id='password' name='password' placeholder='Nova senha'>
-                        
-                        <div>
-                            <label id='label-birthdate'>Data de nascimento</label>
-                            <input type='text' id='input-birthdate' name=birthdate placeholder='dd/mm/aaaa'>
-                        </div>
-                        
-                        <div>
-                            <label id='label-gender'>Gênero</label>
-                        </div>
+				<div>
+					<h1>Abra uma conta</h1>
+					<div class='quick-easy'>É rápido e fácil.</div>
+					<form action='' method='GET' class='createUser js-form'>
+						<div id="fullname">
+							<div>
+								<input type='text' class="js-form" id='firstname' name='firstname' data-validate-field="firstname" placeholder='Nome'>
+							</div>
+							<div>
+								<input type='text' class="js-form" id='lastname' name='lastname' data-validate-field="lastname" placeholder='Sobrenome'>
+							</div>
+						</div>
+						<div>
+							<input type='text' class="js-form" id='phone_email' name='phone_email' data-validate-field="phone_email" placeholder='Celular ou email'>
+						</div>
+						<div>
+							<input type='password' class="js-form" id='password' name='password' data-validate-field="password" placeholder='Nova senha'>
+						</div>
 
-                        <div id='genderOption'>
-                            <input type='radio' name='gender' id='female' class='genderRadio1'><div class='gender'>Feminino</div>
-                            <input type='radio' name='gender' id='male' class='genderRadio1'><div class='gender'>Masculino</div>
-                            <input type='radio' name='gender' id='customGender' class='genderRadio2'><div class='gender'>Personalizado</div>
-                        </div>
-                        <div id='personalizedGender'>
-                        </div>
-                    <div id='facebook-register-button'>
-                        <button type='submit' id='facebook-register'>Cadastre-se</button>
-                    </div>
+						<label id='label-birthdate'>Data de nascimento</label>
+						<div>
+							<input type='text' id='input-birthdate' name=birthdate placeholder='dd/mm/aaaa'>
+						</div>
 
-                    </form>
-                </div>
+						<label id='label-gender'>Gênero</label>
+						<div id="radios">
+							<input type='radio' name='gender' id='gender' class='gender'>Feminino
+							<input type='radio' name='gender' id='gender' class='gender'>Masculino
+							<input type='radio' name='gender' id='gender' class='gender'>Personalizado
+						</div>
+						<button id='facebook-register'>Cadastre-se</button>
+					</form>
+				</div>
 			</section>
 
 		</main>
@@ -130,6 +132,26 @@
 	</footer>
 
 	<script src="script.js"></script>
+	<script src="libs/just-validate.js"></script>
+	<script>
+		new window.JustValidate('.js-form', {
+			rules: {
+				firstname: {
+					required: true
+				},
+				lastname: {
+					required: true
+				},
+				phone_email: {
+					required: true,
+				},
+				password: {
+					required: true,
+				},
+				focusWrongField: true,
+			}
+		});
+	</script>
 </body>
 
 </html>
