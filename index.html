@@ -21,14 +21,21 @@
           <input type="text" name="lastname" id="input-lastname" placeholder="Sobrenome" required>
           <input type="text" name="phone_email" id="phone_email" placeholder="Celular ou email" required>
           <input type="password" name="password" id="password" placeholder="Nova senha" required>
-          <label for="label-birthdate">Data de nascimento</label>
+          <p id="label-birthdate">Data de nascimento</p>
           <input type='text' name="birthdate" id="label-birthdate" placeholder="dd/mm/aaaa" required>
-          <label for="label-gender">Gênero</label><br>
-          <input type="radio" name="gender" id="label-gender" required> Feminino
-          <input type="radio" name="gender" id="label-gender" required> Masculino
-          <input type="radio" name="gender" id="label-gender" required> Personalizado
-          <input type="text" name="" id="gender-custom" placeholder="Gênero (opcional)">
-          <br>
+          <p id="label-gender">Gênero</p>
+          <label for="fem">
+          <input type="radio" name="gender" id="fem" value="fem" required>
+          Feminino</label>
+          <label for="mas">
+          <input type="radio" name="gender" id="mas" value="mas" required>
+          Masculino</label>
+          <label for="per">
+          <input type="radio" name="gender" id="per" required>
+          Personalizado</label>
+          <label for="gender-custom">
+          <input type="text" name="gender-custom" id="gender-custom" placeholder="Gênero (opcional)">
+          </label><br>
           <button type="submit" id="facebook-register">Cadastre-se</button>
         </form>
       </section>
