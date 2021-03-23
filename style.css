@@ -13,6 +13,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
+  padding-bottom: 5px ;
 }
 
 .top-bar img {
