@@ -46,7 +46,7 @@
     <section class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form action="">
+      <form action="" id="main-form">
         <div class="nome">
           <input type="text" name="firstname" placeholder="Nome" class="first-last-name">
           <input type="text" name="lastname" placeholder="Sobrenome" class="first-last-name">
@@ -69,6 +69,10 @@
             <input type="radio" name="gender" id="personal" value="Personalizado">Personalizado
           </label>
         </fieldset>
+        <div id="messages">
+          <p>Ao clicar em Cadastre-se, você concorda com nossos Termos, Política de Dados e Política de Cookies. Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
+          <h3 id="invalid-field"></h3>
+        </div>
 
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>

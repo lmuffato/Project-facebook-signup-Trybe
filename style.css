@@ -31,7 +31,7 @@ header {
 
 .main-content {
   display: flex;
-  background-color: aquamarine;
+  background: linear-gradient(white, #D3D8E8);
   justify-content: space-around;
 }
 
@@ -63,4 +63,8 @@ header {
 
 #label-gender {
   display: block;
+}
+
+#invalid-field {
+  color: rgb(223, 2, 2);
 }
