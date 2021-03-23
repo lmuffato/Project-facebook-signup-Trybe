@@ -3,9 +3,10 @@ const userEmailPhone = document.querySelector('#user-email-phone');
 const personal = document.querySelector('#personal');
 const genderField = document.querySelector('#gender-field');
 const inputs = document.getElementsByTagName('input');
-let validation = 0;
 const registerBtn = document.querySelector('#facebook-register');
 const invalidField = document.querySelector('#invalid-field');
+let validation = 0;
+const mainContent = document.querySelector('.main-content');
 
 console.log(`Aqui estão os inputs: ${inputs.length}`);
 
@@ -16,6 +17,7 @@ loginBtn.addEventListener('click', (e) => {
   e.preventDefault();
 });
 
+// Mudar para focus para exibir e blur para remover
 genderField.addEventListener('click', (e) => {
   const selected = e.target;
   if (selected === personal) {
@@ -27,19 +29,43 @@ genderField.addEventListener('click', (e) => {
   }
 });
 
+// genderField.addEventListener('click', (e) => {
+//   const selected = e.target;
+//   if (selected !== personal) {
+//     const opcional = document.createElement('input');
+//     genderField.removeChild(opcional);
+//   }
+// });
+
+function createMessage() {
+  const name = document.querySelector('#name');
+  console.log(`Aqui está o nome ${name.value}`);
+  const lastname = document.querySelector('#lastname');
+  const emailOrPhone = document.querySelector('#phone_email');
+  const birthdate = document.querySelector('#birthdate');
+  const message = document.createElement('h4');
+  message.innerText = `Olá, ${name.value} 
+  ${lastname.value}, ${emailOrPhone.value}, ${birthdate.value}`;
+  const helloStrange = document.createElement('section');
+  helloStrange.id = ('hello-strange');
+  helloStrange.appendChild(message);
+  mainContent.appendChild(helloStrange);
+}
+
 registerBtn.addEventListener('click', (e) => {
+  const origRightContent = document.querySelector('#original-right-content');
   for (let index = 0; index < inputs.length; index += 1) {
     if (index >= 2 && inputs[index].value === '') {
       invalidField.innerText = 'Campos inválidos';
       validation = 1;
       break;
-    } else {
-      invalidField.innerText = '';
     }
   }
-  e.preventDefault();
   console.log(validation);
-  return validation;
+  if (validation === 0) {
+    invalidField.innerText = '';
+    createMessage();
+    mainContent.removeChild(origRightContent);
+  }
+  e.preventDefault();
 });
-
-console.log(validation);
