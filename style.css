@@ -113,13 +113,13 @@ label {
 #label-birthdate {
   color: rgb(131, 124, 124);
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 #label-gender {
   color: rgb(131, 124, 124);
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 #gender1 {
