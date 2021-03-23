@@ -45,8 +45,11 @@
   width: 300px;
 }
 
-.form-signup {
-  width: 500px;
+.fullname {
   display: flex;
-  flex-wrap: wrap;
+}
+
+.email-password {
+  display: flex;
+  flex-direction: column;
 }
