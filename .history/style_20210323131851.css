@@ -47,9 +47,17 @@
   width: 300px;
 }
 
-.fullname {
+.fullName {
   display: flex;
   flex-flow: row nowrap;
-  flex-basis: 50%;
+  flex-basis: 55%;
 }
 
+#firstname {
+  display: flex;
+}
+
+#lastname {
+  display: flex;
+  margin-left: 10px;
+} 

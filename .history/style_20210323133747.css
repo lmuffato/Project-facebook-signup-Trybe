@@ -47,9 +47,14 @@
   width: 300px;
 }
 
+.userData {
+  display: flex;
+  position: absolute;
+  left: 0;
+}
+
 .fullname {
   display: flex;
-  flex-flow: row nowrap;
-  flex-basis: 50%;
+  flex-direction: column;
 }
 

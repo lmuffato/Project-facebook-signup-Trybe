@@ -47,9 +47,9 @@
   width: 300px;
 }
 
+
 .fullname {
   display: flex;
-  flex-flow: row nowrap;
-  flex-basis: 50%;
+  flex-direction: column;
 }
 
