@@ -199,3 +199,8 @@ body {
 #facebook-register:hover {
   background: linear-gradient(#67ae55, #6ea15a);
 }
+
+.gende {
+  width: 50px !important;
+  display: inline-block;
+}
