@@ -10,18 +10,19 @@ const fields = document.querySelectorAll('[required]');
 
 console.log(fields);
 
+function checkErrors(field) {
+  let errorFound = false;
+  for (const error in field.validity) {
+    if (error !== 'customError' && field.validity[error]) {
+      errorFound = true;
+    }
+  }
+  return errorFound;
+}
+
 function checkField(event) {
   const field = event.target;
-  function checkErrors() {
-    let errorFound = false;
-    for (let error in field.validity) {
-      if (error !== 'customError' && field.validity[error]) {
-        errorFound = true;
-      }
-    }
-    return errorFound;
-  }
-  const result = checkErrors();
+  const result = checkErrors(field);
   if (result) {
     field.setCustomValidity('Campo inválido');
   } else {
