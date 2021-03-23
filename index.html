@@ -35,28 +35,28 @@
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="" method="GET">
-        <input required type="text" name="firstname" placeholder="Nome" id="firstname">
-        <input required type="text" name="lastname" placeholder="Sobrenome" id="lastname">
-        <input required type="text" name="phone_email" placeholder="Celular ou email" id="phone-email">
-        <input required type="password" name="password" placeholder="Nova senha">
+        <input type="text" name="firstname" placeholder="Nome" id="firstname" class="register">
+        <input type="text" name="lastname" placeholder="Sobrenome" id="lastname" class="register">
+        <input type="text" name="phone_email" placeholder="Celular ou email" id="phone-email" class="register">
+        <input type="password" name="password" placeholder="Nova senha" id="senha" class="register">
         <div>
           <label for="user-birthdate" id="label-birthdate">Data de nascimento</label>
-          <input required type="date" name="birthdate" id="user-birthdate" placeholder="dd/mm/aaaa">
+          <input type="text" name="birthdate" id="user-birthdate" placeholder="dd/mm/aaaa" class="register">
         </div>
         <div>
           <div>
             <label for="" id="label-gender">Gênero</label>
           </div>
           <div>
-            <input required type="radio" name="gender" id="female-button">
+            <input type="radio" name="gender" id="female-button">
             <label for="female-button">Feminino</label>
-            <input required type="radio" name="gender" id="male-button">
+            <input type="radio" name="gender" id="male-button">
             <label for="male-button">Masculino</label>
-            <input required type="radio" name="gender" id="personalize-button">
+            <input type="radio" name="gender" id="personalize-button">
             <label for="personalize-button">Personalizado</label>
           </div>
           <div>
-            <input type="text" name="gender-custom" placeholder="Gênero (opcional)">
+            <input type="text" name="gender-custom" placeholder="Gênero (opcional)" id="genero-opcional">
           </div>
         </div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
