@@ -13,8 +13,9 @@ function validatingForm(event) {
       event.preventDefault();
       span.innerHTML = 'Campos inválidos';
       facebookForm.appendChild(span);
+      return true;
     }
-  }
+  } return false;
 }
 
 const btnSubmit = document.getElementById('facebook-register');
@@ -60,6 +61,20 @@ function gender() {
     return custom.value;
   }
 }
+
+function validatingGender() {
+  if (male.checked) {
+    return true;
+  }
+  if (female.checked) {
+    return true;
+  }
+  if (custom.checked) {
+    return true;
+  }
+  return false;
+}
+
 function revalidatingForm() {
   if (firstName.value !== '' && lastName.value !== '') {
     return true;
@@ -73,7 +88,7 @@ function revalidatingForm() {
 function helloMessage(e) {
   const rightContent = document.querySelector('.right-content');
   e.preventDefault();
-  if (revalidatingForm() === true) {
+  if (revalidatingForm() && !validatingForm() && validatingGender()) {
     rightContent.innerHTML = '';
     rightContent.innerHTML = `<p>Olá, ${firstName.value} ${lastName.value}</p>`;
     rightContent.innerHTML += `<br><p>${celEmail.value}</p>`;
