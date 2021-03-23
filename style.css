@@ -14,6 +14,7 @@
 }
 
 .facebook-logo {
+  padding-right: 100px;
   display: flex;
 }
 
@@ -29,14 +30,27 @@ label {
   display: flex;
   font-size: 12px;
   align-items: center;
+  padding-bottom: 2px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  padding: 10px;
+  color: white;
+}
+
+#button-login {
+  padding: 5px; 
+  background-color: #1e4dac;
+  border-color: #29487d;
+  border-radius: 2px;
+  color: white;
 }
 
 .form-control {
+  padding: 10px 50px 10px 5px;
+  justify-content: center;
   align-self: flex-end;
 }
 
