@@ -1,46 +1,46 @@
 .right-content {
-	width: 300px;
-	padding: 8px
-};
-
-.formName {
-	display: flex;
-	align-items: center;
+  width: 300px;
+  padding: 8px;
 }
 
-.phone_email { 
-	width: 100%;
+.formName {
+  display: flex;
+  align-items: center;
+}
+
+.phone_email {
+  width: 100%;
 }
 
 input {
-	padding: 8px;
-	margin: 4px;
+  padding: 8px;
+  margin: 4px;
 }
 
 #term {
-	font-size: 12px;
-	color: grey;
+  font-size: 12px;
+  color: grey;
 }
 
 .blue {
-	color: blue;
+  color: blue;
 }
 
 .blue:hover {
-	color: blue;
-	text-decoration: underline;
-	cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 #facebook-register {
-	height: 40px;
-	width: 100%;
-	background-color: #79bc64;
-	color: white;
-	border-radius: 5px;
-	border: 1px solid;
-	border-color: #3b6e22 #3b6e22 #2c5115;
-	box-shadow: inset 0 1px 1px #a4e388;
+  height: 40px;
+  width: 100%;
+  background-color: #79bc64;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  box-shadow: inset 0 1px 1px #a4e388;
 }
 
 /* Configurações globais */
