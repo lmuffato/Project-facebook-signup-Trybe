@@ -1,9 +1,47 @@
 const genderCustomConst = 'gender-custom';
+const idDuccessButton = document.querySelector('#facebook-register');
+const inputsText = document.querySelectorAll('.createUser input');
+const radioElement = document.form1;
+const idMessageInvalid = document.querySelector('#messageInvalid');
+
+const generateInvalidMessage = () => {
+  const newMsg = document.createElement('p');
+  newMsg.innerHTML = 'Campos inválidos';
+  idMessageInvalid.appendChild(newMsg);
+};
+
+const validRadio = () => {
+  if (radioElement.gender[0].checked === false
+  && radioElement.gender[1].checked === false
+  && radioElement.gender[2].checked === false) {
+    return false;
+  }
+  return true;
+};
+
+const validateForm = (e) => {
+  e.preventDefault();
+  let check = true;
+  inputsText.forEach((el) => {
+    if ((el.type === 'text' || el.type === 'password') && el.value === '') {
+      console.log(`O campo ${el.id} precisa ser preenchido`);
+      check = false;
+    }
+  });
+  if (!validRadio()) {
+    console.log('O campo gênero precisa ser preenchido');
+    check = false;
+  }
+  if (!check) {
+    generateInvalidMessage();
+  }
+};
 
 window.onload = () => {
   document.querySelector('#button-login').addEventListener('click', () => {
     alert(document.querySelector('#user-email-phone').value);
   });
+  idDuccessButton.addEventListener('click', validateForm);
 };
 
 function genderCustom() {
