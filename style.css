@@ -87,7 +87,6 @@ body {
 }
 
 .new-account {
-  
   display: flex;
   flex-flow: column nowrap; /* não permite quebra de linha */
   justify-content: center;
