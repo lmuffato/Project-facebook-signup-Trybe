@@ -81,8 +81,8 @@ main {
   align-items: center;
 }
 
-#esquerda {
-  width: 55%;
+.left-content {
+  width: 800px;
   height: 100%;
   background-color: #1d2a5b;
 }
