@@ -7,12 +7,12 @@ window.onload = () => {
 function genderCustom() {
   if (document.querySelector('#customGender').checked === true) {
     const parentEle = document.querySelector('#personalizedGender');
-    const elementoCriado = document.createElement('input');
-    parentEle.appendChild(elementoCriado);
-    elementoCriado.id = 'gender-custom';
-    elementoCriado.setAttribute('name', 'gender-custom');
-    elementoCriado.setAttribute('type', 'text');
-    elementoCriado.setAttribute('placeholder', 'Gênero (opcional)');
+    const elem = document.createElement('input');
+    parentEle.appendChild(elem);
+    elem.id = 'gender-custom';
+    elem.setAttribute('name', 'gender-custom');
+    elem.setAttribute('type', 'text');
+    elem.setAttribute('placeholder', 'Gênero (opcional)');
   }
 }
 
