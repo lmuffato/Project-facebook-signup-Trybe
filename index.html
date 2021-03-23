@@ -9,67 +9,70 @@
 </head>
 
 <body>
-    <header class='top-bar'>
-        <img src='imgs/facebook-logo.png' class='facebook-logo'>
+    <header class='top-bar'> <!-- Requisito 1 -->
+        <img src='imgs/facebook-logo.png' class='facebook-logo'> <!-- Requisito 2 -->
 
-        <form class='facebook-login' action=''>
-            <div class='form-group'>
+        <form class='facebook-login' action=''> <!-- Requisito 3 -->
+            <div class='form-group'> <!-- Requisito 5 -->
                 <label id='user-email-phone-label' for='user-email-phone'>Email ou telefone</label>
                 <input id='user-email-phone' type='text'>
             </div>
 
-            <div class='form-group'>
+            <div class='form-group'> <!-- Requisito 6 -->
                 <label id='user-password-label' for='user-password'>Senha</label>
                 <input id='user-password' type='password'>
             </div>
 
-            <div class='form-control'>
+            <div class='form-control'> <!-- Requisito 7 -->
                 <button id='button-login'>Entrar</button>
             </div>
         </form>
-
     </header>
 
-    <section class='main-content'>
-        <div class='left-content'>
+    <section class='main-content'> <!-- Requisito 8 -->
+        <div class='left-content'> <!-- Requisito 9 -->
             <p id='facebook-slogan'>
                 O Facebook ajuda você a se conectar e <br>
                 compartilhar com as pessoas que fazem parte <br>
                 da sua vida.
             </p>
+            
             <img src='imgs/networking.png' id='facebook-networking'>
         </div>
 
-        <div class='right-content'>
+        <div class='right-content'> <!-- Requisito 10 -->
             <h1>Abra uma conta</h1>
-            <h3 class='quick-easy'>É rápido e fácil.</h3>
-            <form class='columns' action=''>
-                <div class='name'>
-                    <input type='text' name='firstname' placeholder='Nome'>
 
-                    <input type='text' name='lastname' placeholder='Sobrenome'>
+            <h3 class='quick-easy'>É rápido e fácil.</h3>
+
+            <form class='register' action=''>
+                <div class='fullName'>
+                    <input type='text' name='firstname' placeholder='Nome'> <!-- Requisito 11-->
+
+                    <input type='text' name='lastname' placeholder='Sobrenome'> <!-- Requisito 12 -->
                 </div>
 
-                <input type='text' name='phone_email' placeholder='Celular ou email'>
+                <input type='text' name='phone_email' placeholder='Celular ou email'> <!-- Requisito 13 -->
                 
-                <input type='password' name='password' placeholder='Nova senha'>
+                <input type='password' name='password' placeholder='Nova senha'> <!-- Requisito 14 -->
                 
                 <label id='label-birthdate' for='birthdate'>Data de nascimento</label>
-                <input type='text' name='birthdate' placeholder='dd/mm/aaaa'>
+                <input type='text' name='birthdate' placeholder='dd/mm/aaaa'> <!-- Requisito 15 -->
 
                 <label id='label-gender' for=''>Gênero</label>
-                <div>
-                    <input type='radio' id='Feminino' name='gender' value='Feminino' checked>
-                    <label for='Feminino'>Feminino</label>
+                <div> <!-- Requisito 16 -->
+                    <input id='female' type='radio' name='gender' value='Feminino' checked>
+                    <label for='female' class='female'>Feminino</label>
 
-                    <input type='radio' id='Masculino' name='gender' value='Masculino'>
-                    <label for='Masculino'>Masculino</label>
+                    <input id='male' type='radio' name='gender' value='Masculino'>
+                    <label for='male' class='male'>Masculino</label>
 
-                    <input type='radio' id='Personalizado' name='gender' value='Personalizado'>
-                    <label for='Personalizado'>Personalizado</label>
+                    <input id='custom' type='radio' name='gender' value='Personalizado'>
+                    <label for='custom' class='custom'>Personalizado</label>
                 </div>
             </form>
-            <button id='facebook-register' type='submit'>Cadastre-se</button>
+
+            <button id='facebook-register' type='submit'>Cadastre-se</button> <!-- Requisito 17 -->
         </div>
     </section>
 
