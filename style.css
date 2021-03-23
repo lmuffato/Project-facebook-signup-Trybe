@@ -150,7 +150,7 @@ label {
 .left-content {
   width: 800px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .underline-li {

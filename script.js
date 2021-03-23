@@ -8,7 +8,7 @@ function verifyBlankFields() {
       break;
     }
   }
-}
+} // Usar ideia do Iago - append h3
 
 function submit() {
   const getBtn = document.getElementById('facebook-register');

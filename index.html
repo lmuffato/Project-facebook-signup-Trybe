@@ -37,58 +37,42 @@
     </header>
 
     <section class="main-content">
-        <div class="main-content left-content">
+        <div class="left-content">
             <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da
                 sua vida.</p>
             <img id="facebook-networking" src="imgs/networking.png" alt="">
         </div>
-    </section>
-    <section class='main-content'>
-        <div class='left-content'>
-
-        </div>
-        <form class='right-content'>
-
+        <div class='right-content'>
             <h1>Abra uma conta</h1>
             <p class='quick-easy'>É rápido e fácil</p>
-
-            <div class='formName'>
-                <input type='text' name='firstname' placeholder='Nome' required>
-                <input type='text' name='lastname' placeholder='Sobrenome' required>
-            </div>
-
-            <div class='phone_email'>
-                <input type='text' name='phone_email' placeholder='Celular ou email' required>
-            </div>
-
-            <input type='password' name='password' placeholder='Nova senha' required>
-
-            <div>
-                <label id='label-birthdate' for='date'> Data de Nascimento </label> <br>
-                <input type='text' id='date' name='birthdate' placeholder='dd/mm/aaaa'>
-            </div>
-
-            <div>
-                <label id='label-gender'> Gênero</label><br>
-
-                <input type="radio" id='female' name='gender' value='female' checked>
-                <label for='female'>Feminino</label>
-
-                <input type="radio" id='male' name='gender' value='male'>
-                <label for='male'>Masculino</label>
-
-                <input type="radio" id='custom' name='gender' value='custom'>
-                <label for='custom'>Personalizado</label>
-            </div>
-
-            <div>
-                <p id='term'>Ao clicar em Cadastra-se, você concorda com nossos <span class='blue'>Termos, Política de
-                        Dados</span> e <span class='blue'>Política de Cookies</span>. Você pode receber notificação por
-                    SMS e pode cancelar isso quando quiser.</p>
-            </div>
-
-            <button type='submit' id='facebook-register'>Cadastre-se</button>
-        </form>
+            <form action="">
+                <div class='formName'>
+                    <input type='text' name='firstname' placeholder='Nome' required>
+                    <input type='text' name='lastname' placeholder='Sobrenome' required>
+                </div>
+                <div class='phone_email'>
+                    <input type='text' name='phone_email' placeholder='Celular ou email' required>
+                </div>
+                <input type='password' name='password' placeholder='Nova senha' required>
+                <div>
+                    <label id='label-birthdate' for='date'>Data de Nascimento</label> <br>
+                    <input type='text' id='date' name='birthdate' placeholder='dd/mm/aaaa'>
+                </div>
+                <div>
+                    <label id='label-gender'>Gênero</label><br>
+                    <input type="radio" id='female' name='gender' value='Feminino' checked>
+                    <label for='female'>Feminino</label>
+                    <input type="radio" id='male' name='gender' value='Masculino'>
+                    <label for='male'>Masculino</label>
+                    <input type="radio" id='custom' name='gender' value='Personalizado'>
+                    <label for='custom'>Personalizado</label>
+                </div>
+                <div>
+                    <p id='term'>Ao clicar em Cadastra-se, você concorda com nossos <span class='blue'>Termos, Política de Dados</span> e <span class='blue'>Política de Cookies</span>. Você pode receber notificação por SMS e pode cancelar isso quando quiser.</p>
+                </div>
+                <button type='submit' id='facebook-register'>Cadastre-se</button>
+            </form>
+        </div>
     </section>
 
     <footer class="footer-content">
