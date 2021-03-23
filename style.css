@@ -6,7 +6,7 @@
 
 .top-bar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: rgb(66, 103, 178);
   align-items: center;
 }
