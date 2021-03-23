@@ -128,4 +128,17 @@ h1 {
 
 #field-gender {
   border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#label-gender , #label-birthdate {
+  color: rgb(144, 148, 156);
+  font-size: 16px;
+  font-weight: 800;
+  padding: 10px;
+}
+
+.gender-row {
+  justify-content: space-between;
 }
