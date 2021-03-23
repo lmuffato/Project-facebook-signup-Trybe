@@ -27,3 +27,7 @@
   color: white;
   margin-right: 20px;
 }
+
+.form-control {
+  align-self: flex-end;
+}
