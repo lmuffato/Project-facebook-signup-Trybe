@@ -7,7 +7,7 @@
   display: flex;
   background-color: rgb(66, 103, 178);
   justify-content: space-between;
-  padding: 10px 20px;
+  padding-top: 10px;
   align-items: center;
 }
 
@@ -21,7 +21,7 @@
   font-family: sans-serif;
 }
 
-label {
+label#user-email-phone-label , #user-password-label  {
   color: white;
 }
 
@@ -79,10 +79,10 @@ h1 , h3 {
 }
 
 .first-name {
-  width: 142px;
+  width: 141px;
   margin-right: 10px;
 }
 
 .last-name {
-  width: 142px;
+  width: 141px;
 }

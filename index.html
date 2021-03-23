@@ -40,10 +40,22 @@
           <input type="text" name="firstname" placeholder="Nome" class="first-name">
           <input type="text" name="lastname" placeholder="Sobrenome" class="last-name">
         </div>
-        <br>
         <div>
           <input type="text" name="phone_email" placeholder="Celular ou email" class="phone-email">
           <input type="password" name="password" placeholder="Nova senha" class="password">
+        </div>
+        <div>
+          <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="birthdate">
+        </div>
+        <div>
+          <label for="gender" id="label-gender">Gênero</label><br>
+          <label for="gender"><input type="radio" name="gender" id="mulher">Feminino</label>
+          <label for="gender"><input type="radio" name="gender" id="homem">Masculino</label>
+          <label for="gender"><input type="radio" name="gender" id="outro">Personalizado</label>
+        </div>
+        <div>
+          <button type="submit" id="facebook-register">Cadastre-se</button>
         </div>
       </form>
     </label>
