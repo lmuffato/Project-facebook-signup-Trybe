@@ -8,11 +8,12 @@ function genderCustom() {
   if (document.querySelector('#customGender').checked === true) {
     const parentEle = document.querySelector('#personalizedGender');
     const e = document.createElement('input');
-    c = e;
-    b = c;
-    a = b;
+    const c = e;
+    const b = c;
+    const a = b;
+    const g = a;
     parentEle.appendChild(e);
-    e.id = 'gender-custom';
+    g.id = 'gender-custom';
     c.setAttribute('name', 'gender-custom');
     b.setAttribute('type', 'text');
     a.setAttribute('placeholder', 'Gênero (opcional)');
