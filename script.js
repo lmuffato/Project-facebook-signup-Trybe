@@ -4,10 +4,10 @@ window.onload = () => {
   });
 };
 
-function genderCustom () {
+function genderCustom() {
   if (document.querySelector('#customGender').checked === true) {
-    let parentEle = document.querySelector('#personalizedGender');
-    let elementoCriado = document.createElement('input');
+    const parentEle = document.querySelector('#personalizedGender');
+    const elementoCriado = document.createElement('input');
     parentEle.appendChild(elementoCriado);
     elementoCriado.id = 'gender-custom';
     elementoCriado.setAttribute('name', 'gender-custom');
@@ -19,14 +19,15 @@ function genderCustom () {
 function Clicou1(evento) {
   console.log('mouse clicou no botão 1');
   console.log(evento.target);
-  genderCustom ();
+  genderCustom();
 }
 
 document.getElementById('customGender').addEventListener('click', Clicou1);
 
+function clickParaSelecionar(){
+  document.getElementById('gender-custom').remove()
+};
+
 document.querySelectorAll('.genderRadio1').forEach(elementoSelecionado => {
-    elementoSelecionado.addEventListener('click', clickParaSelecionar);
-    function clickParaSelecionar(){
-    document.getElementById('gender-custom').remove()
-  } 
+ elementoSelecionado.addEventListener('click', clickParaSelecionar);
 });
