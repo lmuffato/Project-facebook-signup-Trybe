@@ -25,10 +25,11 @@
   display: flex;
   color: white;
   flex-direction: column;
+  align-self: flex-end;
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
 }
 
 #button-login {
