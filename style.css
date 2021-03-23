@@ -13,18 +13,18 @@ body {
   width: 100%;
   height: 78px;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
 }
 
 .facebook-login {
+  display: flex;
   margin-top: 10px;
   padding: 3px 3px 4px;
-  display: flex;
-  position: absolute;
-  left: 700px;
 }
 
 .facebook-logo {
+  display: flex;
   width: 170px;
   margin-top: 17px;
 }
