@@ -46,5 +46,7 @@
 }
 
 .form-signup {
+  width: 500px;
   display: flex;
+  flex-wrap: wrap;
 }
