@@ -43,11 +43,17 @@
       <p class="quick-easy">É rápido e fácil.</p>
 
       <form class="dados-pessoais" action="">
-        <label for=""></label>
-        <input type="text" name="firstname" placeholder="Nome">
-
-        <label for=""></label>
-        <input type="text" name="lastname" placeholder="Sobrenome">
+        <input type="text" name="firstname" placeholder="Nome" required>
+        <input type="text" name="lastname" placeholder="Sobrenome" required>
+        <input type="text" name="phone_email" placeholder="Celular ou email" required>
+        <input type="password" name="password" placeholder="Nova senha" required>  
+        <label id='label-birthdate' for="">Data de nascimento</label>       
+        <input type="text" name="bithdate" placeholder="dd/mm/aaaa" required> 
+        <label id='label-gender' for="">Gênero</label>  
+        <input type="radio" name="gender" value='fem' required>Feminino
+        <input type="radio" name="gender" value='fem' required>Masculino
+        <input type="radio" name="gender" value='fem' required>Personalizado
+        <button id="facebook-register" type='submit'>Cadastre-se</button>
       </form>
 
     </div>
@@ -55,10 +61,6 @@
   </main>
 
 </body>
-
-<!-- O campo deve ter o atributo name com o valor "lastname"
-O campo deve ter um placeholder com o valor "Sobrenome"
-Esse campo deve estar alinhado a direita do campo de Nome -->
 
 <script src="script.js"></script>
 
