@@ -62,8 +62,7 @@ body {
 }
 
 .form-control button {
-  border: none;
-  padding: 0px 5px;
+  padding: 0 5px;
   background: rgb(55, 89, 158);
   color: white;
   font-weight: 700;
@@ -90,7 +89,7 @@ body {
   flex-direction: column;
 }
 
-input {
+.right-content form input {
   width: 100%;
 }
 
@@ -98,6 +97,6 @@ input {
   display: flex;
 }
 
-.input-block input {
+.right-content form .input-block input {
   flex-basis: 50%;
 }
