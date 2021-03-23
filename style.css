@@ -43,3 +43,13 @@
 .right-content {
   width: 300px;
 }
+
+.fullName {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-basis: 50%;
+}
+
+#lastname {
+  margin-left: 10px;
+}
