@@ -64,6 +64,10 @@
   display: flex;
 }
 
-#label-gender label {
-  padding: 0 8px;
+.genders label {
+  padding: 0 5px;
+}
+
+.genders {
+    display: flex;
 }

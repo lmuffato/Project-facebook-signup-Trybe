@@ -11,17 +11,13 @@ alertText.innerText = 'Campos inválidos';
 
 const buttonRegister = document.querySelector('#facebook-register');
 
-function preventButton(evt) {
-  evt.preventDefault();
-}
-
 function validateForm(evt) {
   const list = document.querySelectorAll('.right-content input');
   for (let index = 0; index < list.length; index += 1) {
     if (list[index].value === '') {
       document.querySelector('#formMain').appendChild(alertText);
       evt.preventDefault();
-      }
+    }
   }
 }
 
