@@ -164,6 +164,7 @@ footer {
 
 .quick-easy {
   margin: 15px 0;
+  display: block;
 }
 
 #fullname {
@@ -301,4 +302,8 @@ footer {
 
 .createUser label {
   font-size: 15px;
+}
+
+.register {
+  display: block;
 }

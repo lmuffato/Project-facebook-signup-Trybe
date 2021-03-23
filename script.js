@@ -5,6 +5,8 @@ const radioElement = document.form1;
 const idMessageInvalid = document.querySelector('#messageInvalid');
 const idSucessRegister = document.querySelector('#successRegister');
 const form = document.querySelector('.createUser');
+const register = document.querySelector('.register');
+const quickEasy = document.querySelector('.quick-easy');
 
 const generateInvalidMessage = () => {
   idMessageInvalid.innerHTML = '';
@@ -42,9 +44,13 @@ const createPGender = () => {
 
 const toggleDiv = () => {
   if (form.style.visibility === '') {
+    register.style.display = 'none';
+    quickEasy.style.display = 'none';
     form.style.display = 'none';
     idSucessRegister.style.display = 'flex';
   } else {
+    register.style.display = 'block';
+    quickEasy.style.display = 'block';
     form.style.display = 'flex';
     idSucessRegister.style.display = 'none';
   }
