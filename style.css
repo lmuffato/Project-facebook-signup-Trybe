@@ -139,6 +139,26 @@ footer {
   list-style: none;
   display: inline;
   margin: 0 4px;
+<<<<<<< HEAD
+=======
+}
+
+#options {
+  margin-top: 10px;
+}
+
+#options li {
+  list-style: none;
+  display: inline;
+  margin: 0 4px;
+}
+
+#divider {
+  width: 100%;
+  height: 1px;
+  margin-top: 10px;
+  background-color: rgba(115, 115, 115, 0.4);
+>>>>>>> 2cb85981abf73e8729392f99f344acea4329fd50
 }
 
 #options {
