@@ -91,7 +91,7 @@ a:hover {
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
   padding: 7px 5px;
 }
 
