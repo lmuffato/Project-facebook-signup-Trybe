@@ -38,7 +38,6 @@ body {
 #collectName {
   display: flex;
   flex-flow: row wrap;
-  background-color: blue;
   width: 370px;
 }
 
