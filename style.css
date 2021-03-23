@@ -69,8 +69,6 @@ body {
 }
 
 /* ------------------------ main ---------------------- */
-
-<<<<<<< HEAD
 .main-content {
   display: flex;
   flex-direction: column;
@@ -89,12 +87,7 @@ body {
   width: 100%;
   height: 10vh;
   text-align: center;
-  background: green;
+  background-color: green;
 }
 
-#facebook-networking {
-
-}
-/* --------------- footer ------------- */
-
-/* ----------------------- footer --------------------- */
+/* ------------------------ footer ---------------------- */

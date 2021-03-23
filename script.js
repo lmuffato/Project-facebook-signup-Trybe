@@ -6,4 +6,3 @@ function alertaT() {
 }
 
 buttonLoggin.addEventListener('click', alertaT);
-
