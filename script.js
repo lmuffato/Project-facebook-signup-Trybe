@@ -9,10 +9,11 @@ function alertInput() {
   alert(selectInput.value);
 }
 
-function checkInputs() {
+function checkInputs(event) {
   for (let index = 0; index < slctInput.length; index += 1) {
     const element = slctInput[index];
     if (element.value === '') {
+      event.preventDefault();
       createSpan.innerText = 'Campos inválidos';
       selectForm.appendChild(createSpan);
     }
