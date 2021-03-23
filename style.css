@@ -63,14 +63,12 @@ body {
 }
 
 .left-content {
-  flex-basis: 800px;
-  flex-grow: 1;
+  width: 800px;
 }
 
 /* right-contentt */
 .right-content {
-  flex-basis: 300px;
-  flex-grow: 1;
+  width: 300px;
 }
 
 .right-content h1 {
@@ -94,16 +92,6 @@ body {
 .genero {
   display: flex;
   margin-top: 10px;
-}
-
-.genero div + div {
-  margin-left: 20px;
-}
-
-.genero label {
-  font-weight: 600;
-  color: rgb(66, 69, 78);
-  font-size: 1.2em;
 }
 
 #label-gender {
