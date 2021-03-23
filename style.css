@@ -40,3 +40,7 @@
 .right-content {
   width: 300px;
 }
+
+.forms-name {
+  display: flex;
+}
