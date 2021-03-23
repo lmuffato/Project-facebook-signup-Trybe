@@ -6,17 +6,40 @@ button.addEventListener('click', () => {
 
 function verificaNome() {
   const valorNome = document.getElementById('firstname');
-  console.log('Entrou no verificaNome');
   if (valorNome.value === '') {
-    alert('Nome Vazio');
-  } else {
-    alert('Entrou no ELSE');
+    return true;
+  }
+}
+
+function verificaSobrenome() {
+  const valorSobrenome = document.getElementById('lastname');
+  if (valorSobrenome.value === '') {
+    return true;
+  }
+}
+
+function verificaEmailPhone() {
+  const valorEmailPhone = document.getElementById('phone_email');
+  if (valorEmailPhone.value === '') {
+    return true;
   }
 }
 
 function verificaInputsVazios() {
-  verificaNome();
+  if (verificaNome() || verificaSobrenome() || verificaEmailPhone()) {
+    console.log('entrou no if do verificaInputsVazios');
+    const paragrafo = document.createElement('p');
+    const divPai = document.querySelector('.msg-invalido');
+    paragrafo.innerHTML = 'Campos inválidos';
+    divPai.appendChild(paragrafo);
+  }
 }
 
 const botaoCadastro = document.getElementById('facebook-register');
 botaoCadastro.addEventListener('click', verificaInputsVazios);
+
+function stopDefAction(event) {
+  event.preventDefault();
+}
+
+botaoCadastro.addEventListener('click', stopDefAction, false);
