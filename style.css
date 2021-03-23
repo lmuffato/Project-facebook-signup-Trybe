@@ -120,7 +120,6 @@ body {
   margin: 0;
   padding: 8px 10px;
   font-size: 18px;
-  width: 377px;
 }
 
 .user-name input {
@@ -198,4 +197,9 @@ body {
 
 #facebook-register:hover {
   background: linear-gradient(#67ae55, #6ea15a);
+}
+
+.gende {
+  width: 50px;
+  display: inline-block;
 }
