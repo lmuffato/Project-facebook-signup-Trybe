@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: sans-serif;
 }
 
 .main-content {
@@ -11,8 +12,31 @@
   justify-content: space-between;
 }
 
+#facebook-slogan {
+  font-weight: bold;
+  width: 500px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.left-title {
+  text-align: center;
+  padding-left: 50px;
+}
+
 .left-content {
   width: 800px;
+}
+
+.right-title {
+  margin-top: 15px;
+  margin-left: 3px;
+}
+
+.quick-easy {
+  margin-top: 5px;
+  margin-left: 3px;
+  font-weight: bold;
 }
 
 .right-content {
@@ -21,6 +45,7 @@
 
 #input-name {
   width: 110px;
+  margin-top: 10px;
   margin-left: 3px;
 }
 
@@ -29,19 +54,63 @@
 }
 
 #phone_email {
-  margin-top: 3px;
+  margin-top: 10px;
   margin-left: 3px;
   width: 224px;
 }
 
 #password {
-  margin-top: 3px;
+  margin-top: 10px;
   margin-left: 3px;
   width: 224px;
 }
 
 #label-birthdate {
-  margin-top: 3px;
+  margin-top: 10px;
   margin-left: 3px;
   width: 224px;
+}
+
+#label-gender {
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+#female {
+  font-size: 11px;
+  margin-left: 3px;
+}
+
+#male {
+  font-size: 11px;
+  margin-left: 3px;
+}
+
+#personality {
+  font-size: 11px;
+  margin-left: 3px;
+}
+
+#gender-custom {
+  margin-top: 10px;
+  margin-left: 3px;
+  width: 224px;
+}
+
+#facebook-register {
+  margin-top: 10px;
+  margin-left: 3px;
+}
+
+#facebook-register {
+  background-color: rgb(66, 103, 178);
+  width: 100px;
+  height: 25px;
+  border-radius: 20px;
+  border: 1px solid white;
+  color: white;
+}
+
+#facebook-register:hover {
+  font-weight: bold;
 }

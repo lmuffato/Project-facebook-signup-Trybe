@@ -10,11 +10,11 @@
   <body>
     <main class="main-content">
       <section class="left-content">
-        <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+        <p id="facebook-slogan" class="left-title">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
         <p id="facebook-slogan"><img id="facebook-networking" src="imgs/networking.png" alt="Facebook networking"></p>
       </section>
       <section class="right-content">
-        <h1>Abra uma conta</h1>
+        <h1 class="right-title">Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
         <form id="form" action="" method="get">
           <input type="text" name="firstname" id="input-name" placeholder="Nome"required>
@@ -24,21 +24,19 @@
           <p id="label-birthdate">Data de nascimento</p>
           <input type='text' name="birthdate" id="label-birthdate" placeholder="dd/mm/aaaa" required>
           <p id="label-gender">Gênero</p>
-          <label for="fem">
+          <label for="fem" id="female">Feminino</label>
           <input type="radio" name="gender" id="fem" value="fem" required>
-          Feminino</label>
-          <label for="mas">
+          <label for="mas" id="male">Masculino</label>
           <input type="radio" name="gender" id="mas" value="mas" required>
-          Masculino</label>
-          <label for="per">
+          <label for="per" id="personality">Personalizado</label>
           <input type="radio" name="gender" id="per" required>
-          Personalizado</label>
           <label for="gender-custom">
           <input type="text" name="gender-custom" id="gender-custom" placeholder="Gênero (opcional)">
-          </label><br>
+          </label>
           <button type="submit" id="facebook-register">Cadastre-se</button>
         </form>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
