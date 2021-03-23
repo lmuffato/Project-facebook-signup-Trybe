@@ -34,9 +34,7 @@ label {
 
 .form-control {
   display: flex;
-  align-content: center;
-  margin-top: 17px;
-  height: 20px;
+  align-self: flex-end;
 }
 
 a {
@@ -45,4 +43,8 @@ a {
   margin: 3px;
   text-decoration: none;
   opacity: 60%;
+}
+
+#button-login {
+  margin-bottom: 17px;
 }
