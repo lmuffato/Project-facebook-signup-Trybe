@@ -34,19 +34,17 @@
         <input type="text" id="lastname" name="lastname" placeholder="Sobrenome">
         <input type="text" id="phone_email" name="phone_email" placeholder="Celular ou email">
         <input type="password" id="password" name="password" placeholder="Nova senha">
-        <p id="label-gender">Gênero</p>
-        <span>
-          <input type="radio" name="gender" id="female">
-          <label for="female">Feminino</label>
-        </span>
-        <span>
-          <input type="radio" name="gender" id="male">
-          <label for="male">Masculino</label>
-        </span>
-        <span>  
-          <input type="radio" name="gender" id="custom">
-          <label for="custom">Personalizado</label>
-        </span>
+        <div class="gender">
+          <label id="label-gender">Gênero</label>
+          <span>
+            <input type="radio" name="gender" id="female" value="Feminino">
+            <label for="female">Feminino</label>
+            <input type="radio" name="gender" id="male" value="Masculino">
+            <label for="male">Masculino</label>
+            <input type="radio" name="gender" id="custom" value="Personalizado">
+            <label for="custom">Personalizado</label>
+          </span>
+        </div>
       </form>
     </div>
   </main>

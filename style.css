@@ -24,7 +24,6 @@
 /* requisitos 9 em diante: */
 span {
   display: flex;
-  flex-direction: column-reverse;
   justify-content: space-between;
   width: 33%;
 }
@@ -72,6 +71,11 @@ span label {
   margin: 0;
   font-size: 18px;
   padding: 8px 10px;
+}
+
+.gender {
+  display: flex;
+  flex-direction: column;
 }
 
 #facebook-slogan {
