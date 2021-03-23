@@ -58,9 +58,18 @@ a {
 
 .main-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .left-content {
   width: 800px;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0;
+
+}
+
+.right-content {
+  width: 300px;
 }
