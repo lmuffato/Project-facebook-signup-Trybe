@@ -22,11 +22,18 @@ body {
   align-items: center;
   justify-content: space-around;
   font-family: Ubuntu, sans-serif;
+<<<<<<< HEAD
+}
+
+.facebook-logo {
+  float: left;
+=======
   width: 100vw;
   padding: 20px;
 }
 
 .facebook-logo {
+>>>>>>> bdbec062255d2b6319ff6f3e420ef7345c58a86e
   width: 175px;
   object-fit: contain;
 }
