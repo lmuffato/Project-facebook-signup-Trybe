@@ -38,5 +38,8 @@ registerBtn.addEventListener('click', (e) => {
     }
   }
   e.preventDefault();
+  console.log(validation);
   return validation;
 });
+
+console.log(validation);
