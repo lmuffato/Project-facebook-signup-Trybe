@@ -11,32 +11,18 @@
   color: white;
   font-size: 0.9em;
   flex-direction: row;
-}
-
-.facebook-login {
-  display: flex;
-  flex-basis: 900px;
-  align-content: stretch;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .form-group {
-  align-content: flex-end;
   display: flex;
-  padding: 10px;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .form-control {
   align-self: flex-end;
   padding: 15px;
   padding-right: 80px;
-}
-
-.logo-conteiner {
-  display: flex;
-  justify-content: flex-start;
-  flex-basis: 400px;
 }
 
 .main-content {
@@ -51,7 +37,7 @@
 
 .right-content {
   display: flex;
-  flex-basis: 300px;
+  width: 300px;
   justify-content: flex-end;
 }
 
