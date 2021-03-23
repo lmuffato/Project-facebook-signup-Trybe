@@ -87,3 +87,7 @@
 .genderBtns {
   display: flex;
 }
+
+.personalizadoBox {
+  display: none;
+}

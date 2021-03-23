@@ -51,10 +51,12 @@
         <div class="genderSelection">
           <label for="gender" id="label-gender">Gênero</label>
           <div class="genderBtns">
-            <input type="radio" name="gender" value="Feminino" class="gender" required>Feminino
-            <input type="radio" name="gender" value="Masculino" class="gender" required>Masculino
-            <input type="radio" name="gender" value="Personalizado" class="gender" required>Personalizado
+            <input type="radio" name="gender" value="Feminino" class="gender" id="femBtn" required>Feminino
+            <input type="radio" name="gender" value="Masculino" class="gender" id="mascBtn" required>Masculino
+            <input type="radio" name="gender" value="Personalizado" class="gender" id="gender-personalizado" required>Personalizado
+            
           </div>
+          <input type="text" name="gender-custom" class="personalizadoBox" id="boxPersonalizado" placeholder="Gênero (opcional)">
         </div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
