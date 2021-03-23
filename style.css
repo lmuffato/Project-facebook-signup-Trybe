@@ -22,6 +22,19 @@
 }
 
 /* requisitos 9 em diante: */
+span {
+  display: flex;
+  justify-content: space-between;
+}
+
+span label {
+  color: #1d2129;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 18px;
+  padding: 0 10px 0 3px;;
+}
+
 .main-content {
   display: flex;
   flex-direction: row;
@@ -86,4 +99,10 @@
 
 #phone_email , #password {
   width: 100%;
+}
+
+#label-gender {
+  color: #90949c;
+  font-size: 16px;
+  font-weight: bold;
 }
