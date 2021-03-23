@@ -27,7 +27,7 @@
 
   <div class="main-content">
     <div class="left-content">
-      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar <br> e compartilhar com as pessoas que fazem parte <br> da sua vida.</p>
       <img id="facebook-networking" src="imgs/networking.png">
     </div>
     
@@ -36,20 +36,20 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="">
         <div class="name">
-          <input type="text" name="firstname" placeholder="Nome">
-          <input type="text" name="lastname" placeholder="Sobrenome">
+          <input type="text" name="firstname" placeholder="Nome" class="input-form">
+          <input type="text" name="lastname" placeholder="Sobrenome" class="input-form">
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha">
+        <input type="text" name="phone_email" placeholder="Celular ou email" class="input-form">
+        <input type="password" name="password" placeholder="Nova senha" class="input-form">
         <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="input-form birthdate">
         <label for="gender" id="label-gender">Gênero</label>
         <div class="radio-genders">
           <input type="radio" value="Feminino" name="gender">Feminino
           <input type="radio" value="Masculino" name="gender">Masculino
           <input type="radio" value="Personalizado" name="gender" id="other">Personalizado
         </div>
-        <input type="text" class="input-gender-hidden" name="gender-custom" placeholder="Gênero (opcional)"> 
+        <input type="text" class="input-gender-hidden input-form" name="gender-custom" placeholder="Gênero (opcional)"> 
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
     </div>
