@@ -42,7 +42,12 @@
   display: flex;
 }
 
-.phone-email {
+.phone-email-password {
+  display: flex;
+  flex-direction: column;
+}
+
+.birthdate {
   display: flex;
   flex-direction: column;
 }
