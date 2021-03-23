@@ -20,3 +20,7 @@ function validatingForm(event) {
 
 const btnSubmit = document.getElementById('facebook-register');
 btnSubmit.addEventListener('click', validatingForm);
+
+/* Substitua o conteúdo do container com a classe right-content se o formulário
+estiver completamente preenchido e validado */
+// Faltam os requisitos 19 e 20.
