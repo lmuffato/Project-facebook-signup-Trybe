@@ -18,8 +18,35 @@ function requiredCamp(e) {
   e.preventDefault();
 }
 
+function logged() {
+  // Acessando as informações do formulário
+  const oldRight = document.querySelector('.right-content');
+  const firstName = document.querySelector('#firstname').value;
+  const lastName = document.querySelector('#lastname').value;
+  const email = document.querySelector('#email').value;
+  const bornInfo = document.querySelector('#birthdate').value;
+  const gender = document.querySelectorAll('#radioBtns input');
+  // Excluindo o oldRight
+  oldRight.innerHTML = '';
+  // Criando novo Right
+  const newText = document.createElement('p');
+  newText.innerText = `Olá, ${firstName} ${lastName}`;
+  oldRight.appendChild(newText);
+  newText.innerText = `${email}`;
+  oldRight.appendChild(newText);
+  newText.innerText = `${bornInfo}`;
+  oldRight.appendChild(newText);
+  newText.innerText = `${gender.filter((x) => x.checked)[0].value}`;
+  oldRight.appendChild(newText);
+}
+
 const buttonVerifier = document.getElementById('facebook-register');
 buttonVerifier.addEventListener('click', requiredCamp);
+
+const alertSpan = document.querySelector('span');
+if (window.getComputedStyle(alertSpan) === 'none') {
+  buttonVerifier.addEventListener('click', logged);
+}
 
 function addNewGender() {
   const newGender = document.querySelector('#personalizado');
@@ -51,3 +78,5 @@ const radioBtns = document.querySelectorAll('#radioBtns input');
 for (let index = 0; index < radioBtns.length - 1; index += 1) {
   radioBtns[index].addEventListener('click', deleteCustomGender);
 }
+
+
