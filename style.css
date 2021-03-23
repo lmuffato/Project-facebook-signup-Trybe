@@ -46,6 +46,7 @@
   flex-flow: column nowrap;
   justify-content: space-evenly;
   align-items: center;
+  margin-left: 50px;
 }
 
 .left-content p {
