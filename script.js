@@ -14,6 +14,7 @@ function addCustonGender() {
     if (event.target.id === 'gen-personalized' && gendersLength < 7) {
       const newGender = document.createElement('input');
       newGender.name = 'gender-custom';
+      newGender.id = 'new-gender';
       newGender.placeholder = 'Gênero (opcional)';
       gendersBlock.appendChild(newGender);
     }
@@ -37,7 +38,22 @@ function getElements() {
   const phoneEmail = document.getElementById('phone-email').value;
   const password = document.getElementById('password').value;
   const birthdate = document.getElementById('birthdate').value;
-  const result = [name, lastName, phoneEmail, password, birthdate];
+  const result = [name, lastName, phoneEmail, birthdate, password];
+  return result;
+}
+
+function getGender() {
+  let result = '';
+  const fem = document.getElementById('gen-fem').checked;
+  const masc = document.getElementById('gen-masc').checked;
+  const person = document.getElementById('gen-personalized').checked;
+  if (fem === true) {
+    result = 'Feminino';
+  } else if (masc === true) {
+    result = 'Masculino';
+  } else if(person === true) {
+    result = 'Personalizado';
+  }
   return result;
 }
 
@@ -53,6 +69,25 @@ function check() {
   return sum;
 }
 
+function createList() {
+  const complete = document.querySelector('.complete');
+  const gender = getGender();
+  const array = getElements();
+  const text = `Olá, ${array[0]} ${array[1]}`;
+  const newLi = document.createElement('li');
+  newLi.innerText = text;
+  complete.appendChild(newLi);
+  for (let index = 2; index < 4; index += 1) {
+    const element = array[index];
+    const newLi3 = document.createElement('li');
+    newLi3.innerText = element;
+    complete.appendChild(newLi3);
+  }
+  const newLi2 = document.createElement('li');
+  newLi2.innerText = gender;
+  complete.appendChild(newLi2);
+}
+
 function alertText(number) {
   if (number !== 5) {
     document.querySelector('.alert').style.display = 'block';
@@ -63,6 +98,7 @@ function validate() {
   const btn = document.getElementById('facebook-register');
   btn.addEventListener('click', () => {
     alertText(check());
+    createList();
   });
 }
 
