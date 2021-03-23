@@ -35,7 +35,7 @@ function checkIfInputsAreEmpty(form) {
   let emptyInputs = 0;
   for (let index = 0; index < inputs.length; index += 1) {
     const input = inputs[index];
-    if (input.value === '') {
+    if (input.value === '' && input.required) {
       emptyInputs += 1;
     }
     input.addEventListener('keydown', clearErrors);
