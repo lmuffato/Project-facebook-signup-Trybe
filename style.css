@@ -6,16 +6,9 @@
 
 .top-bar {
   display: flex;
-  justify-content: center;
-  background-color: rgb(66, 103, 178);
-}
-
-#alinhamento {
-  display: flex;
   justify-content: space-between;
+  background-color: rgb(66, 103, 178);
   align-items: center;
-  width: 960px;
-  padding-left: 135px;
 }
 
 .form-group {
@@ -34,6 +27,7 @@
 .facebook-login {
   display: flex;
   justify-content: center;
+  padding-right: 410px;
 }
 
 .main-content {
@@ -142,4 +136,8 @@ h1 {
 
 header img {
   width: 200px;
+}
+
+.facebook-logo{
+  padding-left: 540px;
 }
