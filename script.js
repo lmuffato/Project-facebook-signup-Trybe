@@ -33,7 +33,7 @@ function removeCustonGender() {
 }
 
 function getElements() {
-  const name = document.getElementById('firsname').value;
+  const name = document.getElementById('firstname').value;
   const lastName = document.getElementById('lastname').value;
   const phoneEmail = document.getElementById('phone-email').value;
   const password = document.getElementById('password').value;
@@ -98,7 +98,7 @@ function createList() {
 
 function checkMemory() {
   if (sessionStorage.getItem('info') !== null) {
-    document.querySelector('#disapear').style.display = 'none';
+    // document.querySelector('#disapear').style.display = 'none';
     createList();
   }
 }
