@@ -6,23 +6,14 @@ function activeAlert() {
   });
 }
 
-function checkInputs() {
-  console.log(checkTextInputs());
-  console.log(checkRadioInputs());
-  if (checkTextInputs() === true || checkRadioInputs() === 0) {
-    alert('Campos inválidos');
-  }
-}
-
 function checkTextInputs() {
   const inputs = document.querySelectorAll('.main-form input');
-    let emptyField = false;
-    for (let index = 0; index < inputs.length - 3; index += 1) {
-      if (inputs[index].value === '') {
-        console.log(inputs[index]);
-        emptyField = true;
-      }
+  let emptyField = false;
+  for (let index = 0; index < inputs.length - 3; index += 1) {
+    if (inputs[index].value === '') {
+      emptyField = true;
     }
+  }
   return emptyField;
 }
 
@@ -35,6 +26,12 @@ function checkRadioInputs() {
     }
   }
   return count;
+}
+
+function checkInputs() {
+  if (checkTextInputs() === true || checkRadioInputs() === 0) {
+    alert('Campos inválidos');
+  }
 }
 
 const submitButton = document.querySelector('#facebook-register');

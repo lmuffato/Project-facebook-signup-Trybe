@@ -52,7 +52,7 @@ header img {
   display: flex;
   justify-content: flex-start;
   height: 100vh;
-  background: linear-gradient(white, #D3D8E8);
+  background: linear-gradient(white, #d3d8e8);
   font-family: inherit;
 }
 
@@ -93,7 +93,7 @@ header img {
 
 #facebook-slogan {
   font-size: 22px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 29px;
   color: #0e385f;
 }
