@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+body {
+  background-image: linear-gradient(to bottom, white, rgb(133, 122, 233));
+  height: 550px;
+}
+
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
@@ -90,3 +95,14 @@ h1 , h3 {
 .last-name {
   width: 141px;
 }
+
+#openAccount {
+  color: darkblue;
+  font-family: sans-serif;
+}
+
+.quick-easy {
+  color: darkblue;
+  font-family: sans-serif;
+}
+
