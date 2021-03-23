@@ -10,11 +10,11 @@
   visibility: hidden;
 }
 
-header.top-bar {
+.top-bar {
   background-color: rgb(66, 103, 178);
 }
 
-.container {
+.top-bar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
