@@ -11,18 +11,13 @@
 }
 
 .top-bar {
-  display: flex;
-  justify-content: center;
   background-color: rgb(66, 103, 178);
-}
-
-.top-bar .container {
+  height: 82px;
+  font-size: 12px;
+  padding: 0 180px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 980px;
-  height: 82px;
-  font-size: 12px;
 }
 
 .top-bar .facebook-logo {
