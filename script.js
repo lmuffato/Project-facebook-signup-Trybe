@@ -7,9 +7,10 @@ btnLogin.addEventListener('click', () => {
 // Requisito 18 - Exibir uma mensagem "Campos inválidos" dentro do formulário caso pelo menos um campo não esteja preenchido
 const facebookForm = document.getElementById('facebook-form');
 const span = document.createElement('span');
+const elFacebookForms = facebookForm.elements; // Mudar aqui
 function validatingForm(event) {
-  for (let key = 0; key < 7; key += 1) {
-    if (facebookForm.elements[key].value === '') {
+  for (let key = 0; key < elFacebookForms.length; key += 1) {
+    if (elFacebookForms[key].value === '' && !elFacebookForms[8].value) {
       event.preventDefault();
       span.innerHTML = 'Campos inválidos';
       facebookForm.appendChild(span);
@@ -17,7 +18,6 @@ function validatingForm(event) {
     }
   } return false;
 }
-
 const btnSubmit = document.getElementById('facebook-register');
 btnSubmit.addEventListener('click', validatingForm);
 
@@ -28,17 +28,13 @@ function createField() {
 }
 
 const custom = document.getElementById('custom');
-custom.addEventListener('click', createField);
-
 const male = document.getElementById('male');
 const female = document.getElementById('female');
-
-// Tive que incluir a função hideField, porque, ao clicar em qualquer um dos radio buttons, o display do
-// gender-custom tava indo pra flex.
 
 function hideField() {
   genderField.style.display = 'none';
 }
+custom.addEventListener('click', createField);
 male.addEventListener('click', hideField);
 female.addEventListener('click', hideField);
 
@@ -50,6 +46,7 @@ const lastName = document.getElementById('lastname');
 const celEmail = document.getElementById('celOuEmail');
 const birth = document.getElementById('birthdate');
 
+// Função que retorna os valores dos radio buttons, caso selecionados
 function gender() {
   if (female.checked) {
     return female.value;
@@ -62,7 +59,7 @@ function gender() {
   }
 }
 
-function validatingGender() {
+/* function validatingGender() {
   if (male.checked) {
     return true;
   }
@@ -73,8 +70,9 @@ function validatingGender() {
     return true;
   }
   return false;
-}
+} */
 
+// Função que revalida formulário
 function revalidatingForm() {
   if (firstName.value !== '' && lastName.value !== '') {
     return true;
@@ -85,10 +83,11 @@ function revalidatingForm() {
   return false;
 }
 
-function helloMessage(e) {
+// Requisito 20 - Mensagem de Olá, John Doe no container right-content
+
+function helloMessage() {
   const rightContent = document.querySelector('.right-content');
-  e.preventDefault();
-  if (revalidatingForm() && !validatingForm() && validatingGender()) {
+  if (revalidatingForm() && gender()) {
     rightContent.innerHTML = '';
     rightContent.innerHTML = `<p>Olá, ${firstName.value} ${lastName.value}</p>`;
     rightContent.innerHTML += `<br><p>${celEmail.value}</p>`;
@@ -96,5 +95,4 @@ function helloMessage(e) {
     rightContent.innerHTML += `<br><p>${gender()}`;
   }
 }
-
 btnSubmit.addEventListener('click', helloMessage);
