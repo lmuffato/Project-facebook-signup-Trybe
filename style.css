@@ -13,12 +13,10 @@
 
 .left-content {
   width: 800px;
-  background-color: brown;
 }
 
 .right-content {
   width: 300px;
-  background-color: chocolate;
 }
 
 #input-name {
@@ -45,5 +43,5 @@
 #label-birthdate {
   margin-top: 3px;
   margin-left: 3px;
-  width: 224px; 
+  width: 224px;
 }
