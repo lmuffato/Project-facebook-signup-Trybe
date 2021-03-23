@@ -17,10 +17,10 @@ function rightContentForm() {
       genderInput = radios[i].value;
     }
 
-    rightContent.innerHTML = `<p>Olá, ${nameInput.value} ${lastName.value}</p>
-    <p>${emailInput.value}</p>
-    <p>${birthDate.value}</p>
-    <p>${genderInput}</p>`;
+    rightContent.innerHTML = `Olá, ${nameInput.value} ${lastName.value}
+    ${emailInput.value}
+    ${birthDate.value}
+    ${genderInput}`;
   }
 }
 
