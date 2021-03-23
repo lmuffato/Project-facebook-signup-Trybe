@@ -8,33 +8,33 @@
     
     <title>Página Inicial Facebook</title>
 </head>
-<body>
-    <header class="top-bar">
-        <img src="imgs/facebook-logo.png" alt="Logo facebook" class="facebook-logo">
-        <form class="facebook-login"> 
-            <div class="form-group">
-                <label id="user-email-phone-label"> E-mail ou telefone </label>
-                    <input type="email , tel" id="user-email-phone">
+    <body>
+        <header class="top-bar">
+            <img src="imgs/facebook-logo.png" alt="Logo facebook" class="facebook-logo">
+            <form class="facebook-login" method="GET"> 
+                <div class="form-group">
+                    <label id="user-email-phone-label"> Email ou telefone </label>
+                        <input type="email , tel" id="user-email-phone">
+                </div>
+                <div class="form-group">
+                    <label id="user-password-label">Senha</label>
+                        <input type="password" id="user-password">
+                </div>
+                <div class="form-control">
+                    <button id="button-login">Entrar</button>
+                </div>
+            </form>
+        </header>
+        <main class="main-content">
+            <div class="left-content">
+                <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+                <img src="imgs/networking.png" alt="Mapa mundi com conexões permitidas pelo facebook" id="facebook-networking">
             </div>
-            <div class="form-group">
-                <label id="user-password-label">Senha</label>
-                    <input type="password" id="user-password">
+            <div class="right-content">
+                <h1>Abra uma conta</h1>
+                <h2 class="quick-easy">É rápido e fácil.</h2>
+                <form method="GET"></form>
             </div>
-            <div class="form-control">
-                <button id="button-login">Entrar</button>
-            </div>
-        </form>
-    </header>
-    <main class="main-content">
-        <div class="left-content">
-            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-            <img src="imgs/networking.png" alt="Mapa mundi com conexões permitidas pelo facebook" id="facebook-networking">
-        </div>
-        <div class="right-content">
-            <h1>Abra uma conta</h1>
-            <h2 class="quick-easy">É rápido e fácil.</h2>
-            <form method="GET"></form>
-        </div>
-    </main>
-</body>
+        </main>
+    </body>
 </html>
