@@ -50,16 +50,18 @@
         <form action="" id="main-form">
           <div class="nome">
             <input type="text" name="firstname" placeholder="Nome" class="first-last-name main-form-input" id="name">
-            <input type="text" name="lastname" placeholder="Sobrenome" class="first-last-name main-form-input" id="lastname">
+            <input type="text" name="lastname" placeholder="Sobrenome" class="first-last-name main-form-input"
+              id="lastname">
           </div>
-          <input type="text" name="phone_email" placeholder="Celular ou email" id="phone_email" class="data main-form-input">
+          <input type="text" name="phone_email" placeholder="Celular ou email" id="phone_email"
+            class="data main-form-input">
           <input type="password" name="password" placeholder="Nova senha" id="password" class="data main-form-input">
           <div>
-            <label for="" id="label-birthdate">Data de nascimento</label>
+            <label for="" id="label-birthdate" class="labels">Data de nascimento</label>
             <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate" class="data main-form-input">
           </div>
           <div id="gender-field">
-            <label for="" id="label-gender">Gênero</label>
+            <label for="" id="label-gender" class="labels">Gênero</label>
             <label for="female">
               <input type="radio" name="gender" id="female" value="Feminino" class="main-form-input">Feminino
             </label>
@@ -67,11 +69,17 @@
               <input type="radio" name="gender" id="male" value="Masculino" class="main-form-input">Masculino
             </label>
             <label for="personal">
-              <input type="radio" name="gender" id="personal" value="Personalizado" class="main-form-input">Personalizado
+              <input type="radio" name="gender" id="personal" value="Personalizado"
+                class="main-form-input">Personalizado
             </label>
           </div>
           <div id="messages">
-            <p>Ao clicar em Cadastre-se, você concorda com nossos Termos, Política de Dados e Política de Cookies. Você
+            <p>Ao clicar em Cadastre-se, você concorda com nossos <a
+                href="/web/20200101163229/https://pt-br.facebook.com/legal/terms/update" id="terms-link" target="_blank"
+                rel="nofollow">Termos</a>, <a href="/web/20200101163229/https://pt-br.facebook.com/about/privacy/update"
+                id="privacy-link" target="_blank" rel="nofollow">Política de Dados</a> e <a
+                href="/web/20200101163229/https://pt-br.facebook.com/policies/cookies/" id="cookie-use-link"
+                target="_blank" rel="nofollow">Política de Cookies</a>. Você
               pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
             <h2 id="invalid-field"></h2>
           </div>
@@ -81,6 +89,28 @@
       </section>
     </div>
   </main>
+
+  <footer>
+    <div id="pageFooter" data-referrer="page_footer" data-testid="page_footer">
+      <ul class="uiList localeSelectorList">
+        <li class="grey">Português (Brasil)</li>
+        <li><a href="">English (US)</a></li>
+        <li><a href="">Español</a></li>
+        <li><a href="">Français (France)</a></li>
+        <li><a href="">中文(简体)</a></li>
+        <li><a href="">العربية</a></li>
+        <li><a href="">Italiano</a></li>
+        <li><a href="">한국어</a></li>
+        <li><a href="">Deutsch</a></li>
+        <li><a href="">हिन्दी</a></li>
+        <li><a href="">日本語</a></li>
+      </ul>
+
+      <div class="mvl copyright grey">
+        <div><span> Facebook © 2020</span></div>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>

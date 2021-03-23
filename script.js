@@ -18,7 +18,6 @@ loginBtn.addEventListener('click', (e) => {
   e.preventDefault();
 });
 
-// Mudar para focus para exibir e blur para remover
 genderField.addEventListener('click', (e) => {
   selected = e.target;
   if (selected === personal) {
@@ -31,14 +30,6 @@ genderField.addEventListener('click', (e) => {
   return selected;
 });
 
-// genderField.addEventListener('click', (e) => {
-//   const selected = e.target;
-//   if (selected !== personal) {
-//     const opcional = document.createElement('input');
-//     genderField.removeChild(opcional);
-//   }
-// });
-
 function createMessage() {
   const name = document.querySelector('#name');
   const lastname = document.querySelector('#lastname');
@@ -47,8 +38,7 @@ function createMessage() {
   const genderMessage = selected;
   console.log(`Aqui está o gênero ${genderMessage}`);
   const message = document.createElement('h4');
-  message.innerText = `Olá, ${name.value} 
-  ${lastname.value}, 
+  message.innerText = `Olá, ${name.value} ${lastname.value}, 
   ${emailOrPhone.value}, ${birthdate.value}, ${genderMessage.value}`;
   const helloStrange = document.createElement('section');
   helloStrange.id = 'hello-strange';
