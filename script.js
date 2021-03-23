@@ -5,4 +5,4 @@ function alerta() {
   alert(user.value);
 }
 
-login.addEventListener('click', alerta)
+login.addEventListener('click', alerta);
