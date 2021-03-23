@@ -79,16 +79,13 @@ body {
 }
 
 .genero {
-  border: none;
   display: flex;
+  margin-top: 10px;
 }
 
-/* .genero  div label{
-  margin-left: 20px;
-} */
-
-.genero legend {
-  margin-bottom: 10px;
+#label-gender {
+  color: rgb(159, 162, 170);
+  font-weight: 600;
 }
 
 /* main-content */
