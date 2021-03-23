@@ -24,7 +24,9 @@
 /* requisitos 9 em diante: */
 span {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-between;
+  width: 33%;
 }
 
 span label {
@@ -103,4 +105,5 @@ span label {
 #label-gender {
   color: #90949c;
   font-size: 16px;
+  width: 100%;
 }
