@@ -21,11 +21,10 @@ body {
   border: 1px solid rgb(21, 44, 92);
   align-items: center;
   font-family: Ubuntu, sans-serif;
-  width: 100vw;
 }
 
 .facebook-logo {
-  justify-self: left;
+  float: left;
   width: 175px;
   object-fit: contain;
 }
