@@ -28,9 +28,20 @@ body {
 .form-group {
   display: flex;
   flex-direction: column;
+  margin: 4px;
 }
 
 .form-control {
+  align-self: flex-end;
+}
+
+.form-control button {
+  background-color: rgb(58, 94, 166);
+  padding: 3px;
+  color: white;
+}
+
+.control {
   align-self: flex-end;
 }
 
