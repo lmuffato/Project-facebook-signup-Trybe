@@ -6,7 +6,7 @@ function activeAlert() {
   });
 }
 
-function checkTextInputs() {
+/* function checkTextInputs() {
   const inputs = document.querySelectorAll('.main-form input');
   let emptyField = false;
   for (let index = 0; index < inputs.length - 3; index += 1) {
@@ -32,7 +32,7 @@ function checkInputs() {
   if (checkTextInputs() === true || checkRadioInputs() === 0) {
     alert('Campos inválidos');
   }
-}
+} */
 
 const submitButton = document.querySelector('#facebook-register');
 submitButton.addEventListener('click', checkInputs);
