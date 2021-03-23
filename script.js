@@ -1,4 +1,3 @@
-const forms = document.querySelectorAll('form');
 const buttonLogin = document.getElementById('button-login');
 const buttonSignUp = document.getElementById('facebook-register');
 const radiosGender = document.getElementById('radios-gender');
@@ -32,26 +31,27 @@ function clearErrors(element) {
 }
 
 function checkIfInputsAreEmpty(form) {
-  const inputs = form.target.querySelectorAll('input');
+  const inputs = form.querySelectorAll('input');
   let emptyInputs = 0;
   for (let index = 0; index < inputs.length; index += 1) {
     const input = inputs[index];
     if (input.value === '' && input.required) {
       emptyInputs += 1;
+      input.addEventListener('keydown', clearErrors);
     }
-    input.addEventListener('keydown', clearErrors);
   }
-
   if (emptyInputs > 0) {
-    form.preventDefault();
-    addErrorMessage(form.target);
+    return true;
   }
+  return false;
 }
 
-function validateForms() {
-  for (let index = 0; index < forms.length; index += 1) {
-    const form = forms[index];
-    form.addEventListener('submit', checkIfInputsAreEmpty);
+function validateForm(event) {
+  const form = event.target.parentElement;
+  const hasEmptyInputs = checkIfInputsAreEmpty(form);
+  if (hasEmptyInputs) {
+    event.preventDefault();
+    addErrorMessage(form);
   }
 }
 
@@ -68,6 +68,54 @@ function revealOtherGenderField() {
   }
 }
 
+function getSelectedGender() {
+  const radios = radiosGender.querySelectorAll('input[type=radio]');
+  for (let index = 0; index < radios.length; index += 1) {
+    const radio = radios[index];
+    if (radio.checked) {
+      return radio.value;
+    }
+  }
+}
+
+function getSignUpFormData() {
+  const firstname = document.querySelector('input[name=firstname]').value;
+  const lastname = document.querySelector('input[name=lastname]').value;
+  const emailOrPhone = document.querySelector('input[name=phone_email]').value;
+  const birthdate = document.querySelector('input[name=birthdate]').value;
+  const gender = getSelectedGender();
+  const data = {
+    fullName: `${firstname} ${lastname}`,
+    emailOrPhone,
+    birthdate,
+    gender,
+  };
+
+  return data;
+}
+
+function sendData(event) {
+  event.preventDefault();
+  const data = getSignUpFormData();
+  const form = document.querySelector('form.signup');
+  const hasEmptyInputs = checkIfInputsAreEmpty(form);
+  const ifNotRegistered = document.getElementById('ifNotRegistered');
+  const ifRegistered = document.getElementById('ifRegistered');
+  const greetingsDisplay = ifRegistered.querySelector('#greetings');
+  const emailOrPhoneDisplay = ifRegistered.querySelector('.email_phone');
+  const birthDisplay = ifRegistered.querySelector('.birth');
+  const genderDisplay = ifRegistered.querySelector('#genderChecked');
+  if (!hasEmptyInputs) {
+    greetingsDisplay.innerText = `Olá, ${data.fullName}`;
+    emailOrPhoneDisplay.innerText = data.emailOrPhone;
+    birthDisplay.innerText = data.birthdate;
+    genderDisplay.innerText = data.gender;
+    ifNotRegistered.classList.add('hidden');
+    ifRegistered.classList.remove('hidden');
+  }
+}
+
 buttonLogin.addEventListener('click', alertOnLogin);
-buttonSignUp.addEventListener('click', validateForms);
+buttonSignUp.addEventListener('click', validateForm);
+buttonSignUp.addEventListener('click', sendData);
 radiosGender.addEventListener('change', revealOtherGenderField);
