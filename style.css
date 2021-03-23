@@ -98,8 +98,6 @@ label {
   margin: 5px;
 }
 
-#facebook-networking {
-  width: 537px;
-  aspect-ratio: auto 537 / 195;
-  height: 195px;
+#gender {
+  display: flex;
 }
