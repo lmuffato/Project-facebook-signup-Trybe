@@ -5,9 +5,8 @@
 
 .top-bar {
   background-color: rgb(66, 103, 178);
-  height: 78px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   font-family: inherit;
 }
@@ -20,19 +19,17 @@
   display: flex;
   width: auto;
   color: white;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .email {
   margin-right: 10px;
-  margin-bottom: 22px;
 }
 
 button {
   border: solid 1px black;
   font-size: 12px;
   font-weight: 900;
-  line-height: 18px;
   margin: 0 10px;
   padding: 0;
   width: 45px;
@@ -47,8 +44,21 @@ a {
   margin-top: 4px;
 }
 
+.form-control {
+  align-self: center;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
-  align-self: flex-end;
+  align-items: flex-start;
+}
+
+.main-content {
+  display:flex;
+  justify-content: center;
+}
+
+.left-content {
+  width: 800px;
 }
