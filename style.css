@@ -11,7 +11,7 @@ body {
   background-color: rgb(66, 103, 178);
   color: white;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   margin-top: 15px;
 }
 
@@ -24,7 +24,7 @@ body {
 
 .facebook-login {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   margin: 20px;
 }
 
@@ -38,7 +38,7 @@ body {
   margin-top: 5px;
 }
 
-.form-group { 
+.form-group {
   display: flex;
   flex-direction: column;
 }
