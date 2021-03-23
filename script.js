@@ -55,9 +55,14 @@ window.onload = () => {
     const input = document.querySelector('#user-email-phone');
     alert(input.value);
   });
-
   myAddEventListener('#facebook-register', 'click', (e) => {
     e.preventDefault();
     generateWelcome();
+  });
+  myAddEventListener('#custom', 'focus', () => {
+    document.querySelector('#gender-custom').style.display = 'block';
+  });
+  myAddEventListener('#custom', 'blur', () => {
+    document.querySelector('#gender-custom').style.display = 'none';
   });
 };
