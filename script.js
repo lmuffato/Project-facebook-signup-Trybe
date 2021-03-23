@@ -1,6 +1,8 @@
 function enterButton() {
   const emailOrCel = document.getElementById('user-email-phone').value;
-  alert(emailOrCel);
+  if (emailOrCel !== '') {
+    alert(emailOrCel);
+  }
 }
 
 const button = document.getElementById('button-login');
