@@ -1,8 +1,7 @@
 const buttonSubmit = document.getElementById('button-login');
 const buttonRegister = document.getElementById('facebook-register');
-const radiosButtons = document.getElementsByName('gender');
 const registerInputs = document.querySelectorAll('.register');
-const mensageInvalid = document.getElementById('check-register');
+const radiosButtons = document.getElementsByName('gender');
 
 function submit() {
   alert(document.getElementById('user-email-phone').value);
@@ -30,15 +29,13 @@ function checkRadios() {
   return confirmRadios;
 }
 
-function checkData() {
+function checkData(e) {
+  e.preventDefault();
   if (checkRegister() === false || checkRadios() === false) {
-    const invalid = document.createElement('label');
-    invalid.innerText = 'Campos inválidos';
-
-    mensageInvalid.appendChild(invalid);
-    // alert('Campos inválidos');
+    document.getElementById('mensage-invalid').style.display = 'block';
+    return;
   }
+  document.getElementById('mensage-invalid').style.display = 'none';
 }
-
 buttonSubmit.addEventListener('click', submit);
 buttonRegister.addEventListener('click', checkData);
