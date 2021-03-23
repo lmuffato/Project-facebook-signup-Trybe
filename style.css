@@ -60,4 +60,28 @@
 
 /* -------------- main ------------ */
 
+.main-content {
+  display: flex;
+  flex-direction: column;
+  background: red;
+  height: 80vh;
+  width: 100vw;
+}
+
+.left-content {
+  width: 800px;
+  background: cyan;
+
+}
+
+#facebook-slogan {
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  background: green;
+}
+
+#facebook-networking {
+
+}
 /* -------------- footer ------------ */
