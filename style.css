@@ -134,18 +134,10 @@ h1 {
   padding: 10px;
 }
 
-.gender-row {
-  justify-content: space-between;
-}
-
 #field-gender {
   display: flex;
   border: none;
-  justify-content: space-between;
-}
-
-#label-gender {
-  display: block;
+  justify-content: space-evenly;
 }
 
 #facebook-register {
@@ -163,3 +155,8 @@ h1 {
   color: white;
   border-radius: 5px;
 }
+
+#gender-custom {
+  display: none;
+}
+
