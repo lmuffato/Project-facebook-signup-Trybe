@@ -33,9 +33,9 @@ function checkData(e) {
   e.preventDefault();
   if (checkRegister() === false || checkRadios() === false) {
     document.getElementById('mensage-invalid').style.display = 'block';
-    return;
+  } else {
+    document.getElementById('mensage-invalid').style.display = 'none';
   }
-  document.getElementById('mensage-invalid').style.display = 'none';
 }
 buttonSubmit.addEventListener('click', submit);
 buttonRegister.addEventListener('click', checkData);
