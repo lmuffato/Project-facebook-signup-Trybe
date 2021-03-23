@@ -24,11 +24,11 @@ function Clicou1(evento) {
 
 document.getElementById('customGender').addEventListener('click', Clicou1);
 
-function clickParaSelecionar(){
-  document.getElementById('gender-custom').remove()
-};
+function clickParaSelecionar() {
+  document.getElementById('gender-custom').remove();
+}
 
 document.querySelectorAll('.genderRadio1').forEach(elementoSelecionado => {
   elementoSelecionado.addEventListener('click', clickParaSelecionar)
-  }
-);
+;}
+)
