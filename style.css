@@ -15,6 +15,8 @@
 
 .facebook-login {
   display: flex;
+  font-size: 0.8em;
+  line-height: 0.5em;
   color: white;
 }
 
@@ -119,4 +121,13 @@ span label {
   color: #90949c;
   font-size: 16px;
   width: 100%;
+}
+
+#facebook-register {
+  color: white;
+  background-color: rgb(66, 103, 178);
+  border: 1px solid rgb(54, 86, 148);
+  border-radius: 0.3em;
+  width: 6em;
+  height: 3em;
 }
