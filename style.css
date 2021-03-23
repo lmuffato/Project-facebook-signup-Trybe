@@ -128,9 +128,23 @@ main {
   border-radius: 5px;
   padding: 8px;
   margin-bottom: 10px;
-  width: 190px;
   font-size: 18px;
   color: rgb(153, 153, 153);
+  width: 180px;
+}
+
+#phone-mail input , #new-pass input , #birthdate input {
+  border: 1px solid rgb(189, 199, 216);
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 390px;
+  font-size: 18px;
+  color: rgb(153, 153, 153);
+}
+
+#name-content input:nth-child( 2 ) {
+  margin-left: 10px;
 }
 
 /* Footer */
