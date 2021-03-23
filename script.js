@@ -31,21 +31,24 @@ function invalidFields(event) {
   }
 }
 
-function removeBinary() {
+function verifyCustom() {
   if (document.getElementsByName('gender-custom')[0]) {
     binaryContainer.removeChild(binaryContainer.childNodes[0]);
   }
 }
 
+function removeBinary() {
+  verifyCustom();
+}
+
 function binary() {
-  if (document.getElementsByName('gender-custom')[0]) {
-    removeBinary();
-  }
+  verifyCustom();
   const binaryInput = document.createElement('input');
   binaryInput.name = 'gender-custom';
   binaryInput.placeholder = 'Gênero (opcional)';
   binaryContainer.appendChild(binaryInput);
 }
+
 selectBinary[0].addEventListener('change', removeBinary);
 selectBinary[1].addEventListener('change', removeBinary);
 selectBinary[2].addEventListener('change', binary);
