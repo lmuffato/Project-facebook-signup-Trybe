@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
-  padding-bottom: 5px ;
+  padding-bottom: 5px;
 }
 
 .top-bar img {
@@ -87,6 +87,7 @@ body {
 }
 
 .new-account {
+  border: 1px solid black;
   display: flex;
   flex-flow: column nowrap; /* não permite quebra de linha */
 }
@@ -138,8 +139,10 @@ width: 90%;
 
 .get-gender {
   display: flex;
-  flex-flow: column nowrap;
-  margin: 10px 8px 8px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* flex-flow: column nowrap; */
+  /* margin: 10px 8px 8px; */
   color: rgb(133, 137, 145);
 }
 
