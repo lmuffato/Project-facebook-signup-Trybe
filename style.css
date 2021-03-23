@@ -9,17 +9,19 @@ body {
   height: 100%;
 }
 
-/* -------------- header ------------ */
+/* ------------------------ header ---------------------- */
 .top-bar { /* header */
   display: flex;
   background-color: rgb(66, 103, 178);
-  height: 10vh;
-  justify-content: space-between;
+  height: 76px;
+  width: 100vw;
 }
 
+/* facebook logo container */
 #logo-container {
-  width: auto;
-  height: auto;
+  position: absolute;
+  left: 0;
+  height: 76px;
 }
 
 .facebook-logo {
@@ -28,8 +30,8 @@ body {
 
 /* facebook login container */
 #login-container {
-  width: auto;
-  height: auto;
+  position: absolute;
+  right: 0;
 }
 
 .facebook-login {
@@ -71,6 +73,6 @@ body {
   color: white;
 }
 
-/* -------------- main ------------ */
+/* ------------------------ main ---------------------- */
 
-/* -------------- footer ------------ */
+/* ----------------------- footer --------------------- */
