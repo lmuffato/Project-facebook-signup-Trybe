@@ -17,6 +17,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding-top: 13px;
+  background-color: rgb(66, 103, 178);
 }
 
 .top-bar .facebook-logo {
@@ -35,8 +36,8 @@ header {
 }
 
 .form-control {
-  display: flex;
-  align-self: center;
+  height: 66%;
+  align-self: flex-end;
 }
 
 #user-email-phone-label {
