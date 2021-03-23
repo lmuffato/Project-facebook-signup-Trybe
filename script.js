@@ -69,10 +69,18 @@ function check() {
   return sum;
 }
 
-function createList() {
-  const complete = document.querySelector('.complete');
+function saveContent() {
   const gender = getGender();
   const array = getElements();
+  sessionStorage.setItem('info', array);
+  sessionStorage.setItem('gender', gender);
+}
+
+function createList() {
+  const complete = document.querySelector('.complete');
+  const gender = sessionStorage.getItem('gender');
+  const string = sessionStorage.getItem('info');
+  const array = string.split(',');
   const text = `Olá, ${array[0]} ${array[1]}`;
   const newLi = document.createElement('li');
   newLi.innerText = text;
@@ -88,9 +96,18 @@ function createList() {
   complete.appendChild(newLi2);
 }
 
+function checkMemory() {
+  if (sessionStorage.getItem('info') !== null) {
+    document.querySelector('.right-content').style.display = 'none';
+    createList();
+  }
+}
+
 function alertText(number) {
   if (number !== 5) {
     document.querySelector('.alert').style.display = 'block';
+  } else {
+    saveContent();
   }
 }
 
@@ -98,7 +115,6 @@ function validate() {
   const btn = document.getElementById('facebook-register');
   btn.addEventListener('click', () => {
     alertText(check());
-    createList();
   });
 }
 
@@ -107,4 +123,5 @@ window.onload = function run() {
   addCustonGender();
   removeCustonGender();
   validate();
+  checkMemory();
 };
