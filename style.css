@@ -14,7 +14,6 @@
 }
 
 .facebook-logo {
-  padding-right: 100px;
   display: flex;
 }
 
@@ -41,7 +40,7 @@ label {
 }
 
 #button-login {
-  padding: 5px; 
+  padding: 5px;
   background-color: #1e4dac;
   border-color: #29487d;
   border-radius: 2px;
