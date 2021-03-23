@@ -52,7 +52,6 @@
 }
 
 .right-content {
-  width: 300px;
   align-content: flex-end;
   margin-right: 220px;
   padding-top: 20px;
@@ -84,9 +83,14 @@
 }
 
 .signup {
-  width: 350px;
+  display: flex;
+  flex-direction: column;
   line-height: 1.5;
   margin-top: 20px;
+}
+
+.signup .name {
+  display: flex;
 }
 
 #user-email-phone {
