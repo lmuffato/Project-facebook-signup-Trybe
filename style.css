@@ -23,3 +23,11 @@
   align-self: flex-end;
   margin: 7px;
 }
+
+.main-content {
+  display: flex;
+}
+
+.left-content {
+  width: 800px;
+}
