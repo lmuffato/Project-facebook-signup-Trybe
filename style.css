@@ -15,7 +15,10 @@
   flex-direction: column;
 }
 
-
 .form-control {
   align-self: flex-end;
+}
+
+.main-content{
+  display: flex;
 }
