@@ -29,5 +29,6 @@ function clickParaSelecionar(){
 };
 
 document.querySelectorAll('.genderRadio1').forEach(elementoSelecionado => {
- elementoSelecionado.addEventListener('click', clickParaSelecionar);
-});
+  elementoSelecionado.addEventListener('click', clickParaSelecionar)
+  }
+);
