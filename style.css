@@ -18,12 +18,15 @@ header {
   justify-content: space-between;
   width: 1100px;
   margin: 0 auto;
-  align-items: center;
 }
 
 .top-bar img {
   margin-left: -10px;
   height: 100%;
+}
+
+.facebook-logo {
+  align-self: center;
 }
 
 .facebook-login {
