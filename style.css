@@ -15,12 +15,11 @@ body {
   background-color: rgb(66, 103, 178);
   height: 76px;
   width: 100vw;
+  justify-content: space-between;
 }
 
 /* facebook logo container */
 #logo-container {
-  position: absolute;
-  left: 0;
   height: 76px;
 }
 
@@ -29,10 +28,6 @@ body {
 }
 
 /* facebook login container */
-#login-container {
-  position: absolute;
-  right: 0;
-}
 
 .facebook-login {
   display: flex;
