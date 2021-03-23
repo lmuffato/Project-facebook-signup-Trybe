@@ -174,9 +174,5 @@ width: 90%;
   font-size: 19px;
   font-weight: 600;
   height: 40px;
-}
-
-/* .button-submit:hover {
   background: linear-gradient(#67ae55e0, #578843);
-  border: 1px solid #2b7d07;
-} */
+}
