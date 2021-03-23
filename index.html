@@ -45,22 +45,33 @@
 
 			<section class="right-content">
                 <div>
-                    <h1>Abra uma conta</h1>
-                    <div class=' classe quick-easy'>É rápido e fácil.</div>
+                    <h1 id='openNewAcount'>Abra uma conta</h1>
+                    <div class='quick-easy'>É rápido e fácil.</div>
                     <form action='' method='GET' class='createUser'>
                         <input type='text' id='firstname' name='firstname' placeholder='Nome'>
                         <input type='text' id='lastname' name='lastname' placeholder='Sobrenome'>
                         <input type='text' id='phone_email' name='phone_email' placeholder='Celular ou email'>
                         <input type='password' id='password' name='password' placeholder='Nova senha'>
+                        
+                        <div>
+                            <label id='label-birthdate'>Data de nascimento</label>
+                            <input type='text' id='input-birthdate' name=birthdate placeholder='dd/mm/aaaa'>
+                        </div>
+                        
+                        <div>
+                            <label id='label-gender'>Gênero</label>
+                        </div>
 
-                        <label id='label-birthdate'>Data de nascimento</label>
-                        <input type='text' id='input-birthdate' name=birthdate placeholder='dd/mm/aaaa'>
+                        <div id='genderOption'>
+                            <input type='radio' name='gender' id='gender' class='genderRadio'><div class='gender'>Feminino</div>
+                            <input type='radio' name='gender' id='gender' class='genderRadio'><div class='gender'>Masculino</div>
+                            <input type='radio' name='gender' id='gender' class='genderRadio'><div class='gender'>Personalizado</div>
+                        </div>
 
-                        <label id='label-gender'>Gênero</label>
-						<input type='radio' name='gender' id='gender' class='gender'>Feminino
-                        <input type='radio' name='gender' id='gender' class='gender'>Masculino
-                        <input type='radio' name='gender' id='gender' class='gender'>Personalizado
+                    <div id='facebook-register-button'>
                         <button type='submit' id='facebook-register'>Cadastre-se</button>
+                    </div>
+
                     </form>
                 </div>
 			</section>
