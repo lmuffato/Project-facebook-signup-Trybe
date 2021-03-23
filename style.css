@@ -28,7 +28,6 @@ body {
 }
 
 /* facebook login container */
-
 .facebook-login {
   display: flex;
   justify-content: flex-end;
