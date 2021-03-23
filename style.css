@@ -37,7 +37,6 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  /* width: 500px; */
   align-content: center;
 }
 
@@ -50,11 +49,6 @@ tbody {
   color: whitesmoke;
   font-size: 12px;
 }
-
-/* .entry-form-inputs-container {
-  width: 150px;
-  height: 25px;
-} */
 
 .entry-form-inputs {
   width: 142px;
@@ -114,12 +108,12 @@ main {
 
 #facebook-slogan {
   color: #0e385f;
-    font-size: 20px;
-    font-weight: bold;
-    line-height: 29px;
-    margin-top: 40px;
-    width: 450px;
-    word-spacing: -1px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
 }
 
 #facebook-networking {
