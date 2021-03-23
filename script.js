@@ -12,14 +12,13 @@ const createParagraph = document.createElement('p');
 
 function rightContentForm() {
   let genderInput = '';
-  rightContent.innerHTML = `Olá, ${nameInput.value} ${lastName.value}`;
-
   for (let i = 0; i < radios.length; i += 1) {
     if (radios[i].classList.contains('selected')) {
       genderInput = radios[i].value;
     }
+    rightContent.innerText = `Olá, ${nameInput.value} ${lastName.value}
 
-    rightContent.innerHTML += `${emailInput.value}
+    ${emailInput.value}
     ${birthDate.value}
     ${genderInput}`;
   }
