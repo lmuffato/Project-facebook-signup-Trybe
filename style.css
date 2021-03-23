@@ -18,7 +18,8 @@ body {
   display: flex;
   background-color: rgb(66, 103, 178);
   height: 76px;
-  width: 80%;
+  width: 100%;
+  padding: 0 10%;
   justify-content: space-between;
 }
 
@@ -75,10 +76,10 @@ body {
 /* ------------------------ main ---------------------- */
 .main-content {
   display: flex;
-  flex-direction: row;
   background: red;
-  height: 80vh;
-  width: 100vw;
+  height: 80%;
+  width: 100%;
+  padding: 0 10%;
   justify-content: center;
 }
 
@@ -91,7 +92,7 @@ body {
 
 #facebook-slogan {
   width: 100%;
-  height: 10vh;
+  height: 15%;
   text-align: center;
   background-color: green;
 }
@@ -112,3 +113,14 @@ body {
 }
 
 /* ------------------------ footer ---------------------- */
+footer {
+  background-color: white;
+  width: 100%;
+  padding: 0 10%;
+  height: 10%;
+}
+
+footer img {
+  width: 100%;
+  height: 100%;
+}
