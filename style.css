@@ -30,7 +30,7 @@ body {
 
 .main-content {
   display: flex;
-  background-color: whitesmoke;
+  background: linear-gradient(white,rgb(211, 216, 232));
   border: 1px solid black;
   justify-content: space-between;
 }
