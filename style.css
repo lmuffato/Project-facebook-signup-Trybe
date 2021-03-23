@@ -20,5 +20,8 @@
 
 .main-content {
   display: flex;
-  background-color: black;
+}
+
+.left-content {
+  width: 800px;
 }
