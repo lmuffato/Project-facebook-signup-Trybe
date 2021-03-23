@@ -8,36 +8,34 @@
   background-color: rgb(66, 103, 178);
 
   /*   background-image: linear-gradient(rgb(78, 105, 162), rgb(59, 89, 152) 50%); */
-  height: 80px;
+  height: 82px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.forms-container {
-  color: white;
-}
-
 .facebook-login {
   display: flex;
   flex-direction: row;
+  color: white;
+  margin-right: 40px;
 }
 
 .form-control {
   align-self: flex-end;
+  margin-bottom: 26px;
+  margin-left: 8px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  flex: 1 1 0;
-  padding: 6px;
+  padding: 0 8px;
   font-size: 12px;
-
 }
 
 .form-group * {
-  padding-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .form-group a {
@@ -63,4 +61,5 @@
   border-width: 1px;
   border-radius: 2px;
   color: white;
+  font-weight: 700;
 }

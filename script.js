@@ -1,4 +1,4 @@
-function submitForms(event) {
+function displayAlert(event) {
   event.preventDefault();
   const userEmailBox = document.getElementById('user-email-phone');
   alert(userEmailBox.value);
@@ -7,5 +7,5 @@ function submitForms(event) {
 window.onload = function init() {
   document
     .getElementById('button-login')
-    .addEventListener('click', submitForms, false);
+    .addEventListener('click', displayAlert, false);
 };
