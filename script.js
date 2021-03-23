@@ -8,12 +8,13 @@ function alertEmail() {
 btnLogin.addEventListener('click', alertEmail);
 
 const btnRegister = document.querySelector('#facebook-register');
-function checkInputs() {
-  const userInputs = document.querySelectorAll('input');
+function checkInputs(event) {
+  const userInputs = document.querySelectorAll('.user-data');
+  event.preventDefault();
   for (let index = 0; index < userInputs.length; index += 1) {
     if (userInputs[index].value === '') {
-      alert('Campos inválidos');
-      break;
+      userInputs[index].value = 'Campos inválidos';
+      userInputs[index].style.border = '1px solid red';
     }
   }
 }

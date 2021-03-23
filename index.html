@@ -39,18 +39,18 @@
       <span class="quick-easy">É rápido e fácil.</span>
       <form class="create-acount" action="">
         <div class="user-name">
-          <input class="full-name" name="firstname" placeholder="Nome" type="text">
-          <input class="full-name" name="lastname" placeholder="Sobrenome" type="text">
+          <input class="full-name user-data" name="firstname" data-validate-field="name" placeholder="Nome" type="text">
+          <input class="full-name user-data" name="lastname" data-validate-field="name" placeholder="Sobrenome" type="text">
         </div>
         <div class="phone-email">
-          <input name="phone_email" placeholder="Celular ou email" type="text">
+          <input name="phone_email" class="user-data" data-validate-field="email" placeholder="Celular ou email" type="text">
         </div>
         <div class="password">
-          <input name="password" placeholder="Nova senha" type="password">
+          <input name="password" class="user-data" placeholder="Nova senha" type="password">
         </div>
         <div class="birth-date">
           <label id="label-birthdate" for="">Data de nascimento</label>
-          <input name="birthdate" placeholder="dd/mm/aaaa" type="text">
+          <input name="birthdate" class="user-data" placeholder="dd/mm/aaaa" type="text">
         </div>
         <div class="genderOptions">
           <label id="label-gender" for="gender">Gênero</label>
@@ -70,7 +70,9 @@
       </form>
     </div>
   </div>
+  <script src="./node_modules/just-validate/dist/js/just-validate.min.js"></script>
   <script src="script.js"></script>
+  
 </body>
 
 </html>
