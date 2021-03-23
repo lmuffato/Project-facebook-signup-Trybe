@@ -5,7 +5,9 @@
 .top-bar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: rgb(66, 103, 178);
+  color: white;
 }
 
 .facebook-logo {
@@ -19,4 +21,8 @@
 .form-group {
   display: flex;
   flex-flow: column;
+}
+
+.form-control {
+  align-self: flex-end;
 }
