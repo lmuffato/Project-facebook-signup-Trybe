@@ -53,6 +53,7 @@
 
 .right-content {
   align-content: flex-end;
+  width: 300px;
   margin-right: 220px;
   padding-top: 20px;
 }
