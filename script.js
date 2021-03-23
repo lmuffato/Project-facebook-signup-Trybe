@@ -9,18 +9,6 @@ function getContact() {
 btn.addEventListener('click', getContact);
 
 // requisito 18 validar se todos os campos foram preenchidos
-const submit = document.querySelector('#facebook-register');
-const inputForm = document.querySelectorAll('.input-form');
-
-function validateInputs() {
-  for (let index = 0; index < inputForm.length; index += 1) {
-    if (inputForm[index].value === '') {
-      alert('Campos inválidos');
-    }
-  }
-}
-
-submit.addEventListener('click', validateInputs);
 
 // requisito 19 adicionar campo personalizado
 const pers = document.getElementById('personalizado');
