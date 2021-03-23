@@ -3,6 +3,10 @@
   margin: 0%;
 }
 
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
@@ -42,4 +46,34 @@
 
 #name-content {
   display: flex;
+}
+
+/* Footer */
+.nav-languages ul {
+  display: flex;
+  list-style: none;
+  font-size: 12px;
+}
+
+.nav-languages a {
+  text-decoration: none;
+  color: rgb(56, 88, 152);
+}
+
+.nav-footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  font-size: 12px;
+}
+
+.nav-partition {
+  border-bottom: 1px solid rgb(221, 223, 226);
+  font-size: 1px;
+  width: 1085px;
+}
+
+.nav-footer a {
+  text-decoration: none;
+  color: rgb(56, 88, 152);
 }
