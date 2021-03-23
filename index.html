@@ -57,17 +57,29 @@
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
       <form method="GET" id="form" >
-        <input type="text" name="firstname" placeholder="Nome">
-        <input type="text" name="lastname" placeholder="Sobrenome">
+
+        <div id="nameContainer">
+          <input type="text" name="firstname" placeholder="Nome">
+          <input type="text" name="lastname" placeholder="Sobrenome">
+        </div>
+
         <input type="text" name="phone_email" placeholder="Celular ou email">
         <input type="password" name="password" placeholder="Nova senha">
-        <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate">
-        <label id="label-gender">Gênero</label>
-        <input type="radio" name="gender" value="Feminino"> Feminino
-        <input type="radio" name="gender" value="Masculino"> Masculino
-        <input type="radio" name="gender" value="Personalizado"> Personalizado
+
+        <div id="birthdateContainer">
+          <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="birthdate">
+        </div>
+        
+        <div id="genderContainer">
+          <label id="label-gender" for="gender">Gênero</label>
+          <input type="radio" name="gender" value="Feminino"> Feminino
+          <input type="radio" name="gender" value="Masculino"> Masculino
+          <input type="radio" name="gender" value="Personalizado"> Personalizado
+        </div>
+        
         <button id="facebook-register" type="submit">Cadastre-se</button>
+
       </form>
     </div>
   </section>
