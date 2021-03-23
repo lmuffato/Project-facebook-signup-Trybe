@@ -53,6 +53,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background: linear-gradient(to bottom, white, #d3d8e8);
 }
 
 .left-content {
@@ -63,6 +64,8 @@
 
 #facebook-networking {
   width: 537px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .right-content {
@@ -71,4 +74,38 @@
 
 #facebook-form {
   display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: #1d2129;
+}
+
+.quick-easy {
+  color: #1d2129;
+  font-size: 19px;
+  font-weight: 400;
+  direction: ltr;
+  line-height: 1.34;
+}
+
+#facebook-slogan {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
+}
+
+.form-group-row {
+  display: flex;
+}
+
+.form-group-column {
+  display: flex;
+  flex-direction: column;
 }
