@@ -48,3 +48,7 @@
 .facebook-nome-sobrenome {
   display: flex;
 }
+
+fieldset {
+  border: none;
+}
