@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
 }
@@ -14,7 +20,7 @@ header {
   align-self: center;
   background-color: rgb(66, 103, 178);
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1100px;
   width: 100%;
   height: 83px;
 }
@@ -22,7 +28,7 @@ header {
 .facebook-login {
   display: flex;
   align-items: stretch;
-  background-color: #4267b2;
+  background-color: rgb(66, 103, 178);
   max-width: 390px;
   width: 100%;
   font-family: Helvetica, Arial, sans-serif;
@@ -31,7 +37,7 @@ header {
 }
 
 .loginForm input {
-  border: 1px solid #1d2a5b;
+  border: 1px solid rgb(29, 42, 91);
   width: 150px;
   height: 20px;
   padding: 0 3px 3px 4px;
@@ -45,36 +51,109 @@ header {
 
 .form-group {
   display: flex;
-  align-content: flex-start;
-  flex-flow: row wrap;
+  flex-direction: column;
   margin-right: 15px;
+  justify-content: center;
 }
 
-.form-group-button {
-  display: flex;
-  align-items: center;
+.form-group input {
+  margin: 5px 0;
 }
 
 #user-email-phone-label {
-  margin-top: 12px;
   width: 100%;
-}
-
-#loginPassword {
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  align-items: center;
-  margin: 5px 0;
 }
 
 .loginUser-button {
   color: white;
   padding: 2px;
-  background-color: #4267b2;
-  border: 1px solid #29487d;
+  background-color: rgb(66, 103, 178);
+  border: 1px solid rgb(41, 72, 125);
 }
 
-#loginUser {
-  margin: 5px 0;
+.form-control {
+  height: 54%;
+  align-self: flex-end;
+}
+
+#content {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(white, rgb(211, 216, 232));
+}
+
+.main-content {
+  max-width: 1100px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  flex-basis: 800px;
+}
+
+.left-content {
+  width: 800px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+#facebook-slogan {
+  width: 65%;
+  height: auto;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: rgb(14, 56, 95);
+  word-spacing: -1;
+  font-weight: 700;
+}
+
+.right-content {
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  max-width: 1100px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  color: rgb(56, 88, 152);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+#languages li {
+  list-style: none;
+  display: inline;
+  margin: 0 4px;
+}
+
+#options {
+  margin-top: 10px;
+}
+
+#options li {
+  list-style: none;
+  display: inline;
+  margin: 0 4px;
+}
+
+#divider {
+  width: 100%;
+  height: 1px;
+  margin-top: 10px;
+  background-color: rgba(115, 115, 115, 0.4);
 }

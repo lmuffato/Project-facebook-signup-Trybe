@@ -2,61 +2,120 @@
 <html lang="br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Facebook - entre ou cadastre-se</title>
-    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Facebook - entre ou cadastre-se</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+	<header>
+		<div class=top-bar>
+			<img class='facebook-logo' src='imgs/facebook-logo.png'>
+			<div class='facebook-login'>
+				<form action='' method='GET' class='facebook-login'>
+					<div class='form-group'>
+						<label id='user-email-phone-label' for="loginUser">Email ou telefone</label>
+						<input type='text' name='loginUser' placeholder="login" id='user-email-phone' class='loginForm' id='user-email-phone-label'>
+					</div>
 
-    <header>
-        <div class=top-bar>
-            <img class='facebook-logo' src='imgs\facebook-logo.png'>
-            
-            <div class='facebook-login'>
+					<div class='form-group'>
+						<label for="loginUser" id='user-password-label'>Senha</label>
+						<input type='password' name='loginPassword' placeholder="senha" id='user-password' class='loginForm'>
+					</div>
 
-                <form action='' method='GET' class='facebook-login'>
+					<div class='form-control'>
+						<button class='loginUser-button' id="button-login">Entrar</button></td>
+					</div>
+				</form>
+			</div>
+		</div>
+	</header>
 
-                    <div class='form-group'>
-                        <label id='user-email-phone-label' for="loginUser" class='loginUser' >Email ou telefone</label>
-                        <input type='text' name='loginUser' placeholder="login" id='loginUser' class='loginForm' id='user-email-phone-label'>
-                    </div>
+	<div id="content">
+		<main class="main-content">
+			<section class="left-content">
+				<p id="facebook-slogan">
+					O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
+				</p>
+				<img id="facebook-networking" src="imgs/networking.png" alt="Imagem de Networking">
+			</section>
 
-                    <div class='form-group'>     
-                        <label for="loginUser" id='user-email-phone-label'>Senha</label>
-                        <input type='password' name='loginPassword' placeholder="senha" id='loginPassword' class='loginForm'>
-                        <a>Esqueceu a conta?</a>
-                    </div>  
-                    
-                    <div class='form-group-button'>
-                        <button class='loginUser-button'>Entrar</button></td>
-                    </div>
+			<section class="right-content">
+				formulário
+                <div>
+                    <h1>Abra uma conta</h1>
+                    <div class=' classe quick-easy'>É rápido e fácil.</div>
+                    <form action='' method='GET' class='facebook-login'>
+                        <input type='text' id='firstname' name='firstname' placeholder=Nome'>
+                        <input type='text' id='lastname' name='lastname' placeholder='Sobrenome'>
+                        <input type='text' id='phone_email' name='phone_email' placeholder='Celular ou email'>
+                        <input type='password' id='password' name='password' placeholder='Nova senha'>
 
-                </form>
-           
-            </div>
-        </div>
-    </header>
+                        <label id='label-gender'>Gênero</label>
+						<input type='radio' name='gender' id='gender' class='gender'>Feminino
+                        <input type='radio' name='gender' id='gender' class='gender'>Masculino
+                        <input type='radio' name='gender' id='gender' class='gender'>Personalizado
+                        <button type='submit' id='facebook-register'>Cadastre-se</button>
+                    </form>
+                </div>
+			</section>
 
-    <main>
+		</main>
+	</div>
 
-        <section id='esquerda'>
-        </section>
+	<footer>
+		<ul id="languages">
+			<li>Português (Brasil)</li>
+			<li>English (US)</li>
+			<li>Español</li>
+			<li>Français (France)</li>
+			<li>中文(简体)</li>
+			<li>العربية</li>
+			<li>Italiano</li>
+			<li>한국어</li>
+			<li>Deutsch</li>
+			<li>हिन्दी</li>
+			<li>日本語</li>
 
-        <section id='direita'>
-        </section>
+		</ul>
+		<div id="divider"></div>
 
-    </main>
+		<ul id="options">
+			<li>Cadastre-se</li>
+			<li>Entrar</li>
+			<li>Messenger</li>
+			<li>Facebook Lite</li>
+			<li>Watch</li>
+			<li>Pessoas</li>
+			<li>Páginas</li>
+			<li>Categorias de Página</li>
+			<li>Locais</li>
+			<li>Jogos</li>
+			<li>Locais</li>
+			<li>Marketplace</li>
+			<li>Grupos</li>
+			<li>Instagram</li>
+			<li>Local</li>
+			<li>Campanhas de arrecadação de fundos</li>
+			<li>Serviços</li>
+			<li>Sobre</li>
+			<li>Criar anúncio</li>
+			<li>Criar Página</li>
+			<li>Desenvolvedores</li>
+			<li>Carreiras</li>
+			<li>Privacidade</li>
+			<li>Cookies</li>
+			<li>Opções de anúncio</li>
+			<li>Termos</li>
+			<li>Ajuda</li>
+			<li>Configurações</li>
+		</ul>
+	</footer>
 
-    <footer>
-
-
-    </footer>
-
-    <script src="script.js"></script>
+	<script src="script.js"></script>
 </body>
 
 </html>
