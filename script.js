@@ -49,7 +49,6 @@ const btnRegister = document.querySelector('#facebook-register');
 
 btnRegister.addEventListener('click', validateForm);
 
-// Alerta botão entrar
 const btn = document.querySelector('#button-login');
 
 function alertLogin() {
