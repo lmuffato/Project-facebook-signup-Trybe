@@ -26,10 +26,24 @@
 }
 
 /* requisitos 9 em diante: */
+span {
+  display: flex;
+  justify-content: space-between;
+  width: 33%;
+}
+
+span label {
+  color: #1d2129;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 0 10px 0 3px;
+}
+
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  background: linear-gradient(white, #d3d8e8);
 }
 
 .left-content {
@@ -46,9 +60,25 @@
   font-weight: 600;
 }
 
+.right-content form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .right-content form input {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
+  border: 1px solid #ccd0d5;
+  border-color: #bdc7d8;
+  border-radius: 5px;
+  margin: 0;
+  font-size: 18px;
+  padding: 8px 10px;
+}
+
+.gender {
+  display: flex;
   flex-direction: column;
 }
 
@@ -66,4 +96,22 @@
   width: 537px;
   aspect-ratio: auto 537 / 195;
   height: 195px;
+}
+
+#firstname {
+  width: 40%;
+}
+
+#lastname {
+  width: 40%;
+}
+
+#phone_email , #password {
+  width: 100%;
+}
+
+#label-gender {
+  color: #90949c;
+  font-size: 16px;
+  width: 100%;
 }
