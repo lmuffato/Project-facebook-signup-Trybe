@@ -46,16 +46,16 @@
           <input class="input-size" type="text" id="lastname" name="lastname" placeholder="Sobrenome" required>
         </div>
         <input id="phone_email" type="text" name="phone_email" placeholder="Celular ou email" required>
-        <input type="password" name="password" placeholder="Nova senha" required>
+        <input id="password" type="password" name="password" placeholder="Nova senha" required>
         <div>
           <label id="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
+          <input id="datanasc" type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
         </div>
 
         <label id="label-gender" for="">Genero
           <div class="gender-content">
-            <input value="gender" id="masculino" name="gender" type="radio" required>
-            <label for="masculino">Masculino</label>
+            <input value="gender" id="masculino" name="gender" type="radio" required checked>
+            <label for="masculino" >Masculino</label>
             <input value="gender" id="feminino" name="gender" type="radio" required>
             <label for="feminino">Feminino</label>
             <input value="gender" id="personalizado" name="gender" type="radio" required>

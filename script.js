@@ -25,8 +25,23 @@ function verificaEmailPhone() {
   }
 }
 
+function verificaSenha() {
+  const valorSenha = document.getElementById('password');
+  if (valorSenha.value === '') {
+    return true;
+  }
+}
+
+function verificaData() {
+  const valorData = document.getElementById('datanasc');
+  if (valorData.value === '') {
+    return true;
+  }
+}
+
+
 function verificaInputsVazios() {
-  if (verificaNome() || verificaSobrenome() || verificaEmailPhone()) {
+  if (verificaNome() || verificaSobrenome() || verificaEmailPhone() || verificaSenha() || verificaData()) {
     console.log('entrou no if do verificaInputsVazios');
     const paragrafo = document.createElement('p');
     const divPai = document.querySelector('.msg-invalido');
