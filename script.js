@@ -5,6 +5,7 @@ const radioElement = document.form1;
 const idMessageInvalid = document.querySelector('#messageInvalid');
 
 const generateInvalidMessage = () => {
+  idMessageInvalid.innerHTML = '';
   const newMsg = document.createElement('p');
   newMsg.innerHTML = 'Campos inválidos';
   idMessageInvalid.appendChild(newMsg);
@@ -19,21 +20,27 @@ const validRadio = () => {
   return true;
 };
 
+const validTextField = (el) => {
+  if ((el.type === 'text' || el.type === 'password') && el.value === '') {
+    return false;
+  }
+};
+
 const validateForm = (e) => {
   e.preventDefault();
   let check = true;
   inputsText.forEach((el) => {
-    if ((el.type === 'text' || el.type === 'password') && el.value === '') {
-      console.log(`O campo ${el.id} precisa ser preenchido`);
+    if (validTextField(el) === false) {
       check = false;
     }
   });
   if (!validRadio()) {
-    console.log('O campo gênero precisa ser preenchido');
     check = false;
   }
-  if (!check) {
+  if (check === false) {
     generateInvalidMessage();
+  } else {
+    idMessageInvalid.innerHTML = '';
   }
 };
 
@@ -58,9 +65,7 @@ function genderCustom() {
   }
 }
 
-function Clicou1(evento) {
-  console.log('mouse clicou no botão 1');
-  console.log(evento.target);
+function Clicou1() {
   genderCustom();
 }
 
