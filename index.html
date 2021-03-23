@@ -36,9 +36,9 @@
         </div>
         <div class="right-content">
             <h1>Abra uma conta</h1>
-            <div >
+            <div>
                 <p class="quick-easy">É rápido e fácil.</p>
-                <form id="formMain" action="" method="post">
+                <form id="formMain">
                     <div class="names">
                         <input type="text" name="firstname" placeholder="Nome">
                         <input type="text" name="lastname" placeholder="Sobrenome">
@@ -47,23 +47,24 @@
                     <input type="password" name="password" placeholder="Nova senha">
                     <label for="birthdate" id="label-birthdate">Data de nascimento</label>
                     <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
-                    <label for="gender" id="label-gender">Gênero</label>
-                        <div class="genders">
+                    <div class="genders">
+                        <label for="gender" id="label-gender">Gênero
                             <label for="female"> Feminino
-                                <input type="radio" name="gender" id="female" value="Feminino">
+                                <input class="radio" type="radio" name="gender" id="female" value="Feminino">
                             </label>
                             <label for="male"> Masculino
-                                <input type="radio" name="gender" id="male" value="Masculino">
+                                <input class="radio" type="radio" name="gender" id="male" value="Masculino">
                             </label>
                             <label for="personalized"> Personalizado
-                                <input type="radio" name="gender" id="personalized" value="Personalizado">
+                                <input class="radio" type="radio" name="gender" id="personalized" value="Personalizado">
                             </label>
-                        </div>                    
+                        </label>
+                    </div>
                     <button type="submit" id="facebook-register">Cadastre-se</button>
                 </form>
             </div>
-         </div>
-    <script src="script.js"></script>
+        </div>
+        <script src="script.js"></script>
 </body>
 
 </html>
