@@ -133,7 +133,7 @@ main {
   width: 180px;
 }
 
-#phone-mail input , #new-pass input , #birthdate input {
+#phone-mail input , #new-pass input , #gender-input-if-true input {
   border: 1px solid rgb(189, 199, 216);
   border-radius: 5px;
   padding: 8px;
@@ -143,8 +143,65 @@ main {
   color: rgb(153, 153, 153);
 }
 
+#birthdate {
+  margin-top: 10px;
+}
+
+#birthdate input {
+  border: 1px solid rgb(189, 199, 216);
+  border-radius: 5px;
+  padding: 8px;
+  margin: 5px 0 10px;
+  width: 390px;
+  font-size: 18px;
+  color: rgb(153, 153, 153);
+}
+
 #name-content input:nth-child( 2 ) {
   margin-left: 10px;
+}
+
+#label-birthdate {
+  color: rgb(144, 148, 156);
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+#label-gender {
+  color: rgb(144, 148, 156);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.gender-select {
+  display: flex;
+  margin: 10px 0 10px;
+}
+
+.gender-select label {
+  font-size: 18px;
+  color: rgb(29, 33, 41);
+  padding: 0 20px 0 5px;
+}
+
+.terms-privacy-cookies {
+  margin: 10px 0 20px 0;
+  width: 350px;
+}
+
+.terms-privacy-cookies p {
+  color: rgb(119, 119, 119);
+  font-size: 11px;
+}
+
+.terms-privacy-cookies a {
+  text-decoration: none;
+  color: rgb(56, 88, 152);
+}
+
+.terms-privacy-cookies a:hover {
+  text-decoration: underline;
 }
 
 /* Footer */
