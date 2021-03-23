@@ -34,6 +34,7 @@
       <img src="imgs/networking.png" alt="Illustration of people connected to each other around the world" id="facebook-networking">
     </section>
     <section class="right-content">
+      <div id="ifNotRegistered">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
         <!-- Exibir uma mensagem "Campos inválidos" dentro do formulário caso pelo menos um campo não esteja preenchido -->
@@ -54,6 +55,14 @@
           <input type="text" name="gender-custom" class="hidden" placeholder="Gênero (opcional)">
           <button type="submit" id="facebook-register">Cadastre-se</button>
         </form>
+      </div>
+      <div id="ifRegistered" class="hidden">
+        <h1 id="greetings">Olá, John Doe</h1>
+        <p class="email_phone">john@doe.com / (00) 00000-0000</p>
+        <p class="birth">00/00/0000</p>
+        <input type="radio" class="gender" checked>
+        <span id="genderChecked">Gênero</span>
+      </div>
     </section>
   </main>
   <script src="script.js"></script>
