@@ -34,7 +34,7 @@ header {
 
 .main-content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .left-content {
@@ -42,7 +42,30 @@ header {
 }
 
 .right-content {
+  display: flex;
   width: 300px;
+  flex-wrap: wrap;
+}
+
+.quick-easy {
+  width: 100%;
+}
+
+.form-boxflex {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input-fullname {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+}
+
+.input-form {
+  width: 100%;
 }
 
 #facebook-slogan {
@@ -54,4 +77,3 @@ header {
   width: 450px;
   word-spacing: -1px;
 }
-
