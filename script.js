@@ -1,6 +1,7 @@
 const forms = document.querySelectorAll('form');
 const buttonLogin = document.getElementById('button-login');
 const buttonSignUp = document.getElementById('facebook-register');
+const radiosGender = document.getElementById('radios-gender');
 
 function alertOnLogin(event) {
   const inputMailOrPhone = document.getElementById('user-email-phone');
@@ -54,5 +55,19 @@ function validateForms() {
   }
 }
 
+function revealOtherGenderField() {
+  const radios = radiosGender.querySelectorAll('input[type=radio]');
+  const inputOtherGender = document.querySelector('input[name=gender-custom]');
+  for (let index = 0; index < radios.length; index += 1) {
+    const radio = radios[index];
+    if (radio.id === 'other' && radio.checked) {
+      inputOtherGender.classList.remove('hidden');
+    } else {
+      inputOtherGender.classList.add('hidden');
+    }
+  }
+}
+
 buttonLogin.addEventListener('click', alertOnLogin);
 buttonSignUp.addEventListener('click', validateForms);
+radiosGender.addEventListener('change', revealOtherGenderField);
