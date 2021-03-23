@@ -28,6 +28,6 @@ function clickParaSelecionar() {
   document.getElementById('gender-custom').remove();
 }
 
-document.querySelectorAll('.genderRadio1').forEach(elementoSelecionado => {
+document.querySelectorAll('.genderRadio1').forEach((elementoSelecionado) => {
   elementoSelecionado.addEventListener('click', clickParaSelecionar);
 });
