@@ -2,5 +2,28 @@
   height: 100px;
   display: flex;
   background-color: rgb(66, 103, 178);
+  justify-content: space-evenly;
+  
 }
 
+.logo {
+  width: 170px;
+  height: 100px;
+  background-position: 0 0;
+  margin-top: 17px;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  align-content: space-between;
+}
+
+.button {
+  align-items:flex-end;
+}
+
+.esqueceu-senha {
+  text-align: right;
+}
