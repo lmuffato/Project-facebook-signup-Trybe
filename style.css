@@ -56,7 +56,7 @@
 .right-content {
   width: 300px;
   align-content: flex-end;
-  margin-right: 280px;
+  margin-right: 220px;
   padding-top: 20px;
 }
 
@@ -67,11 +67,11 @@
 #label-birthdate {
   display: flex;
   flex-flow: row nowrap;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 #birthdate {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #facebook-register {
@@ -81,12 +81,17 @@
   padding: 5px 8px;
   height: 35px;
   margin: 20px 20px 20px 0;
-  width: 70%;
-  font-size: 15px;
+  width: 55%;
+  font-size: 18px;
 }
 
 .signup {
-  width: 230px;
-  line-height: 1.8;
+  width: 350px;
+  line-height: 1.5;
   margin-top: 20px;
+}
+
+#user-email-phone #user-password {
+  height: 25px;
+  width: 150px;
 }
