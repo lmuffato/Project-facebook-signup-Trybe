@@ -36,18 +36,18 @@
         <p class="quick-easy">É rápido e fácil.</p>
         <form action="">
           <div class="user-name">
-            <input type="text" name="firstname" placeholder="Nome">
-            <input type="text" name="lastname" placeholder="Sobrenome">
+            <input type="text" name="firstname" placeholder="Nome" required>
+            <input type="text" name="lastname" placeholder="Sobrenome" required>
           </div>
-          <input type="text" name="phone_email" placeholder="Celular ou email">
-          <input type="password" name="password" placeholder="Nova senha" id="new-password">
+          <input type="text" name="phone_email" placeholder="Celular ou email" required>
+          <input type="password" name="password" placeholder="Nova senha" id="new-password" required>
           <div class="birthdate-content">
             <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-            <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa">
+            <input type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" required>
           </div>
           <label for="gender-content" id="label-gender">Gênero</label>
           <div id="gender-content">
-            <input type="radio" name="gender" id="femin">
+            <input type="radio" name="gender" id="femin" required>
             <label for="femin" class="gend">Feminino</label>
             <input type="radio" name="gender" id="masc">
             <label for="masc" class="gend">Masculino</label>
