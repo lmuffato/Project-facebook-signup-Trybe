@@ -98,3 +98,13 @@
   height: 25px;
   width: 150px;
 }
+
+#alinhar-radios {
+  display: flex;
+  margin-right: 200px;
+}
+
+#label-gender {
+  display: flex;
+  margin-bottom: 5px;
+}
