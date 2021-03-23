@@ -156,7 +156,9 @@ h1 {
 
 #field-gender {
   display: flex;
+  flex-flow: row nowrap;
   border: none;
   justify-content: space-between;
+  flex-shrink: 1;
 }
 
