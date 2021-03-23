@@ -17,7 +17,7 @@
       </div>
       <div class="form-group">
         <label id="user-password-label" for="user-password">Senha</label><br>
-        <input type="text" id="user-password" name="user-password"><br>
+        <input type="password" id="user-password" name="user-password"><br>
       </div>
       <div class="form-control">
         <button id="button-login">Entrar</button>
@@ -30,13 +30,17 @@
       <img id="facebook-networking" src="imgs/networking.png" alt="Networking">
     </div>
     <div class="right-content">
-      <h1>Abra uma conta</h1>
-      <p class="quick-easy">É rápido e fácil.</p>
+      <div id="title">
+        <h1>Abra uma conta</h1>
+        <p class="quick-easy">É rápido e fácil.</p>
+      </div>
       <form class="facebook-register">
         <input type="text" id="firstname" name="firstname" placeholder="Nome">
         <input type="text" id="lastname" name="lastname" placeholder="Sobrenome">
         <input type="text" id="phone_email" name="phone_email" placeholder="Celular ou email">
         <input type="password" id="password" name="password" placeholder="Nova senha">
+        <label id="label-birthdate" for="birthdate">Data de nascimento</label><br>
+        <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa"><br>
         <div class="gender">
           <label id="label-gender">Gênero</label>
           <span>
@@ -48,6 +52,7 @@
             <label for="custom">Personalizado</label>
           </span>
         </div>
+        <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
     </div>
   </main>

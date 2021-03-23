@@ -1,12 +1,13 @@
 * {
+  font-family: sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .top-bar {
   display: flex;
-  width: 100%;
   height: 6em;
+  padding: 0 8em;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(66, 103, 178);
@@ -14,12 +15,15 @@
 
 .facebook-login {
   display: flex;
+  font-size: 0.8em;
+  line-height: 0.5em;
   color: white;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   border: none;
   border-color: none;
   margin-right: 1em;
@@ -41,21 +45,18 @@
 /* requisitos 9 em diante: */
 span {
   display: flex;
-  justify-content: space-between;
-  width: 33%;
 }
 
 span label {
   color: #1d2129;
-  font-size: 18px;
-  line-height: 18px;
-  padding: 0 10px 0 3px;
+  padding: 0 0.5em 0 0.1em;
 }
 
 .main-content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 8em;
   background: linear-gradient(white, #d3d8e8);
 }
 
@@ -75,24 +76,28 @@ span label {
 
 .right-content form {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .right-content form input {
   display: flex;
-  justify-content: space-around;
-  flex-direction: column;
   border: 1px solid #ccd0d5;
   border-color: #bdc7d8;
   border-radius: 5px;
-  margin: 0;
-  font-size: 18px;
-  padding: 8px 10px;
+  font-size: 1em;
+  padding: 0.5em;
+  margin-bottom: 0.8em;
 }
 
 .gender {
   display: flex;
   flex-direction: column;
+  align-content: space-between;
+}
+
+.quick-easy {
+  padding: 15px 0;
 }
 
 #facebook-slogan {
@@ -123,8 +128,31 @@ span label {
   width: 100%;
 }
 
-#label-gender {
+#label-gender, #label-birthdate {
   color: #90949c;
   font-size: 16px;
   width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#facebook-register {
+  color: white;
+  background: linear-gradient(#79bc64, #578843);
+  box-shadow: inset 0 1px 1px #a4e388;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  border-radius: 0.3em;
+  min-width: 194px;
+  height: 3em;
+  font-weight: bold !important;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: space-between;
 }
