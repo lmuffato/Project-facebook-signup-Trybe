@@ -139,13 +139,12 @@ h1 {
 }
 
 #field-gender {
-  flex-direction: column;
+  display: flex;
   border: none;
 }
 
-.radio-btn {
-  justify-content: space-between;
-  align-content: space-between;
+#label-gender {
+  display: block;
 }
 
 #facebook-register {
