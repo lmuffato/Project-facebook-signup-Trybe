@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: Roboto, sans-serif;
+  color: rgb(51, 51, 51);
 }
 
 a {
@@ -32,7 +33,7 @@ label {
 .top-bar-container {
   display: flex;
   justify-content: space-between;
-  padding: 0.9rem 0 0.3rem 0;
+  padding: 1rem 0 0.3rem 0.6rem;
   flex-basis: 60%;
 }
 
@@ -58,7 +59,7 @@ label {
 }
 
 #button-login {
-  padding: 0.18rem 0.3rem;
+  padding: 0.20rem 0.33rem;
   background-color: rgb(70, 112, 196);
   border: none;
   border: 1px solid rgb(41, 72, 125);
@@ -85,7 +86,7 @@ label {
 
 .form-control {
   align-self: center;
-  margin-top: 0.1rem;
+  margin-bottom: 0.10rem;
   margin-left: 0.9rem;
 }
 
