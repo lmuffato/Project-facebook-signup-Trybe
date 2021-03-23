@@ -41,7 +41,7 @@
 }
 
 .left-content {
-  width: 800px;
+  min-width: 800px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;
