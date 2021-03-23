@@ -51,7 +51,7 @@ function getGender() {
     result = 'Feminino';
   } else if (masc === true) {
     result = 'Masculino';
-  } else if(person === true) {
+  } else if (person === true) {
     result = 'Personalizado';
   }
   return result;
