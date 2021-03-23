@@ -21,7 +21,7 @@
   font-style: inherit;
   color: white;
   font-family: Helvetica, Arial, sans-serif;
-  padding: 0px 0px 0px 1px;
+  padding: 0 0 0 1px;
 }
 
 .form-group {
@@ -38,15 +38,15 @@
 .main-content {
   display: flex;
   justify-content: center;
-  background: linear-gradient(white, #D3D8E8);
-    background-image: linear-gradient(white, rgb(211, 216, 232));
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: initial;
+  background: linear-gradient(white, #d3d8e8);
+  background-image: linear-gradient(white, rgb(211, 216, 232));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
 }
 
 .left-content {
@@ -90,6 +90,6 @@
   word-spacing: -1px;
 }
 
-#input-radios{
+#input-radios {
   display: flex;
 }
