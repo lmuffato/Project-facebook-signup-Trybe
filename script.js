@@ -2,6 +2,11 @@
 let submitCount = 0;
 const buttonFacebookRegister = document.querySelector('#facebook-register');
 const buttonCustomGender = document.querySelector('#custom');
+const invalidQuery = document.querySelector('#invalid');
+const invalidText = 'Campos inválidos';
+const inputGenderPtOne = '<input name="gender-custom"';
+const inputGenderPtTwo = 'placeholder="Gênero (opcional)" type="text">';
+const newGender = `${inputGenderPtOne} ${inputGenderPtTwo}`;
 
 // REQUISITO 5
 
@@ -11,26 +16,11 @@ function login() {
 }
 
 // REQUISITO 18
-
-function validateRegister() {
-  submitCount = 0;
-  validateFirstName();
-  validateLastName();
-  validatePhoneEmail();
-  validatePassword();
-  validateBirthDate();
-  validateGender();
-
-  if (submitCount === 6) {
-    welcome();
-  }
-}
-
 // Funções de Validação //
 // https://www.w3schools.com/jsref/coll_doc_forms.asp //
 function validateFirstName() {
   if (document.forms.registrationForm.firstname.value === '') {
-    document.querySelector('#invalid').innerText = 'Campos inválidos';
+    invalidQuery.innerText = invalidText;
   } else {
     submitCount += 1;
   }
@@ -38,7 +28,7 @@ function validateFirstName() {
 
 function validateLastName() {
   if (document.forms.registrationForm.lastname.value === '') {
-    document.querySelector('#invalid').innerText = 'Campos inválidos';
+    invalidQuery.innerText = invalidText;
   } else {
     submitCount += 1;
   }
@@ -46,7 +36,7 @@ function validateLastName() {
 
 function validatePassword() {
   if (document.forms.registrationForm.password.value === '') {
-    document.querySelector('#invalid').innerText = 'Campos inválidos';
+    invalidQuery.innerText = invalidText;
   } else {
     submitCount += 1;
   }
@@ -54,7 +44,7 @@ function validatePassword() {
 
 function validatePhoneEmail() {
   if (document.forms.registrationForm.phone_email.value === '') {
-    document.querySelector('#invalid').innerText = 'Campos inválidos';
+    invalidQuery.innerText = invalidText;
   } else {
     submitCount += 1;
   }
@@ -62,7 +52,7 @@ function validatePhoneEmail() {
 
 function validateBirthDate() {
   if (document.forms.registrationForm.birthdate.value === '') {
-    document.querySelector('#invalid').innerText = 'Campos inválidos';
+    invalidQuery.innerText = invalidText;
   } else {
     submitCount += 1;
   }
@@ -70,7 +60,7 @@ function validateBirthDate() {
 
 function validateGender() {
   if (document.forms.registrationForm.gender.value === '') {
-    document.querySelector('#invalid').innerText = 'Campos inválidos';
+    invalidQuery.innerText = invalidText;
   } else {
     submitCount += 1;
   }
@@ -80,7 +70,7 @@ function validateGender() {
 
 function createCustomGender() {
   const custom = document.querySelector('#hidden-input');
-  custom.innerHTML = '<input name="gender-custom" placeholder="Gênero (opcional)" type="text">';
+  custom.innerHTML = newGender;
 }
 
 function dataView(fullName, mail, dateBirth, gender) {
@@ -100,11 +90,9 @@ function dataView(fullName, mail, dateBirth, gender) {
         ${textGender}
     </p>`;
 }
-
 function welcome() {
   const rightContent = document.querySelector('.right-content');
   const registrationForm = document.querySelector('#registrationForm');
-
   const firstName = registrationForm.querySelector('#firstname').value;
   const lastName = registrationForm.querySelector('#lastname').value;
   const fullName = `${firstName} ${lastName}`;
@@ -112,6 +100,19 @@ function welcome() {
   const dateBirth = registrationForm.birthdate.value;
   const gender = registrationForm.querySelector('input[name=gender]:checked');
   rightContent.innerHTML = dataView(fullName, emailOrPhone, dateBirth, gender);
+}
+
+function validateRegister() {
+  submitCount = 0;
+  validateFirstName();
+  validateLastName();
+  validatePhoneEmail();
+  validatePassword();
+  validateBirthDate();
+  validateGender();
+  if (submitCount === 6) {
+    welcome();
+  }
 }
 
 // Eventos //
