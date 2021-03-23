@@ -61,8 +61,6 @@ a {
 
 .left-content {
   width: 800px;
-  margin-top: 30px;
-  margin-left: 200px;
 }
 
 .right-content {
@@ -74,10 +72,7 @@ a {
 }
 
 #facebook-slogan {
-  color: darkblue;
-  font-family: sans-serif;
-  font-size: 20px;
-  font-weight: 800;
+  color: black;
 }
 
 h1 , h3 {
