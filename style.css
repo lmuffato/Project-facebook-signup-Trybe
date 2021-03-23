@@ -46,7 +46,7 @@ label {
   flex-direction: column;
 }
 
-.form-group:nth-child(1) {
+.form-group:nth-child( 1 ) {
   margin-right: 0.9rem;
 }
 
@@ -59,9 +59,8 @@ label {
 }
 
 #button-login {
-  padding: 0.20rem 0.33rem;
+  padding: 0.2rem 0.33rem;
   background-color: rgb(70, 112, 196);
-  border: none;
   border: 1px solid rgb(41, 72, 125);
   border-radius: 0.125rem;
   color: white;
@@ -86,14 +85,14 @@ label {
 
 .form-control {
   align-self: center;
-  margin-bottom: 0.10rem;
+  margin-bottom: 0.1rem;
   margin-left: 0.9rem;
 }
 
 /* Main */
 .main-content {
   display: flex;
-  background: linear-gradient(white, #D3D8E8);
+  background: linear-gradient(white, #d3d8e8);
 }
 
 .left-content {
