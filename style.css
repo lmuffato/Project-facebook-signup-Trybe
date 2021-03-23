@@ -114,3 +114,7 @@ input {
 .nome * {
   max-width: 48%;
 }
+
+.gender {
+  margin: 5px 0;
+}
