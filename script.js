@@ -6,7 +6,7 @@ window.onload = function startin() {
   });
   const btnRegister = document.getElementById('facebook-register');
   btnRegister.addEventListener('click', () => {
-    const formValues = document.querySelectorAll('.right-content input').value;
+    const formValues = document.querySelectorAll('.right-content input').value
     console.log(formValues);
   });
 };
