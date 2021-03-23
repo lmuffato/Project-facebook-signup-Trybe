@@ -99,7 +99,7 @@ main {
   display: flex;
   justify-content: space-around;
   padding: 1% 0;
-  width: 900px;
+  width: 100%;
 }
 
 .left-content {
@@ -142,11 +142,16 @@ main {
 }
 
 .first-last-name {
-  width: 140px;
+  width: 135px;
+}
+
+.main-form-input {
+  padding: 4px 2px;
+  margin-bottom: 6px;
 }
 
 .data {
-  width: 100%;
+  width: 97%;
 }
 
 #label-gender {
