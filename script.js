@@ -10,20 +10,17 @@ const fields = document.querySelectorAll('[required]');
 
 console.log(fields);
 
-function checkField (event) {
+function checkField(event) {
   const field = event.target;
-
-  function checkErrors () {
+  function checkErrors() {
     let errorFound = false;
     for (let error in field.validity) {
-      //console.log('Teste:' + fields.validity[error]);
       if (error !== 'customError' && field.validity[error]) {
         errorFound = true;
       }
     }
     return errorFound;
   }
-
   const result = checkErrors();
   if (result) {
     field.setCustomValidity('Campo inválido');
@@ -32,13 +29,14 @@ function checkField (event) {
   }
 }
 
-function validateInputs () {
+function validateInputs() {
   for (let index = 0; index < fields.length; index += 1) {
     fields[index].addEventListener('invalid', checkField);
   }
 }
 
-document.querySelector('#facebook-register').addEventListener("click", validateInputs);
+const submitButton = document.querySelector('#facebook-register');
+submitButton.addEventListener('click', validateInputs);
 
 /* function checkTextInputs() {
   const inputs = document.querySelectorAll('.main-form input');
