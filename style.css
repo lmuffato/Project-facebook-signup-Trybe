@@ -37,10 +37,15 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  margin-top: 10px;
 }
 
 .left-content {
   width: 800px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .left-content p {
@@ -48,12 +53,14 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 29px;
-  margin-top: 40px;
+  margin-top: 20px;
+  width: 450px;
   word-spacing: -1px;
 }
 
 .right-content {
   width: 300px;
+  margin-right: 300px;
 }
 
 .right-content h1 {
@@ -77,11 +84,33 @@
 }
 
 .name input {
-  width: 200px;
+  width: 194px;
   margin-right: 12px;
 }
 
 .name {
   display: flex;
   flex-flow: row nowrap;
+}
+
+.email-password {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.email-password input {
+  margin-top: 12px;
+  width: 400px;
+}
+
+.birthdate {
+  margin-top: 12px;
+  color: #90949c;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.birthdate input {
+  margin-top: 8px;
+  width: 194px;
 }
