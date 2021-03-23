@@ -77,8 +77,12 @@ body {
   width: 100%;
 }
 
+.main-content input {
+  font-size: 1em;
+}
+
 .main-content input::placeholder {
-  font-size: 1.5em;
+  font-size: 1em;
   color: rgb(153, 153, 153);
 }
 
@@ -114,6 +118,17 @@ body {
 .genero {
   display: flex;
   margin-top: 10px;
+}
+
+.genero div + div {
+  margin-left: 4.2px;
+}
+
+.genero label {
+  color: 	rgb(48,48,48);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
 }
 
 #label-gender {
