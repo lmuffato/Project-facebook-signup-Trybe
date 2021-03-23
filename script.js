@@ -98,7 +98,6 @@ function createList() {
 
 function checkMemory() {
   if (sessionStorage.getItem('info') !== null) {
-    // document.querySelector('#disapear').style.display = 'none';
     createList();
   }
 }
