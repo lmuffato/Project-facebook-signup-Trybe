@@ -40,6 +40,8 @@
   width: 120px;
 }
 
-.gender-content {
+#label-gender {
+  display: flex;
+  flex-direction: column;
   font-size: 13px;
 }
