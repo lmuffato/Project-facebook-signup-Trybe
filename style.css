@@ -50,3 +50,7 @@ form {
 #customGender {
   display: none;
 }
+
+#facebook-register {
+  align-self: flex-end;
+}
