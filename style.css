@@ -105,12 +105,6 @@ body {
   justify-content: flex-start;
 }
 
-#fullname {
-  display: flex;
-  justify-content: space-between;
-  background-color: darkblue;
-}
-
 /* ------------------------ footer ---------------------- */
 footer {
   background-color: white;
