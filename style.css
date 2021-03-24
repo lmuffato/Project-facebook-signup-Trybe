@@ -137,6 +137,5 @@ p {
 .facebook-login {
   display: flex;
   height: 30px;
-  position: absolute;
   width: 300px;
 }
