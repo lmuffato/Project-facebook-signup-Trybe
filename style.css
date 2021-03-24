@@ -3,22 +3,14 @@
   margin: 0;
   font-size: 100%;
   font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 .top-bar {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   background-color: rgb(66, 103, 178);
   height: 82px;
-  width: 100vw;
-}
-
-.menu-conteiner {
-  display: flex;
-  justify-content: space-around;
-  height: 65px;
-  width: 90vw;
-  padding: 13px 0 0;
 }
 
 .top-bar img {
@@ -55,7 +47,7 @@
 .form-control {
   display: flex;
   align-self: flex-end;
-  padding: 0 0 12px 14px;
+  padding: 0 0 20px 14px;
   text-align: center;
   text-shadow: none;
   white-space: nowrap;
