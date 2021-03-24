@@ -109,6 +109,10 @@ body {
   display: none;
 }
 
+#gender-container {
+  display: flex;
+}
+
 /* ------------------------ footer ---------------------- */
 footer {
   background-color: white;
