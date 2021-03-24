@@ -19,3 +19,13 @@ btnRegister.addEventListener('click', (event) => {
     }
   }
 });
+
+const otherGender = document.querySelector('#other');
+otherGender.addEventListener('click', () => {
+  const nowrapClass = document.querySelector('.nowrap');
+  const inputGender = document.createElement('input');
+  inputGender.type = 'text';
+  inputGender.placeholder = 'Gênero (opcional)';
+  inputGender.name = 'gender-custom';
+  nowrapClass.appendChild(inputGender);
+});
