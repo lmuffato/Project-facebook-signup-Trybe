@@ -128,13 +128,13 @@ span label {
   width: 100%;
 }
 
-#label-gender, #label-birthdate {
+#label-gender , #label-birthdate {
   color: #90949c;
   font-size: 16px;
   width: 100%;
   margin-top: 10px;
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 #facebook-register {
@@ -145,7 +145,7 @@ span label {
   border-radius: 0.3em;
   min-width: 194px;
   height: 3em;
-  font-weight: bold !important;
+  font-weight: 900;
   margin-top: 10px;
   margin-bottom: 10px;
 }
