@@ -10,22 +10,23 @@ function signAlert() {
 
 // Requisito 19
 const gender = document.querySelector('#gender-custom');
+const custom = document.querySelector('#custom');
+const male = document.querySelector('#male');
+const female = document.querySelector('#female');
+
 function genderCustom() {
-  const custom = document.querySelector('#custom');
   custom.addEventListener('click', () => {
     gender.style.display = 'flex';
   });
 }
 
 function hideCustomMale() {
-  const male = document.querySelector('#male');
   male.addEventListener('click', () => {
     gender.style.display = 'none';
   });
 }
 
 function hideCustomFemale() {
-  const female = document.querySelector('#female');
   female.addEventListener('click', () => {
     gender.style.display = 'none';
   });
