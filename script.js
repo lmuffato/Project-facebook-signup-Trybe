@@ -23,44 +23,42 @@ personalizadoRadioButton.addEventListener('click', adicionaCampoPersonalizado);
 
 function validaCampoNome() {
   if (document.getElementById('first-name').value.length < 3) {
-    window.alert('Por favor, preencha todos ods campos');
+    document.getElementById("first-name").focus();
   }
 }
 function validaCampoSobrenome() {
   if (document.getElementById('last-name').value.length < 3) {
-    window.alert('Por favor, preenchad todos os campos');
+    document.getElementById("last-name").focus();
   }
 }
 
 function validaCampoSenha() {
   if (document.getElementById('password').value.length < 3) {
-    window.alert('Por favor,preencha todos os campos');
+    document.getElementById("password").focus();
   }
 }
 
 function validaCampoDataNascimento() {
   if (document.getElementById('birthdate').value.length < 3) {
-    window.alert('Por favor, preencha todos os campos');
+    document.getElementById("birthdate").focus();
   }
 }
 function validaCampoEmailOuCelular() {
   if (document.getElementById('phone-email').value.length < 3) {
-    window.alert('Por favor, preencha todos os campos');
+    document.getElementById("phone-email").focus();
   }
 }
 
 function validaGenero() {
   let isButtonChecked = false;
-  for (index = 0; index <= radioButtons.length; index += 1){
-   if (radioButtons.checked === true);{ 
-   isButtonChecked = true
+  for (let index = 0; index <= radioButtons.length; index += 1) {
+    if (radioButtons.checked === true); {
+      isButtonChecked = true
+    };
   }
- }
-    return isButtonChecked;
+  return isButtonChecked;
 }
   
-
-
 function handleFunctions() {
   validaCampoNome();
   validaCampoSenha();
