@@ -7,10 +7,6 @@ const idSucessRegister = document.querySelector('#successRegister');
 const form = document.querySelector('.createUser');
 const register = document.querySelector('.register');
 const quickEasy = document.querySelector('.quick-easy');
-const submitButton = document.querySelector('.submitButton');
-const msgMobile = document.querySelector('.msgMobile');
-const personalizedGender = document.querySelector('#personalizedGender');
-const customGender = document.getElementById('customGender');
 
 const generateInvalidMessage = () => {
   idMessageInvalid.innerHTML = '';
@@ -98,9 +94,16 @@ const validateForm = (e) => {
   }
 };
 
-function resetGender() {
-  if ((personalizedGender.innerHTML.length === 7)) {
-    const parentEle = personalizedGender;
+window.onload = () => {
+  document.querySelector('#button-login').addEventListener('click', () => {
+    alert(document.querySelector('#user-email-phone').value);
+  });
+  idSuccessButton.addEventListener('click', validateForm);
+};
+
+function genderCustom() {
+  if (document.querySelector('#customGender').checked === true) {
+    const parentEle = document.querySelector('#personalizedGender');
     const elem = document.createElement('input');
     parentEle.appendChild(elem);
     Object.assign(elem, {
@@ -112,27 +115,11 @@ function resetGender() {
   }
 }
 
-window.onload = () => {
-  document.querySelector('#button-login').addEventListener('click', () => {
-    alert(document.querySelector('#user-email-phone').value);
-  });
-  idSuccessButton.addEventListener('click', validateForm);
-  submitButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    if (window.innerWidth < 1100) {
-      msgMobile.style.display = 'block';
-    }
-  });
-  customGender.addEventListener('click', resetGender);
-  document.getElementById('male').addEventListener('change', resetGender);
-  document.getElementById('female').addEventListener('change', resetGender);
-};
+function Clicou1() {
+  genderCustom();
+}
 
-window.onresize = () => {
-  if (window.innerWidth < 1100) {
-    msgMobile.style.display = 'none';
-  }
-};
+document.getElementById('customGender').addEventListener('click', Clicou1);
 
 function clickParaSelecionar() {
   document.getElementById(genderCustomConst).remove();
