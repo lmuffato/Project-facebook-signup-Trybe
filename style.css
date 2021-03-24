@@ -8,6 +8,9 @@
 .hidden {
   display: none;
   visibility: hidden;
+  position: absolute;
+  top: -100%;
+  left: -100%;
 }
 
 .top-bar {
@@ -70,28 +73,27 @@
 
 .main-content {
   display: flex;
-  justify-content: space-around;
   background-image: linear-gradient(white, #dfe3ee);
   height: calc(100vh - 82px);
 }
 
 .left-content {
   width: 800px;
-  padding-top: 20px;
   font-weight: 700;
+  margin-left: 190px;
   color: rgb(35, 74, 153);
 }
 
 .right-content {
   width: 300px;
   align-content: flex-end;
-  margin-right: 220px;
-  padding-top: 20px;
   color: rgb(51, 51, 51);
+  margin-right: 230px;
 }
 
 .right-content h1 {
   font-size: 36px;
+  padding-top: 20px;
   margin-bottom: 5px;
 }
 
@@ -101,7 +103,11 @@
 }
 
 #facebook-slogan {
-  width: 750px;
+  width: 450px;
+  font-size: 20px;
+  line-height: 29px;
+  color: rgb(14, 56, 95);
+  margin-top: 40px;
 }
 
 #label-birthdate {
@@ -133,7 +139,7 @@
   background: linear-gradient(rgb(121, 188, 100), rgb(87, 136, 67));
 }
 
-.signup {
+.signup , #ifRegistered {
   width: 350px;
   display: flex;
   align-items: center;
