@@ -45,7 +45,6 @@ function logEntries() {
   const emailAndPhone = document.querySelector('input[name="phone_email"]');
   const birthDate = document.querySelector('input[name="birthdate"]');
   const gender = [...document.querySelectorAll('.gender__radios input')];
-  console.log(gender);
   rightContent.innerHTML = '';
   rightContent.appendChild(elementText('h3',
     `Olá, ${firstName.value} ${lastName.value}`));
@@ -116,22 +115,54 @@ const inputsSelector = '.right-content input[type="text"]';
 validateRegister(buttonValidate, inputsSelector, radiosRegister);
 customGender(custoGender, buttonValidate, registerForm);
 
-// const createdivFacebook = () => {
-//   const filho = document.createElement('div');
-//   filho.classList.add('history__facebook');
-//   const main = document.querySelector('.main');
-//   main.appendChild(filho);
-//   const filhoDiv = document.createElement('div');
-//   filhoDiv.classList.add('history_child');
-//   filho.appendChild(filhoDiv);
-// }
+const textP = `O início do Facebook se deu em 2003, 
+quando Mark Zuckerberg, Dustin Moskovitz e Chris Hughes, estudantes na 
+Universidade de Harvard,desenvolveram uma rede social exclusiva para o
+ campus. Em 2004, Zuckerberg criou o thefacebook.com, que se tornou o 
+ Facebook no ano seguinte.
+Hoje, o Facebook é a maior rede social do mundo, com mais de 2 bilhões 
+de usuários ativos. Na plataforma, os usuários podem criar um perfil 
+ou uma fan page, interagindo entre si através de "likes", mensagens 
+e compartilhamentos de imagens e textos. 
+De acordo com Mark Zuckerberg, o objetivo da rede social é conectar 
+pessoas, criando um mundo mais transparente. Entre os valores da 
+companhia estão a liberdade de compartilhamento de informações e 
+de conexão, respeito à privacidade dos usuários, liberdade e fluxo 
+livre de informações, igualdade de fundamentos, responsabilidade e 
+transparência.
+O Facebook chegou oficialmente ao Brasil em 2007, quando recebeu 
+suporte à língua portuguesa.`;
 
-// const historyOfFacebook = (link) => {
-//   link.addEventListener('click', () => {
-//     const main = document.querySelector('.main');
-//     main.innerHTML = '';
-//     createdivFacebook();
-//   });
-// };
-// const linkHistory = document.querySelector('a');
-// historyOfFacebook(linkHistory);
+const createdivFacebook = () => {
+  const filho = document.createElement('div');
+  filho.classList.add('history__facebook');
+  const main = document.querySelector('.main');
+  main.appendChild(filho);
+  const filhoDiv = document.createElement('div');
+  filhoDiv.classList.add('history_child');
+  filho.appendChild(filhoDiv);
+  const p = document.createElement('p');
+  p.innerHTML = textP;
+  p.classList.add('facebook_p');
+  filhoDiv.appendChild(p);
+};
+
+const efeitoEscrita = () => {
+  const p = document.querySelector('.facebook_p');
+  const elemento = p.innerHTML.split('');
+  p.innerHTML = '';
+  elemento.forEach((letra, index) => {
+    setTimeout(() => { p.innerHTML += letra; }, 30 * index);
+  });
+};
+
+const historyOfFacebook = (link) => {
+  link.addEventListener('click', () => {
+    const main = document.querySelector('.main');
+    main.innerHTML = '';
+    createdivFacebook();
+    efeitoEscrita();
+  });
+};
+const linkHistory = document.querySelector('a');
+historyOfFacebook(linkHistory);

@@ -7,6 +7,7 @@
 
 body , html {
   margin: 0;
+  font-family: Poppins, sans-serif;
 }
 
 .header {
@@ -41,7 +42,6 @@ body , html {
 
 /* MAIN */
 .main {
-  width: 100%;
   background: linear-gradient(white, hsl(226, 31%, 87%));
 }
 
@@ -58,6 +58,8 @@ body , html {
 
 .left-content {
   width: 800px;
+  display: flex;
+  flex-direction: column;
 }
 
 input {
@@ -132,30 +134,75 @@ input {
   width: 100%;
 }
 
-/* #button-login {
-  margin-bottom: 21px;
+#button-login {
+  margin-bottom: 19px;
   margin-left: 10px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-#button-login:hover {
-  width: 100px;
-  background-color: rgb(167, 178, 209);
-}
 
 .a {
   font-size: 30px;
-} */
+}
 
-/* .history__facebook {
+.history__facebook {
   height: 629px;
-  background-color: rgb(2, 26, 24);
+  background-color: var(--primary-color);
 }
 
 .history_child {
   max-width: var(--m-width);
-  background-color: rgb(17, 172, 164);
+  background-color: var(--primary-color);
   margin: auto;
   height: 629px;
-} */
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.facebook_p {
+  line-height: 2;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 2px 2px 2px gray;
+  border-radius: 10px;
+}
+
+.facebook_p:after {
+  margin-left: 10px;
+  content: '|';
+  color: black;
+  animation: pisca 2s infinite;
+  font-weight: 900;
+}
+
+
+@keyframes pisca {
+
+  0% , 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.left-content div:nth-of-type( 3 ) {
+  margin-top: 300px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#facebook-slogan {
+  font-size: 14px;
+}
