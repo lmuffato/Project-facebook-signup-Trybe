@@ -63,3 +63,7 @@ function messageInvalid() {
 const btn = document.getElementById('facebook-register');
 btn.addEventListener('click', clearMessage);
 btn.addEventListener('click', messageInvalid);
+
+for (let index = 0; index < fields.length; index += 1) {
+  fields[index].addEventListener('keydown', clearMessage);
+}
