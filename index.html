@@ -31,8 +31,8 @@
       <div class="right-content">
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
-        <form id="collectName">
-          <input type="text" name="firstname" placeholder="Nome">
+        <form class="fields" id="collectName">
+          <input id="newName" type="text" name="firstname" placeholder="Nome">
           <input type="text" name="lastname" placeholder="Sobrenome">
           <input class="fill" type="text" name="phone_email" placeholder="Celular ou email">
           <div class="break"></div>
@@ -45,7 +45,7 @@
           <label id="label-gender">Gênero</label>
           <div class="break"></div>
           <div id="collect-gender">            
-            <input id="female" type="radio" value="Feminino" name="gender">
+            <input id="female" type="radio" value="Feminino" name="gender" required>
             <label for="female">Feminino</label>           
             <input id="male" type="radio" value="Masculino" name="gender">
             <label for="male">Masculino</label>        
