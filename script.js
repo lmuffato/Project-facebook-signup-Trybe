@@ -15,12 +15,12 @@ function validateInputsTextAndPassword() {
   let validation = true;
   for (let index = 0; index < inputsTextAndPassword.length; index +=1) {
     if (inputsTextAndPassword[index].value === '') {
-      validation = false;   
+      validation = false;
+      break;
     }
   }
   return validation;
 }
-console.log(validateInputsTextAndPassword())
 
 function validateInputsRadio() {
   let validation = true;
@@ -29,15 +29,14 @@ function validateInputsRadio() {
       validation = false;   
     } else {
       validation = true;
+      break;
     }
   }
   return validation;
 }
-console.log(validateInputsRadio())
-console.log(validateInputsTextAndPassword() + validateInputsRadio())
 
 function validateForm(e) {
-  e.preventDeflaut();
+  e.preventDefault();
   const inputsValidation = validateInputsTextAndPassword() + validateInputsRadio();
   if (inputsValidation <= 1) {
     let invalidText = document.createElement('p');
@@ -45,6 +44,5 @@ function validateForm(e) {
     invalidText.innerText = "Campos Inválidos";
   }
 }
-console.log(validateForm())
 
 registerButton.addEventListener('click', validateForm);
