@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   font-size: 100%;
-  box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -12,15 +11,13 @@
   background-color: rgb(66, 103, 178);
   height: 82px;
   width: 100vw;
-  min-width: 980px;
-  justify-content: space-between;
 }
 
 .menu-conteiner {
   display: flex;
   justify-content: space-between;
-  height: 78px;
-  min-width: 980px;
+  height: 65px;
+  width: 980px;
   margin: 0 193px;
   padding: 13px 0 0;
 }
@@ -46,12 +43,18 @@
 .form-group label {
   color: white;
   padding-bottom: 4px;
+  font-size: 12px;
+}
+
+.form-group input {
+  width: 146px;
+  height: 19px;
 }
 
 .form-control {
   display: flex;
   align-self: flex-end;
-  padding: 0 0 10px 14px;
+  padding: 0 0 12px 14px;
   text-align: center;
   text-shadow: none;
   white-space: nowrap;
