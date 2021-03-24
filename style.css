@@ -56,3 +56,8 @@
   display: flex;
   flex-direction: row;
 }
+
+#genders {
+  display: flex;
+  flex-direction: row;
+}
