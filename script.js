@@ -1,3 +1,4 @@
+// Requisito 7
 const botaoEntrar = document.getElementById('button-login');
 
 function alerta() {
@@ -12,14 +13,7 @@ botaoEntrar.addEventListener('click', () => {
 
 // Requisito 18
 
-// const fieldsForm = document.querySelectorAll('[required]');
-
 const buttonSubmit = document.getElementById('facebook-register');
-
-/* function clearMessage() {
-  const clearParagraph = document.querySelector('.alert-form');
-  clearParagraph.remove();
-} */
 
 function checkInput() {
   const formCheck = document.getElementById('inputs-form');
@@ -79,7 +73,7 @@ function createElement() {
 
 clickCustom.addEventListener('click', createElement);
 
-// Requisito 20//
+// Requisito 20
 
 function getElements() {
   const name = document.querySelector('input[name="firstname"]').value;
@@ -115,11 +109,9 @@ function createLogin() {
   ${gender}`;
 
   container.innerHTML = text;
-  console.log('passei aqui');
 }
 
 buttonSubmit.addEventListener('click', (event) => {
-  // clearMessage();
   event.preventDefault();
   if (checkAll() === true) {
     createLogin();
