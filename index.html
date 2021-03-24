@@ -20,7 +20,7 @@
                 <input type="password" id="user-password">
             </div>
             <div class="form-control">
-                <input type="button" id="button-login" value="Entrar">
+                <button id="button-login" onclick="entrarButton()">Entrar</button>
             </div>
         </form>
     </header>
@@ -48,6 +48,7 @@
                     <label for="male"><input type="radio" name="gender" id="male" value="male"> Masculino</label>
                     <label for="female"><input type="radio" name="gender" id="female" value="female"> feminino</label>
                     <label for="other"><input type="radio" name="gender" id="other" value="other"> Personalizado</label>
+                    <label for="control" class="no-view"><input type="radio" name="gender" id="control" value="control" checked></label>
                 </div>
                 <button type="submit" id="facebook-register">Cadastre-se</button>     
             </form>
