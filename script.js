@@ -9,15 +9,12 @@ function alertaT() {
 buttonLoggin.addEventListener('click', alertaT);
 
 /* ----- function add personalized gender ----- */
-const personalizado = document.querySelector('#Personalizado');
-
 function createCustomGender() {
-  const gender = document.querySelector('#gender-container');
-  const genderCustom = document.createElement('input');
-  genderCustom.type = 'text';
-  genderCustom.name = 'gender-custom';
-  genderCustom.placeholder = 'Gênero (opcional)';
-  gender.appendChild(genderCustom);
+  const personalizado = document.querySelector('#Personalizado');
+  const genderCustom = document.querySelector('#custom-gender');
+  if (personalizado.checked === true) {
+    genderCustom.style.display = "block";
+  } else {
+    genderCustom.style.display = "none";
+  } 
 }
-
-personalizado.addEventListener('click', createCustomGender);

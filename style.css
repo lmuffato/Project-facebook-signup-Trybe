@@ -105,6 +105,10 @@ body {
   justify-content: flex-start;
 }
 
+#custom-gender {
+  display: none;
+}
+
 /* ------------------------ footer ---------------------- */
 footer {
   background-color: white;
