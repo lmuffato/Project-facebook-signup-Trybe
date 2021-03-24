@@ -58,3 +58,19 @@
   margin-bottom: 10px;
   color: rgb(0, 45, 134);
 }
+
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inputLastName {
+  width: 40%;
+  margin-left: 5px;
+}
+
+.inputName {
+  width: 40%;
+  margin-right: 5px;
+}
