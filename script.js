@@ -36,7 +36,10 @@ const fields = document.querySelectorAll('[required]');
 const cadasForm = document.querySelectorAll('form')[1];
 
 function clearMessage() {
-  cadasForm.removeChild(document.getElementById('message-invalid'));
+  const msgInvalid = document.getElementById('message-invalid');
+  if (msgInvalid !== null) {
+    cadasForm.removeChild(msgInvalid);
+  }
 }
 
 function verifError() {
