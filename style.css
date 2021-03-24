@@ -127,3 +127,8 @@ p {
   height: 45px;
   margin-top: 22px;
 }
+
+.print-data {
+  display: flex;
+  flex-direction: column;
+}
