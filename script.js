@@ -21,42 +21,45 @@ function adicionaCampoPersonalizado() {
 loginButton.addEventListener('click', exibirAlertaDeLogin);
 personalizadoRadioButton.addEventListener('click', adicionaCampoPersonalizado);
 
-
 function validaCampoNome() {
-  if(document.getElementById('first-name').value.length < 3) {
-  window.alert('Por favor, preencha todos os campos');
-  };
-};
+  if (document.getElementById('first-name').value.length < 3) {
+    window.alert('Por favor, preencha todos ods campos');
+  }
+}
 function validaCampoSobrenome() {
-  if(document.getElementById('last-name').value.length < 3) {
-  window.alert('Por favor, preencha todos os campos');
-  };
-};
+  if (document.getElementById('last-name').value.length < 3) {
+    window.alert('Por favor, preenchad todos os campos');
+  }
+}
 
 function validaCampoSenha() {
-  if(document.getElementById('password').value.length < 3) {
-  window.alert('Por favor, preencha todos os campos');
-  };
-};
+  if (document.getElementById('password').value.length < 3) {
+    window.alert('Por favor,preencha todos os campos');
+  }
+}
 
 function validaCampoDataNascimento() {
-  if(document.getElementById('birthdate').value.length < 3) {
-  window.alert('Por favor, preencha todos os campos');
-  };
-};    
+  if (document.getElementById('birthdate').value.length < 3) {
+    window.alert('Por favor, preencha todos os campos');
+  }
+}
 function validaCampoEmailOuCelular() {
-  if(document.getElementById('phone-email').value.length < 3) {
-  window.alert('Por favor, preencha todos os campos');
-  };
-};
+  if (document.getElementById('phone-email').value.length < 3) {
+    window.alert('Por favor, preencha todos os campos');
+  }
+}
 
 function validaGenero() {
   let isButtonChecked = false;
-  for (element in radioButtons){
-  if(element.checked == true);{ isButtonChecked = true};
-  };
-  return isButtonChecked;
-};
+  for (index = 0; index <= radioButtons.length; index += 1){
+   if (radioButtons.checked === true);{ 
+   isButtonChecked = true
+  }
+ }
+    return isButtonChecked;
+}
+  
+
 
 function handleFunctions() {
   validaCampoNome();
@@ -65,6 +68,6 @@ function handleFunctions() {
   validaCampoDataNascimento();
   validaCampoEmailOuCelular();
   validaGenero();
-};
+}
 
 submitFormButton.addEventListener('click', handleFunctions);
