@@ -121,6 +121,7 @@ p {
   display: flex;
   background-color: rgb(66, 103, 178);
   height: 80px;
+  justify-content: left
 }
 
 .facebook-logo {
@@ -131,4 +132,12 @@ p {
 .print-data {
   display: flex;
   flex-direction: column;
+}
+
+.facebook-login {
+  display: flex;
+  height: 30px;
+  position: absolute;
+  right:0px;
+  width:300px;
 }
