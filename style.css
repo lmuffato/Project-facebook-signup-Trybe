@@ -43,6 +43,7 @@ body {
 
 .left-content {
   width: 800px;
+  max-width: 60%;
   display: flex;
   flex-flow: column nowrap;
   margin-top: 40px;
