@@ -122,11 +122,8 @@ input {
 
 #form {
   display: flex;
-  flex-direction: column;
-}
-
-.firstname-lastname {
-  width: 2px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .facebook-login {
@@ -161,12 +158,6 @@ input {
   width: 329px;
 }
 
-#form {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
 #form input {
   width: 100%;
   height: 21px;
@@ -174,7 +165,7 @@ input {
   font-size: 18px;
   margin: 3px;
   border-radius: 5px;
-  border: 1px solid #ccd0d5
+  border: 1px solid #ccd0d5;
 }
 
 h1 {
