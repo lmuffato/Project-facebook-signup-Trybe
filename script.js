@@ -3,11 +3,7 @@ const inputNames = document.getElementsByClassName('input-fullname');
 const inputCelEmail = document.getElementsByClassName('input-form');
 const inputRadioButtons = document.querySelectorAll('.input-radios input');
 const alertButton = document.getElementById('button-login');
-
-alertButton.addEventListener('click', () => {
-  const loginValue = document.getElementById('user-email-phone').value;
-  alert(loginValue);
-});
+const inputBday = document.querySelectorAll('#input-birthdate');
 
 function verify(elementsArray) {
   let showAlert = false;
@@ -34,7 +30,13 @@ confirmButton.addEventListener('click', () => {
     verify(inputNames)
     || verify(inputCelEmail)
     || radioVerify(inputRadioButtons)
+    || verify(inputBday)
   ) {
     alert('Campos inválidos');
   }
+});
+
+alertButton.addEventListener('click', () => {
+  const loginValue = document.getElementById('user-email-phone').value;
+  alert(loginValue);
 });
