@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .top-bar {
@@ -17,6 +18,7 @@ header img {
 }
 
 header {
+  width: 100%;
   display: flex;
   justify-content: center;
   background-color: rgb(66, 103, 178);
@@ -80,6 +82,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 10;
 }
 
 .left-items {
