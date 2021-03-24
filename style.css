@@ -13,26 +13,12 @@ body {
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  justify-content: center;
-}
-
-.header-container {
-  display: flex;
-  width: 80%;
-  padding-top: 20px;
-  flex-direction: row;
-  align-content: center;
   justify-content: space-between;
 }
 
 .facebook-login {
   display: flex;
   align-self: flex-start;
-}
-
-.facebook-logo-container {
-  display: flex;
-  justify-content: flex-start;
 }
 
 .form-group {
