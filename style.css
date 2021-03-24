@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+
+  /*   background-image: linear-gradient(rgb(78, 105, 162), rgb(59, 89, 152) 50%); */
+  height: 82px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.facebook-login {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.form-control {
+  align-self: flex-end;
+  margin-bottom: 26px;
+  margin-left: 8px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0 8px;
+  font-size: 12px;
+}
+
+.form-group * {
+  margin-bottom: 6px;
+}
+
+.form-group a {
+  color: rgb(156, 180, 216);
+  padding-bottom: 0;
+}
+
+.form-group a:link {
+  text-decoration: none;
+}
+
+.form-group a:visited {
+  text-decoration: none;
+}
+
+.form-group a:hover {
+  text-decoration: underline;
+}
+
+.enter-btn {
+  background-color: rgb(66, 103, 178);
+  border-color: rgb(41, 72, 125);
+  border-width: 1px;
+  border-radius: 2px;
+  color: white;
+  font-weight: 700;
+}
