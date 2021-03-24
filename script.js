@@ -2,7 +2,6 @@ const confirmButton = document.getElementById('facebook-register');
 const inputNames = document.getElementsByClassName('input-fullname');
 const inputCelEmail = document.getElementsByClassName('input-form');
 const inputRadioButtons = document.querySelectorAll('.input-radios input');
-const inputBday = document.getElementById('input-birthdate');
 const alertButton = document.getElementById('button-login');
 
 alertButton.addEventListener('click', () => {
@@ -22,8 +21,8 @@ function verify(elementsArray) {
 
 function radioVerify(elementsRadio) {
   let radioValue = true;
-  for (let index = 0; index < inputRadioButtons.length; index += 1){
-    if(elementsRadio[index].checked){
+  for (let index = 0; index < inputRadioButtons.length; index += 1) {
+    if (elementsRadio[index].checked) {
       radioValue = false;
     }
   }
@@ -31,7 +30,11 @@ function radioVerify(elementsRadio) {
 }
 
 confirmButton.addEventListener('click', () => {
-  if (verify(inputNames) || verify(inputCelEmail) || radioVerify(inputRadioButtons)) {
+  if (
+    verify(inputNames)
+    || verify(inputCelEmail)
+    || radioVerify(inputRadioButtons)
+  ) {
     alert('Campos inválidos');
   }
 });
