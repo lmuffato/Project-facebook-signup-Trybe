@@ -47,16 +47,20 @@
 
       <form id="form-criacao" action="">
 
-        <div id="form-name">
-          <input type="text" name="firstname" placeholder="Nome" required>
-          <input type="text" name="lastname" placeholder="Sobrenome" required>
+        <div id="inputs-form">
+
+          <div id="form-name">
+            <input type="text" name="firstname" placeholder="Nome" required>
+            <input type="text" name="lastname" placeholder="Sobrenome" required>
+          </div>
+  
+          <input type="text" name="phone_email" placeholder="Celular ou email" required>
+          <input type="password" name="password" placeholder="Nova senha" required>
+  
+          <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
+
         </div>
-
-        <input type="text" name="phone_email" placeholder="Celular ou email" required>
-        <input type="password" name="password" placeholder="Nova senha" required>
-
-        <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
 
         <label id="label-gender" for="gender">Gênero</label>
         <div class="gender-content">

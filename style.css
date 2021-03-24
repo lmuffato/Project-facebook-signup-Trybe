@@ -62,6 +62,11 @@
   line-height: 25px;
 }
 
+#inputs-form {
+  display: flex;
+  flex-direction: column;
+}
+
 #form-name {
   display: flex;
   justify-content: space-between;
@@ -135,4 +140,9 @@ h1 {
 
 header img {
   width: 200px;
+}
+
+.incomplete {
+  color: red;
+  font-size: 17px;
 }
