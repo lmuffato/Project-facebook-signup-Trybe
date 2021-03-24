@@ -179,3 +179,20 @@ h1 {
   color: #1d2129;
   font-size: 19px;
 }
+
+#birthdateContainer {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  width: 91%;
+}
+
+#birthdateContainer label {
+  color: #90949c;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 5px;
+}
+.genderContainer {
+  display: flex;
+
+}
