@@ -53,14 +53,13 @@ function showInfosOnTheForm() {
   const tankingTheData = sessionStorage.getItem('infosForm');
   const onlyData = tankingTheData.split(',');
 
-  const greeting = document.createElement('p');
-  greeting.innerText = `Olá, ${onlyData[0]} 
+  const greeting = `Olá, ${onlyData[0]} 
   ${onlyData[1]} 
   ${onlyData[2]} 
   ${onlyData[3]} 
   ${onlyData[4]}`;
 
-  contentRight.appendChild(greeting);
+  contentRight.innerText = greeting;
 }
 
 function saveInfosForm() {
