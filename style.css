@@ -115,6 +115,7 @@ h1 {
   font-size: 12px;
   color: rgb(112, 104, 104);
   margin-top: 20px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .data-content input {
@@ -183,4 +184,5 @@ h1 {
   color: white;
   text-shadow: -1px 1px #467432;
   margin-bottom: 15px;
+  font-weight: 900;
 }
