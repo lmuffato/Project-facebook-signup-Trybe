@@ -6,31 +6,59 @@ window.onload = function startin() {
   });
 };
 
+// const fields = document.querySelectorAll('[required]');
+
+// function verifyError(event) {
+//   const field = event.target;
+//   let foundError = false;
+//   if (field.validity.valueMissing === true) {
+//     foundError = true;
+//   }
+//   return foundError;
+// }
+
+// function validation(event) {
+//   const field = event.target;
+//   const error = verifyError(event);
+//   if (error) {
+//     field.setCustomValidity('Campos inválidos');
+//   } else {
+//     field.setCustomValidity('');
+//   }
+// }
+
+// for (let index = 0; index < fields.length; index += 1) {
+//   fields[index].addEventListener('invalid', validation);
+// }
+
+const invalidField = document.getElementById('invalidFields');
+
 const fields = document.querySelectorAll('[required]');
 
-function verifyError(event) {
-  const field = event.target;
-  let foundError = false;
-  if (field.validity.valueMissing === true) {
-    foundError = true;
+function clearMessage() {
+  invalidField.removeChild(document.getElementById('message-invalid'));
+}
+
+function verifyError() {
+  let foundError = 0;
+  for (let index = 0; index < fields.length; index += 1) {
+    if (fields[index].validity.valueMissing === true) {
+      foundError += 1;
+    }
   }
   return foundError;
 }
 
-function validation(event) {
-  const field = event.target;
-  const error = verifyError(event);
-  if (error) {
-    field.setCustomValidity('Campos inválidos');
-  } else {
-    field.setCustomValidity('');
+function messageInvalid() {
+  const error = verifyError();
+  if (error > 0) {
+    const tagP = document.createElement('p');
+    tagP.innerText = 'Campos inválidos';
+    tagP.id = 'message-invalid';
+    invalidField.appendChild(tagP);
   }
 }
 
-for (let index = 0; index < fields.length; index += 1) {
-  fields[index].addEventListener('invalid', validation);
-}
-
-for (let index = 0; index < fields.length; index += 1) {
-  fields[index].addEventListener('keydown', validation);
-}
+const btn = document.getElementById('facebook-register');
+btn.addEventListener('click', clearMessage);
+btn.addEventListener('click', messageInvalid);
