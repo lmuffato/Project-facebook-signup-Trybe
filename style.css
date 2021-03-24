@@ -82,3 +82,26 @@
 .inputNone {
   display: none;
 }
+
+.radios-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-gender {
+  margin-top: 5px;
+}
+
+.radios {
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+  flex-wrap: nowrap;
+}
+.radios label {
+  margin-right: 5px;
+}
+
+#facebook-register {
+  margin-top: 10px;
+}
