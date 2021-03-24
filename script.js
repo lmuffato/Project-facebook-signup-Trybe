@@ -23,29 +23,29 @@ personalizadoRadioButton.addEventListener('click', adicionaCampoPersonalizado);
 
 function validaCampoNome() {
   if (document.getElementById('first-name').value.length < 3) {
-    document.getElementById("first-name").focus();
+    document.getElementById('first-name').focus();
   }
 }
 function validaCampoSobrenome() {
   if (document.getElementById('last-name').value.length < 3) {
-    document.getElementById("last-name").focus();
+    document.getElementById('last-name').focus();
   }
 }
 
 function validaCampoSenha() {
   if (document.getElementById('password').value.length < 3) {
-    document.getElementById("password").focus();
+    document.getElementById('password').focus();
   }
 }
 
 function validaCampoDataNascimento() {
   if (document.getElementById('birthdate').value.length < 3) {
-    document.getElementById("birthdate").focus();
+    document.getElementById('birthdate').focus();
   }
 }
 function validaCampoEmailOuCelular() {
   if (document.getElementById('phone-email').value.length < 3) {
-    document.getElementById("phone-email").focus();
+    document.getElementById('phone-email').focus();
   }
 }
 
