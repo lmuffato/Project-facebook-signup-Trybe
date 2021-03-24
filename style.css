@@ -13,8 +13,8 @@ body {
   background-color: rgb(66, 103, 178);
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  margin-bottom: 30px;
+  padding: 20px 80px;
+  /* margin-bottom: 30px; */
 }
 
 .facebook-login {
@@ -60,8 +60,13 @@ body {
 .main-content {
   display: flex;
   justify-content: space-between;
-  max-width: 1220px;
+  /* max-width: 1220px; */
+  background-color: rgb(232, 234, 242);
   margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 300px;
+  padding-top: 30px;
 }
 
 .email input {
@@ -204,4 +209,10 @@ form {
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 5px;
+}
+
+footer {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
 }
