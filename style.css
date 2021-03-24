@@ -56,6 +56,17 @@ header img {
   font-family: inherit;
 }
 
+h1 {
+  font-size: 36px;
+  font-family: inherit;
+  color: #333;
+}
+
+.quick-easy {
+  font-size: 20px;
+  font-family: inherit;
+}
+
 .left-content {
   width: 800px;
   padding-top: 40px;
@@ -79,6 +90,14 @@ header img {
   flex-wrap: wrap;
 }
 
+.data-content input {
+  height: 30px;
+  border: 1px solid lightgray;
+  padding-left: 6px;
+  border-radius: 4px;
+  font-size: 17px;
+}
+
 #first-name , #last-name {
   width: 46%;
 }
@@ -98,10 +117,14 @@ header img {
 #label-birthdate , #label-gender {
   width: 100%;
   margin-top: 20px;
+  color: gray;
+  font-weight: 700;
+  font-size: 20;
 }
 
 #date {
   width: 40%;
+  margin-top: 7px;
 }
 
 .radio-container {
@@ -111,6 +134,23 @@ header img {
   justify-content: space-around;
 }
 
+.radio {
+  display: flex;
+  align-items: center;
+  color: #1d2129;
+}
+
 #gender-custom-content {
   display: none;
+}
+
+#facebook-register {
+  height: 40px;
+  width: 180px;
+  background-color: #69a74e;
+  font-size: 19px;
+  border-radius: 4px;
+  color: white;
+  text-shadow: -1px 1px #467432;
+  margin-bottom: 15px;
 }

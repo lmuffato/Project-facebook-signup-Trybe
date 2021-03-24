@@ -32,8 +32,8 @@
           </div>
         </div>
         <div class="right-content">
-          <h1 class='delete'>Abra uma conta</h1>
-          <p class="quick-easy delete">É rápido e fácil.</p>
+          <h1 class='delete'>Abra uma conta</h1><br>
+          <p class="quick-easy delete">É rápido e fácil.</p><br>
           <form action="" method="GET" class="main-form delete">
             <div class='data-content'>
               <input type="text" class='input-text delete' name="firstname" id="first-name" placeholder="Nome" required>
@@ -44,12 +44,18 @@
               <input type="text" class='input-text delete' name="birthdate" id="date" placeholder="dd/mm/aaaa" required>
               <label id='label-gender' class='delete'>Gênero</label>
                 <div class='radio-container'>
-                  <input type="radio" name='gender' id='gender-women' class='delete' value="Feminino" required>
-                  <label for="gender-women" class='delete'>Feminino</label>
-                  <input type="radio" name='gender' id='gender-men' class='delete' value="Masculino">
-                  <label for="gender-men" class='delete'>Masculino</label>
-                  <input type="radio" name='gender' id='gender-custom' class='delete' value="Personalizado">
-                  <label for="gender-custom" class='delete'>Personalizado</label>
+                  <div class='radio'>
+                    <input type="radio" name='gender' id='gender-women' class='delete' value="Feminino" required>
+                    <label for="gender-women" class='delete'>Feminino</label>
+                  </div>
+                  <div class='radio'>
+                    <input type="radio" name='gender' id='gender-men' class='delete' value="Masculino">
+                    <label for="gender-men" class='delete'>Masculino</label>
+                  </div>
+                  <div class='radio'>
+                    <input type="radio" name='gender' id='gender-custom' class='delete' value="Personalizado">
+                    <label for="gender-custom" class='delete'>Personalizado</label>
+                  </div>
                 </div>
                 <input type="text" id="gender-custom-content" class='delete' name="gender-custom" value="" placeholder="Gênero (opcional)">
             </div><br>
