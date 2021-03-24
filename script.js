@@ -21,7 +21,7 @@ function confereRadioChecked() {
 function returnText() {
   const entradaDeDados = document.querySelectorAll('input');
   const createInnerText = document.createElement('span');
-  for (let index = 2; index < entradaDeDados.length; index += 1) {
+  for (let index = 2; index < entradaDeDados.length - 1; index += 1) {
     if (entradaDeDados[index].value === '' || confereRadioChecked() === 0) {
       const takeForm = document.querySelectorAll('form')[1];
       createInnerText.innerText = 'Campos inválidos';
@@ -57,7 +57,7 @@ addInput();
 function checkRadioOption() {
   const takeDivGender = document.getElementById('label-gender');
   takeDivGender.addEventListener('click', () => {
-    const takeInputOther = document.getElementById('personalizado');
+    const takeInputOther = document.getElementById('Personalizado');
     const takeInput = document.getElementById('input-gender');
     if (takeInputOther.checked) {
       takeInput.style.display = 'block';
@@ -67,3 +67,37 @@ function checkRadioOption() {
   });
 }
 checkRadioOption();
+
+function checkGender() {
+  const male = document.getElementById('Masculino');
+  const female = document.getElementById('Feminino');
+  const custom = document.getElementById('Personalizado');
+  if (male.checked) {
+    return male.id;
+  }
+  if (female.checked) {
+    return female.id;
+  }
+  if (custom) {
+    return custom.id;
+  }
+}
+checkGender();
+
+function newMessage() {
+  const rightContent = document.querySelector('.right-content');
+  const name = document.querySelector('.first-name');
+  const last = document.querySelector('.last-name');
+  const cel = document.querySelector('.phone-email');
+  const date = document.querySelector('.birthdate');
+  if (checkGender()) {
+    rightContent.innerHTML = '';
+    rightContent.innerHTML = `<p>Olá, ${name.value} ${last.value}</p>`;
+    rightContent.innerHTML += `<br><p>${cel.value}</p>`;
+    rightContent.innerHTML += `<br><p>${date.value}</p>`;
+    rightContent.innerHTML += `<br><p>${checkGender()}`;
+  }
+}
+
+const takeButtonSubmit = document.querySelector('#facebook-register');
+takeButtonSubmit.addEventListener('click', newMessage);
