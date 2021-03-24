@@ -42,6 +42,10 @@
 
 #label-gender {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   font-size: 13px;
+}
+
+.labels {
+  font-size: 12px;
 }

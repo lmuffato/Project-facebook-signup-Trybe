@@ -65,3 +65,19 @@ function stopDefAction(event) {
 }
 
 botaoCadastro.addEventListener('click', stopDefAction, false);
+
+const pers = document.getElementById('personalizado');
+const pegaDiv = document.getElementById('genderSpace');
+
+const criarInput = () => {
+  if (pegaDiv.className !== 'existeClasse') {
+    const inputGender = document.createElement('input');
+    inputGender.type = 'text';
+    inputGender.placeholder = 'Gênero (opcional)';
+    inputGender.name = 'gender-custom';
+    pegaDiv.className = 'existeClasse';
+    pegaDiv.appendChild(inputGender);
+  }
+};
+
+pers.addEventListener('click', criarInput);
