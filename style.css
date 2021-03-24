@@ -156,3 +156,7 @@ p {
   margin-top: 20px;
   font-size: large;
 }
+
+#user-email-phone {
+  margin-top: -7px;
+}
