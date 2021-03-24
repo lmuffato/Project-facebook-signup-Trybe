@@ -1,5 +1,5 @@
 const btnEntrar = document.getElementById('button-login');
-btnEntrar.addEventListener('click' ,() => {
+btnEntrar.addEventListener('click', () => {
   alert(document.getElementById('user-email-phone').value);
 });
 function EraseMessage() {
@@ -31,9 +31,9 @@ function customGender() {
   btn.addEventListener('click', () => {
     const custom = document.createElement('input');
     custom.setAttribute('name', 'gender-custom');
-    custom.setAttribute('placeholder','Gênero(opcional)');
+    custom.setAttribute('placeholder', 'Gênero(opcional)');
     document.querySelector('.register-gender').appendChild(custom);
-    const customClean = document.querySelectorAll('input[name="gender-custom"]')
+    const customClean = document.getElementsByName('gender-custom');
     if (customClean.length > 1) {
       customClean[0].remove();
     }
@@ -69,7 +69,7 @@ function radioButtonCheck() {
 }
 
 function hideRegister() {
-  const form = document.getElementsByClassName('form-cadastro'); 
+  const form = document.getElementsByClassName('form-cadastro');
   form[0].addEventListener('submit', (event) => {
     const register = document.getElementsByClassName('right-content');
     register[0].style.display = 'none';
@@ -79,7 +79,7 @@ function hideRegister() {
 function fixGenderValue(genero) {
   let fixGenero = genero;
   if (genero === 'male') {
-    fixGenero = 'Masculinho'
+    fixGenero = 'Masculinho';
   } else if (genero === 'female') {
     fixGenero = 'Feminino';
   } else {
@@ -89,7 +89,7 @@ function fixGenderValue(genero) {
 }
 function writeMessage(name, email, genero, birthDate) {
   const write = document.createElement('div');
-  write.setAttribute('class','rigth-content2');
+  write.setAttribute('class', 'rigth-content2');
   document.querySelector('.main-content').appendChild(write);
   const message = document.createElement('p');
   message.innerHTML = `Olá, ${name} email : ${email}`;
