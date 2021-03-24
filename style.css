@@ -1,19 +1,12 @@
 * {
-<<<<<<< HEAD
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-=======
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
->>>>>>> 32d8e819fa4bd9fe82b5408bb2c9c652d7261ed9
 }
 
 .top-bar {
   background-color: rgb(66, 103, 178);
   display: flex;
-<<<<<<< HEAD
   /* height: 5vh; */
   justify-content: space-between;
   padding: 2%;
@@ -21,19 +14,10 @@
 
 .facebook-logo {
   align-self: flex-start;
-=======
-}
-
-.facebook-logo {
-  display: flex;
-  width: 220px;
-  height: 90px;
->>>>>>> 32d8e819fa4bd9fe82b5408bb2c9c652d7261ed9
 }
 
 .facebook-login {
   color: white;
-<<<<<<< HEAD
   display: flex;
   justify-content: flex-end;
 }
@@ -108,14 +92,4 @@
 .button-register {
   display: flex;
   flex-wrap: wrap;
-=======
-  padding: 13px 0px 0px;
-  display: flex;
-  justify-content: end;
-}
-
-.form-element {
-  margin: 10px;
-  margin: 7px;
->>>>>>> 32d8e819fa4bd9fe82b5408bb2c9c652d7261ed9
 }
