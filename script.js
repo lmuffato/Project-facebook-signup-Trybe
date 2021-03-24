@@ -68,11 +68,11 @@ function checkRadioOption() {
 }
 checkRadioOption();
 
+const male = document.getElementById('masculino');
+const female = document.getElementById('feminino');
+const custom = document.getElementById('personalizado');
 function checkGender() {
-  const male = document.getElementById('masculino');
-  const female = document.getElementById('feminino');
-  const custom = document.getElementById('personalizado');
-  if (male.checked === true) {
+  if (male.checked) {
     return male.value;
   }
   if (female.checked) {
