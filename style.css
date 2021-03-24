@@ -54,3 +54,11 @@ form {
 #facebook-register {
   align-self: flex-end;
 }
+
+#error-message {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}

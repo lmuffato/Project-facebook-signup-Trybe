@@ -43,20 +43,22 @@
         <p class="quick-easy">É rápido e fácil.</p>
         <form>
           <div class="names-container">
-            <input type="text" name="firstname" placeholder="Nome" />
-            <input type="text" name="lastname" placeholder="Sobrenome" />
+            <input type="text" name="firstname" placeholder="Nome" id="first-name" />
+            <input type="text" name="lastname" placeholder="Sobrenome" id="last-name" />
           </div>
           <input
             type="text"
             name="phone_email"
             placeholder="Celular ou email"
+            id="phone-email"
           />
-          <input type="password" name="password" placeholder="Nova senha" />
+          <input type="password" name="password" placeholder="Nova senha" id="new-password" />
           <label id="label-birthdate">Data de nascimento</label>
           <input
             type="text"
             name="birthdate"
             placeholder="dd/mm/aaaa"
+            id="birth-date"
           ></input>
           <br>
           <div class="field-control">
@@ -74,7 +76,10 @@
               placeholder="Gênero (opcional)"
               id="customGender"                          
             />
-          </div>          
+          </div>
+          <div class="hidden" id="error-message">
+            <p>Campos inválidos</p>
+          </div>  
         </form>
         <button id="facebook-register" type="submit">Cadastre-se</button>          
       </div>
