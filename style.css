@@ -10,18 +10,22 @@
   height: 82.5px;
   background-color: rgb(66, 103, 178);
   align-items: center;
+  justify-content: space-between;
+  padding: 0 180px;
 }
 
 .facebook-logo {
   display: flex;
-  position: absolute;
+  position: relative;
   left: 0;
 }
 
 .facebook-login {
   display: flex;
-  position: absolute;
+  align-items: center;
+  justify-content: space-around;
   right: 0;
+  width: 450px;
 }
 
 .form-group {
@@ -36,15 +40,27 @@
 .main-content {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 180px;
+}
+
+.right-content , .left-content {
+  display: flex;
+  flex-flow: column wrap;
   justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .left-content {
   width: 800px;
+  background-color: aqua;
 }
 
 .right-content {
   width: 300px;
+  background-color: red;
 }
 
 .fullname {
