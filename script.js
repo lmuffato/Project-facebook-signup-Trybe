@@ -75,17 +75,17 @@ function resultRegister(dataList) {
   textForm.innerText = `Olá, ${dataList[0]} ${dataList[1]}
   ${dataList[2]}
   ${dataList[3]}
-  ${dataList[4]}`
+  ${dataList[4]}`;
 }
 
 // Recupera os dados inseridos no formulário de cadastro
 function getData() {
   const dataList = [];
   dataList.push(document.getElementById('first-name').value);
-  dataList.push(document.getElementById('last-name').value)
+  dataList.push(document.getElementById('last-name').value);
   dataList.push(document.getElementById('phone-email').value);
   dataList.push(document.getElementById('date').value);
-  dataList.push(document.querySelector("input[name='gender']:checked").value);
+  dataList.push(document.querySelector('input[name="gender"]:checked').value);
 
   deleteContent();
   resultRegister(dataList);
