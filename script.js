@@ -19,10 +19,17 @@ personalized.addEventListener('click', () => {
   }
 });
 
-// const removePersonalGender = () => {
-//   const noGenderDiv = document.getElementById('genders');
-//   const childrenDiv = noGenderDiv.childNodes;
-//   if (childrenDiv.length > 0) {
-//     noGenderDiv.removeChild(noGenderDiv.firstChild);
-//   }
-// };
+const removePersonalGender = () => {
+  const noGenderDiv = document.getElementById('genders');
+  const childrenDiv = noGenderDiv.childNodes;
+  console.log(childrenDiv.length);
+  if (childrenDiv.length > 0) {
+    console.log(childrenDiv);
+    noGenderDiv.removeChild(noGenderDiv.firstChild);
+  }
+};
+
+const otherGender = document.querySelectorAll('.other-gender');
+
+otherGender[0].addEventListener('click', removePersonalGender);
+otherGender[1].addEventListener('click', removePersonalGender);
