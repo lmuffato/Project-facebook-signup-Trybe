@@ -2,9 +2,21 @@ const buttonSubmit = document.getElementById('button-login');
 const buttonRegister = document.getElementById('facebook-register');
 const registerInputs = document.querySelectorAll('.register');
 const radiosButtons = document.getElementsByName('gender');
+const newDisplayInfo = document.querySelector('.right-content');
 
 function submit() {
   alert(document.getElementById('user-email-phone').value);
+}
+
+function addGenderOption() {
+  for (let j = 0; j < radiosButtons.length; j += 1) {
+    radiosButtons[j].addEventListener('click', addGenderOption);
+    if (radiosButtons[2].checked === true) {
+      document.getElementById('gender-custom').style.display = 'flex';
+    } else {
+      document.getElementById('gender-custom').style.display = 'none';
+    }
+  }
 }
 
 function checkRegister() {
@@ -29,21 +41,45 @@ function checkRadios() {
   return confirmRadios;
 }
 
-function displayUser() {
-  const fistName = document.querySelector('#firstname').value;
+function valueSelectedGender() {
+  for (let j = 0; j < radiosButtons.length; j += 1) {
+    if (radiosButtons[j].checked === true) {
+      return radiosButtons[j].value;
+    }
+  }
+}
+
+function showInfosOnTheForm() {
+  const tankingTheData = sessionStorage.getItem('infosForm');
+  const onlyData = tankingTheData.split(',');
+  const newDiv = document.createElement('div');
+
+  const greeting = document.createElement('p');
+  greeting.innerText = `Olá, ${onlyData[0]} ${onlyData[1]}`;
+  const contact = document.createElement('p');
+  contact.innerText = `${onlyData[2]}`;
+  const niver = document.createElement('p');
+  niver.innerText = `${onlyData[3]}`;
+  const genus = document.createElement('p');
+  genus.innerText = `${onlyData[4]}`;
+
+  newDiv.appendChild(greeting);
+  newDiv.appendChild(contact);
+  newDiv.appendChild(niver);
+  newDiv.appendChild(genus);
+  newDisplayInfo.appendChild(newDiv);
+}
+
+function saveInfosForm() {
+  const firstName = document.querySelector('#firstname').value;
   const lastName = document.querySelector('#lastname').value;
   const emailPhone = document.querySelector('#phone-email').value;
   const birthdate = document.querySelector('#user-birthdate').value;
+  const gender = valueSelectedGender();
+  const data = [firstName, lastName, emailPhone, birthdate, gender];
 
-  // for (let j = 0; j < radiosButtons.length; j += 1) {
-  //   radiosButtons[j].addEventListener('click', () => {
-  //     if (radiosButtons[j].checked === true) {
-  //       const gender = radiosButtons[j].value;
-  //     }
-  //   });
-  //   return gender;
-  // }
-  console.log(fistName + lastName + emailPhone + birthdate);
+  sessionStorage.setItem('infosForm', data);
+  showInfosOnTheForm();
 }
 
 function checkData(e) {
@@ -53,18 +89,7 @@ function checkData(e) {
   } else {
     document.getElementById('mensage-invalid').style.display = 'none';
     document.querySelector('#form-register').style.display = 'none';
-    displayUser();
-  }
-}
-
-function addGenderOption() {
-  for (let j = 0; j < radiosButtons.length; j += 1) {
-    radiosButtons[j].addEventListener('click', addGenderOption);
-    if (radiosButtons[2].checked === true) {
-      document.getElementById('gender-custom').style.display = 'flex';
-    } else {
-      document.getElementById('gender-custom').style.display = 'none';
-    }
+    saveInfosForm();
   }
 }
 
