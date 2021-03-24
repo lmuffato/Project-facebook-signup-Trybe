@@ -37,13 +37,14 @@ btn.addEventListener('click', validateInputs);
 
 // Requisito 19 - Cria um input de texto quando clica no radio button 'Personalizado'
 document.querySelector('#custom').addEventListener('click', () => {
-  const listRegister = document.querySelector('.register');
+  const listRegister = document.querySelector('#container');
   if (listRegister.lastElementChild.type !== 'text') {
     const customInput = document.createElement('input');
     customInput.id = 'custom-box';
     customInput.type = 'text';
     customInput.name = 'gender-custom';
     customInput.placeholder = 'Gênero (opcional)';
+    customInput.style.margin = '8px';
     listRegister.appendChild(customInput);
   }
 });
