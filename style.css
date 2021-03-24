@@ -87,6 +87,17 @@
   align-content: flex-end;
   margin-right: 220px;
   padding-top: 20px;
+  color: rgb(51, 51, 51);
+}
+
+.right-content h1 {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.right-content p {
+  font-size: 19px;
+  color: rgb(29, 33, 41);
 }
 
 #facebook-slogan {
@@ -117,21 +128,56 @@
 .signup {
   width: 350px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   line-height: 1.5;
   margin-top: 20px;
+}
+
+.signup label {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(144, 148, 156);
 }
 
 .signup .name {
   display: flex;
 }
 
+.signup input[type=text] , .signup input[type=password] {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 18px;
+  border: 1px solid rgb(189, 199, 216);
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.signup .name input:first-child {
+  margin-left: 0;
+}
+
+.signup .name input:last-child {
+  margin-right: 0;
+}
+
 #radios-gender {
   display: flex;
-  margin-right: 200px;
+  align-items: baseline;
+  width: 100%;
+}
+
+#radios-gender input {
+  margin-right: 6px;
+}
+
+#radios-gender #label-gender {
+  color: rgb(29, 33, 41);
+  font-weight: normal;
+  font-size: 18px;
 }
 
 #label-gender {
   display: flex;
-  margin-bottom: 5px;
 }
