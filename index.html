@@ -36,13 +36,13 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="">
         <div class="name">
-          <input type="text" name="firstname" placeholder="Nome" class="input-form">
-          <input type="text" name="lastname" placeholder="Sobrenome" class="input-form">
+          <input type="text" name="firstname" placeholder="Nome" class="input-form required" id="first-name">
+          <input type="text" name="lastname" placeholder="Sobrenome" class="input-form required" id="last-name">
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email" class="input-form">
+        <input type="text" name="phone_email" placeholder="Celular ou email" class="input-form required" id="phone-email-input">
         <input type="password" name="password" placeholder="Nova senha" class="input-form">
         <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="input-form birthdate">
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="input-form birthdate required" id="input-birthdate">
         <label for="gender" id="label-gender">Gênero</label>
         <div class="radio-genders">
           <input type="radio" value="Feminino" name="gender">Feminino
@@ -50,6 +50,7 @@
           <input type="radio" value="Personalizado" name="gender" id="other">Personalizado
         </div>
         <input type="text" class="input-gender-hidden input-form" name="gender-custom" placeholder="Gênero (opcional)"> 
+        <span id="errorInput"></span>
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
     </div>
