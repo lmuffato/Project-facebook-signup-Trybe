@@ -31,11 +31,6 @@ a {
   cursor: pointer;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-
 label a {
   color: white;
   font-family: Helvetica, Arial, sans-serif;
@@ -43,6 +38,10 @@ label a {
   font-weight: 400;
   padding-left: 1px;
   vertical-align: middle;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .label {
