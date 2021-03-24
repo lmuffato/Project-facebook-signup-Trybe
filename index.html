@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,85 +10,200 @@
   <link rel="stylesheet" href="style.css">
   <title>Project Clone Facebook Signup</title>
 </head>
+
 <body>
   <!-- <div id="body-content"> -->
-    <header class="top-bar">
+  <header class="top-bar">
 
-      <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Facebook logo">
+    <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Facebook logo">
 
-      <form class="facebook-login">
+    <form class="facebook-login">
 
-        <div class="form-group">
-          <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
-          <input id="user-email-phone" type="text">
+      <div class="form-group">
+        <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+        <input id="user-email-phone" type="text">
+      </div>
+
+      <div class="form-group">
+        <label id="user-password-label" for="user-password">Senha</label>
+        <input id="user-password" type="password">
+      </div>
+
+      <div class="form-control">
+        <button id="button-login">Entrar</button>
+      </div>
+
+    </form>
+
+  </header>
+
+  <main class="main-content">
+
+    <div class="left-content">
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua
+        vida.</p>
+      <img src="imgs/networking.png" alt="Networking" id="facebook-networking">
+    </div>
+
+    <div class="right-content">
+      <h1>Abra uma conta</h1>
+      <p class="quick-easy">É rápido e fácil.</p>
+
+      <form>
+
+        <div class="facebook-login">
+
+          <label for="firstname" hidden>Nome</label>
+          <input id="firstname" type="text" name="firstname" placeholder="Nome" required>
+
+          <label for="lastname" hidden>Sobrenome</label>
+          <input id="lastname" type="text" name="lastname" placeholder="Sobrenome" required>
+
         </div>
 
-        <div class="form-group">
-          <label id="user-password-label" for="user-password">Senha</label>
-          <input id="user-password" type="password">
-        </div>
+        <div>
+          <label for="phone_email" hidden>Celular ou email</label>
+          <input id="phone_email" type="text" name="phone_email" placeholder="Celular ou email" required>
 
-        <div class="form-control">
-          <button id="button-login">Entrar</button>
+          <label for="password" hidden>Senha</label>
+          <input id="password" type="password" name="password" placeholder="Nova senha" required>
+
+          <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+          <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa" required>
+
+          <label id="label-gender">Gênero</label>
+
+          <input id="woman" type="radio" name="gender" value="Feminino" required>
+          <label for="woman">Feminino</label>
+
+          <input id="man" type="radio" name="gender" value="Masculino">
+          <label for="man">Masculino</label>
+
+          <input id="custom" type="radio" name="gender" value="Personalizado">
+          <label for="custom">Personalizado</label>
+
+          <input id="gender-custom" type="text" name="gender-custom" placeholder="Gênero (opcional)" style="display: none;">
+          
+          <button id="facebook-register" type="submit">Cadastre-se</button>
+
+          <span id="form-invalid" style="display: none;">Campos inválidos</span>
         </div>
 
       </form>
-
-    </header>
-    
-    <main class="main-content">
-
-      <div class="left-content">
-        <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-        <img src="imgs/networking.png" alt="Networking" id="facebook-networking">
+    </div>
+  </main>
+  <footer id="footer">
+      <ul class="uiList localeSelectorList" data-nocookies="1">
+        <li>Português (Brasil)</li>
+        <li>
+          <a class="" dir="ltr" href="https://web.archive.org/web/20200101163229/https://www.facebook.com/"
+            title="English (US)">English (US)</a>
+        </li>
+        <li>
+          <a class="_sv4" dir="ltr" href="https://web.archive.org/web/20200101163229/https://es-la.facebook.com/"
+            title="Spanish">Español</a>
+        </li>
+        <li><a class="" dir="ltr" href="https://web.archive.org/web/20200101163229/https://fr-fr.facebook.com/"
+            onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;fr_FR&quot;, &quot;pt_BR&quot;, &quot;https:\/\/web.archive.org\/web\/20200101163229\/https:\/\/fr-fr.facebook.com\/&quot;, &quot;www_list_selector&quot;, 2); return false;"
+            title="French (France)">Français (France)</a></li>
+        <li><a class="_sv4" dir="ltr" href="https://web.archive.org/web/20200101163229/https://zh-cn.facebook.com/"
+            onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;zh_CN&quot;, &quot;pt_BR&quot;, &quot;https:\/\/web.archive.org\/web\/20200101163229\/https:\/\/zh-cn.facebook.com\/&quot;, &quot;www_list_selector&quot;, 3); return false;"
+            title="Simplified Chinese (China)">中文(简体)</a></li>
+        <li><a class="_sv4" dir="rtl" href="https://web.archive.org/web/20200101163229/https://ar-ar.facebook.com/"
+            onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;ar_AR&quot;, &quot;pt_BR&quot;, &quot;https:\/\/web.archive.org\/web\/20200101163229\/https:\/\/ar-ar.facebook.com\/&quot;, &quot;www_list_selector&quot;, 4); return false;"
+            title="Arabic">العربية</a></li>
+        <li><a class="_sv4" dir="ltr" href="https://web.archive.org/web/20200101163229/https://it-it.facebook.com/"
+            onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;it_IT&quot;, &quot;pt_BR&quot;, &quot;https:\/\/web.archive.org\/web\/20200101163229\/https:\/\/it-it.facebook.com\/&quot;, &quot;www_list_selector&quot;, 5); return false;"
+            title="Italian">Italiano</a></li>
+        <li><a class="_sv4" dir="ltr" href="https://web.archive.org/web/20200101163229/https://ko-kr.facebook.com/"
+            onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;ko_KR&quot;, &quot;pt_BR&quot;, &quot;https:\/\/web.archive.org\/web\/20200101163229\/https:\/\/ko-kr.facebook.com\/&quot;, &quot;www_list_selector&quot;, 6); return false;"
+            title="Korean">한국어</a></li>
+        <li><a class="_sv4" dir="ltr" href="https://web.archive.org/web/20200101163229/https://de-de.facebook.com/"
+            onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;de_DE&quot;, &quot;pt_BR&quot;, &quot;https:\/\/web.archive.org\/web\/20200101163229\/https:\/\/de-de.facebook.com\/&quot;, &quot;www_list_selector&quot;, 7); return false;"
+            title="German">Deutsch</a></li>
+        <li><a class="_sv4" dir="ltr" href="https://web.archive.org/web/20200101163229/https://hi-in.facebook.com/"
+            onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;hi_IN&quot;, &quot;pt_BR&quot;, &quot;https:\/\/web.archive.org\/web\/20200101163229\/https:\/\/hi-in.facebook.com\/&quot;, &quot;www_list_selector&quot;, 8); return false;"
+            title="Hindi">हिन्दी</a></li>
+        <li><a class="_sv4" dir="ltr" href="https://web.archive.org/web/20200101163229/https://ja-jp.facebook.com/"
+            onclick="require(&quot;IntlUtils&quot;).setCookieLocale(&quot;ja_JP&quot;, &quot;pt_BR&quot;, &quot;https:\/\/web.archive.org\/web\/20200101163229\/https:\/\/ja-jp.facebook.com\/&quot;, &quot;www_list_selector&quot;, 9); return false;"
+            title="Japanese">日本語</a></li>
+        <li><a role="button" class="_42ft _4jy0 _517i _517h _51sy" rel="dialog"
+            ajaxify="/settings/language/language/?uri=https%3A%2F%2Fja-jp.facebook.com%2F&amp;source=www_list_selector_more"
+            href="#" title="Mostrar mais idiomas"><i class="img sp_RLFL6-1bUHS sx_46feaa"></i></a></li>
+      </ul>
+      <div id="contentCurve"></div>
+      <div id="pageFooterChildren" role="contentinfo" aria-label="Links para sites do Facebook">
+        <ul class="uiList pageFooterLinkList">
+          <li><a href="/web/20200101163229/https://pt-br.facebook.com/r.php"
+              title="Cadastre-se no Facebook">Cadastre-se</a></li>
+          <li><a href="/web/20200101163229/https://pt-br.facebook.com/login/" title="Entrar no Facebook">Entrar</a></li>
+          <li><a href="https://web.archive.org/web/20200101163229/https://pt-br.messenger.com/"
+              title="Confira o Messenger.">Messenger</a></li>
+          <li><a href="/web/20200101163229/https://pt-br.facebook.com/lite/"
+              title="Facebook Lite para Android.">Facebook Lite</a></li>
+          <li><a href="https://web.archive.org/web/20200101163229/https://pt-br.facebook.com/watch/"
+              title="Browse our Watch videos."> Watch </a></li>
+          <li><a href="/web/20200101163229/https://pt-br.facebook.com/directory/people/"
+              title="Navegue no nosso diretório de pessoas.">Pessoas</a></li>
+          <li><a href="/web/20200101163229/https://pt-br.facebook.com/directory/pages/"
+              title="Pesquisar nosso diretório de páginas.">Páginas</a></li>
+          <li><a href="/web/20200101163229/https://pt-br.facebook.com/pages/category/">Categorias de Página</a></li>
+          <li><a href="/web/20200101163229/https://pt-br.facebook.com/places/"
+              title="Confira locais populares no Facebook.">Locais</a></li>
+          <li><a href="/web/20200101163229/https://pt-br.facebook.com/games/"
+              title="Confira os jogos do Facebook.">Jogos</a></li>
+          <li><a href="/web/20200101163229/https://pt-br.facebook.com/directory/places/"
+              title="Navegue pelo nosso diretório de locais.">Locais</a></li>
+          <li><a href="/web/20200101163229/https://pt-br.facebook.com/marketplace/"
+              title="Compre e venda no Facebook Marketplace.">Marketplace</a></li>
+          <li><a href="/web/20200101163229/https://pt-br.facebook.com/directory/groups/"
+              title="Navegue pelo nosso diretório de grupos.">Grupos</a></li>
+          <li><a
+              href="https://web.archive.org/web/20200101163229/https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2F&amp;h=AT32NUyokdngi2QBmb74GQyj0ZprZHOpGupT4ZxIdBhUq03ZfSaOzkd9bo71yg4Xamq3IZR7ZdhAx6FYM61AzIn9GI_tLGzR0OY7i6-W98eWk0FqMrJLeQwgCIzNMlKj0wIgmHyzqdI_9Tqgk_sS5w"
+              title="Confira o Instagram" target="_blank" rel="noopener nofollow"
+              data-lynx-mode="asynclazy">Instagram</a></li>
+          <li><a href="/web/20200101163229/https://pt-br.facebook.com/local/lists/245019872666104/"
+              title="Navegar pelo nosso diretório de listas locais.">Local</a></li>
+          <li><a href="/web/20200101163229/https://pt-br.facebook.com/fundraisers/"
+              title="Doe para causas importantes.">Campanhas de arrecadação de fundos</a></li>
+          <li><a href="/web/20200101163229/https://pt-br.facebook.com/biz/directory/"
+              title="Navegue pelo nosso diretório de serviços do Facebook.">Serviços</a></li>
+          <li><a href="/web/20200101163229/https://pt-br.facebook.com/facebook" accesskey="8"
+              title="Leia nosso blog, descubra a central de recursos e encontre oportunidades de trabalho.">Sobre</a>
+          </li>
+          <li><a
+              href="/web/20200101163229/https://pt-br.facebook.com/ad_campaign/landing.php?placement=pflo&amp;campaign_id=402047449186&amp;extra_1=auto"
+              title="Anuncie no Facebook.">Criar anúncio</a></li>
+          <li><a href="/web/20200101163229/https://pt-br.facebook.com/pages/create/?ref_type=site_footer"
+              title="Criar uma Página">Criar Página</a></li>
+          <li><a href="https://web.archive.org/web/20200101163229/https://developers.facebook.com/?ref=pf"
+              title="Desenvolver em nossa plataforma.">Desenvolvedores</a></li>
+          <li><a href="/web/20200101163229/https://pt-br.facebook.com/careers/?ref=pf"
+              title="Dê um passo adiante na sua carreira em nossa incrível empresa.">Carreiras</a></li>
+          <li><a data-nocookies="1" href="/web/20200101163229/https://pt-br.facebook.com/privacy/explanation"
+              title="Saiba mais sobre sua privacidade e o Facebook.">Privacidade</a></li>
+          <li><a href="/web/20200101163229/https://pt-br.facebook.com/policies/cookies/"
+              title="Saiba mais sobre cookies e o Facebook" data-nocookies="1">Cookies</a></li>
+          <li><a class="_41ug" data-nocookies="1"
+              href="https://web.archive.org/web/20200101163229/https://pt-br.facebook.com/help/568137493302217"
+              title="Saiba mais sobre as Opções de anúncio.">Opções de anúncio<i
+                class="img sp_Ejp5OZ043US sx_323341"></i></a></li>
+          <li><a data-nocookies="1" href="/web/20200101163229/https://pt-br.facebook.com/policies?ref=pf" accesskey="9"
+              title="Leia os nossos termos e políticas.">Termos</a></li>
+          <li><a href="/web/20200101163229/https://pt-br.facebook.com/help/?ref=pf" accesskey="0"
+              title="Acesse nossa Central de Ajuda.">Ajuda</a></li>
+          <li><a accesskey="6" class="accessible_elem" href="/web/20200101163229/https://pt-br.facebook.com/settings"
+              title="Visualize e edite suas configurações do Facebook.">Configurações</a></li>
+          <li><a accesskey="7" class="accessible_elem"
+              href="/web/20200101163229/https://pt-br.facebook.com/allactivity?privacy_source=activity_log_top_menu"
+              title="Ver seu Registro de Atividades">Registro de Atividades</a></li>
+        </ul>
       </div>
-
-      <div class="right-content">
-        <h1>Abra uma conta</h1>
-        <p class="quick-easy">É rápido e fácil.</p>
-
-        <form action="">
-
-          <div class="facebook-login">
-
-            <label for="firstname" hidden>Nome</label>
-            <input id="firstname" type="text" name="firstname" placeholder="Nome">
-
-            <label for="lastname" hidden>Sobrenome</label>
-            <input id="lastname" type="text" name="lastname" placeholder="Sobrenome">
-
-          </div>
-
-          <div>
-            <label for="phone_email" hidden>Celular ou email</label>
-            <input type="text" name="phone_email" placeholder="Celular ou email">
-
-            <input id="password" type="password" name="password" placeholder="Nova senha">
-
-            <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-            <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa">
-            
-            <label id="label-gender">Gênero</label>
-
-            <input id="woman" type="radio" name="gender" value="Feminino">
-            <label for="woman">Feminino</label>
-
-            <input id="man" type="radio" name="gender" value="Masculino">
-            <label for="man">Masculino</label>
-
-            <input id="custom" type="radio" name="gender" value="Personalizado">
-            <label for="custom">Personalizado</label>
-
-            <input type="text" name="gender-custom" placeholder="Gênero (opcional)">
-
-            <span id="form-invalid">Campos inválidos</span>
-
-            <button id="facebook-register" type="submit">Cadastre-se</button>
-          </div>
-
-        </form>
+      <div class="mvl copyright">
+        <div><span> Facebook © 2020</span></div>
       </div>
-    </main>
+  </footer>
   <!-- </div> -->
 </body>
+
 </html>

@@ -30,6 +30,7 @@
 .main-content {
   display: flex;
   justify-content: center;
+  background: linear-gradient(white, #d3d8e8);
 }
 
 .left-content {
@@ -37,9 +38,36 @@
 }
 
 .right-content {
+  display: flex;
+  flex-direction: column;
   width: 300px;
 }
 
-#label-gender {
+#label-gender , #label-birthdate {
   display: block;
+}
+
+#form-invalid {
+  display: block;
+  color: red;
+}
+
+#footer {
+  display: flex;
+  flex-flow: column;
+}
+
+li {
+  list-style: none;
+  padding: 5px;
+  font-size: 10px;
+}
+
+.localeSelectorList , .pageFooterLinkList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contentCurve {
+  height: 2px;
 }
