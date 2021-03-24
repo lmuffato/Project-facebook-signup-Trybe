@@ -7,12 +7,7 @@
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  justify-content: space-around;
-}
-
-.facebook-logo {
-  display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .facebook-login {
