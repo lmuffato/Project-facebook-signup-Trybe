@@ -1,3 +1,4 @@
+// Emite alerta ao clicar no botão 'Entrar'
 function activeAlert() {
   const loginButton = document.querySelector('#button-login');
   loginButton.addEventListener('click', () => {
@@ -6,6 +7,7 @@ function activeAlert() {
   });
 }
 
+// Adiciona campo de texto quando escolhida a opção de gẽnero 'Personalizado'
 function showCustom(value) {
   if (value === 'Personalizado') {
     document.getElementById('gender-custom-content').style.display = 'block';
@@ -14,6 +16,7 @@ function showCustom(value) {
   }
 }
 
+// Verifica a opção de gênero selecionada
 function clickGender() {
   const radioOptions = document.querySelectorAll('[name=gender]');
   console.log(radioOptions);
@@ -22,44 +25,6 @@ function clickGender() {
       showCustom(event.target.value);
     });
   });
-}
-
-function checkTextInputs() {
-  const inputList = document.querySelectorAll('.input-text');
-  let emptyField = false;
-  for (let index = 0; index < inputList.length; index += 1) {
-    if (inputList[index].value === '') {
-      emptyField = true;
-    }
-  }
-  return emptyField;
-}
-
-function checkRadioInputs() {
-  const inputsRadio = document.getElementsByName('gender');
-  let count = 0;
-  for (let index = 0; index < inputsRadio.length; index += 1) {
-    if (inputsRadio[index].checked) {
-      count += 1;
-    }
-  }
-  return count;
-}
-
-let messageShown = false;
-
-function checkInputs() {
-  if (checkTextInputs() === true || checkRadioInputs() === 0) {
-    const message = document.createElement('p');
-    document.querySelector('.main-form').appendChild(message);
-    if (messageShown === false) {
-      message.innerText = 'Campos inválidos';
-      messageShown = true;
-    }
-  } else {
-    getData();
-  }
- // event.preventDefault();
 }
 
 // Remove conteúdo do right content
@@ -88,11 +53,52 @@ function getData() {
   dataList.push(document.getElementById('phone-email').value);
   dataList.push(document.getElementById('date').value);
   dataList.push(document.querySelector('input[name="gender"]:checked').value);
-
+  
   deleteContent();
   resultRegister(dataList);
 }
 
+// Verifica se as entradas de texto foram preenchidas
+function checkTextInputs() {
+  const inputList = document.querySelectorAll('.input-text');
+  let emptyField = false;
+  for (let index = 0; index < inputList.length; index += 1) {
+    if (inputList[index].value === '') {
+      emptyField = true;
+    }
+  }
+  return emptyField;
+}
+
+// Verifica se uma opção de gênero foi selecionada
+function checkRadioInputs() {
+  const inputsRadio = document.getElementsByName('gender');
+  let count = 0;
+  for (let index = 0; index < inputsRadio.length; index += 1) {
+    if (inputsRadio[index].checked) {
+      count += 1;
+    }
+  }
+  return count;
+}
+
+// Verifica a existência de campos vazios e exibe mensagem de Campos inválidos
+let messageShown = false;
+
+function checkInputs() {
+  if (checkTextInputs() === true || checkRadioInputs() === 0) {
+    const message = document.createElement('p');
+    document.querySelector('.main-form').appendChild(message);
+    if (messageShown === false) {
+      message.innerText = 'Campos inválidos';
+      messageShown = true;
+    }
+  } else {
+    getData();
+  }
+}
+
+// Botão de cadastro chama função que verifica os campos do formulário
 const submitButton = document.querySelector('#facebook-register');
 submitButton.addEventListener('click', checkInputs);
 
