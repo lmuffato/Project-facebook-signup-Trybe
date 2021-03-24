@@ -60,27 +60,35 @@ function checkInputs(event) {
   event.preventDefault();
 }
 
-/* function getData() {
-  const dataList = document.querySelectorAll('input');
-  let dataShow = [];
-  for (let index = 0; index < dataList.length - 3; index += 1) {
-    dataShow.push(dataList[index].value);
-    console.log(dataShow);
+// Remove conteúdo do right content
+function deleteContent() {
+  const rightContent = document.querySelectorAll('.delete');
+  for (let index = 0; index < rightContent.length; index += 1) {
+    rightContent[index].remove();
   }
-} */
+}
 
+// Substitui conteúdo do right content pelas respostas do cadastro
+function resultRegister(dataList) {
+  const textForm = document.createElement('p');
+  document.querySelector('.right-content').appendChild(textForm);
+  textForm.innerText = `Olá, ${dataList[0]} ${dataList[1]}
+  ${dataList[2]}
+  ${dataList[3]}
+  ${dataList[4]}`
+}
+
+// Recupera os dados inseridos no formulário de cadastro
 function getData() {
-  const getFirstName = document.getElementById('first-name').value;
-  const getLastName = document.getElementById('last-name').value;
-  const getPhoneEmail = document.getElementById('phone-email').value;
-  const getDateBirth = document.getElementById('date').value;
-  const getGender = document.querySelector("input[name='gender']:checked").value;
+  const dataList = [];
+  dataList.push(document.getElementById('first-name').value);
+  dataList.push(document.getElementById('last-name').value)
+  dataList.push(document.getElementById('phone-email').value);
+  dataList.push(document.getElementById('date').value);
+  dataList.push(document.querySelector("input[name='gender']:checked").value);
 
-  console.log(getFirstName);
-  console.log(getLastName);
-  console.log(getPhoneEmail);
-  console.log(getDateBirth);
-  console.log(getGender);
+  deleteContent();
+  resultRegister(dataList);
 }
 
 const submitButton = document.querySelector('#facebook-register');
