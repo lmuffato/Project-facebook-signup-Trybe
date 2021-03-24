@@ -22,12 +22,17 @@ body {
   padding-top: 20px;
   flex-direction: row;
   align-content: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .facebook-login {
   display: flex;
   align-self: flex-start;
+}
+
+.facebook-logo-container {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .form-group {
