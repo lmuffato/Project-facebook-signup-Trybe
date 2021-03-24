@@ -57,7 +57,7 @@ addInput();
 function checkRadioOption() {
   const takeDivGender = document.getElementById('label-gender');
   takeDivGender.addEventListener('click', () => {
-    const takeInputOther = document.getElementById('Personalizado');
+    const takeInputOther = document.getElementById('personalizado');
     const takeInput = document.getElementById('input-gender');
     if (takeInputOther.checked) {
       takeInput.style.display = 'block';
@@ -69,17 +69,17 @@ function checkRadioOption() {
 checkRadioOption();
 
 function checkGender() {
-  const male = document.getElementById('Masculino');
-  const female = document.getElementById('Feminino');
-  const custom = document.getElementById('Personalizado');
-  if (male.checked) {
-    return male.id;
+  const male = document.getElementById('masculino');
+  const female = document.getElementById('feminino');
+  const custom = document.getElementById('personalizado');
+  if (male.checked === true) {
+    return male.value;
   }
   if (female.checked) {
-    return female.id;
+    return female.value;
   }
   if (custom) {
-    return custom.id;
+    return custom.value;
   }
 }
 checkGender();
@@ -95,7 +95,7 @@ function newMessage() {
     rightContent.innerHTML = `<p>Olá, ${name.value} ${last.value}</p>`;
     rightContent.innerHTML += `<br><p>${cel.value}</p>`;
     rightContent.innerHTML += `<br><p>${date.value}</p>`;
-    rightContent.innerHTML += `<br><p>${checkGender()}`;
+    rightContent.innerHTML += `<br><p>${checkGender()}</p>`;
   }
 }
 
