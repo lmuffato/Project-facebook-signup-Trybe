@@ -62,9 +62,9 @@ function checkRadio() {
 }
 
 function selectedRadio() {
-  if (maleInput.value) return maleInput.value;
-  if (femaleInput.value) return femaleInput.value;
-  if (otherInput.value) return otherInput.value;
+  if (maleInput.checked) return maleInput.value;
+  if (femaleInput.checked) return femaleInput.value;
+  if (otherInput.checked) return otherInput.value;
   return false;
 }
 
