@@ -73,6 +73,7 @@
 
 .main-content {
   display: flex;
+  justify-content: space-between;
   background-image: linear-gradient(white, #dfe3ee);
   height: calc(100vh - 82px);
 }
