@@ -16,6 +16,7 @@ body {
   display: flex;
   background-color: rgb(66, 103, 178);
   height: 75px;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -109,6 +110,8 @@ input {
 
 .main-content {
   display: flex;
+  background: linear-gradient(white, #D3D8E8);
+  padding-bottom: 50px;
 }
 
 .left-content {
@@ -129,7 +132,6 @@ input {
 
 .facebook-login {
   display: flex;
-  position: absolute;
   float: right;
   flex-direction: row;
 }
@@ -158,6 +160,11 @@ input {
   display: flex;
   width: 329px;
 }
+
+.genderContainer input {
+  border-style: none;
+}
+
 
 #form input {
   width: 100%;
@@ -188,7 +195,14 @@ h1 {
   width: 91%;
 }
 
-#birthdateContainer label, #label-gender {
+#birthdateContainer label {
+  color: #90949c;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 5px;
+}
+
+#label-gender {
   color: #90949c;
   font-size: 16px;
   font-weight: 600;
@@ -196,10 +210,8 @@ h1 {
 }
 
 .genderContainer {
+  padding-top: 10px;
   display: flex;
   justify-content: space-between;
 }
 
-.genderContainer input {
-  border-style: none;
-}
