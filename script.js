@@ -13,9 +13,9 @@ const personalizado = document.querySelector('#Personalizado');
 
 function createCustomGender() {
   const gender = document.querySelector('#gender-container');
-  let genderCustom = document.createElement('input');
-  genderCustom.type = "text";
-  genderCustom.placeholder = "Gênero (opcional)"
+  const genderCustom = document.createElement('input');
+  genderCustom.type = 'text';
+  genderCustom.placeholder = 'Gênero (opcional)';
   gender.appendChild(genderCustom);
 }
 
