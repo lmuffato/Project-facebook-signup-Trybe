@@ -41,23 +41,23 @@
           <h2 class="quick-easy">É rápido e fácil.</h2>
           <form>
             <section class="input-block">
-              <input id="first-name" name="firstname" placeholder="Nome">
-              <input id="last-name" name="lastname" placeholder="Sobrenome">
+              <input id="first-name" name="firstname" placeholder="Nome" required>
+              <input id="last-name" name="lastname" placeholder="Sobrenome" required>
             </section>
-            <input id="phone-email" name="phone_email" placeholder="Celular ou email">
-            <input id="password" type="password" name="password" placeholder="Nova senha">
+            <input id="phone-email" name="phone_email" placeholder="Celular ou email" required>
+            <input id="password" type="password" name="password" placeholder="Nova senha" required>
             <label id="label-birthdate">Data de nascimento</label>
-            <input id="birthdate" type="text" name="birthdate" placeholder="dd/mm/aaaa">
+            <input id="birthdate" type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
             <label id="label-gender">Gênero</label>
             <section class="input-block">
               <label for="feminino"> Feminino
-                <input type="radio" value="Feminino" id="feminino" name="gender"> 
+                <input type="radio" value="Feminino" id="feminino" name="gender" required>
               </label>
               <label for="masculino"> Masculino
-                <input type="radio" value="Masculino" id="masculino" name="gender"> 
+                <input type="radio" value="Masculino" id="masculino" name="gender" required>
               </label> 
               <label for="personalizado"> Personalizado
-                <input type="radio" value="Personalizado" id="personalizado" name="gender">
+                <input type="radio" value="Personalizado" id="personalizado" name="gender" required>
               </label>
             </section>
             <button type="submit" id="facebook-register">Cadastre-se</button>
