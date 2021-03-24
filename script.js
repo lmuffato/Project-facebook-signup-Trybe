@@ -1,3 +1,4 @@
+// bloco de declaraçao de variaveis globais
 const entrarButton = document.getElementById('button-login');
 const formResults = document.getElementsByTagName('input');
 const buttonSubscrive = document.getElementById('facebook-register');
