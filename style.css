@@ -74,13 +74,13 @@
 .main-content {
   display: flex;
   justify-content: space-between;
-  padding-left: 190px;
   background-image: linear-gradient(white, #dfe3ee);
   height: calc(100vh - 82px);
 }
 
 .left-content {
   width: 800px;
+  padding-left: 190px;
   font-weight: 700;
   color: rgb(35, 74, 153);
 }
