@@ -24,39 +24,16 @@ body {
 }
 
 .login-container {
-  padding-left: 70%;
+  padding-left: 65%;
 }
 
-label {
+label, a {
   color: white;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   padding-left: 1px;
   vertical-align: middle;
-}
-
-table {
-  display: table;
-  border-collapse: separate;
-  box-sizing: border-box;
-  text-indent: initial;
-  border-color: grey;
-  border-spacing: 2px;
-  width: 392px;
-}
-
-tbody {
-  display: table-row-group;
-  vertical-align: middle;
-  border-color: inherit;
-}
-
-tr {
-  display: table-row;
-  border-color: inherit;
-  width: 392px;
-  height: 21px;
 }
 
 .label {
@@ -82,26 +59,30 @@ input {
   direction: ltr;
 }
 
-.html7magic {
-  padding-bottom: 4px;
-}
-
-#loginbutton {
-  background: none;
-  color: #4b4f56;
+#button-login {
+  background: #4267b2;
+  padding: 2px 6px;
+  color: white;
   cursor: pointer;
-  display: inline-block;
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
-  padding: 0;
-  border: 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-color: #29487d;
+  border: 1px solid;
+  border-radius: 2px;
   white-space: nowrap;
+}
+
+#button-login:hover {
+  background: #2757b8;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  padding: 3px 3px 4px;
 }
 
 .login_form_label {
@@ -112,11 +93,11 @@ input {
 
 a {
   cursor: pointer;
-  text-decoration: none;
-  float: left;
-  padding: 0;
 }
 
+a:hover {
+  text-decoration: underline;
+}
 .login_form_label a {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
@@ -155,6 +136,7 @@ a {
 
 .form-control {
   align-self: flex-end;
+  align-self: center;
 }
 
 .right-content form label {
