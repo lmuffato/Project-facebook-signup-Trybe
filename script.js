@@ -9,36 +9,81 @@ button.addEventListener('click', () => {
 // const valorEmailPhone = document.getElementById('phone_email');
 // const valorData = document.getElementById('datanasc');
 // const valorSenha = document.getElementById('password');
+const arrayInputsValid = [];
+arrayInputsValid.push(document.getElementById('firstname'));
+arrayInputsValid.push(document.getElementById('lastname'));
+arrayInputsValid.push(document.getElementById('phone_email'));
+arrayInputsValid.push(document.getElementById('password'));
+arrayInputsValid.push(document.getElementById('datanasc'));
 const valorP = document.querySelector('.text-invalido');
 const textInvalido = 'Campos inválidos';
+const form = document.getElementById('cadastre');
 
-function verificaNome() {
-  const valorNome = document.getElementById('firstname');
-  if (valorP.value === undefined && valorNome.value === '') {
-    valorP.innerHTML = textInvalido;
+const validaCampos = () => {
+  let bool = true;
+  for (let index = 0; index < arrayInputsValid.length; index += 1) {
+    if (arrayInputsValid[index].value === '') {
+      valorP.innerHTML = textInvalido;
+      bool = false;
+    }
   }
-}
+  return bool;
+};
 
-function verificaSobrenome() {
-  const valorSobrenome = document.getElementById('lastname');
-  if (valorP.value === undefined && valorSobrenome.value === '') {
-    valorP.innerHTML = textInvalido;
-  }
-}
+// Requisito 20
 
-function verificaEmailPhone() {
-  const valorEmailPhone = document.getElementById('phone_email');
-  if (valorP.value === undefined && valorEmailPhone.value === '') {
-    valorP.innerHTML = textInvalido;
-  }
-}
+const addDados = (fullname, emailPhone, dataNasc, genero) => {
+  const section = document.querySelector('.right-content');
+  section.innerHTML = '';
+  section.innerHTML = `Olá, ${fullname} 
+  ${emailPhone}
 
-function verificaSenha() {
-  const valorSenha = document.getElementById('password');
-  if (valorP.value === undefined && valorSenha.value === '') {
-    valorP.innerHTML = textInvalido;
+  ${dataNasc}
+
+  ${genero}`;
+};
+
+const dadosForms = () => {
+  if (validaCampos()) {
+    const fullname = `${form.firstname.value} ${form.lastname.value}`;
+    const emailPhone = form.phone_email.value;
+    const dataNasc = form.datanasc.value;
+    const genero = form.gender.value;
+    addDados(fullname, emailPhone, dataNasc, genero);
   }
-}
+};
+
+// function verificaNome() {
+//   const valorNome = document.getElementById('firstname');
+//   if (valorP.value === undefined && valorNome.value === '') {
+//     valorP.innerHTML = textInvalido;
+//     return true;
+//   }
+// }
+
+// function verificaSobrenome() {
+//   const valorSobrenome = document.getElementById('lastname');
+//   if (valorP.value === undefined && valorSobrenome.value === '') {
+//     valorP.innerHTML = textInvalido;
+//     return true;
+//   }
+// }
+
+// function verificaEmailPhone() {
+//   const valorEmailPhone = document.getElementById('phone_email');
+//   if (valorP.value === undefined && valorEmailPhone.value === '') {
+//     valorP.innerHTML = textInvalido;
+//     return true;
+//   }
+// }
+
+// function verificaSenha() {
+//   const valorSenha = document.getElementById('password');
+//   if (valorP.value === undefined && valorSenha.value === '') {
+//     valorP.innerHTML = textInvalido;
+//     return true;
+//   }
+// }
 
 // function verificaData() {
 //   if (valorP.value === undefined && valorData.value === '') {
@@ -53,7 +98,7 @@ const criarInput = () => {
   if (pegaDiv.className !== 'existeClasse') {
     const inputGender = document.createElement('input');
     inputGender.type = 'text';
-    inputGender.placeholder = 'Gênero (opcional)';
+    inputGender.placeholder = '"Gênero (opcional)"';
     inputGender.name = 'gender-custom';
     inputGender.className = 'generos';
     pegaDiv.className = 'existeClasse';
@@ -63,38 +108,16 @@ const criarInput = () => {
 
 pers.addEventListener('click', criarInput);
 
-// Requisito 20 (Função que cria a div dos dados no forms)
-// const section = document.querySelector('.right-content');
-
-// const valueNameSobrenome = () => `Olá, ${valorNome.value} ${valorSobrenome.value}`;
-
-// const valueEmailPhone = () => valorEmailPhone.value;
-
-// const valueData = () => valorData.value;
-
-// const valueGenero = () => {
-//   const inputGeneros = document.querySelectorAll('.generos');
-//   for (let index = 0; index < inputGeneros.length: index += 1) {
-//     if (inputGeneros[index].checked) {
-//       return inputGeneros[index].value;
-//     }
-//   }
-// }
-
-function verificaInputsVazios() {
-  verificaNome();
-  verificaSobrenome();
-  verificaEmailPhone();
-  verificaSenha();
-  // verificaData();
-  // createDivDados();
-}
-
 const botaoCadastro = document.getElementById('facebook-register');
-botaoCadastro.addEventListener('click', verificaInputsVazios);
 
 function stopDefAction(event) {
   event.preventDefault();
 }
 
 botaoCadastro.addEventListener('click', stopDefAction, false);
+botaoCadastro.addEventListener('click', validaCampos);
+botaoCadastro.addEventListener('click', dadosForms);
+
+// Eu (Adelino junior) pesquisei alguns códigos de colegas e vi
+// uma forma de validação mais simples e curta para usar no código
+// meu e de minha dupla nos requisitos 18 e 20
