@@ -18,7 +18,7 @@ const validate = () => {
       genderValue = gender[index].value;
     }
   }
-  rightContent.innerText = `Olá ${name} ${lastN}
+  rightContent.innerText = `Olá, ${name} ${lastN}
   ${phoneMail}
   ${birth}
   ${genderValue}`;
