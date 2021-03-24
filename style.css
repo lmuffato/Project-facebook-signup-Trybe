@@ -15,22 +15,23 @@
 
 .menu-conteiner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 65px;
-  width: 980px;
-  margin: 0 193px;
+  width: 90vw;
   padding: 13px 0 0;
 }
 
 .top-bar img {
   margin: 17px 0 0;
   align-self: flex-start;
+  margin-right: auto;
 }
 
 .facebook-login {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: auto;
 }
 
 .form-group {
