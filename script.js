@@ -7,6 +7,9 @@ const idSucessRegister = document.querySelector('#successRegister');
 const form = document.querySelector('.createUser');
 const register = document.querySelector('.register');
 const quickEasy = document.querySelector('.quick-easy');
+const submitButton = document.querySelector('.submitButton');
+const msgMobile = document.querySelector('.msgMobile');
+const personalizedGender = document.querySelector('#personalizedGender');
 
 const generateInvalidMessage = () => {
   idMessageInvalid.innerHTML = '';
@@ -99,11 +102,17 @@ window.onload = () => {
     alert(document.querySelector('#user-email-phone').value);
   });
   idSuccessButton.addEventListener('click', validateForm);
+  submitButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (window.innerWidth < 1100) {
+      msgMobile.style.display = 'block';
+    }
+  });
 };
 
-function genderCustom() {
-  if (document.querySelector('#customGender').checked === true) {
-    const parentEle = document.querySelector('#personalizedGender');
+function resetGender() {
+  if ((personalizedGender.innerHTML.length === 7)) {
+    const parentEle = personalizedGender;
     const elem = document.createElement('input');
     parentEle.appendChild(elem);
     Object.assign(elem, {
@@ -115,11 +124,7 @@ function genderCustom() {
   }
 }
 
-function Clicou1() {
-  genderCustom();
-}
-
-document.getElementById('customGender').addEventListener('click', Clicou1);
+document.getElementById('customGender').addEventListener('click', resetGender);
 
 function clickParaSelecionar() {
   document.getElementById(genderCustomConst).remove();
