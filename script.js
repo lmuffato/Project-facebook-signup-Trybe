@@ -35,16 +35,17 @@ function removeInvalidDiv() {
 }
 
 function registerButton() {
-  const registerForm = document.getElementById('register-form').elements;
-  const formSize = registerForm.length;
+  const registerForm = document.getElementById('register-form');
+  const registerFormElements = registerForm.elements;
+  const formSize = registerFormElements.length;
   for (let index = 0; index < formSize; index += 1) {
-    const registerInput = registerForm[index].value;
+    const registerInput = registerFormElements[index].value;
     if (registerInput === '') {
       removeInvalidDiv();
       const div = document.createElement('div');
       div.innerHTML = 'Campos inválidos';
       div.className = 'invalid-field';
-      registerForm[index].parentNode.parentNode.appendChild(div);
+      registerForm.appendChild(div);
       break;
     } else {
       console.log(registerInput);
