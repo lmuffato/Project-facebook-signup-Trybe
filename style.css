@@ -61,8 +61,7 @@
 .form-boxflex {
   display: flex;
   width: 100%;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .input-fullname {
@@ -87,4 +86,13 @@
 
 #input-radios {
   display: flex;
+}
+
+.register-button {
+  display: flex;
+}
+
+.name-lastname {
+  display: flex;
+  justify-content: space-between;
 }

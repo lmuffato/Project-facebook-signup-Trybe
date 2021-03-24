@@ -38,8 +38,10 @@
       <h1>Abra uma conta</h1>
       <div class="quick-easy">É rápido e fácil.</div>
       <form class="form-boxflex" action="">
-        <input class="input-fullname" type="text" name="firstname" placeholder="Nome">
-        <input class="input-fullname" type="text" name="lastname" placeholder="Sobrenome">
+        <div class="name-lastname">
+          <input class="input-fullname" type="text" name="firstname" placeholder="Nome">
+          <input class="input-fullname" type="text" name="lastname" placeholder="Sobrenome">
+        </div>
         <input class="input-form" type="text" name="phone_email" placeholder="Celular ou email">
         <input class="input-form" type="password" name="password" placeholder="Nova senha">
         <label for="" id="label-gender">Gênero</label>
@@ -51,8 +53,12 @@
           <label for="input-pers">Personalizado</label>
           <input type="radio" value="Personalizado" name="gender" id="input-pers">
         </div>
+        <div id="input-personalizado"></div>
         <label id="label-birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="input-birthdate">
+        <div class="register-button">
+          <button id="facebook-register" type="submit">Cadastre-se</button>
+        </div>
       </form>
     </section>
   </main>
