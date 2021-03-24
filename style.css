@@ -73,7 +73,7 @@
   flex-flow: column wrap;
 }
 
-#label-birthdate input {
+#birthdate {
   display: block;
 }
 
