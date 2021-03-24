@@ -37,15 +37,15 @@
     <div class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
-      <form>
+      <form id='register-form' action=''>
         <div class="nome">
-          <input type="text" name="firstname" placeholder="Nome">
-          <input type="text" name="lastname" placeholder="Sobrenome">
+          <input type="text" name="firstname" placeholder="Nome" required>
+          <input type="text" name="lastname" placeholder="Sobrenome" required>
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha">
+        <input type="text" name="phone_email" placeholder="Celular ou email" required>
+        <input type="password" name="password" placeholder="Nova senha" required>
         <label for="birthdate" id="label-birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
 
         <div id="gender">
           <label id="label-gender" for="gender">Gênero</label>
