@@ -14,14 +14,15 @@ const toBeInput = document.createElement('input');
 toBeInput.id = 'to-be-input';
 toBeInput.name = 'gender-custom';
 toBeInput.placeholder = 'Gênero (opcional)';
+const genderPersoInput = document.getElementById('gender-input-if-true');
 function newCamp() {
   if (toBe.checked === true) {
-    document.getElementById('gender-input-if-true').appendChild(toBeInput);
+    genderPersoInput.appendChild(toBeInput);
   }
 }
 function removeCamp() {
-  if (toBe.checked === false) {
-    document.getElementById('gender-input-if-true').removeChild(toBeInput);
+  if ((toBe.checked === false) && (genderPersoInput.children.length > 0)) {
+    genderPersoInput.removeChild(toBeInput);
   }
 }
 const male = document.getElementById('male');
