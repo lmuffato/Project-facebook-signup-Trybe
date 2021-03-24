@@ -117,6 +117,7 @@ input {
 }
 
 .right-content {
+  padding-top: 20px;
   width: 300px;
 }
 
@@ -178,6 +179,7 @@ h1 {
 .quick-easy {
   color: #1d2129;
   font-size: 19px;
+  padding-bottom: 20px;
 }
 
 #birthdateContainer {
@@ -186,7 +188,7 @@ h1 {
   width: 91%;
 }
 
-#birthdateContainer label {
+#birthdateContainer label, #label-gender {
   color: #90949c;
   font-size: 16px;
   font-weight: 600;
@@ -195,4 +197,9 @@ h1 {
 
 .genderContainer {
   display: flex;
+  justify-content: space-between;
+}
+
+.genderContainer input {
+  border-style: none;
 }
