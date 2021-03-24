@@ -143,3 +143,14 @@ input {
 .right-content form label {
   color: black;
 }
+
+#facebook-slogan {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
+}
