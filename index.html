@@ -55,29 +55,29 @@
         <br />
         <form method="get">
           <div id="fullname-container">
-            <input type="text" name="firstname" placeholder="Nome" size="10" />
-            <input type="text" name="lastname" placeholder="Sobrenome" size="20" />
+            <input type="text" name="firstname" placeholder="Nome" size="10" required oninvalid="this.setCustomValidity('Campos inválidos')" oninput="this.setCustomValidity('')" />
+            <input type="text" name="lastname" placeholder="Sobrenome" size="20" required oninvalid="this.setCustomValidity('Campos inválidos')" oninput="this.setCustomValidity('')" />
           </div>
 
           <div>
-            <input type="text" name="phone_email" placeholder="Celular ou email" size="20" />
+            <input type="text" name="phone_email" placeholder="Celular ou email" size="20" required oninvalid="this.setCustomValidity('Campos inválidos')" oninput="this.setCustomValidity('')" />
           </div>
 
           <div id="password-container">
-            <input type="password" name="password" id="" placeholder="Nova senha" />
+            <input type="password" name="password" id="" placeholder="Nova senha" required oninvalid="this.setCustomValidity('Campos inválidos')" oninput="this.setCustomValidity('')" />
           </div>
 
           <div id="birthdate-container">
             <label for="input-birthdate" id="label-birthdate">Data de nascimento</label>
-            <input name="birthdate" type="text" id="input-bithdate" placeholder="dd/mm/aaaa">
+            <input name="birthdate" type="text" id="input-bithdate" placeholder="dd/mm/aaaa" required oninvalid="this.setCustomValidity('Campos inválidos')" oninput="this.setCustomValidity('')">
           </div>
 
           <div id="gender-container">
             <label for="" id="label-gender">Gênero</label>
             <br>
-            <input type="radio" name="gender" id="Feminino" onclick="createCustomGender()">Feminino
-            <input type="radio" name="gender" id="Masculino" onclick="createCustomGender()">Masculino
-            <input type="radio" name="gender" id="Personalizado" onclick="createCustomGender()">Personalizado
+            <input type="radio" name="gender" id="Feminino" onclick="createCustomGender()" required='required' oninvalid="this.setCustomValidity('Campos inválidos')" oninput="this.setCustomValidity('')">Feminino
+            <input type="radio" name="gender" id="Masculino" onclick="createCustomGender()" required='required' oninvalid="this.setCustomValidity('Campos inválidos')" oninput="this.setCustomValidity('')">Masculino
+            <input type="radio" name="gender" id="Personalizado" onclick="createCustomGender()" required='required' oninvalid="this.setCustomValidity('Campos inválidos')" oninput="this.setCustomValidity('')">Personalizado
             <input type="text" name="gender-custom" id="custom-gender" placeholder="Gênero (opcional)">
           </div>
 
