@@ -186,3 +186,22 @@ form {
   left: 1px;
   font-weight: 600;
 }
+
+.custom {
+  display: none;
+}
+
+.gender-custom-description {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  color: rgb(96, 103, 112);
+}
+
+.custom-pronoun {
+  display: block;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}

@@ -29,3 +29,17 @@ function validationForm(event) {
 }
 
 btnRegister.addEventListener('click', validationForm);
+
+// Requisito 19
+const labelCustom = document.querySelector('.genero');
+const customVisible = (event) => {
+  console.log(event.target.value);
+  const custom = document.querySelector('.custom');
+  if (event.target.value === 'Personalizado') {
+    custom.style.cssText = 'display: block';
+  } else {
+    custom.style.cssText = 'display: none';
+  }
+};
+
+labelCustom.addEventListener('change', customVisible);
