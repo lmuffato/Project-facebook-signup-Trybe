@@ -29,3 +29,8 @@ body {
   align-self: flex-end;
   margin-left: 15px;
 }
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
