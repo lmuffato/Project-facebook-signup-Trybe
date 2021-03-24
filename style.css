@@ -73,6 +73,10 @@
   flex-flow: column wrap;
 }
 
+#label-birthdate input {
+  display: block;
+}
+
 #label-gender {
   display: flex;
   flex-flow: column wrap;

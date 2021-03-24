@@ -10,7 +10,9 @@ btnLogin.addEventListener('click', () => {
 const genderInput = () => {
   const gender = document.createElement('input');
   gender.type = 'text';
-  gender.id = 'custom-gender';
+  gender.id = 'gender-custom';
+  gender.name = 'gender-custom';
+  gender.placeholder = 'Gênero (opcional)';
   if (otherGenders) {
     formRegister.appendChild(gender);
   }
