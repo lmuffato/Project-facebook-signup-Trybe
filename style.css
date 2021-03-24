@@ -146,3 +146,8 @@ body {
   text-shadow: 0 1px 1px black;
   margin-top: 20px;
 }
+
+.right-content form .alertInvalidFields {
+  font-size: 12px;
+  color: rgb(187, 25, 25);
+}
