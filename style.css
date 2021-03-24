@@ -14,7 +14,7 @@ body {
   padding-top: 13px;
   display: flex;
   background-color: rgb(66, 103, 178);
-  height: 82px;
+  height: 76px;
   justify-content: space-between;
 }
 
@@ -27,7 +27,7 @@ body {
   padding-left: 65%;
 }
 
-label, a {
+label,a {
   color: white;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
@@ -61,7 +61,6 @@ input {
 
 #button-login {
   background: #4267b2;
-  padding: 2px 6px;
   color: white;
   cursor: pointer;
   font-size: 12px;
@@ -72,11 +71,10 @@ input {
   border-color: #29487d;
   border: 1px solid;
   border-radius: 2px;
-  white-space: nowrap;
 }
 
 #button-login:hover {
-  background: #2757b8;
+  background: #2054bb;
 }
 
 .form-group {
@@ -98,6 +96,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
 .login_form_label a {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
@@ -132,11 +131,13 @@ a:hover {
   display: flex;
   position: absolute;
   float: right;
+  flex-direction: row;
 }
 
 .form-control {
   align-self: flex-end;
-  align-self: center;
+  padding-bottom: 20px;
+  padding-left: 6px;
 }
 
 .right-content form label {
