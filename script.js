@@ -59,6 +59,8 @@ function showInfosOnTheForm() {
   ${onlyData[2]} 
   ${onlyData[3]} 
   ${onlyData[4]}`;
+
+  contentRight.appendChild(greeting);
 }
 
 function saveInfosForm() {
