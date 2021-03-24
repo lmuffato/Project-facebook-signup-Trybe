@@ -2,7 +2,7 @@
 const entrarButton = document.getElementById('button-login');
 const formResults = document.getElementsByTagName('input');
 const buttonSubscrive = document.getElementById('facebook-register');
-// const result = document.querySelector('.result');
+const result = document.querySelector('.result');
 // const buttonLogin = document.getElementById('button-login');
 
 // Bloco de declaração de funções
@@ -20,6 +20,15 @@ const isRadioChecked = (index) => {
   return checked;
 };
 
+const checkValues = (contentForm) => {
+  const values = Object.values(contentForm);
+  for (let index = 0; index < values.length; index += 1) {
+    if (values[index] === '') {
+      result.innerText = 'Campos inválidos';
+    }
+  }
+};
+
 buttonSubscrive.addEventListener('click', (event) => {
   event.preventDefault();
   const contentForm = {};
@@ -30,7 +39,7 @@ buttonSubscrive.addEventListener('click', (event) => {
       contentForm[formResults[index].name] = formResults[index].value;
     }
   }
-  console.log(contentForm);
+  checkValues(contentForm);
 });
 
 // bloco de ações de inicialização
