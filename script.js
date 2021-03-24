@@ -24,36 +24,6 @@ function clickGender() {
   });
 }
 
-/* const fields = document.querySelectorAll('[required]');
-
-console.log(fields);
-
-function checkErrors(field) {
-  let errorFound = false;
-  for (const error in field.validity) {
-    if (error !== 'customError' && field.validity[error]) {
-      errorFound = true;
-    }
-  }
-  return errorFound;
-}
-
-function checkField(event) {
-  const field = event.target;
-  const result = checkErrors(field);
-  if (result) {
-    field.setCustomValidity('Campo inválido');
-  } else {
-    field.setCustomValidity('');
-  }
-}
-
-function validateInputs() {
-  for (let index = 0; index < fields.length; index += 1) {
-    fields[index].addEventListener('invalid', checkField);
-  }
-} */
-
 function checkTextInputs() {
   const inputList = document.querySelectorAll('.input-text');
   let emptyField = false;
@@ -78,7 +48,7 @@ function checkRadioInputs() {
 
 let messageShown = false;
 
-function checkInputs() {
+function checkInputs(event) {
   if (checkTextInputs() === true || checkRadioInputs() === 0) {
     const message = document.createElement('p');
     document.querySelector('.main-form').appendChild(message);
@@ -87,10 +57,35 @@ function checkInputs() {
       messageShown = true;
     }
   }
+  event.preventDefault();
+}
+
+/* function getData() {
+  const dataList = document.querySelectorAll('input');
+  let dataShow = [];
+  for (let index = 0; index < dataList.length - 3; index += 1) {
+    dataShow.push(dataList[index].value);
+    console.log(dataShow);
+  }
+} */
+
+function getData() {
+  const getFirstName = document.getElementById('first-name').value;
+  const getLastName = document.getElementById('last-name').value;
+  const getPhoneEmail = document.getElementById('phone-email').value;
+  const getDateBirth = document.getElementById('date').value;
+  const getGender = document.querySelector("input[name='gender']:checked").value;
+
+  console.log(getFirstName);
+  console.log(getLastName);
+  console.log(getPhoneEmail);
+  console.log(getDateBirth);
+  console.log(getGender);
 }
 
 const submitButton = document.querySelector('#facebook-register');
 submitButton.addEventListener('click', checkInputs);
+submitButton.addEventListener('click', getData);
 
 window.onload = function startSession() {
   activeAlert();
