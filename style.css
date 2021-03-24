@@ -39,3 +39,11 @@ body {
 .right-content {
   width: 300px;
 }
+
+.inputFlex {
+  display: flex;
+}
+
+.genderOptions {
+  display: flex;
+}

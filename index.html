@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Facebook</title>
-</head>
-<body>
-  <header class="top-bar">
-    <img src="imgs/facebook-logo.png" alt="facebook-logo" class="facebook-logo">
-    <form class="facebook-login">
-      <div class="form-group">
-        <label id="user-email-phone-label">Email ou telefone</label>
-        <input id="user-email-phone"type="text">
-      </div>
-      <div class="form-group">
-        <label id="user-password-label">Senha</label>
-        <input type="password" id = "user-password">
-      </div>
-      <div class="form-control">
-        <button id="button-login">Entrar</button>
-      </div>
-    </form>
-  </header>
-  <main class="main-content">
-    <aside class="left-content">
-      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-      <img src="imgs/networking.png" alt="networking" id="facebook-networking">
-    </aside>
-    <div class="right-content">
-      <h1>Abra uma conta</h1>
-       <h2 class="quick-easy">É Rápido e fácil.</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Facebook</title>
+  </head>
+  <body>
+    <header class="top-bar">
+      <img
+        src="imgs/facebook-logo.png"
+        alt="facebook-logo"
+        class="facebook-logo"
+      />
+      <form class="facebook-login">
+        <div class="form-group">
+          <label id="user-email-phone-label">Email ou telefone</label>
+          <input id="user-email-phone" type="text" />
+        </div>
+        <div class="form-group">
+          <label id="user-password-label">Senha</label>
+          <input type="password" id="user-password" />
+        </div>
+        <div class="form-control">
+          <button id="button-login">Entrar</button>
+        </div>
+      </form>
+    </header>
+    <main class="main-content">
+      <aside class="left-content">
+        <p id="facebook-slogan">
+          O Facebook ajuda você a se conectar e compartilhar com as pessoas que
+          fazem parte da sua vida.
+        </p>
+        <img
+          src="imgs/networking.png"
+          alt="networking"
+          id="facebook-networking"
+        />
+      </aside>
+      <div class="right-content">
+        <h1>Abra uma conta</h1>
+        <h2 class="quick-easy">É Rápido e fácil.</h2>
         <form action="" method="GET">
-
+          <div class="inputFlex">
+            <input type="text" name="firstname" placeholder="Nome" />
+            <input type="text" name="lastname" placeholder="Sobrenome" />
+          </div>
+          <input
+            type="text"
+            name="phone_email"
+            placeholder="Celular ou email"
+          />
+          <input type="password" name="password" placeholder="Nova senha" />
+          <br />
+          <label for="" id="label-birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" placeholder="dd/mm/aaa" />
+          <br />
+          <label for="gender" id="label-gender">Gênero</label>
+          <div class="genderOptions">
+          <label for="woman">Feminino</label>
+          <input type="radio" name="gender" id="woman">
+          <label for="man">Masculino</label>
+          <input type="radio" name="gender" id="man">
+          <label for="personalized">Personalizado</label>
+          <input type="radio" name="gender" id="personalized">          
+        </div>
         </form>
-
-    </div>
-  </main>
-<script src="script.js"></script>
-</body>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
