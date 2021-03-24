@@ -44,14 +44,9 @@ registerBtn.addEventListener('click', (event) => {
     const lastName = registerForm.lastname.value;
     const email = registerForm.phone_email.value;
     const date = registerForm.birthdate.value;
-    let gender;
+    const gender = registerForm.gender.value;
     const fullName = `${firstName} ${lastName}`;
 
-    if (registerForm.gender.value === 'Personalizado') {
-      gender = document.getElementById('gender-custom').value;
-    } else {
-      gender = registerForm.gender.value;
-    }
     validMesseger(fullName, email, date, gender);
   }
 });
