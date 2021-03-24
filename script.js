@@ -8,4 +8,30 @@ function signAlert() {
   });
 }
 
+// Requisito 19
+const gender = document.querySelector('#gender-custom');
+function genderCustom() {
+  const custom = document.querySelector('#custom');
+  custom.addEventListener('click', () => {
+    gender.style.display = 'flex';
+  });
+}
+
+function hideCustomMale() {
+  const male = document.querySelector('#male');
+  male.addEventListener('click', () => {
+    gender.style.display = 'none';
+  });
+}
+
+function hideCustomFemale() {
+  const female = document.querySelector('#female');
+  female.addEventListener('click', () => {
+    gender.style.display = 'none';
+  });
+}
+
+hideCustomMale();
+hideCustomFemale();
+genderCustom();
 signAlert();

@@ -157,3 +157,7 @@ span label {
   justify-content: center;
   align-content: space-between;
 }
+
+#gender-custom {
+  display: none;
+}
