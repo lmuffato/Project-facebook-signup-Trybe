@@ -11,6 +11,7 @@ body , html {
 
 .header {
   background-color: var(--primary-color);
+  width: 100%;
 }
 
 .top-bar {
@@ -130,3 +131,31 @@ input {
   display: block;
   width: 100%;
 }
+
+/* #button-login {
+  margin-bottom: 21px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#button-login:hover {
+  width: 100px;
+  background-color: rgb(167, 178, 209);
+}
+
+.a {
+  font-size: 30px;
+} */
+
+/* .history__facebook {
+  height: 629px;
+  background-color: rgb(2, 26, 24);
+}
+
+.history_child {
+  max-width: var(--m-width);
+  background-color: rgb(17, 172, 164);
+  margin: auto;
+  height: 629px;
+} */
