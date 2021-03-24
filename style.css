@@ -33,7 +33,7 @@ body {
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 
 .right-content {
@@ -46,4 +46,8 @@ body {
 
 .genderOptions {
   display: flex;
+}
+
+.left-content {
+  width: 800px;
 }
