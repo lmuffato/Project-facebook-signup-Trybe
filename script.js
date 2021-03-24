@@ -10,36 +10,64 @@ botaoEntrar.addEventListener('click', () => {
   alerta();
 });
 
-const botaoCadastre = document.getElementById('facebook-register');
+// Requisito 18
 
-/* A lógica utilizada abaixo foi retirada do link: https://stackoverflow.com/questions/5272433/html5-form-required-attribute-set-custom-validation-message
+// const fieldsForm = document.querySelectorAll('[required]');
 
-E o entedimento dos conteúdos dos links:
-- https://www.w3schools.com/jsref/event_oninvalid.asp
-- https://developer.mozilla.org/en-US/docs/Web/API/HTMLSelectElement/setCustomValidity
-- https://developer.mozilla.org/pt-BR/docs/Learn/Forms/Form_validation */
+const buttonSubmit = document.getElementById('facebook-register');
 
-botaoCadastre.addEventListener('click', () => {
-  const formField = document.getElementsByTagName('input');
-  for (let index = 0; index < formField.length; index += 1) {
-    formField[index].oninvalid = (e) => {
-      e.target.setCustomValidity('');
-      if (!e.target.validity.valid) {
-        e.target.setCustomValidity('Campos inválidos');
-      }
-    };
-  }
-});
+/* function clearMessage() {
+  const clearParagraph = document.querySelector('.alert-form');
+  clearParagraph.remove();
+} */
 
-/* function checkInputForm() {
-  const formField = document.getElementById('form-name');
-  const formInput = formField.getElementsByTagName('input').value;
-  if (formInput === undefined) {
-    formInput.setCustomValidity('Campos inválidos');
+function checkInput() {
+  const formCheck = document.getElementById('inputs-form');
+  const checkInputs = formCheck.getElementsByTagName('input');
+
+  for (let index = 0; index < checkInputs.length; index += 1) {
+    if (checkInputs[index].value === undefined) {
+      return false;
+    }
   }
 }
 
-botaoCadastre.addEventListener('click', checkInputForm); */
+function checkRadio() {
+  const checkRadioTarget = document.querySelectorAll('input[name="gender"]');
+  let contCheck = 0;
+
+  for (let index = 0; index < checkRadioTarget.length; index += 1) {
+    if (checkRadioTarget[index].checked === false) {
+      contCheck += 1;
+    } if (contCheck === 3) {
+      return false;
+    }
+  }
+}
+
+function createAlertForm() {
+  const formCheck = document.getElementById('form-criacao');
+  const messageError = document.createElement('p');
+
+  formCheck.appendChild(messageError);
+  messageError.className = 'incomplete';
+  messageError.innerText = 'Campos inválidos';
+}
+
+function checkAll() {
+  const inputChecked = checkInput();
+  const radioChecked = checkRadio();
+
+  if (inputChecked === false || radioChecked === false) {
+    return createAlertForm();
+  }
+}
+
+buttonSubmit.addEventListener('click', (event) => {
+  // clearMessage();
+  event.preventDefault();
+  checkAll();
+});
 
 // Requisito 19
 
