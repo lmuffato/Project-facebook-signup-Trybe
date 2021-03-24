@@ -31,18 +31,15 @@
 
 .main-content {
   display: flex;
-  flex-direction: row;
+  justify-content: center;
 }
 
 .left-content {
-  display: flex;
-  flex-basis: 800px;
+  width: 800px;
 }
 
 .right-content {
-  display: flex;
   width: 300px;
-  justify-content: flex-end;
 }
 
 .name-conteiner {
