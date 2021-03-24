@@ -43,13 +43,13 @@ const checkEmpty = () => {
       errorMessage.innerHTML = '';
     }
   }
-}
+};
 
 formRegister.addEventListener('submit', (e) => {
   e.preventDefault();
-})
+});
 
 otherGenders.addEventListener('click', genderInput);
 btnRegister.addEventListener('click', () => {
   checkEmpty();
-})
+});
