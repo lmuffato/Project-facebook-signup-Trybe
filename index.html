@@ -39,12 +39,12 @@
       <span class="quick-easy">É rápido e fácil.</span>
       <form class="create-acount" action="">
         <div class="user-name">
-          <input class="full-name user-data" name="firstname" data-validate-field="name" placeholder="Nome" type="text">
-          <input class="full-name user-data" name="lastname" data-validate-field="name" placeholder="Sobrenome"
+          <input class="full-name user-data" name="firstname" data-validate-field="name" id="firstName" placeholder="Nome" type="text">
+          <input class="full-name user-data" name="lastname" data-validate-field="name" id="lastName" placeholder="Sobrenome"
             type="text">
         </div>
         <div class="phone-email">
-          <input name="phone_email" class="user-data" data-validate-field="email" placeholder="Celular ou email"
+          <input name="phone_email" class="user-data" data-validate-field="email" id="phoneEmail" placeholder="Celular ou email"
             type="text">
         </div>
         <div class="password">
@@ -52,18 +52,18 @@
         </div>
         <div class="birth-date">
           <label id="label-birthdate" for="">Data de nascimento</label>
-          <input name="birthdate" class="user-data" placeholder="dd/mm/aaaa" type="text">
+          <input name="birthdate" class="user-data" id="birthdate" placeholder="dd/mm/aaaa" type="text">
         </div>
         <div class="genderOptions">
           <label id="label-gender" for="gender">Gênero</label>
           <br>
           <div class="nowrap">
             <label for="female">Feminino</label>
-            <input type="radio" id="female" name="gender" value="Feminino">
+            <input class='genderOptions' type="radio" id="female" name="gender" value="Feminino">
             <label for="male">Masculino</label>
-            <input type="radio" id="male" name="gender" value="Masculino">
+            <input class='genderOptions' type="radio" id="male" name="gender" value="Masculino">
             <label for="other">Personalizado</label>
-            <input type="radio" id="other" name="gender" value="Personalizado">
+            <input class='genderOptions' type="radio" id="other" name="gender" value="Personalizado">
           </div>
         </div>
         <div class="btn">
