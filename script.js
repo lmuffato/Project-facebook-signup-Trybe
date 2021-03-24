@@ -18,3 +18,20 @@ btnRegister.addEventListener('click', () => {
     }
   }
 });
+
+const female = document.getElementById('female');
+const male = document.getElementById('male');
+const customGender = document.getElementById('custom');
+const inputHidden = document.getElementById('input-hidden');
+
+customGender.addEventListener('click', () => {
+  inputHidden.setAttribute('type', 'text');
+});
+
+female.addEventListener('click', () => {
+  inputHidden.setAttribute('type', 'hidden');
+});
+
+male.addEventListener('click', () => {
+  inputHidden.setAttribute('type', 'hidden');
+});
