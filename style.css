@@ -31,17 +31,14 @@
 
 .main-content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center; 
 }
 
 .left-content {
-  display: flex;
   width: 800px;
 }
 
 .right-content {
-  display: flex;
   width: 300px;
 }
 
