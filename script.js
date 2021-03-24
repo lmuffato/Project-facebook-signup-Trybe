@@ -60,8 +60,16 @@ function showPrint() {
   return rightContent.appendChild(divPrint);
 }
 
+function addLike() {
+  const imgPrint = document.createElement('img');
+  imgPrint.src = 'imgs/like.png'
+  imgPrint.className = 'print-like';
+  return rightContent.appendChild(imgPrint);
+}
+
 buttonSignUp.addEventListener('click', (event) => {
   event.preventDefault();
   data.style.display = 'none';
+  addLike();
   showPrint();
 });
