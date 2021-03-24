@@ -79,11 +79,13 @@ body {
   height: 80%;
   width: 100%;
   justify-content: center;
+  background-color: red;
 }
 
 /* left container */
 .left-content {
   width: 800px;
+  background-color: magenta;
 }
 
 #facebook-slogan {
@@ -96,6 +98,7 @@ body {
   margin-top: 40px;
   word-spacing: -1px;
   color: rgb(14, 56, 95);
+  background: chartreuse;
 }
 
 /* right container */
