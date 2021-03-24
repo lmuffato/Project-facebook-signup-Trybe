@@ -35,7 +35,7 @@ header {
 .form-group {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 30%;
   margin: 8px;
 }
 
@@ -65,13 +65,13 @@ header {
 
 h1 {
   font-size: 36px;
-  font-family: inherit;
+  font-family: Helvetica, Arial, sans-serif;
   color: #333;
 }
 
 .quick-easy {
   font-size: 20px;
-  font-family: inherit;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .left-content {
@@ -83,6 +83,10 @@ h1 {
 }
 
 .left-items {
+  width: 450px;
+}
+
+.left-items img {
   width: 450px;
 }
 
@@ -119,6 +123,7 @@ h1 {
   font-weight: 700;
   line-height: 29px;
   color: #0e385f;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 #label-birthdate , #label-gender {
@@ -127,6 +132,7 @@ h1 {
   color: gray;
   font-weight: 700;
   font-size: 20;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 #date {
@@ -139,6 +145,7 @@ h1 {
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .radio {
