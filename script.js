@@ -18,24 +18,28 @@ function confereRadioChecked() {
   return conta;
 }
 
-function validacao() {
+function returnText() {
   const entradaDeDados = document.querySelectorAll('input');
+  const createInnerText = document.createElement('span');
+  for (let index = 2; index < entradaDeDados.length; index += 1) {
+    if (entradaDeDados[index].value === '' || confereRadioChecked() === 0) {
+      const takeForm = document.querySelectorAll('form')[1];
+      createInnerText.innerText = 'Campos inválidos';
+      takeForm.appendChild(createInnerText);
+      break;
+    }
+  }
+}
+
+function validacao() {
   const takeButton = document.querySelector('#facebook-register');
   takeButton.addEventListener('click', (e) => {
     e.preventDefault();
-    const createInnerText = document.createElement('span');
-    for (let index = 2; index < entradaDeDados.length; index += 1) {
-      if (entradaDeDados[index].value === '' || confereRadioChecked() === 0) {
-        if (document.querySelectorAll('span').length > 0) {
-          break;
-        } else {
-          const takeForm = document.querySelectorAll('form')[1];
-          createInnerText.innerText = 'Campos inválidos';
-          takeForm.appendChild(createInnerText);
-          break;
-        }
-      }
+    const takeSpan = document.querySelectorAll('span');
+    if (takeSpan.length > 0) {
+      return false;
     }
+    returnText();
   });
 }
 validacao();
