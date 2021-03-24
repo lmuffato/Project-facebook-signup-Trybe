@@ -54,18 +54,11 @@ function showInfosOnTheForm() {
   const onlyData = tankingTheData.split(',');
 
   const greeting = document.createElement('p');
-  greeting.innerText = `Olá, ${onlyData[0]} ${onlyData[1]}`;
-  const contact = document.createElement('p');
-  contact.innerText = `${onlyData[2]}`;
-  const niver = document.createElement('p');
-  niver.innerText = `${onlyData[3]}`;
-  const genus = document.createElement('p');
-  genus.innerText = `${onlyData[4]}`;
-
-  contentRight.appendChild(greeting);
-  contentRight.appendChild(contact);
-  contentRight.appendChild(niver);
-  contentRight.appendChild(genus);
+  greeting.innerText = `Olá, ${onlyData[0]} 
+  ${onlyData[1]} 
+  ${onlyData[2]} 
+  ${onlyData[3]} 
+  ${onlyData[4]}`;
 }
 
 function saveInfosForm() {
