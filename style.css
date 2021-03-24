@@ -13,10 +13,6 @@
   align-items: center;
 }
 
-header img {
-  width: 180px;
-}
-
 header {
   width: 100%;
   display: flex;
