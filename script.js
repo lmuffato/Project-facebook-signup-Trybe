@@ -31,3 +31,9 @@ registerBtn.addEventListener('click', (event) => {
     document.getElementById('invalid-message').innerText = 'Campos inválidos';
   }
 });
+
+const customGenderInput = registerForm.gender[2];
+const customGenderField = document.getElementById('gender-custom');
+customGenderInput.addEventListener('change', () => {
+  customGenderField.style.display = 'block';
+});

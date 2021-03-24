@@ -4,16 +4,17 @@
   font-family: Roboto, sans-serif;
 }
 
-/* header {
+header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background-color: rgb(66, 103, 178);
-} */
+}
 
 .top-bar {
+  width: 100%;
+  max-width: 980px;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
   padding-top: 13px;
   background-color: rgb(66, 103, 178);
 }
@@ -82,11 +83,11 @@
 .main-content {
   width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   background: linear-gradient(white, rgb(211, 216, 232));
   margin: 0 auto;
-  justify-content: center;
 }
 
 .left-content {
@@ -137,4 +138,8 @@
 #facebook-networking {
   width: 537px;
   height: 195px;
+}
+
+#gender-custom {
+  display: none;
 }
