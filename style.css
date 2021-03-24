@@ -32,6 +32,7 @@
 .main-content {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .left-content {
@@ -42,7 +43,6 @@
 .right-content {
   display: flex;
   width: 300px;
-  justify-content: flex-end;
 }
 
 .name-conteiner {
