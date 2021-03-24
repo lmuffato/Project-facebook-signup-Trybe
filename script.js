@@ -51,15 +51,11 @@ function validaCampoEmailOuCelular() {
 
 function validaGenero() {
   let isButtonChecked = false;
-  for (index = 0; index <= radioButtons.length; index += 1){
-   if (radioButtons.checked === true);{ 
-   isButtonChecked = true
+  for (let index = 0; index <= radioButtons.length; index += 1) {
+    if (radioButtons.checked === true) isButtonChecked = true;
   }
- }
-    return isButtonChecked;
+  return isButtonChecked;
 }
-  
-
 
 function handleFunctions() {
   validaCampoNome();
