@@ -19,7 +19,6 @@
 .facebook-login {
   display: flex;
   width: auto;
-  color: white;
   align-items: center;
 }
 
@@ -71,4 +70,41 @@ a {
 
 .flexDirection {
   display: flex;
+}
+
+#birthConteiner {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+#birthConteiner input {
+  text-align: center;
+}
+
+#emailBox input , #passwordBox input {
+  width: 100%;
+  height: 20px;
+  margin-bottom: 5px;
+  font-size: 17px;
+  border-radius: 5%;
+  border: 1px solid rgb(104, 104, 104);
+}
+
+#nameBox {
+  display: flex;
+  justify-content:space-between;
+  margin: 5px 0;
+}
+
+#nameBox input {
+  width: 47%;
+  height: 20px;
+  border-radius: 5%;
+  font-size: 17px;
+  border: 1px solid rgb(104, 104, 104);
+}
+
+.flexDirection input::placeholder{
+  padding-left: 5px;
 }
