@@ -38,7 +38,7 @@
         </div>
           <form  class="facebook-login" action="">
             <div>
-              <div class='flexDirection'id="nameBox">
+              <div class='flexDirection' id="nameBox">
                 <input type="text" placeholder="Nome" name="firstname">
                 <input type="text" placeholder="Sobrenome" name="lastname">
               </div>
@@ -48,14 +48,8 @@
               <div class="flexDirection" id="passwordBox">
                 <input type="password" name="password" placeholder="Nova senha">
               </div>
-                <div id="birthConteiner">
-                  <label id='label-birthdate'  type='text' for="">Data de nascimento</label>
-                  <input placeholder="dd/mm/aaaa" name='birthdate' type="text">
-
-                </input>
-                </div>
-                <div id="genderBox">
-                <label for="" name='label-gender'>Gênero</label><br>
+              <div id="genderBox">
+                <div><label for="gender" id='label-gender'>Gênero</label></div>
                 <input type="radio" id="female" name="gender">
                 <label for="female">Feminino</label>
                 <input type="radio" id="male" name="gender">
@@ -63,6 +57,11 @@
                 <input type="radio" id="custom" name="gender">
                 <label for="custom">Personalizado</label>
                 </div>
+                <div id="birthConteiner">
+                  <label id='label-birthdate'  type='text' for="">Data de nascimento</label>
+                  <input placeholder="dd/mm/aaaa" name='birthdate' type="text">
+                </div>
+
               <div id="registerBox">
                 <button id="facebook-register" type="submit">Cadastre-se</button>
               </div>
