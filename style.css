@@ -160,3 +160,15 @@ a {
 .right-content form label {
   color: black;
 }
+
+.removeRightContent{
+  display: none;
+}
+
+#nameContainer {
+  display: flex;
+}
+
+#nameContainer > input {
+  width: 50%;
+}
