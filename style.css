@@ -137,3 +137,14 @@ p {
 .facebook-login {
   display: flex;
 }
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+#user-email-phone-label {
+  color: white;
+  margin-top: 40px;
+  font-size: large;
+}
