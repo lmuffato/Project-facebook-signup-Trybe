@@ -42,45 +42,61 @@
 .main-content {
   display: flex;
   justify-content: center;
-  padding-top: 15px;
-  background: linear-gradient(180deg, white 0%, rgba(188, 199, 226, 1) 100%);
-  height: 350px;
   padding-top: 30px;
+  height: 500px;
+  background: linear-gradient(180deg, white 0%, rgba(188, 199, 226, 1) 100%);
+}
+
+.left-content {
+  width: 800px;
+  height: 300px;
+  color: rgb(69, 113, 201);
+  font-size: 25px;
+}
+
+.right-content {
+  width: 300px;
+  height: 300px;
+  font-size: small;
+}
+
+.right-content input {
+  padding: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  width: 255px;
 }
 
 .full-name {
   display: flex;
 }
 
-.left-content {
-  width: 800px;
-  margin-left: 20%;
-  margin-right: 15%;
-  height: 300px;
-  color: rgb(69, 113, 201);
-  font-size: large;
+.full-name input {
+  width: 125px;
 }
 
-.right-content {
-  width: 300px;
-  margin-right: 20%;
-  height: 300px;
-  font-size: small;
-  display: inline-block;
-  align-content: space-between;
+#lastname {
+  margin-left: 5px;
 }
 
-#form-register {
-  display: block;
+#user-birthdate {
+  display: flex;
+  width: 115px;
+  text-align: center;
 }
 
-.quick-easy {
-  padding-top: 10px;
-  padding-bottom: 10px;
+#radio {
+  display: flex;
+  width: 255px;
 }
 
 #gender-custom {
   display: none;
+}
+
+#facebook-register {
+  margin-top: 10px;
+  padding: 10px;
 }
 
 #mensage-invalid {
