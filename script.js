@@ -54,7 +54,7 @@ function showInfosOnTheForm() {
   const onlyData = tankingTheData.split(',');
 
   const greeting = document.createElement('p');
-  greeting.innerText = `Olá, ${onlyData[0]} ${onlyData[1]}`;
+  greeting.innerText = `"Olá, ${onlyData[0]} ${onlyData[1]}"`;
   const contact = document.createElement('p');
   contact.innerText = `${onlyData[2]}`;
   const niver = document.createElement('p');
