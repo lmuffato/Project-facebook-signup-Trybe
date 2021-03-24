@@ -106,3 +106,6 @@ h1 , h3 {
   font-family: sans-serif;
 }
 
+#input-gender {
+  display: none;
+}
