@@ -61,6 +61,7 @@ function checkAll() {
   if (inputChecked === false || radioChecked === false) {
     return createAlertForm();
   }
+  return true;
 }
 
 // Requisito 19
@@ -104,33 +105,23 @@ function getGender() {
   return result;
 }
 
-function clearContainer() {
-  const container = document.querySelector('.right-content').children;
-
-  for (let index = 0; index < container.length; index += 1) {
-    container[index].remove();
-  }
-}
-
 function createLogin() {
   const elements = getElements();
   const gender = getGender();
-  const box = document.querySelector('.imcomplete');
   const container = document.querySelector('.right-content');
-  const text = `Ola, ${elements[0]} ${elements[1]}
-  ${elements[2]} 
-  ${elements[3]} 
+  const text = `Olá, ${elements[0]} ${elements[1]}<br>
+  ${elements[2]}<br> 
+  ${elements[3]}<br> 
   ${gender}`;
 
-  if (box === false) {
-    clearContainer();
-    container.innerHTML = text;
-  }
+  container.innerHTML = text;
+  console.log('passei aqui');
 }
 
 buttonSubmit.addEventListener('click', (event) => {
   // clearMessage();
   event.preventDefault();
-  checkAll();
-  createLogin();
+  if (checkAll() === true) {
+    createLogin();
+  }
 });
