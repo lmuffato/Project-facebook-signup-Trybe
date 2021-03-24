@@ -27,7 +27,7 @@ body {
   padding-left: 65%;
 }
 
-label,a {
+label a {
   color: white;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
