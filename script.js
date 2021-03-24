@@ -52,7 +52,6 @@ function valueSelectedGender() {
 function showInfosOnTheForm() {
   const tankingTheData = sessionStorage.getItem('infosForm');
   const onlyData = tankingTheData.split(',');
-  const newDiv = document.createElement('div');
 
   const greeting = document.createElement('p');
   greeting.innerText = `Olá, ${onlyData[0]} ${onlyData[1]}`;
@@ -63,11 +62,10 @@ function showInfosOnTheForm() {
   const genus = document.createElement('p');
   genus.innerText = `${onlyData[4]}`;
 
-  newDiv.appendChild(greeting);
-  newDiv.appendChild(contact);
-  newDiv.appendChild(niver);
-  newDiv.appendChild(genus);
-  contentRight.appendChild(newDiv);
+  contentRight.appendChild(greeting);
+  contentRight.appendChild(contact);
+  contentRight.appendChild(niver);
+  contentRight.appendChild(genus);
 }
 
 function saveInfosForm() {
