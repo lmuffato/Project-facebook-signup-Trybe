@@ -7,6 +7,7 @@ const cellEmailInput = document.getElementById('phone-email');
 const newPasswordInput = document.getElementById('new-password');
 const birthDateInput = document.getElementById('birth-date');
 const errorMessageDiv = document.getElementById('error-message');
+const rightContent = document.querySelector('.right-content');
 
 function emitAlert(e) {
   e.preventDefault();
@@ -60,9 +61,28 @@ function checkRadio() {
   return false;
 }
 
+function selectedRadio() {
+  if (maleInput.value) return maleInput.value;
+  if (femaleInput.value) return femaleInput.value;
+  if (otherInput.value) return otherInput.value;
+  return false;
+}
+
+function accountCreated() {
+  const newRightContent = `
+  Olá, ${nameInput.value} ${lastNameInput.value}
+  Seu e-mail/telefone: ${cellEmailInput.value}
+  Data de nascimento: ${birthDateInput.value}
+  Gênero: ${selectedRadio()}
+  `;
+  rightContent.innerHTML = newRightContent;
+}
+
 function checkFields() {
   if (!checkNamesEmail() || !checkPassWordBirth() || !checkRadio()) {
     errorMessageDiv.classList.remove('hidden');
+  } else {
+    accountCreated();
   }
 }
 
