@@ -41,16 +41,16 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="" id="register-form">
         <div class="full-name">
-          <input type="text" name="firstname" placeholder="Nome">
-          <input type="text" name="lastname" placeholder="Sobrenome">
+          <input type="text" name="firstname" placeholder="Nome" id="input-name">
+          <input type="text" name="lastname" placeholder="Sobrenome" id="input-last-name">
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email">
-        <input type="password" name="password" placeholder="Nova senha">
+        <input type="text" name="phone_email" placeholder="Celular ou email" id="input-email">
+        <input type="password" name="password" placeholder="Nova senha" id="input-password">
         <label for="" id="label-birthdate">Data de nascimento</label>
-        <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
-        <label id="label-gender">Gênero</label>
+        <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="date">
+        <label id="label-gender" id="label-gender">Gênero</label>
         <div id="inputs-container">
-          <input type="radio" name="gender" value="Feminino">Feminino</input>
+          <input type="radio" class="style-radio" name="gender" value="Feminino">Feminino</input>
           <input type="radio" name="gender" value="Masculino">Masculino</input>
           <input type="radio" name="gender" value="Personalizado">Personalizado</input>
         </div>
@@ -60,7 +60,7 @@
       </form>
     </div>
   </div>
-  
+
 
 
   <script src='script.js'></script>
