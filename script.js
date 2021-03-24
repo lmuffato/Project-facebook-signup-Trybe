@@ -46,7 +46,7 @@ function dataExibition() {
   const lastName = form.elements[1].value;
   const email = form.elements[2].value;
   const birthDate = form.elements[4].value;
-  const print = `Olá ${name} ${lastName}
+  const print = `Olá, ${name} ${lastName}
   ${email}
   ${birthDate}
   ${checkRadio()}`;
