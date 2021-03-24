@@ -122,3 +122,8 @@ p {
   background-color: rgb(66, 103, 178);
   height: 80px;
 }
+
+.facebook-logo {
+  height: 45px;
+  margin-top: 22px;
+}
