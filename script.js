@@ -1,4 +1,4 @@
-let isValid =true;
+let isValid = true;
 function getEmailOrPhone() {
   const input = document.getElementById('user-email-phone');
   alert(input.value);
