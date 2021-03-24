@@ -107,3 +107,23 @@ const registerForm = document.querySelector('.right-content form');
 const inputsSelector = '.right-content input[type="text"]';
 validateRegister(buttonValidate, inputsSelector, radiosRegister);
 customGender(custoGender, buttonValidate, registerForm);
+
+// const createdivFacebook = () => {
+//   const filho = document.createElement('div');
+//   filho.classList.add('history__facebook');
+//   const main = document.querySelector('.main');
+//   main.appendChild(filho);
+//   const filhoDiv = document.createElement('div');
+//   filhoDiv.classList.add('history_child');
+//   filho.appendChild(filhoDiv);
+// }
+
+// const historyOfFacebook = (link) => {
+//   link.addEventListener('click', () => {
+//     const main = document.querySelector('.main');
+//     main.innerHTML = '';
+//     createdivFacebook();
+//   });
+// };
+// const linkHistory = document.querySelector('a');
+// historyOfFacebook(linkHistory);
