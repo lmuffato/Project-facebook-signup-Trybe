@@ -46,10 +46,6 @@
   background: linear-gradient(180deg, white 0%, rgba(188, 199, 226, 1) 100%);
 }
 
-.full-name {
-  display: flex;
-}
-
 .left-content {
   width: 800px;
   height: 300px;
@@ -61,16 +57,30 @@
   width: 300px;
   height: 300px;
   font-size: small;
-  display: inline-block;
-  align-content: space-between;
+  display: flex;
+  flex-direction: column;
 }
 
-#form-register {
-  display: block;
+#right-content input {
+  padding: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.full-name {
+  display: flex;
+}
+
+#lastname {
+  margin-left: 5px;
 }
 
 #gender-custom {
   display: none;
+}
+
+#facebook-register {
+  margin-top: 10px;
 }
 
 #mensage-invalid {

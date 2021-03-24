@@ -2,7 +2,7 @@ const buttonSubmit = document.getElementById('button-login');
 const buttonRegister = document.getElementById('facebook-register');
 const registerInputs = document.querySelectorAll('.register');
 const radiosButtons = document.getElementsByName('gender');
-const newDisplayInfo = document.querySelector('.right-content');
+const contentRight = document.querySelector('.right-content');
 
 function submit() {
   alert(document.getElementById('user-email-phone').value);
@@ -67,7 +67,7 @@ function showInfosOnTheForm() {
   newDiv.appendChild(contact);
   newDiv.appendChild(niver);
   newDiv.appendChild(genus);
-  newDisplayInfo.appendChild(newDiv);
+  contentRight.appendChild(newDiv);
 }
 
 function saveInfosForm() {
@@ -79,6 +79,8 @@ function saveInfosForm() {
   const data = [firstName, lastName, emailPhone, birthdate, gender];
 
   sessionStorage.setItem('infosForm', data);
+
+  contentRight.innerHTML = '';
   showInfosOnTheForm();
 }
 
@@ -87,8 +89,6 @@ function checkData(e) {
   if (checkRegister() === false || checkRadios() === false) {
     document.getElementById('mensage-invalid').style.display = 'block';
   } else {
-    document.getElementById('mensage-invalid').style.display = 'none';
-    document.querySelector('#form-register').style.display = 'none';
     saveInfosForm();
   }
 }
