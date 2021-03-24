@@ -92,6 +92,15 @@ input {
   flex-direction: column;
 }
 
+.radiogroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.radiogroup label , .radiogroup input {
+  cursor: pointer;
+}
+
 .right-content form input , .right-content form label {
   margin: 5px 0;
 }
@@ -114,8 +123,14 @@ input {
   max-width: 48%;
 }
 
-.gender {
+#gender {
   margin: 5px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#custom-gender {
+  transition: 400ms;
 }
 
 #facebook-register {
