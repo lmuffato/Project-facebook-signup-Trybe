@@ -7,7 +7,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  font-family: Roboto, sans-serif;
+  font-family: Ubuntu, sans-serif;
   background: rgb(235, 235, 235);
 }
 
@@ -21,7 +21,6 @@ body {
   border-bottom: 1px solid rgb(21, 44, 92);
   align-items: center;
   justify-content: space-between;
-  font-family: Ubuntu, sans-serif;
   width: 100vw;
   padding: 20px;
 }
@@ -72,30 +71,78 @@ body {
 
 .main-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  padding: 20px 0px;
 }
 
 .left-content {
   width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 0px;
+}
+
+.left-content p {
+  max-width: 500px;
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(8, 24, 58);
 }
 
 .right-content {
   width: 300px;
 }
 
+.right-content h1 {
+  font-size: 30px;
+  color: rgb(45, 45, 45);
+  margin-bottom: 10px;
+}
+
+.right-content h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(25, 25, 25);
+  margin-bottom: 20px;
+}
+
 .right-content form {
   display: flex;
   flex-direction: column;
+  gap: 7px;
 }
 
 .right-content form input {
   width: 100%;
+  font-size: 16px;
 }
 
 .input-block {
   display: flex;
+  gap: 5px;
 }
 
 .right-content form .input-block input {
   flex-basis: 50%;
+}
+
+.right-content form #label-gender, #label-birthdate {
+  font-weight: 700;
+  color: rgb(107, 107, 107);
+  font-size: 16px;
+  margin-top: 7px;
+}
+
+.right-content form button {
+  background: rgb(33, 185, 66);
+  color: #FFF;
+  width: 60%;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 5px 17px;
+  border: 1px solid rgb(0, 116, 0);
+  border-radius: 4px;
+  text-shadow: 0 1px 1px black;
+  margin-top: 20px;
 }
