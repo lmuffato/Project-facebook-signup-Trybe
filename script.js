@@ -1,6 +1,6 @@
 const loginBtn = document.getElementById('button-login');
 const userEmailInput = document.getElementById('user-email-phone');
-const signInBtn = document.getElementById('facebook-register');
+const signUpBtn = document.getElementById('facebook-register');
 const nameInput = document.getElementById('first-name');
 const lastNameInput = document.getElementById('last-name');
 const cellEmailInput = document.getElementById('phone-email');
@@ -69,7 +69,7 @@ function checkFields() {
 otherInput.addEventListener('click', ShowInput);
 maleInput.addEventListener('click', HideInput);
 femaleInput.addEventListener('click', HideInput);
-signInBtn.addEventListener('click', checkFields);
+signUpBtn.addEventListener('click', checkFields);
 
 ShowInput();
 HideInput();
