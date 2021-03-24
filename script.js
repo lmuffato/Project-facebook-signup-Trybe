@@ -42,7 +42,7 @@ function registerButton() {
     if (registerInput === '') {
       removeInvalidDiv();
       const div = document.createElement('div');
-      div.innerHTML = 'Campos inválidos!';
+      div.innerHTML = 'Campos inválidos';
       div.className = 'invalid-field';
       registerForm[index].parentNode.parentNode.appendChild(div);
       break;
