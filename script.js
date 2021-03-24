@@ -6,6 +6,24 @@ function activeAlert() {
   });
 }
 
+function showCustom(value) {
+  if (value === 'Personalizado') {
+    document.getElementById('gender-custom-content').style.display = 'block';
+  } else {
+    document.getElementById('gender-custom-content').style.display = 'none';
+  }
+}
+
+function clickGender() {
+  const radioOptions = document.querySelectorAll('[name=gender]');
+  console.log(radioOptions);
+  Array.from(radioOptions).forEach((radio) => {
+    radio.addEventListener('click', (event) => {
+      showCustom(event.target.value);
+    });
+  });
+}
+
 const fields = document.querySelectorAll('[required]');
 
 console.log(fields);
@@ -69,4 +87,5 @@ function checkInputs() {
 
 window.onload = function startSession() {
   activeAlert();
+  clickGender();
 };
