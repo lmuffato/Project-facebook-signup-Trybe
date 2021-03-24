@@ -45,9 +45,9 @@
 
 			<section class="right-content">
 				<div>
-					<h1>Abra uma conta</h1>
+					<h1 class="register">Abra uma conta</h1>
 					<div class='quick-easy'>É rápido e fácil.</div>
-					<form action='' method='GET' class='createUser js-form'>
+					<form action='' method='GET' name="form1" class='createUser js-form'>
 						<div id="fullname">
 							<div>
 								<input type='text' class="js-form" id='firstname' name='firstname' data-validate-field="firstname" placeholder='Nome'>
@@ -70,14 +70,19 @@
 
 						<label id='label-gender'>Gênero</label>
 						<div id="radios">
-							<input type='radio' name='gender' id='female' value="Feminino" class='gender'>Feminino
-							<input type='radio' name='gender' id='male' value="Masculino" class='gender'>Masculino
-							<input type='radio' name='gender' id='customGender' value="Personalizado" class='gender'>Personalizado
+							<input type='radio' name='gender' id='female' value="Feminino" class='gender'>
+							<label for="female">Feminino</label>
+							<input type='radio' name='gender' id='male' value="Masculino" class='gender'>
+							<label for="male">Masculino</label>
+							<input type='radio' name='gender' id='customGender' value="Personalizado" class='gender'>
+							<label for="customGender">Personalizado</label>
 						</div>
 						<div id='personalizedGender'>
 						</div>
+						<div id="messageInvalid"></div>
 						<button type="submit" id='facebook-register'>Cadastre-se</button>
 					</form>
+					<div id="successRegister"></div>
 				</div>
 			</section>
 
