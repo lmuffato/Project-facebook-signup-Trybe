@@ -74,3 +74,11 @@
   width: 40%;
   margin-right: 5px;
 }
+
+.remove {
+  display: none;
+}
+
+.inputNone {
+  display: none;
+}
