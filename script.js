@@ -31,15 +31,15 @@ window.onload = function startin() {
 //   fields[index].addEventListener('invalid', validation);
 // }
 
-const invalidField = document.getElementById('invalidFields');
-
+// const invalidField = document.getElementById('invalidFields');
 const fields = document.querySelectorAll('[required]');
+const cadasForm = document.querySelectorAll('form')[1];
 
 function clearMessage() {
-  invalidField.removeChild(document.getElementById('message-invalid'));
+  cadasForm.removeChild(document.getElementById('message-invalid'));
 }
 
-function verifyError() {
+function verifError() {
   let foundError = 0;
   for (let index = 0; index < fields.length; index += 1) {
     if (fields[index].validity.valueMissing === true) {
@@ -50,12 +50,13 @@ function verifyError() {
 }
 
 function messageInvalid() {
-  const error = verifyError();
+  const error = verifError();
   if (error > 0) {
     const tagP = document.createElement('p');
     tagP.innerText = 'Campos inválidos';
     tagP.id = 'message-invalid';
-    invalidField.appendChild(tagP);
+    tagP.style.color = 'red';
+    cadasForm.appendChild(tagP);
   }
 }
 
