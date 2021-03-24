@@ -41,6 +41,13 @@ header {
   margin: 8px;
 }
 
+.form-group p {
+  position: absolute;
+  top: 57px;
+  color: white;
+  opacity: 70%;
+}
+
 .form-control {
   align-self: flex-end;
 }
@@ -104,8 +111,14 @@ h1 {
   flex-wrap: wrap;
 }
 
+.data-content p {
+  font-size: 12px;
+  color: rgb(112, 104, 104);
+  margin-top: 20px;
+}
+
 .data-content input {
-  height: 30px;
+  height: 35px;
   border: 1px solid lightgray;
   padding-left: 6px;
   border-radius: 4px;
@@ -113,7 +126,7 @@ h1 {
 }
 
 #first-name , #last-name {
-  width: 46%;
+  width: 48%;
 }
 
 #phone-email , #password {
@@ -132,7 +145,7 @@ h1 {
 #label-birthdate , #label-gender {
   width: 100%;
   margin-top: 20px;
-  color: gray;
+  color: rgb(150, 144, 144);
   font-weight: 700;
   font-size: 20;
   font-family: Helvetica, Arial, sans-serif;
