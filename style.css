@@ -14,8 +14,8 @@ body {
   padding-top: 13px;
   display: flex;
   background-color: rgb(66, 103, 178);
-  height: 82px;
-  align-content: space-between;
+  height: 76px;
+  justify-content: space-between;
 }
 
 .facebook-logo {
@@ -24,10 +24,14 @@ body {
 }
 
 .login-container {
-  padding-left: 70%;
+  padding-left: 65%;
 }
 
-label {
+a {
+  cursor: pointer;
+}
+
+label a {
   color: white;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
@@ -36,27 +40,8 @@ label {
   vertical-align: middle;
 }
 
-table {
-  display: table;
-  border-collapse: separate;
-  box-sizing: border-box;
-  text-indent: initial;
-  border-color: grey;
-  border-spacing: 2px;
-  width: 392px;
-}
-
-tbody {
-  display: table-row-group;
-  vertical-align: middle;
-  border-color: inherit;
-}
-
-tr {
-  display: table-row;
-  border-color: inherit;
-  width: 392px;
-  height: 21px;
+a:hover {
+  text-decoration: underline;
 }
 
 .label {
@@ -82,26 +67,28 @@ input {
   direction: ltr;
 }
 
-.html7magic {
-  padding-bottom: 4px;
-}
-
-#loginbutton {
-  background: none;
-  color: #4b4f56;
+#button-login {
+  background: #4267b2;
+  color: white;
   cursor: pointer;
-  display: inline-block;
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
-  padding: 0;
-  border: 0;
-  white-space: nowrap;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-color: #29487d;
+  border: 1px solid;
+  border-radius: 2px;
+}
+
+#button-login:hover {
+  background: #2054bb;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
+  padding: 3px 3px 4px;
 }
 
 .login_form_label {
@@ -109,14 +96,6 @@ input {
   color: #9cb4d8;
   text-align: right;
 }
-
-a {
-  cursor: pointer;
-  text-decoration: none;
-  float: left;
-  padding: 0;
-}
-
 .login_form_label a {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
@@ -149,16 +128,29 @@ a {
 
 .facebook-login {
   display: flex;
-  position:absolute;
+  position: absolute;
   float: right;
 }
 
 .form-control {
   align-self: flex-end;
+  padding-bottom: 20px;
+  padding-left: 6px;
 }
 
 .right-content form label {
   color: black;
+}
+
+#facebook-slogan {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 550;
+  line-height: 29px;
+  margin-top: 40px;
+  width: 450px;
+  word-spacing: -1px;
 }
 
 .removeRightContent{
