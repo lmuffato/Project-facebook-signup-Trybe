@@ -72,7 +72,7 @@ body {
 .main-content {
   display: flex;
   justify-content: space-evenly;
-  padding: 20px 0px;
+  padding: 20px 0;
 }
 
 .left-content {
@@ -80,7 +80,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 20px 0px;
+  padding: 20px 0;
 }
 
 .left-content p {
@@ -127,7 +127,7 @@ body {
   flex-basis: 50%;
 }
 
-.right-content form #label-gender, #label-birthdate {
+.right-content form #label-gender , #label-birthdate {
   font-weight: 700;
   color: rgb(107, 107, 107);
   font-size: 16px;
@@ -136,7 +136,7 @@ body {
 
 .right-content form button {
   background: rgb(33, 185, 66);
-  color: #FFF;
+  color: white;
   width: 60%;
   font-size: 18px;
   font-weight: 700;
