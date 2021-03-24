@@ -53,6 +53,7 @@
 .left-content {
   width: 800px;
   margin-left: 3%;
+  margin-right: 5%;
   height: 300px;
   color: rgb(69, 113, 201);
   font-size: large;
@@ -67,12 +68,16 @@
   align-content: space-between;
 }
 
+#form-register {
+  display: block;
+}
+
 #gender-custom {
   display: none;
 }
 
 #mensage-invalid {
   display: none;
-  font-size: 25px;
-  color: red;
+  font-size: 20px;
+  color: black;
 }

@@ -29,12 +29,31 @@ function checkRadios() {
   return confirmRadios;
 }
 
+function displayUser() {
+  const fistName = document.querySelector('#firstname').value;
+  const lastName = document.querySelector('#lastname').value;
+  const emailPhone = document.querySelector('#phone-email').value;
+  const birthdate = document.querySelector('#user-birthdate').value;
+
+  // for (let j = 0; j < radiosButtons.length; j += 1) {
+  //   radiosButtons[j].addEventListener('click', () => {
+  //     if (radiosButtons[j].checked === true) {
+  //       const gender = radiosButtons[j].value;
+  //     }
+  //   });
+  //   return gender;
+  // }
+  console.log(fistName + lastName + emailPhone + birthdate);
+}
+
 function checkData(e) {
   e.preventDefault();
   if (checkRegister() === false || checkRadios() === false) {
     document.getElementById('mensage-invalid').style.display = 'block';
   } else {
     document.getElementById('mensage-invalid').style.display = 'none';
+    document.querySelector('#form-register').style.display = 'none';
+    displayUser();
   }
 }
 
