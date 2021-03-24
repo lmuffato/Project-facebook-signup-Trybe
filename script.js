@@ -6,6 +6,35 @@ document.querySelector('#button-login').addEventListener('click', () => {
   alert(userEmailPhone.value);
 });
 
+// requisito 18
+function validateText() {
+  const inputText = document.querySelectorAll('.input-text');
+  let validate = 0;
+
+  for (let index = 0; index < inputText.length; index += 1) {
+    if (inputText[index].value === '') {
+      validate += 1;
+    }
+  }
+  return validate;
+}
+
+const message = document.createElement('span');
+const div = document.querySelector('#erro');
+div.appendChild(message);
+
+function validateInputs(event) {
+  const validateAll = validateText();
+
+  if (validateAll >= 1) {
+    event.preventDefault();
+    message.innerText = 'Campos inválidos';
+  }
+}
+
+const btn = document.querySelector('#facebook-register');
+btn.addEventListener('click', validateInputs);
+
 // Requisito 19 - Cria um input de texto quando clica no radio button 'Personalizado'
 document.querySelector('#custom').addEventListener('click', () => {
   const listRegister = document.querySelector('.register');

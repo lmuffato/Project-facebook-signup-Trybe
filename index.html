@@ -47,17 +47,17 @@
 
             <form class='register' action=''>
                 <div class='fullName'>
-                    <input type='text' name='firstname' placeholder='Nome' required> <!-- Requisito 11-->
+                    <input type='text' name='firstname' placeholder='Nome' class='input-text'> <!-- Requisito 11-->
 
-                    <input type='text' name='lastname' placeholder='Sobrenome' required> <!-- Requisito 12 -->
+                    <input type='text' name='lastname' placeholder='Sobrenome' class='input-text'> <!-- Requisito 12 -->
                 </div>
 
-                <input type='text' name='phone_email' placeholder='Celular ou email' required> <!-- Requisito 13 -->
+                <input type='text' name='phone_email' placeholder='Celular ou email' class='input-text'> <!-- Requisito 13 -->
                 
-                <input type='password' name='password' placeholder='Nova senha' required> <!-- Requisito 14 -->
+                <input type='password' name='password' placeholder='Nova senha' class='input-text'> <!-- Requisito 14 -->
                 
                 <label id='label-birthdate' for='birthdate'>Data de nascimento</label>
-                <input type='text' name='birthdate' placeholder='dd/mm/aaaa' required> <!-- Requisito 15 -->
+                <input type='text' name='birthdate' placeholder='dd/mm/aaaa' class='input-text'> <!-- Requisito 15 -->
 
                 <label id='label-gender' for=''>Gênero</label>
                 <div> <!-- Requisito 16 -->
@@ -72,6 +72,8 @@
                 </div>
 
                 <button id='facebook-register' type='submit'>Cadastre-se</button> <!-- Requisito 17 -->
+                <div id='erro'></div>
+                
             </form>
 
         </div>
