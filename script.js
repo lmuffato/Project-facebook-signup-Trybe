@@ -53,7 +53,6 @@ function getData() {
   dataList.push(document.getElementById('phone-email').value);
   dataList.push(document.getElementById('date').value);
   dataList.push(document.querySelector('input[name="gender"]:checked').value);
-  
   deleteContent();
   resultRegister(dataList);
 }
