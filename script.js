@@ -78,5 +78,3 @@ const radioBtns = document.querySelectorAll('#radioBtns input');
 for (let index = 0; index < radioBtns.length - 1; index += 1) {
   radioBtns[index].addEventListener('click', deleteCustomGender);
 }
-
-
