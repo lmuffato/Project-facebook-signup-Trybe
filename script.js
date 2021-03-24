@@ -37,23 +37,3 @@ genderMale.addEventListener('click', removeCustomField);
 
 const genderFemale = document.getElementById('feminino');
 genderFemale.addEventListener('click', removeCustomField);
-
-// Requisito 18
-
-// Recupera um nodelist com todos os inputs com o atributo required
-const fields = document.querySelectorAll('[required]');
-
-// Função para trocar a mensagem para "Campos Inválidos"
-function customValidation(event) {
-  const field = event.target;
-  field.setCustomValidity('Campos inválidos');
-}
-
-// aplica a nova mensagem em todos os campos
-function applyCustomValidation() {
-  for (let index = 0; index < fields.length; index += 1) {
-    fields[index].addEventListener('invalid', customValidation);
-  }
-}
-
-applyCustomValidation();
