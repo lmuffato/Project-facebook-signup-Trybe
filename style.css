@@ -121,7 +121,7 @@ p {
   display: flex;
   background-color: rgb(66, 103, 178);
   height: 80px;
-  justify-content: left;
+  justify-content: space-between;
 }
 
 .facebook-logo {
@@ -136,8 +136,4 @@ p {
 
 .facebook-login {
   display: flex;
-  height: 30px;
-  position: absolute;
-  right: -60px;
-  width: 30px;
 }
