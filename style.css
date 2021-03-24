@@ -134,12 +134,12 @@ p {
 .print-data {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-top: 10px;
+  align-items: center;
   font-size: 30px;
   font-weight: 700;
   width: 300px;
   color: #333;
+  text-align: center;
 }
 
 .facebook-login {
