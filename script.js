@@ -25,10 +25,34 @@ function validateForm() {
   return valid;
 }
 
+const validMesseger = (fullName, email, date, gender) => {
+  const rightContent = document.querySelector('.right-content');
+  rightContent.innerHTML = '';
+
+  rightContent.innerText = `Olá, ${fullName}
+  ${email}
+  ${date}
+  ${gender}`;
+};
+
 registerBtn.addEventListener('click', (event) => {
   event.preventDefault();
   if (!validateForm()) {
     document.getElementById('invalid-message').innerText = 'Campos inválidos';
+  } else {
+    const firstName = registerForm.firstname.value;
+    const lastName = registerForm.lastname.value;
+    const email = registerForm.phone_email.value;
+    const date = registerForm.birthdate.value;
+    let gender;
+    const fullName = `${firstName} ${lastName}`;
+
+    if (registerForm.gender.value === 'Personalizado') {
+      gender = document.getElementById('gender-custom').value;
+    } else {
+      gender = registerForm.gender.value;
+    }
+    validMesseger(fullName, email, date, gender);
   }
 });
 
