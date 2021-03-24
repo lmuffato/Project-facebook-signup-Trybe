@@ -14,7 +14,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 80px;
-  /* margin-bottom: 30px; */
 }
 
 .facebook-login {
@@ -60,13 +59,9 @@ body {
 .main-content {
   display: flex;
   justify-content: space-between;
-  /* max-width: 1220px; */
   background-color: rgb(232, 234, 242);
   margin: 0 auto;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-bottom: 300px;
-  padding-top: 30px;
+  padding: 30px 80px 300px;
 }
 
 .email input {
@@ -212,7 +207,7 @@ form {
 }
 
 footer {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   padding: 10px;
   text-align: center;
 }
