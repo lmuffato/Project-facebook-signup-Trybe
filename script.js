@@ -31,7 +31,7 @@ btnRegister.addEventListener('click', (event) => {
   let isValidate = 0;
   for (let index = 0; index < userInputs.length; index += 1) {
     if (userInputs[index].value === '') {
-      const formAlert = document.querySelector('.create-acount');
+      const formAlert = document.querySelector('.create-account');
       const spanAlert = document.createElement('span');
       spanAlert.innerText = 'Campos inválidos';
       formAlert.appendChild(spanAlert);
