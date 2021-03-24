@@ -66,7 +66,10 @@ const outPutTheGender = () => {
 const rightContent = document.querySelector('.right-content');
 // dando inner vazio
 const changeTheRight = () => {
-  rightContent.innerHTML = '';
+  const theList = rightContent.childNodes;
+  for (let i = 0; i < theList.length; i += 1) {
+    rightContent.removeChild(theList[i]);
+  }
 };
 // definindo a função com os output
 const outPutContent = () => {
