@@ -51,12 +51,13 @@
 .form-control {
   display: flex;
   align-self: flex-end;
-  padding: 0 0 12px 14px;
+  padding: 0 0 10px 14px;
   text-align: center;
   text-shadow: none;
   white-space: nowrap;
-  width: 60px;
+  width: 63px;
 }
+
 /* Necessita de ajustes */
 .form-control button {
   background-color: #4267b2;
@@ -65,11 +66,12 @@
   border-radius: 2px;
   border-color: #29487d;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 600;
   line-height: 18px;
   white-space: nowrap;
   cursor: pointer;
-  width: 54px;
+  width: 58px;
+  height: 24px;
 }
 
 .main-content {
