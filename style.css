@@ -19,4 +19,9 @@
 .form-group {
   display: flex;
   flex-direction: column;
+  margin-right: 5px;
+}
+
+.form-control {
+  align-self: flex-end;
 }
