@@ -31,16 +31,13 @@ function validateChecked(array) {
 }
 
 function logged() {
-  // Acessando as informações do formulário
   const oldRight = document.querySelector('.right-content');
   const firstName = document.querySelector('#firstname').value;
   const lastName = document.querySelector('#lastname').value;
   const email = document.querySelector('#email').value;
   const bornInfo = document.querySelector('#birthdate').value;
   const gender = document.querySelectorAll('#radioBtns input');
-  // Excluindo o oldRight
   oldRight.innerHTML = '';
-  // Criando novo Right
   const newText = document.createElement('p');
   newText.innerText = `Olá, ${firstName} ${lastName}
   ${email}
