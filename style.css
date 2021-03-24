@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: pink;
+  /* background-color: pink; */
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -15,7 +15,7 @@ body {
 /* ------------------------ header ---------------------- */
 .top-bar { /* header */
   display: flex;
-  background-color: rgb(66, 103, 178);
+  background-color: rgb(59, 89, 152);
   height: 10%;
   width: 100%;
   justify-content: space-between;
@@ -76,7 +76,6 @@ body {
 /* ------------------------ main ---------------------- */
 .main-content {
   display: flex;
-  background: red;
   height: 80%;
   width: 100%;
   justify-content: center;
@@ -85,15 +84,18 @@ body {
 /* left container */
 .left-content {
   width: 800px;
-  background: cyan;
-
 }
 
 #facebook-slogan {
-  width: 100%;
-  height: 15%;
-  text-align: center;
-  background-color: green;
+  width: 50%;
+  height: 18%;
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 29px;
+  margin-top: 40px;
+  word-spacing: -1px;
+  color: rgb(14, 56, 95);
 }
 
 /* right container */
@@ -111,6 +113,25 @@ body {
 
 #gender-container {
   display: flex;
+}
+
+#open-acc {
+  font-size: 36px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.quick-easy {
+  color: #1d2129;
+  font-size: 19px;
+}
+
+.form-style {
+  border: black solid 1px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* ------------------------ footer ---------------------- */
