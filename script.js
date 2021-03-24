@@ -45,7 +45,7 @@ function validacao() {
 validacao();
 
 function addInput() {
-  const takeInputRadio = document.getElementById('gender-options');
+  const takeInputRadio = document.getElementById('label-gender');
   const createInput = document.createElement('input');
   createInput.id = 'input-gender';
   createInput.setAttribute('name', 'gender-custom');
@@ -55,7 +55,7 @@ function addInput() {
 addInput();
 
 function checkRadioOption() {
-  const takeDivGender = document.getElementById('gender-options');
+  const takeDivGender = document.getElementById('label-gender');
   takeDivGender.addEventListener('click', () => {
     const takeInputOther = document.getElementById('personalizado');
     const takeInput = document.getElementById('input-gender');
