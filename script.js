@@ -55,7 +55,7 @@ function dataExibition() {
 
 function showPrint() {
   const divPrint = document.createElement('div');
-  divPrint.innerHTML = dataExibition();
+  divPrint.innerText = dataExibition();
   divPrint.className = 'print-data';
   return rightContent.appendChild(divPrint);
 }
