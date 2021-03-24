@@ -22,13 +22,20 @@ function validacao() {
   const entradaDeDados = document.querySelectorAll('input');
   const takeButton = document.querySelector('#facebook-register');
   takeButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    const createInnerText = document.createElement('span');
     for (let index = 2; index < entradaDeDados.length; index += 1) {
       if (entradaDeDados[index].value === '' || confereRadioChecked() === 0) {
-        alert('Campos inválidos');
-        break;
+        if (document.querySelectorAll('span').length > 0) {
+          break;
+        } else {
+          const takeForm = document.querySelectorAll('form')[1];
+          createInnerText.innerText = 'Campos inválidos';
+          takeForm.appendChild(createInnerText);
+          break;
+        }
       }
     }
-    e.preventDefault();
   });
 }
 validacao();
@@ -38,7 +45,7 @@ function addInput() {
   const createInput = document.createElement('input');
   createInput.id = 'input-gender';
   createInput.setAttribute('name', 'gender-custom');
-  createInput.setAttribute('placeholder', 'Gênero (opcional)');
+  createInput.setAttribute('placeholder', 'Gênero (opcional)"');
   takeInputRadio.appendChild(createInput);
 }
 addInput();
