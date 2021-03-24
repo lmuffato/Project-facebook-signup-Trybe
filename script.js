@@ -53,8 +53,7 @@ function showInfosOnTheForm() {
   const tankingTheData = sessionStorage.getItem('infosForm');
   const onlyData = tankingTheData.split(',');
 
-  const greeting = `Olá, ${onlyData[0]} 
-  ${onlyData[1]} 
+  const greeting = `Olá, ${onlyData[0]} ${onlyData[1]} 
   ${onlyData[2]} 
   ${onlyData[3]} 
   ${onlyData[4]}`;
