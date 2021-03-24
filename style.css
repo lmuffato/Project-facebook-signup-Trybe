@@ -3,6 +3,7 @@
 }
 
 body {
+  font-family: Helvetica, Arial, sans-serif;
   background-color: white;
   direction: ltr;
   color: #1c1e21;
@@ -14,7 +15,7 @@ body {
   padding-top: 13px;
   display: flex;
   background-color: rgb(66, 103, 178);
-  height: 76px;
+  height: 75px;
   justify-content: space-between;
 }
 
@@ -29,15 +30,18 @@ body {
 
 a {
   cursor: pointer;
+  color: #9fb5e6;
+  font-size: 12px;
+  padding-top: 8px;
 }
 
-label a {
+label {
   color: white;
-  font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   padding-left: 1px;
   vertical-align: middle;
+  padding-bottom: 4px;
 }
 
 a:hover {
@@ -75,7 +79,6 @@ input {
   font-weight: 600;
   line-height: 18px;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   border-color: #29487d;
   border: 1px solid;
   border-radius: 2px;
@@ -97,7 +100,6 @@ input {
   text-align: right;
 }
 .login_form_label a {
-  font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 20px;
   font-weight: 400;
@@ -106,10 +108,10 @@ input {
 
 .main-content {
   display: flex;
-  justify-content: space-around;
 }
 
 .left-content {
+  margin-left: 40px;
   width: 800px;
 }
 
@@ -119,11 +121,8 @@ input {
 
 #form {
   display: flex;
-  flex-direction: column;
-}
-
-.firstname-lastname {
-  width: 2px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .facebook-login {
@@ -134,7 +133,7 @@ input {
 
 .form-control {
   align-self: flex-end;
-  padding-bottom: 20px;
+  padding-bottom: 28px;
   padding-left: 6px;
 }
 
@@ -143,7 +142,6 @@ input {
 }
 
 #facebook-slogan {
-  font-family: Helvetica, Arial, sans-serif;
   color: #0e385f;
   font-size: 20px;
   font-weight: 550;
@@ -151,6 +149,33 @@ input {
   margin-top: 40px;
   width: 450px;
   word-spacing: -1px;
+}
+
+#nameContainer {
+  display: flex;
+  width: 329px;
+}
+
+#form input {
+  width: 100%;
+  height: 21px;
+  padding: 8px 10px;
+  font-size: 18px;
+  margin: 3px;
+  border-radius: 5px;
+  border: 1px solid #ccd0d5;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.quick-easy {
+  color: #1d2129;
+  font-size: 19px;
 }
 
 .removeRightContent{
