@@ -38,3 +38,86 @@
   color: white;
   padding-bottom: 5px;
 }
+
+.main-content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.left-content {
+  min-width: 800px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.left-content p {
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 29px;
+  margin-top: 20px;
+  width: 450px;
+  word-spacing: -1px;
+}
+
+.right-content {
+  width: 300px;
+  margin-right: 300px;
+}
+
+.right-content h1 {
+  color: #333;
+  font-size: 36px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.quick-easy {
+  color: #1d2129;
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.register input {
+  font-size: 18px;
+  padding: 8px 10px;
+  border: 1px solid #bdc7d8;
+  border-radius: 5px;
+}
+
+.name input {
+  width: 194px;
+  margin-right: 12px;
+}
+
+.name {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.email-password {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.email-password input {
+  margin-top: 12px;
+  width: 400px;
+}
+
+.birthdate {
+  margin-top: 12px;
+  color: #90949c;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.birthdate input {
+  margin-top: 8px;
+  width: 194px;
+}
