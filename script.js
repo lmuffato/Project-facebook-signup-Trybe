@@ -48,7 +48,7 @@ function checkRadioInputs() {
 
 let messageShown = false;
 
-function checkInputs(event) {
+function checkInputs() {
   if (checkTextInputs() === true || checkRadioInputs() === 0) {
     const message = document.createElement('p');
     document.querySelector('.main-form').appendChild(message);
@@ -56,8 +56,10 @@ function checkInputs(event) {
       message.innerText = 'Campos inválidos';
       messageShown = true;
     }
+  } else {
+    getData();
   }
-  event.preventDefault();
+ // event.preventDefault();
 }
 
 // Remove conteúdo do right content
@@ -93,7 +95,6 @@ function getData() {
 
 const submitButton = document.querySelector('#facebook-register');
 submitButton.addEventListener('click', checkInputs);
-submitButton.addEventListener('click', getData);
 
 window.onload = function startSession() {
   activeAlert();
