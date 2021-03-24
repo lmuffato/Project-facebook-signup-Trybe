@@ -5,6 +5,7 @@ const campoDeTextoPersonalizado = document.createElement('input');
 const submitFormButton = document.querySelector('#facebook-register');
 const criaContaForm = document.querySelector('.right-content form');
 const radioButtons = document.querySelectorAll('[name="gender"]');
+const inputBlock = document.querySelector('.right-content form .input-block');
 
 function exibirAlertaDeLogin() {
   window.alert(emailPhoneInput.value);
@@ -21,31 +22,45 @@ function adicionaCampoPersonalizado() {
 loginButton.addEventListener('click', exibirAlertaDeLogin);
 personalizadoRadioButton.addEventListener('click', adicionaCampoPersonalizado);
 
+function exibirAlertaDeInvalidez() {
+  if (criaContaForm.childNodes.length < 18) {
+    const alertaInvalido = document.createElement('p');
+    alertaInvalido.className = 'alertInvalidFields';
+    alertaInvalido.innerHTML = 'Campos inválidos';
+    criaContaForm.insertBefore(alertaInvalido, inputBlock);
+  }
+}
+
 function validaCampoNome() {
   if (document.getElementById('first-name').value.length < 3) {
     document.getElementById('first-name').focus();
+    exibirAlertaDeInvalidez();
   }
 }
 function validaCampoSobrenome() {
   if (document.getElementById('last-name').value.length < 3) {
     document.getElementById('last-name').focus();
+    exibirAlertaDeInvalidez();
   }
 }
 
 function validaCampoSenha() {
   if (document.getElementById('password').value.length < 3) {
     document.getElementById('password').focus();
+    exibirAlertaDeInvalidez();
   }
 }
 
 function validaCampoDataNascimento() {
   if (document.getElementById('birthdate').value.length < 3) {
     document.getElementById('birthdate').focus();
+    exibirAlertaDeInvalidez();
   }
 }
 function validaCampoEmailOuCelular() {
   if (document.getElementById('phone-email').value.length < 3) {
     document.getElementById('phone-email').focus();
+    exibirAlertaDeInvalidez();
   }
 }
 
