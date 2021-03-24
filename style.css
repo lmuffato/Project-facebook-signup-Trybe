@@ -54,7 +54,7 @@ button {
 #erro {
   display: flex;
   justify-content: center;
-  width: 130px;
+  width: 131px;
   background-color: red;
   color: white;
   margin: 5px;
