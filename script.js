@@ -1,3 +1,4 @@
+let isValid =true;
 function getEmailOrPhone() {
   const input = document.getElementById('user-email-phone');
   alert(input.value);
@@ -7,15 +8,26 @@ function getEmailOrPhone() {
 const btn = document.getElementById('button-login');
 btn.addEventListener('click', getEmailOrPhone);
 
-function requiredCamp(e) {
+function validateFields() {
   const inputs = document.querySelectorAll('.right-content input');
   for (let index = 0; index < inputs.length; index += 1) {
     if (inputs[index].value === '') {
-      const errorInfo = document.querySelector('#invalidFields');
-      errorInfo.style.display = 'block';
+      isValid = false;
     }
   }
-  e.preventDefault();
+}
+
+function invalidField() {
+  const errorInfo = document.querySelector('#invalidFields');
+  errorInfo.style.display = 'block';
+}
+
+function validateChecked(array) {
+  for (let index = 0; index < array.length; index += 1) {
+    if (array[index].checked === true) {
+      return array[index].value;
+    }
+  }
 }
 
 function logged() {
@@ -30,23 +42,26 @@ function logged() {
   oldRight.innerHTML = '';
   // Criando novo Right
   const newText = document.createElement('p');
-  newText.innerText = `Olá, ${firstName} ${lastName}`;
-  oldRight.appendChild(newText);
-  newText.innerText = `${email}`;
-  oldRight.appendChild(newText);
-  newText.innerText = `${bornInfo}`;
-  oldRight.appendChild(newText);
-  newText.innerText = `${gender.filter((x) => x.checked)[0].value}`;
+  newText.innerText = `Olá, ${firstName} ${lastName}
+  ${email}
+  ${bornInfo}
+  ${validateChecked(gender)}`;
   oldRight.appendChild(newText);
 }
 
 const buttonVerifier = document.getElementById('facebook-register');
-buttonVerifier.addEventListener('click', requiredCamp);
-
-const alertSpan = document.querySelector('span');
-if (window.getComputedStyle(alertSpan) === 'none') {
-  buttonVerifier.addEventListener('click', logged);
-}
+buttonVerifier.addEventListener('click', (e) => {
+  validateFields();
+  if (isValid) {
+    const alertSpan = document.querySelector('span');
+    alertSpan.style.display = 'none';
+    logged();
+  } else {
+    invalidField();
+  }
+  isValid = true;
+  e.preventDefault();
+});
 
 function addNewGender() {
   const newGender = document.querySelector('#personalizado');
