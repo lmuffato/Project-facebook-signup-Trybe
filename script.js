@@ -63,12 +63,6 @@ function checkAll() {
   }
 }
 
-buttonSubmit.addEventListener('click', (event) => {
-  // clearMessage();
-  event.preventDefault();
-  checkAll();
-});
-
 // Requisito 19
 
 const clickCustom = document.getElementById('check-personalizado');
@@ -90,9 +84,8 @@ function getElements() {
   const name = document.querySelector('input[name="firstname"]').value;
   const lastName = document.querySelector('input[name="lastname"]').value;
   const phoneEmail = document.querySelector('input[name="phone_email"]').value;
-  const password = document.querySelector('input[name="password"]').value;
   const birthdate = document.querySelector('input[name="birthdate"]').value;
-  const result = [name, lastName, phoneEmail, birthdate, password];
+  const result = [name, lastName, phoneEmail, birthdate];
   return result;
 }
 
@@ -110,3 +103,34 @@ function getGender() {
   }
   return result;
 }
+
+function clearContainer() {
+  const container = document.querySelector('.right-content').children;
+
+  for (let index = 0; index < container.length; index += 1) {
+    container[index].remove();
+  }
+}
+
+function createLogin() {
+  const elements = getElements();
+  const gender = getGender();
+  const box = document.querySelector('.imcomplete');
+  const container = document.querySelector('.right-content');
+  const text = `Ola, ${elements[0]} ${elements[1]}
+  ${elements[2]} 
+  ${elements[3]} 
+  ${gender}`;
+
+  if (box === false) {
+    clearContainer();
+    container.innerHTML = text;
+  }
+}
+
+buttonSubmit.addEventListener('click', (event) => {
+  // clearMessage();
+  event.preventDefault();
+  checkAll();
+  createLogin();
+});
