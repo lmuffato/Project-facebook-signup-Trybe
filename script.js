@@ -62,7 +62,7 @@ function showPrint() {
 
 function addLike() {
   const imgPrint = document.createElement('img');
-  imgPrint.src = 'imgs/like.png'
+  imgPrint.src = 'imgs/like.png';
   imgPrint.className = 'print-like';
   return rightContent.appendChild(imgPrint);
 }
