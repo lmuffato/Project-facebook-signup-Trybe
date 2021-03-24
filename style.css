@@ -173,3 +173,16 @@ body {
 .btn:hover {
   opacity: 0.8;
 }
+
+form {
+  position: relative;
+}
+
+.error {
+  color: red;
+  padding: 5px;
+  position: absolute;
+  bottom: -40px;
+  left: 1px;
+  font-weight: 600;
+}
