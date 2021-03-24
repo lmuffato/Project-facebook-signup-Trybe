@@ -47,19 +47,16 @@
 .right-content , .left-content {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
   position: relative;
 }
 
 .left-content {
   width: 800px;
-  background-color: aqua;
+  align-items: center;
 }
 
 .right-content {
   width: 300px;
-  background-color: red;
 }
 
 .fullname {
@@ -68,12 +65,16 @@
   flex-basis: 50%;
 }
 
+.fullname input {
+  width: 100%;
+}
+
 #label-birthdate {
   display: flex;
   flex-flow: column wrap;
 }
 
-#birthdate {
+#label-birthdate input {
   display: block;
 }
 
