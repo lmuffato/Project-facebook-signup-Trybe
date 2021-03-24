@@ -24,7 +24,7 @@ function clickGender() {
   });
 }
 
-const fields = document.querySelectorAll('[required]');
+/* const fields = document.querySelectorAll('[required]');
 
 console.log(fields);
 
@@ -52,7 +52,7 @@ function validateInputs() {
   for (let index = 0; index < fields.length; index += 1) {
     fields[index].addEventListener('invalid', checkField);
   }
-}
+} */
 
 function checkTextInputs() {
   const inputList = document.querySelectorAll('.input-text');
