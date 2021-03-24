@@ -9,7 +9,7 @@ function exibirAlertaDeLogin() {
   window.alert(emailPhoneInput.value);
 }
 
-function adicionaCampoDeTextoPersonalizado() {
+function adicionaCampoPersonalizado() {
   campoDeTextoPersonalizado.type = 'text';
   campoDeTextoPersonalizado.id = 'personalizado-input';
   campoDeTextoPersonalizado.name = 'gender-custom';
@@ -18,4 +18,4 @@ function adicionaCampoDeTextoPersonalizado() {
 }
 
 loginButton.addEventListener('click', exibirAlertaDeLogin);
-personalizadoRadioButton.addEventListener('click', adicionaCampoDeTextoPersonalizado);
+personalizadoRadioButton.addEventListener('click', adicionaCampoPersonalizado);
