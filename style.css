@@ -58,6 +58,7 @@ p {
   font-size: 18px;
   font-weight: 400;
   padding-left: 10px;
+  color: #333;
 }
 
 .form-date {
@@ -74,6 +75,7 @@ p {
   font-size: 18px;
   font-weight: 400;
   padding-left: 10px;
+  color: #333;
 }
 
 .button-facebook-register {
@@ -132,6 +134,12 @@ p {
 .print-data {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 700;
+  width: 300px;
+  color: #333;
+  text-align: center;
 }
 
 .facebook-login {
