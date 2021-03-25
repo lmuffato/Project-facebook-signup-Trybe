@@ -12,16 +12,17 @@ const span = document.createElement('span');
 const facebookForm = document.querySelector('#facebook-form');
 const validateGender = document.querySelectorAll('.validate-gender');
 
-//cria funçaõ para checar inputs radio
+// Requisito 18 resolvido graças aos ensinamentos do Lucas Pedroso. Grande Lucasss!!!
+// cria função para checar inputs radio
 
-function validateRadio () {
+function validateRadio() {
   for (let index = 0; index < validateGender.length; index += 1) {
     if (validateGender[index].checked) {
       return true;
     }
   }
   return false;
-} 
+}
 // criar função com for para passar por todos os elementos do arrayImputs, excluindo a posicao do gender
 
 function validateRegister(event) {
