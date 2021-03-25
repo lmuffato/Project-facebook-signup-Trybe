@@ -51,3 +51,12 @@ body {
 .left-content {
   width: 800px;
 }
+
+#facebook-register {
+  background-color: #42b72a;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  margin-top: 5px;
+  padding: 5px 10px;
+}
