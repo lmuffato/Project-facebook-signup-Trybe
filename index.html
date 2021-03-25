@@ -27,35 +27,36 @@
         <p class="quick-easy">É rápido e fácil.</p>
         <form id="form">
           <div class="form-full-name">
-            <input type="text" name="firstname" placeholder="Nome" required>
-            <input type="text" name="lastname" placeholder="Sobrenome" required>
+            <input type="text" name="firstname" id="firstname" placeholder="Nome" required>
+            <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" required>
           </div>
-          <input class="input-item" type="text" name="phone_email" placeholder="Celular ou email" required>
-          <input class="input-item" type="password" name="password" placeholder="Nova senha" required>
+          <input class="input-item" type="text" name="phone_email" id="phonemail" placeholder="Celular ou email" required>
+          <input class="input-item" type="password" name="password" id="password" placeholder="Nova senha" required>
           <div class="form-date">
             <label id="label-birthdate">Data de nascimento</label>
-            <input class="input-item" type="text" name="birthdate" placeholder="dd/mm/aaaa" required>
+            <input class="input-item" type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" required>
             <label id="label-gender">Gênero</label>
           </div>
           <div class="form-radio">
             <div>
-              <input type="radio" name="gender" id="label-gender1" value="Feminino" required>
+              <input type="radio" name="gender" id="label-gender1" value="Feminino">
               <label for="label-gender1">Feminino</label>
             </div>
             <div>
-              <input type="radio" name="gender" id="label-gender2" value="Masculino" required>
+              <input type="radio" name="gender" id="label-gender2" value="Masculino">
             <label for="label-gender2">Masculino</label>
             </div>
             <div>
-              <input type="radio" name="gender" id="label-gender3" value="Personalizado" required>
+              <input type="radio" name="gender" id="label-gender3" value="Personalizado">
               <label for="label-gender3">Personalizado</label>
             </div>
           </div>
           <input type="text" name="gender-custom" id="hidden-input" placeholder="Gênero (opcional)">
+          <span id="invalid-form">Campos inválidos</span>
           <div class="button-facebook-register">
             <button type="submit" id="facebook-register">Cadastre-se</button>
           </div>
-      </form>
+        </form>
       </div>
     </div>
   </div>

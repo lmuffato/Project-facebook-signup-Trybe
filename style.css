@@ -128,7 +128,8 @@ p {
 
 .facebook-logo {
   height: 45px;
-  margin-top: 22px;
+  margin-top: 20px;
+  margin-left: 150px;
 }
 
 .print-data {
@@ -154,9 +155,16 @@ p {
 #user-email-phone-label {
   color: white;
   margin-top: 20px;
-  font-size: large;
+  font-size: 12px;
 }
 
 #user-email-phone {
   margin-top: -7px;
+}
+
+#invalid-form {
+  display: none;
+  padding-left: 5px;
+  color: red;
+  font-weight: 700;
 }
