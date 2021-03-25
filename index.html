@@ -32,6 +32,37 @@
       </div>
     </form>
   </div>
+  <main class="main-content">
+    <div class='left-content'>
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <img id="facebook-networking" src="imgs/networking.png">
+    </div>
+    <div class="right-content">
+      <div class="to-replace">
+        <h1>Abra uma conta</h1>
+        <h4 class="quick-easy">É rápido e fácil.</h4>
+        <form class="js-form ed-form" action="" method="get">
+          <div class="name-lastname">
+            <input class="validation" type="text" name="firstname" placeholder="Nome" data-validate-field="name" required>
+            <input class="validation" type="text" name="lastname" placeholder="Sobrenome" data-validate-field="lastname" required>
+          </div>
+          <input class="validation" type="text" name="phone_email" placeholder="Celular ou email" data-validate-field="email" required>
+          <input class="validation" type="password" name="password" placeholder="Nova senha" data-validate-field="password" required>
+          <label id="label-gender">Gênero</label>
+          <div>
+            <label for="female"><input class="validation" type="radio" name="gender" id="female" value="Feminino" data-validate-field="radio" required>Feminino</label>
+            <label for="male"><input class="validation" type="radio" name="gender" id="male" value="Masculino" data-validate-field="radio" required>Masculino</label>
+            <label for="custom"><input class="validation" type="radio" name="gender" id="custom" value="Personalizado" data-validate-field="radio" required>Personalizado</label>
+          </div>
+          <div class="date-class">
+            <label for="birthdate" id="label-birthdate">Data de nascimento</label>
+            <input class="validation" type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" data-validate-field="date" required>
+          </div>
+          <button type="submit" id="facebook-register">Cadastre-se</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
 </body>
-
 </html>

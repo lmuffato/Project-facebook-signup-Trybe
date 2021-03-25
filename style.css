@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   font-family: Helvetica, Arial, sans-serif;
   box-sizing: border-box;
@@ -6,24 +6,36 @@
 
 .top-bar {
   background-color: rgb(66, 103, 178);
-
+  box-sizing: border-box;
+  left: 0;
+  padding: 20px 50px;
+  position: absolute;
+  top: 0;
   /*   background-image: linear-gradient(rgb(78, 105, 162), rgb(59, 89, 152) 50%); */
-  height: 82px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
 }
 
 .facebook-login {
   display: flex;
   flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
   color: white;
+  width: 450px;
+}
+
+.facebook-logo {
+  height: 50px;
 }
 
 .form-control {
+  align-items: center;
   align-self: flex-end;
   margin-bottom: 26px;
   margin-left: 8px;
+  display: flex;
 }
 
 .form-group {
@@ -31,6 +43,9 @@
   flex-direction: column;
   padding: 0 8px;
   font-size: 12px;
+  height: 50px;
+  align-content: center;
+  align-items: center;
 }
 
 .form-group * {
@@ -61,4 +76,39 @@
   border-radius: 2px;
   color: white;
   font-weight: 700;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  position: relative;
+}
+
+.left-content {
+  width: 800px;
+}
+
+
+.face-net {
+  width: 400px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.name-lastname {
+  display: flex;
+}
+
+.date-class {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.ed-form {
+  display: flex;
+  flex-direction: column;
 }
