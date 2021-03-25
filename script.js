@@ -27,12 +27,13 @@ const isFormEmpty = (form) => {
 };
 
 const createUserObject = (form) => {
+  const selectedGender = document.querySelector('.selected');
   const inputs = form.querySelectorAll('input');
   const user = {};
   inputs.forEach((input) => {
-    console.log(input);
     user[input.name] = input.value;
   });
+  user.gender = selectedGender.value;
   console.log(user);
 };
 
@@ -58,10 +59,9 @@ const createGenderInput = () => {
   const genderDiv = document.querySelector('#gender');
   const genderInput = document.createElement('input');
 
-  console.log(hasCreated);
-
   if (!hasCreated) {
     genderInput.name = 'gender-custom';
+    genderInput.placeholder = 'Gênero (opcional)';
     genderDiv.appendChild(genderInput);
   }
 };
