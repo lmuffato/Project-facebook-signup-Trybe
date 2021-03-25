@@ -150,6 +150,7 @@ p {
 .form-group {
   display: flex;
   flex-direction: column;
+  margin-top: 5px;
 }
 
 #user-email-phone-label {
@@ -159,7 +160,19 @@ p {
 }
 
 #user-email-phone {
-  margin-top: -7px;
+  margin-top: 10px;
+  height: 30px;
+}
+
+#user-password-label {
+  color: white;
+  margin-top: 10px;
+  font-size: medium;
+}
+
+#user-password {
+  margin-top: 10px;
+  height: 30px;
 }
 
 #invalid-form {
