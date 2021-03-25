@@ -2,12 +2,14 @@ const loginButton = document.querySelector('#button-login');
 const emailPhoneInput = document.querySelector('#user-email-phone');
 const personalizadoRadioButton = document.querySelector('#personalizado');
 const rightContent = document.querySelector('.right-content');
+const rightContentChilds = document.querySelectorAll('.right-content *');
 const campoDeTextoPersonalizado = document.createElement('input');
 const submitFormButton = document.querySelector('#facebook-register');
 const criaContaForm = document.querySelector('.right-content form');
 const radioButtons = document.querySelectorAll('[name="gender"]');
 const inputBlock = document.querySelector('.right-content form .input-block');
 const firstNameEl = document.querySelector('#first-name');
+const emailPhone = document.getElementById('phone-email');
 let buttonCheckedValue = '';
 
 function exibirAlertaDeLogin() {
@@ -61,8 +63,8 @@ function validaCampoDataNascimento() {
   }
 }
 function validaCampoEmailOuCelular() {
-  if (document.getElementById('phone-email').value.length < 3) {
-    document.getElementById('phone-email').focus();
+  if (emailPhone.value.length < 3) {
+    emailPhone.focus();
     exibirAlertaDeInvalidez();
   }
 }
@@ -92,18 +94,23 @@ function criarElementosDaConclusao() {
   const lastName = document.getElementById('last-name').value;
   const birthdate = document.getElementById('birthdate').value;
   const conclusionText = document.createElement('p');
-  conclusionText.innerHTML = `${emailPhoneInput.value}\n\
-${birthdate}\n\
+  conclusionText.innerHTML = `${emailPhone.value}\n\
+${birthdate}\n
 ${buttonCheckedValue}`;
   const conclusionHeader = document.createElement('h1');
   conclusionHeader.innerHTML = `Olá, ${name} ${lastName}`;
-  rightContent.appendChild(conclusionHeader);
-  rightContent.appendChild(conclusionText);
+  const sectionConclusion = document.createElement('section');
+  sectionConclusion.className = 'form-conclusion';
+  sectionConclusion.appendChild(conclusionHeader);
+  sectionConclusion.appendChild(conclusionText);
+  rightContent.appendChild(sectionConclusion);
 }
 
 function exibirConclusaoDeCadastro(e) {
   e.preventDefault();
-  criaContaForm.style.display = 'none';
+  for (let index = 0; index < rightContentChilds.length; index += 1) {
+    rightContentChilds[index].style.display = 'none';
+  }
   criarElementosDaConclusao();
 }
 
