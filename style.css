@@ -3,6 +3,13 @@
   padding: 0;
 }
 
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.34;
+  color: #1c1e21;
+  background: linear-gradient(white, #D3D8E8);
+}
+
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
@@ -23,6 +30,16 @@
   align-self: flex-end;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  padding-right: 25%;
+  padding-left: 25%;
+  height: 82px;
+  font-size: 12px;
+  color: white;
+}
+
 .main-content {
   display: flex;
   justify-content: space-between;
@@ -33,6 +50,7 @@
 
 .left-content {
   width: 800px;
+  padding-left: 7%;
 }
 
 .right-content {
@@ -45,4 +63,47 @@
 
 .input100 {
   width: 100%;
+}
+
+#facebook-slogan {
+  width: 450px;
+  color: #0e385f;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 40px;
+  word-spacing: -1px;
+}
+
+#button-login {
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  padding: 2px 6px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  vertical-align: top;
+  white-space: nowrap;
+  border: 1px solid #29487d;
+  background-color: #4267b2;
+  color: white;
+}
+
+#user-email-phone {
+  width: 142px;
+  height: 17px;
+  border: 1px solid #1d2a5b;
+  padding-bottom: 4px;
+  margin-right: 15px;
+}
+
+#user-password {
+  width: 142px;
+  height: 17px;
+  border: 1px solid #1d2a5b;
+  padding-bottom: 4px;
+  margin-right: 15px;
 }
