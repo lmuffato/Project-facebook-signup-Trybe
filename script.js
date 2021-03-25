@@ -34,3 +34,27 @@ function createGenderCustom() {
 }
 
 getRadioPerson.addEventListener('click', createGenderCustom);
+
+function createTextWelcome() {
+  const getRightContent = document.querySelector('.right-content');
+  const listInputs = document.getElementsByTagName('input');
+  const valueGender0 = document.querySelector('input[name="gender"]:checked');
+  const valueGender = valueGender0.value;
+  const firstName = listInputs.namedItem('firstname').value;
+  const lastName = listInputs.namedItem('lastname').value;
+  const textInsert = `Olá, ${firstName} ${lastName}.
+  `;
+  const textInsert2 = `\n ${listInputs.namedItem('phone_email').value},
+  ${listInputs.namedItem('birthdate').value},
+  ${valueGender}`;
+  const elementInsert = document.createElement('p');
+  elementInsert.innerText = textInsert;
+  elementInsert.innerText += textInsert2;
+  while (getRightContent.lastChild) {
+    getRightContent.removeChild(getRightContent.lastChild);
+  }
+  getRightContent.appendChild(elementInsert);
+}
+
+const idForm = document.querySelector('#form');
+idForm.addEventListener('onsubmit', createTextWelcome);
