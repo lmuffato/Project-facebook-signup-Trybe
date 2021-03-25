@@ -52,5 +52,5 @@ function verifyContent(event) { // Contribuição para desenvolvimento do racioc
     }
   }
 }
-const submitButton = document.querySelector('#submit');
+const submitButton = document.querySelector('#facebook-register');
 submitButton.addEventListener('click', verifyContent);
