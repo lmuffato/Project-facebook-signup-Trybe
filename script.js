@@ -94,12 +94,11 @@ function criarElementosDaConclusao() {
 }
 
 function exibirConclusaoDeCadastro(e) {
+  handleFunctions();
   e.preventDefault();
   for (let index = 0; index < rightContentChilds.length; index += 1) {
     rightContentChilds[index].style.display = 'none';
   }
   criarElementosDaConclusao();
 }
-
-submitFormButton.addEventListener('click', handleFunctions);
 criaContaForm.addEventListener('submit', (e) => exibirConclusaoDeCadastro(e));
