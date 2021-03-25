@@ -83,7 +83,7 @@ a {
   display: inline-block;
   font-size: 12px;
   -webkit-font-smoothing: antialiased;
-  font-weight: bold;
+  font-weight: 700px;
   line-height: 18px;
   padding: 2px 6px;
   text-align: center;
@@ -91,7 +91,7 @@ a {
   text-shadow: none;
   vertical-align: top;
   white-space: nowrap;
-  color: #fff;
+  color: white;
   border: 1px solid #ccd0d5;
 }
 
@@ -122,14 +122,14 @@ h1 {
   font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
   font-size: 32px;
   line-height: 38px;
-  margin-bottom: 0;;
+  margin-bottom: 0;
 }
 
 h3 {
   color: #606770;
   font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
   font-size: 15px;
-  line-height: 24px;;
+  line-height: 24px;
 }
 
 .last-first-name {
@@ -168,6 +168,15 @@ h3 {
 
 #input-gender {
   display: none;
+  font-size: 18px;
+  padding: 8px 10px;
+  border-color: #bdc7d8;
+  border-radius: 5px;
+  margin: 0;
+  width: 280px;
+  position: relative;
+  border: 1px solid #ccd0d5;
+  margin-top: 10px;
 }
 
 span {
@@ -178,15 +187,13 @@ span {
 }
 
 #facebook-register {
-  background: none;
   background: linear-gradient(#67ae55, #578843);
   background-color: #69a74e;
   box-shadow: inset 0 1px 1px #a4e388;
   border-color: #3b6e22 #3b6e22 #2c5115;
   border: none;
   border-radius: 6px;
-  box-shadow: none;
-  color: #fff;
+  color: white;
   font-size: 18px;
   font-weight: 600;
   height: 36px;
@@ -239,7 +246,7 @@ span {
   color: #606770;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
-  font-weight: normal;
+  font-weight: 400px;
   line-height: 20px;
   margin-bottom: 0;
   margin-top: 2px;
@@ -252,7 +259,7 @@ label#label-gender {
   color: #606770;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 12px;
-  font-weight: normal;
+  font-weight: 400px;
   line-height: 20px;
   margin-bottom: 0;
   margin-top: 2px;
@@ -262,12 +269,12 @@ label#label-gender {
 }
 
 .border-gender {
-  background-color: #fff;
+  background-color: white;
   border: 1px solid #ccd0d5;
   box-sizing: border-box;
   display: inline-block;
   flex: 1 0 auto;
-  font-weight: normal;
+  font-weight: 400px;
   height: 36px;
   margin: 0;
   padding: 0;
@@ -299,17 +306,5 @@ label#label-gender {
   justify-content: space-between;
   margin: 0;
   width: auto;
-  margin-top: 10px;
-}
-
-#input-gender {
-  font-size: 18px;
-  padding: 8px 10px;
-  border-color: #bdc7d8;
-  border-radius: 5px;
-  margin: 0;
-  width: 280px;
-  position: relative;
-  border: 1px solid #ccd0d5;
   margin-top: 10px;
 }
