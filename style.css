@@ -49,6 +49,7 @@
 }
 
 .main-content {
+  padding: 20px 60px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -66,11 +67,23 @@
   width: 300px;
 }
 
+.right-content h1 {
+  font-size: 35px;
+}
+
+.right-content p {
+  font-size: 23px;
+  margin: 10px 0;
+}
+
 .right-content .input {
-  height: 45px;
+  height: 40px;
   width: 100%;
   padding: 0 5px;
   margin-bottom: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid rgb(166, 166, 236)
 }
 
 .facebook-nome-sobrenome {
@@ -78,10 +91,15 @@
   gap: 10px;
 }
 
+.gender-fields {
+  margin-bottom: 10px;
+}
+
+#gender{
+  margin-left: 2px;
+}
+
 fieldset {
   border: none;
 }
 
-#gender-custom {
-  display: none;
-}

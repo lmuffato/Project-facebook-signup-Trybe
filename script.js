@@ -70,6 +70,7 @@ const createGenderInput = () => {
 
   if (!hasCreated) {
     genderInput.name = 'gender-custom';
+    genderInput.className = 'input';
     genderInput.placeholder = 'Gênero (opcional)';
     genderInput.value = 'Gênero (opcional)';
     genderDiv.appendChild(genderInput);
