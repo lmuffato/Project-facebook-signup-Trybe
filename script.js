@@ -2,6 +2,7 @@ const buttonLogin = document.getElementById('button-login');
 const inputEmailTel = document.getElementById('user-email-phone');
 const submitButton = document.getElementById('facebook-register');
 const openAccInput = document.getElementsByClassName('openAccount');
+
 buttonLogin.addEventListener('click', (Event) => {
   Event.preventDefault();
   alert(inputEmailTel.value);
@@ -27,12 +28,20 @@ function checkNullInputRadio() {
 function formData() {
   const checkerText = checkNullInputText();
   const checkerRadio = checkNullInputRadio();
+  
   if (checkerText === true || checkerRadio.length !== 2) {
-    const form = document.getElementById('formOpenAcc');
-    const alerta = document.createElement('h2');
+    const divform = document.getElementById("registerBox");
+    const alerta = document.createElement('h3');
     alerta.innerText = 'Campos inválidos';
-    alerta.setAttribute('id', 'alert');
-    form.appendChild(alerta);
+    alerta.setAttribute('class', 'alertlog');
+    divform.appendChild(alerta);
+  }
+  if (checkerText === false || checkerRadio.length === 2) {
+    const divform = document.getElementById("registerBox");
+    const alerta = document.createElement('h3');
+    alerta.innerText = 'Olá, ' + document.getElementById('firstname').value + ' ' + document.getElementById('lastname').value + ',     ' +document.getElementById('emailOrPhone').value;
+    alerta.setAttribute('class', 'welcome');
+    divform.appendChild(alerta);
   }
 }
 submitButton.addEventListener('click', (Event) => {

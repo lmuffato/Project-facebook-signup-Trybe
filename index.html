@@ -36,38 +36,36 @@
         <div class="quick-easy">
           <h3>É rápido e fácil.</h3>
         </div>
-          <form  class="facebook-login" action="" id='formOpenAcc'>
-            <div>
-              <div class='flexDirection' id="nameBox">
-                <input type="text" placeholder="Nome" name="firstname" id="firstname" class="openAccount">
-                <input type="text" placeholder="Sobrenome" name="lastname" id="lastname" class="openAccount">
+        <form  class="facebook-login" action="" id='formOpenAcc'>
+          <div>
+            <div class='flexDirection' id="nameBox">
+              <input type="text" placeholder="Nome" name="firstname" id="firstname" class="openAccount">
+              <input type="text" placeholder="Sobrenome" name="lastname" id="lastname" class="openAccount">
+            </div>
+            <div class="flexDirection" id="emailBox" >
+              <input placeholder="Celular ou email" name='phone_email' type="text" id="emailOrPhone" class="openAccount">
+            </div>
+            <div class="flexDirection" id="passwordBox">
+              <input type="password" name="password" placeholder="Nova senha" id="password" class="openAccount">
+            </div>
+            <div id="birthConteiner">
+              <label id='label-birthdate'  type='text' for="birthdate" >Data de nascimento</label>
+              <input placeholder="dd/mm/aaaa" name='birthdate' type="text" id="birthdate" class="openAccount">
+            </div>
+              <label for="gender" id='label-gender'>Gênero</label>
+              <div id="genderBox">
+                <input type="radio" id="female" name="gender" value="Feminino" class="openAccount">
+                <label for="female" >Feminino</label>
+                <input type="radio" id="male" name="gender" value="Masculino" class="openAccount">
+                <label for="male">Masculino</label>
+                <input type="radio" id="custom" name="gender" value="Personalizado" class="openAccount">
+                <label for="custom">Personalizado</label>
               </div>
-              <div class="flexDirection" id="emailBox" >
-                <input placeholder="Celular ou email" name='phone_email' type="text" id="emailOrPhone" class="openAccount">
-              </div>
-              <div class="flexDirection" id="passwordBox">
-                <input type="password" name="password" placeholder="Nova senha" id="password" class="openAccount">
-              </div>
-                <div id="birthConteiner">
-                  <label id='label-birthdate'  type='text' for="">Data de nascimento</label>
-                  <input placeholder="dd/mm/aaaa" name='birthdate' type="text" id="birthdate" class="openAccount">
-                </div>
-                <label for="gender" id='label-gender'>Gênero</label>
-                <div id="genderBox">
-                  <input type="radio" id="female" name="gender" value="Feminino" class="openAccount">
-                  <label for="female" >Feminino</label>
-                  <input type="radio" id="male" name="gender" value="Masculino" class="openAccount">
-                  <label for="male">Masculino</label>
-                  <input type="radio" id="custom" name="gender" value="Personalizado" class="openAccount">
-                  <label for="custom">Personalizado</label>
-                  </div>
-
               <div id="registerBox">
                 <button id="facebook-register" type="submit">Cadastre-se</button>
               </div>
             <div>         
-          </form>
-        
+        </form>
       </div>
     </main>
     <script src="script.js"></script>
