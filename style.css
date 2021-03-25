@@ -81,10 +81,31 @@ input {
 
 .right-content {
   width: 300px;
+  border: 1px solid black;
 }
 
 #fullname {
   display: flex;
+}
+
+#gender-container {
+  display:flex;
+  align-items: center;
+}
+
+.gender-value {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+}
+
+.gender-value input {
+  width: 20px;
+  margin: 3px 3px 0px 5px;
+}
+
+.gender-value, .gender-value input {
+  cursor: pointer;
 }
 
 .btn-send {
