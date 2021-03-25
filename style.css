@@ -88,7 +88,7 @@ input {
 }
 
 #gender-container {
-  display:flex;
+  display: flex;
   align-items: center;
 }
 
@@ -100,10 +100,10 @@ input {
 
 .gender-value input {
   width: 20px;
-  margin: 3px 3px 0px 5px;
+  margin: 3px 3px 0 5px;
 }
 
-.gender-value, .gender-value input {
+.gender-value , .gender-value input {
   cursor: pointer;
 }
 
