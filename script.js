@@ -41,10 +41,12 @@ const createUserObject = (form) => {
 
 const showUserInfo = (user) => {
   singUpForm.innerHTML = `
-  Olá, ${user.fullname}
-  Email: ${user.phone_email}
-  Data de Nascimento: ${user.birthdate}
+  <p>
+  Olá, ${user.fullname} <br>
+  Email ou Telefone: ${user.phone_email} <br>
+  Data de Nascimento: ${user.birthdate} <br>
   Gênero: ${user.gender}
+  </p>
   `;
 };
 
@@ -63,7 +65,7 @@ const singUpFormValidation = (form) => {
 
 const createGenderInput = () => {
   const hasCreated = document.querySelector('[name = gender-custom');
-  const genderDiv = document.querySelector('#gender');
+  const genderDiv = document.querySelector('.gender');
   const genderInput = document.createElement('input');
 
   if (!hasCreated) {
