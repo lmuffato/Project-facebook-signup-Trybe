@@ -49,8 +49,8 @@ registerButton.addEventListener('click', validateForm);
 
 function criarInput(chek) {
   const divConteiner = document.getElementById('radio-conteiner');
-  if (chek.target.checked === true && 
-  document.getElementsByClassName('inputDinamico').length === 0) {
+  if (chek.target.checked === true
+    && document.getElementsByClassName('inputDinamico').length === 0){
     const criarIn = document.createElement('input'); 
     criarIn.setAttribute('name', 'gender-custom');
     criarIn.setAttribute('placeholder', 'Gênero (opcional)');
@@ -59,9 +59,6 @@ function criarInput(chek) {
   }
 }
 const btAdicionar = document.getElementById('personalizar');
-btAdicionar.addEventListener('click', function (e) {
-  criarInput(e)});
+btAdicionar.addEventListener('click', function (e) {criarInput(e)} );
 const btnCadastro = document.getElementById('facebook-register');
-btnCadastro.addEventListener('click', (e) => {
-  e.preventDefault()
-});
+btnCadastro.addEventListener('click', (e) => {e.preventDefault()});
