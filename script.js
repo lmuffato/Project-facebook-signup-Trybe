@@ -36,11 +36,5 @@ function validateRegister(event) {
   } return false;
 }
 
-// function validateRegister() {
-//   const validate = document.querySelectorAll('.validate');
-//   if (validate === ' ') {
-//     alert("Campos inválidos");
-//   }
-// }
 const buttonRegister = document.querySelector('#facebook-register');
 buttonRegister.addEventListener('click', validateRegister);
