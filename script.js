@@ -39,3 +39,13 @@ submitButton.addEventListener('click', (Event) => {
   Event.preventDefault();
   formData();
 });
+openAccInput[7].addEventListener('click', () => {
+  const customGender = document.createElement('input');
+  const genderBox = document.getElementById('genderBox');
+  customGender.setAttribute('placeholder', 'Gênero (opcional)');
+  customGender.setAttribute('name', 'gender-custom');
+  customGender.setAttribute('id', 'genderCustom');
+  customGender.style.borderRadius = '5%';
+  customGender.style.border = '1px solid rgb(104, 104, 104)';
+  genderBox.appendChild(customGender);
+});

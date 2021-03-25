@@ -114,3 +114,7 @@ a {
   width: auto;
   margin: 10px 0;
 }
+
+#genderCustom::placeholder {
+  padding-left:5px;
+}
