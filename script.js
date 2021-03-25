@@ -89,16 +89,23 @@ function criarElementosDaConclusao() {
   const name = firstNameEl.value;
   const lastName = document.getElementById('last-name').value;
   const conclusionHeader = document.createElement('h1');
-  conclusionHeader.innerHTML = `Olá, ${name} ${lastName}`;
+  conclusionHeader.innerHTML = `Olá, ${name + ' ' + lastName}`;
   rightContent.appendChild(conclusionHeader);
 }
 
-function exibirConclusaoDeCadastro(e) {
-  handleFunctions();
-  e.preventDefault();
+function exibirConclusaoDeCadastro() {
   for (let index = 0; index < rightContentChilds.length; index += 1) {
     rightContentChilds[index].style.display = 'none';
   }
   criarElementosDaConclusao();
 }
-criaContaForm.addEventListener('submit', (e) => exibirConclusaoDeCadastro(e));
+
+function preventDefForm(event) {
+  event.preventDefault();
+}
+
+criaContaForm.addEventListener('submit', preventDefForm, false);
+submitFormButton.addEventListener('click', handleFunctions);
+criaContaForm.addEventListener('submit', exibirConclusaoDeCadastro);
+
+
