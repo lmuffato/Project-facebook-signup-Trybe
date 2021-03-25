@@ -82,7 +82,7 @@ function messenger() {
 
 // verifica o return das funções e executa a função de mensagem
 function hellowNewUser() {
-  if (fieldVerification() === true && genderSelected()) {
+  if (fieldVerification() && genderSelected()) {
     messenger();
   }
 }
