@@ -70,8 +70,35 @@
   width: 300px;
 }
 
+.right-content h1 {
+  font-size: 35px;
+}
+
+.right-content p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#singup-form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-input {
+  height: 40px;
+  padding: 0 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid rgb(143, 143, 163);
+  border-radius: 5px;
+  font-size: 18px;
+}
+
 .facebook-nome-sobrenome {
   display: flex;
+  gap: 10px;
 }
 
 fieldset {
