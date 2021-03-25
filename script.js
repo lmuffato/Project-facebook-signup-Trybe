@@ -2,6 +2,7 @@ const email = document.querySelector('#user-email-phone');
 const loginForm = document.querySelector('.facebook-login');
 const singUpForm = document.querySelector('#singup-form');
 const spanMessage = document.querySelector('#message');
+const otherGenderRadio = document.querySelector('#personalizado');
 
 const showEmail = () => {
   alert(email.value);
@@ -37,6 +38,16 @@ const singUpFormValidation = (form) => {
   }
 };
 
+const showGenderInput = () => {
+  const genderTextInput = document.querySelector('#gender-custom');
+  genderTextInput.style.display = 'block';
+};
+
+const hideGenderInput = () => {
+  const genderTextInput = document.querySelector('#gender-custom');
+  genderTextInput.style.display = 'none';
+};
+
 loginForm.addEventListener('submit', (e) => {
   e.preventDefault();
   showEmail();
@@ -46,3 +57,6 @@ singUpForm.addEventListener('submit', (e) => {
   e.preventDefault();
   singUpFormValidation(singUpForm);
 });
+
+otherGenderRadio.addEventListener('click', showGenderInput);
+otherGenderRadio.addEventListener('blur', hideGenderInput);

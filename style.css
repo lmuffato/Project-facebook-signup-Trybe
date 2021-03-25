@@ -52,3 +52,7 @@
 fieldset {
   border: none;
 }
+
+#gender-custom {
+  display: none;
+}
