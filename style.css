@@ -63,17 +63,26 @@
   width: 800px;
 }
 
+.left-content p {
+  width: 490px;
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
 .right-content {
   width: 300px;
 }
 
 .right-content h1 {
   font-size: 35px;
+  color: rgb(37, 37, 37);
 }
 
-.right-content p {
+.quick-easy {
   font-size: 23px;
   margin: 10px 0;
+  color: rgb(8, 7, 83);
 }
 
 .right-content .input {
