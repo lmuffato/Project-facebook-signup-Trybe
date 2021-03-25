@@ -13,19 +13,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: rgb(250, 250, 250);
 }
 
 .facebook-logo {
   left: 0;
 }
 
+.facebook-login {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
-}
-
-.facebook-login {
-  display: flex;
 }
 
 .main-content {
