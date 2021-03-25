@@ -45,6 +45,7 @@ buttonSubscrive.addEventListener('click', (event) => {
   }
   console.table(contentForm);
   checkValues(contentForm);
+  console.log(contentForm);
 });
 
 selectCustonGender.addEventListener('change', () => {
