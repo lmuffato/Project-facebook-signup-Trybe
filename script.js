@@ -8,17 +8,17 @@ buttonLogin.addEventListener('click', alert1);
 
 // criar uma variável q chama o id do form e criar outra variável com os elementos da variável anterior
 const fbForm = document.querySelectorAll('.validate');
-const arrayImputs = fbForm;
+const arrayInputs = fbForm;
 const span = document.createElement('span');
-console.log(arrayImputs);
+console.log(arrayInputs);
 const facebookForm = document.querySelector('#facebook-form');
 
 // criar função com for para passar por todos os elementos do arrayImputs, excluindo a posicao do gender
 
 function validateRegister(event) {
   event.preventDefault();
-  for(let index = 0; index < arrayImputs.length; index += 1) {
-    if (arrayImputs[index].value === '') {
+  for(let index = 0; index < arrayInputs.length; index += 1) {
+    if (arrayInputs[index].value === '' && !arrayInputs[index].checked) {
       span.innerHTML = 'Campos inválidos';
       facebookForm.appendChild(span);
       return true;
