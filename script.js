@@ -32,6 +32,25 @@ function hideCustomFemale() {
   });
 }
 
+// Requisito 18
+const register = document.querySelector('#facebook-register');
+const inputs = document.getElementsByTagName('input');
+const form = document.querySelector('.facebook-register');
+
+function inputValidate() {
+  register.addEventListener('click', () => {
+    for (let index = 0; index < inputs.length; index += 1) {
+      if (inputs[index].value === '') {
+        const errorMsg = document.createElement('p');
+        errorMsg.innerHTML = 'Campos inválidos';
+        form.appendChild(errorMsg);
+        break;
+      }
+    }
+  });
+}
+
+inputValidate();
 hideCustomMale();
 hideCustomFemale();
 genderCustom();

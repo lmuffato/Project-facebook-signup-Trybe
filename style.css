@@ -161,3 +161,8 @@ span label {
 #gender-custom {
   display: none;
 }
+
+.facebook-register p {
+  color: red;
+  font-size: 1em;
+}
