@@ -71,10 +71,7 @@ function validaCampoEmailOuCelular() {
 function validaGenero() {
   let isButtonChecked = false;
   for (let index = 0; index < radioButtons.length; index += 1) {
-    if (radioButtons[index].checked === true) {
-      isButtonChecked = true;
-      buttonCheckedValue = radioButtons[index].value;
-    }
+    if (radioButtons[index].checked === true) isButtonChecked = true;
   }
   return isButtonChecked;
 }
