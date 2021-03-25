@@ -48,14 +48,14 @@ function validateForm(e) {
 registerButton.addEventListener('click', validateForm);
 
 function criarInput(chek) {
-  const divConteiner = document.getElementById('radio-conteiner');
+  const divRadioButtons = document.getElementById('radio-buttons');
   if (chek.target.checked === true
     && document.getElementsByClassName('inputDinamico').length === 0) {
     const criarIn = document.createElement('input');
     criarIn.setAttribute('name', 'gender-custom');
     criarIn.setAttribute('placeholder', 'Gênero (opcional)');
     criarIn.classList.add('inputDinamico');
-    divConteiner.appendChild(criarIn);
+    divRadioButtons.appendChild(criarIn);
   }
 }
 const btAdicionar = document.getElementById('personalizar');
