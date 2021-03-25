@@ -7,7 +7,7 @@ buttonLogin.addEventListener('click', () => {
 
 const registerButton = document.querySelector('#facebook-register');
 const inputsTextAndPassword = document.querySelectorAll('.input-text-password');
-const inputsRadio = document.querySelectorAll('.input-radio');
+const inputsRadio = document.querySelectorAll('.radio-buttons');
 
 const invalidMessage = document.querySelector('#form-conteiner');
 
