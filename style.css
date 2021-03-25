@@ -53,7 +53,7 @@ a {
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
 }
 
 .main-content {

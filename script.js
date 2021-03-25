@@ -28,7 +28,11 @@ function formData() {
   const checkerText = checkNullInputText();
   const checkerRadio = checkNullInputRadio();
   if (checkerText === true || checkerRadio.length !== 2) {
-    alert('Campos inválidos');
+    const form = document.getElementById('formOpenAcc');
+    const alerta = document.createElement('h2');
+    alerta.innerText = 'Campos inválidos';
+    alerta.setAttribute('id', 'alert');
+    form.appendChild(alerta);
   }
 }
 submitButton.addEventListener('click', (Event) => {
