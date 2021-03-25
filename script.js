@@ -10,6 +10,7 @@ const radioButtons = document.querySelectorAll('[name="gender"]');
 const inputBlock = document.querySelector('.right-content form .input-block');
 const firstNameEl = document.querySelector('#first-name');
 const emailPhone = document.getElementById('phone-email');
+let isFieldsValid = false;
 
 function exibirAlertaDeLogin() {
   window.alert(emailPhoneInput.value);
@@ -39,33 +40,44 @@ function validaCampoNome() {
   if (firstNameEl.value.length < 3) {
     firstNameEl.focus();
     exibirAlertaDeInvalidez();
+    isFieldsValid = false
   }
+
+  return isFieldsValid;
 }
 function validaCampoSobrenome() {
   if (document.getElementById('last-name').value.length < 3) {
     document.getElementById('last-name').focus();
     exibirAlertaDeInvalidez();
+    isFieldsValid = false;
   }
+  return isFieldsValid;
 }
 
 function validaCampoSenha() {
   if (document.getElementById('password').value.length < 3) {
     document.getElementById('password').focus();
     exibirAlertaDeInvalidez();
+    isFieldsValid = false;
   }
+  return isFieldsValid;
 }
 
 function validaCampoDataNascimento() {
   if (document.getElementById('birthdate').value.length < 3) {
     document.getElementById('birthdate').focus();
     exibirAlertaDeInvalidez();
+    isFieldsValid = false;
   }
+  return isFieldsValid;
 }
 function validaCampoEmailOuCelular() {
   if (emailPhone.value.length < 3) {
     emailPhone.focus();
     exibirAlertaDeInvalidez();
+    isFieldsValid = false;
   }
+  return isFieldsValid;
 }
 
 function validaGenero() {
@@ -95,16 +107,18 @@ function criarElementosDaConclusao() {
 }
 
 function exibirConclusaoDeCadastro() {
-  for (let index = 0; index < rightContentChilds.length; index += 1) {
-    rightContentChilds[index].style.display = 'none';
+  if (isFieldsValid && validaGenero()) {
+    for (let index = 0; index < rightContentChilds.length; index += 1) {
+      rightContentChilds[index].style.display = 'none';
+    }
+    criarElementosDaConclusao();
   }
-  criarElementosDaConclusao();
 }
 
 function preventDefForm(event) {
   event.preventDefault();
 }
 
-criaContaForm.addEventListener('submit', preventDefForm, false);
+submitFormButton.addEventListener('click', preventDefForm, false);
 submitFormButton.addEventListener('click', handleFunctions);
-criaContaForm.addEventListener('submit', exibirConclusaoDeCadastro);
+submitFormButton.addEventListener('click', exibirConclusaoDeCadastro);
