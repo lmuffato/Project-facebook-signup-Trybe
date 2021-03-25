@@ -141,7 +141,7 @@
   width: 400px;
 }
 
-.birthdate, #label-gender {
+.birthdate , #label-gender {
   margin-top: 12px;
   color: #90949c;
   font-size: 16px;
@@ -170,6 +170,5 @@
   margin-right: 6px;
   color: #1d2129;
   font-size: 18px;
-  font-weight: normal;
   line-height: 18px;
 }
