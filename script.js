@@ -56,21 +56,34 @@ function genderSelected() {
   }
 }
 
-// mostra msg no final do cadastro
-function hellowNewUser() {
-  const gender = genderSelected();
-  const registerFormElements = form.elements;
-  const formSize = registerFormElements.length;
+// verifica se os valores dos inputs não estão vazios
+function fieldVerification() {
+  if (fristName.value !== '' && lastName.value !== '') {
+    return true;
+  }
+  if (birthdate.value !== '' && emailOrPhone.value !== '') {
+    return true;
+  }
+  return false;
+}
+
+// apaga o form e cria a msg de final de cadastro
+function messenger() {
   const rightContent = document.querySelector('.right-content');
-  for (let index = 0; index < formSize; index += 1) {
-    const registerInput = registerFormElements[index];
-    if (registerInput !== '') {
-      rightContent.innerHTML = '';
-      rightContent.innerHTML = `Olá, ${fristName.value} ${lastName.value}
-      ${emailOrPhone.value}
-      ${birthdate.value}
-      ${gender}`;
-    }
+  const gender = genderSelected();
+
+  rightContent.innerHTML = '';
+  rightContent.className = 'right-content finalMessenger';
+  rightContent.innerHTML = `<p> Olá, ${fristName.value} ${lastName.value}<br>
+    email: ${emailOrPhone.value}<br>
+    data de nascimento: ${birthdate.value}<br>
+    genero: ${gender}<p>`;
+}
+
+// verifica o return das funções e executa a função de mensagem
+function hellowNewUser() {
+  if (fieldVerification() === true && genderSelected()) {
+    messenger();
   }
 }
 
@@ -82,14 +95,12 @@ function registerButton() {
     const registerInput = registerFormElements[index].value;
     if (registerInput === '') {
       removeInvalidDiv();
-      hellowNewUser();
       const div = document.createElement('div');
       div.innerHTML = 'Campos inválidos';
       div.className = 'invalid-field';
       registerForm.appendChild(div);
-      break;
     } else {
-      console.log(registerInput);
+      hellowNewUser();
     }
   }
 }

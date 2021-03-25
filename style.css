@@ -158,3 +158,17 @@ input {
 .invalid-field {
   color: red;
 }
+
+.finalMessenger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.finalMessenger p {
+  line-height: 25px;
+  font-size: 15px;
+  color:  #333;
+  font-weight: 800;
+}
