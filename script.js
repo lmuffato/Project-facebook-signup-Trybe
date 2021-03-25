@@ -79,7 +79,6 @@ function newMessage() {
   const rightContent = document.querySelector('.right-content');
   const takeButtonSubmit = document.querySelector('#facebook-register');
   takeButtonSubmit.addEventListener('click', () => {
-    console.log('entrou');
     console.log('começou if');
     rightContent.innerHTML = '';
     rightContent.innerHTML = `<p>Olá, ${name.value} ${last.value}</p>`;
@@ -97,7 +96,7 @@ function checkEmpty() {
       console.log(confereRadioChecked());
       console.log(takeelmentsForm[i].value);
       v += 1;
-      console(v);
+      console('v = '+v);
     }
   }
   return v;
@@ -106,6 +105,7 @@ function checkEmpty() {
 function validacao() {
   const takeButton = document.querySelector('#facebook-register');
   takeButton.addEventListener('click', (e) => {
+    e.preventDefault();
     const takeSpan = document.querySelectorAll('span');
     if (takeSpan.length > 0) {
       return false;
@@ -114,7 +114,6 @@ function validacao() {
       newMessage();
     }
     returnText();
-    e.preventDefault();
   });
 }
 validacao();
