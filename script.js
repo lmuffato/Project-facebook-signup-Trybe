@@ -34,12 +34,19 @@ const createUserObject = (form) => {
     user[input.name] = input.value;
   });
   user.gender = selectedGender.value;
-  console.log(user);
+  user.fullname = `${user.firstname} ${user.lastname}`;
+
+  return user;
 };
 
-// const showUserInfo = () => {
-
-// };
+const showUserInfo = (user) => {
+  singUpForm.innerHTML = `
+  Olá, ${user.fullname}
+  Email: ${user.phone_email}
+  Data de Nascimento: ${user.birthdate}
+  Gênero: ${user.gender}
+  `;
+};
 
 const singUpFormValidation = (form) => {
   const isEmpty = isFormEmpty(form);
@@ -50,7 +57,7 @@ const singUpFormValidation = (form) => {
     spanMessage.innerHTML = errorMessage;
   } else if (!isEmpty) {
     spanMessage.innerHTML = '';
-    createUserObject(form);
+    showUserInfo(createUserObject(form));
   }
 };
 
@@ -62,6 +69,7 @@ const createGenderInput = () => {
   if (!hasCreated) {
     genderInput.name = 'gender-custom';
     genderInput.placeholder = 'Gênero (opcional)';
+    genderInput.value = 'Gênero (opcional)';
     genderDiv.appendChild(genderInput);
   }
 };
