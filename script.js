@@ -52,6 +52,7 @@ function criarInput(chek) {
   if (chek.target.checked === true
     && document.getElementsByClassName('inputDinamico').length === 0) {
     const criarIn = document.createElement('input');
+    criarIn.setAttribute('type', 'text');
     criarIn.setAttribute('name', 'gender-custom');
     criarIn.setAttribute('placeholder', 'Gênero (opcional)');
     criarIn.classList.add('inputDinamico');
