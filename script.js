@@ -9,33 +9,36 @@ function signAlert() {
 }
 
 // Requisito 19
-const gender = document.querySelector('#gender-custom');
+const genderField = document.querySelector('.gender-custom');
 const custom = document.querySelector('#custom');
 const male = document.querySelector('#male');
 const female = document.querySelector('#female');
+const newGender = document.createElement('input');
+newGender.name = 'gender-custom';
+newGender.placeholder = 'Gênero (opcional)';
 
 function genderCustom() {
   custom.addEventListener('click', () => {
-    gender.style.display = 'flex';
+    genderField.appendChild(newGender);
   });
 }
 
 function hideCustomMale() {
   male.addEventListener('click', () => {
-    gender.style.display = 'none';
+    genderField.removeChild(newGender);
   });
 }
 
 function hideCustomFemale() {
   female.addEventListener('click', () => {
-    gender.style.display = 'none';
+    genderField.removeChild(newGender);
   });
 }
 
 // Requisito 18
+const form = document.querySelector('.facebook-register');
 const register = document.querySelector('#facebook-register');
 const inputs = document.getElementsByTagName('input');
-const form = document.querySelector('.facebook-register');
 
 function inputValidate() {
   register.addEventListener('click', () => {

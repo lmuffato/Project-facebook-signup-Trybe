@@ -166,3 +166,7 @@ span label {
   color: red;
   font-size: 1em;
 }
+
+.gender-custom {
+  display: flex;
+}
