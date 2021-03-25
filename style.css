@@ -114,10 +114,6 @@ body {
   display: none;
 }
 
-#gender-container {
-  display: flex;
-}
-
 #open-acc {
   font-size: 36px;
   color: #333;
