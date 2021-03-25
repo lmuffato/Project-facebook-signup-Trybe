@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
 .top-bar {
@@ -12,19 +13,26 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: white;
+  font-weight: 700;
 }
 
 .facebook-logo {
   left: 0;
 }
 
+.facebook-login {
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 10px;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
-}
-
-.facebook-login {
-  display: flex;
+  gap: 5px;
 }
 
 .main-content {

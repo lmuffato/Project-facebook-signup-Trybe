@@ -8,24 +8,6 @@ const showEmail = () => {
   alert(email.value);
 };
 
-const isFormEmpty = (form) => {
-  const inputs = form.querySelectorAll('input');
-  const inputValues = [];
-
-  inputs.forEach((input) => {
-    if (input.value.length === 0) {
-      inputValues.push(false);
-    } else {
-      inputValues.push(true);
-    }
-  });
-
-  if (inputValues.filter((element) => element === false).length > 0) {
-    return true;
-  }
-  return false;
-};
-
 const createUserObject = (form) => {
   const selectedGender = document.querySelector('.selected');
   const inputs = form.querySelectorAll('input');
@@ -48,6 +30,24 @@ const showUserInfo = (user) => {
   Gênero: ${user.gender}
   </p>
   `;
+};
+
+const isFormEmpty = (form) => {
+  const inputs = form.querySelectorAll('input');
+  const inputValues = [];
+
+  inputs.forEach((input) => {
+    if (input.value.length === 0) {
+      inputValues.push(false);
+    } else {
+      inputValues.push(true);
+    }
+  });
+
+  if (inputValues.filter((element) => element === false).length > 0) {
+    return true;
+  }
+  return false;
 };
 
 const singUpFormValidation = (form) => {
