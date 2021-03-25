@@ -5,20 +5,6 @@ btnEntrar.addEventListener('click', () => {
   alert(userEmail.value);
 });
 
-const btnRegister = document.getElementById('facebook-register');
-const inputSignup = document.querySelectorAll('.input-signup');
-const formSignup = document.getElementById('form-signup');
-const mensagem = document.createElement('p');
-mensagem.innerHTML = 'Campos inválidos';
-
-btnRegister.addEventListener('click', () => {
-  for (let index = 0; index < inputSignup.length; index += 1) {
-    if (inputSignup[index].value === '') {
-      formSignup.appendChild(mensagem);
-    }
-  }
-});
-
 const female = document.getElementById('female');
 const male = document.getElementById('male');
 const customGender = document.getElementById('custom');
@@ -75,21 +61,40 @@ function createValues() {
   }
 }
 
-function renderInformations(event) {
-  event.preventDefault();
+const btnRegister = document.getElementById('facebook-register');
+const inputSignup = document.querySelectorAll('.input-signup');
+const formSignup = document.getElementById('form-signup');
+const mensagem = document.createElement('p');
+mensagem.innerText = 'Campos inválidos';
 
-  createValues();
+function validate() {
+  for (let index = 0; index < inputSignup.length; index += 1) {
+    if (inputSignup[index].value === '') {
+      return false;
+    }
+  }
+  return true;
+}
 
-  rightContent.innerHTML = '';
-  const divInformations = document.createElement('div');
+function renderInformations(e) {
+  if (validate()) {
+    e.preventDefault();
 
-  const string = `Olá, ${objectContent.firstName} ${objectContent.lastName}
+    createValues();
+
+    rightContent.innerHTML = '';
+    const divInformations = document.createElement('div');
+
+    const string = `Olá, ${objectContent.firstName} ${objectContent.lastName}
   ${objectContent.phoneEmail}
   ${objectContent.birthDate}
   ${objectContent.gender} `;
 
-  divInformations.innerText = string;
-  rightContent.appendChild(divInformations);
+    divInformations.innerText = string;
+    rightContent.appendChild(divInformations);
+  } else {
+    formSignup.appendChild(mensagem);
+  }
 }
 
 btnRegister.addEventListener('click', renderInformations);
