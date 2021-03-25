@@ -40,6 +40,7 @@ buttonSubscrive.addEventListener('click', (event) => {
     }
   }
   checkValues(contentForm);
+  console.log(contentForm);
 });
 
 // bloco de ações de inicialização
