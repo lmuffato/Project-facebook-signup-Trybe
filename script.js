@@ -96,7 +96,6 @@ function checkEmpty() {
       console.log(confereRadioChecked());
       console.log(takeelmentsForm[i].value);
       v += 1;
-      console('v = '+v);
     }
   }
   return v;
