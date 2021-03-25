@@ -18,7 +18,7 @@
         <input type="text" name="login" id="user-email-phone">
       </div>
       <div class="form-group">
-        <label for="password" class="password" id="user-password-label">Senha</label>
+        <label for="password" class="password-top" id="user-password-label">Senha</label>
         <input type="password" name="password" id="user-password">
         <a href="">Esqueceu a conta?</a>
       </div>
@@ -33,9 +33,11 @@
       <img src="imgs/networking.png" alt="networking-logo" id="facebook-networking">
     </label>
     <div class="right-content">
+      <div class="header-div">
         <h1 id="openAccount">Abra uma conta</h1>
         <h3 class="quick-easy">É rápido e fácil.</h3>
-        <form action="" method="GET" class="right-content">
+      </div>
+        <form action="" method="GET" class="sec-form">
           <div class="last-first-name">
             <input type="text" name="firstname" placeholder="Nome" class="first-name">
             <input type="text" name="lastname" placeholder="Sobrenome" class="last-name">
@@ -50,12 +52,20 @@
           </div>
           <div id="label-gender">
             <label for="gender" id="label-gender">Gênero</label><br>
-            <input type="radio" name="gender" id="feminino" value="Feminino" required>
-            <label for="feminino">Feminino</label>
-            <input type="radio" name="gender" id="masculino" value="Masculino">
-            <label for="masculino">Masculino</label>
-            <input type="radio" name="gender" id="personalizado" value="Personalizado">
-            <label for="personalizado">Personalizado</label>
+            <div class="all-radio">
+              <div class="border-gender">
+                <input type="radio" name="gender" id="feminino" value="Feminino" required>
+                <label for="feminino" id="female">Feminino</label>
+              </div>
+              <div class="border-gender">
+                <input type="radio" name="gender" id="masculino" value="Masculino">
+                <label for="masculino" id="male">Masculino</label>
+              </div>
+              <div class="border-gender">
+                <input type="radio" name="gender" id="personalizado" value="Personalizado">
+                <label for="personalizado" id="custom">Personalizado</label>
+              </div>
+            </div>
           </div>
           <div>
             <button type="submit" id="facebook-register">Cadastre-se</button>

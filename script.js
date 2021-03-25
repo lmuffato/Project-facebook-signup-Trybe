@@ -31,19 +31,6 @@ function returnText() {
   }
 }
 
-function validacao() {
-  const takeButton = document.querySelector('#facebook-register');
-  takeButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    const takeSpan = document.querySelectorAll('span');
-    if (takeSpan.length > 0) {
-      return false;
-    }
-    returnText();
-  });
-}
-validacao();
-
 function addInput() {
   const takeInputRadio = document.getElementById('label-gender');
   const createInput = document.createElement('input');
@@ -84,20 +71,50 @@ function checkGender() {
 }
 checkGender();
 
+const name = document.querySelector('.first-name');
+const last = document.querySelector('.last-name');
+const cel = document.querySelector('.phone-email');
+const date = document.querySelector('.birthdate');
 function newMessage() {
   const rightContent = document.querySelector('.right-content');
-  const name = document.querySelector('.first-name');
-  const last = document.querySelector('.last-name');
-  const cel = document.querySelector('.phone-email');
-  const date = document.querySelector('.birthdate');
-  if (checkGender()) {
+  const takeButtonSubmit = document.querySelector('#facebook-register');
+  takeButtonSubmit.addEventListener('click', () => {
+    console.log('entrou');
+    console.log('começou if');
     rightContent.innerHTML = '';
     rightContent.innerHTML = `<p>Olá, ${name.value} ${last.value}</p>`;
     rightContent.innerHTML += `<br><p>${cel.value}</p>`;
     rightContent.innerHTML += `<br><p>${date.value}</p>`;
     rightContent.innerHTML += `<br><p>${checkGender()}</p>`;
-  }
+  });
 }
 
-const takeButtonSubmit = document.querySelector('#facebook-register');
-takeButtonSubmit.addEventListener('click', newMessage);
+function checkEmpty() {
+  const takeelmentsForm = document.querySelectorAll('input');
+  let v = 0;
+  for (let i = 2; i < takeelmentsForm.length - 1; i += 1) {
+    if (confereRadioChecked() > 0 && takeelmentsForm[i].value === '') {
+      console.log(confereRadioChecked());
+      console.log(takeelmentsForm[i].value);
+      v += 1;
+      console(v);
+    }
+  }
+  return v;
+}
+
+function validacao() {
+  const takeButton = document.querySelector('#facebook-register');
+  takeButton.addEventListener('click', (e) => {
+    const takeSpan = document.querySelectorAll('span');
+    if (takeSpan.length > 0) {
+      return false;
+    }
+    if (checkEmpty() === 0) {
+      newMessage();
+    }
+    returnText();
+    e.preventDefault();
+  });
+}
+validacao();
