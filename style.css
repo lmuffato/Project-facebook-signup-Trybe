@@ -105,6 +105,10 @@ body {
   justify-content: flex-start;
 }
 
+#label-gender {
+  display: block;
+}
+
 #custom-gender {
   display: none;
 }
