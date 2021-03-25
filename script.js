@@ -14,14 +14,6 @@ entrarButton.addEventListener('click', () => {
   window.alert(emailContent);
 });
 
-const isRadioChecked = (index) => {
-  let checked = false;
-  if (formResults[index].type === 'radio' && formResults[index].checked) {
-    checked = true;
-  }
-  return checked;
-};
-
 const checkValues = (contentForm) => {
   const values = Object.values(contentForm);
   for (let index = 0; index < values.length; index += 1) {
