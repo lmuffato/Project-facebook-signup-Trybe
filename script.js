@@ -1,6 +1,7 @@
 const loginButton = document.querySelector('#button-login');
 const emailPhoneInput = document.querySelector('#user-email-phone');
 const personalizadoRadioButton = document.querySelector('#personalizado');
+const rightContent = document.querySelector('.right-content');
 const campoDeTextoPersonalizado = document.createElement('input');
 const submitFormButton = document.querySelector('#facebook-register');
 const criaContaForm = document.querySelector('.right-content form');
@@ -96,17 +97,15 @@ ${birthdate}\n\
 ${buttonCheckedValue}`;
   const conclusionHeader = document.createElement('h1');
   conclusionHeader.innerHTML = `Olá, ${name} ${lastName}`;
-  criaContaForm.appendChild(conclusionText);
-  criaContaForm.appendChild(conclusionHeader);
+  rightContent.appendChild(conclusionHeader);
+  rightContent.appendChild(conclusionText);
 }
 
-function exibirConclusaoDeCadastro() {
-  const elForm = document.querySelectorAll('.right-content form *');
-  for (let index = 0; index <= elForm.length; index += 1) {
-    elForm[index].style.display = 'none';
-  }
+function exibirConclusaoDeCadastro(e) {
+  e.preventDefault();
+  criaContaForm.style.display = 'none';
   criarElementosDaConclusao();
 }
 
 submitFormButton.addEventListener('click', handleFunctions);
-criaContaForm.addEventListener('submit', exibirConclusaoDeCadastro);
+criaContaForm.addEventListener('submit', (e) => exibirConclusaoDeCadastro(e));
