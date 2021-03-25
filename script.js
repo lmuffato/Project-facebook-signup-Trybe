@@ -41,19 +41,15 @@ function removeInvalidDiv() {
 
 // pega o valor do genero selecionado
 function genderSelected() {
-  const feminino = document.querySelector('#feminino');
-  const masculino = document.querySelector('#masculino');
-  const personalizado = document.querySelector('#personalizado');
+  const genders = document.querySelectorAll('.genders');
+  let result = '';
 
-  if (feminino.checked) {
-    return feminino.value;
+  for (let index = 0; index < genders.length; index += 1) {
+    if (genders[index].checked) {
+      result = genders[index].value;
+    }
   }
-  if (masculino.checked) {
-    return masculino.value;
-  }
-  if (personalizado.checked) {
-    return personalizado.value;
-  }
+  return result;
 }
 
 // verifica se os valores dos inputs não estão vazios
@@ -72,7 +68,6 @@ function messenger() {
   const rightContent = document.querySelector('.right-content');
   const gender = genderSelected();
 
-  rightContent.innerHTML = '';
   rightContent.className = 'right-content finalMessenger';
   rightContent.innerHTML = `<p> Olá, ${fristName.value} ${lastName.value}<br>
     email: ${emailOrPhone.value}<br>
@@ -80,7 +75,7 @@ function messenger() {
     genero: ${gender}<p>`;
 }
 
-// verifica o return das funções e executa a função de mensagem
+// verifica se as funções são executadas e então executa a função de mensagem
 function hellowNewUser() {
   if (fieldVerification() && genderSelected()) {
     messenger();
@@ -99,6 +94,7 @@ function registerButton() {
       div.innerHTML = 'Campos inválidos';
       div.className = 'invalid-field';
       registerForm.appendChild(div);
+      break;
     } else {
       hellowNewUser();
     }
