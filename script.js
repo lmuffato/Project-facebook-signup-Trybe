@@ -39,7 +39,7 @@ function validateForm(e) {
   e.preventDefault();
   const inputsValidation = validateInputsTextPassword() + validateInputsRadio();
   if (inputsValidation <= 1) {
-    const invalidText = document.createElement('p');
+    const invalidText = document.createElement('span');
     invalidMessage.appendChild(invalidText);
     invalidText.innerText = 'Campos Inválidos';
   }
