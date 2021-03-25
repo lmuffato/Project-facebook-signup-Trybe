@@ -65,7 +65,7 @@ const singUpFormValidation = (form) => {
 
 const createGenderInput = () => {
   const hasCreated = document.querySelector('[name = gender-custom');
-  const genderDiv = document.querySelector('.gender');
+  const genderDiv = document.querySelector('#gender');
   const genderInput = document.createElement('input');
 
   if (!hasCreated) {
