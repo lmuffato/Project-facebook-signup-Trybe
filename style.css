@@ -5,6 +5,7 @@
 }
 
 body {
+  background-color: pink;
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -34,7 +35,6 @@ body {
   display: flex;
   align-items: center;
   height: 76px;
-  padding-bottom: 5px;
 }
 
 .facebook-login {
@@ -76,29 +76,24 @@ body {
 /* ------------------------ main ---------------------- */
 .main-content {
   display: flex;
+  background: red;
   height: 80%;
   width: 100%;
   justify-content: center;
-  background-color: red;
 }
 
 /* left container */
 .left-content {
   width: 800px;
-  background-color: magenta;
+  background: cyan;
+
 }
 
 #facebook-slogan {
-  width: 50%;
-  height: 18%;
-  text-align: left;
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 29px;
-  margin-top: 40px;
-  word-spacing: -1px;
-  color: rgb(14, 56, 95);
-  background: chartreuse;
+  width: 100%;
+  height: 15%;
+  text-align: center;
+  background-color: green;
 }
 
 /* right container */
@@ -112,23 +107,6 @@ body {
 
 #custom-gender {
   display: none;
-}
-
-#open-acc {
-  font-size: 36px;
-  color: #333;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.quick-easy {
-  color: #1d2129;
-  font-size: 19px;
-}
-
-.form-style {
-  border: black solid 1px;
-  border-radius: 5px;
 }
 
 /* ------------------------ footer ---------------------- */
