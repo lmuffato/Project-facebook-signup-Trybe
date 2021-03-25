@@ -43,25 +43,30 @@
       <p class="quick-easy">É rápido e fácil.</p>
 
       <form action="" method="POST" id="singup-form">
-        <fieldset class="facebook-nome-sobrenome">
+        <div class="facebook-nome-sobrenome">
           <input type="text" name="firstname" placeholder="Nome">
           <input type="text" name="lastname" placeholder="Sobrenome">
-        </fieldset>
+        </div>
+
         <input type="text" name="phone_email" placeholder="Celular ou email">
         <input type="password" name='password' placeholder='Nova senha'>
+
         <fieldset>
           <label for="birthdate" id="label-birthdate">Data de nascimento</label>
           <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
         </fieldset>
-        <label id="label-gender">Gênero</label>
-        <div id="gender">
-          <input type="radio" name="gender" id="feminino" value="Feminino">
-          <label for="feminino">Feminino</label>
-          <input type="radio" name="gender" id="masculino" value="Masculino">
-          <label for="masculino">Masculino</label>
-          <input type="radio" name="gender" id="personalizado" value="Personalizado">
-          <label for="personalizado">Personalizado</label>
-        </div>
+        
+        <fieldset>
+          <label id="label-gender">Gênero</label>
+          <div id="gender">
+            <input type="radio" name="gender" id="feminino" value="Feminino">
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="gender" id="masculino" value="Masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="gender" id="personalizado" value="Personalizado">
+            <label for="personalizado">Personalizado</label>
+          </div>
+        </fieldset>
         
         <button type="submit" id="facebook-register">Cadastre-se</button>
         <span id="message"></span>
