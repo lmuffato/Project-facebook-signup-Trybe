@@ -53,44 +53,6 @@ const dadosForms = () => {
   }
 };
 
-// function verificaNome() {
-//   const valorNome = document.getElementById('firstname');
-//   if (valorP.value === undefined && valorNome.value === '') {
-//     valorP.innerHTML = textInvalido;
-//     return true;
-//   }
-// }
-
-// function verificaSobrenome() {
-//   const valorSobrenome = document.getElementById('lastname');
-//   if (valorP.value === undefined && valorSobrenome.value === '') {
-//     valorP.innerHTML = textInvalido;
-//     return true;
-//   }
-// }
-
-// function verificaEmailPhone() {
-//   const valorEmailPhone = document.getElementById('phone_email');
-//   if (valorP.value === undefined && valorEmailPhone.value === '') {
-//     valorP.innerHTML = textInvalido;
-//     return true;
-//   }
-// }
-
-// function verificaSenha() {
-//   const valorSenha = document.getElementById('password');
-//   if (valorP.value === undefined && valorSenha.value === '') {
-//     valorP.innerHTML = textInvalido;
-//     return true;
-//   }
-// }
-
-// function verificaData() {
-//   if (valorP.value === undefined && valorData.value === '') {
-//     valorP.innerHTML = textInvalido;
-//   }
-// }
-
 const pers = document.getElementById('personalizado');
 const pegaDiv = document.getElementById('genderSpace');
 
