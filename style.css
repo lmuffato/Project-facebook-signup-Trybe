@@ -62,3 +62,7 @@
 #facebook-register {
   background-color: rgb(66, 103, 178);
 }
+
+.checked {
+  color: rgb(40, 40, 41);
+}
