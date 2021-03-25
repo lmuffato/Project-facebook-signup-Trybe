@@ -72,15 +72,12 @@
             <input name="birthdate" type="text" id="input-bithdate" placeholder="dd/mm/aaaa">
           </div>
 
+          <label for="" id="label-gender">Gênero</label>
           <div id="gender-container">
-            <label for="" id="label-gender">Gênero</label>
-            <input type="radio" name="gender" value="Feminino" id="Feminino" onclick="createCustomGender()">Feminino
+            <input type="radio" name="gender" value="Feminino" id="Feminino" checked onclick="createCustomGender()">Feminino
             <input type="radio" name="gender" value="Masculino" id="Masculino" onclick="createCustomGender()">Masculino
             <input type="radio" name="gender" value="Personalizado" id="Personalizado" onclick="createCustomGender()">Personalizado
-          </div>
-
-          <div>
-            <input type="text" name="gender-custom" id="custom-gender" placeholder="Gênero (opcional)">
+            <input type="hidden" name="gender-custom" id="custom-gender" placeholder="Gênero (opcional)">
           </div>
 
           <div id="submit-container">

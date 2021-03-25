@@ -13,9 +13,9 @@ function createCustomGender() {
   const personalizado = document.querySelector('#Personalizado');
   const genderCustom = document.querySelector('#custom-gender');
   if (personalizado.checked === true) {
-    genderCustom.style.display = 'block';
+    genderCustom.setAttribute('type', 'text');
   } else {
-    genderCustom.style.display = 'none';
+    genderCustom.setAttribute('type', 'hidden');
   }
 }
 
