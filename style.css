@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  background-color: rgb(66, 103, 178);
+  display: flex;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+}
+
+.facebook-logo {
+  width: 200px;
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  color: white;
+  margin-right: 20px;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.left-content {
+  width: 800px;
+}
+
+.right-content {
+  width: 300px;
+}
+
+.fullname {
+  display: flex;
+}
+
+.email-password {
+  display: flex;
+  flex-direction: column;
+}
+
+.birthdate {
+  display: flex;
+  flex-direction: column;
+}
+
+#facebook-register {
+  background-color: rgb(66, 103, 178);
+}
+
+.checked {
+  color: rgb(40, 40, 41);
+}
