@@ -83,7 +83,7 @@
   margin-bottom: 10px;
   font-size: 16px;
   border-radius: 5px;
-  border: 1px solid rgb(166, 166, 236)
+  border: 1px solid rgb(166, 166, 236);
 }
 
 .facebook-nome-sobrenome {
@@ -95,7 +95,7 @@
   margin-bottom: 10px;
 }
 
-#gender{
+#gender {
   margin-left: 2px;
 }
 
