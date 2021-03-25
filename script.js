@@ -5,10 +5,12 @@ document.querySelector('#button-login').addEventListener('click', () => {
 
 const buttonCadastro = document.getElementById('facebook-register');
 const newFields = document.querySelector('.fields');
+const selectCustom = document.getElementById('custom');
+const form = document.getElementById('collectName');
+const divGender = document.getElementById('collect-gender');
 
 function addAviso() {
   const element = document.createElement('p');
-  const form = document.getElementById('collectName');
   element.innerText = 'Campos inválidos';
   element.id = 'aviso';
   form.appendChild(element);
@@ -29,6 +31,15 @@ function checkFields() {
   }
 }
 
+function createField() {
+  const newInput = document.createElement('input');
+  newInput.type = 'text';
+  newInput.name = 'gender-custom';
+  newInput.placeholder = 'Gênero (opcional)';
+  divGender.appendChild(newInput);
+}
+
 window.onload = function init() {
   buttonCadastro.addEventListener('click', checkFields);
+  selectCustom.addEventListener('click', createField);
 };
