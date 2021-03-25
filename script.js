@@ -22,9 +22,7 @@ personalized.addEventListener('click', () => {
 const removePersonalGender = () => {
   const noGenderDiv = document.getElementById('genders');
   const childrenDiv = noGenderDiv.childNodes;
-  console.log(childrenDiv.length);
   if (childrenDiv.length > 0) {
-    console.log(childrenDiv);
     noGenderDiv.removeChild(noGenderDiv.firstChild);
   }
 };
@@ -33,3 +31,26 @@ const otherGender = document.querySelectorAll('.other-gender');
 
 otherGender[0].addEventListener('click', removePersonalGender);
 otherGender[1].addEventListener('click', removePersonalGender);
+
+const invalidCamp = document.createElement('div');
+const registerForm = document.querySelector('#registerForm');
+invalidCamp.innerHTML = 'Campos inválidos';
+invalidCamp.className = 'invalidCamp';
+invalidCamp.style.display = 'none';
+registerForm.appendChild(invalidCamp);
+
+function verifyContent(event) { // Contribuição para desenvolvimento do raciocinio - PedroGordo - Turma 09//
+  event.preventDefault();
+  let emptyInput = 0;
+  const verify = document.querySelectorAll('.verify');
+  for (let index = 0; index < verify.length; index += 1) {
+    if (verify[index].value === '') {
+      emptyInput += 1;
+      invalidCamp.style.display = 'block';
+    } else if (emptyInput === 0) {
+      invalidCamp.style.display = 'none';
+    }
+  }
+}
+const submitButton = document.querySelector('#submit');
+submitButton.addEventListener('click', verifyContent);
