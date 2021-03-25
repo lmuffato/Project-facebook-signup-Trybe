@@ -30,3 +30,13 @@
 .right-content {
   width: 300px;
 }
+
+.form-cadastro {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-name {
+  display: flex;
+  flex-direction: row;
+}
