@@ -2,35 +2,72 @@
   padding: 0;
   margin: 0;
   font-size: 100%;
-  box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 .top-bar {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   background-color: rgb(66, 103, 178);
   height: 82px;
-  width: 100vw;
-  justify-content: space-around;
 }
 
 .top-bar img {
-  margin: 17px;
+  margin: 17px 0 0;
   align-self: flex-start;
+  margin-right: auto;
 }
 
 .facebook-login {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: auto;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 0 14px;
+  padding-left: 14px;
+}
+
+.form-group label {
+  color: white;
+  padding-bottom: 4px;
+  font-size: 12px;
+}
+
+.form-group input {
+  width: 146px;
+  height: 19px;
+}
+
+.form-control {
+  display: flex;
+  align-self: flex-end;
+  padding: 0 0 20px 14px;
+  text-align: center;
+  text-shadow: none;
+  white-space: nowrap;
+  width: 63px;
+}
+
+/* Necessita de ajustes */
+.form-control button {
+  background-color: #4267b2;
+  color: white;
+  border: 1px solid #ccd0d5;
+  border-radius: 2px;
+  border-color: #29487d;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  white-space: nowrap;
+  cursor: pointer;
+  width: 58px;
+  height: 24px;
 }
 
 .main-content {
