@@ -89,7 +89,7 @@ function fixGenderValue(genero) {
 }
 function writeMessage(name, email, genero, birthDate) {
   const write = document.createElement('div');
-  write.setAttribute('class', 'rigth-content2');
+  write.setAttribute('class', 'rigth-content');
   document.querySelector('.main-content').appendChild(write);
   const message = document.createElement('p');
   message.innerHTML = `Olá, ${name} email : ${email}`;
