@@ -13,9 +13,11 @@
 
 .facebook-logo {
   align-self: flex-start;
+  text-align: left;
 }
 
 .facebook-login {
+  text-align: right;
   color: white;
   display: flex;
   justify-content: flex-end;
