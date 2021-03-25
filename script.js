@@ -7,6 +7,20 @@ function buttonAlert() {
 loginButton.addEventListener('click', buttonAlert);
 
 // criando alerta nos required
+// const formInputs = document.querySelectorAll('.right-content form div input');
+// const countErro = 0;
+// const kakaka = () => {
+//   for (let i = 0; i < formInputs.length; i += 1) {
+//     if ((formInputs[i].value === '') || (formInputs[i].value = false)) {
+//       countErro += 1;
+//     }
+//   }
+//   if (countErro > 0) {
+//     const ulala = document.createElement('div');
+//     ulala.innerHTML = 'Campos inválidos';
+//     document.querySelectorAll('.right-content form').appendChild(ulala);
+//   }
+// }
 
 // add o personalize option gender
 const toBe = document.getElementById('to-be');
