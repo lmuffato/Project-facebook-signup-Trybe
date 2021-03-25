@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Lato, sans-serif;
 }
 
 .top-bar {
@@ -13,34 +12,25 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: white;
-  font-weight: 700;
 }
 
 .facebook-logo {
   left: 0;
 }
 
-.facebook-login {
-  width: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 0 10px;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+}
+
+.facebook-login {
+  display: flex;
 }
 
 .main-content {
-  width: 100%;
-  padding: 25px 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .form-control {
@@ -49,56 +39,14 @@
 
 .left-content {
   width: 800px;
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-  color: rgb(24, 24, 85);
-  font-weight: 700;
-}
-
-.left-content p {
-  width: 400px;
-  margin-bottom: 10px;
-}
-
-.left-content img {
-  width: 600px;
-  margin-bottom: 10px;
 }
 
 .right-content {
   width: 300px;
 }
 
-.right-content h1 {
-  font-size: 35px;
-}
-
-.right-content p {
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-#singup-form {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.text-input {
-  height: 40px;
-  padding: 0 5px;
-  margin-bottom: 10px;
-  width: 100%;
-  border: 1px solid rgb(143, 143, 163);
-  border-radius: 5px;
-  font-size: 18px;
-}
-
 .facebook-nome-sobrenome {
   display: flex;
-  gap: 10px;
 }
 
 fieldset {
