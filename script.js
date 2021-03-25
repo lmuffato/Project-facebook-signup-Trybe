@@ -10,7 +10,6 @@ const radioButtons = document.querySelectorAll('[name="gender"]');
 const inputBlock = document.querySelector('.right-content form .input-block');
 const firstNameEl = document.querySelector('#first-name');
 const emailPhone = document.getElementById('phone-email');
-let buttonCheckedValue = '';
 
 function exibirAlertaDeLogin() {
   window.alert(emailPhoneInput.value);
@@ -92,18 +91,9 @@ function handleFunctions() {
 function criarElementosDaConclusao() {
   const name = firstNameEl.value;
   const lastName = document.getElementById('last-name').value;
-  const birthdate = document.getElementById('birthdate').value;
-  const conclusionText = document.createElement('p');
-  conclusionText.innerHTML = `${emailPhone.value}\n\
-${birthdate}\n
-${buttonCheckedValue}`;
   const conclusionHeader = document.createElement('h1');
   conclusionHeader.innerHTML = `Olá, ${name} ${lastName}`;
-  const sectionConclusion = document.createElement('section');
-  sectionConclusion.className = 'form-conclusion';
-  sectionConclusion.appendChild(conclusionHeader);
-  sectionConclusion.appendChild(conclusionText);
-  rightContent.appendChild(sectionConclusion);
+  rightContent.appendChild(conclusionHeader);
 }
 
 function exibirConclusaoDeCadastro(e) {
