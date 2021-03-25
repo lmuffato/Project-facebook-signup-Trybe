@@ -52,7 +52,7 @@ function radioButtonCheck2(event, radios) {
   if (check === false) {
     const message = document.createElement('p');
     message.setAttribute('id', 'mensagem');
-    message.innerHTML = ('Campos Inválidos');
+    message.innerHTML = ('Campos inválidos');
     message.style.color = 'red';
     document.querySelector('.form-cadastro').appendChild(message);
     event.preventDefault();
