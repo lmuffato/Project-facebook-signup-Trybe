@@ -108,3 +108,8 @@ a {
 .flexDirection input::placeholder {
   padding-left: 5px;
 }
+
+#facebook-register {
+  width: auto;
+  margin: 10px 0;
+}
