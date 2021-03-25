@@ -32,7 +32,7 @@ button {
   font-size: 12px;
   font-weight: 900;
   line-height: 18px;
-  margin: 10px;
+  margin-left: 10px;
   padding: 0;
   width: 45px;
   height: 22px;
@@ -47,12 +47,13 @@ a {
 }
 
 .form-group {
+  color: white;
   display: flex;
   flex-direction: column;
 }
 
 .form-control {
-  align-self: flex-end;
+  align-self: center;
 }
 
 .main-content {
