@@ -160,7 +160,7 @@ p {
 }
 
 #user-email-phone {
-  margin-top: 10px;
+  margin-top: -5px;
   height: 30px;
 }
 
@@ -171,7 +171,7 @@ p {
 }
 
 #user-password {
-  margin-top: 10px;
+  margin-top: -5px;
   height: 30px;
 }
 
