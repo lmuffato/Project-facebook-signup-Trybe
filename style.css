@@ -149,14 +149,21 @@ p {
 .form-group {
   display: flex;
   flex-direction: column;
+  margin-top: 5px;
 }
 
 #user-email-phone-label {
   color: white;
-  margin-top: 20px;
-  font-size: large;
+  margin-top: -5px;
+  font-size: small;
 }
 
 #user-email-phone {
-  margin-top: -7px;
+  margin-top: -10px;
+}
+
+#user-password-label {
+  color: white;
+  margin-top: 2px;
+  font-size: small;
 }
