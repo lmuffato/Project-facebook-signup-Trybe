@@ -2,7 +2,7 @@ const email = document.querySelector('#user-email-phone');
 const loginForm = document.querySelector('.facebook-login');
 const singUpForm = document.querySelector('#singup-form');
 const spanMessage = document.querySelector('#message');
-const otherGenderRadio = document.querySelector('#personalizado');
+const genderRadio = document.getElementsByName('gender');
 
 const showEmail = () => {
   alert(email.value);
@@ -26,6 +26,20 @@ const isFormEmpty = (form) => {
   return false;
 };
 
+const createUserObject = (form) => {
+  const inputs = form.querySelectorAll('input');
+  const user = {};
+  inputs.forEach((input) => {
+    console.log(input);
+    user[input.name] = input.value;
+  });
+  console.log(user);
+};
+
+// const showUserInfo = () => {
+
+// };
+
 const singUpFormValidation = (form) => {
   const isEmpty = isFormEmpty(form);
   const errorMessage = 'Campos inválidos';
@@ -35,17 +49,42 @@ const singUpFormValidation = (form) => {
     spanMessage.innerHTML = errorMessage;
   } else if (!isEmpty) {
     spanMessage.innerHTML = '';
+    createUserObject(form);
   }
 };
 
-const showGenderInput = () => {
-  const genderTextInput = document.querySelector('#gender-custom');
-  genderTextInput.style.display = 'block';
+const createGenderInput = () => {
+  const hasCreated = document.querySelector('[name = gender-custom');
+  const genderDiv = document.querySelector('#gender');
+  const genderInput = document.createElement('input');
+
+  console.log(hasCreated);
+
+  if (!hasCreated) {
+    genderInput.name = 'gender-custom';
+    genderDiv.appendChild(genderInput);
+  }
 };
 
-const hideGenderInput = () => {
-  const genderTextInput = document.querySelector('#gender-custom');
-  genderTextInput.style.display = 'none';
+const removeGenderInput = () => {
+  const genderInput = document.querySelector('[name = gender-custom]');
+  if (genderInput) {
+    genderInput.remove();
+  }
+};
+
+const selectGender = (Event) => {
+  const gender = Event.target;
+  if (!gender.className.includes('selected')) {
+    genderRadio.forEach((input) => input.classList.remove('selected'));
+    gender.classList.add('selected');
+  }
+
+  if (gender.id === 'personalizado') {
+    createGenderInput();
+  } else {
+    removeGenderInput();
+  }
 };
 
 loginForm.addEventListener('submit', (e) => {
@@ -58,5 +97,6 @@ singUpForm.addEventListener('submit', (e) => {
   singUpFormValidation(singUpForm);
 });
 
-otherGenderRadio.addEventListener('click', showGenderInput);
-otherGenderRadio.addEventListener('blur', hideGenderInput);
+genderRadio.forEach((input) => {
+  input.addEventListener('click', selectGender);
+});
