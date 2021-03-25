@@ -71,8 +71,8 @@ function radioButtonCheck() {
 function hideRegister() {
   const form = document.getElementsByClassName('form-cadastro');
   form[0].addEventListener('submit', (event) => {
-    const register = document.getElementsByClassName('right-content');
-    register[0].style.display = 'none';
+    const register = document.querySelector('.right-content');
+    register.remove();
     event.preventDefault();
   });
 }
@@ -94,12 +94,12 @@ function writeMessage(name, email, genero, birthDate) {
   const message = document.createElement('p');
   message.innerHTML = `Olá, ${name} email : ${email}`;
   message.innerHTML += ` Genero : ${genero} Data de Nascimento : ${birthDate}`;
-  document.querySelector('.rigth-content2').appendChild(message);
+  document.querySelector('.rigth-content').appendChild(message);
 }
 
 function registerData() {
   const form = document.getElementsByClassName('form-cadastro');
-  form[0].addEventListener('submit', () => {
+  form[0].addEventListener('submit', (event) => {
     let name = `${document.getElementsByName('firstname')[0].value}`;
     name += `${document.getElementsByName('lastname')[0].value}`;
     const email = document.getElementsByName('phone_email')[0].value;
@@ -113,6 +113,7 @@ function registerData() {
     genero = fixGenderValue(genero);
     const birthDate = document.getElementsByName('birthdate')[0].value;
     writeMessage(name, email, genero, birthDate);
+    event.preventDefault();
   });
 }
 
