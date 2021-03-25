@@ -45,8 +45,16 @@
   width: 300px;
 }
 
+.right-content input[type=text], .right-content input[type=password] {
+  height: 45px;
+  width: 100%;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+
 .facebook-nome-sobrenome {
   display: flex;
+  gap: 10px;
 }
 
 fieldset {
