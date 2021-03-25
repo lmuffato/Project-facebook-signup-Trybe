@@ -26,17 +26,17 @@ createCustomGender();
 const registerButton = document.querySelector('#facebook-register');
 const form = document.querySelector('#form');
 
-function validate(e){
+function validate(e) {
   e.preventDefault();
   const arrayInputs = document.querySelectorAll('.is-filled');
   let validateCheck = 0;
 
   for (let index = 0; index < arrayInputs.length; index += 1) {
-    if (arrayInputs[index].value === '' ) {
+    if (arrayInputs[index].value === '') {
       validateCheck += 1;
-    } 
+    }
   }
-  if ( validateCheck !== 0) {
+  if (validateCheck !== 0) {
     const errorMessage = document.createElement('p');
     errorMessage.innerHTML = 'Campos inválidos';
     form.appendChild(errorMessage);
