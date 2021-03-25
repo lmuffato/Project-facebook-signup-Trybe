@@ -69,7 +69,7 @@
 
 .register-birth-date {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
 }
 
 .register-gender {
@@ -92,4 +92,5 @@
 .button-register {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
