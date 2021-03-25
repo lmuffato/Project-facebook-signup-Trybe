@@ -99,4 +99,4 @@ const outPutContent = () => {
 
 const signUpButton = document.getElementById('facebook-register');
 signUpButton.addEventListener('click', outPutContent);
-// partindo para o abraço #XABLAU o mago é Implacável
+// partindo para o abraço #XABLAU o mago é Implacável!!
