@@ -72,7 +72,7 @@ for (let index = 0; index < fields.length; index += 1) {
 }
 
 const genderModify = document.getElementById('Personalizado');
-const genderElement = document.querySelector('.gender')
+const genderElement = document.querySelector('.gender');
 genderModify.addEventListener('click', () => {
   console.log(genderElement.style.visibility = 'visible');
 });

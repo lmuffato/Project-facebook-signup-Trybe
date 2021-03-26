@@ -178,7 +178,9 @@ body {
   margin-left: 8px;
 }
 
-.gender {visibility: hidden;}
+.gender {
+  visibility: hidden;
+}
 
 .gend {
   font-size: 18px;
