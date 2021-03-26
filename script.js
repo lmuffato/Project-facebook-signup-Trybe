@@ -1,8 +1,7 @@
 const selectButton = document.querySelector('#button-login');
 const selectInput = document.querySelector('#user-email-phone');
 const sendForm = document.querySelector('#facebook-register');
-const slctInput = document.querySelectorAll('.main-content input');
-const selectForm = document.querySelector('#form-signup');
+const slctInput = document.querySelectorAll('.select');
 const createSpan = document.createElement('span');
 const selectDivCustom = document.querySelector('#customGender');
 const selectRadios = document.querySelectorAll('#masc, #fem, #pers');
@@ -11,17 +10,20 @@ const selectSurname = document.querySelector('#surname');
 const selectDivRight = document.querySelector('.right-content');
 const selectInputEmail = document.querySelectorAll('input')[4];
 const selectInputBirthDate = document.querySelectorAll('input')[6];
+const selectdiv = document.querySelector('#signup-form');
 
 function alertInput() {
   alert(selectInput.value);
 }
 
 function getValueRadioInputs() {
+  const gender = '';
   for (let index = 0; index < selectRadios.length; index += 1) {
     if (selectRadios[index] && selectRadios[index].checked) {
       return selectRadios[index].value;
     }
   }
+  return gender;
 }
 
 function createPhrase() {
@@ -34,11 +36,10 @@ function createPhrase() {
 
 function checkInputs(event) {
   for (let index = 0; index < slctInput.length; index += 1) {
-    const element = slctInput[index];
-    if (element.value === '') {
+    if (slctInput[index].value === '') {
       event.preventDefault();
       createSpan.innerText = 'Campos inválidos';
-      selectForm.appendChild(createSpan);
+      selectdiv.appendChild(createSpan);
     } else {
       event.preventDefault();
       selectDivRight.innerText = createPhrase();
