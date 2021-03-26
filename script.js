@@ -76,3 +76,13 @@ const genderElement = document.querySelector('.gender');
 genderModify.addEventListener('click', () => {
   console.log(genderElement.style.visibility = 'visible');
 });
+
+const hidePers = () => {
+  const gendElement = document.querySelector('.gender');
+  if (gendElement.style.visibility === 'visible') {
+    gendElement.style.visibility = 'hidden';
+  }
+};
+
+document.getElementById('Feminino').addEventListener('click', hidePers);
+document.getElementById('Masculino').addEventListener('click', hidePers);
