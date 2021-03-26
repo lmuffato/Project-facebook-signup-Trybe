@@ -5,10 +5,31 @@ const slctInput = document.querySelectorAll('.main-content input');
 const selectForm = document.querySelector('#form-signup');
 const createSpan = document.createElement('span');
 const selectDivCustom = document.querySelector('#customGender');
-const selectRadios = document.getElementsByName('gender');
+const selectRadios = document.querySelectorAll('#masc, #fem, #pers');
+const selectUser = document.querySelector('#user');
+const selectSurname = document.querySelector('#surname');
+const selectDivRight = document.querySelector('.right-content');
+const selectInputEmail = document.querySelectorAll('input')[4];
+const selectInputBirthDate = document.querySelectorAll('input')[6];
 
 function alertInput() {
   alert(selectInput.value);
+}
+
+function getValueRadioInputs() {
+  for (let index = 0; index < selectRadios.length; index += 1) {
+    if (selectRadios[index] && selectRadios[index].checked) {
+      return selectRadios[index].value;
+    }
+  }
+}
+
+function createPhrase() {
+  const phrase = `Olá, ${selectUser.value} ${selectSurname.value} 
+  ${selectInputEmail.value} 
+  ${selectInputBirthDate.value}
+  ${getValueRadioInputs()}`;
+  return phrase;
 }
 
 function checkInputs(event) {
@@ -18,6 +39,9 @@ function checkInputs(event) {
       event.preventDefault();
       createSpan.innerText = 'Campos inválidos';
       selectForm.appendChild(createSpan);
+    } else {
+      event.preventDefault();
+      selectDivRight.innerText = createPhrase();
     }
   }
 }
