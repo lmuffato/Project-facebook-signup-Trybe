@@ -24,7 +24,11 @@ function replaceRightContent() {
   newDiv.className = 'right-content';
   const finalText = document.createElement('p');
   finalText.innerText = `Olá, ${newFields[0].value} ${newFields[1].value}`;
+  const emailAndBirthdate = document.createElement('p');
+  emailAndBirthdate.innerText = `Seu email ou  celular:
+  ${newFields[2].value}; Sua data de nascimento:${newFields[4].value}.`;
   newDiv.appendChild(finalText);
+  newDiv.appendChild(emailAndBirthdate);
   mainContent.appendChild(newDiv);
 }
 
