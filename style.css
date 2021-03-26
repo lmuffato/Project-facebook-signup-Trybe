@@ -42,8 +42,14 @@
 
 .right-content form {
   display: flex;
+  justify-content: space-around ;
+}
+.right-content input:nth-child(3){
+   background-color: lawngreen;
+   display: inline;
 }
 
 .right-content form input {
   margin-right: 5px;  
 }
+
