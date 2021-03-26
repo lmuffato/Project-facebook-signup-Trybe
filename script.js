@@ -39,8 +39,24 @@ invalidCamp.className = 'invalidCamp';
 invalidCamp.style.display = 'none';
 registerForm.appendChild(invalidCamp);
 
-function verifyContent(event) { // Contribuição para desenvolvimento do raciocinio - PedroGordo - Turma 09//
-  event.preventDefault();
+function succesEntry() {
+
+  const divOK = document.querySelector('.right-content');
+  const firstName = document.querySelectorAll('.verify')[0].value;
+  const lastName = document.querySelectorAll('.verify')[1].value;
+  const email = document.querySelectorAll('.verify')[2].value;
+  const birthDate = document.querySelectorAll('.verify')[4].value;
+  const radio = document
+    .querySelector('.genderOptions input[type="radio"]:checked');
+  // https://developer.mozilla.org/pt-BR/docs/Web/CSS/:checked //
+  divOK.innerText = `Olá, ${firstName} ${lastName} 
+  ${email}
+  ${birthDate}
+  ${radio.value}`;
+}
+
+function verifyContent() {
+  // Contribuição para desenvolvimento do raciocinio - PedroGordo - Turma 09 - Plantao de duvidas com JonJon//
   let emptyInput = 0;
   const verify = document.querySelectorAll('.verify');
   for (let index = 0; index < verify.length; index += 1) {
@@ -51,6 +67,10 @@ function verifyContent(event) { // Contribuição para desenvolvimento do racioc
       invalidCamp.style.display = 'none';
     }
   }
+  if (emptyInput === 0) {
+    succesEntry();
+  }
+  return true;
 }
 const submitButton = document.querySelector('#facebook-register');
 submitButton.addEventListener('click', verifyContent);

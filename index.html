@@ -45,32 +45,75 @@
         <h2 class="quick-easy">É rápido e fácil.</h2>
         <form action="" method="GET" id="registerForm">
           <div class="inputFlex">
-            <input type="text" class="verify" name="firstname" placeholder="Nome">
-            <input type="text" class="verify" name="lastname" placeholder="Sobrenome">
+            <input
+              type="text"
+              class="verify"
+              name="firstname"
+              placeholder="Nome"
+            />
+            <input
+              type="text"
+              class="verify"
+              name="lastname"
+              placeholder="Sobrenome"
+            />
           </div>
-          <input type="text" class="verify" name="phone_email" placeholder="Celular ou email">
-          <input type="password" class="verify" name="password" placeholder="Nova senha">
+          <input
+            type="text"
+            class="verify"
+            name="phone_email"
+            placeholder="Celular ou email"
+          />
+          <input
+            type="password"
+            class="verify"
+            name="password"
+            placeholder="Nova senha"
+          />
           <br />
-          <label for="" id="label-birthdate" class="verify">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+          <label for="" id="label-birthdate"
+            >Data de nascimento
+            <input
+              type="text"
+              name="birthdate"
+              class="verify"
+              placeholder="dd/mm/aaaa"
+            />
+          </label>
           <br />
           <label for="gender" id="label-gender">Gênero</label>
           <div class="genderOptions">
             <label for="woman">
-              <input class="other-gender verify" type="radio" value='Feminino' name="gender" id="woman">Feminino
+              <input
+                class="other-gender verify"
+                type="radio"
+                value="Feminino"
+                name="gender"
+                id="woman"
+              />Feminino
             </label>
             <label for="man">
-              <input class="other-gender verify" type="radio" value='Masculino' name="gender" id="man">Masculino
+              <input
+                class="other-gender verify"
+                type="radio"
+                value="Masculino"
+                name="gender"
+                id="man"
+              />Masculino
             </label>
             <label for="personalized">
-              <input type="radio" name="gender" class="verify" value='Personalizado' id="personalized">Personalizado
+              <input
+                type="radio"
+                name="gender"
+                class="verify"
+                value="Personalizado"
+                id="personalized"
+              />Personalizado
             </label>
           </div>
-          <div id="noInput">
-            
-          </div>
+          <div id="noInput"></div>
           <div id="genders"></div>
-        <button type="submit" id="facebook-register">Cadastre-se</button>
+          <button type="submit" id="facebook-register">Cadastre-se</button>
         </form>
       </div>
     </main>
