@@ -1,16 +1,20 @@
 function replaceRegisterFormWithGreetingMessage(inputs) {
+  const messages = [
+    `Olá, ${inputs.filter((e) => e.name === 'firstname')[0].value
+    } ${inputs.filter((e) => e.name === 'lastname')[0].value}`,
+    `${inputs.filter((e) => e.name === 'phone_email')[0].value}`,
+    `${inputs.filter((e) => e.name === 'birthdate')[0].value}`,
+    `${inputs.filter((e) => e.name === 'gender' && e.checked)[0].value}`];
   const rightContent = document.querySelector('.right-content');
-  const greeting = document.createElement('p');
-  greeting.innerText = `Olá, 
-    ${inputs.filter((e) => e.name === 'firstname')[0].value} 
-    ${inputs.filter((e) => e.name === 'lastname')[0].value}
-    ${inputs.filter((e) => e.name === 'phone_email')[0].value}
-    ${inputs.filter((e) => e.name === 'birthdate')[0].value}
-    ${inputs.filter((e) => e.name === 'gender' && e.checked)[0].value}`;
-  rightContent.append(greeting);
+  messages.forEach((m) => {
+    const greeting = document.createElement('p');
+    greeting.innerText = m;
+    rightContent.append(greeting);
+  });
   const toReplace = document.querySelector('.to-replace');
   toReplace.parentElement.removeChild(toReplace);
 }
+
 function alertUser() {
   const comunicate = document.createElement('p');
   comunicate.innerText = 'Campos inválidos';
