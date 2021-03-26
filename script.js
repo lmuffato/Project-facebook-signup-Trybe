@@ -40,7 +40,7 @@ function showInputCustom() {
     const createElementeInput = document.createElement('input');
     createElementeInput.setAttribute('name', 'gender-custom');
     createElementeInput.setAttribute('type', 'text');
-    createElementeInput.setAttribute('placeholder', 'opcional');
+    createElementeInput.setAttribute('placeholder', 'Gênero (opcional)');
     document.querySelector('#custom').appendChild(createElementeInput);
   });
 }
