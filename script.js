@@ -78,12 +78,22 @@ event.preventDefault();
   }
 
   const elements = document.getElementsByClassName('right-content');
-  document.getElementsByClassName('right-content')[0].remove();
+  // document.getElementsByClassName('right-content')[0].remove();
+  elements[0].innerHTML = '';
   welcomeUser(name, lastname, phoneEmail, birthdate, genderSelected);
 } 
 
 function welcomeUser (name, lastname, phoneEmail, birthdate, genderSelected) {
-  const welcome = document.createElement('p');
-  document.getElementsByClassName('main-content')[0].appendChild(welcome);
-  welcome.appendChild(document.createTextNode('Olá,' + name + lastname + phoneEmail + birthdate + genderSelected));
+  const nameData = document.createElement('p');
+  nameData.appendChild(document.createTextNode(`Olá, ${name} ${lastname}`));
+  const phoneEmailData = document.createElement('p');
+  phoneEmailData.appendChild(document.createTextNode(phoneEmail));
+  const birthdateData = document.createElement('p');
+  birthdateData.appendChild(document.createTextNode(birthdate));
+  const genderData = document.createElement('p');
+  genderData.appendChild(document.createTextNode(genderSelected));
+  document.getElementsByClassName('right-content')[0].appendChild(nameData);
+  document.getElementsByClassName('right-content')[0].appendChild(phoneEmailData);
+  document.getElementsByClassName('right-content')[0].appendChild(birthdateData);
+  document.getElementsByClassName('right-content')[0].appendChild(genderData);  
 } 
