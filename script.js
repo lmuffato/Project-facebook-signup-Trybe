@@ -42,9 +42,8 @@ function validateForm(e) {
   const inputsValidation = validateInputsTextPassword() + validateInputsRadio();
   if (inputsValidation <= 1) {
     invalidText.innerText = 'Campos Inválidos';
-  }
-  if (invalidText.innerText === 'Campos Inválidos') {
-    invalidMessage.appendChild(invalidText);
+  } else {
+    invalidText.innerText = '';
   }
 }
 registerButton.addEventListener('click', validateForm);
