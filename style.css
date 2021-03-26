@@ -16,6 +16,11 @@
   width: 170px;
 }
 
+#facebook-networking {
+  margin-left: 100px;
+  margin-top: 75px;
+}
+
 .facebook-login {
   display: flex;
   width: auto;
@@ -63,10 +68,16 @@ a {
 }
 
 .left-content {
+  font-family: Georgia, Times New Roman, Times, serif;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-right: 100px;
   width: 800px;
 }
 
 .right-content {
+  font-family: Georgia, Times New Roman, Times, serif;
+  margin-top: 50px;
   width: 300px;
 }
 
@@ -122,4 +133,10 @@ a {
 
 .alertlog {
   color: red;
+}
+
+.welcome {
+  margin-top: 100px;
+  color: rgb(32, 32, 32);
+  font-size: 30px;
 }
