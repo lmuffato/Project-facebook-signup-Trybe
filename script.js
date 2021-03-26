@@ -80,7 +80,7 @@ function newMessage() {
   const rightContent = document.querySelector('.right-content');
   console.log('começou if');
   rightContent.innerHTML = '';
-  rightContent.innerHTML = `<p>Olá, ${name.value} ${last.value}</p>`;
+  rightContent.innerHTML = `<p><br><br>Olá, ${name.value} ${last.value}</p>`;
   rightContent.innerHTML += `<br><p>${cel.value}</p>`;
   rightContent.innerHTML += `<br><p>${date.value}</p>`;
   rightContent.innerHTML += `<br><p>${checkGender()}</p>`;

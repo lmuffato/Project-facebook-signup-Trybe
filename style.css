@@ -99,7 +99,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 80px 0 40px;
+  margin: 0 100px 0 40px;
 }
 
 .left-content {
@@ -111,15 +111,26 @@ a {
   display: flex;
   flex-direction: column;
   margin-top: 8px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  line-height: 24px;
 }
 
 #facebook-slogan {
-  color: black;
+  color: #1d2a5b;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  width: 600px;
+  text-align: right;
 }
 
 h1 {
   color: #1c1e21;
-  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 32px;
   line-height: 38px;
   margin-bottom: 0;
@@ -127,7 +138,7 @@ h1 {
 
 h3 {
   color: #606770;
-  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 24px;
 }
