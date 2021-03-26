@@ -32,17 +32,18 @@ function returnText() {
 }
 
 function addInput() {
-  const takeInputRadio = document.getElementById('label-gender');
   const createInput = document.createElement('input');
+  const takeButtonRegister = document.getElementById('facebook-register');
+  const createFather = takeButtonRegister.parentNode;
   createInput.id = 'input-gender';
   createInput.setAttribute('name', 'gender-custom');
   createInput.setAttribute('placeholder', 'Gênero (opcional)"');
-  takeInputRadio.appendChild(createInput);
+  createFather.insertBefore(createInput, takeButtonRegister);
 }
 addInput();
 
 function checkRadioOption() {
-  const takeDivGender = document.getElementById('label-gender');
+  const takeDivGender = document.getElementById('label-gender-first');
   takeDivGender.addEventListener('click', () => {
     const takeInputOther = document.getElementById('personalizado');
     const takeInput = document.getElementById('input-gender');
@@ -77,42 +78,47 @@ const cel = document.querySelector('.phone-email');
 const date = document.querySelector('.birthdate');
 function newMessage() {
   const rightContent = document.querySelector('.right-content');
-  const takeButtonSubmit = document.querySelector('#facebook-register');
-  takeButtonSubmit.addEventListener('click', () => {
-    console.log('começou if');
-    rightContent.innerHTML = '';
-    rightContent.innerHTML = `<p>Olá, ${name.value} ${last.value}</p>`;
-    rightContent.innerHTML += `<br><p>${cel.value}</p>`;
-    rightContent.innerHTML += `<br><p>${date.value}</p>`;
-    rightContent.innerHTML += `<br><p>${checkGender()}</p>`;
-  });
+  console.log('começou if');
+  rightContent.innerHTML = '';
+  rightContent.innerHTML = `<p>Olá, ${name.value} ${last.value}</p>`;
+  rightContent.innerHTML += `<br><p>${cel.value}</p>`;
+  rightContent.innerHTML += `<br><p>${date.value}</p>`;
+  rightContent.innerHTML += `<br><p>${checkGender()}</p>`;
 }
 
 function checkEmpty() {
-  const takeelmentsForm = document.querySelectorAll('input');
-  let v = 0;
-  for (let i = 2; i < takeelmentsForm.length - 1; i += 1) {
-    if (confereRadioChecked() > 0 && takeelmentsForm[i].value === '') {
-      console.log(confereRadioChecked());
-      console.log(takeelmentsForm[i].value);
-      v += 1;
+  const right = document.querySelectorAll('input');
+  let empty = 0;
+  console.log(empty);
+  for (let i = 2; i < right.length - 1; i += 1) {
+    if (right[i].value === '' && right[i].type !== 'radio') {
+      console.log(right[i]);
+      empty += 1;
     }
   }
-  return v;
+  console.log(empty);
+  return empty;
 }
 
 function validacao() {
-  const takeButton = document.querySelector('#facebook-register');
-  takeButton.addEventListener('click', (e) => {
-    e.preventDefault();
-    const takeSpan = document.querySelectorAll('span');
-    if (takeSpan.length > 0) {
+  const takeSpan = document.querySelectorAll('span');
+  if (takeSpan.length > 0) {
+    // e.preventDefault();
+    return false;
+  }
+  returnText();
+}
+
+function lastValidation() {
+  const takeButtonSubmit = document.querySelector('#facebook-register');
+  takeButtonSubmit.addEventListener('click', () => {
+    if (checkEmpty() === 5 && confereRadioChecked() === 0) {
+      validacao();
       return false;
     }
-    if (checkEmpty() === 0) {
+    if (checkEmpty() === 0 && confereRadioChecked() > 0) {
       newMessage();
     }
-    returnText();
   });
 }
-validacao();
+lastValidation();
