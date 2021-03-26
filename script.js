@@ -86,3 +86,26 @@ const hidePers = () => {
 
 document.getElementById('Feminino').addEventListener('click', hidePers);
 document.getElementById('Masculino').addEventListener('click', hidePers);
+
+function createForm() {
+  const error = verifError();
+  if (error === 0) {
+    const pTag = document.createElement('p');
+    const aplName = document.getElementById('aplicant-name');
+    pTag.innerText = `
+    Olá, ${aplName.value} ${document.getElementById('aplicant-lastname').value}
+    ${document.getElementById('aplicant-contact').value}
+    ${document.getElementById('birthdate').value}
+    ${document.querySelector('input[type=radio][name=gender]:checked').value}`;
+    document.querySelector('.right-content').appendChild(pTag);
+    document.querySelectorAll('form')[1].style.display = 'none';
+  }
+}
+
+function preventDef(event) {
+  event.preventDefault();
+}
+
+btn.addEventListener('click', createForm);
+
+btn.addEventListener('click', preventDef);
