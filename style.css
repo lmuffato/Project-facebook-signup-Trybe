@@ -65,7 +65,7 @@ form div {
   width: 80%;
 }
 
-.gender-options {
+#gender-options {
   display: flex;
-  flex-flow: column;
+  flex-flow: wrap;
 }
