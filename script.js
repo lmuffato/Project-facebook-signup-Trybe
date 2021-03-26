@@ -35,7 +35,7 @@ function personalField() {
   personalRadioButton.addEventListener('click', (event) => {
     if (event.target.id === personalRadioButton.id && !breakPoint) {
       breakPoint = true;
-      const pField = document.createElement('textarea');
+      const pField = document.createElement('input');
       pField.placeholder = 'Gênero (opcional)';
       pField.name = 'gender-custom';
       pField.id = 'pfield-size';
