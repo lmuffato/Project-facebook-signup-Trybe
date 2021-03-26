@@ -59,41 +59,47 @@ hideCustomFemale();
 genderCustom();
 signAlert();
 
-document.getElementById('facebook-register').addEventListener('click', saveData);
-
-function saveData (event) {
-//Como impedir que o formulário seja enviado automaticamente para que a função de inserir texto funcione https://www.w3schools.com/jsref/event_preventdefault.asp
-event.preventDefault();
-  const name = document.getElementById('firstname').value;
-  const lastname = document.getElementById('lastname').value;
-  const phoneEmail = document.getElementById('phone_email').value;
-  const birthdate = document.getElementById('birthdate').value;
-  const genders = document.getElementById('genderOption').getElementsByTagName('input');
-  let genderSelected;
-  for (index = 0; index < genders.length; index += 1) {
-    if (genders[index].checked === true) {
-      genderSelected = genders[index].value;
-      break;
-    }
-  }
-
+function clearData() {
   const elements = document.getElementsByClassName('right-content');
   // document.getElementsByClassName('right-content')[0].remove();
   elements[0].innerHTML = '';
-  welcomeUser(name, lastname, phoneEmail, birthdate, genderSelected);
-} 
+}
 
-function welcomeUser (name, lastname, phoneEmail, birthdate, genderSelected) {
+function welcomeUser(fullName, phoneEmail, birthdate, genderSelected) {
+  const rightContent = document.getElementsByClassName('right-content')[0];
   const nameData = document.createElement('p');
-  nameData.appendChild(document.createTextNode(`Olá, ${name} ${lastname}`));
+  nameData.appendChild(document.createTextNode(`Olá, ${fullName}`));
   const phoneEmailData = document.createElement('p');
   phoneEmailData.appendChild(document.createTextNode(phoneEmail));
   const birthdateData = document.createElement('p');
   birthdateData.appendChild(document.createTextNode(birthdate));
   const genderData = document.createElement('p');
   genderData.appendChild(document.createTextNode(genderSelected));
-  document.getElementsByClassName('right-content')[0].appendChild(nameData);
-  document.getElementsByClassName('right-content')[0].appendChild(phoneEmailData);
-  document.getElementsByClassName('right-content')[0].appendChild(birthdateData);
-  document.getElementsByClassName('right-content')[0].appendChild(genderData);  
-} 
+  rightContent.appendChild(nameData);
+  rightContent.appendChild(phoneEmailData);
+  rightContent.appendChild(birthdateData);
+  rightContent.appendChild(genderData);
+}
+
+function saveData(event) {
+  // Como impedir que o formulário seja enviado automaticamente para que a função de inserir texto funcione https://www.w3schools.com/jsref/event_preventdefault.asp
+  event.preventDefault();
+  const name = document.getElementById('firstname').value;
+  const lastname = document.getElementById('lastname').value;
+  const phoneEmail = document.getElementById('phone_email').value;
+  const birthdate = document.getElementById('birthdate').value;
+  const genders = document.getElementById('genderOption')
+    .getElementsByTagName('input');
+  let genderSelected;
+  for (let index = 0; index < genders.length; index += 1) {
+    if (genders[index].checked === true) {
+      genderSelected = genders[index].value;
+      break;
+    }
+  }
+  clearData();
+  welcomeUser(`${name} ${lastname}`, phoneEmail, birthdate, genderSelected);
+}
+
+const buttonRegister = document.getElementById('facebook-register');
+buttonRegister.addEventListener('click', saveData);
