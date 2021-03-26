@@ -19,7 +19,7 @@ function addAviso() {
 
 function checkFields() {
   const arrayValues = [newFields[0].value, newFields[1].value,
-  newFields[2].value, newFields[3].value, newFields[4].value];
+    newFields[2].value, newFields[3].value, newFields[4].value];
   const aviso = document.getElementById('aviso');
   if (aviso !== null) {
     aviso.remove();
@@ -30,7 +30,8 @@ function checkFields() {
       return;
     }
   }
-  rightContent.replaceChildren(`Olá, ${newFields[0].value} ${newFields[1].value}`);
+  rightContent
+    .replaceChildren(`Olá, ${newFields[0].value} ${newFields[1].value}`);
 }
 
 function createField() {
