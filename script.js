@@ -5,7 +5,8 @@ const buttonSubscrive = document.getElementById('facebook-register');
 const result = document.querySelector('.result');
 const selectCustonGender = document.querySelector('#other');
 // const regularGender = document.querySelectorAll('.regular');
-// const buttonLogin = document.getElementById('button-login');
+const resumeForm = document.getElementById('resume-form');
+
 
 // Bloco de declaração de funções
 
@@ -16,10 +17,21 @@ entrarButton.addEventListener('click', () => {
 
 const checkValues = (contentForm) => {
   const values = Object.values(contentForm);
+  let isValid = true;
   for (let index = 0; index < values.length; index += 1) {
     if (values[index] === '') {
-      result.innerText = 'Campos inválidos';
+      result.innerText = `Campos  
+      inválidos`;
+      isValid = false;
     }
+  }
+  if (isValid) {
+    document.querySelector('.form-new').classList.add('no-view');
+    resumeForm.innerText = `Olá, ${contentForm.firstname} ${contentForm.lastname}!
+    Confira seus dados: 
+    e-mail ou telefone: ${contentForm.phone_email}
+    Data de nascimento: ${contentForm.birthdate}
+    Opção de gênero: ${contentForm.gender}`;
   }
 };
 
@@ -35,9 +47,7 @@ buttonSubscrive.addEventListener('click', (event) => {
       console.log(index, formResults[index].name, formResults[index].value);
     }
   }
-  console.table(contentForm);
   checkValues(contentForm);
-  console.log(contentForm);
 });
 
 selectCustonGender.addEventListener('change', () => {
