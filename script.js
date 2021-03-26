@@ -9,12 +9,23 @@ const selectCustom = document.getElementById('custom');
 const form = document.getElementById('collectName');
 const divGender = document.getElementById('collect-gender');
 const rightContent = document.querySelector('.right-content');
+const mainContent = document.querySelector('.main-content');
 
 function addAviso() {
   const element = document.createElement('p');
   element.innerText = 'Campos inválidos';
   element.id = 'aviso';
   form.appendChild(element);
+}
+
+function replaceRightContent() {
+  rightContent.remove();
+  const newDiv = document.createElement('div');
+  newDiv.className = 'right-content';
+  const finalText = document.createElement('p');
+  finalText.innerText = `Olá, ${newFields[0].value} ${newFields[1].value}`;
+  newDiv.appendChild(finalText);
+  mainContent.appendChild(newDiv);
 }
 
 function checkFields() {
@@ -30,8 +41,7 @@ function checkFields() {
       return;
     }
   }
-  rightContent
-    .replaceChildren(`Olá, ${newFields[0].value} ${newFields[1].value}`);
+  replaceRightContent();
 }
 
 function createField() {
