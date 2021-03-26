@@ -6,7 +6,6 @@
     <link rel='stylesheet' href='style.css' type='text/css'>     
 </head> 
 <body>
-<<<<<<< HEAD
   <header class="top-bar">
     <div>
       <img src="imgs/facebook-logo.png" class="facebook-logo" id="facebook" alt="logo-do-facebook">
@@ -21,23 +20,6 @@
           <input type="text" id="user-password" name="user-password">
        </div>
     </form>
-=======
-  <header class = 'top-bar';>
-     <img src="imgs/facebook-logo.png" class="facebook-logo" alt="logo-do-facebook">
-      <form class = 'facebook-login'>   
-
-       <div class="form-group">
-         <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
-           <br>
-           <input type="text" id="user-email-phone" name="email-phone" lenght= 50>
-       </div>
-
-        <div class="form-group">
-          <label id="user-password-label" for="user-password">Senha</label>
-          <br>
-          <input type="text" id="user-password" name="user-password" lenght= 50>
-      </form>
->>>>>>> 67819de93b8099e8cda11d163f17a1b290228f8e
   </header>
  
   <div class="main-content">
@@ -48,17 +30,15 @@
         <h1>Abra uma conta</h1>
         <p class="quick-easy">É rápido e fácil.</p>
         <form id="form">
-          <div class="form-full-name">
-            <input type="text" name="firstname" id="firstname" placeholder="Nome" required>
-            <input type="text" name="lastname" id="lastname" placeholder="Sobrenome" required>
+          <div class="full-name">
+            <input type="text" name="firstname" class="validation" id="firstname" placeholder="Nome" required>
+            <input type="text" name="lastname" class="validation" id="lastname" placeholder="Sobrenome" required>
           </div>
-          <input class="input-item" type="text" name="phone_email" id="phonemail" placeholder="Celular ou email" required>
-          <input class="input-item" type="password" name="password" id="password" placeholder="Nova senha" required>
-          <div class="form-date">
-            <label id="label-birthdate">Data de nascimento</label>
-            <input class="input-item" type="text" name="birthdate" id="birthdate" placeholder="dd/mm/aaaa" required>
-            <label id="label-gender">Gênero</label>
-          </div>
+          <input type="text" name="phone_email" class="validation" id="phonemail" placeholder="Celular ou email" required>
+          <input type="password" name="password" class="validation" id="password" placeholder="Nova senha" required>
+          <label id="label-birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" class="validation" id="birthdate" placeholder="dd/mm/aaaa" required>
+          <label id="label-gender">Gênero</label>
           <div class="form-radio">
             <div>
               <input type="radio" name="gender" id="label-gender1" value="Feminino">

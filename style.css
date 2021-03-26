@@ -7,6 +7,7 @@
 body {
   background: linear-gradient(180deg, #fefefe 0%, #d3d8e8 100%);
   font-family: Helvetica, Arial, sans-serif;
+  color: #333;
 }
 
 .main-content {
@@ -44,21 +45,14 @@ p {
   width: 300px;
 }
 
-.form-full-name {
+.full-name {
   display: flex;
   justify-content: space-between;
 }
 
-.form-full-name input {
+.full-name input {
   width: 195px;
   height: 35px;
-  border-radius: 5px;
-  border: 1px solid #bcd7d8;
-  margin: 5px;
-  font-size: 18px;
-  font-weight: 400;
-  padding-left: 10px;
-  color: #333;
 }
 
 .form-date {
@@ -66,7 +60,7 @@ p {
   flex-direction: column;
 }
 
-.input-item , #hidden-input {
+.validation , #hidden-input {
   width: 400px;
   height: 35px;
   border-radius: 5px;
