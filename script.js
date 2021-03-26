@@ -7,7 +7,6 @@ const createSpan = document.createElement('span');
 const selectRadios = document.querySelectorAll('#masc, #fem, #pers');
 const selectUser = document.querySelector('#user');
 const selectSurname = document.querySelector('#surname');
-const selectDivRight = document.querySelector('.right-content');
 const selectInputEmail = document.querySelectorAll('input')[4];
 const selectInputBirthDate = document.querySelectorAll('input')[6];
 const selectdiv = document.querySelector('#signup-form');
