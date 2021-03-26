@@ -109,9 +109,9 @@ a:hover {
   align-items: center;
 }
 
-.top-bar img {
+/* .top-bar img {
   margin-left: -10px;
-}
+} */
 
 .facebook-login {
   display: flex;
@@ -151,7 +151,7 @@ a:hover {
 .main-content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 64px;
 }
 
