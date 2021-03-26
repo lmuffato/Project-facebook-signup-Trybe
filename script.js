@@ -40,7 +40,6 @@ invalidCamp.style.display = 'none';
 registerForm.appendChild(invalidCamp);
 
 function succesEntry() {
-
   const divOK = document.querySelector('.right-content');
   const firstName = document.querySelectorAll('.verify')[0].value;
   const lastName = document.querySelectorAll('.verify')[1].value;
