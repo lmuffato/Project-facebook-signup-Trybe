@@ -2,8 +2,8 @@ const selectButton = document.querySelector('#button-login');
 const selectInput = document.querySelector('#user-email-phone');
 const sendForm = document.querySelector('#facebook-register');
 const slctInput = document.querySelectorAll('.select');
-const createSpan = document.createElement('span');
 const selectDivCustom = document.querySelector('#customGender');
+const createSpan = document.createElement('span');
 const selectRadios = document.querySelectorAll('#masc, #fem, #pers');
 const selectUser = document.querySelector('#user');
 const selectSurname = document.querySelector('#surname');
@@ -40,11 +40,12 @@ function checkInputs(event) {
       event.preventDefault();
       createSpan.innerText = 'Campos inválidos';
       selectdiv.appendChild(createSpan);
-    } else {
-      event.preventDefault();
-      selectDivRight.innerText = createPhrase();
+      return 0;
     }
   }
+  event.preventDefault();
+  selectdiv.innerText = createPhrase();
+  return 1;
 }
 
 function createInputCustom(input) {
