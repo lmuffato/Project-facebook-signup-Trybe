@@ -119,19 +119,6 @@ p {
   margin-top: 10px;
 }
 
-.top-bar {
-  display: flex;
-  background-color: rgb(66, 103, 178);
-  height: 80px;
-  justify-content: space-between;
-}
-
-.facebook-logo {
-  height: 45px;
-  margin-top: 20px;
-  margin-left: 150px;
-}
-
 .print-data {
   display: flex;
   flex-direction: column;
@@ -143,34 +130,35 @@ p {
   text-align: center;
 }
 
+.top-bar {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.facebook-logo {
+  width: 35%;
+}
+
 .facebook-login {
   display: flex;
+  width: 50%;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-top: 5px;
+  justify-content: center;
 }
 
-#user-email-phone-label {
+#user-email-phone-label, #user-password-label {
   color: white;
-  margin-top: 20px;
   font-size: 12px;
 }
 
-#user-email-phone {
-  margin-top: 10px;
-  height: 30px;
-}
-
-#user-password-label {
-  color: white;
-  margin-top: 10px;
-  font-size: medium;
-}
-
-#user-password {
+#user-email-phone, #user-password {
   margin-top: 10px;
   height: 30px;
 }
@@ -180,4 +168,6 @@ p {
   padding-left: 5px;
   color: red;
   font-weight: 700;
+  font-size: 20px;
+  padding-top: 10px;
 }

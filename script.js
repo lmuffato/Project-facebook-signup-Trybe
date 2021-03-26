@@ -58,14 +58,14 @@ validationArray.push(userPhoneEmail);
 validationArray.push(userPassword);
 validationArray.push(userBirthDate);
 
-function validation() {
+function arrayValidation() {
   let isValid = true;
   for (let index = 0; index < validationArray.length; index += 1) {
     if (validationArray[index].value === '') {
       isValid = false;
-      return isValid;
     }
-  } return isValid;
+  }
+  return isValid;
 }
 
 function dataExibition() {
@@ -102,9 +102,4 @@ function validationTrue() {
 
 buttonSignUp.addEventListener('click', (event) => {
   event.preventDefault();
-  invalid.style.display = 'none';
-  if (validation() === true) {
-    validationTrue();
-  }
-  invalid.style.display = 'flex';
 });
