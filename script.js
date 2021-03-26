@@ -7,21 +7,35 @@ function alerta() {
 
 login.addEventListener('click', alerta);
 
-const buttom = document.getElementById("facebook-register")
-const inputs = document.getElementsByClassName("input")
-const rightContent = document.querySelector(".right-content")
+const buttom = document.getElementById("facebook-register");
+const inputs = document.getElementsByClassName("input");
+const rightContent = document.querySelector(".right-content");
 const error = document.createElement('h1');
 const radios = document.querySelector('#form').gender;
+const submitForm = document.getElementById('submitForm')
+//inputs values/////////////////
+const name = document.getElementById('name').value;
+const sobrenome = document.getElementById('sobrenome');
+const email = document.getElementById('celular-email');
+const senha = document.getElementById('senha');
+const birthdate = document.getElementById('birthdate');
+function checkGender() {
+  for (let index = 0; index < 3; index += 1) {
+    if (radios[index] === true) {
+      const checkedGender = radios[index].value
+    }
+  }
+}
+checkGender()
+//inputs values/////////////////
 
 console.log(radios);
 
 function checkRadio() {
   if (radios[0].checked === false && radios[1].checked === false && radios[2].checked === false) {
     return false
-    
   }
-  return true
-
+return true
 }
 
 function register(e) {
@@ -32,7 +46,16 @@ function register(e) {
       rightContent.appendChild(error);
       break;
     }
+    rightContent.classList.add('removeElement')
+    submitedForm()
   }
 }
 
 buttom.addEventListener('click', register);
+
+function submitedForm() {
+  submitForm.classList.remove('removeElement');
+  const p = document.getElementById('p');
+  p.innerHTML = `Olá ${name}`
+}
+

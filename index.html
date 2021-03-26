@@ -38,12 +38,12 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form method="GET" id="form">
         <div id="nameContainer">
-          <input type="text" name="firstname" placeholder="Nome" class="inputtext input inputStyle">
-          <input type="text" name="lastname" placeholder="Sobrenome" class="inputtext input inputStyle">
+          <input type="text" name="firstname" placeholder="Nome" id="nome" class="inputtext input inputStyle">
+          <input type="text" name="lastname" placeholder="Sobrenome" id="sobrenome" class="inputtext input inputStyle">
         </div>
 
-        <input type="text" name="phone_email" placeholder="Celular ou email" class="input inputStyle">
-        <input type="password" name="password" placeholder="Nova senha" class="input inputStyle">
+        <input id="celular-email" type="text" name="phone_email" placeholder="Celular ou email" class="input inputStyle">
+        <input id="senha" type="password" name="password" placeholder="Nova senha" class="input inputStyle">
 
         <div id="birthdateContainer">
           <label for="birthdate" id="label-birthdate">Data de nascimento</label>
@@ -59,7 +59,10 @@
             <input type="radio" name="gender" value="Personalizado" id="Personalizado" class="input">
           </div>
           <button id="facebook-register" type="submit">Cadastre-se</button>
-       </form>
+        </form>
+     </div>
+     <div id="submitForm" class="removeElement">
+      <p id="p"></p>
      </div>
   </section>
 
