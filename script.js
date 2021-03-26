@@ -5,7 +5,6 @@ const inputRadioButtons = document.querySelectorAll('.input-radios input');
 const alertButton = document.getElementById('button-login');
 const inputBday = document.querySelectorAll('#input-birthdate');
 const invalidP = document.getElementById('invalid-field');
-const personalRadioButton = document.getElementById('input-pers');
 const femInput = document.getElementById('input-fem');
 const mascInput = document.getElementById('input-masc');
 const personal = document.getElementById('personal-field');
@@ -29,19 +28,19 @@ function radioVerify(elementsRadio) {
   }
   return radioValue;
 }
+const personalRadioButton = document.getElementById('input-pers');
 
 function personalField() {
   let breakPoint = false;
-  const personal = document.getElementById('personal-field');
   personalRadioButton.addEventListener('click', (event) => {
-    if (event.target.id === 'input-pers' && !breakPoint) {
+    if (event.target.id === personalRadioButton.id && !breakPoint) {
       breakPoint = true;
       const pField = document.createElement('textarea');
       pField.placeholder = 'Gênero (opcional)';
       pField.name = 'gender-custom';
       pField.id = 'pfield-size';
       personal.appendChild(pField);
-    } else if (event.target.id !== 'input-pers') {
+    } else if (event.target.id !== personalRadioButton.id) {
       breakPoint = false;
     }
   });
