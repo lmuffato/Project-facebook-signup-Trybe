@@ -38,18 +38,21 @@ function hideCustomFemale() {
 // Requisito 18
 const form = document.querySelector('.facebook-register');
 const register = document.querySelector('#facebook-register');
-const inputs = document.getElementsByTagName('input');
+const inputs = document.getElementsByClassName('facebook-register')[0].getElementsByTagName('input')
 
 function inputValidate() {
-  register.addEventListener('click', () => {
+  register.addEventListener('click', (event) => {
+    event.preventDefault();
     for (let index = 0; index < inputs.length; index += 1) {
       if (inputs[index].value === '') {
+        console.log(inputs[index]);
         const errorMsg = document.createElement('p');
         errorMsg.innerHTML = 'Campos inválidos';
         form.appendChild(errorMsg);
-        break;
+        return;
       }
     }
+    saveData();
   });
 }
 
@@ -81,9 +84,9 @@ function welcomeUser(fullName, phoneEmail, birthdate, genderSelected) {
   rightContent.appendChild(genderData);
 }
 
-function saveData(event) {
+function saveData() {
   // Como impedir que o formulário seja enviado automaticamente para que a função de inserir texto funcione https://www.w3schools.com/jsref/event_preventdefault.asp
-  event.preventDefault();
+ 
   const name = document.getElementById('firstname').value;
   const lastname = document.getElementById('lastname').value;
   const phoneEmail = document.getElementById('phone_email').value;
@@ -101,5 +104,5 @@ function saveData(event) {
   welcomeUser(`${name} ${lastname}`, phoneEmail, birthdate, genderSelected);
 }
 
-const buttonRegister = document.getElementById('facebook-register');
-buttonRegister.addEventListener('click', saveData);
+// const buttonRegister = document.getElementById('facebook-register');
+// buttonRegister.addEventListener('click', saveData);
