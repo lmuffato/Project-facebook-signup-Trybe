@@ -12,25 +12,26 @@
   justify-content: space-between;
 }
 
+.left-content {
+  width: 800px;
+}
+
 #facebook-slogan {
   font-weight: 900;
   width: 500px;
   margin-top: 20px;
   margin-left: 50px;
-}
-
-.left-title {
   padding-left: 50px;
-}
-
-.left-content {
-  width: 800px;
 }
 
 #facebook-networking {
   width: 500px;
-  margin-left: 25px;
-  margin-top: 15px;
+  margin-left: 75px;
+  margin-top: 25px;
+}
+
+.right-content {
+  width: 300px;
 }
 
 .right-title {
@@ -39,27 +40,32 @@
 }
 
 .quick-easy {
-  margin-top: 5px;
-  margin-left: 3px;
+  margin: 5px 3px 15px;
   font-weight: 900;
 }
 
-.right-content {
-  width: 300px;
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-fullname {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
 }
 
 #input-name {
   width: 110px;
-  margin-top: 10px;
   margin-left: 3px;
 }
 
 #input-lastname {
   width: 110px;
+  margin-left: 3px;
 }
 
 #phone_email {
-  margin-top: 10px;
   margin-left: 3px;
   width: 224px;
 }
@@ -71,28 +77,39 @@
 }
 
 #label-birthdate {
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-left: 3px;
+}
+
+#birthdate {
+  margin-top: 5px;
   margin-left: 3px;
   width: 224px;
 }
 
 #label-gender {
-  margin-top: 10px;
+  margin-top: 15px;
   margin-left: 3px;
 }
 
+#container-gender {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+
 #female {
-  font-size: 11px;
+  font-size: 12px;
   margin-left: 3px;
 }
 
 #male {
-  font-size: 11px;
+  font-size: 12px;
   margin-left: 3px;
 }
 
 #personality {
-  font-size: 11px;
+  font-size: 12px;
   margin-left: 3px;
 }
 
