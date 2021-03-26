@@ -8,7 +8,6 @@ buttonLogin.addEventListener('click', () => {
 const registerButton = document.querySelector('#facebook-register');
 const inputsTextAndPassword = document.querySelectorAll('.input-text-password');
 const inputsRadio = document.querySelectorAll('.radio-buttons');
-
 const invalidMessage = document.querySelector('#form-conteiner');
 
 function validateInputsTextPassword() {
@@ -35,16 +34,19 @@ function validateInputsRadio() {
   return validation;
 }
 
+const invalidText = document.createElement('span');
+invalidMessage.appendChild(invalidText);
+
 function validateForm(e) {
   e.preventDefault();
   const inputsValidation = validateInputsTextPassword() + validateInputsRadio();
   if (inputsValidation <= 1) {
-    const invalidText = document.createElement('span');
-    invalidMessage.appendChild(invalidText);
     invalidText.innerText = 'Campos Inválidos';
   }
+  if (invalidText.innerText === 'Campos Inválidos') {
+    invalidMessage.appendChild(invalidText);
+  }
 }
-
 registerButton.addEventListener('click', validateForm);
 
 function criarInput(chek) {
