@@ -4,6 +4,11 @@ const inputCelEmail = document.getElementsByClassName('input-form');
 const inputRadioButtons = document.querySelectorAll('.input-radios input');
 const alertButton = document.getElementById('button-login');
 const inputBday = document.querySelectorAll('#input-birthdate');
+const invalidP = document.getElementById('invalid-field');
+const personalRadioButton = document.getElementById('input-pers');
+const femInput = document.getElementById('input-fem');
+const mascInput = document.getElementById('input-masc');
+const personal = document.getElementById('personal-field');
 
 function verify(elementsArray) {
   let showAlert = false;
@@ -25,14 +30,40 @@ function radioVerify(elementsRadio) {
   return radioValue;
 }
 
-confirmButton.addEventListener('click', () => {
+function personalField() {
+  const personal = document.getElementById('personal-field');
+  personalRadioButton.addEventListener('click', () => {
+    const pField = document.getElementById('pfield-size');
+    if (!pField) {
+      const pField = document.createElement('textarea');
+      pField.placeholder = 'Gênero (opcional)';
+      pField.name = 'gender-custom';
+      pField.id = 'pfield-size';
+      personal.appendChild(pField);
+    }
+  });
+}
+personalField();
+
+function deleteTextarea() {
+  const pField = document.getElementById('pfield-size');
+  if (pField){
+    personal.removeChild(pField);
+  }
+}
+
+femInput.addEventListener('click', deleteTextarea);
+mascInput.addEventListener('click', deleteTextarea);
+
+confirmButton.addEventListener('click', (event) => {
+  event.preventDefault();
   if (
     verify(inputNames)
     || verify(inputCelEmail)
     || radioVerify(inputRadioButtons)
     || verify(inputBday)
   ) {
-    alert('Campos inválidos');
+   invalidP.innerText = 'Campos inválidos';
   }
 });
 

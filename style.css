@@ -96,3 +96,11 @@
   display: flex;
   justify-content: space-between;
 }
+
+#personal-field {
+  display: flex;
+}
+
+#pfield-size {
+  resize: none;
+}
