@@ -24,21 +24,33 @@ function checkNullInputRadio() {
   }
   return checkers;
 }
-function boasVindas() {
-  const divpai = document.getElementsByClassName('right-content');
-  const filhos = divpai[0].children;
+function pegadados() {
   const dados = [];
+  let index;
   dados[0] = [openAccInput[0].value];
   dados[1] = [openAccInput[1].value];
   dados[2] = [openAccInput[2].value];
   dados[3] = [openAccInput[4].value];
+  for (index = 5; index < 7; index += 1) {
+    if (openAccInput[index].value !== undefined) {
+      dados[4] = openAccInput[index].value;
+    }
+  }
+  index = 0;
+  return dados;
+}
+function boasVindas() {
+  const divpai = document.getElementsByClassName('right-content');
+  const filhos = divpai[0].children;
+  const dados = pegadados();
   for (let index = filhos.length - 1; index >= 0; index -= 1) {
     divpai[0].removeChild(filhos[index]);
   }
   const alerta = document.createElement('h3');
   alerta.innerText = `Olá, ${dados[0]}  ${dados[1]} ,
   ${dados[2]}
-  ${dados[3]} .`;
+  ${dados[3]} 
+  ${dados[4]}.`;
   alerta.setAttribute('class', 'welcome');
   divpai[0].appendChild(alerta);
 }
