@@ -8,7 +8,7 @@ buttonLogin.addEventListener('click', () => {
 const registerButton = document.querySelector('#facebook-register');
 const inputsTextAndPassword = document.querySelectorAll('.input-text-password');
 const inputsRadio = document.querySelectorAll('.radio-buttons');
-const invalidMessage = document.querySelector('#form-conteiner');
+const formConteiner = document.querySelector('#form-conteiner');
 
 function validateInputsTextPassword() {
   let validation = true;
@@ -35,15 +35,15 @@ function validateInputsRadio() {
 }
 
 const invalidText = document.createElement('span');
-invalidMessage.appendChild(invalidText);
+formConteiner.appendChild(invalidText);
 
 function validateForm(e) {
   e.preventDefault();
   const inputsValidation = validateInputsTextPassword() + validateInputsRadio();
   if (inputsValidation <= 1) {
-    invalidText.innerText = 'Campos Inválidos';
+    invalidText.innerHTML = 'Campos inválidos';
   } else {
-    invalidText.innerText = '';
+    invalidText.innerHTML = '';
   }
 }
 registerButton.addEventListener('click', validateForm);
