@@ -136,6 +136,7 @@ p {
 }
 
 .facebook-logo {
+  margin-left: 170px;
   width: 170px;
 }
 
@@ -199,5 +200,14 @@ p {
   font-size: 20px;
   line-height: 29px;
   color: #0e385f;
+  width: 450px;
+}
+
+.top-bar div {
+  display: flex;
+  width: 400px;
+}
+
+#facebook-networking {
   width: 450px;
 }
