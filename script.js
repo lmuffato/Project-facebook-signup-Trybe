@@ -8,6 +8,7 @@ const newFields = document.querySelector('.fields');
 const selectCustom = document.getElementById('custom');
 const form = document.getElementById('collectName');
 const divGender = document.getElementById('collect-gender');
+const rightContent = document.querySelector('.right-content');
 
 function addAviso() {
   const element = document.createElement('p');
@@ -18,7 +19,7 @@ function addAviso() {
 
 function checkFields() {
   const arrayValues = [newFields[0].value, newFields[1].value,
-    newFields[2].value, newFields[4].value, newFields[8].value];
+  newFields[2].value, newFields[3].value, newFields[4].value];
   const aviso = document.getElementById('aviso');
   if (aviso !== null) {
     aviso.remove();
@@ -29,6 +30,7 @@ function checkFields() {
       return;
     }
   }
+  rightContent.replaceChildren(`Olá, ${newFields[0].value} ${newFields[1].value}`);
 }
 
 function createField() {
