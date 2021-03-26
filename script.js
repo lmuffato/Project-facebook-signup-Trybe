@@ -70,8 +70,8 @@ function checkGender() {
 
 const name = document.querySelector('.first-name');
 const last = document.querySelector('.last-name');
-// const cel = document.querySelector('.phone-email');
-// const date = document.querySelector('.birthdate');
+const cel = document.querySelector('.phone-email');
+const date = document.querySelector('.birthdate');
 function newMessage() {
   const rightContent = document.querySelector('.right-content');
   console.log('começou if');
@@ -80,11 +80,11 @@ function newMessage() {
   rightContent.style.padding = '10px';
   rightContent.style.backgroundColor = 'white';
   rightContent.style.opacity = '60%';
-  // rightContent.innerHTML = '';
+  rightContent.innerHTML = '';
   rightContent.innerHTML = `<p><br>Olá, ${name.value} ${last.value}</p>`;
-  // rightContent.innerHTML += `<br><p>${cel.value}</p>`;
-  // rightContent.innerHTML += `<br><p>${date.value}</p>`;
-  // rightContent.innerHTML += `<br><p>${checkGender()}</p>`;
+  rightContent.innerHTML += `<br><p>${cel.value}</p>`;
+  rightContent.innerHTML += `<br><p>${date.value}</p>`;
+  rightContent.innerHTML += `<br><p>${checkGender()}</p>`;
 }
 
 function checkEmpty() {
