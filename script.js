@@ -8,8 +8,32 @@ function getContact() {
 
 btn.addEventListener('click', getContact);
 
+// requisito 20
+// seleciono todos os valores dos inputs
+function changeContent() {
+  const name = document.querySelector('#firstname').value;
+  const Lastname = document.querySelector('#lastname').value;
+  const phoneEmail = document.querySelector('#phone-email').value;
+  const birthdate = document.querySelector('#birthdate').value;
+  // como os generos estão em um array faço um for para ver qual está marcado e pego o valor do que está checked
+  const inputRadio = document.querySelectorAll('.input-radio');
+  let radioValue = '';
+  for (let index = 0; index < inputRadio.length; index += 1) {
+    if (inputRadio[index].checked) {
+      radioValue = inputRadio[index].value;
+    }
+  }
+  // busco a classe rigth-content e subsituo o conteeudo dela pelos valores que quero com o innet.text
+  const rightContent = document.querySelector('.right-content');
+  rightContent.innerText = `Olá, ${name} ${Lastname} 
+  ${phoneEmail} 
+  ${birthdate} 
+  ${radioValue}`;
+}
+
 // requisito 18 validar se todos os campos foram preenchidos
 function validateInputText() {
+  // estou validando todo os input de type text, para sabe se estão vazios ou não. Se estão vazio conto uma vez, se estão preenchidos não conto
   const inputText = document.querySelectorAll('.input-text');
   let validate = 0;
 
@@ -23,6 +47,7 @@ function validateInputText() {
 }
 
 function validateInputRadio() {
+  // estou validando todo os input de type radio, para sabe se estão marcados ou não. já começa contando uma vez pois sempre vão existir inputs não checked, se caso algum estiver checked não conto nenhum deles.
   const inputRadio = document.querySelectorAll('.input-radio');
   let validate = 1;
 
@@ -43,7 +68,9 @@ function validateInputs(event) {
   event.preventDefault();
   const validateAll = validateInputText() + validateInputRadio();
 
-  if (validateAll >= 1) {
+  if (validateAll === 0) {
+    changeContent();
+  } else if (validateAll >= 1) {
     message.innerText = 'Campos inválidos';
   } else {
     message.innerText = '';
@@ -70,5 +97,3 @@ function check() {
 pers.addEventListener('click', check);
 fem.addEventListener('click', check);
 mas.addEventListener('click', check);
-
-// requisito 20
