@@ -29,6 +29,7 @@ let validateCheck = 0;
 
 function validate(e) {
   e.preventDefault();
+  validateCheck = 0;
   const arrayInputs = document.querySelectorAll('.is-filled');
 
   for (let index = 0; index < arrayInputs.length; index += 1) {
