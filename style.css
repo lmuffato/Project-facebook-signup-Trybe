@@ -155,11 +155,31 @@ p {
 
 #user-email-phone-label, #user-password-label {
   color: white;
+<<<<<<< HEAD
   font-size: 12px;
 }
 
 #user-email-phone, #user-password {
   margin-top: 10px;
+=======
+  margin-top: 10px;
+  font-size: medium;
+}
+
+#user-email-phone {
+  margin-top: -5px;
+  height: 30px;
+}
+
+#user-password-label {
+  color: white;
+  margin-top: 10px;
+  font-size: medium;
+}
+
+#user-password {
+  margin-top: -5px;
+>>>>>>> 67819de93b8099e8cda11d163f17a1b290228f8e
   height: 30px;
 }
 
