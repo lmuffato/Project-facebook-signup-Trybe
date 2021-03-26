@@ -58,3 +58,32 @@ hideCustomMale();
 hideCustomFemale();
 genderCustom();
 signAlert();
+
+document.getElementById('facebook-register').addEventListener('click', saveData);
+
+function saveData (event) {
+//Como impedir que o formulário seja enviado automaticamente para que a função de inserir texto funcione https://www.w3schools.com/jsref/event_preventdefault.asp
+event.preventDefault();
+  const name = document.getElementById('firstname').value;
+  const lastname = document.getElementById('lastname').value;
+  const phoneEmail = document.getElementById('phone_email').value;
+  const birthdate = document.getElementById('birthdate').value;
+  const genders = document.getElementById('genderOption').getElementsByTagName('input');
+  let genderSelected;
+  for (index = 0; index < genders.length; index += 1) {
+    if (genders[index].checked === true) {
+      genderSelected = genders[index].value;
+      break;
+    }
+  }
+
+  const elements = document.getElementsByClassName('right-content');
+  document.getElementsByClassName('right-content')[0].remove();
+  welcomeUser(name, lastname, phoneEmail, birthdate, genderSelected);
+} 
+
+function welcomeUser (name, lastname, phoneEmail, birthdate, genderSelected) {
+  const welcome = document.createElement('p');
+  document.getElementsByClassName('main-content')[0].appendChild(welcome);
+  welcome.appendChild(document.createTextNode('Olá,' + name + lastname + phoneEmail + birthdate + genderSelected));
+} 
