@@ -1,4 +1,4 @@
-const buttonRegister = document.querySelector('#button-register');
+const buttonRegister = document.querySelector('#facebook-register');
 const errorMessage = document.createElement('span');
 const female = document.querySelector('#female');
 const male = document.querySelector('#male');
