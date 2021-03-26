@@ -33,3 +33,16 @@ function showMsg() {
     document.querySelector('#form-main').appendChild(elementSpan);
   }
 }
+
+function showInputCustom() {
+  const radios = document.getElementsByName('gender');
+  radios[2].addEventListener('click', () => {
+    const createElementeInput = document.createElement('input');
+    createElementeInput.setAttribute('name', 'gender-custom');
+    createElementeInput.setAttribute('type', 'text');
+    createElementeInput.setAttribute('placeholder', 'opcional');
+    document.querySelector('#custom').appendChild(createElementeInput);
+  });
+}
+
+showInputCustom();
