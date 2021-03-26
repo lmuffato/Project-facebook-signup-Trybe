@@ -80,8 +80,8 @@ function newMessage() {
   rightContent.style.padding = '10px';
   rightContent.style.backgroundColor = 'white';
   rightContent.style.opacity = '60%';
-  rightContent.innerHTML = '';
-  rightContent.innerHTML = `<p><br><br>Olá, ${name.value} ${last.value}</p>`;
+  // rightContent.innerHTML = '';
+  rightContent.innerHTML = `<p><br>Olá, ${name.value} ${last.value}</p>`;
   rightContent.innerHTML += `<br><p>${cel.value}</p>`;
   rightContent.innerHTML += `<br><p>${date.value}</p>`;
   rightContent.innerHTML += `<br><p>${checkGender()}</p>`;
