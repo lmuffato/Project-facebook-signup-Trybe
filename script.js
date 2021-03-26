@@ -70,3 +70,9 @@ btn.addEventListener('click', messageInvalid);
 for (let index = 0; index < fields.length; index += 1) {
   fields[index].addEventListener('keydown', clearMessage);
 }
+
+const genderModify = document.getElementById('Personalizado');
+const genderElement = document.querySelector('.gender')
+genderModify.addEventListener('click', () => {
+  console.log(genderElement.style.visibility = 'visible');
+});
