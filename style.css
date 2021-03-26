@@ -73,14 +73,30 @@ input {
 .main-content {
   display: flex;
   justify-content: center;
+  height: 100vh;
 }
 
 .left-content {
   width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#facebook-slogan {
+  color: #0e385f;
+  margin: 40px 0 0;
+  line-height: 29px;
+  font-size: 20px;
+  width: 450px;
+  font-weight: 700;
 }
 
 .right-content {
   width: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
 #fullname {
