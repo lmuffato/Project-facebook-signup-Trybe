@@ -8,9 +8,10 @@ const submitFormButton = document.querySelector('#facebook-register');
 const criaContaForm = document.querySelector('.right-content form');
 const radioButtons = document.querySelectorAll('[name="gender"]');
 const inputBlock = document.querySelector('.right-content form .input-block');
+const formInputs = document.querySelectorAll('.right-content form input');
 const firstNameEl = document.querySelector('#first-name');
 const emailPhone = document.getElementById('phone-email');
-let isFieldsValid = false;
+let radioButtonValue = '';
 
 function exibirAlertaDeLogin() {
   window.alert(emailPhoneInput.value);
@@ -36,54 +37,57 @@ function exibirAlertaDeInvalidez() {
   }
 }
 
+function validaInputValue() {
+  let isFieldsValid = true;
+  for (let index = 0; index < formInputs.length; index += 1) {
+    if (formInputs[index].value === '') {
+      isFieldsValid = false;
+      exibirAlertaDeInvalidez();
+    }
+  }
+  return isFieldsValid;
+}
+
 function validaCampoNome() {
   if (firstNameEl.value.length < 3) {
     firstNameEl.focus();
     exibirAlertaDeInvalidez();
-    isFieldsValid = false
   }
-
-  return isFieldsValid;
 }
 function validaCampoSobrenome() {
   if (document.getElementById('last-name').value.length < 3) {
     document.getElementById('last-name').focus();
     exibirAlertaDeInvalidez();
-    isFieldsValid = false;
   }
-  return isFieldsValid;
 }
 
 function validaCampoSenha() {
   if (document.getElementById('password').value.length < 3) {
     document.getElementById('password').focus();
     exibirAlertaDeInvalidez();
-    isFieldsValid = false;
   }
-  return isFieldsValid;
 }
 
 function validaCampoDataNascimento() {
   if (document.getElementById('birthdate').value.length < 3) {
     document.getElementById('birthdate').focus();
     exibirAlertaDeInvalidez();
-    isFieldsValid = false;
   }
-  return isFieldsValid;
 }
 function validaCampoEmailOuCelular() {
   if (emailPhone.value.length < 3) {
     emailPhone.focus();
     exibirAlertaDeInvalidez();
-    isFieldsValid = false;
   }
-  return isFieldsValid;
 }
 
 function validaGenero() {
   let isButtonChecked = false;
   for (let index = 0; index < radioButtons.length; index += 1) {
-    if (radioButtons[index].checked === true) isButtonChecked = true;
+    if (radioButtons[index].checked === true) {
+      isButtonChecked = true;
+      radioButtonValue = radioButtons[index].value;
+    }
   }
   return isButtonChecked;
 }
@@ -100,14 +104,20 @@ function handleFunctions() {
 function criarElementosDaConclusao() {
   const name = firstNameEl.value;
   const lastName = document.getElementById('last-name').value;
-  const conclusionHeader = document.createElement('h1');
   const fullName = `${name} ${lastName}`;
-  conclusionHeader.innerHTML = `Olá, ${fullName}`;
+  const birthdate = document.getElementById('birthdate').value;
+  const phoneEmail = emailPhone.value;
+  const gender = radioButtonValue;
+  const conclusionHeader = document.createElement('p');
+  conclusionHeader.innerHTML = `Olá, ${fullName} 
+  ${birthdate}
+  ${phoneEmail}
+  ${gender}`;
   rightContent.appendChild(conclusionHeader);
 }
 
 function exibirConclusaoDeCadastro() {
-  if (isFieldsValid && validaGenero()) {
+  if (validaInputValue() && validaGenero()) {
     for (let index = 0; index < rightContentChilds.length; index += 1) {
       rightContentChilds[index].style.display = 'none';
     }
