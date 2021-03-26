@@ -46,7 +46,7 @@
 }
 .right-content input:nth-child(3){
    background-color: lawngreen;
-   display: inline;
+   display: ;
 }
 
 .right-content form input {
