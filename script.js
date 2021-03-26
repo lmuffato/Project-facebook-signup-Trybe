@@ -9,26 +9,20 @@ buttonLogin();
 
 function confereRadioChecked() {
   const takeRadio = document.querySelectorAll('input');
-  let conta = 0;
+  console.log('confere radio');
   for (let i = 0; i < takeRadio.length; i += 1) {
     if (takeRadio[i].type === 'radio' && takeRadio[i].checked === true) {
-      conta += 1;
+      return true;
     }
   }
-  return conta;
+  return false;
 }
 
 function returnText() {
-  const entradaDeDados = document.querySelectorAll('input');
   const createInnerText = document.createElement('span');
-  for (let index = 2; index < entradaDeDados.length - 1; index += 1) {
-    if (entradaDeDados[index].value === '' || confereRadioChecked() === 0) {
-      const takeForm = document.querySelectorAll('form')[1];
-      createInnerText.innerText = 'Campos inválidos';
-      takeForm.appendChild(createInnerText);
-      break;
-    }
-  }
+  const takeForm = document.querySelectorAll('form')[1];
+  createInnerText.innerText = 'Campos inválidos';
+  takeForm.appendChild(createInnerText);
 }
 
 function addInput() {
@@ -61,6 +55,7 @@ const female = document.getElementById('feminino');
 const custom = document.getElementById('personalizado');
 function checkGender() {
   if (male.checked) {
+    console.log('male');
     return male.value;
   }
   if (female.checked) {
@@ -69,8 +64,9 @@ function checkGender() {
   if (custom) {
     return custom.value;
   }
+  console.log('0');
+  return 0;
 }
-checkGender();
 
 const name = document.querySelector('.first-name');
 const last = document.querySelector('.last-name');
@@ -79,6 +75,11 @@ const date = document.querySelector('.birthdate');
 function newMessage() {
   const rightContent = document.querySelector('.right-content');
   console.log('começou if');
+  rightContent.style.border = '1px solid black';
+  rightContent.style.borderRadius = '5px';
+  rightContent.style.padding = '10px';
+  rightContent.style.backgroundColor = 'white';
+  rightContent.style.opacity = '60%';
   rightContent.innerHTML = '';
   rightContent.innerHTML = `<p><br><br>Olá, ${name.value} ${last.value}</p>`;
   rightContent.innerHTML += `<br><p>${cel.value}</p>`;
@@ -91,7 +92,7 @@ function checkEmpty() {
   let empty = 0;
   console.log(empty);
   for (let i = 2; i < right.length - 1; i += 1) {
-    if (right[i].value === '' && right[i].type !== 'radio') {
+    if (right[i].value === '' || right[i].type !== 'radio') {
       console.log(right[i]);
       empty += 1;
     }
@@ -103,8 +104,7 @@ function checkEmpty() {
 function validacao() {
   const takeSpan = document.querySelectorAll('span');
   if (takeSpan.length > 0) {
-    // e.preventDefault();
-    return false;
+    return true;
   }
   returnText();
 }
@@ -112,12 +112,11 @@ function validacao() {
 function lastValidation() {
   const takeButtonSubmit = document.querySelector('#facebook-register');
   takeButtonSubmit.addEventListener('click', () => {
-    if (checkEmpty() === 5 && confereRadioChecked() === 0) {
-      validacao();
-      return false;
-    }
-    if (checkEmpty() === 0 && confereRadioChecked() > 0) {
+    confereRadioChecked();
+    if (checkEmpty() === 0 && checkGender !== 0) {
       newMessage();
+    } else {
+      validacao();
     }
   });
 }
