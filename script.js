@@ -27,7 +27,7 @@ function validateFields(event) {
 buttonRegister.addEventListener('click', validateFields);
 
 const gender3 = document.getElementById('gender3');
-const genders = document.getElementById('gender');
+const genders = document.getElementById('new-gender');
 
 function genderInput() {
   const createInput = document.createElement('input');
@@ -35,6 +35,8 @@ function genderInput() {
   createInput.placeholder = 'Gênero(opcional)';
   createInput.type = 'text';
   genders.appendChild(createInput);
+  
+  
 }
 
 gender3.addEventListener('click', genderInput);
