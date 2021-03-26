@@ -70,8 +70,8 @@ function checkGender() {
 
 const name = document.querySelector('.first-name');
 const last = document.querySelector('.last-name');
-const cel = document.querySelector('.phone-email');
-const date = document.querySelector('.birthdate');
+// const cel = document.querySelector('.phone-email');
+// const date = document.querySelector('.birthdate');
 function newMessage() {
   const rightContent = document.querySelector('.right-content');
   console.log('começou if');
