@@ -31,15 +31,18 @@ function radioVerify(elementsRadio) {
 }
 
 function personalField() {
+  let breakPoint = false;
   const personal = document.getElementById('personal-field');
-  personalRadioButton.addEventListener('click', () => {
-    const pField = document.getElementById('pfield-size');
-    if (!pField) {
+  personalRadioButton.addEventListener('click', (event) => {
+    if (event.target.id === 'input-pers' && !breakPoint) {
+      breakPoint = true;
       const pField = document.createElement('textarea');
       pField.placeholder = 'Gênero (opcional)';
       pField.name = 'gender-custom';
       pField.id = 'pfield-size';
       personal.appendChild(pField);
+    } else if (event.target.id !== 'input-pers') {
+      breakPoint = false;
     }
   });
 }
@@ -47,8 +50,9 @@ personalField();
 
 function deleteTextarea() {
   const pField = document.getElementById('pfield-size');
-  if (pField){
+  if (pField) {
     personal.removeChild(pField);
+    personalField();
   }
 }
 
@@ -63,7 +67,7 @@ confirmButton.addEventListener('click', (event) => {
     || radioVerify(inputRadioButtons)
     || verify(inputBday)
   ) {
-   invalidP.innerText = 'Campos inválidos';
+    invalidP.innerText = 'Campos inválidos';
   }
 });
 
