@@ -86,8 +86,8 @@ p {
   width: 200px;
   height: 40px;
   border-radius: 5px;
-  border-color: #68a354;
-  box-shadow: none;
+  cursor: pointer;
+  border: none;
 }
 
 .form-radio {
@@ -133,28 +133,54 @@ p {
 }
 
 .facebook-logo {
-  width: 35%;
+  margin-left: 150px;
+  width: 170px;
 }
 
 .facebook-login {
   display: flex;
-  width: 50%;
+  width: 37.5%;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  width: 170px;
+}
+
+.form-group input {
+  width: 150px;
+  height: 20px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.form-control button {
+  height: 22;
+  width: 50;
+  font-size: 12px;
+  color: white;
+  background-color: #4267b2;
+  line-height: 18px;
+  font-weight: 700;
+  border-radius: 2px;
+  padding: 2px 6px;
+  cursor: pointer;
+  box-shadow: none;
+  border: 1pt solid #29487d;
+}
+
+.form-control button:hover {
+  background-color: rgb(66, 103, 178);
 }
 
 #user-email-phone-label , #user-password-label {
   color: white;
   font-size: 12px;
-}
-
-#user-email-phone , #user-password {
-  margin-top: 10px;
-  height: 30px;
 }
 
 #invalid-form {

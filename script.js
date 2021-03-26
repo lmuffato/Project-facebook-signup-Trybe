@@ -5,6 +5,7 @@ const data = document.querySelector('#right-content-elements');
 const rightContent = document.getElementById('print-right');
 const invalid = document.getElementById('invalid-form');
 const validationArray = document.querySelectorAll('.validation');
+const buttonLogin = document.getElementById('button-login');
 
 document.getElementById('label-gender1').onclick = function genderFemale() {
   const personalizedGender = document.getElementsByName('gender');
@@ -96,6 +97,10 @@ function validation() {
     validationTrue();
   } validationFalse();
 }
+
+buttonLogin.addEventListener('click', () => {
+  alert(document.getElementById('user-email-phone').value);
+});
 
 buttonSignUp.addEventListener('click', (event) => {
   event.preventDefault();
