@@ -38,12 +38,31 @@
 
 .right-content {
   width: 300px;
+  margin-right: 15px;
 }
 
-.right-content form {
+.form-container {
   display: flex;
+  flex-direction: column;
 }
 
-.right-content form input {
-  margin-right: 5px;  
+.fullname-container {
+  display: flex;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.firstName {
+  width: 109px;
+  margin-right: 5px;
+}
+
+.lastName {
+  width: 109px;
+}
+
+.flex-item {
+  margin-right: 5px;
+  width: 227px;
+  margin-bottom: 
 }
