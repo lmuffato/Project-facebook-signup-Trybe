@@ -7,7 +7,6 @@ const selectCustonGender = document.querySelector('#other');
 // const regularGender = document.querySelectorAll('.regular');
 const resumeForm = document.getElementById('resume-form');
 
-
 // Bloco de declaração de funções
 
 entrarButton.addEventListener('click', () => {
@@ -27,11 +26,12 @@ const checkValues = (contentForm) => {
   }
   if (isValid) {
     document.querySelector('.form-new').classList.add('no-view');
-    resumeForm.innerText = `Olá, ${contentForm.firstname} ${contentForm.lastname}!
+    const resume = `Olá, ${contentForm.firstname} ${contentForm.lastname}!
     Confira seus dados: 
     e-mail ou telefone: ${contentForm.phone_email}
     Data de nascimento: ${contentForm.birthdate}
     Opção de gênero: ${contentForm.gender}`;
+    resumeForm.innerText = resume;
   }
 };
 
