@@ -1,3 +1,5 @@
+const buttonRegister = document.querySelector('#button-register');
+const errorMessage = document.createElement('span');
 const female = document.querySelector('#female');
 const male = document.querySelector('#male');
 
@@ -6,46 +8,33 @@ document.querySelector('#button-login').addEventListener('click', () => {
   alert(userEmailPhone.value);
 });
 
-// requisito 18
-function validateText() {
+// Requisito 18
+buttonRegister.addEventListener('click', (event) => {
   const inputText = document.querySelectorAll('.input-text');
   let validate = 0;
-
-  for (let index = 0; index < inputText.length; index += 1) {
-    if (inputText[index].value === '') {
-      validate += 1;
+  for (let i = 0; i < inputText.length; i += 1) {
+    if (inputText[i].value === '') {
+      validate = 1;
     }
   }
-  return validate;
-}
-
-const message = document.createElement('span');
-const div = document.querySelector('#erro');
-div.appendChild(message);
-
-function validateInputs(event) {
-  const validateAll = validateText();
-
-  if (validateAll >= 1) {
+  if (validate > 0) {
     event.preventDefault();
-    message.innerText = 'Campos inválidos';
+    errorMessage.innerText = 'Campos inválidos';
+    document.querySelector('.register').appendChild(errorMessage);
   }
-}
-
-const btn = document.querySelector('#facebook-register');
-btn.addEventListener('click', validateInputs);
+});
 
 // Requisito 19 - Cria um input de texto quando clica no radio button 'Personalizado'
 document.querySelector('#custom').addEventListener('click', () => {
-  const listRegister = document.querySelector('#container');
-  if (listRegister.lastElementChild.type !== 'text') {
+  const genderList = document.querySelector('.gender-list');
+  if (genderList.lastElementChild.type !== 'text') {
     const customInput = document.createElement('input');
     customInput.id = 'custom-box';
     customInput.type = 'text';
     customInput.name = 'gender-custom';
     customInput.placeholder = 'Gênero (opcional)';
-    customInput.style.margin = '8px';
-    listRegister.appendChild(customInput);
+    customInput.style.margin = '5px 0';
+    genderList.appendChild(customInput);
   }
 });
 
