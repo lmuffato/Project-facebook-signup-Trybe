@@ -60,7 +60,6 @@ const mas = document.getElementById('masculino');
 
 function check() {
   const containerGender = document.getElementById('gender-container');
-  console.log(pers.checked);
 
   if (pers.checked) {
     containerGender.style.display = 'flex';
@@ -73,4 +72,3 @@ fem.addEventListener('click', check);
 mas.addEventListener('click', check);
 
 // requisito 20
-
