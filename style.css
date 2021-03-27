@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .top-bar {
@@ -41,38 +40,52 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 20px;
-  padding-left: 20px;
+  margin: 15px;
 }
 
 .left-content {
   width: 800px;
+  font-size: 22px;
+  margin-right: 10px ;
+}
 
+#facebook-networking {
+  margin-top: 25px;
 }
 
 .right-content {
   width: 300px;
   display: flex;
   flex-direction: column;
+  background-color: #DADFF7;
+  padding: 10px;
+  border-width: 1px;
 }
 
 #facebook-form {
   display: flex;
   flex-direction: column;
-
 }
 
 .form {
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+}
+
+.form input {
+  width: 50%;
 }
 
 #genders {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 #personalizeGender {
   width: 100%;
+}
+
+#facebook-register {
+  margin-top: 10px;
 }
