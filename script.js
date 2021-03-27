@@ -54,7 +54,7 @@ function showValuesForm() {
     e.preventDefault();
     if (showMsg()) {
       const right = document.querySelector('.right-content');
-      right.innerHTML = `Olá,${formS.firstname.value} 
+      right.innerHTML = `Olá, ${formS.firstname.value} 
       ${formS.lastname.value} 
       ${formS.phone_email.value} 
       ${formS.birthdate.value} 
