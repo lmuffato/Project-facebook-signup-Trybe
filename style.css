@@ -78,6 +78,7 @@ input {
 
 .left-content {
   width: 800px;
+  margin-right: 15px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
