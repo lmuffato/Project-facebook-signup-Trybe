@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .top-bar {
@@ -29,7 +29,7 @@ body {
   padding-right: 10px;
   align-self: flex-end;
   font-size: 12px;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 #user-email-phone {
@@ -66,9 +66,9 @@ body {
 #button-login {
   padding: 4px;
   font-size: 10px;
-  font-weight: bolder;
+  font-weight: 700;
   width: 42px;
-  background-color:rgb(66, 103, 178);
+  background-color: rgb(66, 103, 178);
   color: white;
   border-radius: 2px;
   border-style: none;
