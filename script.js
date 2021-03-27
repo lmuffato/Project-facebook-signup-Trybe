@@ -45,9 +45,11 @@ function genderOther() {
   if (personalizeGender.checked) {
     const newInput = document.createElement('input');
     newInput.type = 'text';
+    newInput.id = 'personalizeGender';
     newInput.name = 'gender-custom';
     newInput.placeholder = 'Gênero (opcional)';
-    document.querySelector('#genders').appendChild(newInput);
+    console.log(newInput);
+    document.querySelector('#addInput').appendChild(newInput);
   }
 }
 personalizeGender.addEventListener('click', genderOther);
