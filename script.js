@@ -38,18 +38,6 @@ function validateRadios() {
 
 const buttonRegister = document.getElementById('facebook-register');
 
-function validateForm() {
-  buttonRegister.addEventListener('click', (event) => {
-    const functionInputsText = validateInputs();
-    const functionInputsRadio = validateRadios();
-    if ((functionInputsText && functionInputsRadio) === false) {
-      event.preventDefault();
-      document.querySelector('.validateError').style.display = 'flex';
-    }
-  });
-}
-validateForm();
-
 // requisito 19
 const radioFemale = document.getElementById('feminino');
 const radioMale = document.getElementById('masculino');
@@ -77,3 +65,43 @@ radioCustomized.addEventListener('change', selectCustomized);
 radioFemale.addEventListener('change', removeCustomized);
 
 radioMale.addEventListener('change', removeCustomized);
+
+// requisito 20
+// Ajuda na lógica de construção de Lucas Godoi - Turma 10 - tribo A
+function createElements(elements, text) {
+  const createElement = document.createElement(elements);
+  createElement.innerHTML = text;
+  return createElement;
+}
+
+function createDiv() {
+  const rightContent = document.querySelector('.right-content');
+  const firstname = document.querySelector('input[name="firstname"]').value;
+  const lastname = document.querySelector('input[name="lastname"]').value;
+  const phoneEmail = document.querySelector('input[name="phone_email"]').value;
+  const birthday = document.querySelector('input[name="birthdate"]').value;
+  const gender = [...document.querySelectorAll('#radio-gender input')];
+  rightContent.innerHTML = '';
+  rightContent.appendChild(createElements('p',
+    `Olá, ${firstname} ${lastname}`));
+  rightContent.appendChild(createElements('p',
+    `email/ telefone: ${phoneEmail}`));
+  rightContent.appendChild(createElements('p',
+    `Data de nascimento: ${birthday}`));
+  rightContent.appendChild(createElements('p',
+    `Gênero: ${gender.filter((x) => x.checked)[0].value}`));
+}
+
+function validateForm() {
+  buttonRegister.addEventListener('click', (event) => {
+    const functionInputsText = validateInputs();
+    const functionInputsRadio = validateRadios();
+    if ((functionInputsText && functionInputsRadio) === false) {
+      event.preventDefault();
+      document.querySelector('.validateError').style.display = 'flex';
+    } else {
+      createDiv();
+    }
+  });
+}
+validateForm();
