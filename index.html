@@ -37,7 +37,7 @@
         </div>
         <div class="right-content">
             <h1>Abra uma conta</h1>
-            <p class="quick-easy">É rápido e fácil</p>
+            <p class="quick-easy">É rápido e fácil.</p>
             <form action="" class="form-container">
                 <div class="fullname-container">
                     <input type="text" name="firstname" placeholder="Nome" class="firstName">
@@ -50,11 +50,16 @@
                 <input id="date" type="text" name="birthdate" placeholder="dd/mm/aaaa" class="flex-item">
 
                 <div class="genero-container">
-                    <label id="label-gender" for="">Gênero</label>
+                    <label id="label-gender">Gênero</label>
                     <div class="genero-subcontainer">
-                        <input type="radio" name="gender"> Feminino
-                        <input type="radio" name="gender"> Masculino
-                        <input type="radio" name="gender"> Personalizado
+                        <input id="feminino" type="radio" name="gender">
+                        <label for="feminino">Feminino</label>
+
+                        <input  id="masculino" type="radio" name="gender">
+                        <label for="masculino">Masculino</label>
+
+                        <input id="personalizado" type="radio" name="gender">
+                        <label for="personalizado">Personalizado</label>
                     </div>
                 </div>
             </form>
