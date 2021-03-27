@@ -17,23 +17,21 @@ const newGender = document.createElement('input');
 newGender.name = 'gender-custom';
 newGender.placeholder = 'Gênero (opcional)';
 
-function genderCustom() {
-  custom.addEventListener('click', () => {
+function handleGenderSelected(event) {
+  const target = event.target.value;
+  if (target === 'Personalizado') {
     genderField.appendChild(newGender);
-  });
+  } else {
+    const customGenderInput = genderField.getElementsByTagName('input')[0];
+    if (customGenderInput !== undefined) {
+      customGenderInput.remove();
+    }
+  }
 }
 
-function hideCustomMale() {
-  male.addEventListener('click', () => {
-    genderField.removeChild(newGender);
-  });
-}
-
-function hideCustomFemale() {
-  female.addEventListener('click', () => {
-    genderField.removeChild(newGender);
-  });
-}
+custom.addEventListener('click', handleGenderSelected);
+male.addEventListener('click', handleGenderSelected);
+female.addEventListener('click', handleGenderSelected);
 
 // Requisito 20
 function clearData() {
@@ -81,29 +79,43 @@ function saveData() {
 
 // Requisito 18
 const form = document.querySelector('.facebook-register');
-const register = document.querySelector('#facebook-register');
-const inputs = document.getElementsByClassName('facebook-register')[0]
+const inputsText = document.getElementsByClassName('input-register');
+const inputsGender = document.getElementById('genderOption')
   .getElementsByTagName('input');
 
-function inputValidate() {
-  register.addEventListener('click', (event) => {
-    // Como impedir que o formulário seja enviado automaticamente para que a função de inserir texto funcione https://www.w3schools.com/jsref/event_preventdefault.asp
-    event.preventDefault();
-    for (let index = 0; index < inputs.length; index += 1) {
-      if (inputs[index].value === '') {
-        console.log(inputs[index]);
-        const errorMsg = document.createElement('p');
-        errorMsg.innerHTML = 'Campos inválidos';
-        form.appendChild(errorMsg);
-        return;
-      }
+function inputGenderValidate() {
+  let inputGender = false;
+  for (let index = 0; index < inputsGender.length; index += 1) {
+    if (inputsGender[index].checked === true) {
+      inputGender = true;
     }
-    saveData();
-  });
+  }
+  return inputGender;
 }
 
-inputValidate();
-hideCustomMale();
-hideCustomFemale();
-genderCustom();
+function inputTextValidate() {
+  let inputText = true;
+  for (let index = 0; index < inputsText.length; index += 1) {
+    if (inputsText[index].value === '') {
+      inputText = false;
+    }
+  }
+
+  return inputText;
+}
+
+function inputValidate(event) {
+  event.preventDefault();
+  if (inputTextValidate() === false || inputGenderValidate() === false) {
+    const errorMsg = document.createElement('p');
+    errorMsg.innerHTML = 'Campos inválidos';
+    form.appendChild(errorMsg);
+  } else {
+    saveData();
+  }
+}
+
+const buttonRegister = document.getElementById('facebook-register');
+buttonRegister.addEventListener('click', inputValidate);
+
 signAlert();
