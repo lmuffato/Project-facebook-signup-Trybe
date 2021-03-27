@@ -48,3 +48,8 @@
 #label-gender {
   display: flex;
 }
+
+#birthdate-form {
+  display: flex;
+  flex-flow: column;
+}
