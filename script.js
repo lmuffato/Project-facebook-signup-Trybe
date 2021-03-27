@@ -48,7 +48,6 @@ function genderOther() {
     newInput.id = 'personalizeGender';
     newInput.name = 'gender-custom';
     newInput.placeholder = 'Gênero (opcional)';
-    console.log(newInput);
     document.querySelector('#addInput').appendChild(newInput);
   }
 }
