@@ -39,14 +39,15 @@ function validateRegister(event) {
 const buttonRegister = document.querySelector('#facebook-register');
 buttonRegister.addEventListener('click', validateRegister);
 
+const personalizeGender = document.querySelector('#other');
+
 function genderOther() {
   if (personalizeGender.checked) {
     const newInput = document.createElement('input');
+    newInput.type = 'text';
     newInput.name = 'gender-custom';
     newInput.placeholder = 'Gênero (opcional)';
-    console.log(newInput)
-    document.personalizeGender.appendElementChild(newInput);
+    document.querySelector('#genders').appendChild(newInput);
   }
 }
-const personalizeGender = document.querySelector('#other');
 personalizeGender.addEventListener('click', genderOther);
