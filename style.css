@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
@@ -24,7 +28,6 @@
   width: 150px;
   padding-right: 10px;
   align-self: flex-end;
- 
 }
 
 #user-email-phone {
