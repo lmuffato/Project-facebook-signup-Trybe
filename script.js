@@ -1,3 +1,4 @@
+// requisito 7
 const buttonLogin = document.getElementById('button-login');
 
 function alertLoginButton() {
@@ -7,6 +8,49 @@ function alertLoginButton() {
 
 buttonLogin.addEventListener('click', alertLoginButton);
 
+// requisito 18
+// Ajuda na lógica de validação de Lucas Godoi - Turma 10 - tribo A
+const rightInp = document.querySelectorAll('.right-content input[type="text"]');
+const passInp = document.querySelector('.right-content input[type="password"]');
+const divRadio = document.querySelectorAll('#radio-gender input[type="radio"]');
+
+function validateInputs() {
+  let resultTrue = true;
+  const resultFalse = false;
+  for (let index = 0; index < rightInp.length; index += 1) {
+    if ((rightInp[index].value && passInp.value) === '') {
+      resultTrue = resultFalse;
+    }
+  }
+  return resultTrue;
+}
+
+function validateRadios() {
+  const resultTrue = true;
+  let resultFalse = false;
+  for (let index = 0; index < divRadio.length; index += 1) {
+    if (divRadio[index].checked) {
+      resultFalse = resultFalse || resultTrue;
+    }
+  }
+  return resultFalse;
+}
+
+const buttonRegister = document.getElementById('facebook-register');
+
+function validateForm() {
+  buttonRegister.addEventListener('click', (event) => {
+    const functionInputsText = validateInputs();
+    const functionInputsRadio = validateRadios();
+    if ((functionInputsText && functionInputsRadio) === false) {
+      event.preventDefault();
+      document.querySelector('.validateError').style.display = 'flex';
+    }
+  });
+}
+validateForm();
+
+// requisito 19
 const radioFemale = document.getElementById('feminino');
 const radioMale = document.getElementById('masculino');
 const radioCustomized = document.getElementById('personalizado');

@@ -50,3 +50,9 @@
   display: flex;
   flex-direction: row;
 }
+
+.validateError {
+  display: none;
+  background-color: brown;
+  color: white;
+}
