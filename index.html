@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Projeto Facebook</title>
 </head>
+
 <body>
     <header class="top-bar">
         <img src="imgs/facebook-logo.png" alt="logo" class="facebook-logo">
@@ -24,12 +26,13 @@
             <div class="form-control">
                 <button id="button-login">Entrar</button>
             </div>
-            
+
         </form>
     </header>
     <div class="main-content">
         <div class="left-content">
-            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da
+                sua vida.</p>
             <img id="facebook-networking" src="imgs/networking.png" alt="">
         </div>
         <div class="right-content">
@@ -45,10 +48,20 @@
 
                 <label for="date" id="label-birthdate">Data de nascimento</label>
                 <input id="date" type="text" name="birthdate" placeholder="dd/mm/aaaa" class="flex-item">
+
+                <div class="genero-container">
+                    <label id="label-gender" for="">Gênero</label>
+                    <div class="genero-subcontainer">
+                        <input type="radio" name="gender"> Feminino
+                        <input type="radio" name="gender"> Masculino
+                        <input type="radio" name="gender"> Personalizado
+                    </div>
+                </div>
             </form>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
