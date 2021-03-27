@@ -178,3 +178,15 @@ h1 {
 #feminino-label , #masculino-label {
   margin-right: 5px;
 }
+
+#facebook-register {
+  width: 150px;
+  height: 30px;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(5, 148, 5, 0.726);
+  font-weight: 700;
+  border-style: none;
+  border: 1px solid green;
+  border-radius: 5px;
+}
