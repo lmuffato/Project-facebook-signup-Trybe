@@ -29,5 +29,6 @@
 }
 
 #left-content {
-  width: 800px;
+  height: 800px;
+  width: auto;
 }
