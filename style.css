@@ -44,3 +44,7 @@
 .forms-name {
   display: flex;
 }
+
+#label-gender {
+  display: flex;
+}
