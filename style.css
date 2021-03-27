@@ -19,14 +19,26 @@ body {
   justify-content: space-between;
 }
 
+.logo-conteiner {
+  margin-left: 230px;
+  margin-top: 20px;
+}
+
+.facebook-logo {
+  background-size: cover;
+  width: 170px;
+  min-height: 10vh;
+}
+
 .facebook-login {
   display: flex;
+  margin-right: 77px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  width: 150px;
+  width: 120px;
   padding-right: 10px;
   align-self: flex-end;
   font-size: 12px;
