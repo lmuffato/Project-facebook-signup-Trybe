@@ -26,7 +26,7 @@ input {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 13px;
+  padding: 13px 0 0;
   min-height: 42px;
   background-color: rgb(66, 103, 178);
 }
@@ -101,6 +101,8 @@ input {
   width: 300px;
   display: flex;
   flex-direction: column;
+  margin-right: 200px;
+  border: 1px solid blue;
 }
 
 .right-content header {
@@ -119,8 +121,29 @@ input {
   font-size: 19px;
 }
 
+#form-main {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  border: 1px solid red;
+}
+
 #fullname {
   display: flex;
+  justify-content: space-between;
+}
+
+#fullname .input-text {
+  width: 43%;
+}
+
+.input-text {
+  border-color: #bdc7d8;
+  border-radius: 5px;
+  border: 1px solid #ccd0d5;
+  padding: 8px 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 #gender-container {
