@@ -90,7 +90,6 @@ function getSignUpFormData() {
     birthdate,
     gender,
   };
-
   return data;
 }
 
