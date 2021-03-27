@@ -170,3 +170,25 @@ span label {
 .gender-custom {
   display: flex;
 }
+
+.name-data {
+  font-size: 2em;
+  font-weight: 700;
+  color: #424242;
+}
+
+.phone-email-data {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #424242;
+}
+
+.birth-data {
+  font-size: 1.2em;
+  color: #424242;
+}
+
+.gender-data {
+  font-size: 1.2em;
+  color: #424242;
+}

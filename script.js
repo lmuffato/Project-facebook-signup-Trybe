@@ -35,22 +35,26 @@ function hideCustomFemale() {
   });
 }
 
+// Requisito 20
 function clearData() {
   const elements = document.getElementsByClassName('right-content');
-  // document.getElementsByClassName('right-content')[0].remove();
   elements[0].innerHTML = '';
 }
 
 function welcomeUser(fullName, phoneEmail, birthdate, genderSelected) {
   const rightContent = document.getElementsByClassName('right-content')[0];
   const nameData = document.createElement('p');
+  nameData.classList.add('name-data');
   nameData.appendChild(document.createTextNode(`Olá, ${fullName}`));
   const phoneEmailData = document.createElement('p');
+  phoneEmailData.classList.add('phone-email-data');
   phoneEmailData.appendChild(document.createTextNode(phoneEmail));
   const birthdateData = document.createElement('p');
+  birthdateData.classList.add('birth-data');
   birthdateData.appendChild(document.createTextNode(birthdate));
   const genderData = document.createElement('p');
   genderData.appendChild(document.createTextNode(genderSelected));
+  genderData.classList.add('gender-data');
   rightContent.appendChild(nameData);
   rightContent.appendChild(phoneEmailData);
   rightContent.appendChild(birthdateData);
