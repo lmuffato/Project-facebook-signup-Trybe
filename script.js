@@ -70,7 +70,8 @@ confirmButton.addEventListener('click', (event) => {
   ) {
     invalidP.innerText = 'Campos inválidos';
   } else {
-    document.querySelector('.right-content').innerText = `Olá ${inputNames[0].value} ${inputNames[1].value}
+    document.querySelector('.right-content').innerText =
+    `Olá ${inputNames[0].value} ${inputNames[1].value}
     ${inputCelEmail[0].value}
     ${inputBday[0].value}
     ${spread.filter((x) => x.checked)[0].value}`;
