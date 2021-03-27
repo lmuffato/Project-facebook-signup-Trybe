@@ -24,7 +24,6 @@
         <div class="form-group">
           <label for="user-password" id="user-password-label">Senha</label>
           <input type="password" id="user-password"/>
-          <a id="login-forgot">Esqueceu a conta?</a>
         </div>
         <div class="form-control">
           <button type="submit" id="button-login">Entrar</button>
@@ -90,32 +89,26 @@
             />
           </div>
           <div class="form-group">
-            <label class="" id="label-gender">Gênero</label>
+            <label id="label-gender">Gênero</label>
             <div id="gender-container">
-              <label class="gender-value" for="feminino"
-                >Feminino
+              <label class="gender-value" for="feminino">Feminino
                 <input
-                  class=""
                   type="radio"
                   name="gender"
                   id="feminino"
                   value="Feminino"
                 />
               </label>
-              <label class="gender-value" for="masculino"
-                >Masculino
+              <label class="gender-value" for="masculino">Masculino
                 <input
-                  class=""
                   type="radio"
                   name="gender"
                   id="masculino"
                   value="Masculino"
                 />
               </label>
-              <label class="gender-value" for="personalizado"
-                >Personalizado
+              <label class="gender-value" for="personalizado">Personalizado
                 <input
-                  class=""
                   type="radio"
                   name="gender"
                   id="personalizado"
@@ -124,12 +117,15 @@
               </label>
             </div>
             <div id="custom"></div>
-            <button
-              id="facebook-register"
-              class="btn btn-success btn-send"
-              type="submit"
-            >Cadastre-se</button>
           </div>
+          <p id="politic">
+            Ao clicar em Cadastre-se, você concorda com nossos <a href="www.facebook.com" target="_blank">Termos</a>,
+            <a href="www.facebook.com" target="_blank">Política de Dados</a> e
+            <a href="www.facebook.com" target="_blank">Política de Cookies</a>.
+            Você pode receber notificações por SMS e pode cancelar isso quando quiser.
+          </p>
+          <button id="facebook-register" class="btn-send" type="submit">Cadastre-se</button>
+          <p id="page-account"><a href="www.facebook.com">Criar uma Página</a> para uma celebridade, banda ou empresa.</p>
         </form>
       </div>
     </main>
