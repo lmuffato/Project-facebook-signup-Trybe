@@ -54,19 +54,4 @@ btnRegister.addEventListener('click', () => {
   checkEmpty();
 });
 
-function validaCampos(evento) {
-  evento.preventDefault();
-  for (let i = 0; i < inputsForm.length; i += 1) {
-    const generoSelec = document.querySelector('input[name="gender"]:checked');
-    if (inputsForm[i].value === '' || generoSelec === null) {
-      messageError.innerHTML = 'Campos inválidos';
-    } else {
-      paragrafo.innerHTML = `Olá, ${inputsForm[0].value} ${inputsForm[1].value}
-      ${inputsForm[2].value}, ${inputsForm[4].value}, ${generoSelec.value};`
-      mainContent.removeChild(rightContent);
-      mainContent.appendChild(div);
-      div.className = 'right-content';
-      div.appendChild(paragrafo);
-    }
-  }
-}
+
