@@ -42,7 +42,7 @@
   width: 45%;
 }
 
-#birthdate {
+#label-birthdate {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
