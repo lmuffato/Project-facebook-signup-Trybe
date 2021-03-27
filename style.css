@@ -103,3 +103,16 @@ input {
 .fullname input {
   width: 148px;
 }
+
+#facebook-register {
+  margin-top: 20px;
+  padding: 10px;
+  background: linear-gradient(#67ae55, #578843);
+  border-radius: 5px;
+  border: 0;
+  color: white;
+}
+
+#facebook-register:hover {
+  box-shadow: 0 0 5px blue;
+}

@@ -48,16 +48,16 @@
 
       <form action="">
         <div class="fullname">
-          <input type="text" name="firstname" placeholder="Nome">
-          <input type="text" name="lastname" placeholder="Sobrenome">
+          <input type="text" name="firstname" placeholder="Nome" class="required" id="firstname">
+          <input type="text" name="lastname" placeholder="Sobrenome" class="required" id="lastname">
         </div>
         <br>
         <div>
-          <input type="text" name="phone_email" placeholder="Celular ou email">
+          <input type="text" name="phone_email" placeholder="Celular ou email" class="required" id="phone_email">
         </div>
         <br>
         <div>
-          <input type="password" name="password" placeholder="Nova senha">
+          <input type="password" name="password" placeholder="Nova senha" class="required">
         </div>
         <br>
         <div>
@@ -65,7 +65,7 @@
         </div>
         <br>
         <div>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" class="required" id="birthdate-input">
         </div>
         <br>
         <label id="label-gender">Gênero</label>
@@ -77,6 +77,8 @@
           <label for="male">Masculino</label>
           <input type="radio" name="gender" id="custom" value="Personalizado">
           <label for="custom">Personalizado</label>
+          <div class="custom-gender"></div>
+          <p class="validate-message"></p>
         </div>
         <button type="submit" id="facebook-register">Cadastre-se</button>
       </form>
