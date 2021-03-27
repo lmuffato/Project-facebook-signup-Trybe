@@ -26,7 +26,7 @@ input {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 13px 0 20px 0;
+  padding: 13px 0 20px;
   min-height: 42px;
   background-color: rgb(66, 103, 178);
 }
@@ -188,7 +188,6 @@ input {
 }
 
 .btn-send {
-  color: white;
   background: linear-gradient(#67ae55, #578843);
   background-color: #69a74e;
   box-shadow: inset 0 1px 1px #a4e388;
@@ -204,6 +203,11 @@ input {
   font-weight: 700;
   font-size: 19px;
   text-shadow: 0 1px 2px rgb(0 0 0 / 50%);
+  width: 194px;
+}
+
+.btn-send span {
+  color: white;
 }
 
 #page-account {
