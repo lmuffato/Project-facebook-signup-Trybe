@@ -88,6 +88,8 @@ body {
 
 .right-content {
   width: 300px;
+  position: absolute;
+  margin-left: 650px;
 }
 
 .name-conteiner {
@@ -112,4 +114,14 @@ body {
   padding-left: 10px;
   line-height: 25px;
   color: rgb(32, 68, 141);
+}
+
+h1 {
+  padding-top: 20px;
+  font-size: 25;
+}
+
+.quick-easy {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
