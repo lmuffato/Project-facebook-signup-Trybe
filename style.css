@@ -102,7 +102,6 @@ input {
   display: flex;
   flex-direction: column;
   margin-right: 200px;
-  border: 1px solid blue;
 }
 
 .right-content header {
@@ -125,16 +124,11 @@ input {
   display: flex;
   flex-direction: column;
   width: 400px;
-  border: 1px solid red;
 }
 
 #fullname {
   display: flex;
   justify-content: space-between;
-}
-
-#fullname .input-text {
-  width: 43%;
 }
 
 .input-text {
@@ -144,6 +138,10 @@ input {
   padding: 8px 10px;
   font-size: 18px;
   margin-bottom: 10px;
+}
+
+#fullname .input-text {
+  width: 43%;
 }
 
 #gender-container {
