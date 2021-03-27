@@ -28,6 +28,8 @@ body {
   width: 150px;
   padding-right: 10px;
   align-self: flex-end;
+  font-size: 12px;
+  font-weight: bolder;
 }
 
 #user-email-phone {
@@ -36,13 +38,23 @@ body {
   margin-bottom: 30px;
 }
 
-#esqueceu-a-senha {
-  margin-bottom: 13px;
+#user-email-phone-label {
+  padding-bottom: 5px;
 }
 
 #user-password {
   border: solid 1px black;
   height: 18px;
+}
+
+#user-password-label {
+  padding-bottom: 5px;
+}
+
+#esqueceu-a-senha {
+  margin-bottom: 13px;
+  font-size: 12px;
+  padding-top: 3px;
 }
 
 .form-control {
