@@ -1,5 +1,4 @@
 function showAlert() {
-  // event.preventDefault();
   const emailPhone = document.querySelector('#user-email-phone');
 
   alert(emailPhone.value);
@@ -27,8 +26,15 @@ function validateFields() {
 
 function showMsg() {
   if (!validateFields()) {
+    const spans = document.querySelectorAll('.check');
+    for (let index = 0; index < spans.length; index++) {
+      if (spans[index].classList.contains('check')) {
+        spans[index].remove();
+      }
+    }
     const elementSpan = document.createElement('span');
     elementSpan.innerHTML = 'Campos inválidos';
+    elementSpan.className = 'check';
     document.querySelector('#form-main').appendChild(elementSpan);
   }
 }
@@ -47,3 +53,12 @@ function showInputCustom() {
 }
 
 showInputCustom();
+
+// function showValuesForm() {
+//   registerButton.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     const right = document.querySelector('#right-content');
+//     right.setAttribute('display', 'none');
+//   });
+// }
+// showValuesForm();
