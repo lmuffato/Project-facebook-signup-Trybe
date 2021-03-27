@@ -43,9 +43,8 @@
 }
 
 #label-birthdate {
-  display: flex;
+  display: inline-block;
   width: 100%;
-  flex-wrap: wrap;
 }
 
 .generos {
