@@ -8,6 +8,7 @@ const invalidP = document.getElementById('invalid-field');
 const femInput = document.getElementById('input-fem');
 const mascInput = document.getElementById('input-masc');
 const personal = document.getElementById('personal-field');
+const spread = [...document.querySelectorAll('#all-radios input')];
 
 function verify(elementsArray) {
   let showAlert = false;
@@ -28,6 +29,7 @@ function radioVerify(elementsRadio) {
   }
   return radioValue;
 }
+
 const personalRadioButton = document.getElementById('input-pers');
 
 function personalField() {
@@ -67,6 +69,11 @@ confirmButton.addEventListener('click', (event) => {
     || verify(inputBday)
   ) {
     invalidP.innerText = 'Campos inválidos';
+  } else {
+    document.querySelector('.right-content').innerText = `Olá ${inputNames[0].value} ${inputNames[1].value}
+    ${inputCelEmail[0].value}
+    ${inputBday[0].value}
+    ${spread.filter((x) => x.checked)[0].value}`;
   }
 });
 

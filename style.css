@@ -5,6 +5,7 @@
 }
 
 .top-bar {
+  padding-top: 5px;
   display: flex;
   background-color: rgb(66, 103, 178);
   justify-content: space-between;
@@ -56,6 +57,9 @@
 
 .quick-easy {
   width: 100%;
+  color: #1d2129;
+  font-size: 19px;
+  font-style: inherit;
 }
 
 .form-boxflex {
@@ -99,4 +103,10 @@
 
 #personal-field {
   display: flex;
+}
+
+#title {
+  font-size: 36px;
+  color: #333;
+  font-weight: 600;
 }
