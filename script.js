@@ -14,7 +14,6 @@ window.onload = () => {
 };
 
 const registerButton = document.querySelector('#facebook-register');
-registerButton.addEventListener('click', showMsg);
 
 function validateFields() {
   const input = document.querySelectorAll('#form-main input');
@@ -33,6 +32,8 @@ function showMsg() {
     document.querySelector('#form-main').appendChild(elementSpan);
   }
 }
+
+registerButton.addEventListener('click', showMsg);
 
 function showInputCustom() {
   const radios = document.getElementsByName('gender');
