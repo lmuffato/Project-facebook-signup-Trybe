@@ -46,7 +46,7 @@
 .left-content {
   width: 800px;
   font-size: 22px;
-  margin-right: 10px ;
+  margin-right: 10px;
 }
 
 #facebook-networking {
@@ -57,7 +57,7 @@
   width: 300px;
   display: flex;
   flex-direction: column;
-  background-color: #DADFF7;
+  background-color: #dadff7;
   padding: 10px;
 }
 
