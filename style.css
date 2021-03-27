@@ -24,13 +24,40 @@
   width: 150px;
   padding-right: 10px;
   align-self: flex-end;
-  padding-bottom: 30px;
+ 
+}
+
+#user-email-phone {
+  border: solid 1px black;
+  height: 18px;
+  margin-bottom: 30px;
+}
+
+#esqueceu-a-senha {
+  margin-bottom: 13px;
+}
+
+#user-password {
+  border: solid 1px black;
+  height: 18px;
 }
 
 .form-control {
   align-self: flex-end;
   padding-right: 80px;
   padding-bottom: 30px;
+}
+
+#button-login {
+  padding: 4px;
+  font-size: 10px;
+  font-weight: bolder;
+  width: 42px;
+  background-color:rgb(66, 103, 178);
+  color: white;
+  border-radius: 2px;
+  border-style: none;
+  border: 1px solid rgb(44, 85, 167);
 }
 
 .main-content {
