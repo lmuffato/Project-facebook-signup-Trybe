@@ -38,15 +38,9 @@ input {
 
 .facebook-login {
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
   color: white;
   font-size: 12px;
-}
-
-.login-container {
-  display: flex;
-  align-items: flex-end;
 }
 
 .form-group {
@@ -56,6 +50,7 @@ input {
 
 .form-group input {
   width: 150px;
+  margin: 7px 0;
   padding: 3px 3px 4px;
 }
 
@@ -77,7 +72,6 @@ input {
 
 #login-forgot {
   color: #9cb4d8;
-  margin: 0 0 5px;
 }
 
 .main-content {
