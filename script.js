@@ -5,7 +5,3 @@ function mostrarAlert() {
 
 const botao = document.getElementById('button-login');
 botao.addEventListener('click', mostrarAlert);
-
-const checarseTem = () => {
-  switch (firstname)
-}
