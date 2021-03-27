@@ -28,7 +28,6 @@
   flex-direction: row;
 }
 
-#left-content {
-  height: 800px;
-  width: auto;
+.left-content {
+  width: 800px;
 }
