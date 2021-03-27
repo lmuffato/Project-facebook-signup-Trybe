@@ -41,3 +41,15 @@
   display: inline-block;
   width: 45%;
 }
+
+#label-birthdate {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.generos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-content: center;
+}
