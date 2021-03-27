@@ -8,10 +8,6 @@ function loginButton() {
   document.querySelector('#button-login').addEventListener('click', showAlert);
 }
 
-window.onload = () => {
-  loginButton();
-};
-
 const registerButton = document.querySelector('#facebook-register');
 
 function validateFields() {
@@ -27,19 +23,17 @@ function validateFields() {
 function showMsg() {
   if (!validateFields()) {
     const spans = document.querySelectorAll('.check');
-    for (let index = 0; index < spans.length; index++) {
-      if (spans[index].classList.contains('check')) {
-        spans[index].remove();
-      }
+    for (let index = 0; index < spans.length; index += 1) {
+      spans[index].classList.contains('check').remove();
     }
     const elementSpan = document.createElement('span');
     elementSpan.innerHTML = 'Campos inválidos';
     elementSpan.className = 'check';
     document.querySelector('#form-main').appendChild(elementSpan);
+    return false;
   }
+  return true;
 }
-
-registerButton.addEventListener('click', showMsg);
 
 function showInputCustom() {
   const radios = document.getElementsByName('gender');
@@ -54,11 +48,22 @@ function showInputCustom() {
 
 showInputCustom();
 
-// function showValuesForm() {
-//   registerButton.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     const right = document.querySelector('#right-content');
-//     right.setAttribute('display', 'none');
-//   });
-// }
-// showValuesForm();
+function showValuesForm() {
+  const formS = document.getElementById('form-main');
+  registerButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (showMsg()) {
+      const right = document.querySelector('.right-content');
+      right.innerHTML = `Olá,${formS.firstname.value} 
+      ${formS.lastname.value} 
+      ${formS.phone_email.value} 
+      ${formS.birthdate.value} 
+      ${formS.gender.value}`;
+    }
+  });
+}
+showValuesForm();
+
+window.onload = () => {
+  loginButton();
+};
