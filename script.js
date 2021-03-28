@@ -8,9 +8,10 @@ btnEntrar.addEventListener('click', () => alert(userEmailPhone.value));
 
 function eventRequired() {
   const msg = document.getElementById('msg');
+  msg = msg.innerHTML = '<span><strong>Campos inválidos</strong></span>';
   const fields = document.querySelectorAll('[required]');
   for (let index = 0; index < fields.length; index += 1) {
-    fields[index].addEventListener('invalid', () => msg.innerHTML = '<span><strong>Campos inválidos</strong></span>');
+    fields[index].addEventListener('invalid', () => msg);
   }
 }
 
