@@ -28,7 +28,7 @@
   margin-left: 10%;
   height: 80px;
   align-self: flex-end;
-  order: -1; /* Como o padrão é 0, -1 faz com que fique a esquerda seguramente*/
+  order: -1; /* Como o padrão é 0, -1 faz com que fique a esquerda seguramente */
 }
 
 .facebook-login {
@@ -50,7 +50,7 @@
   margin-top: 6px;
 }
 
-.form-group:nth-child(2) {
+.form-group:nth-child( 2 ) {
   margin: 0 15px;
 
 }
@@ -59,7 +59,7 @@
   font-size: 12px;
   font-weight: 500;
   margin-top: 6px;
-  color: #9cb4d8
+  color: #9cb4d8;
 }
 
 .form-control {
@@ -71,7 +71,7 @@
   color: white;
   font-weight: 600;
   background-color: rgb(66, 103, 178);
-  border: solid 0.8px #2A487D;
+  border: solid 0.8px #2a487d;
   padding: 3px;
   width: 60px;
 }
@@ -113,7 +113,7 @@
   display: flex;
   flex-direction: column;
   justify-content: right;
-  margin-right:19%;
+  margin-right: 19%;
 }
 
 .right-content p {
@@ -122,7 +122,7 @@
 
 .right-content h1 {
   font-size: 36px;
-  margin: 20px 0 10px 0;
+  margin: 20px 0 10px;
   color: #333;
 }
 
@@ -140,15 +140,11 @@
   margin-top: 20px;
 }
 
-.names input {
-
-}
-
 .names input:last-child {
   margin-left: 10px;
 }
 
-#phoneNEmail, #password {
+#phoneNEmail , #password {
   width: 300px;
 }
 
@@ -166,7 +162,7 @@
 #label-gender {
   color: #90949c;
   font-weight: 700;
-  margin: 8px 0 0 0;
+  margin: 8px 0 0;
 }
 
 .gender {
