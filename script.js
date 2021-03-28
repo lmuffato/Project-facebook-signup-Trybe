@@ -35,8 +35,6 @@ function genderInput() {
   createInput.placeholder = 'Gênero(opcional)';
   createInput.type = 'text';
   genders.appendChild(createInput);
-  
-  
 }
 
 gender3.addEventListener('click', genderInput);
