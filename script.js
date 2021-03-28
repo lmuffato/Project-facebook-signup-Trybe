@@ -5,32 +5,12 @@ btnEntrar.addEventListener('click', () => alert(userEmailPhone.value));
 
 // Requisito 18
 // Referencia para resolução do requisito : https://www.youtube.com/watch?v=GTMEuHxh8aQ
-function verifyError(field) {
-  let foundError = false;
-  const fieldValidty = Object.values(field.validity);
-
-  for (let index = 0; index < fieldValidty.length; index += 1) {
-    if (!'customError' && fieldValidty) {
-      foundError = true;
-    }
-  }
-  return foundError;
-}
-
-function customValidation(event) {
-  const field = event.target;
-  const error = verifyError(field);
-
-  if (error) {
-    field.setCustomValidity('Campos inválidos');
-  }
-  field.setCustomValidity('');
-}
 
 function eventRequired() {
+  const msg = document.getElementById('msg');
   const fields = document.querySelectorAll('[required]');
   for (let index = 0; index < fields.length; index += 1) {
-    fields[index].addEventListener('invalid', customValidation);
+    fields[index].addEventListener('invalid', () => msg.innerHTML = '<span><strong>Campos inválidos</strong></span>');
   }
 }
 
