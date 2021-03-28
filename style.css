@@ -140,7 +140,7 @@
   margin-top: 20px;
 }
 
-.names input:last-child {
+.names #lastName{
   margin-left: 10px;
 }
 
@@ -228,7 +228,7 @@
   color: #5f6063;
 }
 
-.new-page span{
+.new-page span {
   color: rgb(66, 103, 178);
 }
 
