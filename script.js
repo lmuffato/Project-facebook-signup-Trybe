@@ -7,7 +7,7 @@ function alertBut() {
 
 loginBut.addEventListener('click', alertBut);
 
-//Requisito cumprido com a ajuda do fantástico instrutor John, no plantão DOMINGO!!!
+// Requisito cumprido com a ajuda do fantástico instrutor John, no plantão DOMINGO!!!
 
 function displayInput() {
   const radios = document.querySelectorAll('.select');
