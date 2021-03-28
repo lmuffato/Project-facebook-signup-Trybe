@@ -50,14 +50,22 @@ function checkNull2() {
   }
 }
 
-function newRightContent(){
-  
+function newRightContent() {
+  rightCont.innerHTML = (
+    `Olá, ${nameIs} ${lastName}.
+    Seu e-mail/telefone é ${phoneOrMail}
+    Sua data de Nascimento é ${birthDay}
+    Seu gênero é ${gender}.`
+  );
 }
 
 function replaceRight() {
   checkNull1();
   checkNull2();
   rightCont.innerHTML = '';
-
-
+  newRightContent();
 }
+
+const sendForm = document.querySelector('#facebook-register');
+
+sendForm.addEventListener('click', replaceRight);
