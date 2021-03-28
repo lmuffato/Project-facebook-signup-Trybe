@@ -11,14 +11,13 @@
   display: flex;
   background-color: rgb(66, 103, 178);
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   width: 100%;
-  height: 83px;
+  height: 80px;
   border-bottom: 1px solid #0e385f;
 }
 
 .facebook-logo {
-  margin-left: 13%;
   height: 80px;
   order: -1; /* Como o padrão é 0, -1 faz com que fique a esquerda seguramente */
 }
@@ -26,8 +25,7 @@
 .facebook-login {
   display: flex;
   font-size: 12px;
-  margin-right: 6%;
-  margin-bottom: 6px;
+  /* margin-bottom: 10px; */
 }
 
 .form-group {
@@ -104,8 +102,13 @@
 .right-content {
   width: 300px;
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: right;
+}
+
+.right-content form {
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .right-content p {
