@@ -63,7 +63,6 @@ genders.addEventListener('click', (e) => {
   genderValue = inputSelected.value;
 });
 
-
 formRegister.addEventListener('submit', (e) => {
   e.preventDefault();
 });
