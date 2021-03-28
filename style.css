@@ -102,7 +102,7 @@
   width: 300px;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: right;
+  justify-content: flex-start;
 }
 
 .right-content form {
@@ -153,25 +153,25 @@
   flex-direction: column;
 }
 
-.label-gender-container {
-  margin-top: 12px;
-}
-
 #label-gender {
   color: #90949c;
   font-weight: 700;
+  width: inherit;
+  height: 20px;
+  margin-top: 12px;
 }
 
 .gender {
   display: flex;
   flex-flow: row nowrap;
-  width: auto;
+  width: 350px;
   height: 30px;
   align-items: center;
 }
 
-.gender input {
-  width: auto;
+.gender .radioButton {
+  width: 15px;
+  height: 15px;
 }
 
 .gender label {
