@@ -12,10 +12,6 @@
   justify-content: space-between;
 }
 
-/* .facebook-logo {
-  justify-self: flex-start;
-} */
-
 .facebook-login {
   display: flex;
 }
@@ -56,4 +52,8 @@
 #nome-e-sobrenome {
   display: flex;
   flex-direction: row;
+}
+
+#customInput {
+  display: none;
 }

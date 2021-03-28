@@ -51,12 +51,22 @@
         <input type="password" name="password" placeholder="Nova senha" required>  
         <label id='label-birthdate' for="">Data de nascimento</label>       
         <input type="text" name="birthdate" placeholder="dd/mm/aaaa" required> 
-        <label id='label-gender' for="">Gênero</label>
-        <div id="generos">
-          <input type="radio" name="gender" value='fem' required>Feminino
-          <input type="radio" name="gender" value='mas' required>Masculino
-          <input type="radio" name="gender" value='per' required>Personalizado
+       
+        <div class="gender-container">
+          <label id='label-gender' for="gender">Gênero</label>
+          <div id="gender-options">
+            <input type="radio" class='select' name="gender" value='Feminino' id='female' required>
+            <label for="female">Feminino</label>
+            <input type="radio" class='select' name="gender" value='Masculino' id='male' required>
+            <label for="male">Masculino</label>
+            <input type="radio" class='select' name="gender" value='Personalizado' id='custom' required>
+            <label for="custom">Personalizado</label>
+            <input type="text" id="customInput" placeholder='Gênero (opcional)' name='gender-custom'>
+          </div>
         </div>
+
+        </section>
+
         <button id="facebook-register" type='submit'>Cadastre-se</button>
       </form>
 
