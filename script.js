@@ -25,8 +25,14 @@ function validateInputs(event) {
   }
 }
 function validateRadioButtons(event) {
-  const inputsGenders = document.getElementsByClassName('inputsGender');
-  if (inputsGenders.checked[0, 1, 2] === false) {
+  const inputsGenders = document.querySelectorAll('.inputsGender');
+  let validationKey = false;
+  for (let index = 0; index < inputsGenders.length; index += 1) {
+    if (inputsGenders[index].checked === true) {
+      validationKey = true;
+    }
+  }
+  if (validationKey === false) {
     event.preventDefault();
     divAlert.appendChild(createP).innerText = 'Campos inválidos';
   }
@@ -34,7 +40,6 @@ function validateRadioButtons(event) {
     divAlert.removeChild(createP);
   }
 }
-
 function submitButton() {
   const buttonSubmit = document.getElementById('facebook-register');
   buttonSubmit.addEventListener('click', validateInputs);
