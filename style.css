@@ -174,12 +174,9 @@ input {
   margin: 3px 3px 0 15px;
 }
 
-.gender-value , .gender-value input {
-  cursor: pointer;
-}
-
 #custom {
   display: none;
+  margin-top: 15px;
 }
 
 #politic {

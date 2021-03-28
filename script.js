@@ -35,18 +35,42 @@ function showMsg() {
   return true;
 }
 
-function showInputCustom() {
-  const radios = document.getElementsByName('gender');
-  radios[2].addEventListener('click', () => {
-    const createElementeInput = document.createElement('input');
-    createElementeInput.setAttribute('name', 'gender-custom');
-    createElementeInput.setAttribute('type', 'text');
-    createElementeInput.setAttribute('placeholder', 'Gênero (opcional)');
-    document.querySelector('#custom').appendChild(createElementeInput);
-  });
+function noCustomRadio(e) {
+  const event = e.target;
+  const customInput = document.querySelector('#custom');
+  const currentSelected = document.querySelector('.selected');
+
+  if (!event.classList.contains('selected') && currentSelected) {
+    currentSelected.classList.remove('selected');
+    customInput.style.display = 'none';
+    return event.classList.add('selected');
+  }
+  return event.classList.add('selected');
 }
 
-showInputCustom();
+function customRadio(e) {
+  const event = e.target;
+  const customInput = document.querySelector('#custom');
+  const currentSelected = document.querySelector('.selected');
+
+  if (!event.classList.contains('selected') && currentSelected) {
+    currentSelected.classList.remove('selected');
+    customInput.style.display = 'block';
+    return event.classList.add('selected');
+  }
+  customInput.style.display = 'block';
+  return event.classList.add('selected');
+}
+
+function showCustomInput() {
+  const customButton = document.querySelector('#personalizado');
+  const man = document.querySelector('#masculino');
+  const woman = document.querySelector('#feminino');
+
+  man.addEventListener('click', noCustomRadio);
+  woman.addEventListener('click', noCustomRadio);
+  customButton.addEventListener('click', customRadio);
+}
 
 function showValuesForm() {
   const formS = document.getElementById('form-main');
@@ -54,16 +78,17 @@ function showValuesForm() {
     e.preventDefault();
     if (showMsg()) {
       const right = document.querySelector('.right-content');
-      right.innerHTML = `Olá, ${formS.firstname.value} 
-      ${formS.lastname.value} 
-      ${formS.phone_email.value} 
-      ${formS.birthdate.value} 
+      right.innerHTML = `Olá, ${formS.firstname.value}
+      ${formS.lastname.value}
+      ${formS.phone_email.value}
+      ${formS.birthdate.value}
       ${formS.gender.value}`;
     }
   });
 }
-showValuesForm();
 
 window.onload = () => {
   loginButton();
+  showCustomInput();
+  showValuesForm();
 };
