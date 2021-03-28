@@ -8,7 +8,7 @@ btnEntrar.addEventListener('click', () => alert(userEmailPhone.value));
 function verifyError(field) {
   let foundError = false;
   for (const key in field.validity) {
-    if (key !== 'customError' && Object.prototype.hasOwnProperty.call(field.validity, key)) {
+    if (key !== 'customError' && Object.values(field.validity)) {
       foundError = key;
     }
   }
