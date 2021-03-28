@@ -11,29 +11,31 @@
   display: flex;
   background-color: rgb(66, 103, 178);
   justify-content: space-between;
+  align-items: flex-end;
   width: 100%;
-  height: 85px;
+  height: 83px;
   border-bottom: 1px solid #0e385f;
 }
 
-.top-bar-container {
+/* .top-bar-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   margin-right: 10%;
   padding-bottom: 5px;
-}
+} */
 
 .facebook-logo {
-  margin-left: 10%;
+  margin-left: 13%;
   height: 80px;
-  align-self: flex-end;
   order: -1; /* Como o padrão é 0, -1 faz com que fique a esquerda seguramente */
 }
 
 .facebook-login {
   display: flex;
   font-size: 12px;
+  margin-right: 6%;
+  margin-bottom: 6px;
 }
 
 .form-group {
@@ -63,7 +65,7 @@
 }
 
 .form-control {
-  align-self: center;
+  align-self: flex-end;
   order: 1;
 }
 
@@ -80,15 +82,14 @@
   display: flex;
   background-color: #f2f3f8;
   height: 640px;
-  justify-content: space-between;
 }
 
 .left-content {
   width: 800px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 40px;
-  margin-left: 10%;
   line-height: 29px;
   order: -1;
 }
@@ -100,12 +101,12 @@
   font-size: 20px;
 }
 
-#facebook-slogan {
-  width: 420px;
-}
-
 #facebook-networking {
   width: 537px;
+}
+
+#facebook-slogan {
+  width: 420px;
 }
 
 .right-content {
@@ -113,7 +114,7 @@
   display: flex;
   flex-direction: column;
   justify-content: right;
-  margin-right: 19%;
+  /* margin-right: 10%; */
 }
 
 .right-content p {
