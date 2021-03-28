@@ -41,3 +41,7 @@
 .names {
   display: flex;
 }
+
+#divInvalid {
+  height: 50px;
+}
