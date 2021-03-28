@@ -153,21 +153,16 @@
   flex-direction: column;
 }
 
+.label-gender-container {
+  margin-top: 12px;
+}
+
 #label-gender {
   color: #90949c;
   font-weight: 700;
-  margin: 8px 0 0;
 }
 
 .gender {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: auto;
-  width: auto;
-}
-
-.gender-options {
   display: flex;
   flex-flow: row nowrap;
   width: auto;
@@ -175,11 +170,11 @@
   align-items: center;
 }
 
-.gender-options input {
+.gender input {
   width: auto;
 }
 
-.gender-options label {
+.gender label {
   margin: 0 15px 0 5px;
   font-size: 15px;
 }
