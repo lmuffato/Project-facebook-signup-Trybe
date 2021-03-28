@@ -68,4 +68,7 @@ function replaceRight() {
 
 const sendForm = document.querySelector('#facebook-register');
 
-sendForm.addEventListener('click', replaceRight);
+sendForm.addEventListener('click', (event) => {
+  event.preventDefault();
+  replaceRight();
+});
