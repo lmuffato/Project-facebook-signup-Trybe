@@ -11,13 +11,14 @@ function loginButton() {
 const registerButton = document.querySelector('#facebook-register');
 
 function validateFields() {
-  const input = document.querySelectorAll('#form-main input');
-  for (let index = 0; index < input.length; index += 1) {
-    if (input[index].value.length === 0) {
-      return false;
-    }
-  }
-  return true;
+  const form = document.querySelector('#form-main');
+  let isValidate = true;
+
+  document.querySelectorAll('#form-main input.required').forEach((element) => {
+    console.log(form[element.name]);
+    if (!form[element.name].value) { isValidate = false; }
+  });
+  return isValidate;
 }
 
 function showMsg() {
@@ -29,6 +30,7 @@ function showMsg() {
     const elementSpan = document.createElement('span');
     elementSpan.innerHTML = 'Campos inválidos';
     elementSpan.className = 'check';
+    elementSpan.style.color = 'red';
     document.querySelector('#form-main').appendChild(elementSpan);
     return false;
   }
