@@ -11,58 +11,56 @@
   <img src="imgs/facebook-logo.png" alt="facebook logo" class="facebook-logo">
 
   <form action="" class="facebook-login">  
-    <section class="form-group">
+    <div class="form-group">
       <label for="user-email-phone" id="user-email-phone-label">Email ou telefone</label>
       <input type="text" id="user-email-phone">
-    </section>
+    </div>
     
-    <section class="form-group">
+    <div class="form-group">
       <label for="user-password" id="user-password-label">Senha</label>
       <input type="password" id="user-password">
-    </section>
+    </div>
     
-    <section class="form-control">
+    <div class="form-control">
       <button id="button-login">Entrar</button>
-    </section>
+    </div>
   </form>
 </header>
 <main class="main-content">
-  <section class="left-content">
+  <div class="left-content">
     <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
     <img src="imgs/networking.png" alt="Imagem com o slogan do facebook" id="facebook-networking">
-  </section>
+  </div>
 
-  <section class="right-content">
+  <div class="right-content">
       <h1>Abra uma conta</h1>
       <p class="quick-easy">É rápido e fácil.</p>
     <form action="get">
-      <section id="full-name">
-        <input type="text" name="firstname" placeholder="Nome">
-        <input type="text" name="lastname" placeholder="Sobrenome">
-      </section>
-      <section>
-      <input type="text" name="phone_email" placeholder="Celular ou email">
-    </section>
-    <section>
-      <input type="password" name="password" placeholder="Nova senha">
-    </section>
-    <section>
+      <div id="full-name">
+        <input type="text" name="firstname" placeholder="Nome" class="dados nam1">
+        <input type="text" name="lastname" placeholder="Sobrenome" class=" dados nam2">
+      </div>
+      <div>
+      <input type="text" name="phone_email" placeholder="Celular ou email" class="dados">
+    </div>
+    <div>
+      <input type="password" name="password" placeholder="Nova senha" class="dados">
+    </div>
+    <div class="data-genero">
       <label for="" id="label-birthdate">Data de nascimento</label>
       <input type="text" name="birthdate" placeholder="dd/mm/aaaa">
-    </section>
-    <section>
+    </div>
+    <div class="data-genero">
       <label for="" id="label-gender">Gênero</label><br>
-      <input type="radio" name="gender" id="fen" value="Feminino"><label for="fen">Feminino</label>
-      <input type="radio" name="gender" id="mas" value="Masculino"><label for="mas">Masculino</label>
-      <input type="radio" name="gender" id="per" value="Personalizado"><label for="per">Personalizado</label>
-    </section>
-    <section>
+      <input type="radio" name="gender" id="fen" value="Feminino"><label class="ger" for="fen">Feminino</label>
+      <input type="radio" name="gender" id="mas" value="Masculino"><label class="ger" for="mas">Masculino</label>
+      <input type="radio" name="gender" id="per" value="Personalizado"><label class="ger"for="per">Personalizado</label>
+    </div>
+    <div>
       <button id="facebook-register" type="submit">Cadastre-se</button>
-    </section>
-
+    </div>
     </form>
-  </section>
-
+  </div>
 </main>
   <script src="script.js"></script>
 </body>
