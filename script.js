@@ -25,36 +25,36 @@ function displayInput() {
 const radiosDiv = document.querySelector('#gender-options');
 radiosDiv.addEventListener('click', displayInput);
 
-const nameIs = document.querySelector('#name').value;
-const lastName = document.querySelector('#lastName').value;
-const phoneOrMail = document.querySelector('#phoneOrMail').value;
-const password = document.querySelector('#password').value;
-const birthDay = document.querySelector('#birth').value;
-const gender = document.querySelector('input[type="radio"]:checked').value;
-const errorMensage = document.querySelector('#errorMensage');
-const rightCont = document.querySelector('.right-content');
+// const nameIs = document.querySelector('#name').value;
+// const lastName = document.querySelector('#lastName').value;
+// const phoneOrMail = document.querySelector('#phoneOrMail').value;
+// const password = document.querySelector('#password').value;
+// const birthDay = document.querySelector('#birth').value;
+// const gender = document.querySelector('input[type="radio"]:checked').value;
+// const errorMensage = document.querySelector('#errorMensage');
+// const rightCont = document.querySelector('.right-content');
 
-function checkNull1() {
-  if (nameIs === null
-    || lastName === null
-    || phoneOrMail === null) {
-    errorMensage.innerText = 'Campos inválidos';
-  }
-}
+// function checkNull1() {
+//   if (nameIs === null
+//     || lastName === null
+//     || phoneOrMail === null) {
+//     errorMensage.innerText = 'Campos inválidos';
+//   }
+// }
 
-function checkNull2() {
-  if (password === null
-    || birthDay === null
-    || gender === null) {
-    errorMensage.innerText = 'Campos inválidos';
-  }
-}
+// function checkNull2() {
+//   if (password === null
+//     || birthDay === null
+//     || gender === null) {
+//     errorMensage.innerText = 'Campos inválidos';
+//   }
+// }
 
-function newRightContent() {
-  rightCont.innerHTML = (
-    `Olá, ${nameIs} ${lastName}.
-    Seu e-mail/telefone é ${phoneOrMail}
-    Sua data de Nascimento é ${birthDay}
-    Seu gênero é ${gender}.`
-  );
-}
+// function newRightContent() {
+//   rightCont.innerHTML = (
+//     `Olá, ${nameIs} ${lastName}.
+//     Seu e-mail/telefone é ${phoneOrMail}
+//     Sua data de Nascimento é ${birthDay}
+//     Seu gênero é ${gender}.`
+//   );
+// }
