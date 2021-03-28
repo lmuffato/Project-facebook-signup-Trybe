@@ -66,3 +66,12 @@
   width: 227px;
   margin-bottom: 5px;
 }
+
+.genero-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.genero-subcontainer {
+  margin-top: 10px;
+}
