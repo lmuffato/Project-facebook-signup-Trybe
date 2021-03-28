@@ -13,6 +13,7 @@
 .facebook-login {
   margin: 10px;
   display: flex;
+  justify-self: flex-end;
 }
 
 .form-group {
