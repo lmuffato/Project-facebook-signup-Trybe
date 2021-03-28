@@ -8,7 +8,7 @@ btnEntrar.addEventListener('click', () => alert(userEmailPhone.value));
 function verifyError(field) {
   let foundError = false;
   for (const key in field.validity) {
-    if (key !== 'customError' && field.validity[key]) {
+    if (key !== 'customError' && Object.prototype.hasOwnProperty.call(field.validity, key)) {
       foundError = key;
     }
   }
@@ -27,8 +27,8 @@ function customValidation(event) {
 
 function eventRequired() {
   const fields = document.querySelectorAll('[required]');
-  for (const field of fields) {
-    field.addEventListener('invalid', customValidation);
+  for (let index = 0; index < fields.length; index += 1) {
+    fields[index].addEventListener('invalid', customValidation);
   }
 }
 
