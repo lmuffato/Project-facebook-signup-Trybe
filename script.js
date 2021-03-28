@@ -7,7 +7,7 @@ btnEntrar.addEventListener('click', () => alert(userEmailPhone.value));
 // Referencia para resolução do requisito : https://www.youtube.com/watch?v=GTMEuHxh8aQ
 
 function eventRequired() {
-  const msg = document.getElementById('msg');
+  let msg = document.getElementById('msg');
   msg = msg.innerHTML = '<span><strong>Campos inválidos</strong></span>';
   const fields = document.querySelectorAll('[required]');
   for (let index = 0; index < fields.length; index += 1) {
