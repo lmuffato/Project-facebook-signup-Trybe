@@ -62,7 +62,7 @@ function openCustom() {
       createInput.placeholder = 'Gênero (opcional)';
       createInput.type = 'text';
       createInput.id = 'inputP';
-      createInput.name = 'gênero personalizado';
+      createInput.name = 'gender-custom';
       genderCustom.appendChild(createInput);
     }
   });
