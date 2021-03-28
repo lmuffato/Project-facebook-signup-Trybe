@@ -9,21 +9,21 @@ function verifyError(field) {
   let foundError = false;
   for (const key in field.validity) {
     if (key !== 'customError' && field.validity[key]) {
-      foundError = key ;
+      foundError = key;
     }
-   } 
-   return foundError;
+  }
+  return foundError;
 }
 
 function customValidation(event) {
   const field = event.target;
   const error = verifyError(field);
 
-  if(error) {
-    field.setCustomValidity("Campos inválidos");
-    }
-    field.setCustomValidity('');  
-} 
+  if (error) {
+    field.setCustomValidity('Campos inválidos');
+  }
+  field.setCustomValidity('');
+}
 
 function eventRequired() {
   const fields = document.querySelectorAll('[required]');
