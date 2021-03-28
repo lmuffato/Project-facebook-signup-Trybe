@@ -6,13 +6,7 @@ const btnRegister = document.getElementById('facebook-register');
 const genders = document.getElementById('genders');
 const errorMessage = document.getElementById('message-error');
 let genderValue = '';
-// const inputsForm = document.querySelectorAll('.input');
-// const messageError = document.querySelector('#messageError');
-// const newAccount = document.querySelector('.new-account');
 const rightContent = document.querySelector('.right-content');
-// const mainContent = document.querySelector('.main-content');
-// const paragrafo = document.createElement('p');
-// const div = document.createElement('div');
 
 btnLogin.addEventListener('click', () => {
   alert(emailPhone.value);
@@ -65,10 +59,6 @@ genders.addEventListener('click', (e) => {
   genderValue = inputSelected.value;
 });
 
-// formRegister.addEventListener('submit', (e) => {
-//   e.preventDefault();
-// });
-
 btnRegister.addEventListener('click', (e) => {
   const userData = document.querySelectorAll('.right-content input');
   const pReturn = document.createElement('p');
@@ -78,27 +68,9 @@ btnRegister.addEventListener('click', (e) => {
   if (errorMessage.innerHTML === '') {
     rightContent.innerHTML = '';
     rightContent.appendChild(pReturn);
-    pReturn.innerHTML = `Olá ${userData[0].value} ${userData[1].value}.
+    pReturn.innerHTML = `Olá, ${userData[0].value} ${userData[1].value}.
     Telefone ou E-mail: ${userData[2].value},
     Data de nascimento: ${userData[4].value},
     Gênero: ${genderValue}.`;
   }
 });
-
-// function validaCampos(evento) {
-//   evento.preventDefault();
-//   for (let i = 0; i < inputsForm.length; i += 1) {
-//     const generoSelec = document.querySelector('input[name="gender"]:checked');
-//     if (inputsForm[i].value === '' || generoSelec === null) {
-//       messageError.innerHTML = 'Campos inválidos';
-//     } else {
-//       paragrafo.innerHTML = `Olá, ${inputsForm[0].value} ${inputsForm[1].value}
-//       ${inputsForm[2].value}, ${inputsForm[4].value}, ${generoSelec.value}`;
-//       mainContent.removeChild(rightContent);
-//       mainContent.appendChild(div);
-//       div.className = 'right-content';
-//       div.appendChild(paragrafo);
-//     }
-//   }
-// }
-// newAccount.addEventListener('submit', validaCampos);
