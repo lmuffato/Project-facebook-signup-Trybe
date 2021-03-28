@@ -70,36 +70,26 @@ function radioButtonCheck() {
 
 function hideRegister() {
   const form = document.getElementsByClassName('form-cadastro');
-  form[0].addEventListener('submit', (event) => {
+  form[0].addEventListener('submit', () => {
     const register = document.querySelector('.right-content');
-    register.remove();
-    event.preventDefault();
+    while (register.firstChild) {
+      register.removeChild(register.lastChild);
+    }
   });
-}
-function fixGenderValue(genero) {
-  let fixGenero = genero;
-  if (genero === 'male') {
-    fixGenero = 'Masculinho';
-  } else if (genero === 'female') {
-    fixGenero = 'Feminino';
-  } else {
-    fixGenero = 'Personalizado';
-  }
-  return fixGenero;
 }
 function writeMessage(name, email, genero, birthDate) {
   const write = document.createElement('div');
-  write.setAttribute('class', 'rigth-content');
+  write.setAttribute('class', 'right-content');
   document.querySelector('.main-content').appendChild(write);
   const message = document.createElement('p');
   message.innerHTML = `Olá, ${name} email : ${email}`;
   message.innerHTML += ` Genero : ${genero} Data de Nascimento : ${birthDate}`;
-  document.querySelector('.rigth-content').appendChild(message);
+  document.querySelector('.right-content').appendChild(message);
 }
 
 function registerData() {
   const form = document.getElementsByClassName('form-cadastro');
-  form[0].addEventListener('submit', (event) => {
+  form[0].addEventListener('submit', () => {
     let name = `${document.getElementsByName('firstname')[0].value}`;
     name += `${document.getElementsByName('lastname')[0].value}`;
     const email = document.getElementsByName('phone_email')[0].value;
@@ -110,10 +100,8 @@ function registerData() {
         genero = radios[index].value;
       }
     }
-    genero = fixGenderValue(genero);
     const birthDate = document.getElementsByName('birthdate')[0].value;
     writeMessage(name, email, genero, birthDate);
-    event.preventDefault();
   });
 }
 
