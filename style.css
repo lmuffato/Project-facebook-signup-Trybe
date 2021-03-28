@@ -4,28 +4,36 @@
   box-sizing: border-box;
   font-size: 100%;
   font-family: Roboto, sans-serif;
+  outline: none; /* Retira a borda que aparece quando se clica nos inputs */
 }
 
 .top-bar {
   display: flex;
   background-color: rgb(66, 103, 178);
-  justify-content: space-around;
-  padding: 10px;
-
+  justify-content: space-between;
+  width: 100%;
+  height: 85px;
+  border-bottom: 1px solid #0e385f;
 }
 
-.image-container {
+.top-bar-container {
   display: flex;
-  justify-content: left;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 10%;
+  padding-bottom: 5px;
+}
+
+.facebook-logo {
+  margin-left: 10%;
+  height: 80px;
+  align-self: flex-end;
+  order: -1; /* Como o padrão é 0, -1 faz com que fique a esquerda seguramente*/
 }
 
 .facebook-login {
   display: flex;
-}
-
-.form-container {
-  display: flex;
-  justify-content: right;
+  font-size: 12px;
 }
 
 .form-group {
@@ -35,53 +43,96 @@
 }
 
 .form-group input {
-  margin-right: 20px;
-  border-radius: 2px;
-  border: none;
-  margin-top: 10px;
+  border: 1px solid #1d2a5b;
+  width: 150px;
+  height: 23px;
+  padding: 4px;
+  margin-top: 6px;
+}
+
+.form-group:nth-child(2) {
+  margin: 0 15px;
+
+}
+
+.form-group p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 6px;
+  color: #9cb4d8
 }
 
 .form-control {
-  align-self: flex-end;
-  justify-content: right;
+  align-self: center;
+  order: 1;
+}
+
+.form-control button {
+  color: white;
+  font-weight: 600;
+  background-color: rgb(66, 103, 178);
+  border: solid 0.8px #2A487D;
+  padding: 3px;
+  width: 60px;
 }
 
 .main-content {
   display: flex;
   background-color: #f2f3f8;
-  height: 400px;
-  justify-content: space-around;
+  height: 640px;
+  justify-content: space-between;
 }
 
 .left-content {
   width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-left: 10%;
+  line-height: 29px;
+  order: -1;
+}
+
+.left-content p {
+  width: 350px;
+  color: #0e385f;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#facebook-slogan {
+  width: 420px;
+}
+
+#facebook-networking {
+  width: 537px;
 }
 
 .right-content {
   width: 300px;
-}
-
-.left-container {
-  display: flex;
-  justify-content: left;
-  width: 200px;
-  margin-top: 20px;
-}
-
-.right-container {
   display: flex;
   flex-direction: column;
   justify-content: right;
-  margin-top: 20px;
+  margin-right:19%;
 }
 
-.right-container input {
+.right-content p {
+  font-size: 19px;
+}
+
+.right-content h1 {
+  font-size: 36px;
+  margin: 20px 0 10px 0;
+  color: #333;
+}
+
+.right-content input {
   margin: 5px 0;
-  height: 35px;
+  height: 40px;
   border-radius: 5px;
-  border: 0.8px solid #90949c;
+  border: 0.8px solid #bdc7d8;
   padding-left: 6px;
-  width: 130px;
+  width: 145px;
 }
 
 .names {
@@ -90,15 +141,15 @@
 }
 
 .names input {
-  margin-right: 10px;
+
 }
 
 .names input:last-child {
-  margin-right: 0;
+  margin-left: 10px;
 }
 
 #phoneNEmail, #password {
-  width: 270px;
+  width: 300px;
 }
 
 #label-birthdate {
@@ -110,4 +161,127 @@
 .date-container {
   display: flex;
   flex-direction: column;
+}
+
+#label-gender {
+  color: #90949c;
+  font-weight: 700;
+  margin: 8px 0 0 0;
+}
+
+.gender {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+  width: auto;
+}
+
+.gender-options {
+  display: flex;
+  flex-flow: row nowrap;
+  width: auto;
+  height: 30px;
+  align-items: center;
+}
+
+.gender-options input {
+  width: auto;
+}
+
+.gender-options label {
+  margin: 0 15px 0 5px;
+  font-size: 15px;
+}
+
+.sign-up i {
+  margin-bottom: 15px;
+  color: #5f6063;
+}
+
+.sign-up p {
+  margin-bottom: 10px;
+  font-size: 10px;
+  width: 300px;
+  color: #777;
+}
+
+.sign-up span {
+  color: rgb(66, 103, 178);
+}
+
+#facebook-register {
+  padding: 7px 20px;
+  color: white;
+  background: linear-gradient(#67ae55, #578843);
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  box-shadow: inset 0 1px 1px #a4e388;
+  font-weight: 600;
+  font-size: large;
+  width: 190px;
+  margin-top: 10px;
+}
+
+.new-page p {
+  font-size: 15px;
+  width: 400px;
+  height: 40px;
+  margin-top: 30px;
+  color: #5f6063;
+}
+
+.new-page span{
+  color: rgb(66, 103, 178);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  align-items: center;
+  font-size: 12px;
+}
+
+.languages {
+  color: #5f6063;
+}
+
+.languages span {
+  color: rgb(66, 103, 178);
+  margin: 0 20px;
+}
+
+#languages {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#plus {
+  display: flex;
+  background-color: #f2f3f8;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #5f6063;
+  font-size: 20px;
+}
+
+hr {
+  align-self: center;
+  width: 60%;
+  margin: 10px 0;
+}
+
+.rodape {
+  width: 900px;
+  text-align: center;
+  color: rgb(66, 103, 178);
+}
+
+.copyright {
+  color: #5f6063;
+  margin: 10px;
 }

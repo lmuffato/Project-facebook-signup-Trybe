@@ -9,11 +9,10 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header class="top-bar">
-    <div class="image-container">
-      <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo facebook">
-    </div>
-    <div class="form-container">
+    <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo facebook">
+    <div class="top-bar-container">
       <form action="#" method="GET" class="facebook-login">
         <div class="form-group">
           <label for="user-email-phone-input" id="user-email-phone-label">Email ou telefone</label>
@@ -22,6 +21,7 @@
         <div class="form-group">
           <label for="user-password-input" id="user-password-label">Senha</label>
           <input type="text" name="" id="user-password">
+          <p>Esqueceu a conta?</p>
         </div>
         <div class="form-control">
           <button id="button-login">Entrar</button>
@@ -29,38 +29,60 @@
       </form>
     </div>
   </header>
+
   <main class="main-content">
-    <div class="left-container">
-      <div class="left-content">
-        <p class="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
-        <img src="imgs/networking.png" alt="facebook networking" id="facebook-slogan">
-      </div>
+    <div class="left-content">
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <img src="imgs/networking.png" alt="facebook networking" id="facebook-networking">
     </div>
-    <div class="right-container">
-      <div class="right-content">
-        <h1>Abra uma conta</h1>
-        <p class="quick-easy">É rápido e fácil</p>
-        <form action="#" method="GET">
-          <div class="names">
-            <input type="text" name="firtsname" id="firstName" placeholder="Nome"> 
-            <input type="text" name="firtsname" id="lastName" placeholder="Sobrenome"> 
+    <div class="right-content">
+      <h1>Abra uma conta</h1>
+      <p class="quick-easy">É rápido e fácil.</p>
+      <form action="#" method="GET" id="form2">
+        <div class="names">
+          <input type="text" name="firtsname" id="firstName" placeholder="Nome" required> 
+          <input type="text" name="lastname" id="lastName" placeholder="Sobrenome" required> 
+        </div>
+        <input type="text" name="phone_email" placeholder="Celular ou email" id="phoneNEmail" required>
+        <input type="password" name="password" placeholder="Nova senha" id="password" required>
+        <div class="date-container">
+          <label for="input-birthdate" id="label-birthdate">Data de nascimento</label>
+          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="input-birthdate" required>
+        </div>
+        
+        <div class="gender">
+          <label for="" id="label-gender">Gênero</label>
+          <div class="gender-options">
+            <input type="radio" name="gender" id="feminino" required>
+            <label for="feminino">Feminino</label>
+            <input type="radio" name="gender" id="masculino" required>
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="gender" id="personalizado" required>
+            <label for="personalizado">Personalizado</label>
           </div>
-          <input type="text" name="phone_email" placeholder="Celular ou email" id="phoneNEmail">
-          <input type="password" name="password" placeholder="Nova senha" id="password">
-          <div class="date-container">
-            <label for="input-birthdate" id="label-birthdate">Data de nascimento</label>
-            <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="input-birthdate">
-          </div>
-        </form>
+        </div>
+        
+        <div class="sign-up">
+          <i class="fas fa-question-circle"></i>
+          <p>Ao clicar em Cadastre-se, você concorda com nossos <span>Termos, Política de Dados</span> e <span> Política de Cookies</span>. Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
+          <button id="facebook-register" type="submit">Cadastre-se</button>
+        </div>
+      </form>
+      <div class="new-page">
+        <p><span>Criar uma Página</span> para uma celebridade, banda ou empresa.</p>
       </div>
     </div>
   </main>
-
-  
-
-
-
-
+  <footer class="footer">
+    <div id="languages">
+      <p class="languages">Português Brasil <span>English(US) &nbsp Español &nbsp Français(France) &nbsp Italiano &nbsp عربي &nbsp Deutsche &nbsp हिन्दी &nbsp 中國(普通話) &nbsp 日本語</span></p>
+      <div id="plus">+</div>  
+    </div>
+      <hr>
+      <p class="rodape"> Cadastre-se &nbsp Entrar &nbsp Mensseger &nbsp Facebook &nbsp Lite &nbsp Watch &nbsp Pessoas &nbsp Páginas &nbsp Categorias de Página &nbsp Locais &nbsp Jogos &nbsp Locais &nbsp Marketplace &nbsp Grupos &nbsp Portal &nbsp Instagram &nbsp Local &nbsp Campanhas de arrecadação de fundos &nbsp Serviços &nbsp Sobre &nbsp Criar anúncio &nbsp Criar Página &nbsp Desenvolvedores &nbsp Carreiras &nbsp Privacidade &nbsp Cookies &nbsp Opções de anúncio &nbsp Termos &nbsp Ajuda</p>
+      <p class="copyright">Facebook © 2020</p>
+  </footer>
+  <script src="https://kit.fontawesome.com/364cb4e922.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
