@@ -1,6 +1,6 @@
 const btnLogin = document.getElementById('button-login');
 const emailPhone = document.getElementById('user-email-phone');
-const otherGenders = document.getElementById('other');
+// const otherGenders = document.getElementById('other');
 const formRegister = document.getElementById('form-register');
 const btnRegister = document.getElementById('facebook-register');
 const genders = document.getElementById('genders');
@@ -63,12 +63,14 @@ genders.addEventListener('click', (e) => {
   genderValue = inputSelected.value;
 });
 
+
 formRegister.addEventListener('submit', (e) => {
   e.preventDefault();
 });
 
 btnRegister.addEventListener('click', () => {
   // checkEmpty();
+  console.log(genderValue);
 });
 
 // function validaCampos(evento) {
