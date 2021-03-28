@@ -58,17 +58,3 @@ function newRightContent() {
     Seu gênero é ${gender}.`
   );
 }
-
-function replaceRight() {
-  checkNull1();
-  checkNull2();
-  rightCont.innerHTML = '';
-  newRightContent();
-}
-
-const sendForm = document.querySelector('#facebook-register');
-
-sendForm.addEventListener('click', (event) => {
-  event.preventDefault();
-  replaceRight();
-});
