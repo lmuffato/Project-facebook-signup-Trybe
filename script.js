@@ -4,11 +4,12 @@ const otherGenders = document.getElementById('other');
 const formRegister = document.getElementById('form-register');
 const btnRegister = document.getElementById('facebook-register');
 const genders = document.getElementById('genders');
+const errorMessage = document.getElementById('message-error');
 let genderValue = '';
 // const inputsForm = document.querySelectorAll('.input');
 // const messageError = document.querySelector('#messageError');
 // const newAccount = document.querySelector('.new-account');
-// const rightContent = document.querySelector('.right-content');
+const rightContent = document.querySelector('.right-content');
 // const mainContent = document.querySelector('.main-content');
 // const paragrafo = document.createElement('p');
 // const div = document.createElement('div');
@@ -41,7 +42,6 @@ const checkRadios = () => {
 
 const checkEmpty = () => {
   const formInputs = formRegister.querySelectorAll('input');
-  const errorMessage = document.getElementById('message-error');
 
   for (let i = 0; i < formInputs.length; i += 1) {
     if (formInputs[i].value === '' || checkRadios() === 0) {
@@ -57,20 +57,32 @@ genders.addEventListener('click', (e) => {
   const customGenderInput = document.querySelector('#custom');
   if (inputSelected.value === 'Personalizado' && customGenderInput === null) {
     genderInput();
-  } else if (inputSelected.value !== 'Personalizado'
+  }
+  if (inputSelected.value !== 'Personalizado'
     && customGenderInput !== null) {
     customGenderInput.remove();
   }
   genderValue = inputSelected.value;
 });
 
-formRegister.addEventListener('submit', (e) => {
-  e.preventDefault();
-});
+// formRegister.addEventListener('submit', (e) => {
+//   e.preventDefault();
+// });
 
-btnRegister.addEventListener('click', () => {
+btnRegister.addEventListener('click', (e) => {
+  const userData = document.querySelectorAll('.right-content input');
+  const pReturn = document.createElement('p');
+  pReturn.id = 'p-return';
   checkEmpty();
-  console.log(genderValue);
+  e.preventDefault();
+  if (errorMessage.innerHTML === '') {
+    rightContent.innerHTML = '';
+    rightContent.appendChild(pReturn);
+    pReturn.innerHTML = `Olá ${userData[0].value} ${userData[1].value}.
+    Telefone ou E-mail: ${userData[2].value},
+    Data de nascimento: ${userData[4].value},
+    Gênero: ${genderValue}.`;
+  }
 });
 
 // function validaCampos(evento) {

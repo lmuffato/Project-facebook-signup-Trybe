@@ -57,6 +57,8 @@
 
 .right-content {
   width: 300px;
+  justify-content: center;
+  align-items: center;
 }
 
 .fullname {
