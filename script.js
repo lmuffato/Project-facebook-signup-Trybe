@@ -1,6 +1,6 @@
 const btnLogin = document.getElementById('button-login');
 const emailPhone = document.getElementById('user-email-phone');
-// const otherGenders = document.getElementById('other');
+const otherGenders = document.getElementById('other');
 const formRegister = document.getElementById('form-register');
 const btnRegister = document.getElementById('facebook-register');
 const genders = document.getElementById('genders');
@@ -8,7 +8,7 @@ let genderValue = '';
 // const inputsForm = document.querySelectorAll('.input');
 // const messageError = document.querySelector('#messageError');
 // const newAccount = document.querySelector('.new-account');
-// const rightContent = document.querySelector('.right-content');
+const rightContent = document.querySelector('.right-content');
 // const mainContent = document.querySelector('.main-content');
 // const paragrafo = document.createElement('p');
 // const div = document.createElement('div');
@@ -17,16 +17,16 @@ btnLogin.addEventListener('click', () => {
   alert(emailPhone.value);
 });
 
-// const genderInput = () => {
-//   const gender = document.createElement('input');
-//   gender.type = 'text';
-//   gender.id = 'gender-custom';
-//   gender.name = 'gender-custom';
-//   gender.placeholder = 'Gênero (opcional)';
-//   if (otherGenders) {
-//     genders.appendChild(gender);
-//   }
-// };
+const genderInput = () => {
+  const gender = document.createElement('input');
+  gender.type = 'text';
+  gender.id = 'custom';
+  gender.name = 'gender-custom';
+  gender.placeholder = 'Gênero (opcional)';
+  if (otherGenders) {
+    genders.appendChild(gender);
+  }
+};
 
 const checkRadios = () => {
   let inputChecked = 0;
@@ -54,11 +54,12 @@ const checkEmpty = () => {
 
 genders.addEventListener('click', (e) => {
   const inputSelected = e.target;
-  const customGenderInput = document.getElementById('gender-custom');
-  if (inputSelected.value === 'Personalizado') {
-    customGenderInput.style.display = 'block';
-  } else {
-    customGenderInput.style.display = 'none';
+  const customGenderInput = document.querySelector('#custom');
+  if (inputSelected.value === 'Personalizado' && customGenderInput === null) {
+    genderInput();
+  } else if (inputSelected.value !== 'Personalizado'
+    && customGenderInput !== null) {
+    customGenderInput.remove();
   }
   genderValue = inputSelected.value;
 });
