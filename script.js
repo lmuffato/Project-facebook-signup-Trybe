@@ -7,11 +7,11 @@ btnEntrar.addEventListener('click', () => alert(userEmailPhone.value));
 // Referencia para resolução do requisito : https://www.youtube.com/watch?v=GTMEuHxh8aQ
 function verifyError(field) {
   let foundError = false;
-  let fieldValidty = field.validity;
+  const fieldValidty = Object.values(field.validity);
 
-  for (const key in fieldValidty) {
-    if (key !== 'customError' && Object.values(fieldValidty)) {
-      foundError = key;
+  for (let index = 0; index < fieldValidty.length; index += 1) {
+    if (!'customError' && fieldValidty) {
+      foundError = true;
     }
   }
   return foundError;
