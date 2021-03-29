@@ -53,12 +53,12 @@ function newRightContent() {
   );
 }
 
-const infoForm = document.querySelectorAll('.form-sign-in input');
-const invalidItens = [];
+const infoForm = document.querySelectorAll('.inputs');
+let invalidItens = [];
 
 function checkForms() {
   for (let i = 0; i < infoForm.length; i += 1) {
-    if (infoForm[i].value === '' || infoForm[i].value === null) {
+    if (infoForm[i].value === '') {
       invalidItens.push([i]);
     }
   }
@@ -71,9 +71,10 @@ function finishThis(event) {
   event.preventDefault();
   checkGenderRadios();
   checkForms();
-  if (invalidItens.length === 0) {
-    newRightContent();
-  }
+  if (invalidItens.length !== 0) {
+    errorMsg.innerText = errorTxt;
+  } else { newRightContent(); }
+  invalidItens = [];
 }
 
 const register = document.getElementById('facebook-register');
