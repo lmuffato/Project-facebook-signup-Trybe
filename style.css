@@ -163,7 +163,7 @@ input {
   border-style: none;
 }
 
-#form input {
+.inputStyle {
   width: 100%;
   height: 21px;
   padding: 8px 10px;
@@ -199,7 +199,7 @@ h1 {
   padding-top: 5px;
 }
 
-.removeRightContent {
+.removeElement {
   display: none;
 }
 
