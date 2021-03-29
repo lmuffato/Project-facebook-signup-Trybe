@@ -15,7 +15,6 @@ function validateFields() {
   let isValidate = true;
 
   document.querySelectorAll('#form-main input.required').forEach((element) => {
-    console.log(form[element.name]);
     if (!form[element.name].value) { isValidate = false; }
   });
   return isValidate;
