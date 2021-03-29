@@ -26,7 +26,6 @@ buttonSubmit.addEventListener('click', (event) => {
     }
   }
 });
-s
 // REQUISITO 20 //
 // function insertContent(event) {
 //   if (msgError(event)) {
