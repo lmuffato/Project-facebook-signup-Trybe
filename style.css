@@ -80,8 +80,8 @@ input {
   font-weight: 600;
   line-height: 18px;
   text-align: center;
-  border: 1px solid #29487d;
   border-radius: 2px;
+  border: 1px solid #29487d;
 }
 
 #button-login:hover {
