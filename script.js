@@ -3,7 +3,7 @@ const genderCustom = document.querySelector('.gender-custom');
 const maleButton = document.querySelector('#genderM');
 const feminButton = document.querySelector('#genderF');
 const genderPersonalize = document.querySelector('#genderP');
-const buttonSubmit = document.querySelector('#facebook-register')
+const buttonSubmit = document.querySelector('#facebook-register');
 // REQUISITO 7//
 
 function alertLogin() {
@@ -14,8 +14,8 @@ function alertLogin() {
 
 // ---------------------------------------------------------------------------------------------- //
 
-// REQUISITO 18 
-// Verificar os Campos não preenchidos e retornar "Campos inválidos" 
+// REQUISITO 18 //
+// Verificar os Campos não preenchidos e retornar "Campos inválidos" //
 buttonSubmit.addEventListener('click',function (event) {
   event.preventDefault();
   const required = document.querySelectorAll('.required-input');
@@ -26,6 +26,7 @@ buttonSubmit.addEventListener('click',function (event) {
     }
   } 
 }); 
+
 // function msgError(event) {
 //   event.preventDefault();
 //   const requiredItems = document.querySelectorAll('.required');
@@ -63,8 +64,8 @@ buttonSubmit.addEventListener('click',function (event) {
 // REQUISITO 19 //
 // criando input gênero personalizado //
 function openCustom() {
-  const genderCustom = document.querySelector('.gender-custom');
-  const genderPersnalize = document.querySelector('#genderP');
+  // const genderCustom = document.querySelector('.gender-custom');
+  // const genderPersnalize = document.querySelector('#genderP');
   genderPersonalize.addEventListener('click', () => {
     if (!document.querySelector('#inputP')) {
       const createInput = document.createElement('input');
