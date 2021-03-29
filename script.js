@@ -7,9 +7,9 @@ function replaceRegisterFormWithGreetingMessage(inputs) {
     `${inputs.filter((e) => e.name === 'gender' && e.checked)[0].value}`];
   const rightContent = document.querySelector('.right-content');
   messages.forEach((m) => {
-    const greeting = document.createElement('p');
-    greeting.innerText = m;
-    rightContent.append(greeting);
+    const paragraph = document.createElement('p');
+    paragraph.innerText = m;
+    rightContent.append(paragraph);
   });
   const toReplace = document.querySelector('.to-replace');
   toReplace.parentElement.removeChild(toReplace);
