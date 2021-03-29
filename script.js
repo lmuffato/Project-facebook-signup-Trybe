@@ -29,7 +29,7 @@ function validateForms(event) {
   } else {
     field.setCustomValidity('');
   }
-  return true
+  return true;
 }
 
 for (field of fields) {
@@ -105,7 +105,6 @@ function createValues() {
 
 function validate() {
   const validate = document.querySelectorAll('.validate');
-  let genderValue = 0;
   for (let index = 0; index < validate.length; index += 1) {
     if (validate[index].value === '') {
       return false;
@@ -130,7 +129,7 @@ function gerarInformacoes(e) {
   ${content.gender}`;
 
     informations.innerText = string;
-    informations.style.marginTop = "50px"
+    informations.style.marginTop = "50px";
     rightContent.appendChild(informations);
   }
   
