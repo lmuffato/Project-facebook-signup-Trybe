@@ -39,9 +39,9 @@ const form = document.querySelector('#form2');
 form2.addEventListener('submit', event => {
   event.preventDefault();
 })
-
+//evento concluído baseado neste vídeo sobre eventos com radio buttons https://www.youtube.com/watch?v=zndWZv9DZWc
 const personalizado = document.getElementById('radioPersonalizado');
-function radio() {
+function radioPersonalizado() {
   const inputPersonalizado = document.getElementById('inputPersonalizado');
   inputPersonalizado.style.display = 'flex';
   inputPersonalizado.style.width = '200px';
@@ -49,5 +49,20 @@ function radio() {
   console.log('fui clicado');
 }
 
-personalizado.addEventListener('click', radio);
+personalizado.addEventListener('click', radioPersonalizado);
 
+const masculino = document.getElementById('masculino');
+function radioMasculino() {
+  const inputPersonalizado = document.getElementById('inputPersonalizado');
+  inputPersonalizado.style.display = 'none';
+}
+
+masculino.addEventListener('click', radioMasculino);
+
+const feminino = document.getElementById('feminino');
+function radioFeminino() {
+  const inputPersonalizado = document.getElementById('inputPersonalizado');
+  inputPersonalizado.style.display = 'none';
+}
+
+feminino.addEventListener('click', radioFeminino);
