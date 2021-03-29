@@ -183,18 +183,6 @@
   display: none;
 }
 
-.sign-up i {
-  margin-bottom: 15px;
-  color: #5f6063;
-}
-
-.sign-up p {
-  margin-bottom: 10px;
-  font-size: 10px;
-  width: 300px;
-  color: #777;
-}
-
 .sign-up span {
   color: rgb(66, 103, 178);
 }

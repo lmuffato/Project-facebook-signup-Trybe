@@ -49,10 +49,11 @@ const customGender = document.getElementById('radioPersonalizado');
 
 // Evento concluído baseado neste vídeo sobre eventos com radio buttons https://www.youtube.com/watch?v=zndWZv9DZWc
 function radioPersonalizado() {
-  const inputPersonalizado = document.getElementById('inputPersonalizado');
+  const inputPersonalizado = document.createElement('input');
   inputPersonalizado.style.display = 'flex';
   inputPersonalizado.style.width = '200px';
   inputPersonalizado.attributes = 'required';
+  inputPersonalizado.name = ''
   console.log('fui clicado');
   female.classList.remove('checked');
   male.classList.remove('checked');
