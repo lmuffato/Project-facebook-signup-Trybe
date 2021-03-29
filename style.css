@@ -124,13 +124,11 @@
 }
 
 #birthdate {
-  margin-top: 5px;
-  margin-left: 3px;
+  margin: 5px 0 15px 3px;
   width: 224px;
 }
 
 #label-gender {
-  margin-top: 15px;
   margin-left: 3px;
 }
 
