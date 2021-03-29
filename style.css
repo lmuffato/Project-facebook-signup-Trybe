@@ -6,6 +6,46 @@
   font-family: sans-serif;
 }
 
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(66, 103, 178);
+  justify-content: space-between;
+}
+
+.facebook-logo {
+  text-align: left;
+}
+
+.faceboock-login {
+  display: flex;
+  align-self:center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  color: whitesmoke;
+}
+
+.form-control {
+  align-self: flex-end;
+}
+
+#button-login {
+  background-color: rgb(66, 103, 178);
+  border: 1px solid black;
+  color: whitesmoke;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 1px 10px;
+}
+
+#button-login:hover {
+  font-weight: 900;
+}
+
 .main-content {
   display: flex;
   flex-direction: row;
