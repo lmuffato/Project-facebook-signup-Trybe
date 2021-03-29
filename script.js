@@ -84,5 +84,4 @@ function customGender() {
     placeholder: 'Gênero (opcional)',
   });
 }
-
 gender.addEventListener('click', customGender);
