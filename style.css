@@ -141,7 +141,7 @@
   width: 400px;
 }
 
-.birthdate {
+.birthdate , #label-gender {
   margin-top: 12px;
   color: #90949c;
   font-size: 16px;
@@ -151,4 +151,24 @@
 .birthdate input {
   margin-top: 8px;
   width: 194px;
+}
+
+.gender {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.gender-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  margin-top: 12px;
+}
+
+.gender-container label {
+  margin-left: 6px;
+  margin-right: 6px;
+  color: #1d2129;
+  font-size: 18px;
+  line-height: 18px;
 }
