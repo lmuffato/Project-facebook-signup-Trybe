@@ -136,3 +136,4 @@ function gerarInformacoes(e) {
     message.innerText = 'Campos inválidos';
     formSignup.appendChild(message);
   }
+}
