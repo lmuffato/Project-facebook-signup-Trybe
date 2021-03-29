@@ -6,35 +6,35 @@ function submitCancel(event) {
 }
 button.addEventListener('click', submitCancel);
 
-//função feita baseado no vídeo da rocktseat https://www.youtube.com/watch?v=GTMEuHxh8aQ&t=2100s
-const fields = document.querySelectorAll("[required]");
-function validateForms(event) {
-  const field = event.target;
-  console.log('Campo inválido');
+// Função feita baseado no vídeo da rocktseat https://www.youtube.com/watch?v=GTMEuHxh8aQ&t=2100s
+// const fields = document.querySelectorAll('[required]');
+// function validateForms(event) {
+//   const field = event.target;
+//   console.log('Campo inválido');
 
-  function verifyErrors(){
-    let foundError = false;
+//   function verifyErrors() {
+//     let foundError = false;
 
-    for (let error in field.validity) {
-      if (error !== 'customError' && field.validity[error]) {
-        foundError = true;
-      }
-    }
-    return foundError;
-  }
-  const error = verifyErrors();
+//     for (let error in field.validity) {
+//       if (error !== 'customError' && field.validity[error]) {
+//         foundError = true;
+//       }
+//     }
+//     return foundError;
+//   }
+//   const error = verifyErrors();
 
-  if (error) {
-    field.setCustomValidity('Campos inválidos');
-  } else {
-    field.setCustomValidity('');
-  }
-  return true;
-}
+//   if (error) {
+//     field.setCustomValidity('Campos inválidos');
+//   } else {
+//     field.setCustomValidity('');
+//   }
+//   return true;
+// }
 
-for (field of fields) {
-  field.addEventListener('invalid', validateForms);
-}
+// for (field of fields) {
+//   field.addEventListener('invalid', validateForms);
+// }
 
 const firstName = document.getElementsByName('firstname')[0];
 const lastName = document.getElementsByName('lastname')[0];
@@ -44,7 +44,7 @@ const female = document.getElementById('feminino');
 const male = document.getElementById('masculino');
 const customGender = document.getElementById('radioPersonalizado');
 
-//evento concluído baseado neste vídeo sobre eventos com radio buttons https://www.youtube.com/watch?v=zndWZv9DZWc
+// Evento concluído baseado neste vídeo sobre eventos com radio buttons https://www.youtube.com/watch?v=zndWZv9DZWc
 function radioPersonalizado() {
   const inputPersonalizado = document.getElementById('inputPersonalizado');
   inputPersonalizado.style.display = 'flex';
@@ -79,7 +79,7 @@ function radioFeminino() {
 }
 
 feminino.addEventListener('click', radioFeminino);
-//criação de div a partir do submit da página feito baseado no code Review do pull request da dupla Maria Luiza e Cla Oliveira https://github.com/tryber/sd-010-a-project-facebook-signup/pull/104/files
+// Criação de div a partir do submit da página feito baseado no code Review do pull request da dupla Maria Luiza e Cla Oliveira https://github.com/tryber/sd-010-a-project-facebook-signup/pull/104/files
 const content = {
   firstName: '',
   lastName: '',
@@ -104,35 +104,31 @@ function createValues() {
 }
 
 function validate() {
-  const validate = document.querySelectorAll('.validate');
-  for (let index = 0; index < validate.length; index += 1) {
-    if (validate[index].value === '') {
+  const valiDate = document.querySelectorAll('.validate');
+  for (let index = 0; index < valiDate.length; index += 1) {
+    if (valiDate[index].value === '') {
       return false;
     }
   }
   return true;
 }
+
 const btnSubmit =  document.getElementById('facebook-register');
 const rightContent = document.querySelector('.right-content');
 function gerarInformacoes(e) {
   if (validate()) {
     e.preventDefault();
-
     createValues();
-
     rightContent.innerHTML = '';
     const informations = document.createElement('div');
-
     const string = `Olá, ${content.firstName} ${content.lastName}
-  ${content.phoneEmail}
-  ${content.birthDate}
-  ${content.gender}`;
-
+    ${content.phoneEmail}
+    ${content.birthDate}
+    ${content.gender}`;
     informations.innerText = string;
-    informations.style.marginTop = "50px";
+    informations.style.marginTop = '50px';
     rightContent.appendChild(informations);
   }
-  
 }
 
 btnSubmit.addEventListener('click', gerarInformacoes);
