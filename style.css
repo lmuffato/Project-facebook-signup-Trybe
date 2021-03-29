@@ -57,3 +57,7 @@
 #customInput {
   display: none;
 }
+
+#errorMensage {
+  color: red;
+}
