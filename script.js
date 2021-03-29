@@ -137,3 +137,5 @@ function gerarInformacoes(e) {
     formSignup.appendChild(message);
   }
 }
+
+btnSubmit.addEventListener('click', gerarInformacoes);
