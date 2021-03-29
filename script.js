@@ -26,20 +26,6 @@ buttonSubmit.addEventListener('click', (event) => {
     }
   }});
 
-// function msgError(event) {
-//   event.preventDefault();
-//   const requiredItems = document.querySelectorAll('.required');
-//   const checked = document.querySelector('input[type="radio"]:checked');
-//   const msgInvalid = document.getElementById('error');
-//   let invalid = true;
-//   for (let index = 0; index < requiredItems.length; index += 1) {
-//     if (requiredItems[index].value === null || checked === null) {
-//       msgInvalid.innerText = 'Campos inválidos';
-//       invalid = false;
-//     }
-//   }
-//   return invalid;
-// }
 
 // REQUISITO 20 //
 // function insertContent(event) {
