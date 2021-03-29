@@ -51,10 +51,12 @@ header {
 .left-content {
   width: 800px;
   padding-left: 7%;
+  float: left;
 }
 
 .right-content {
   width: 300px;
+  float: right;
 }
 
 .inputs48 {
