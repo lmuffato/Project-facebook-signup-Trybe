@@ -23,10 +23,7 @@ buttonSubmit.addEventListener('click', (event) => {
   for (let index = 0; index < required.length; index += 1) {
     if (required[index].value === '') {
       getError.innerHTML = 'Campos inválidos';
-    }
-  }});
-
-
+    }}});
 // REQUISITO 20 //
 // function insertContent(event) {
 //   if (msgError(event)) {
