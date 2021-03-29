@@ -40,24 +40,24 @@
       <p class="quick-easy">É rápido e fácil.</p>
       <form action="#" method="GET" id="form2">
         <div class="names">
-          <input type="text" name="firstname" id="firstName" placeholder="Nome" required> 
-          <input type="text" name="lastname" id="lastName" placeholder="Sobrenome" required> 
+          <input class="validate" type="text" name="firstname" id="firstName" placeholder="Nome" required> 
+          <input class="validate" type="text" name="lastname" id="lastName" placeholder="Sobrenome" required> 
         </div>
-        <input type="text" name="phone_email" placeholder="Celular ou email" id="phoneNEmail" required>
+        <input class="validate" type="text" name="phone_email" placeholder="Celular ou email" id="phoneNEmail" required>
         <input type="password" name="password" placeholder="Nova senha" id="password" required>
         <div class="date-container">
           <label for="input-birthdate" id="label-birthdate">Data de nascimento</label>
-          <input type="text" name="birthdate" placeholder="dd/mm/aaaa" id="input-birthdate" required>
+          <input class="validate" type="text" name="birthdate" placeholder="dd/mm/aaaa" id="input-birthdate" required>
         </div>
 
         <label for="" id="label-gender">Gênero</label>
       
         <div class="gender">
-          <input type="radio" name="gender" class="radioButton" id="feminino" value="Feminino" required>
+          <input class="validate" type="radio" name="gender" class="radioButton" id="feminino" value="Feminino" required>
           <label for="feminino">Feminino</label>
-          <input type="radio" name="gender"  class="radioButton" id="masculino" value="Masculino" required>
+          <input class="validate" type="radio" name="gender"  class="radioButton" id="masculino" value="Masculino" required>
           <label for="masculino">Masculino</label>
-          <input type="radio" name="gender" class="radioButton" id="radioPersonalizado" value="Personalizado">
+          <input class="validate" type="radio" name="gender" class="radioButton" id="radioPersonalizado" value="Personalizado">
           <label for="radioPersonalizado">Personalizado</label>
         </div>
         <input type="text" name="personalizado" id="inputPersonalizado" placeholder="Gênero (opcional)" required>
