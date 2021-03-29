@@ -14,7 +14,7 @@ function displayInput() {
   const personalizado = document.querySelector('#custom');
   const displayInputCSS = document.querySelector('#customInput');
   for (let index = 0; index < radios.length; index += 1) {
-    if (personalizado.checked === true) {
+    if (personalizado.checked) {
       displayInputCSS.style.display = 'block';
     } else {
       displayInputCSS.style.display = 'none';
@@ -25,36 +25,56 @@ function displayInput() {
 const radiosDiv = document.querySelector('#gender-options');
 radiosDiv.addEventListener('click', displayInput);
 
-// const nameIs = document.querySelector('#name').value;
-// const lastName = document.querySelector('#lastName').value;
-// const phoneOrMail = document.querySelector('#phoneOrMail').value;
-// const password = document.querySelector('#password').value;
-// const birthDay = document.querySelector('#birth').value;
-// const gender = document.querySelector('input[type="radio"]:checked').value;
-// const errorMensage = document.querySelector('#errorMensage');
-// const rightCont = document.querySelector('.right-content');
+function checkGenderRadios() {
+  const gender1 = document.querySelector('#female');
+  const gender2 = document.querySelector('#male');
+  const genderCustom = document.querySelector('#custom');
+  if (gender1.checked || gender2.checked || genderCustom.checked) {
+    document.getElementById('errorMensage').innerText = '';
+  } else {
+    document.getElementById('errorMensage').innerText = 'Campos inválidos';
+  }
+}
 
-// function checkNull1() {
-//   if (nameIs === null
-//     || lastName === null
-//     || phoneOrMail === null) {
-//     errorMensage.innerText = 'Campos inválidos';
-//   }
-// }
+function newRightContent() {
+  const rightCont = document.querySelector('.right-content');
+  const nameIs = document.querySelector('#name');
+  const lastName = document.querySelector('#lastName');
+  const phoneOrMail = document.querySelector('#phoneOrMail');
+  const birthDay = document.querySelector('#birth');
+  const gender = document.querySelector('input[type="radio"]:checked');
+  rightCont.innerHTML = (
+    `Olá, ${nameIs.value} ${lastName.value}. 
+    Seu e-mail/telefone é ${phoneOrMail.value}. 
+    Sua data de Nascimento é ${birthDay.value}. 
+    Seu gênero é ${gender.value}.`
+  );
+}
 
-// function checkNull2() {
-//   if (password === null
-//     || birthDay === null
-//     || gender === null) {
-//     errorMensage.innerText = 'Campos inválidos';
-//   }
-// }
+const infoForm = document.querySelectorAll('.form-sign-in input');
+const invalidItens = [];
 
-// function newRightContent() {
-//   rightCont.innerHTML = (
-//     `Olá, ${nameIs} ${lastName}.
-//     Seu e-mail/telefone é ${phoneOrMail}
-//     Sua data de Nascimento é ${birthDay}
-//     Seu gênero é ${gender}.`
-//   );
-// }
+function checkForms() {
+  for (let i = 0; i < infoForm.length; i += 1) {
+    if (infoForm[i].value === '' || infoForm[i].value === null) {
+      invalidItens.push([i]);
+    }
+  }
+  if (invalidItens.length !== 0) {
+    document.getElementById('errorMensage').innerText = 'Campos inválidos';
+  }
+}
+
+function finishThis(event) {
+  event.preventDefault();
+  checkGenderRadios();
+  checkForms();
+  if (invalidItens.length === 0) {
+    newRightContent();
+  } else {
+    document.getElementById('errorMensage').innerText = 'Campos inválidos';
+  }
+}
+
+const register = document.getElementById('facebook-register');
+register.addEventListener('click', finishThis);
