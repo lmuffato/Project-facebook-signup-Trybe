@@ -1,5 +1,5 @@
 const button = document.getElementById('button-login');
-const btnSubmit =  document.getElementById('facebook-register');
+const btnSubmit = document.getElementById('facebook-register');
 const rightContent = document.querySelector('.right-content');
 
 function submitCancel(event) {
