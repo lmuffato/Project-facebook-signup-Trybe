@@ -90,6 +90,11 @@ span label {
   margin-bottom: 0.8em;
 }
 
+.right-content .name-data {
+  color: rgb(39, 36, 43);
+  margin-bottom: 10px;
+}
+
 .gender {
   display: flex;
   flex-direction: column;
