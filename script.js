@@ -26,6 +26,7 @@ buttonSubmit.addEventListener('click', (event) => {
     }
   }
 });
+s
 // REQUISITO 20 //
 // function insertContent(event) {
 //   if (msgError(event)) {
@@ -39,7 +40,7 @@ buttonSubmit.addEventListener('click', (event) => {
 //     newContent.innerText = `Olá, ${name} ${last} ${email} ${birth} ${gender}`;
 //   }
 // }
-// // adicionando evento click no botão registre-se //
+// adicionando evento click no botão registre-se //
 // const buttonSubmit = document.querySelector('#facebook-register');
 // buttonSubmit.addEventListener('click', insertContent);
 
