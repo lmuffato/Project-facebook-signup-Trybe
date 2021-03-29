@@ -16,7 +16,7 @@ function alertLogin() {
 
 // REQUISITO 18 //
 // Verificar os Campos não preenchidos e retornar "Campos inválidos" //
-buttonSubmit.addEventListener('click',function (event) {
+buttonSubmit.addEventListener('click', (event) => {
   event.preventDefault();
   const required = document.querySelectorAll('.required-input');
   const getError = document.querySelector('#error');
@@ -24,8 +24,7 @@ buttonSubmit.addEventListener('click',function (event) {
     if (required[index].value === '') {
       getError.innerHTML = 'Campos inválidos';
     }
-  } 
-}); 
+  }});
 
 // function msgError(event) {
 //   event.preventDefault();
