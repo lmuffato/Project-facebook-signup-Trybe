@@ -88,21 +88,12 @@
   word-spacing: -1px;
 }
 
-#input-radios {
-  display: flex;
-}
-
-.register-button {
+#input-radios .register-button .name-lastname #personal-field {
   display: flex;
 }
 
 .name-lastname {
-  display: flex;
   justify-content: space-between;
-}
-
-#personal-field {
-  display: flex;
 }
 
 #title {
