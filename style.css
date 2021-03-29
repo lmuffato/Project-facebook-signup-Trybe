@@ -107,7 +107,7 @@ input {
 
 .right-content {
   width: 300px;
-  margin-right: 260px;
+  margin-right: 160px;
   display: flex;
   flex-direction: column;
 }
