@@ -204,10 +204,11 @@ h1 {
 }
 
 #label-gender {
-  color: #90949c;
+  color: #1d2129;
   font-size: 16px;
-  font-weight: 600;
-  padding-top: 5px;
+  font-weight: normal;
+  line-height: 18px;
+  padding: 0 7px 0 3px;
 }
 
 .genderContainer {
@@ -241,4 +242,3 @@ h1 {
 #facebook-register:hover {
   background: linear-gradient(#79bc64, #578843);
 }
-
