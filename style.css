@@ -204,15 +204,24 @@ h1 {
 }
 
 #label-gender {
-  color: #1d2129;
+  color: #90949c;
   font-size: 16px;
-  font-weight: 500;
-  line-height: 18px;
+  font-weight: 600;
+  line-height: 16px;
   padding: 0 7px 0 3px;
 }
 
+#input-ratio {
+  color: #1d2129;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 18px;
+  padding: 0 10px 0 3px;
+}
+
 .genderContainer {
-  padding-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
 }
