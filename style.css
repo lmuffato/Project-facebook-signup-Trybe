@@ -13,7 +13,7 @@ body {
 
 a {
   cursor: pointer;
-  color: #385898
+  color: #385898;
 }
 
 main {
@@ -227,7 +227,7 @@ input {
   font-size: 12px;
 }
 
-#languages ul , #others ul{
+#languages ul , #others ul {
   display: flex;
   flex-wrap: wrap;
   width: 980px;
