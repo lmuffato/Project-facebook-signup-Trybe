@@ -85,7 +85,7 @@ const content = {
   lastName: '',
   phoneEmail: '',
   birthDate: '',
-  gender: '', 
+  gender: '',
 };
 
 function createValues() {
@@ -112,7 +112,6 @@ function validate() {
   }
   return true;
 }
-
 const btnSubmit =  document.getElementById('facebook-register');
 const rightContent = document.querySelector('.right-content');
 function gerarInformacoes(e) {
