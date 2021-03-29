@@ -24,15 +24,17 @@ function displayInput() {
 
 const radiosDiv = document.querySelector('#gender-options');
 radiosDiv.addEventListener('click', displayInput);
+const errorMsg = document.getElementById('errorMensage');
+const errorTxt = 'Campos inválidos';
 
 function checkGenderRadios() {
   const gender1 = document.querySelector('#female');
   const gender2 = document.querySelector('#male');
   const genderCustom = document.querySelector('#custom');
   if (gender1.checked || gender2.checked || genderCustom.checked) {
-    document.getElementById('errorMensage').innerText = '';
+    errorMsg.innerText = '';
   } else {
-    document.getElementById('errorMensage').innerText = 'Campos inválidos';
+    errorMsg.innerText = errorTxt;
   }
 }
 
@@ -61,7 +63,7 @@ function checkForms() {
     }
   }
   if (invalidItens.length !== 0) {
-    document.getElementById('errorMensage').innerText = 'Campos inválidos';
+    errorMsg.innerText = errorTxt;
   }
 }
 
@@ -72,7 +74,7 @@ function finishThis(event) {
   if (invalidItens.length === 0) {
     newRightContent();
   } else {
-    document.getElementById('errorMensage').innerText = 'Campos inválidos';
+    errorMsg.innerText = 'Campos inválidos';
   }
 }
 
