@@ -44,29 +44,29 @@
 
       <form method="GET" class="new-account">
         <div class="getName">
-            <input type = "text" name = "firstname" id = "firstname" class = "required" placeholder = "Nome">
-            <input type = "text" name = "lastname" id = "lastname" class = "required" placeholder = "Sobrenome">
+            <input type = "text" name = "firstname" id = "firstname" required placeholder = "Nome">
+            <input type = "text" name = "lastname" id = "lastname" required placeholder = "Sobrenome">
         </div>
 
         <div class = "create-phoneEmail">
-            <input type="text" name="phone_email" id="phone_email" class="required" placeholder="Celular ou email">
+            <input type="text" name="phone_email" id="phone_email" required placeholder="Celular ou email">
         </div>
 
         <div class="create-password">
-            <input id="create-password" type="password" name="password" class="required" placeholder="Nova senha">   
+            <input id="create-password" type="password" name="password" required placeholder="Nova senha">   
         </div>
 
         <div class="insert-birthdate">
             <label id="label-birthdate" for="insertDate">Data de nascimento</label>
-            <input id="insertDate" type="text" name="birthdate" class="required" placeholder="dd/mm/aaaa">   
+            <input id="insertDate" type="text" name="birthdate" required placeholder="dd/mm/aaaa">   
         </div>
 
         <div class="get-gender">
             <label id="label-gender" for="insertGender">Gênero</label>
             <div class="type-gender" >
-                <label for="genderF"><input id="genderF" type="radio" name="gender" class="required" value="Feminino" >Feminino</label>
-                <label for="genderM"><input id="genderM" type="radio" name="gender" class="required" value="Masculino" >Masculino</label>
-                <label for="genderP"><input id="genderP" type="radio" name="gender" class="required" value="Personalizado" >Personalizado</label>
+                <label for="genderF"><input id="genderF" type="radio" name="gender" required value="Feminino" >Feminino</label>
+                <label for="genderM"><input id="genderM" type="radio" name="gender" required value="Masculino" >Masculino</label>
+                <label for="genderP"><input id="genderP" type="radio" name="gender" required value="Personalizado" >Personalizado</label>
             </div>
         </div>
         <div class="gender-custom">
