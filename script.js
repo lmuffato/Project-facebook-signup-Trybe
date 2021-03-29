@@ -1,4 +1,7 @@
 const button = document.getElementById('button-login');
+const btnSubmit =  document.getElementById('facebook-register');
+const rightContent = document.querySelector('.right-content');
+
 function submitCancel(event) {
   event.preventDefault();
   const login = document.querySelector('#user-email-phone').value;
@@ -112,8 +115,7 @@ function validate() {
   }
   return true;
 }
-const btnSubmit =  document.getElementById('facebook-register');
-const rightContent = document.querySelector('.right-content');
+
 function gerarInformacoes(e) {
   if (validate()) {
     e.preventDefault();
