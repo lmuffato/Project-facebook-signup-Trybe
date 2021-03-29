@@ -130,6 +130,11 @@ function gerarInformacoes(e) {
     informations.innerText = string;
     informations.style.marginTop = '50px';
     rightContent.appendChild(informations);
+  } else {
+    const formSignup = document.getElementById('form2');
+    const message = document.createElement('p');
+    message.innerText = 'Campos inválidos';
+    formSignup.appendChild(message);
   }
 }
 
