@@ -14,12 +14,13 @@
 }
 
 .facebook-logo {
-  text-align: left;
-}
+  justify-content: left;
+  }
 
-.faceboock-login {
+.facebook-login {
   display: flex;
-  align-self: center;
+  flex-direction: row;
+  justify-content: right;
 }
 
 .form-group {
@@ -31,14 +32,15 @@
 
 .form-control {
   align-self: flex-end;
+  justify-content: right;
+  align-items: center;
 }
 
 #button-login {
   background-color: rgb(66, 103, 178);
   border: 1px solid black;
   color: whitesmoke;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 10px 6px;
   padding: 1px 10px;
 }
 
