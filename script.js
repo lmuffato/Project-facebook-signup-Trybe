@@ -1,5 +1,9 @@
 const user = document.getElementById('user-email-phone');
 const login = document.getElementById('button-login');
+/* const buttom = document.getElementById('facebook-register');
+const inputs = document.getElementsByTagName('input')
+const text = document.createElement('p')
+const formulario = document.getElementById('nameContainer') */
 
 function alerta() {
   alert(user.value);
@@ -7,48 +11,52 @@ function alerta() {
 
 login.addEventListener('click', alerta);
 
-const buttom = document.getElementById('facebook-register');
-const inputs = document.getElementsByClassName('input');
+/* function checkFill {
+  text.innerText = 'Campos inválidos'
+  ifinputs.value === '') {
+    text.appendChild(formulario)
+  }
+}
+buttom.addEventListener('click', checkFill)
+
 const rightContent = document.querySelector('.right-content');
 const error = document.createElement('h1');
-const radios = document.querySelector('#form').gender;
+const radio = document.querySelector('#form').gender;
 const submitForm = document.getElementById('submitForm');
-//inputs values/////////////////
-const nome = document.getElementById('nome');
+// inputs values/////////////////
+const name = document.getElementById('name').value;
 const sobrenome = document.getElementById('sobrenome');
 const email = document.getElementById('celular-email');
 const senha = document.getElementById('senha');
 const birthdate = document.getElementById('birthdate');
 function checkGender() {
   for (let index = 0; index < 3; index += 1) {
-    if (radios[index] === true) {
-      const checkedGender = radios[index].value;
-      return checkedGender;
+    if (radio[index] === true) {
     }
   }
 }
-//inputs values/////////////////
+checkGender();
+// inputs values/////////////////
 
-console.log(radios);
+console.log(radio);
 
 function checkRadio() {
-  if (radios[0].checked === false && radios[1].checked === false && radios[2].checked === false) {
-    return false
+  if (radio[0].checked === false && radio[1].checked === false && radio[2].checked === false) {
+    return false;
   }
-return true
+  return true;
 }
 
 function register(e) {
-  e.preventDefault()
+  e.preventDefault();
   for (let index = 0; index < inputs.length; index += 1) {
     if (inputs[index].value === '' || checkRadio() === false) {
       error.innerText = 'Campos inválidos';
       rightContent.appendChild(error);
       break;
     }
-    rightContent.classList.add('removeElement')
-    submitedForm()
-    checkGender()
+    rightContent.classList.add('removeElement');
+    submitedForm();
   }
 }
 

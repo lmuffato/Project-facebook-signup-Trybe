@@ -80,9 +80,8 @@ input {
   font-weight: 600;
   line-height: 18px;
   text-align: center;
-  border-color: #29487d;
-  border: 1px solid;
   border-radius: 2px;
+  border: 1px solid #29487d;
 }
 
 #button-login:hover {
@@ -132,6 +131,7 @@ input {
 
 .facebook-login {
   display: flex;
+  align-self: flex-end;
 }
 
 .form-control {
@@ -207,11 +207,21 @@ h1 {
   color: #90949c;
   font-size: 16px;
   font-weight: 600;
-  padding-top: 5px;
+  line-height: 16px;
+  padding: 0 7px 0 3px;
+}
+
+#input-ratio {
+  color: #1d2129;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 0 10px 0 3px;
 }
 
 .genderContainer {
-  padding-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -241,4 +251,3 @@ h1 {
 #facebook-register:hover {
   background: linear-gradient(#79bc64, #578843);
 }
-
