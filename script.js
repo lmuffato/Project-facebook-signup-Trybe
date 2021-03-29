@@ -73,8 +73,6 @@ function finishThis(event) {
   checkForms();
   if (invalidItens.length === 0) {
     newRightContent();
-  } else {
-    errorMsg.innerText = errorTxt;
   }
 }
 
