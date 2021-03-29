@@ -74,7 +74,7 @@ function finishThis(event) {
   if (invalidItens.length === 0) {
     newRightContent();
   } else {
-    errorMsg.innerText = 'Campos inválidos';
+    errorMsg.innerText = errorTxt;
   }
 }
 
