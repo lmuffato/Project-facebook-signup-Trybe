@@ -53,7 +53,7 @@ function radioPersonalizado() {
   inputPersonalizado.style.display = 'flex';
   inputPersonalizado.style.width = '200px';
   inputPersonalizado.attributes = 'required';
-  inputPersonalizado.name = ''
+  inputPersonalizado.name = '';
   console.log('fui clicado');
   female.classList.remove('checked');
   male.classList.remove('checked');
