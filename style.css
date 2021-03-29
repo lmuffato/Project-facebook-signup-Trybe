@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: Roboto, sans-serif;
+  outline: none; /* Retira a borda que aparece quando se clica nos inputs */
+}
+
+.top-bar {
+  display: flex;
+  background-color: rgb(66, 103, 178);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #0e385f;
+}
+
+.facebook-logo {
+  height: 80px;
+  order: -1; /* Como o padrão é 0, -1 faz com que fique a esquerda seguramente */
+}
+
+.facebook-login {
+  display: flex;
+  font-size: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.form-group input {
+  border: 1px solid #1d2a5b;
+  width: 150px;
+  height: 23px;
+  padding: 4px;
+  margin-top: 6px;
+}
+
+.form-group:nth-child( 2 ) {
+  margin: 0 15px;
+
+}
+
+.form-group p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 6px;
+  color: #9cb4d8;
+}
+
+.form-control {
+  align-self: flex-end;
+  order: 1;
+}
+
+.form-control button {
+  color: white;
+  font-weight: 600;
+  background-color: rgb(66, 103, 178);
+  border: solid 0.8px #2a487d;
+  padding: 3px;
+  width: 60px;
+}
+
+.main-content {
+  display: flex;
+  background-color: #f2f3f8;
+  height: 640px;
+}
+
+.left-content {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  line-height: 29px;
+  order: -1;
+}
+
+.left-content p {
+  width: 350px;
+  color: #0e385f;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#facebook-networking {
+  width: 537px;
+}
+
+#facebook-slogan {
+  width: 420px;
+}
+
+.right-content {
+  width: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+.right-content form {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.right-content p {
+  font-size: 19px;
+}
+
+.right-content h1 {
+  font-size: 36px;
+  margin: 20px 0 10px;
+  color: #333;
+}
+
+.right-content input {
+  margin: 5px 0;
+  height: 40px;
+  border-radius: 5px;
+  border: 0.8px solid #bdc7d8;
+  padding-left: 6px;
+  width: 145px;
+}
+
+.names {
+  display: flex;
+  margin-top: 20px;
+}
+
+.names #lastName {
+  margin-left: 10px;
+}
+
+#phoneNEmail , #password {
+  width: 300px;
+}
+
+#label-birthdate {
+  color: #90949c;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.date-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-gender {
+  color: #90949c;
+  font-weight: 700;
+  width: inherit;
+  height: 20px;
+  margin-top: 12px;
+}
+
+.gender {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 350px;
+  height: 30px;
+  align-items: center;
+}
+
+.gender .radioButton {
+  width: 15px;
+  height: 15px;
+}
+
+.gender label {
+  margin: 0 15px 0 5px;
+  font-size: 15px;
+}
+
+#inputPersonalizado {
+  display: none;
+}
+
+.sign-up i {
+  margin-bottom: 15px;
+  color: #5f6063;
+}
+
+.sign-up p {
+  margin-bottom: 10px;
+  font-size: 10px;
+  width: 300px;
+  color: #777;
+}
+
+.sign-up span {
+  color: rgb(66, 103, 178);
+}
+
+#facebook-register {
+  padding: 7px 20px;
+  color: white;
+  background: linear-gradient(#67ae55, #578843);
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  box-shadow: inset 0 1px 1px #a4e388;
+  font-weight: 600;
+  font-size: large;
+  width: 190px;
+  margin-top: 10px;
+}
+
+.new-page p {
+  font-size: 15px;
+  width: 400px;
+  height: 40px;
+  margin-top: 30px;
+  color: #5f6063;
+}
+
+.new-page span {
+  color: rgb(66, 103, 178);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 130px;
+  align-items: center;
+  font-size: 12px;
+}
+
+.languages {
+  color: #5f6063;
+}
+
+.languages span {
+  color: rgb(66, 103, 178);
+  margin: 0 20px;
+}
+
+#languages {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#plus {
+  display: flex;
+  background-color: #f2f3f8;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #5f6063;
+  font-size: 20px;
+}
+
+hr {
+  align-self: center;
+  width: 60%;
+  margin: 10px 0;
+}
+
+.rodape {
+  width: 900px;
+  text-align: center;
+  color: rgb(66, 103, 178);
+}
+
+.copyright {
+  color: #5f6063;
+  margin: 10px;
+}

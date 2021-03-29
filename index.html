@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Facebook</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top-bar">
+    <img class="facebook-logo" src="imgs/facebook-logo.png" alt="logo facebook">
+
+      <form action="#" method="GET" class="facebook-login">
+        <div class="form-group">
+          <label for="user-email-phone-input" id="user-email-phone-label">Email ou telefone</label>
+          <input type="text" name="" id="user-email-phone">
+        </div>
+        <div class="form-group">
+          <label for="user-password-input" id="user-password-label">Senha</label>
+          <input type="text" name="" id="user-password">
+        </div>
+        <div class="form-control">
+          <button id="button-login">Entrar</button>
+        </div>
+      </form>
+
+  </header>
+
+  <main class="main-content">
+    <div class="left-content">
+      <p id="facebook-slogan">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+      <img src="imgs/networking.png" alt="facebook networking" id="facebook-networking">
+    </div>
+
+    <div class="right-content">
+      <h1>Abra uma conta</h1>
+      <p class="quick-easy">É rápido e fácil.</p>
+      <form action="#" method="GET" id="form2">
+        <div class="names">
+          <input class="validate" type="text" name="firstname" id="firstName" placeholder="Nome" required> 
+          <input class="validate" type="text" name="lastname" id="lastName" placeholder="Sobrenome" required> 
+        </div>
+        <input class="validate" type="text" name="phone_email" placeholder="Celular ou email" id="phoneNEmail" required>
+        <input type="password" name="password" placeholder="Nova senha" id="password" required>
+        <div class="date-container">
+          <label for="input-birthdate" id="label-birthdate">Data de nascimento</label>
+          <input class="validate" type="text" name="birthdate" placeholder="dd/mm/aaaa" id="input-birthdate" required>
+        </div>
+
+        <label for="" id="label-gender">Gênero</label>
+      
+        <div class="gender">
+          <input class="validate" type="radio" name="gender" class="radioButton" id="feminino" value="Feminino" required>
+          <label for="feminino">Feminino</label>
+          <input class="validate" type="radio" name="gender"  class="radioButton" id="masculino" value="Masculino" required>
+          <label for="masculino">Masculino</label>
+          <input class="validate" type="radio" name="gender" class="radioButton" id="radioPersonalizado" value="Personalizado">
+          <label for="radioPersonalizado">Personalizado</label>
+        </div>
+        <input type="text" name="personalizado" id="inputPersonalizado" placeholder="Gênero (opcional)" required>
+        
+        <div class="sign-up">
+          <i class="fas fa-question-circle"></i>
+          <p>Ao clicar em Cadastre-se, você concorda com nossos <span>Termos, Política de Dados</span> e <span> Política de Cookies</span>. Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
+          <button id="facebook-register" type="submit">Cadastre-se</button>
+        </div>
+      </form>
+      <div class="new-page">
+        <p><span>Criar uma Página</span> para uma celebridade, banda ou empresa.</p>
+      </div>
+    </div>
+    
+  </main>
+  <footer class="footer">
+    <div id="languages">
+      <p class="languages">Português Brasil <span>English(US) &nbsp Español &nbsp Français(France) &nbsp Italiano &nbsp عربي &nbsp Deutsche &nbsp हिन्दी &nbsp 中國(普通話) &nbsp 日本語</span></p>
+      <div id="plus">+</div>  
+    </div>
+      <hr>
+      <p class="rodape"> Cadastre-se &nbsp Entrar &nbsp Mensseger &nbsp Facebook &nbsp Lite &nbsp Watch &nbsp Pessoas &nbsp Páginas &nbsp Categorias de Página &nbsp Locais &nbsp Jogos &nbsp Locais &nbsp Marketplace &nbsp Grupos &nbsp Portal &nbsp Instagram &nbsp Local &nbsp Campanhas de arrecadação de fundos &nbsp Serviços &nbsp Sobre &nbsp Criar anúncio &nbsp Criar Página &nbsp Desenvolvedores &nbsp Carreiras &nbsp Privacidade &nbsp Cookies &nbsp Opções de anúncio &nbsp Termos &nbsp Ajuda</p>
+      <p class="copyright">Facebook © 2020</p>
+  </footer>
+  <script src="https://kit.fontawesome.com/364cb4e922.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
