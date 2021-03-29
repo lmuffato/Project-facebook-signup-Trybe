@@ -176,3 +176,7 @@ width: 90%;
   height: 40px;
   background: linear-gradient(#67ae55e0, #578843);
 }
+
+#error {
+  padding: 20px 0;
+}
