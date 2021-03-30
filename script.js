@@ -10,14 +10,10 @@ document.querySelector('#button-login').addEventListener('click', () => {
 
 // Requisito 18
 buttonRegister.addEventListener('click', (event) => {
-  const inputText = document.querySelectorAll('.input-text');
-  let validate = 0;
-  for (let i = 0; i < inputText.length; i += 1) {
-    if (inputText[i].value === '') {
-      validate = 1;
-    }
-  }
-  if (validate > 0) {
+  const text = document.querySelectorAll('.input-text');
+  let bln = false;
+  for (let i = 0; i < text.length; i += 1) if (text[i].value === '') bln = true;
+  if (bln) {
     event.preventDefault();
     errorMessage.innerText = 'Campos inválidos';
     document.querySelector('.register').appendChild(errorMessage);
@@ -42,8 +38,6 @@ document.querySelector('#custom').addEventListener('click', () => {
 [female, male].forEach((item) => {
   item.addEventListener('click', () => {
     const customBox = document.querySelector('#custom-box');
-    if (customBox) {
-      customBox.remove();
-    }
+    if (customBox) customBox.remove();
   });
 });
