@@ -147,12 +147,9 @@ p {
 .form-group {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
   margin-top: 5px;
   margin: auto;
-=======
   width: 170px;
->>>>>>> 58eec0be889f7cfd1e4195db25f251e24b23ed2c
 }
 
 .form-group input {
