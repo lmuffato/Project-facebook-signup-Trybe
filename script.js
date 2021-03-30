@@ -4,6 +4,8 @@ const form = document.getElementById('form');
 const data = document.querySelector('#right-content-elements');
 const rightContent = document.getElementById('print-right');
 const invalid = document.getElementById('invalid-form');
+const validationArray = document.querySelectorAll('.validation');
+const buttonLogin = document.getElementById('button-login');
 
 document.getElementById('label-gender1').onclick = function genderFemale() {
   const personalizedGender = document.getElementsByName('gender');
@@ -45,29 +47,6 @@ function checkRadio() {
   } return gender;
 }
 
-const userName = document.getElementById('firstname').value;
-const userLastName = document.getElementById('lastname').value;
-const userPhoneEmail = document.getElementById('phonemail').value;
-const userPassword = document.getElementById('password').value;
-const userBirthDate = document.getElementById('birthdate').value;
-
-const validationArray = [];
-validationArray.push(userName);
-validationArray.push(userLastName);
-validationArray.push(userPhoneEmail);
-validationArray.push(userPassword);
-validationArray.push(userBirthDate);
-
-function validation() {
-  let isValid = true;
-  for (let index = 0; index < validationArray.length; index += 1) {
-    if (validationArray[index].value === '') {
-      isValid = false;
-      return isValid;
-    }
-  } return isValid;
-}
-
 function dataExibition() {
   const name = form.elements[0].value;
   const lastName = form.elements[1].value;
@@ -94,17 +73,36 @@ function addLike() {
   return rightContent.appendChild(imgPrint);
 }
 
+function arrayValidation() {
+  for (let index = 0; index < validationArray.length; index += 1) {
+    if (validationArray[index].value === '') {
+      return false;
+    }
+  }
+  return true;
+}
+
+function validationFalse() {
+  invalid.style.display = 'flex';
+}
+
 function validationTrue() {
   data.style.display = 'none';
   addLike();
   showPrint();
 }
 
+function validation() {
+  if (arrayValidation() === true) {
+    validationTrue();
+  } validationFalse();
+}
+
+buttonLogin.addEventListener('click', () => {
+  alert(document.getElementById('user-email-phone').value);
+});
+
 buttonSignUp.addEventListener('click', (event) => {
   event.preventDefault();
-  invalid.style.display = 'none';
-  if (validation() === true) {
-    validationTrue();
-  }
-  invalid.style.display = 'flex';
+  validation();
 });
