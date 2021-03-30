@@ -151,6 +151,7 @@ p {
   display: flex;
   flex-direction: column;
   margin-top: 5px;
+  margin: auto;
 }
 
 #user-email-phone-label {
@@ -181,3 +182,13 @@ p {
   color: red;
   font-weight: 700;
 }
+
+#form-control {
+  display: flex;
+  align-self: flex-end;
+  font-size: 150px;
+  height: 30px;
+  margin: auto;
+}
+
+
