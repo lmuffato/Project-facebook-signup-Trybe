@@ -111,6 +111,7 @@ input {
   display: flex;
   background: linear-gradient(white, #d3d8e8);
   padding-bottom: 50px;
+  justify-content: space-around;
 }
 
 .left-content {
