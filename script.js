@@ -34,7 +34,9 @@ function eventRequired() {
 
   for (const field of fields) {
     field.addEventListener('invalid', () => {
-    return msg.innerHTML = mensagem});
+      return msg.innerHTML = mensagem;
+    });
+
   }
 }
 const btncadastra = document.getElementById('facebook-register');
