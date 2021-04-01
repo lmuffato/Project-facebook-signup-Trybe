@@ -31,9 +31,9 @@ function checkGender() {
 console.log(radio);
 
 function checkRadio() {
-  const a = radio[0]
-  const b = radio[1]
-  const c = radio[2]
+  const a = radio[0];
+  const b = radio[1];
+  const c = radio[2];
   if (a.checked === false && b.checked === false && c.checked === false) {
     return false;
   }
