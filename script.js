@@ -69,7 +69,6 @@ buttom.addEventListener('click', register);
 const girlGender = document.getElementById('Masculino');
 const boyGender = document.getElementById('Feminino');
 const gender = document.getElementById('Personalizado');
-const genderConteiner = document.querySelector('.genderContainer');
 
 function customGender() {
   const customInput = document.createElement('input');
