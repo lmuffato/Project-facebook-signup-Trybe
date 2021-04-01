@@ -1,9 +1,7 @@
 const user = document.getElementById('user-email-phone');
 const login = document.getElementById('button-login');
 const buttom = document.getElementById('facebook-register');
-const inputs = document.getElementsByTagName('input')
-const text = document.createElement('p')
-const formulario = document.getElementById('nameContainer') 
+const inputs = document.getElementsByTagName('input');
 
 function alerta() {
   alert(user.value);
@@ -16,28 +14,39 @@ const error = document.createElement('h1');
 const radio = document.querySelector('#form').gender;
 const submitForm = document.getElementById('submitForm');
 // inputs values/////////////////
-const name = document.getElementById('name');
+const nome = document.getElementById('nome');
 const sobrenome = document.getElementById('sobrenome');
 const email = document.getElementById('celular-email');
-const senha = document.getElementById('senha');
 const birthdate = document.getElementById('birthdate');
 function checkGender() {
-  let genderSelected = ''
+  let genderSelected = '';
   for (let index = 0; index < 3; index += 1) {
     if (radio[index].checked) {
-      genderSelected = radio[index].value
+      genderSelected = radio[index].value;
     }
   }
-  return genderSelected
+  return genderSelected;
 }
 
 console.log(radio);
 
 function checkRadio() {
-  if (radio[0].checked === false && radio[1].checked === false && radio[2].checked === false) {
+  const a = radio[0]
+  const b = radio[1]
+  const c = radio[2]
+  if (a.checked === false && b.checked === false && c.checked === false) {
     return false;
   }
   return true;
+}
+
+function submitedForm() {
+  submitForm.classList.remove('removeElement');
+  const p = document.getElementById('p');
+  p.innerHTML = `Olá ${nome.value} ${sobrenome.value}<br>
+  Email: ${email.value}<br>
+  Data de nascimento: ${birthdate.value}<br>
+  Gênero: ${checkGender()}`;
 }
 
 function register(e) {
@@ -55,38 +64,28 @@ function register(e) {
 
 buttom.addEventListener('click', register);
 
-function submitedForm() {
-  submitForm.classList.remove('removeElement');
-  const p = document.getElementById('p');
-  p.innerHTML = `Olá ${nome.value} ${sobrenome.value}<br>
-  Email: ${email.value}<br>
-  Data de nascimento: ${birthdate.value}<br>
-  Gênero: ${checkGender()}`
-}
-
-const girlGender = document.getElementById('Masculino')
-const boyGender = document.getElementById('Feminino')
-const gender = document.getElementById('Personalizado')
-const genderConteiner = document.querySelector('.genderContainer')
+const girlGender = document.getElementById('Masculino');
+const boyGender = document.getElementById('Feminino');
+const gender = document.getElementById('Personalizado');
+const genderConteiner = document.querySelector('.genderContainer');
 
 function customGender() {
-  const customInput = document.createElement('input')
-  customInput.name = 'gender-custom'
-  customInput.placeholder = 'Gênero (opcional)'
-  customInput.id = 'customId'
-  genderConteiner.appendChild(customInput)
+  const customInput = document.createElement('input');
+  customInput.name = 'gender-custom';
+  customInput.placeholder = 'Gênero (opcional)';
+  customInput.id = 'customId';
+  genderConteiner.appendChild(customInput);
 }
 
 gender.addEventListener('click', customGender);
 
 function removeCustomGender() {
-  const customId = document.getElementById('customId')
+  const customId = document.getElementById('customId');
   if (customId !== null) {
-    genderConteiner.removeChild(customId)
+    genderConteiner.removeChild(customId);
   }
 }
 
-girlGender.addEventListener('click', removeCustomGender)
+girlGender.addEventListener('click', removeCustomGender);
 
-boyGender.addEventListener('click', removeCustomGender)
-
+boyGender.addEventListener('click', removeCustomGender);
