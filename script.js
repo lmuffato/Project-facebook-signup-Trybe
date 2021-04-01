@@ -31,9 +31,11 @@ function eventRequired() {
   const msg = document.getElementById('msg');
   const fields = document.querySelectorAll('[required]');
   const mensagem = '<span><strong>Campos inválidos</strong></span>';
-  for (let index = 0; index < fields.length; index += 1) {
-    fields[index].addEventListener('invalid', () => msg.innerHTML = mensagem);
-  }
+
+  fields.forEach(field => {
+    field.addEventListener('invalid', () => msg.innerHTML = mensagem);
+  });
+
 }
 
 const btncadastra = document.getElementById('facebook-register');
