@@ -25,7 +25,7 @@ btnEntrar.addEventListener('click', () => alert(userEmailPhone.value));
 //     field.setCustomValidity('Campos inválidos');
 //   }
 //   field.setCustomValidity('');
-// }
+// }m
 
 function eventRequired() {
   const msg = document.getElementById('msg');
