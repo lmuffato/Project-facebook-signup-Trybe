@@ -12,7 +12,9 @@ login.addEventListener('click', alerta);
 const rightContent = document.querySelector('.right-content');
 const error = document.createElement('h1');
 const radio = document.querySelector('#form').gender;
+const form = document.getElementById('form');
 const submitForm = document.getElementById('submitForm');
+const customConteiner = document.querySelector('#customConteiner');
 // inputs values/////////////////
 const nome = document.getElementById('nome');
 const sobrenome = document.getElementById('sobrenome');
@@ -43,10 +45,10 @@ function checkRadio() {
 function submitedForm() {
   submitForm.classList.remove('removeElement');
   const p = document.getElementById('p');
-  p.innerHTML = `Olá ${nome.value} ${sobrenome.value}<br>
-  Email: ${email.value}<br>
-  Data de nascimento: ${birthdate.value}<br>
-  Gênero: ${checkGender()}`;
+  p.innerHTML = `Olá, ${nome.value} ${sobrenome.value}<br>
+  ${email.value}<br>
+  ${birthdate.value}<br>
+  ${checkGender()}`;
 }
 
 function register(e) {
@@ -54,7 +56,7 @@ function register(e) {
   for (let index = 2; index < inputs.length; index += 1) {
     if (inputs[index].value === '' || checkRadio() === false) {
       error.innerText = 'Campos inválidos';
-      rightContent.appendChild(error);
+      form.appendChild(error);
       break;
     }
     rightContent.classList.add('removeElement');
@@ -74,7 +76,7 @@ function customGender() {
   customInput.name = 'gender-custom';
   customInput.placeholder = 'Gênero (opcional)';
   customInput.id = 'customId';
-  genderConteiner.appendChild(customInput);
+  customConteiner.appendChild(customInput);
 }
 
 gender.addEventListener('click', customGender);
@@ -82,7 +84,7 @@ gender.addEventListener('click', customGender);
 function removeCustomGender() {
   const customId = document.getElementById('customId');
   if (customId !== null) {
-    genderConteiner.removeChild(customId);
+    customConteiner.removeChild(customId);
   }
 }
 
