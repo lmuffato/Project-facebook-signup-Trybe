@@ -24,4 +24,4 @@ function errorMessage() {
 }
 
 document.addEventListener('DOMContentLoaded', errorMessage);
-entrarButton.addEventListener('click', alertButton); 
+entrarButton.addEventListener('click', alertButton);
