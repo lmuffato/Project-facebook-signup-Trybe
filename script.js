@@ -48,47 +48,47 @@ function validate(e) {
 registerButton.addEventListener('click', validate);
 
 /* ----- function replace container ----- */
-function replaceContainer(e) {
-  e.preventDefault();
+// function replaceContainer(e) {
+//   e.preventDefault();
 
-  if (validateCheck === 0) {
-    const name = document.querySelector('input[name="firstname"]');
-    const lastName = document.querySelector('input[name="lastname"]');
-    const phoneEmail = document.querySelector('input[name="phone_email"]');
-    const birthDate = document.querySelector('input[name="birthdate"]');
-    const gender = document.querySelectorAll('input[name="gender"]');
-    let genderValue = "Male";
-    const rightContainer = document.querySelector('.right-content');
+//   if (validateCheck === 0) {
+//     const name = document.querySelector('input[name="firstname"]');
+//     const lastName = document.querySelector('input[name="lastname"]');
+//     const phoneEmail = document.querySelector('input[name="phone_email"]');
+//     const birthDate = document.querySelector('input[name="birthdate"]');
+//     const gender = document.querySelectorAll('input[name="gender"]');
+//     let genderValue = "Male";
+//     const rightContainer = document.querySelector('.right-content');
 
-    /* get the gender value */
-    for (let index = 0; index < gender.length; index += 1) {
-      if (gender[index].checked) {
-        genderValue = gender[index].value;
-      }
-    }
+//     /* get the gender value */
+//     for (let index = 0; index < gender.length; index += 1) {
+//       if (gender[index].checked) {
+//         genderValue = gender[index].value;
+//       }
+//     }
 
-    /* remove all rightContainer Children */
-    while (rightContainer.hasChildNodes()) {  
-      rightContainer.removeChild(rightContainer.firstChild);
-    }
+//     /* remove all rightContainer Children */
+//     while (rightContainer.hasChildNodes()) {  
+//       rightContainer.removeChild(rightContainer.firstChild);
+//     }
 
-    /* inputs in right container */
-    const inputName = document.createElement('p');
-    inputName.innerHTML = `Olá, ${name.value} ${lastName.value}`;
-    rightContainer.appendChild(inputName);
+//     /* inputs in right container */
+//     const inputName = document.createElement('p');
+//     inputName.innerHTML = `Olá, ${name.value} ${lastName.value}`;
+//     rightContainer.appendChild(inputName);
 
-    const inputEmail = document.createElement('p');
-    inputEmail.innerHTML = phoneEmail.value;
-    rightContainer.appendChild(inputEmail);
+//     const inputEmail = document.createElement('p');
+//     inputEmail.innerHTML = phoneEmail.value;
+//     rightContainer.appendChild(inputEmail);
 
-    const inputBirth = document.createElement('p');
-    inputBirth.innerHTML = birthDate.value;
-    rightContainer.appendChild(inputBirth);
+//     const inputBirth = document.createElement('p');
+//     inputBirth.innerHTML = birthDate.value;
+//     rightContainer.appendChild(inputBirth);
 
-    const inputGender = document.createElement('p');
-    inputGender.innerHTML = genderValue;
-    rightContainer.appendChild(inputGender);
-  }
-}
+//     const inputGender = document.createElement('p');
+//     inputGender.innerHTML = genderValue;
+//     rightContainer.appendChild(inputGender);
+//   }
+// }
 
 registerButton.addEventListener('click', replaceContainer);
