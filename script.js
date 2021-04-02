@@ -68,7 +68,7 @@ registerButton.addEventListener('click', validate);
 //     }
 
 //     /* remove all rightContainer Children */
-//     while (rightContainer.hasChildNodes()) {  
+// while (rightContainer.hasChildNodes()) {;
 //       rightContainer.removeChild(rightContainer.firstChild);
 //     }
 
@@ -91,4 +91,4 @@ registerButton.addEventListener('click', validate);
 //   }
 // }
 
-registerButton.addEventListener('click', replaceContainer);
+// registerButton.addEventListener('click', replaceContainer);
