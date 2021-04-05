@@ -147,8 +147,7 @@ p {
 .form-group {
   display: flex;
   flex-direction: column;
-  margin-top: 5px;
-  margin: auto;
+  margin-top:5px;
   width: 170px;
 }
 
