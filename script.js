@@ -4,40 +4,26 @@ const userEmailPhone = document.getElementById('user-email-phone');
 btnEntrar.addEventListener('click', () => alert(userEmailPhone.value));
 
 // Requisito 18
-// Referencia para resolução do requisito : https://www.youtube.com/watch?v=GTMEuHxh8aQ
-// function verifyError(field) {
-//   let foundError = false;
-//   const fieldValidty = Object.values(field.validity);
+const getForms = document.querySelectorAll('.form-container input');
+const message = document.querySelector('#msg');
 
-//   for (let index = 0; index < fieldValidty.length; index += 1) {
-//     if (!'customError' && fieldValidty) {
-//       foundError = true;
-//     }
-//   }
-//   return foundError;
-// }
+const checkedInput1 = () => {
+  const getRadio = document.querySelector('.genero-subcontainer input:checked');
+  return getRadio;
+};
 
-// function customValidation(event) {
-//   const field = event.target;
-//   const error = verifyError(field);
+const btncadastra = document.querySelector('#facebook-register');
 
-//   if (error) {
-//     field.setCustomValidity('Campos inválidos');
-//   }
-//   field.setCustomValidity('');
-// }m
+btncadastra.addEventListener('click', (event) => {
+  event.preventDefault();
 
-function eventRequired() {
-  const msg = document.getElementById('msg');
-  const fields = document.querySelectorAll('[required]');
-  const mensagem = '<span><strong>Campos inválidos</strong></span>';
-
-  for (const field of fields) {
-    field.addEventListener('invalid', () => {
-      return msg.innerHTML = mensagem;
-    });
-
+  for (let index = 0; index < getForms.length; index += 1) {
+    const element = getForms[index];
+    if (element.value === '' || checkedInput1() === null) {
+      message.innerText = 'Campos inválidos';
+      return message.innerText;
+    }
   }
-}
-const btncadastra = document.getElementById('facebook-register');
-btncadastra.addEventListener('click', eventRequired);
+  message.innerText = '';
+  return message.innerText;
+});
