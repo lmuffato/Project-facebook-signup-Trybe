@@ -8,8 +8,10 @@ const submitFormButton = document.querySelector('#facebook-register');
 const criaContaForm = document.querySelector('.right-content form');
 const radioButtons = document.querySelectorAll('[name="gender"]');
 const inputBlock = document.querySelector('.right-content form .input-block');
+const formInputs = document.querySelectorAll('.right-content form input');
 const firstNameEl = document.querySelector('#first-name');
 const emailPhone = document.getElementById('phone-email');
+let radioButtonValue = '';
 
 function exibirAlertaDeLogin() {
   window.alert(emailPhoneInput.value);
@@ -33,6 +35,17 @@ function exibirAlertaDeInvalidez() {
     alertaInvalido.innerHTML = 'Campos inválidos';
     criaContaForm.insertBefore(alertaInvalido, inputBlock);
   }
+}
+
+function validaInputValue() {
+  let isFieldsValid = true;
+  for (let index = 0; index < formInputs.length; index += 1) {
+    if (formInputs[index].value === '') {
+      isFieldsValid = false;
+      exibirAlertaDeInvalidez();
+    }
+  }
+  return isFieldsValid;
 }
 
 function validaCampoNome() {
@@ -71,7 +84,10 @@ function validaCampoEmailOuCelular() {
 function validaGenero() {
   let isButtonChecked = false;
   for (let index = 0; index < radioButtons.length; index += 1) {
-    if (radioButtons[index].checked === true) isButtonChecked = true;
+    if (radioButtons[index].checked === true) {
+      isButtonChecked = true;
+      radioButtonValue = radioButtons[index].value;
+    }
   }
   return isButtonChecked;
 }
@@ -88,23 +104,31 @@ function handleFunctions() {
 function criarElementosDaConclusao() {
   const name = firstNameEl.value;
   const lastName = document.getElementById('last-name').value;
-  const conclusionHeader = document.createElement('h1');
   const fullName = `${name} ${lastName}`;
-  conclusionHeader.innerHTML = `Olá, ${fullName}`;
+  const birthdate = document.getElementById('birthdate').value;
+  const phoneEmail = emailPhone.value;
+  const gender = radioButtonValue;
+  const conclusionHeader = document.createElement('p');
+  conclusionHeader.innerHTML = `Olá, ${fullName} 
+  ${birthdate}
+  ${phoneEmail}
+  ${gender}`;
   rightContent.appendChild(conclusionHeader);
 }
 
 function exibirConclusaoDeCadastro() {
-  for (let index = 0; index < rightContentChilds.length; index += 1) {
-    rightContentChilds[index].style.display = 'none';
+  if (validaInputValue() && validaGenero()) {
+    for (let index = 0; index < rightContentChilds.length; index += 1) {
+      rightContentChilds[index].style.display = 'none';
+    }
+    criarElementosDaConclusao();
   }
-  criarElementosDaConclusao();
 }
 
 function preventDefForm(event) {
   event.preventDefault();
 }
 
-criaContaForm.addEventListener('submit', preventDefForm, false);
+submitFormButton.addEventListener('click', preventDefForm, false);
 submitFormButton.addEventListener('click', handleFunctions);
-criaContaForm.addEventListener('submit', exibirConclusaoDeCadastro);
+submitFormButton.addEventListener('click', exibirConclusaoDeCadastro);
