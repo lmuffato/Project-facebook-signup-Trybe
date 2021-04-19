@@ -27,3 +27,33 @@ btncadastra.addEventListener('click', (event) => {
   message.innerText = '';
   return message.innerText;
 });
+
+// Requisito 19
+let control = 0;
+const areaPersonalizado = document.querySelector('.genero-subcontainer');
+const testChecked = () => document
+  .querySelector('.genero-subcontainer input:checked').value;
+
+const createNewArea = () => {
+  const area = document.createElement('input');
+  areaPersonalizado.appendChild(area);
+  area.name = 'gender-custom';
+  area.placeholder = 'Gênero (opcional)';
+  area.id = 'valor';
+  control += 1;
+};
+
+const removeNewArea = () => {
+  const childDiv = document.querySelector('input#valor');
+  areaPersonalizado.removeChild(childDiv);
+  control = 0;
+};
+
+const validateNovaArea = () => {
+  if (control === 0 && testChecked() === 'Personalizado') createNewArea();
+  if (control === 1 && testChecked() !== 'Personalizado') removeNewArea();
+};
+
+areaPersonalizado.addEventListener('click', () => {
+  validateNovaArea();
+});
