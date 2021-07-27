@@ -40,7 +40,6 @@ function insertContent(event) {
   }
  }
 // adicionando evento click no botão registre-se //
-const buttonSubmit = document.querySelector('#facebook-register');
 buttonSubmit.addEventListener('click', insertContent);
 
 // ---------------------------------------------------------------------------------------------- //
