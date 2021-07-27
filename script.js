@@ -1,5 +1,4 @@
 const buttonLogin = document.querySelector('#button-login');
-const genderCustom = document.querySelector('.gender-custom');
 const maleButton = document.querySelector('#genderM');
 const feminButton = document.querySelector('#genderF');
 const genderPersonalize = document.querySelector('#genderP');
@@ -29,16 +28,15 @@ buttonSubmit.addEventListener('click', (event) => {
 // REQUISITO 20 //
 function insertContent(event) {
   if (msgError(event)) {
-     const name = document.querySelector('#firstname').value;
-     const last = document.querySelector('#lastname').value;
-     const email = document.querySelector('#phone_email').value;
-     const birth = document.querySelector('#insertDate').value;
-     const gender = document.querySelector('input[type="radio"]:checked').value;
-     const newContent = document.querySelector('.right-content');
-     newContent.innerHTML = '';
-     newContent.innerText = `Olá, ${name} ${last} ${email} ${birth} ${gender}`;
-  }
+    const last = document.querySelector('#lastname').value;
+    const email = document.querySelector('#phone_email').value;
+    const birth = document.querySelector('#insertDate').value;
+    const gender = document.querySelector('input[type="radio"]:checked').value;
+    const newContent = document.querySelector('.right-content');
+    newContent.innerHTML = '';
+    newContent.innerText = `Olá, ${name} ${last} ${email} ${birth} ${gender}`;
  }
+}
 // adicionando evento click no botão registre-se //
 buttonSubmit.addEventListener('click', insertContent);
 
