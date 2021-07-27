@@ -27,29 +27,29 @@ buttonSubmit.addEventListener('click', (event) => {
   }
 });
 // REQUISITO 20 //
-// function insertContent(event) {
-//   if (msgError(event)) {
-//     const name = document.querySelector('#firstname').value;
-//     const last = document.querySelector('#lastname').value;
-//     const email = document.querySelector('#phone_email').value;
-//     const birth = document.querySelector('#insertDate').value;
-//     const gender = document.querySelector('input[type="radio"]:checked').value;
-//     const newContent = document.querySelector('.right-content');
-//     newContent.innerHTML = '';
-//     newContent.innerText = `Olá, ${name} ${last} ${email} ${birth} ${gender}`;
-//   }
-// }
+function insertContent(event) {
+  if (msgError(event)) {
+     const name = document.querySelector('#firstname').value;
+     const last = document.querySelector('#lastname').value;
+     const email = document.querySelector('#phone_email').value;
+     const birth = document.querySelector('#insertDate').value;
+     const gender = document.querySelector('input[type="radio"]:checked').value;
+     const newContent = document.querySelector('.right-content');
+     newContent.innerHTML = '';
+     newContent.innerText = `Olá, ${name} ${last} ${email} ${birth} ${gender}`;
+  }
+ }
 // adicionando evento click no botão registre-se //
-// const buttonSubmit = document.querySelector('#facebook-register');
-// buttonSubmit.addEventListener('click', insertContent);
+const buttonSubmit = document.querySelector('#facebook-register');
+buttonSubmit.addEventListener('click', insertContent);
 
 // ---------------------------------------------------------------------------------------------- //
 
 // REQUISITO 19 //
 // criando input gênero personalizado //
 function openCustom() {
-  // const genderCustom = document.querySelector('.gender-custom');
-  // const genderPersnalize = document.querySelector('#genderP');
+  const genderCustom = document.querySelector('.gender-custom');
+  const genderPersnalize = document.querySelector('#genderP');
   genderPersonalize.addEventListener('click', () => {
     if (!document.querySelector('#inputP')) {
       const createInput = document.createElement('input');
